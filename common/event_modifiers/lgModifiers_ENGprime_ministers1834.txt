@@ -1,0 +1,56 @@
+################################
+#Prime Ministers - Whigs
+################################
+
+# Lord Grey
+pm_grey = {
+	adm_tech_cost_modifier = -0.05
+	dip_tech_cost_modifier = 0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# Lord Melbourne
+pm_melbourne = {
+	adm_tech_cost_modifier = 0.05
+	dip_tech_cost_modifier = -0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# Lord Russell
+pm_russell = {
+	adm_tech_cost_modifier = 0.05
+	dip_tech_cost_modifier = -0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# Lord Palmerston
+pm_palmerston = {
+	adm_tech_cost_modifier = 0.05
+	dip_tech_cost_modifier = 0.05
+	mil_tech_cost_modifier = -0.05
+}
+
+################################
+#Prime Ministers - Tories
+################################
+
+# Sir Robert Peel
+pm_peel = {
+	adm_tech_cost_modifier = -0.05
+	dip_tech_cost_modifier = 0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# Lord Derby
+pm_derby = {
+	adm_tech_cost_modifier = 0.05
+	dip_tech_cost_modifier = -0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# Lord Aberdeen
+pm_aberdeen = {
+	adm_tech_cost_modifier = 0.05
+	dip_tech_cost_modifier = 0.05
+	mil_tech_cost_modifier = -0.05
+}

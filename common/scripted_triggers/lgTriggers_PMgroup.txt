@@ -1,0 +1,69 @@
+pm_adm = {
+	OR = {
+		#1721
+		has_country_modifier = pm_bolingbroke
+		has_country_modifier = pm_walpole
+		has_country_modifier = pm_bath
+		#1742
+		has_country_modifier = pm_devonshire
+		has_country_modifier = pm_dashwood
+		#1761
+		has_country_modifier = pm_grenville
+		has_country_modifier = pm_lordnorth
+		#1784
+		has_country_modifier = pm_perceval
+		has_country_modifier = pm_liverpool
+		has_country_modifier = pm_grenville2
+		has_country_modifier = pm_addington1
+		#1834
+		has_country_modifier = pm_grey
+		has_country_modifier = pm_peel
+	}
+}
+
+pm_dip = {
+	OR = {
+		#1721
+		has_country_modifier = pm_wyndham
+		has_country_modifier = pm_pelham
+		has_country_modifier = pm_cobham
+		#1742
+		has_country_modifier = pm_newcastle
+		has_country_modifier = pm_lichfield
+		#1761
+		has_country_modifier = pm_bute
+		has_country_modifier = pm_rockingham
+		has_country_modifier = pm_shelburne
+		has_country_modifier = pm_portland
+		#1784
+		has_country_modifier = pm_fox
+		has_country_modifier = pm_pitt2
+		has_country_modifier = pm_castlereagh
+		has_country_modifier = pm_canning
+		#1834
+		has_country_modifier = pm_derby
+		has_country_modifier = pm_melbourne
+		has_country_modifier = pm_russell
+	}
+}
+
+pm_mil = {
+	OR = {
+		#1721
+		has_country_modifier = pm_smith
+		has_country_modifier = pm_wilmington
+		has_country_modifier = pm_fisher
+		#1742
+		has_country_modifier = pm_pitt1
+		has_country_modifier = pm_abingdon
+		#1761
+		has_country_modifier = pm_sandwich
+		has_country_modifier = pm_grafton
+		#1784
+		has_country_modifier = pm_hastings
+		has_country_modifier = pm_wellington
+		#1834
+		has_country_modifier = pm_aberdeen
+		has_country_modifier = pm_palmerston
+	}
+}

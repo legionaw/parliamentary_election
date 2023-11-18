@@ -1,0 +1,4 @@
+lgTriggers_ParliamentaryGovernment = {
+	has_country_flag = lgFlags_GloriousRevolution
+	has_reform = constitutional_monarchy
+}

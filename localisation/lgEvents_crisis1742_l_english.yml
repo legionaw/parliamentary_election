@@ -1,0 +1,25 @@
+﻿l_english:
+ constitutional_crisis.0033t: "Conflicts between $MONARCH$ and Tory ministers"
+ constitutional_crisis.0033d: "A sharp disagreement over certain issues confronting the kingdom has strained relations between $MONARCH$ and Tory ministers. The $MONARCHTITLE$ could settle this by dismissing Tory ministers and call an early election but such actions will have some consequences."
+ constitutional_crisis.0033.a: "Dismiss Tories from office and appoint Whigs to replace them."
+ constitutional_crisis.0033.b: "Dismiss Tories from office and dissolve the parliament."
+ constitutional_crisis.0033.c: "Retain Tory ministers in office."
+ 
+ constitutional_crisis.0034t: "Conflicts between $MONARCH$ and Whig ministers"
+ constitutional_crisis.0034d: "$MONARCH$ has become exasperated with Whig ministers over certain issues confronting the kingdom. The $MONARCHTITLE$ could settle this by dismissing Whig ministers and call an early election but such actions will have some consequences."
+ constitutional_crisis.0034.a: "Dismiss Whigs from office and appoint Tories to replace them."
+ constitutional_crisis.0034.b: "Dismiss Whigs from office and dissolve the parliament."
+ constitutional_crisis.0034.c: "Retain Whig ministers in office."
+ 
+ constitutional_crisis.144t: "Whig Prime Minister"
+ constitutional_crisis.144d: "Now that an incumbent ministry has been dismissed in favor of Whigs, the $MONARCHTITLE$ will need to appoint a Prime Minister."
+ constitutional_crisis.144.a: "The Duke of Devonshire (Administration)"
+ constitutional_crisis.144.b: "Henry Pelham (Diplomatic)"
+ constitutional_crisis.144.c: "The Duke of Newcastle (Diplomatic)"
+ constitutional_crisis.144.d: "William Pitt the Elder (Military)"
+ 
+ constitutional_crisis.145t: "Tory Prime Minister"
+ constitutional_crisis.145d: "Now that an incumbent ministry has been dismissed in favor of Tories, the $MONARCHTITLE$ will need to appoint a Prime Minister."
+ constitutional_crisis.145.a: "Sir James Dashwood (Administration)"
+ constitutional_crisis.145.b: "Lord Lichfield (Diplomatic)"
+ constitutional_crisis.145.c: "Lord Abingdon (Military)"

@@ -1,0 +1,517 @@
+#############################################
+# Untimely demise of the Prime Minister			#
+#############################################
+
+namespace = lgEvents_ENGdemisePM
+
+# Lord Wilmington died!
+country_event = {
+	id = lgEvents_ENGdemisePM.0001
+	title = "lgEvents_ENGdemisePM.0001t"
+	desc = "lgEvents_ENGdemisePM.0001d"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	trigger = {
+		#has_country_flag = lgFlags_GloriousRevolution
+		is_year = 1743
+		lgTriggers_ParliamentaryGovernment = yes
+		lgTriggers_parliamentBritish = yes
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = pm_wilmington
+	}
+	
+	immediate = {
+		set_country_flag = wilmington_died
+	}
+	
+	option = {	# RIP
+		name = "lgEvents_ENGdemisePM.0001.a"
+		#custom_tooltip = "lgEvents_ENGdemisePM.0001.a.tt"
+		if = {
+			limit = {
+				has_country_modifier = pm_wilmington
+				NOT = { has_country_flag = lgFlags_DemiseCrown }
+			}
+			change_dip = -1
+		}
+		remove_country_modifier = pm_wilmington
+		country_event = { id = lgEvents_ENGdemisePM.1001 days = 1 } #Prime Minister selection event
+	}
+}
+
+# Henry Pelham died!
+country_event = {
+	id = lgEvents_ENGdemisePM.0002
+	title = "lgEvents_ENGdemisePM.0002t"
+	desc = "lgEvents_ENGdemisePM.0002d"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	trigger = {
+		#has_country_flag = lgFlags_GloriousRevolution
+		is_year = 1754
+		lgTriggers_ParliamentaryGovernment = yes
+		lgTriggers_parliamentBritish = yes
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = pm_pelham
+	}
+	
+	immediate = {
+		set_country_flag = pelham_died
+	}
+	
+	option = {	# RIP
+		name = "lgEvents_ENGdemisePM.0002.a"
+		if = {
+			limit = {
+				has_country_modifier = pm_pelham
+				NOT = { has_country_flag = lgFlags_DemiseCrown }
+			}
+			change_dip = -1
+		}
+		remove_country_modifier = pm_pelham
+		country_event = { id = lgEvents_ENGdemisePM.1001 days = 1 } #Prime Minister selection event
+	}
+}
+
+# Lord Rockingham died!
+country_event = {
+	id = lgEvents_ENGdemisePM.0003
+	title = "lgEvents_ENGdemisePM.0003t"
+	desc = "lgEvents_ENGdemisePM.0003d"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	trigger = {
+		#has_country_flag = lgFlags_GloriousRevolution
+		is_year = 1782
+		NOT = { has_country_flag = lgFlags_DemiseCrown }
+		lgTriggers_ParliamentaryGovernment = yes
+		lgTriggers_parliamentBritish = yes
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = pm_rockingham
+	}
+	
+	immediate = {
+		set_country_flag = rockingham_died
+	}
+	
+	option = {	# RIP
+		name = "lgEvents_ENGdemisePM.0003.a"
+		if = {
+			limit = {
+				has_country_modifier = pm_rockingham
+				NOT = { has_country_flag = lgFlags_DemiseCrown }
+			}
+			change_dip = -1
+		}
+		remove_country_modifier = pm_rockingham
+		country_event = { id = lgEvents_ENGdemisePM.1002 days = 1 } #Prime Minister selection event
+	}
+}
+
+# William Pitt the Younger died!
+country_event = {
+	id = lgEvents_ENGdemisePM.0004
+	title = "lgEvents_ENGdemisePM.0004t"
+	desc = "lgEvents_ENGdemisePM.0004d"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	trigger = {
+		#has_country_flag = lgFlags_GloriousRevolution
+		is_year = 1806
+		NOT = { has_country_flag = lgFlags_DemiseCrown }
+		lgTriggers_ParliamentaryGovernment = yes
+		lgTriggers_parliamentBritish = yes
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = pm_pitt2
+	}
+	
+	immediate = {
+		set_country_flag = pitt2_died
+	}
+	
+	option = {	# RIP
+		name = "lgEvents_ENGdemisePM.0004.a"
+		if = {
+			limit = {
+				has_country_modifier = pm_pitt2
+				NOT = { has_country_flag = lgFlags_DemiseCrown }
+			}
+			change_dip = -1
+		}
+		remove_country_modifier = pm_pitt2
+		country_event = { id = lgEvents_ENGdemisePM.1003 days = 1 } #Prime Minister selection event
+	}
+}
+
+# Spencer Perceval assassinated!
+country_event = {
+	id = lgEvents_ENGdemisePM.0005
+	title = "lgEvents_ENGdemisePM.0005t"
+	desc = "lgEvents_ENGdemisePM.0005d"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	trigger = {
+		#has_country_flag = lgFlags_GloriousRevolution
+		is_year = 1812
+		NOT = { has_country_flag = lgFlags_DemiseCrown }
+		lgTriggers_ParliamentaryGovernment = yes
+		lgTriggers_parliamentBritish = yes
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = pm_perceval
+	}
+	
+	immediate = {
+		set_country_flag = perceval_died
+	}
+	
+	option = {	# Horror!
+		name = "lgEvents_ENGdemisePM.0005.a"
+		if = {
+			limit = {
+				has_country_modifier = pm_perceval
+				NOT = { has_country_flag = lgFlags_DemiseCrown }
+			}
+			change_dip = -1
+		}
+		remove_country_modifier = pm_perceval
+		country_event = { id = lgEvents_ENGdemisePM.1003 days = 1 } #Prime Minister selection event
+	}
+}
+
+# Lord Castlereagh died!
+country_event = {
+	id = lgEvents_ENGdemisePM.0006
+	title = "lgEvents_ENGdemisePM.0006t"
+	desc = "lgEvents_ENGdemisePM.0006d"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	trigger = {
+		is_year = 1827
+		NOT = { has_country_flag = lgFlags_DemiseCrown }
+		lgTriggers_ParliamentaryGovernment = yes
+		lgTriggers_parliamentBritish = yes
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = pm_castlereagh
+	}
+	
+	immediate = {
+		set_country_flag = castlereagh_died
+	}
+	
+	option = {	# RIP
+		name = "lgEvents_ENGdemisePM.0006.a"
+		if = {
+			limit = {
+				has_country_modifier = pm_castlereagh
+				NOT = { has_country_flag = lgFlags_DemiseCrown }
+			}
+			change_dip = -1
+		}
+		remove_country_modifier = pm_castlereagh
+		country_event = { id = lgEvents_ENGdemisePM.1003 days = 1 } #Prime Minister selection event
+	}
+}
+
+# George Canning died!
+country_event = {
+	id = lgEvents_ENGdemisePM.0007
+	title = "lgEvents_ENGdemisePM.0007t"
+	desc = "lgEvents_ENGdemisePM.0007d"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	trigger = {
+		#has_country_flag = lgFlags_GloriousRevolution
+		is_year = 1827
+		NOT = { has_country_flag = lgFlags_DemiseCrown }
+		lgTriggers_ParliamentaryGovernment = yes
+		lgTriggers_parliamentBritish = yes
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = pm_canning
+	}
+	
+	immediate = {
+		set_country_flag = canning_died
+	}
+	
+	option = {	# RIP
+		name = "lgEvents_ENGdemisePM.0007.a"
+		if = {
+			limit = {
+				has_country_modifier = pm_canning
+				NOT = { has_country_flag = lgFlags_DemiseCrown }
+			}
+			change_dip = -1
+		}
+		remove_country_modifier = pm_canning
+		country_event = { id = lgEvents_ENGdemisePM.1003 days = 1 } #Prime Minister selection event
+	}
+}
+
+###################################
+#### PRIME MINISTER SUCCESSION ####
+###################################
+# Whig prime minister selection (1742-1761) #
+country_event = {
+	id = lgEvents_ENGdemisePM.1001
+	title = "lgEvents_ENGdemisePM.1001t"
+	desc = "lgEvents_ENGdemisePM.1001d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {  # William Cavendish, 4th Duke of Devonshire (ADM)
+		name = "lgEvents_ENGdemisePM.1001.a"
+		ai_chance = { factor = 33 }
+		add_country_modifier = {
+			name = "pm_devonshire"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {  # Henry Pelham (DIP)
+		name = "lgEvents_ENGdemisePM.1001.b"
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 30
+				is_year = 1743
+			}
+		}
+		trigger = {
+			NOT = { has_country_flag = pelham_died }
+		}
+		add_country_modifier = {
+			name = "pm_pelham"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {  # Thomas Pelham-Holles, 1st Duke of Newcastle (DIP)
+		name = "lgEvents_ENGdemisePM.1001.c"
+		ai_chance = { factor = 33 }
+		trigger = {
+			has_country_flag = pelham_died
+		}
+		add_country_modifier = {
+			name = "pm_newcastle"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {  # The Earl of Wilmington (MIL)
+		name = "lgEvents_ENGdemisePM.1001.d"
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 30
+				is_year = 1742
+			}
+		}
+		trigger = {
+			NOT = { has_country_flag = wilmington_died }
+		}
+		add_country_modifier = {
+			name = "pm_wilmington"
+			duration = 2700
+		}
+		change_mil = 1
+	}
+	
+	option = {  # William Pitt the Elder (MIL)
+		name = "lgEvents_ENGdemisePM.1001.d"
+		ai_chance = { factor = 33 }
+		add_country_modifier = {
+			name = "pm_pitt1"
+			duration = 2700
+		}
+		change_mil = 1
+	}
+}
+
+# Whig prime minister selection (1761-1784) #
+country_event = {
+	id = lgEvents_ENGdemisePM.1002
+	title = "lgEvents_ENGdemisePM.1002t"
+	desc = "lgEvents_ENGdemisePM.1002d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	# George Grenville (ADM)
+		name = "lgEvents_ENGdemisePM.1002.a"
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 30
+				is_year = 1763
+				NOT = {
+					is_year = 1765
+				}
+			}
+		}
+		add_country_modifier = {
+			name = "pm_grenville"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {	# Charles Watson-Wentworth, 2nd Marquess of Rockingham (DIP)
+		name = "lgEvents_ENGdemisePM.1002.b"
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 30
+				is_year = 1765
+				NOT = {
+					is_year = 1766
+				}
+			}
+			modifier = {
+				factor = 30
+				is_year = 1782
+			}
+		}
+		trigger = {
+			NOT = { has_country_flag = rockingham_died }
+		}
+		add_country_modifier = {
+			name = "pm_rockingham"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# William Petty, 2nd Earl of Shelburne (DIP)
+		name = "lgEvents_ENGdemisePM.1002.c"
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 30
+				is_year = 1782
+				NOT = {
+					is_year = 1783
+				}
+			}
+		}
+		trigger = {
+			has_country_flag = rockingham_died
+		}
+		add_country_modifier = {
+			name = "pm_shelburne"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# Augustus FitzRoy, 3rd Duke of Grafton (MIL)
+		name = "lgEvents_ENGdemisePM.1002.d"
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 30
+				is_year = 1768
+				NOT = {
+					is_year = 1770
+				}
+			}
+		}
+		add_country_modifier = {
+			name = "pm_grafton"
+			duration = 2700
+		}
+		change_mil = 1
+	}
+}
+
+# Tory prime minister selection (1784-1834) #
+country_event = {
+	id = lgEvents_ENGdemisePM.1003
+	title = "lgEvents_ENGdemisePM.1003t"
+	desc = "lgEvents_ENGdemisePM.1003d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	# Spencer Perceval (ADM)
+		name = "lgEvents_ENGdemisePM.1003.a"
+		ai_chance = { factor = 33 }
+		trigger = {
+			NOT = { has_country_flag = perceval_died }
+		}
+		add_country_modifier = {
+			name = "pm_perceval"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {	# Robert Jenkinson, 2nd Earl of Liverpool (ADM)
+		name = "lgEvents_ENGdemisePM.1003.b"
+		trigger = {
+			has_country_flag = perceval_died
+		}
+		ai_chance = { factor = 33 }
+		add_country_modifier = {
+			name = "pm_liverpool"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {	# William Pitt the Younger (DIP)
+		name = "lgEvents_ENGdemisePM.1003.c"
+		trigger = {
+			NOT = { has_country_flag = pitt2_died }
+		}
+		ai_chance = { factor = 33 }
+		add_country_modifier = {
+			name = "pm_pitt2"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# Lord Castlereagh (DIP)
+		name = "lgEvents_ENGdemisePM.1003.d"
+		trigger = {
+			has_country_flag = pitt2_died
+			NOT = {
+				has_country_flag = castlereagh_died
+			}
+		}
+		add_country_modifier = {
+			name = "pm_castlereagh"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# George Canning (DIP)
+		name = "lgEvents_ENGdemisePM.1003.e"
+		trigger = {
+			has_country_flag = castlereagh_died
+			NOT = {
+				has_country_flag = canning_died
+			}
+		}
+		add_country_modifier = {
+			name = "pm_canning"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# Arthur Wellesley, 1st Duke of Wellington (MIL)
+		name = "lgEvents_ENGdemisePM.1003.f"
+		ai_chance = { factor = 33 }
+		add_country_modifier = {
+			name = "pm_wellington"
+			duration = 2700
+		}
+		change_mil = 1
+	}
+}

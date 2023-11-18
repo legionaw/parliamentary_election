@@ -1,0 +1,193 @@
+###################################################
+#	MINISTRIES																			#
+###################################################
+
+#	Pre-1721 Whigs (1688-1721), the Patriot Whigs (1721-1742), and post-1742 Whigs (to 1784) favors toleration and trade
+#	POS 7 / NEG 5
+lgModifiers_WhigMinistry = {
+	trade_efficiency = 0.025						# POS merchant-friendly
+	global_trade_power = 0.025					# POS
+	tolerance_heretic = 1								# POS Favors religious toleration
+	merchants = 1												# POS
+	inflation_reduction = 0.1						# POS Supports Bank of England
+	global_tariffs = -0.10							# NEG Their lack of interest in imperial administration reduces tariffs
+	naval_forcelimit_modifier = 0.05		# POS Supports strong navy
+	land_forcelimit_modifier = 0.01			# POS Supports strong, small army for the Continent warfare
+	global_missionary_strength = -0.05	# NEG their toleration of Dissenters results in this
+	stability_cost_modifier = 0.05			# NEG their pro-liberty stance makes stability cost more expensive
+	global_autonomy =	0.1								# NEG tends to support local initative more strongly
+	yearly_corruption = 0.1							# NEG Whigs are notoriously corrupt
+}
+
+#	Old Tory (1688-1761) favors policies friendly to landed aristocracy as well the crown and church; also favors blue-water foreign policy
+#	POS 10 / NEG 5 / MIX 1
+lgModifiers_ToryMinistry = {
+	production_efficiency = 0.02				# POS01 favors landed aristocracy
+	development_cost = -0.1							# POS02 strong advocate of internal developments
+	#development_efficiency = 0.1				# POS03 strong advocate of internal developments
+	trade_efficiency = -0.025						# NEG01 their hostile stance towards merchants results in this
+	stability_cost_modifier = -0.025		# POS04 believed more firmly in social discipline and obedience than Whigs does
+	tolerance_heretic = -2							# NEG02 Strong defender of the Church and favors discrimination against heretics
+	global_tax_modifier = -0.05					# NEG03 Favors lower land tax which benefits landed aristocracy
+	global_tariffs = 0.10								# MIX Favors higher tariffs and greater imperial oversight tho at cost of increasing colony's lib desire
+	missionaries = 1										# POS05 their pro-Church stance provides this
+	naval_forcelimit_modifier = 0.05		# POS06 their blue-water foreign policy calls for strong navy and less land commitments
+	land_forcelimit_modifier = -0.01		# NEG04 their blue-water foreign policy at expense of the Continental policy results in this
+	global_missionary_strength = 0.05		# POS07 Their pro-Church stance gives this benefit
+	legitimacy = 0.05										# POS08 Their pro-Crown stance gives this benefit
+	global_colonial_growth = 5					# POS09 their active colonial policy promotes this
+	global_autonomy =	-0.1							# POS10 promoting more centralization for government
+	yearly_corruption = -0.1						# POS11 Tories are less corrupt
+	interest = 1												# NEG05 their anti-mercenatile stance and hostility to Bank of England result in higher interest
+}
+
+#	Walpole Whigs (1721-1742) with mostly same benefits as Patriot Whigs except for
+#	lower taxes and higher military maintenance (POS 7 / NEG 7)
+lgModifiers_WalpoleMinistry = {
+	trade_efficiency = 0.03							# POS
+	global_tax_modifier = -0.10					# NEG favors lower taxes
+	stability_cost_modifier = 0.025			# NEG their pro-liberty stance makes stability cost more expensive, though tempered by willingess to censor plays
+	global_trade_power = 0.03						#	POS
+	tolerance_heretic = 1								#	POS
+	merchants = 1												#	POS
+	inflation_reduction = 0.1						#	POS
+	global_tariffs = -0.10							# NEG favors less tariffs
+	naval_maintenance_modifier = 0.1		# NEG their desire for long peace meant long neglect for military which led to disasters in War of Jenkins Ear
+	land_maintenance_modifier = 0.1			#	NEG 
+	#global_missionary_strength = -0.05		NEG Their toleration of Dissenters results in this
+	global_autonomy =	-0.1							# POS promoting more centralization for government
+	#global_unrest = 1										NEG increasing centralization causes discontent
+	#advisor_cost = 0.1										NEG Corruption meant more bribes which therefore increases costs of advisors
+	land_morale = -0.1									# NEG military neglect caused army morale to drop
+	interest = -1												# POS better management of finance help to reduce the interest
+	yearly_corruption = 0.1							# NEG Walpole Whigs are notoriously corrupt
+}
+
+#	King's or Queen's Friends (1761-1784) who are generally pro-Crown
+#	Favors more imperialist policy such as higher tariffs and higher taxes though at cost of angering colonists (POS 10 / NEG 10 / MIX 1)
+lgModifiers_FriendsMinistry = {
+	trade_efficiency = 0.035						# POS
+	global_trade_power = 0.035					# POS
+	tolerance_heretic = 1								# POS
+	colonists = 1												# POS
+	inflation_reduction = 0.1						# POS
+	global_tariffs = 0.35								# MIX supports more activist imperialist policy which is certain to anger colonists especially in America
+	global_tax_modifier = 0.05					# POS
+	legitimacy = 0.1										# POS moderately high respect for monarchy from this ministry though not necessarily as high as old Tories
+	stability_cost_modifier = 0.15			# NEG constant instab in govt as ministers are changed like musical chairs along with high tax means discontent is slowly growing
+	land_maintenance_modifier = 0.15		# NEG high cost of maintaining army to defend colonies forced parliament to look to colonies to pay for it, hence higher tariffs
+	merc_maintenance_modifier = -0.10		# POS higher maintenance for military meant that ministry is more willing to hire mercenaries to make up for this
+	#possible_mercenaries = 0.25					# POS their favor for reliance on mercenaries meant more mercenaries are open for hire.
+	mercenary_cost = -0.1								# POS cheaper mercs
+	global_spy_defence = -0.3						# NEG Their poor handling of counter-intelligence caused spy defense to drop.
+	diplomatic_upkeep = -1							# NEG Their imperialist policy has not bode well for their government abroad
+	diplomatic_reputation = -1					# NEG Their imperialist policy and their ineptness at forming alliances has alienated many in Europe
+	navy_tradition = -0.1								# NEG Letting their ships rotting did not bode well for the naval traditions
+	naval_maintenance_modifier = 0.1		# NEG Letting their ships rotting caused ships to become more expensive to maintain
+	global_ship_recruit_speed = 0.1			# NEG Their neglect of navy caused this increase
+	naval_morale = -0.5									# NEG cumulative effect of their neglect of Royal Navy caused naval morale to drop
+	#improve_relation_modifier = -0.2		# NEG their inept and less tactful diplomacy combined with pro-imperialist stance makes it more difficult to restore relations.
+	#relations_decay_of_me = -0.2				# NEG their inept and less tactful diplomacy combined with pro-imperialist stance makes it more difficult to restore relations.
+}
+
+#	Post-1784 Whigs (to 1859) who favors toleration and trade (POS 10 / 6 NEG)
+lgModifiers_WhigMinistry2 = {
+	trade_efficiency = 0.04							# POS merchant-friendly
+	production_efficiency = 0.045				# POS industrialist-friendly
+	global_trade_power = 0.035					# POS
+	tolerance_heretic = 2								# POS Favors religious toleration and supports Catholic Relief
+	merchants = 1												# POS
+	inflation_reduction = 0.1						# POS Supports Bank of England
+	global_tariffs = -0.10							# NEG Favors lower tariffs
+	naval_forcelimit_modifier = 0.07		# POS Supports strong navy
+	land_forcelimit_modifier = -0.02		# NEG Supports strong, small army
+	global_colonial_growth = 10					# POS Resumed focus on colonization particularly in the Pacific
+	global_missionary_strength = -0.15	# NEG Their toleration of Dissenters and Catholics results in this
+	stability_cost_modifier = 0.10			# NEG their pro-liberty stance makes stability cost more expensive
+	naval_maintenance_modifier = -0.1		# POS Their merchant-friendly inclination naturally make having strong navy a must
+	land_maintenance_modifier = 0.2			# NEG Their traditional suspicions of large standing army makes it more expensive
+	land_morale = 0.1										# POS Better army morale to compensate for army force limit reduction
+	global_spy_defence = -0.1						# NEG Their pro-liberty stance caused spy defence to drop
+}
+
+#	New Tory (1784-1834) are much like old Tory except no legitimacy boost and their tolerance are slightly higher (POS 6 / NEG 3 / MIX 1)
+lgModifiers_ToryMinistry2 = {
+	production_efficiency = 0.035				# POS favors landed aristocracy like the old Tories but industrialists joining its rank results in slight increase in this value
+	stability_cost_modifier = -0.025		# POS their pro-order stance and their willingness to use repression to maintain the order makes maintaining stability cheaper
+	tolerance_heretic = -1							# NEG still intolerant of Catholics but less so than old Tory
+	global_tax_modifier = -0.025				# NEG favors lower land tax benefiting the landed aristocracy
+	global_tariffs = 0.15								# MIX favors tariffs, tho 20% lower than King's Friends in light of American Rev. disaster that higher tariffs provoked
+	diplomats = 1												# POS
+	naval_forcelimit_modifier = 0.07		# POS
+	global_missionary_strength = 0.05		# POS staunch defender of the Church
+	global_colonial_growth = 10					# POS Resumed focus on colonization particularly in the Pacific
+	global_unrest = 1										# NEG Their repressive policies has caused unrest
+}
+
+#	Conservative (post-1834) is successor of Tory Party with same tolerance as Whigs and slightly higher production efficiency in response to industrialization
+lgModifiers_ConservativeMinistry = {
+	production_efficiency = 0.045				# still favors landowners but their ranks now increasingly includes industrialists hence slightly higher value of this
+	stability_cost_modifier = -0.025		# their support of stable order provides this
+	tolerance_heretic = 2								# Accepted the settlement of Catholic Question after passage of Catholic Relief Act
+	global_tax_modifier = -0.025				# NEG still supports lower land tax for
+	global_tariffs = 0.15								# MIX continues to endorse tariffs
+	diplomats = 1												#
+	naval_forcelimit_modifier = 0.09		#
+	global_missionary_strength = 0.05		#
+	global_colonial_growth = 25					# Continued focus on colonization particularly in the Pacific
+}
+
+###################################################
+# COALITIONS																			#
+###################################################
+
+#	Newcastle-Pitt coalition ministry in late 1750s-early 1760s only triggered by a special event if war with France occurred during 1757-1761
+pittite_modifier = {
+	trade_efficiency = 0.03							# merchant-friendly
+	global_trade_power = 0.03						#
+	dip_tech_cost_modifier = -0.025			# reduces cost for naval tech
+	mil_tech_cost_modifier = -0.025			# reduces cost for army tech
+	tolerance_heretic = 1								# Old Whig toleration policy continued in place
+	global_tax_modifier = 0.045					# higher taxes in response to war
+	global_tariffs = 0.10								# MIX slightly higher tariffs than old Whig policy to pay for the war
+	diplomats = 1												# to provide a diplomat for use during war
+	naval_forcelimit_modifier = 0.075		#
+	land_forcelimit_modifier = 0.075		#
+	land_maintenance_modifier = -0.05		#
+	naval_maintenance_modifier = -0.05	#
+	global_manpower_modifier = 0.25			#
+	diplomatic_upkeep = 5								#
+}
+
+#	Coalition ministry consisting of Whigs and former King's Friends who forced previous ministry out and put themselves in office against will of the monarch
+#	triggered only by special event if year is 1783
+foxnorth_modifier = {
+	trade_efficiency = 0.03							# merchant-friendly
+	production_efficiency = 0.035				# slightly industrialist-friendly but increasingly pro-industrialist
+	stability_cost_modifier = 0.15			# NEG unpopularity of this ministry in public outside of parliament makes stability more expensive
+	global_trade_power = 0.03						#
+	dip_tech_cost_modifier = -0.05			# pro-merchant and pro-naval policy naturally provides this
+	tolerance_heretic = 2								# Favors religious toleration
+	merchants = 1												#
+	inflation_reduction = 0.1						# Supports Bank of England
+	global_tariffs = -0.10							# NEG Favors lower tariffs
+}
+
+#	Ministry of All Talents only triggered by a special event if a war with France existed during 1807 and if France is led by Napoleon
+talent_modifier = {
+	trade_efficiency = 0.4							# merchant-friendly
+	global_trade_power = 0.035					#
+	dip_tech_cost_modifier = -0.025			# reduces cost for naval tech
+	mil_tech_cost_modifier = -0.025			# reduces cost for army tech
+	technology_cost = -0.05							# pro-industrialist policy promotes this
+	tolerance_heretic = 2								#
+	global_tax_modifier = 0.045					# higher taxes in response to war
+	global_tariffs = 0.20								# MIX slightly higher tariffs than old Whig policy to pay for the war
+	diplomats = 1												# to provide a diplomat for use during war
+	naval_forcelimit_modifier = 0.075		#
+	land_forcelimit_modifier = 0.075		#
+	land_maintenance_modifier = -0.07		#
+	naval_maintenance_modifier = -0.07	#
+	global_manpower_modifier = 0.25			#
+	diplomatic_upkeep = 5								#
+}

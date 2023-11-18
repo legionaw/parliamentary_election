@@ -1,0 +1,125 @@
+tea_act_modifier = {
+	trade_efficiency = 0.33
+}
+
+wales_act_modifier = {
+	global_unrest = -1
+}
+
+crown_of_ireland_act_modifier = {
+	stability_cost_modifier = -0.25
+	global_unrest = -2
+}
+
+bill_of_rights_act_modifier = {
+	country_admin_power = 1
+}
+
+black_act_modifier = {
+	harsh_treatment_cost = -0.5
+	stability_cost_modifier = -0.33
+	global_rebel_suppression_efficiency = 0.5
+}
+
+witchcraft_act_modifier = {
+	tolerance_own = 2
+	global_heretic_missionary_strength = 0.05
+	missionaries = 1
+}
+
+colonial_venture_act_modifier2 = {
+	colony_development_boost = 1
+}
+
+bank_charter_act_modifier = {
+	global_tax_modifier = 0.25
+	inflation_reduction = 0.15
+	interest = -1
+}
+
+act_of_exploration_modifier = {
+	may_explore = yes
+	range = 0.15
+}
+
+acts_of_impressment_modifier = {
+	sailor_maintenance_modifer = -0.33
+}
+
+acts_of_high_admiralty_modifier = {
+	navy_tradition = 2
+}
+
+acts_of_maritime_courage_modifier = {
+	naval_morale = 0.15
+	sunk_ship_morale_hit_recieved = -0.25
+}
+
+acts_of_naval_professionalism_modifier = {
+	ship_durability = 0.1
+	recover_navy_morale_speed = 0.25
+}
+
+acts_of_maritime_professionalism_modifier = {
+	global_ship_trade_power = 0.5
+	global_foreign_trade_power = 0.5
+	naval_tradition_from_trade = 1
+}
+
+acts_of_taxation_modifier = {
+	global_tax_income = 60
+	trade_efficiency = 0.1
+}
+
+act_of_representation_modifier = {
+	diplomatic_reputation = 2
+	diplomatic_annexation_cost = -0.15
+}
+
+sugar_act_modifier = {
+	colony_development_boost = 1
+}
+
+gold_act_modifier = {
+	colony_development_boost = 1
+}
+
+spice_act_modifier = {
+	colony_development_boost = 1
+}
+
+cultural_unity_act_modifier = {
+	culture_conversion_time = -0.2
+	culture_conversion_cost = -0.1
+}
+
+appointment_of_state_minister_modifier = {
+	advisor_cost = -0.1
+}
+
+enact_mercantilism_modifier = {
+	trade_steering = 0.15
+}
+
+promote_free_trade_modifier = {
+	trade_efficiency = 0.1
+}
+
+discipline_for_the_marines_acts_modifier = {
+	morale_damage = 0.1
+	is_marine_modifier = yes
+}
+
+improved_man_of_war_acts_modifier = {
+	ship_durability = 0.15
+	is_man_of_war_modifier = yes
+}
+
+army_reform_acts_modifier = {
+	fire_damage_received = -0.1
+}
+
+english_scottish_act_of_union_modifier = {
+	global_autonomy = -0.05
+	prestige_decay = -0.01
+}

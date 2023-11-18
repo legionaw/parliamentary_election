@@ -1,0 +1,258 @@
+#setup at beginning of each election
+election1721_startup = {
+	hidden_effect = {
+		set_variable = { which = whigVar value = 0 } #Patriot Whigs
+		set_variable = { which = toryVar value = 0 } #Tories
+		set_variable = { which = whig2Var value = 0 } #Walpole Whigs
+		every_owned_province = {
+			limit = {
+				has_seat_in_parliament = yes
+				NOT = { has_province_modifier = lgModifiers_MPsWhig }
+				NOT = { has_province_modifier = lgModifiers_MPsTory }
+				NOT = { has_province_modifier = lgModifiers_MPsWalpole }
+			}
+			random_list = {
+				33 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsWhig"
+						duration = -1
+					}
+				}
+				33 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsTory"
+						duration = -1
+					}
+				}
+				33 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsWalpole"
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+}
+
+#contest - Walpole whigs favored
+election1721_contest1 = {
+	hidden_effect = {
+		every_owned_province = {
+			limit = {
+				has_seat_in_parliament = yes
+			}
+			random_list = {
+				#Patriot Whigs
+				30 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsWhig"
+						duration = -1
+					}
+					remove_province_modifier = "lgModifiers_MPsTory"
+					remove_province_modifier = "lgModifiers_MPsWalpole"
+					province_event = { id = lgVoting1721.1 days = 1 }
+				}
+				#Tories
+				30 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsTory"
+						duration = -1
+					}
+					remove_province_modifier = "lgModifiers_MPsWhig"
+					remove_province_modifier = "lgModifiers_MPsWalpole"
+					province_event = { id = lgVoting1721.2 days = 1 }
+				}
+				#Walpole Whigs
+				40 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsWalpole"
+						duration = -1
+					}
+					remove_province_modifier = "lgModifiers_MPsTory"
+					remove_province_modifier = "lgModifiers_MPsWhig"
+					province_event = { id = lgVoting1721.3 days = 1 }
+				}
+			}
+		}
+		country_event = { id = parliamentary_elections.10011 days = 2 } # start counting
+	}
+}
+
+#contest - Tories favored
+election1721_contest2 = {
+	hidden_effect = {
+		every_owned_province = {
+			limit = {
+				has_seat_in_parliament = yes
+			}
+			random_list = {
+				#Patriot Whigs
+				30 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsWhig"
+						duration = -1
+					}
+					remove_province_modifier = "lgModifiers_MPsTory"
+					province_event = { id = lgVoting1721.1 days = 1 }
+				}
+				#Tories
+				40 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsTory"
+						duration = -1
+					}
+					remove_province_modifier = "lgModifiers_MPsWhig"
+					province_event = { id = lgVoting1721.2 days = 1 }
+				}
+				#Walpole Whigs
+				30 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsWalpole"
+						duration = -1
+					}
+					remove_province_modifier = "lgModifiers_MPsTory"
+					province_event = { id = lgVoting1721.3 days = 1 }
+				}
+			}
+		}
+		country_event = { id = parliamentary_elections.10011 days = 2 } # start counting
+	}
+}
+
+#contest - Patriot Whigs favored
+election1721_contest3 = {
+	hidden_effect = {
+		every_owned_province = {
+			limit = {
+				has_seat_in_parliament = yes
+			}
+			random_list = {
+				#Patriot Whigs
+				40 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsWhig"
+						duration = -1
+					}
+					remove_province_modifier = "lgModifiers_MPsTory"
+					remove_province_modifier = "lgModifiers_MPsWalpole"
+					province_event = { id = lgVoting1721.1 days = 1 }
+				}
+				#Tories
+				30 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsTory"
+						duration = -1
+					}
+					remove_province_modifier = "lgModifiers_MPsWhig"
+					remove_province_modifier = "lgModifiers_MPsWalpole"
+					province_event = { id = lgVoting1721.2 days = 1 }
+				}
+				#Walpole Whigs
+				30 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsWalpole"
+						duration = -1
+					}
+					remove_province_modifier = "lgModifiers_MPsTory"
+					remove_province_modifier = "lgModifiers_MPsWhig"
+					province_event = { id = lgVoting1721.3 days = 1 }
+				}
+			}
+		}
+		country_event = { id = parliamentary_elections.10011 days = 2 } # start counting
+	}
+}
+
+#contest - neutral
+election1721_contest4 = {
+	hidden_effect = {
+		every_owned_province = {
+			limit = {
+				has_seat_in_parliament = yes
+			}
+			random_list = {
+				#Patriot Whigs
+				33 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsWhig"
+						duration = -1
+					}
+					remove_province_modifier = "lgModifiers_MPsTory"
+					remove_province_modifier = "lgModifiers_MPsWalpole"
+					province_event = { id = lgVoting1721.1 days = 1 }
+				}
+				#Tories
+				33 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsTory"
+						duration = -1
+					}
+					remove_province_modifier = "lgModifiers_MPsWhig"
+					remove_province_modifier = "lgModifiers_MPsWalpole"
+					province_event = { id = lgVoting1721.2 days = 1 }
+				}
+				#Walpole Whigs
+				33 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsWalpole"
+						duration = -1
+					}
+					remove_province_modifier = "lgModifiers_MPsTory"
+					remove_province_modifier = "lgModifiers_MPsWhig"
+					province_event = { id = lgVoting1721.3 days = 1 }
+				}
+			}
+		}
+		country_event = { id = parliamentary_elections.10011 days = 2 } # start counting
+	}
+}
+
+#counting seats won
+election1721_count = {
+	# PATRIOT WHIG CONTROL
+	if = {
+		limit = {
+			check_variable = { which = whigVar which = toryVar }
+			check_variable = { which = whigVar which = whig2Var }
+			NOT = { check_variable = { which = toryVar which = whigVar } }
+			NOT = { check_variable = { which = whig2Var which = whigVar } }
+			NOT = { is_variable_equal = { which = whigVar which = toryVar } }
+			NOT = { is_variable_equal = { which = whigVar which = whig2Var } }
+		}
+		country_event = { id = parliamentary_elections.1002 days = 28 }
+	}
+	# TORY CONTROL
+	if = {
+		limit = {
+			check_variable = { which = toryVar which = whigVar } # there must be more tory seats than whig seats
+			check_variable = { which = toryVar which = whig2Var } # there must be more tory seats than whig seats
+			NOT = { check_variable = { which = whigVar which = toryVar } }
+			NOT = { check_variable = { which = whig2Var which = toryVar } }
+			NOT = { is_variable_equal = { which = whigVar which = toryVar } }
+			NOT = { is_variable_equal = { which = whigVar which = whig2Var } }
+		}
+		country_event = { id = parliamentary_elections.1003 days = 28 }
+	}
+	# Walpole WHIG CONTROL
+	if = {
+		limit = {
+			check_variable = { which = whig2Var which = toryVar } #Walpole more than Tory
+			check_variable = { which = whig2Var which = whigVar } #Walpole more than Patriot Whig
+			NOT = { check_variable = { which = toryVar which = whig2Var } }
+			NOT = { check_variable = { which = whigVar which = whig2Var } }
+			NOT = { is_variable_equal = { which = whig2Var which = toryVar } }
+			NOT = { is_variable_equal = { which = whig2Var which = whigVar } }
+		}
+		country_event = { id = parliamentary_elections.1004 days = 28 }
+	}
+	# DEADLOCK
+	if = {
+		limit = {
+			is_variable_equal = { which = whigVar which = toryVar } # must be equal
+			is_variable_equal = { which = whigVar which = whig2Var } # must be equal
+			is_variable_equal = { which = whig2Var which = toryVar } # must be equal
+		}
+		country_event = { id = parliamentary_elections.1008 days = 28 }
+	}
+}

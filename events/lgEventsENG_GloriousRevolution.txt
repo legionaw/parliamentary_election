@@ -1,0 +1,106 @@
+########################################
+# Glorious Revolution
+########################################
+
+namespace = ENG_glorious_revolution
+
+# Glorious Revolution
+country_event = {
+	id = ENG_glorious_revolution.0001
+	title = "ENG_glorious_revolution.0001t"
+	desc = "ENG_glorious_revolution.0001d"
+	picture = REFORM_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_country_flag = lgFlags_GloriousRevolution }
+#		OR = {
+#			NOT = { has_reform = constitutional_monarchy }
+#			NOT = { has_reform = british_monarchy }
+#		}
+#		NOT = { has_reform = lgParliamentaryMonarchy }
+#		is_year = 1688
+#		OR = {
+#			AND = {
+#				absolutism = 50
+#				government = monarchy
+#				NOT = {
+#					has_reform = english_monarchy
+#				}
+#			}
+#			AND = {
+#				absolutism = 50
+#				government = monarchy
+#				has_reform = english_monarchy
+#			}
+#		}
+		lgTriggers_parliamentBritish = yes
+	}
+	
+#	mean_time_to_happen = {
+#		months = 100
+#	}
+	
+	immediate = {
+		set_country_flag = lgFlags_GloriousRevolution
+	}
+	
+	option = {			# Yes
+		name = "ENG_glorious_revolution.0001.a"
+		add_stability = -1
+		add_manpower = 0.25
+		#add_government_reform = english_monarchy
+		#set_legacy_government = lgParliamentaryMonarchy
+		###SCRIPTED EFFECTS###
+		lgGR_setup = yes
+		lgEffects_GRoverthrow = yes
+		lg_ProtestantRevolution = yes
+		#lg_JacobiteRebellion = yes
+		#lg_DutchHelp = yes
+	}
+}
+
+# Dutch helps England/Britain overthrows absolute monarchy
+country_event = {
+	id = ENG_glorious_revolution.0002
+	title = "ENG_glorious_revolution.0002t"
+	desc = "ENG_glorious_revolution.0002d"
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {  # Great!
+		name = "ENG_glorious_revolution.0002.a"
+		trigger = {
+			ENG = {
+				has_country_flag = lgFlags_GloriousRevolution
+			}
+		}
+		add_prestige = 25
+		tooltip = {
+			add_opinion = { who = ENG modifier = lgOpinionModifiers_Revolution }
+			ENG = {
+				remove_opinion = { who = NED modifier = ned_accepted_glorious_revolution }
+			}
+		}
+	}
+	
+	option = {  # Great!
+		name = "ENG_glorious_revolution.0002.b"
+		trigger = {
+			GBR = {
+				has_country_flag = lgFlags_GloriousRevolution
+			}
+		}
+		add_prestige = 25
+		tooltip = {
+			add_opinion = { who = ENG modifier = lgOpinionModifiers_Revolution }
+			ENG = {
+				remove_opinion = { who = NED modifier = ned_accepted_glorious_revolution }
+			}
+		}
+	}
+}

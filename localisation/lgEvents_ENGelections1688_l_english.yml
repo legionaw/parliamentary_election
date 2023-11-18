@@ -1,0 +1,33 @@
+﻿l_english:
+ parliamentary_elections.0001t: "[Root.GetAdjectiveCap] General Election of $YEAR$"
+ parliamentary_elections.0001d: "The Parliament of $COUNTRY$ has been dissolved and a general election is called for to elect a new parliament to serve for next seven years. This will determine which party will head the ministry, to be appointed by $MONARCH$. The election will be held for 90 days to allow all eligible voters to cast their vote. The $MONARCHTITLE$ may attempt to influence election with well-placed bribes."
+ parliamentary_elections.0001.a: "Whig Party."
+ parliamentary_elections.0001.b: "Tory Party."
+ parliamentary_elections.0001.c: "No preference."
+
+ parliamentary_elections.0002t: "Whigs wins the election"
+ parliamentary_elections.0002d: "Whigs has won the election, giving it most seats in the House of Commons."
+ parliamentary_elections.0002.a: "I am pleased to hear this."
+ parliamentary_elections.0002.b: "This is not good."
+ parliamentary_elections.0002.c: "Congratulations to them on this."
+ parliamentary_elections.0003t: "Tories wins the election"
+ parliamentary_elections.0003d: "Tories has won the election, giving it most seats in the House of Commons."
+ parliamentary_elections.0003.a: "I am pleased to hear this."
+ parliamentary_elections.0003.b: "Black day for our country!"
+ parliamentary_elections.0003.c: "Congratulations to them on this."
+
+ parliamentary_elections.0004t: "Indecisive election"
+ parliamentary_elections.0004d: "Neither party has won a majority in the general election. $MONARCH$ thus have a greater discretion in appointing a ministry."
+ parliamentary_elections.0004.a: "I appoint Tory ministry."
+ parliamentary_elections.0004.b: "I appoint Whig ministry."
+ 
+ lgModifiers_WhigMinistry: "Whig ministry"
+ desc_lgModifiers_WhigMinistry: "The monarch has seen it fit to appoint Whig ministry to lead our country."
+ lgModifiers_ToryMinistry: "Tory ministry"
+ desc_lgModifiers_ToryMinistry: "The monarch has seen it fit to appoint Tory ministry to lead our country."
+
+ lgModifiers_MPsWhig: "Whig MP"
+ desc_lgModifiers_MPsWhig: "This province is represented by Whig MP in the Parliament"
+ 
+ lgModifiers_MPsTory: "Tory MP"
+ desc_lgModifiers_MPsTory: "This province is represented by Tory MP in the Parliament"

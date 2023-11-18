@@ -1,0 +1,158 @@
+#setup at beginning of each election
+election1784_startup = {
+	hidden_effect = {
+		set_variable = { which = whig3Var value = 0 } #whig
+		set_variable = { which = FriendsVar value = 0 } #Friends
+		set_variable = { which = tory2Var value = 0 } #Tory
+		every_owned_province = {
+			limit = {
+				has_seat_in_parliament = yes
+				NOT = { has_province_modifier = lgModifiers_MPsWhig2 }
+				NOT = { has_province_modifier = lgModifiers_MPsTory2 }
+			}
+			remove_province_modifier = "lgModifiers_MPsWhig"
+			remove_province_modifier = "lgModifiers_MPsFriends"
+			random_list = {
+				50 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsWhig2"
+						duration = -1
+					}
+				}
+				50 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsTory2"
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+}
+
+#contest - whig favored
+election1784_contest1 = {
+	hidden_effect = {
+		every_owned_province = {
+			limit = {
+				has_seat_in_parliament = yes
+			}
+			random_list = {
+				#Whigs
+				55 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsWhig2"
+						duration = -1
+					}
+					remove_province_modifier = "lgModifiers_MPsTory2"
+					province_event = { id = lgVoting1784.1 days = 1 }
+				}
+				#Friends
+				45 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsTory2"
+						duration = -1
+					}
+					remove_province_modifier = "lgModifiers_MPsWhig2"
+					province_event = { id = lgVoting1784.2 days = 1 }
+				}
+			}
+		}
+		country_event = { id = parliamentary_elections.4007 days = 2 } # start counting
+	}
+}
+
+#contest - Tories favored
+election1784_contest2 = {
+	hidden_effect = {
+		every_owned_province = {
+			limit = {
+				has_seat_in_parliament = yes
+			}
+			random_list = {
+				#Whigs
+				45 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsWhig2"
+						duration = -1
+					}
+					remove_province_modifier = "lgModifiers_MPsTory2"
+					province_event = { id = lgVoting1784.1 days = 1 }
+				}
+				#Friends
+				55 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsTory2"
+						duration = -1
+					}
+					remove_province_modifier = "lgModifiers_MPsWhig2"
+					province_event = { id = lgVoting1784.2 days = 1 }
+				}
+			}
+		}
+		country_event = { id = parliamentary_elections.4007 days = 2 } # start counting
+	}
+}
+
+#contest - neutral
+election1784_contest3 = {
+	hidden_effect = {
+		every_owned_province = {
+			limit = {
+				has_seat_in_parliament = yes
+			}
+			random_list = {
+				#Whigs
+				50 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsWhig2"
+						duration = -1
+					}
+					remove_province_modifier = "lgModifiers_MPsTory2"
+					province_event = { id = lgVoting1784.1 days = 1 }
+				}
+				#Friends
+				50 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsTory2"
+						duration = -1
+					}
+					remove_province_modifier = "lgModifiers_MPsWhig2"
+					province_event = { id = lgVoting1784.2 days = 1 }
+				}
+			}
+		}
+		country_event = { id = parliamentary_elections.4007 days = 2 } # start counting
+	}
+}
+
+#counting seats won
+election1784_count = {
+	# WHIG CONTROL
+	if = {
+		limit = {
+			check_variable = { which = whig3Var which = tory2Var }
+			NOT = { check_variable = { which = tory2Var which = whig3Var } }
+			NOT = { is_variable_equal = { which = whig3Var which = tory2Var } }
+		}
+		country_event = { id = parliamentary_elections.4002 days = 88 }
+	}
+	# Tory CONTROL
+	if = {
+		limit = {
+			check_variable = { which = tory2Var which = whig3Var } # there must be more Tory seats than whig seats
+			NOT = { check_variable = { which = whig3Var which = tory2Var } }
+			NOT = { is_variable_equal = { which = whig3Var which = tory2Var } }
+		}
+		country_event = { id = parliamentary_elections.4003 days = 88 }
+	}
+	# DEADLOCK
+	if = {
+		limit = {
+			is_variable_equal = { which = whig3Var which = tory2Var } # must be equal
+			#NOT = { check_variable = { which = whig3Var which = tory2Var } }
+			#NOT = { check_variable = { which = tory2Var which = whig3Var } }
+		}
+		country_event = { id = parliamentary_elections.4004 days = 88 }
+	}
+}

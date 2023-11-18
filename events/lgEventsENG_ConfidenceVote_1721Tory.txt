@@ -1,0 +1,464 @@
+############################################################################################
+# Parliamentary Confidence Vote - Tory (1721-1742) (possible replacement by Walpole Whigs) #
+############################################################################################
+
+namespace = confidence_vote
+
+# Parliamentary Confidence Vote - Tory (1721-1742)
+country_event = {
+	id = confidence_vote.1021
+	title = "confidence_vote.1021t"
+	desc = "confidence_vote.1021d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	trigger = {
+		is_year = 1721
+		NOT = { is_year = 1742 }
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_ToryMinistry
+		lgTriggers_ParliamentaryGovernment = yes
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 400
+		modifier = {
+			factor = 0.66
+			advisor = statesman
+		}
+	}
+	
+	option = {	# Possible outcomes of this vote
+		name = "confidence_vote.1021.a"
+		random_list = {
+			33 = { country_event = { id = confidence_vote.1022 days = 1 } }
+			33 = { country_event = { id = confidence_vote.1023 days = 1 } }
+			33 = { country_event = { id = confidence_vote.1024 days = 1 } }
+		}
+	}
+}
+
+# Parliamentary Confidence Vote - Tory lost and is replaced by Walpole Whigs at the head of government (1721-1742)
+country_event = {
+	id = confidence_vote.1022
+	title = "confidence_vote.1022t"
+	desc = "confidence_vote.1022d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_year = 1721
+		NOT = { is_year = 1742 }
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_ToryMinistry
+	}
+	
+	option = {	# Who dared to change my ministers!
+		name = "confidence_vote.1022.a"
+		remove_country_modifier = lgModifiers_ToryMinistry
+		if = {
+			limit = {
+				has_country_modifier = pm_bolingbroke
+			}
+			remove_country_modifier = pm_bolingbroke
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_wyndham
+			}
+			remove_country_modifier = pm_wyndham
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_smith
+			}
+			remove_country_modifier = pm_smith
+			change_mil = -1
+		}
+		add_country_modifier = {
+			name = "lgModifiers_WalpoleMinistry"
+			duration = 2555
+		}
+		add_stability = -1
+		country_event = { id = confidence_vote.133 days = 1 } #Prime Minister selection event
+	}
+}
+
+# Parliamentary Confidence Vote - Tory lost and Parliament is dissolved for early election (1721-1742)
+country_event = {
+	id = confidence_vote.1023
+	title = "confidence_vote.1023t"
+	desc = "confidence_vote.1023d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_year = 1721
+		NOT = { is_year = 1742 }
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_ToryMinistry
+	}
+	
+	option = { # I hope this election will return my ministers
+		name = "confidence_vote.1023.a"
+		remove_country_modifier = lgModifiers_ToryMinistry
+		if = {
+			limit = {
+				has_country_modifier = pm_bolingbroke
+			}
+			remove_country_modifier = pm_bolingbroke
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_wyndham
+			}
+			remove_country_modifier = pm_wyndham
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_smith
+			}
+			remove_country_modifier = pm_smith
+			change_mil = -1
+		}
+		remove_country_modifier = lgModifiers_electionTimer
+		add_stability = -1
+	}
+}
+
+# Parliamentary Confidence Vote - Tory won (1721-1742)
+country_event = {
+	id = confidence_vote.1024
+	title = "confidence_vote.1024t"
+	desc = "confidence_vote.1024d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	option = { # The King is pleased
+		name = "confidence_vote.1024.a"
+		add_stability = 1
+	}
+}
+
+############################################################################################
+# Parliamentary Confidence Vote - Tory (1721-1742) (possible replacement by Patriot Whigs) #
+############################################################################################
+
+# Parliamentary Confidence Vote - Tory (1721-1742)
+country_event = {
+	id = confidence_vote.1025
+	title = "confidence_vote.1025t"
+	desc = "confidence_vote.1025d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	trigger = {
+		is_year = 1721
+		NOT = { is_year = 1742 }
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_ToryMinistry
+		lgTriggers_ParliamentaryGovernment = yes
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 400
+		modifier = {
+			factor = 0.66
+			advisor = statesman
+		}
+	}
+	
+	option = {	# Possible outcomes of this vote
+		name = "confidence_vote.1025.a"
+		random_list = {
+			33 = { country_event = { id = confidence_vote.1026 days = 1 } }
+			33 = { country_event = { id = confidence_vote.1027 days = 1 } }
+			33 = { country_event = { id = confidence_vote.1028 days = 1 } }
+		}
+	}
+}
+
+# Parliamentary Confidence Vote - Tory lost and is replaced by Patriot Whigs at the head of government (1721-1742)
+country_event = {
+	id = confidence_vote.1026
+	title = "confidence_vote.1026t"
+	desc = "confidence_vote.1026d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		lgGovernment1721_tory = yes
+	}
+	
+	option = {	# Who dared to change my ministers!
+		name = "confidence_vote.1026.a"
+		remove_country_modifier = lgModifiers_ToryMinistry
+		if = {
+			limit = {
+				has_country_modifier = pm_bolingbroke
+			}
+			remove_country_modifier = pm_bolingbroke
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_wyndham
+			}
+			remove_country_modifier = pm_wyndham
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_smith
+			}
+			remove_country_modifier = pm_smith
+			change_mil = -1
+		}
+		add_country_modifier = {
+			name = "lgModifiers_WhigMinistry"
+			duration = 2555
+		}
+		add_stability = -1
+		country_event = { id = confidence_vote.134 days = 1 } #Prime Minister selection event
+	}
+}
+
+# Parliamentary Confidence Vote - Tory lost and Parliament is dissolved for early election (1721-1742)
+country_event = {
+	id = confidence_vote.1027
+	title = "confidence_vote.1027t"
+	desc = "confidence_vote.1027d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_year = 1721
+		NOT = { is_year = 1742 }
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_ToryMinistry
+	}
+	
+	option = { # I hope this election will return my ministers
+		name = "confidence_vote.1027.a"
+		remove_country_modifier = lgModifiers_ToryMinistry
+		if = {
+			limit = {
+				has_country_modifier = pm_bolingbroke
+			}
+			remove_country_modifier = pm_bolingbroke
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_wyndham
+			}
+			remove_country_modifier = pm_wyndham
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_smith
+			}
+			remove_country_modifier = pm_smith
+			change_mil = -1
+		}
+		remove_country_modifier = lgModifiers_electionTimer
+		add_stability = -1
+	}
+}
+
+# Parliamentary Confidence Vote - Tory won (1721-1742)
+country_event = {
+	id = confidence_vote.1028
+	title = "confidence_vote.1028t"
+	desc = "confidence_vote.1028d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	option = { # The King is pleased
+		name = "confidence_vote.1028.a"
+		add_stability = 1
+	}
+}
+
+########################################################################################################################
+# Selection of prime minister after dismissal of incumbent ministry following the loss of confidence vote (1721-1742)	 #
+########################################################################################################################
+
+# Walpole Whig prime minister selection
+country_event = {
+	id = confidence_vote.133
+	title = "confidence_vote.133t"
+	desc = "confidence_vote.133d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	# Sir Robert Walpole (ADM)
+		name = "confidence_vote.133.a"
+		add_country_modifier = {
+			name = "pm_walpole"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {	# Henry Pelham (DIP)
+		name = "confidence_vote.133.b"
+		trigger = {
+			NOT = { has_country_flag = pelham_died }
+		}
+		add_country_modifier = {
+			name = "pm_pelham"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# The Earl of Wilmington (MIL)
+		name = "confidence_vote.133.c"
+		trigger = {
+			NOT = { has_country_flag = wilmington_died }
+		}
+		add_country_modifier = {
+			name = "pm_wilmington"
+			duration = 2700
+		}
+		change_mil = 1
+	}
+}
+
+# Patriot Whig prime minister selection
+country_event = {
+	id = confidence_vote.134
+	title = "confidence_vote.134t"
+	desc = "confidence_vote.134d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	# William Pulteney, 1st Earl of Bath (ADM)
+		name = "confidence_vote.134.a"
+		add_country_modifier = {
+			name = "pm_bath"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {	# Richard Temple, 1st Viscount Cobham (DIP)
+		name = "confidence_vote.134.b"
+		add_country_modifier = {
+			name = "pm_cobham"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# John Fisher (MIL)
+		name = "confidence_vote.134.c"
+		add_country_modifier = {
+			name = "pm_fisher"
+			duration = 2700
+		}
+		change_mil = 1
+	}
+}

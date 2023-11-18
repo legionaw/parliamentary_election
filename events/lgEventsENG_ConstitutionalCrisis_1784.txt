@@ -1,0 +1,374 @@
+################################################################################
+# Constitutional Crisis between the monarch and Tory ministers (1784-1834)		 #
+################################################################################
+
+namespace = constitutional_crisis
+
+# Constitutional Crisis between the monarch and Tory ministers (1784-1834)
+country_event = {
+	id = constitutional_crisis.0037
+	title = "constitutional_crisis.0037t"
+	desc = "constitutional_crisis.0037d"
+	picture = LIBERUM_VETO_eventPicture
+	
+	trigger = {
+		is_year = 1784
+		NOT = { is_year = 1834 }
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_ToryMinistry2
+		lgTriggers_ParliamentaryGovernment = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 500
+		modifier = {
+			factor = 0.66
+			advisor = statesman
+		}
+	}
+	
+	option = {	# The monarch dismisses Tory ministry and appoints New Whig ministry in its stead.
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.0037.a"
+		remove_country_modifier = lgModifiers_ToryMinistry2
+		if = {
+			limit = {
+				has_country_modifier = pm_perceval
+			}
+			remove_country_modifier = pm_perceval
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_liverpool
+			}
+			remove_country_modifier = pm_liverpool
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_pitt2
+			}
+			remove_country_modifier = pm_pitt2
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_castlereagh
+			}
+			remove_country_modifier = pm_castlereagh
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_canning
+			}
+			remove_country_modifier = pm_canning
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_wellington
+			}
+			remove_country_modifier = pm_wellington
+			change_mil = -1
+		}
+		add_country_modifier = {
+			name = "lgModifiers_WhigMinistry2"
+			duration = 2555
+		}
+		add_stability = -1
+		country_event = { id = constitutional_crisis.148 days = 1 } #Prime Minister selection event
+	}
+	
+	option = { # The monarch dismisses Tory ministry and dissolved parliament to force an early election, hopefully in favor of that ministry.
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.0037.b"
+		custom_tooltip = lgEvents_Parliamentary_DemiseCrown.0001.a.tt
+		remove_country_modifier = lgModifiers_ToryMinistry2
+		if = {
+			limit = {
+				has_country_modifier = pm_perceval
+			}
+			remove_country_modifier = pm_perceval
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_liverpool
+			}
+			remove_country_modifier = pm_liverpool
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_pitt2
+			}
+			remove_country_modifier = pm_pitt2
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_castlereagh
+			}
+			remove_country_modifier = pm_castlereagh
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_canning
+			}
+			remove_country_modifier = pm_canning
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_wellington
+			}
+			remove_country_modifier = pm_wellington
+			change_mil = -1
+		}
+		remove_country_modifier = lgModifiers_electionTimer
+		add_stability = -1
+		add_prestige = 15
+	}
+	
+	option = { # The monarch decides to retain ministers in office
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.0037.c"
+		add_stability = 1
+		add_prestige = -15
+	}
+}
+
+################################################################################
+# Constitutional Crisis between the monarch and New Whig ministers (1784-1834) #
+################################################################################
+
+# Constitutional Crisis between the monarch and New Whig ministers (1784-1834)
+country_event = {
+	id = constitutional_crisis.0038
+	title = "constitutional_crisis.0038t"
+	desc = "constitutional_crisis.0038d"
+	picture = LIBERUM_VETO_eventPicture
+	
+	trigger = {
+		is_year = 1784
+		NOT = { is_year = 1834 }
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_WhigMinistry2
+		lgTriggers_ParliamentaryGovernment = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 250
+		modifier = {
+			factor = 0.66
+			advisor = statesman
+		}
+		modifier = {
+			factor = 0.95
+			is_year = 1807
+		}
+		modifier = {
+			factor = 5.0
+			is_year = 1808
+		}
+	}
+	
+	option = {	# The monarch dismisses New Whig ministry and appoints Tory ministry in its stead.
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.0038.a"
+		remove_country_modifier = lgModifiers_WhigMinistry2
+		if = {
+			limit = {
+				has_country_modifier = pm_grenville2
+			}
+			remove_country_modifier = pm_grenville2
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_fox
+			}
+			remove_country_modifier = pm_fox
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_hastings
+			}
+			remove_country_modifier = pm_hastings
+			change_mil = -1
+		}
+		add_country_modifier = {
+			name = "lgModifiers_ToryMinistry2"
+			duration = 2555
+		}
+		add_stability = -1
+		country_event = { id = constitutional_crisis.149 days = 1 } #Prime Minister selection event
+	}
+	
+	option = { # The monarch dismisses New Whig ministry and dissolved parliament to force an early election, hopefully in favor of Tory ministry.
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.0038.b"
+		custom_tooltip = lgEvents_Parliamentary_DemiseCrown.0001.a.tt
+		remove_country_modifier = lgModifiers_WhigMinistry2
+		if = {
+			limit = {
+				has_country_modifier = pm_grenville2
+			}
+			remove_country_modifier = pm_grenville2
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_fox
+			}
+			remove_country_modifier = pm_fox
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_hastings
+			}
+			remove_country_modifier = pm_hastings
+			change_mil = -1
+		}
+		remove_country_modifier = lgModifiers_electionTimer
+		add_stability = -1
+		add_prestige = 15
+	}
+	
+	option = { # The monarch decides to retain ministers in office
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.0038.c"
+		add_stability = 1
+		add_prestige = -15
+	}
+}
+
+##############################################
+# British prime minister selection 1761-1784 #
+##############################################	
+# Whig prime minister selection
+country_event = {
+	id = constitutional_crisis.148
+	title = "constitutional_crisis.148t"
+	desc = "constitutional_crisis.148d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	# William Grenville, 1st Baron Grenville (ADM)
+		name = "constitutional_crisis.148.a"
+		add_country_modifier = {
+			name = "pm_grenville2"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {	# Charles James Fox (DIP)
+		name = "constitutional_crisis.148.b"
+		add_country_modifier = {
+			name = "pm_fox"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# Francis Rawdon-Hastings, 1st Marquess of Hastings (MIL)
+		name = "constitutional_crisis.148.c"
+		add_country_modifier = {
+			name = "pm_hastings"
+			duration = 2700
+		}
+		change_mil = 1
+	}
+}
+
+# Tory prime minister selection
+country_event = {
+	id = constitutional_crisis.149
+	title = "constitutional_crisis.149t"
+	desc = "constitutional_crisis.149d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	# Spencer Perceval (ADM)
+		name = "constitutional_crisis.149.a"
+		trigger = {
+			NOT = { has_country_flag = perceval_died }
+		}
+		add_country_modifier = {
+			name = "pm_perceval"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {	# Robert Jenkinson, 2nd Earl of Liverpool (ADM)
+		name = "constitutional_crisis.149.b"
+		trigger = {
+			has_country_flag = perceval_died
+		}
+		add_country_modifier = {
+			name = "pm_liverpool"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {	# William Pitt the Younger (DIP)
+		name = "constitutional_crisis.149.c"
+		trigger = {
+			NOT = { has_country_flag = pitt2_died }
+		}
+		add_country_modifier = {
+			name = "pm_pitt2"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# Lord Castlereagh (DIP)
+		name = "constitutional_crisis.149.d"
+		trigger = {
+			has_country_flag = pitt2_died
+			NOT = {
+				has_country_flag = castlereagh_died
+			}
+		}
+		add_country_modifier = {
+			name = "pm_castlereagh"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# George Canning (DIP)
+		name = "constitutional_crisis.149.e"
+		trigger = {
+			has_country_flag = castlereagh_died
+			NOT = {
+				has_country_flag = canning_died
+			}
+		}
+		add_country_modifier = {
+			name = "pm_canning"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# Arthur Wellesley, 1st Duke of Wellington (MIL)
+		name = "constitutional_crisis.149.f"
+		add_country_modifier = {
+			name = "pm_wellington"
+			duration = 2700
+		}
+		change_mil = 1
+	}
+}

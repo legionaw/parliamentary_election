@@ -1,0 +1,52 @@
+rotten_borough_reform = {
+#Reform to clear rotten boroughs
+
+	category = 4
+
+	allow = {
+		any_owned_province = {
+			has_province_modifier = rotten_borough
+		}
+	}
+
+	on_issue_taken = {
+		every_owned_province = {
+			limit = {
+				has_seat_in_parliament = yes
+				OR = {
+					has_province_modifier = lgModifiers_MPsTory
+					has_province_modifier = lgModifiers_MPsTory2
+					has_province_modifier = lgModifiers_MPsFriends
+				}
+			}
+			back_current_issue = no
+		}
+	}
+	
+	effect = {
+		add_stability = 1
+		every_owned_province = {
+			limit = { has_province_modifier = rotten_borough }
+			remove_province_modifier = rotten_borough
+		}
+	}
+	
+	modifier = {
+		legitimacy = 1
+		republican_tradition = 0.5
+	}
+
+	chance = {
+		factor = 1000 #Always available if needed.
+	}
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			any_owned_province = {
+				has_province_modifier = rotten_borough
+			}
+		}
+	}
+}

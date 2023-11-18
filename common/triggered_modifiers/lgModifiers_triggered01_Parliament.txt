@@ -1,0 +1,20 @@
+lgModifiers_Triggered_NoDebate = {
+	potential = {
+		has_active_debate = no
+		has_country_flag = lgFlags_GloriousRevolution
+		NOT = {
+			# has_country_flag = lgFlags_1688Supply
+			has_country_modifier = lgModifiers_SupplyTimer
+		}
+	}
+	trigger = {
+		has_active_debate = no
+		has_country_flag = lgFlags_GloriousRevolution
+		NOT = {
+			# has_country_flag = lgFlags_1688Supply
+			has_country_modifier = lgModifiers_SupplyTimer
+		}
+	}
+	global_tax_modifier = -1
+	global_tariffs = -1
+}

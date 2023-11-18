@@ -1,0 +1,559 @@
+################################################################################
+# Parliamentary Confidence Vote - Tory (1784-1834)
+################################################################################
+
+namespace = confidence_vote
+
+# Parliamentary Confidence Vote - Tory (1784-1834)
+country_event = {
+	id = confidence_vote.4001
+	title = "confidence_vote.4001t"
+	desc = "confidence_vote.4001d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	trigger = {
+		is_year = 1784
+		NOT = { is_year = 1834 }
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_ToryMinistry2
+		lgTriggers_ParliamentaryGovernment = yes
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 500
+		modifier = {
+			factor = 0.66
+			advisor = statesman
+		}
+	}
+	
+	option = {	# Possible outcomes of this vote
+		name = "confidence_vote.4001.a"
+		random_list = {
+			33 = { country_event = { id = confidence_vote.4002 days = 1 } }
+			33 = { country_event = { id = confidence_vote.4003 days = 1 } }
+			33 = { country_event = { id = confidence_vote.4004 days = 1 } }
+		}
+	}
+}
+
+# Parliamentary Confidence Vote - Tory lost and is replaced by Whigs at the head of government (1784-1834)
+country_event = {
+	id = confidence_vote.4002
+	title = "confidence_vote.4002t"
+	desc = "confidence_vote.4002d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		lgTriggers_ConfidenceVote1784 = yes
+		lgTriggers_ParliamentaryGovernment = yes
+		has_country_modifier = lgModifiers_ToryMinistry2
+	}
+	
+	option = {	# Who dared to change my ministers!
+		name = "confidence_vote.4002.a"
+		remove_country_modifier = lgModifiers_ToryMinistry2
+		if = {
+			limit = {
+				has_country_modifier = pm_perceval
+			}
+			remove_country_modifier = pm_perceval
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_liverpool
+			}
+			remove_country_modifier = pm_liverpool
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_pitt2
+			}
+			remove_country_modifier = pm_pitt2
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_castlereagh
+			}
+			remove_country_modifier = pm_castlereagh
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_canning
+			}
+			remove_country_modifier = pm_canning
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_wellington
+			}
+			remove_country_modifier = pm_wellington
+			change_mil = -1
+		}
+		add_country_modifier = {
+			name = "lgModifiers_WhigMinistry2"
+			duration = 2555
+		}
+		add_stability = -1
+		country_event = { id = confidence_vote.140 days = 1 } #Prime Minister selection event
+	}
+}
+
+# Parliamentary Confidence Vote - Tory lost and Parliament is dissolved for early election (1784-1834)
+country_event = {
+	id = confidence_vote.4003
+	title = "confidence_vote.4003t"
+	desc = "confidence_vote.4003d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		lgTriggers_ConfidenceVote1784 = yes
+		lgTriggers_ParliamentaryGovernment = yes
+		has_country_modifier = lgModifiers_ToryMinistry2
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	option = { # I hope this election will return my ministers
+		name = "confidence_vote.4003.a"
+		remove_country_modifier = lgModifiers_ToryMinistry2
+		if = {
+			limit = {
+				has_country_modifier = pm_perceval
+			}
+			remove_country_modifier = pm_perceval
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_liverpool
+			}
+			remove_country_modifier = pm_liverpool
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_pitt2
+			}
+			remove_country_modifier = pm_pitt2
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_castlereagh
+			}
+			remove_country_modifier = pm_castlereagh
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_canning
+			}
+			remove_country_modifier = pm_canning
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_wellington
+			}
+			remove_country_modifier = pm_wellington
+			change_mil = -1
+		}
+		remove_country_modifier = lgModifiers_electionTimer
+		add_stability = -1
+	}
+}
+
+# Parliamentary Confidence Vote - Tory won (1784-1834)
+country_event = {
+	id = confidence_vote.4004
+	title = "confidence_vote.4004t"
+	desc = "confidence_vote.4004d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	option = { # The King is pleased
+		name = "confidence_vote.4004.a"
+		add_stability = 1
+	}
+}
+
+################################################################################
+# Parliamentary Confidence Vote - Whig (1784-1834)
+################################################################################
+
+# Parliamentary Confidence Vote - Whig (1784-1834)
+country_event = {
+	id = confidence_vote.4005
+	title = "confidence_vote.4005t"
+	desc = "confidence_vote.4005d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	trigger = {
+		is_year = 1784
+		NOT = { is_year = 1834 }
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_WhigMinistry2
+		lgTriggers_ParliamentaryGovernment = yes
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 500
+		modifier = {
+			factor = 0.66
+			advisor = statesman
+		}
+	}
+	
+	option = {	# Possible outcomes of this vote
+		name = "confidence_vote.4005.a"
+		random_list = {
+			33 = { country_event = { id = confidence_vote.4006 days = 1 } }
+			33 = { country_event = { id = confidence_vote.4007 days = 1 } }
+			33 = { country_event = { id = confidence_vote.4008 days = 1 } }
+		}
+	}
+}
+
+# Parliamentary Confidence Vote - Whig lost and is replaced by Tories at the head of government (1784-1834)
+country_event = {
+	id = confidence_vote.4006
+	title = "confidence_vote.4006t"
+	desc = "confidence_vote.4006d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		lgTriggers_ConfidenceVote1784 = yes
+		lgTriggers_ParliamentaryGovernment = yes
+		has_country_modifier = lgModifiers_WhigMinistry2
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	option = {	# Who dared to change my ministers!
+		name = "confidence_vote.4006.a"
+		remove_country_modifier = lgModifiers_WhigMinistry2
+		if = {
+			limit = {
+				has_country_modifier = pm_grenville2
+			}
+			remove_country_modifier = pm_grenville2
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_fox
+			}
+			remove_country_modifier = pm_fox
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_hastings
+			}
+			remove_country_modifier = pm_hastings
+			change_mil = -1
+		}
+		add_country_modifier = {
+			name = "lgModifiers_ToryMinistry2"
+			duration = 2555
+		}
+		add_stability = -1
+		country_event = { id = confidence_vote.141 days = 1 } #Prime Minister selection event
+	}
+}
+
+# Parliamentary Confidence Vote - Whigs lost and Parliament is dissolved for early election (1784-1834)
+country_event = {
+	id = confidence_vote.4007
+	title = "confidence_vote.4007t"
+	desc = "confidence_vote.4007d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		lgTriggers_ConfidenceVote1784 = yes
+		lgTriggers_ParliamentaryGovernment = yes
+		has_country_modifier = lgModifiers_WhigMinistry2
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	option = { # I hope this election will return my ministers
+		name = "confidence_vote.4007.a"
+		remove_country_modifier = lgModifiers_WhigMinistry2
+		if = {
+			limit = {
+				has_country_modifier = pm_grenville2
+			}
+			remove_country_modifier = pm_grenville2
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_fox
+			}
+			remove_country_modifier = pm_fox
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_hastings
+			}
+			remove_country_modifier = pm_hastings
+			change_mil = -1
+		}
+		remove_country_modifier = lgModifiers_electionTimer
+		add_stability = -1
+	}
+}
+
+# Parliamentary Confidence Vote - Whig won (1784-1834)
+country_event = {
+	id = confidence_vote.4008
+	title = "confidence_vote.4008t"
+	desc = "confidence_vote.4008d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	option = { # The King is pleased
+		name = "confidence_vote.4008.a"
+		add_stability = 1
+	}
+}
+
+##############################################
+# British prime minister selection 1761-1784 #
+##############################################	
+# Whig prime minister selection
+country_event = {
+	id = confidence_vote.140
+	title = "confidence_vote.140t"
+	desc = "confidence_vote.140d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	# William Grenville, 1st Baron Grenville (ADM)
+		name = "confidence_vote.140.a"
+		add_country_modifier = {
+			name = "pm_grenville2"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {	# Charles James Fox (DIP)
+		name = "confidence_vote.140.b"
+#		trigger = {
+#			NOT = { has_country_flag = fox_died }
+#		}
+		add_country_modifier = {
+			name = "pm_fox"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# Francis Rawdon-Hastings, 1st Marquess of Hastings (MIL)
+		name = "confidence_vote.140.c"
+		add_country_modifier = {
+			name = "pm_hastings"
+			duration = 2700
+		}
+		change_mil = 1
+	}
+}
+
+# Tory prime minister selection
+country_event = {
+	id = confidence_vote.141
+	title = "confidence_vote.141t"
+	desc = "confidence_vote.141d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	# Spencer Perceval (ADM)
+		name = "confidence_vote.141.a"
+		trigger = {
+			NOT = { has_country_flag = perceval_died }
+		}
+		add_country_modifier = {
+			name = "pm_perceval"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {	# Robert Jenkinson, 2nd Earl of Liverpool (ADM)
+		name = "confidence_vote.141.b"
+		trigger = {
+#			NOT = {
+#				has_country_flag = liverpool_retired
+#			}
+		}
+		add_country_modifier = {
+			name = "pm_liverpool"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {	# William Pitt the Younger (DIP)
+		name = "confidence_vote.141.c"
+		trigger = {
+			NOT = { has_country_flag = pitt2_died }
+		}
+		add_country_modifier = {
+			name = "pm_pitt2"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# Lord Castlereagh (DIP)
+		name = "confidence_vote.141.d"
+		trigger = {
+			has_country_flag = pitt2_died
+			NOT = {
+				has_country_flag = castlereagh_died
+			}
+		}
+		add_country_modifier = {
+			name = "pm_castlereagh"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# George Canning (DIP)
+		name = "confidence_vote.141.e"
+		trigger = {
+			has_country_flag = castlereagh_died
+			NOT = {
+				has_country_flag = canning_died
+			}
+		}
+		add_country_modifier = {
+			name = "pm_canning"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# Arthur Wellesley, 1st Duke of Wellington (MIL)
+		name = "confidence_vote.141.f"
+		trigger = {
+#			NOT = {
+#				has_country_flag = wellington_retired
+#			}
+		}
+		add_country_modifier = {
+			name = "pm_wellington"
+			duration = 2700
+		}
+		change_mil = 1
+	}
+}

@@ -1,0 +1,63 @@
+################################
+#Prime Ministers - Whigs
+################################
+
+# George Grenville
+pm_grenville = {
+	adm_tech_cost_modifier = -0.05
+	dip_tech_cost_modifier = 0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# Lord Rockingham
+pm_rockingham = {
+	adm_tech_cost_modifier = 0.05
+	dip_tech_cost_modifier = -0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# Lord Shelburne
+pm_shelburne = {
+	adm_tech_cost_modifier = 0.05
+	dip_tech_cost_modifier = -0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# Duke of Portland (later a Tory)
+pm_portland = {
+	adm_tech_cost_modifier = 0.05
+	dip_tech_cost_modifier = -0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# The Duke of Grafton
+pm_grafton = {
+	adm_tech_cost_modifier = 0.05
+	dip_tech_cost_modifier = 0.05
+	mil_tech_cost_modifier = -0.05
+}
+
+################################
+#Prime Ministers - King's Friend
+################################
+
+# Lord North
+pm_lordnorth = {
+	adm_tech_cost_modifier = -0.05
+	dip_tech_cost_modifier = 0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# Lord Bute
+pm_bute = {
+	adm_tech_cost_modifier = 0.05
+	dip_tech_cost_modifier = -0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# Lord Sandwich
+pm_sandwich = {
+	adm_tech_cost_modifier = 0.05
+	dip_tech_cost_modifier = 0.05
+	mil_tech_cost_modifier = -0.05
+}

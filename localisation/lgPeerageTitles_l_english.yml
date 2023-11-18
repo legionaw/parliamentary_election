@@ -1,0 +1,59 @@
+﻿l_english:
+# DIGNITIES HISTORICALLY HELD BY PRIME MINISTERS
+# Dukes
+ duke_devonshire: "Duke of Devonshire"
+ duke_grafton: "Duke of Grafton"
+ duke_newcastle: "Duke of Newcastle"
+ duke_portland: "Duke of Portland"
+ desc_duke_portland: "Duke of Portland"
+ duke_wellington: "Duke of Wellington"
+# Marquesses
+ marquess_rockingham: "Marquess of Rockingham"
+ marquess_salisbury: "Marquess of Salisbury"
+# Earls
+ earl_aberdeen: "Earl of Aberdeen"
+ earl_baldwin: "Earl Baldwin of Bewdley"
+ earl_balfour: "Earl of Balfour"
+ earl_beaconsfield: "Earl of Beaconsfield"
+ earl_bute: "Earl of Bute"
+ earl_chatham: "Earl of Chatham"
+ earl_derby: "Earl of Derby"
+ earl_grey: "Earl Grey"
+ earl_guilford: "Earl of Guilford"
+ earl_liverpool: "Earl of Liverpool" # Created on 1796 in Great Britain
+ desc_earl_liverpool: "Earl of Liverpool"
+ earl_lloyd-george: "Earl Lloyd of Dwyfor"
+ earl_oxford_and_asquith: "Earl of Oxford and Asquith"
+ earl_rosebery: "Earl of Rosebery"
+ earl_russell: "Earl Russell"
+ earl_shelburne: "Earl Shelburne"
+ earl_wilmington: "Earl of Wilmington"
+# Viscounts
+ viscount_castlereagh: "Viscount Castlereagh"
+ viscount_goedrich: "Viscount Goedrich"
+ viscount_melbourne: "Viscount Melbourne"
+ viscount_palmerston: "Viscount Palmerston"
+ viscount_sidmouth: "Viscount Sidmouth"
+# Barons
+ baron_grenville: "Baron Grenville"
+# PEERAGES
+# Dukes
+ duke_gordon: "Duke of Gordon"
+# Marquesses
+ marquess_camden: "Marquess Camden"
+ desc_marquess_camden: "Marquess Camden"
+ marquess_exeter: "Marquess of Exeter" # Created on 4 February 1801 in the United Kingdom
+ desc_marquess_exeter: "Marquess of Exeter"
+# Earls
+ earl_bathurst: "Earl Bathurst"
+ earl_buckinghamshire: "Earl of Buckinghamshire"
+ earl_chichester: "Earl of Chichester"
+ earl_eldon: "Earl of Eldon"
+ earl_harrowby: "Earl of Harrowby"
+ earl_mornington: "Earl of Mornington"
+ earl_mulgrave: "Earl of Mulgrave"
+ earl_westmorland: "Earl of Westmorland"
+# Viscounts
+ viscount_melville: "Viscount Melville"
+# Barons
+ baron_bexley: "Baron Bexley"

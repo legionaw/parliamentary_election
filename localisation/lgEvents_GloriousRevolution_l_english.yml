@@ -1,0 +1,11 @@
+﻿l_english:
+ ENG_glorious_revolution.0001t: "The Glorious Revolution of $YEAR$"
+ ENG_glorious_revolution.0001d: "With foreign help, the [Root.GetAdjectiveCap] Parliament has finally won its centuries-old struggle with the monarchy and forced $MONARCH$ to accept the constitutional limitations on the sovereign's powers. Thus the monarchs could no longer hope to exercise its powers without restraints ever again. The Kingdom of $COUNTRY$ will now henceforth be governed as a parliamentary constitutional monarchy."
+ ENG_glorious_revolution.0001.a: "I am not sure if this is a good thing or not."
+ 
+ ENG_glorious_revolution.0002t: "The Glorious Revolution in England"
+ ENG_glorious_revolution.0002d: "With our help, the English finally overthrew the old order and forced the monarchy to submit to their parliament. For this part, they are extremely grateful for our assistance rendered to them."
+ ENG_glorious_revolution.0002.a: "Great!"
+ ENG_glorious_revolution.0002.b: "Great!"
+ 
+ lgOpinionModifiers_Revolution: "Dutch help in Glorious Revolution"

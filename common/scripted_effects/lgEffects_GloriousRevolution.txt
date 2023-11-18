@@ -1,0 +1,154 @@
+lgGR_setup = {
+	set_country_flag = glorious_revolution
+	add_country_modifier = { 
+		name = "LgModifiers_ParliamentaryMonarchy" duration = -1
+	}
+	every_owned_province = {
+		limit = {
+			has_seat_in_parliament = yes
+			NOT = { has_province_modifier = lgModifiers_MPsWhig }
+			NOT = { has_province_modifier = lgModifiers_MPsTory }
+		}
+		random_list = {
+			50 = { add_province_modifier = { name = "lgModifiers_MPsWhig" duration = -1 } }
+			50 = { add_province_modifier = { name = "lgModifiers_MPsTory" duration = -1 } }
+		}
+	}
+	if = {
+		limit = {
+			NOT = { 
+				has_reform = constitutional_monarchy
+			}
+		}
+		add_government_reform = british_monarchy
+	}
+}
+
+lg_ProtestantRevolution = {
+	if = {
+		limit = {
+			religion = catholic
+			#is_religion_enabled = anglican
+			num_of_religion = {
+				religion = anglican
+				value = 0.75
+			}
+		}
+		change_religion = anglican
+	}
+	if = {
+		limit = {
+			religion = catholic
+			num_of_religion = {
+				religion = protestant
+				value = 0.75
+			}
+		}
+		change_religion = protestant
+	}
+}
+
+lg_JacobiteRebellionSetup = {
+	hidden_effect = {
+		random_province = {
+			limit = {
+				owner = {
+					OR = {
+						lgTriggers_parliamentBritish = yes
+						lgTriggers_parliamentIrish = yes
+					}	
+				}
+				region = british_isles_region
+				OR = {
+					area = munster_area
+					area = connacht_area
+					area = leinster_area
+					area = ulster_area
+				}
+				OR = {
+					AND = {
+						NOT = { units_in_province = 1 }
+						is_capital = no
+					}
+					AND = {
+						NOT = {
+							root = {
+								any_owned_province = {
+									region = british_isles_region
+									OR = {
+										area = munster_area
+										area = connacht_area
+										area = leinster_area
+										area = ulster_area
+									}
+									NOT = { units_in_province = 1 }
+									is_capital = no
+								}
+							}
+						}
+					}
+					AND = {
+						NOT = {
+							IRE = {
+								is_subject_of = ROOT
+								any_owned_province = {
+									region = british_isles_region
+									OR = {
+										area = munster_area
+										area = connacht_area
+										area = leinster_area
+										area = ulster_area
+									}
+									NOT = { units_in_province = 1 }
+									is_capital = no
+								}
+							}
+						}
+					}
+				}
+			}
+			set_province_flag = ENG_gr_spawn_rebels_here
+		}
+		if = {
+			limit = {
+				num_of_cities = 30
+			}
+			random_province = {
+				limit = {
+					NOT = { has_province_flag = ENG_gr_spawn_rebels_here }
+					region = british_isles_region
+					OR = {
+						area = munster_area
+						area = connacht_area
+						area = leinster_area
+						area = ulster_area
+					}
+					OR = {
+						AND = {
+							NOT = { units_in_province = 1 }
+							is_capital = no
+						}
+						AND = {
+							NOT = {
+								root = {
+									any_owned_province = {
+										region = british_isles_region
+										OR = {
+											area = munster_area
+											area = connacht_area
+											area = leinster_area
+											area = ulster_area
+										}
+										NOT = { units_in_province = 1 }
+										is_capital = no
+									}
+								}
+							}
+						}
+					}
+				}
+				set_province_flag = ENG_gr_spawn_more_rebels_here
+			}
+		}
+	}
+}

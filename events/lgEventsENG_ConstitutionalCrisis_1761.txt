@@ -1,0 +1,337 @@
+################################################################################
+# Constitutional Crisis between the monarch and Friend ministers (1761-1784)	 #
+################################################################################
+
+namespace = constitutional_crisis
+
+# Constitutional Crisis between the monarch and Friend ministers (1761-1784)
+country_event = {
+	id = constitutional_crisis.0035
+	title = "constitutional_crisis.0035t"
+	desc = "constitutional_crisis.0035d"
+	picture = LIBERUM_VETO_eventPicture
+	
+	trigger = {
+		is_year = 1761
+		NOT = { is_year = 1784 }
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_FriendsMinistry
+		lgTriggers_ParliamentaryGovernment = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 250
+		modifier = {
+			factor = 0.66
+			advisor = statesman
+		}
+		modifier = {
+			factor = 0.95
+			is_year = 1765
+		}
+		modifier = {
+			factor = 0.95
+			is_year = 1783
+		}
+	}
+	
+	option = {	# The monarch dismisses King's Friend ministry and appoints Whig ministry in its stead.
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.0035.a"
+		remove_country_modifier = lgModifiers_FriendsMinistry
+		if = {
+			limit = {
+				has_country_modifier = pm_lordnorth
+			}
+			remove_country_modifier = pm_lordnorth
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_bute
+			}
+			remove_country_modifier = pm_bute
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_sandwich
+			}
+			remove_country_modifier = pm_sandwich
+			change_mil = -1
+		}
+		add_country_modifier = {
+			name = "lgModifiers_WhigMinistry"
+			duration = 2555
+		}
+		add_stability = -1
+		country_event = { id = constitutional_crisis.146 days = 1 } #Prime Minister selection event
+	}
+	
+	option = { # The monarch dismisses King's Friend ministry and dissolved parliament to force an early election, hopefully in favor of Whig ministry.
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.0035.b"
+		custom_tooltip = lgEvents_Parliamentary_DemiseCrown.0001.a.tt
+		remove_country_modifier = lgModifiers_FriendsMinistry
+		if = {
+			limit = {
+				has_country_modifier = pm_lordnorth
+			}
+			remove_country_modifier = pm_lordnorth
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_bute
+			}
+			remove_country_modifier = pm_bute
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_sandwich
+			}
+			remove_country_modifier = pm_sandwich
+			change_mil = -1
+		}
+		remove_country_modifier = lgModifiers_electionTimer
+		add_stability = -1
+		add_prestige = 15
+	}
+	
+	option = { # The monarch decides to retain ministers in office
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.0035.c"
+		add_stability = 1
+		add_prestige = -15
+	}
+}
+
+########################################
+# Constitutional Crisis between the monarch and Whig ministers (1761-1784)
+########################################
+
+# Constitutional Crisis between the monarch and Whig ministers (1761-1784)
+country_event = {
+	id = constitutional_crisis.0036
+	title = "constitutional_crisis.0036t"
+	desc = "constitutional_crisis.0036d"
+	picture = LIBERUM_VETO_eventPicture
+	
+	trigger = {
+		is_year = 1761
+		NOT = { is_year = 1784 }
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_WhigMinistry
+		lgTriggers_ParliamentaryGovernment = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 125
+		modifier = {
+			factor = 0.66
+			advisor = statesman
+		}
+		modifier = {
+			factor = 0.95
+			is_year = 1765
+		}
+		modifier = {
+			factor = 0.95
+			is_year = 1783
+		}
+	}
+	
+	option = {	# The monarch dismisses Whig ministry and appoints King's Friend ministry in its stead.
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.0036.a"
+		remove_country_modifier = lgModifiers_WhigMinistry
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = pm_grenville
+					has_country_modifier = pm_devonshire
+				}
+			}
+			remove_country_modifier = pm_grenville
+			remove_country_modifier = pm_devonshire
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = pm_rockingham
+					has_country_modifier = pm_shelburne
+					has_country_modifier = pm_newcastle
+				}
+			}
+			remove_country_modifier = pm_rockingham
+			remove_country_modifier = pm_shelburne
+			remove_country_modifier = pm_newcastle
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = pm_grafton
+					has_country_modifier = pm_pitt1
+				}
+			}
+			remove_country_modifier = pm_grafton
+			remove_country_modifier = pm_pitt1
+			change_mil = -1
+		}
+		add_country_modifier = {
+			name = "lgModifiers_FriendsMinistry"
+			duration = 2555
+		}
+		add_stability = -1
+		country_event = { id = constitutional_crisis.147 days = 1 } #Prime Minister selection event
+	}
+	
+	option = { # The monarch dismisses Whig ministry and dissolved parliament to force an early election, hopefully in favor of Tory ministry.
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.0036.b"
+		custom_tooltip = lgEvents_Parliamentary_DemiseCrown.0001.a.tt
+		remove_country_modifier = lgModifiers_WhigMinistry
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = pm_grenville
+					has_country_modifier = pm_devonshire
+				}
+			}
+			remove_country_modifier = pm_grenville
+			remove_country_modifier = pm_devonshire
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = pm_rockingham
+					has_country_modifier = pm_shelburne
+					has_country_modifier = pm_newcastle
+				}
+			}
+			remove_country_modifier = pm_rockingham
+			remove_country_modifier = pm_shelburne
+			remove_country_modifier = pm_newcastle
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = pm_grafton
+					has_country_modifier = pm_pitt1
+				}
+			}
+			remove_country_modifier = pm_grafton
+			remove_country_modifier = pm_pitt1
+			change_mil = -1
+		}
+		remove_country_modifier = lgModifiers_electionTimer
+		add_stability = -1
+		add_prestige = 15
+	}
+	
+	option = { # The monarch decides to retain ministers in office
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.0036.c"
+		add_stability = 1
+		add_prestige = -15
+	}
+}
+
+##############################################
+# British prime minister selection 1761-1784 #
+##############################################	
+# Whig prime minister selection
+country_event = {
+	id = constitutional_crisis.146
+	title = "constitutional_crisis.146t"
+	desc = "constitutional_crisis.146d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	# George Grenville (ADM)
+		name = "constitutional_crisis.146.a"
+		add_country_modifier = {
+			name = "pm_grenville"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {	# Charles Watson-Wentworth, 2nd Marquess of Rockingham (DIP)
+		name = "constitutional_crisis.146.b"
+		trigger = {
+			NOT = {
+				has_country_flag = rockingham_died
+			}
+		}
+		add_country_modifier = {
+			name = "pm_rockingham"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# William Petty, 2nd Earl of Shelburne (DIP)
+		name = "constitutional_crisis.146.c"
+		trigger = {
+			has_country_flag = rockingham_died
+		}
+		add_country_modifier = {
+			name = "pm_shelburne"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# Augustus FitzRoy, 3rd Duke of Grafton (MIL)
+		name = "constitutional_crisis.146.d"
+		add_country_modifier = {
+			name = "pm_grafton"
+			duration = 2700
+		}
+		change_mil = 1
+	}
+}
+
+# King's Friend prime minister selection
+country_event = {
+	id = constitutional_crisis.147
+	title = "constitutional_crisis.147t"
+	desc = "constitutional_crisis.147d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	# Frederick North, Lord North (ADM)
+		name = "constitutional_crisis.147.a"
+		add_country_modifier = {
+			name = "pm_lordnorth"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {	# John Stuart, 3rd Earl of Bute (DIP)
+		name = "constitutional_crisis.147.b"
+		add_country_modifier = {
+			name = "pm_bute"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# John Montagu, 4th Earl of Sandwich (MIL)
+		name = "constitutional_crisis.147.c"
+		add_country_modifier = {
+			name = "pm_sandwich"
+			duration = 2700
+		}
+		change_mil = 1
+	}
+}

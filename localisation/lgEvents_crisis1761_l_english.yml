@@ -1,0 +1,25 @@
+﻿l_english:
+ constitutional_crisis.0035t: "Conflicts between $MONARCH$ and $MONARCHTITLE$'s Friends ministers"
+ constitutional_crisis.0035d: "A sharp disagreement over certain issues confronting the kingdom has strained relations between $MONARCH$ and $MONARCHTITLE$'s Friends ministers. The $MONARCHTITLE$ could settle this by dismissing $MONARCHTITLE$'s Friends ministers and call an early election but such actions will have some consequences."
+ constitutional_crisis.0035.a: "Dismiss $MONARCHTITLE$'s Friends and appoint Whigs to replace them."
+ constitutional_crisis.0035.b: "Dismiss $MONARCHTITLE$'s Friends and dissolve the parliament."
+ constitutional_crisis.0035.c: "Retain $MONARCHTITLE$'s Friends ministers in office."
+ 
+ constitutional_crisis.0036t: "Conflicts between $MONARCH$ and Whig ministers"
+ constitutional_crisis.0036d: "$MONARCH$ has become exasperated with Whig ministers over certain issues confronting the kingdom. The $MONARCHTITLE$ could settle this by dismissing Whig ministers and call an early election but such actions will have some consequences."
+ constitutional_crisis.0036.a: "Dismiss Whigs from office and appoint $MONARCHTITLE$'s Friends to replace them."
+ constitutional_crisis.0036.b: "Dismiss Whigs from office and dissolve the parliament."
+ constitutional_crisis.0036.c: "Retain Whig ministers in office."
+ 
+ constitutional_crisis.146t: "Whig Prime Minister"
+ constitutional_crisis.146d: "Now that an incumbent ministry has been dismissed in favor of Whigs, the $MONARCHTITLE$ will need to appoint a Prime Minister."
+ constitutional_crisis.146.a: "George Grenville (Administration)"
+ constitutional_crisis.146.b: "The Marquess of Rockingham (Diplomatic)"
+ constitutional_crisis.146.c: "The Earl of Shelburne (Diplomatic)"
+ constitutional_crisis.146.d: "The Duke of Grafton (Military)"
+ 
+ constitutional_crisis.147t: "$MONARCHTITLE$'s Friends Prime Minister"
+ constitutional_crisis.147d: "Now that an incumbent ministry has been dismissed in favor of $MONARCHTITLE$'s Friends, the $MONARCHTITLE$ will need to appoint a Prime Minister."
+ constitutional_crisis.147.a: "Lord North (Administration)"
+ constitutional_crisis.147.b: "Lord Bute (Diplomatic)"
+ constitutional_crisis.147.c: "Lord Sandwich (Military)"

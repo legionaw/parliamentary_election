@@ -1,0 +1,50 @@
+PrimeMinister1784 = {
+	hidden_effect = {
+		if = {
+			limit = {
+				has_country_modifier = pm_grenville
+				has_country_modifier = pm_lordnorth
+				has_country_modifier = pm_perceval
+				has_country_modifier = pm_liverpool
+				has_country_modifier = pm_grenville2
+				NOT = { has_country_flag = lgFlags_DemiseCrown }
+			}
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_bute
+				has_country_modifier = pm_shelburne
+				has_country_modifier = pm_fox
+				has_country_modifier = pm_pitt2
+				has_country_modifier = pm_castlereagh
+				NOT = { has_country_flag = lgFlags_DemiseCrown }
+			}
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_sandwich
+				has_country_modifier = pm_grafton
+				has_country_modifier = pm_hastings
+				has_country_modifier = pm_wellington
+				NOT = { has_country_flag = lgFlags_DemiseCrown }
+			}
+			change_mil = -1
+		}
+		remove_country_modifier = pm_grenville
+		remove_country_modifier = pm_lordnorth
+		remove_country_modifier = pm_perceval
+		remove_country_modifier = pm_liverpool
+		remove_country_modifier = pm_grenville2
+		remove_country_modifier = pm_bute
+		remove_country_modifier = pm_shelburne
+		remove_country_modifier = pm_fox
+		remove_country_modifier = pm_pitt2
+		remove_country_modifier = pm_castlereagh
+		remove_country_modifier = pm_sandwich
+		remove_country_modifier = pm_grafton
+		remove_country_modifier = pm_hastings
+		remove_country_modifier = pm_wellington
+	}
+}

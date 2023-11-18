@@ -1,0 +1,45 @@
+#############################################
+#	Dissolving Parliament upon Ruler's Death	#
+#############################################
+
+namespace = lgEvents_Parliamentary_DemiseCrown
+
+# Dissolving Parliament upon monarch's death
+country_event = {
+	id = lgEvents_Parliamentary_DemiseCrown.0001
+	title = "lgEvents_Parliamentary_DemiseCrown.0001t"
+	desc = "lgEvents_Parliamentary_DemiseCrown.0001d"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		#has_country_flag = lgFlags_GloriousRevolution
+		#is_year = 1688
+#		NOT = {
+#			has_country_flag = reform_act_1867
+#		}
+		NOT = {
+			has_country_modifier = lgModifiers_electionRecentlyHeld
+		}
+		lgTriggers_ParliamentaryGovernment = yes
+		lgTriggers_parliamentBritish = yes
+		has_country_modifier = lgModifiers_electionTimer
+		NOT = {
+			has_country_flag = lgFlag_ElectionInProgress
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			remove_country_modifier = lgModifiers_electionTimer
+		}
+		set_country_flag = lgFlags_DemiseCrown
+	}
+	
+	option = {  # OK
+		name = "lgEvents_Parliamentary_DemiseCrown.0001.a"
+		# custom_tooltip = lgEvents_Parliamentary_DemiseCrown.0001.a.tt
+		custom_tooltip = parliament_dissolution_tooltip
+	}
+}

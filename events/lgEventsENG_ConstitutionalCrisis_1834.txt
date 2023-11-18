@@ -1,0 +1,304 @@
+####################################################################################
+# Constitutional Crisis between the monarch and Conservative ministers (1834-1859) #
+####################################################################################
+
+namespace = constitutional_crisis
+
+# Constitutional Crisis between the monarch and Conservative ministers (1834-1859)
+country_event = {
+	id = constitutional_crisis.0039
+	title = "constitutional_crisis.0039t"
+	desc = "constitutional_crisis.0039d"
+	picture = LIBERUM_VETO_eventPicture
+	
+	trigger = {
+		is_year = 1834
+		NOT = { is_year = 1859 }
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_ConservativeMinistry
+		lgTriggers_ParliamentaryGovernment = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.66
+			advisor = statesman
+		}
+	}
+	
+	option = {	# The monarch dismisses Conservative ministry and appoints Whig ministry in its stead.
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.0039.a"
+		remove_country_modifier = lgModifiers_ConservativeMinistry
+		if = {
+			limit = {
+				has_country_modifier = pm_peel
+			}
+			remove_country_modifier = pm_peel
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_derby
+			}
+			remove_country_modifier = pm_derby
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_aberdeen
+			}
+			remove_country_modifier = pm_aberdeen
+			change_mil = -1
+		}
+		add_country_modifier = {
+			name = "lgModifiers_WhigMinistry2"
+			duration = 2555
+		}
+		add_stability = -1
+		country_event = { id = constitutional_crisis.150 days = 1 } #Prime Minister selection event
+	}
+	
+	option = { # The monarch dismisses Conservative ministry and dissolved parliament to force an early election, hopefully in favor of that ministry.
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.0039.b"
+		custom_tooltip = lgEvents_Parliamentary_DemiseCrown.0001.a.tt
+		remove_country_modifier = lgModifiers_ConservativeMinistry
+		if = {
+			limit = {
+				has_country_modifier = pm_peel
+			}
+			remove_country_modifier = pm_peel
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_derby
+			}
+			remove_country_modifier = pm_derby
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_aberdeen
+			}
+			remove_country_modifier = pm_aberdeen
+			change_mil = -1
+		}
+		remove_country_modifier = lgModifiers_electionTimer
+		add_stability = -1
+		add_prestige = 15
+	}
+	
+	option = { # The monarch decides to retain ministers in office
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.0039.c"
+		add_stability = 1
+		add_prestige = -15
+	}
+}
+
+################################################################################
+# Constitutional Crisis between the monarch and New Whig ministers (1834-1859) #
+################################################################################
+
+# Constitutional Crisis between the monarch and New Whig ministers (1834-1859)
+country_event = {
+	id = constitutional_crisis.0040
+	title = "constitutional_crisis.0040t"
+	desc = "constitutional_crisis.0040d"
+	picture = LIBERUM_VETO_eventPicture
+	
+	trigger = {
+		is_year = 1834
+		NOT = { is_year = 1859 }
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_WhigMinistry2
+		lgTriggers_ParliamentaryGovernment = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 150
+		modifier = {
+			factor = 0.66
+			advisor = statesman
+		}
+		modifier = {
+			factor = 0.95
+			is_year = 1834
+		}
+	}
+	
+	option = {	# The monarch dismisses New Whig ministry and appoints Conservative ministry in its stead.
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.0040.a"
+		remove_country_modifier = lgModifiers_WhigMinistry2
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = pm_grey
+					has_country_modifier = pm_grenville2
+				}
+			}
+			remove_country_modifier = pm_grey
+			remove_country_modifier = pm_grenville2
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = pm_melbourne
+					has_country_modifier = pm_fox
+				}
+			}
+			remove_country_modifier = pm_melbourne
+			remove_country_modifier = pm_fox
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = pm_palmerston
+					has_country_modifier = pm_hastings
+				}
+			}
+			remove_country_modifier = pm_palmerston
+			remove_country_modifier = pm_hastings
+			change_mil = -1
+		}
+		add_country_modifier = {
+			name = "lgModifiers_ConservativeMinistry"
+			duration = 2555
+		}
+		add_stability = -1
+		country_event = { id = constitutional_crisis.151 days = 1 } #Prime Minister selection event
+	}
+	
+	option = { # The monarch dismisses New Whig ministry and dissolved parliament to force an early election, hopefully in favor of Conservative ministry.
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.0040.b"
+		custom_tooltip = lgEvents_Parliamentary_DemiseCrown.0001.a.tt
+		remove_country_modifier = lgModifiers_WhigMinistry2
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = pm_grey
+					has_country_modifier = pm_grenville2
+				}
+			}
+			remove_country_modifier = pm_grey
+			remove_country_modifier = pm_grenville2
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = pm_melbourne
+					has_country_modifier = pm_fox
+				}
+			}
+			remove_country_modifier = pm_melbourne
+			remove_country_modifier = pm_fox
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = pm_palmerston
+					has_country_modifier = pm_hastings
+				}
+			}
+			remove_country_modifier = pm_palmerston
+			remove_country_modifier = pm_hastings
+			change_mil = -1
+		}
+		remove_country_modifier = lgModifiers_electionTimer
+		add_stability = -1
+		add_prestige = 15
+	}
+	
+	option = { # The monarch decides to retain ministers in office
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.0040.c"
+		add_stability = 1
+		add_prestige = -15
+	}
+}
+
+##############################################
+# British prime minister selection 1834-1859 #
+##############################################	
+# Whig prime minister selection
+country_event = {
+	id = constitutional_crisis.150
+	title = "constitutional_crisis.150t"
+	desc = "constitutional_crisis.150d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	# Charles Grey, 2nd Earl Grey (ADM)
+		name = "constitutional_crisis.150.a"
+		add_country_modifier = {
+			name = "pm_grey"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {	# William Lamb, 2nd Viscount Melbourne (DIP)
+		name = "constitutional_crisis.150.b"
+		add_country_modifier = {
+			name = "pm_melbourne"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# Henry John Temple, 3rd Viscount Palmerston (MIL)
+		name = "constitutional_crisis.150.c"
+		add_country_modifier = {
+			name = "pm_palmerston"
+			duration = 2700
+		}
+		change_mil = 1
+	}
+}
+
+# Conservative prime minister selection
+country_event = {
+	id = constitutional_crisis.151
+	title = "constitutional_crisis.151t"
+	desc = "constitutional_crisis.151d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	# Sir Robert Peel (ADM)
+		name = "constitutional_crisis.151.a"
+		add_country_modifier = {
+			name = "pm_peel"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {	# Edward Smith-Stanley, 14th Earl of Derby (DIP)
+		name = "constitutional_crisis.151.b"
+		add_country_modifier = {
+			name = "pm_derby"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# George Hamilton-Gordon, 4th Earl of Aberdeen (MIL)
+		name = "constitutional_crisis.151.c"
+		add_country_modifier = {
+			name = "pm_aberdeen"
+			duration = 2700
+		}
+		change_mil = 1
+	}
+}

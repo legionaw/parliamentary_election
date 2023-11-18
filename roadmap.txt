@@ -1,0 +1,5 @@
+TODO: Split the Whig party into factions during the period between 1763-1784: Rockinghamites, Chathamites (or Pittites), Grenville's faction, etc.
+TODO: Somehow tie the parliamentary mechanics from "Common Sense" in with the mod
+TODO: Create chain of events about bills that passes or fails to pass, with various consequences for the Crown, the Parliament, and the ministry in power.
+TODO: Allow the player to set their own preference for a political party from time to time and be able to change them, potentially affecting chances of getting events such as constitutional crisis and such.
+TODO: Create events to announce disintegration of old political parties and creation of new political parties

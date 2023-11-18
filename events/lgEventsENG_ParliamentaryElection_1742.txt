@@ -1,0 +1,501 @@
+#############################################
+# British parliamentary elections 1742-1761 #
+#############################################
+
+namespace = parliamentary_elections
+
+######################################
+#### General election (1742-1761) ####
+######################################
+
+country_event = {
+	id = parliamentary_elections.2001
+	title = "parliamentary_elections.2001t"
+	desc = "parliamentary_elections.2001d"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	trigger = {
+		lgTriggers_elections1742 = yes
+		lgTriggers_ParliamentaryGovernment = yes
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	immediate = {
+		set_country_flag = lgFlag_ElectionInProgress
+		LgEffects_electionHeld = yes
+		election1742_startup = yes
+#		hidden_effect = {
+#			remove_country_modifier = lgModifiers_WhigMinistry
+#			remove_country_modifier = lgModifiers_ToryMinistry
+#			remove_country_modifier = lgModifiers_WalpoleMinistry
+#		}
+#		add_country_modifier = { name = "lgModifiers_electionTimer" hidden=yes duration = 2555 }
+	}
+	
+	option = {  # Attempt to influence election towards Whigs
+		name = "parliamentary_elections.2001.a"
+		ai_chance = { factor = 80 }
+		election1742_contest1 = yes
+#		random_list = {
+#			55 = { country_event = { id = parliamentary_elections.2002 days = 90 } }
+#			45 = { country_event = { id = parliamentary_elections.2003 days = 90 } }
+#		}
+		tooltip = {
+			add_country_modifier = {
+				name = "lgModifiers_WhigMinistry"
+				duration = 2555
+			}
+		}
+		add_treasury = -200
+		set_country_flag = whig_1688
+	}
+	
+	option = {  # Attempt to influence election towards Tories
+		name = "parliamentary_elections.2001.b"
+		ai_chance = { factor = 10 }
+		election1742_contest2 = yes
+#		random_list = {
+#			45 = { country_event = { id = parliamentary_elections.2002 days = 90 } }
+#			55 = { country_event = { id = parliamentary_elections.2003 days = 90 } }
+#		}
+		tooltip = {
+			add_country_modifier = {
+				name = "lgModifiers_ToryMinistry"
+				duration = 2555
+			}
+		}
+		add_treasury = -200
+		set_country_flag = tory_1688
+	}
+	
+	option = {  # No attempt to influence the election towards any party
+		name = "parliamentary_elections.2001.c"
+		ai_chance = { factor = 10 }
+		election1742_contest3 = yes
+#		random_list = {
+#			50 = { country_event = { id = parliamentary_elections.2002 days = 90 } }
+#			50 = { country_event = { id = parliamentary_elections.2003 days = 90 } }
+#		}
+		set_country_flag = neutral
+	}
+}
+
+########################################
+#### NATION-WIDE COUNTING CONDUCTED ####
+########################################
+country_event = {
+	id = parliamentary_elections.2007
+	title = "parliamentary_elections.2007.t"
+	desc = "parliamentary_elections.2007.d"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+		name = "parliamentary_elections.2007.a"
+		election1742_count = yes
+	}
+}
+
+#######################################
+#### NATION-WIDE RESULTS ANNOUNCED ####
+#######################################
+# Whigs wins the general election
+country_event = {
+	id = parliamentary_elections.2002
+	title = "parliamentary_elections.2002t"
+	desc = "parliamentary_elections.2002d"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_country_modifier = pm_devonshire
+						has_country_modifier = pm_dashwood
+						has_country_modifier = pm_bolingbroke
+						has_country_modifier = pm_walpole
+						has_country_modifier = pm_bath
+					}
+					NOT = { has_country_flag = lgFlags_DemiseCrown }
+				}
+				change_adm = -1
+			}
+			if = {
+				limit = {
+					OR = {
+						has_country_modifier = pm_newcastle
+						has_country_modifier = pm_lichfield
+						has_country_modifier = pm_wyndham
+						has_country_modifier = pm_pelham
+						has_country_modifier = pm_cobham
+					}
+					NOT = { has_country_flag = lgFlags_DemiseCrown }
+				}
+				change_dip = -1
+			}
+			if = {
+				limit = {
+					OR = {
+						has_country_modifier = pm_pitt1
+						has_country_modifier = pm_abingdon
+						has_country_modifier = pm_smith
+						has_country_modifier = pm_wilmington
+						has_country_modifier = pm_fisher
+					}
+					NOT = { has_country_flag = lgFlags_DemiseCrown }
+				}
+				change_mil = -1
+			}
+			remove_country_modifier = pm_devonshire
+			remove_country_modifier = pm_newcastle
+			remove_country_modifier = pm_pitt1
+			remove_country_modifier = pm_dashwood
+			remove_country_modifier = pm_lichfield
+			remove_country_modifier = pm_abingdon
+			remove_country_modifier = pm_bolingbroke
+			remove_country_modifier = pm_wyndham
+			remove_country_modifier = pm_smith
+			remove_country_modifier = pm_walpole
+			remove_country_modifier = pm_pelham
+			remove_country_modifier = pm_wilmington
+			remove_country_modifier = pm_bath
+			remove_country_modifier = pm_cobham
+			remove_country_modifier = pm_fisher
+		}
+	}
+	
+	option = {  # Great!
+		name = "parliamentary_elections.2002.a"
+		trigger = {
+			has_country_flag = whig_1688
+		}
+		add_country_modifier = {
+			name = "lgModifiers_WhigMinistry"
+			duration = 2555
+		}
+		clr_country_flag = whig_1688
+		country_event = { id = parliamentary_elections.2005 days = 1 } #Prime Minister selection event
+	}
+	
+	option = {  # Black day!
+		name = "parliamentary_elections.2002.b"
+		trigger = {
+			has_country_flag = tory_1688
+		}
+		add_country_modifier = {
+			name = "lgModifiers_WhigMinistry"
+			duration = 2555
+		}
+		clr_country_flag = tory_1688
+		country_event = { id = parliamentary_elections.2005 days = 1 } #Prime Minister selection event
+	}
+	
+	option = {  # Ok
+		name = "parliamentary_elections.2002.c"
+		trigger = {
+			has_country_flag = neutral
+		}
+		add_country_modifier = {
+			name = "lgModifiers_WhigMinistry"
+			duration = 2555
+		}
+		clr_country_flag = neutral
+		country_event = { id = parliamentary_elections.2005 days = 1 } #Prime Minister selection event
+	}
+}
+
+# Tories wins the general election
+country_event = {
+	id = parliamentary_elections.2003
+	title = "parliamentary_elections.2003t"
+	desc = "parliamentary_elections.2003d"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_country_modifier = pm_devonshire
+						has_country_modifier = pm_dashwood
+						has_country_modifier = pm_bolingbroke
+						has_country_modifier = pm_walpole
+						has_country_modifier = pm_bath
+					}
+					NOT = { has_country_flag = lgFlags_DemiseCrown }
+				}
+				change_adm = -1
+			}
+			if = {
+				limit = {
+					OR = {
+						has_country_modifier = pm_newcastle
+						has_country_modifier = pm_lichfield
+						has_country_modifier = pm_wyndham
+						has_country_modifier = pm_pelham
+						has_country_modifier = pm_cobham
+					}
+					NOT = { has_country_flag = lgFlags_DemiseCrown }
+				}
+				change_dip = -1
+			}
+			if = {
+				limit = {
+					OR = {
+						has_country_modifier = pm_pitt1
+						has_country_modifier = pm_abingdon
+						has_country_modifier = pm_smith
+						has_country_modifier = pm_wilmington
+						has_country_modifier = pm_fisher
+					}
+					NOT = { has_country_flag = lgFlags_DemiseCrown }
+				}
+				change_mil = -1
+			}
+			remove_country_modifier = pm_devonshire
+			remove_country_modifier = pm_newcastle
+			remove_country_modifier = pm_pitt1
+			remove_country_modifier = pm_dashwood
+			remove_country_modifier = pm_lichfield
+			remove_country_modifier = pm_abingdon
+			remove_country_modifier = pm_bolingbroke
+			remove_country_modifier = pm_wyndham
+			remove_country_modifier = pm_smith
+			remove_country_modifier = pm_walpole
+			remove_country_modifier = pm_pelham
+			remove_country_modifier = pm_wilmington
+			remove_country_modifier = pm_bath
+			remove_country_modifier = pm_cobham
+			remove_country_modifier = pm_fisher
+		}
+	}
+	
+	option = {  # Great!
+		name = "parliamentary_elections.2003.a"
+		trigger = {
+			has_country_flag = tory_1688
+		}
+		add_country_modifier = {
+			name = "lgModifiers_ToryMinistry"
+			duration = 2555
+		}
+		clr_country_flag = tory_1688
+		country_event = { id = parliamentary_elections.2006 days = 1 } #Prime Minister selection event
+	}
+	
+	option = {  # Black day!
+		name = "parliamentary_elections.2003.b"
+		trigger = {
+			has_country_flag = whig_1688
+		}
+		add_country_modifier = {
+			name = "lgModifiers_ToryMinistry"
+			duration = 2555
+		}
+		clr_country_flag = whig_1688
+		country_event = { id = parliamentary_elections.2006 days = 1 } #Prime Minister selection event
+	}
+	
+	option = {  # Ok
+		name = "parliamentary_elections.2003.c"
+		trigger = {
+			has_country_flag = neutral
+		}
+		add_country_modifier = {
+			name = "lgModifiers_ToryMinistry"
+			duration = 2555
+		}
+		clr_country_flag = neutral
+		country_event = { id = parliamentary_elections.2006 days = 1 } #Prime Minister selection event
+	}
+}
+
+# No party won majority
+country_event = {
+	id = parliamentary_elections.2004
+	title = "parliamentary_elections.2004t"
+	desc = "parliamentary_elections.2004d"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		clr_country_flag = tory_1688
+		clr_country_flag = whig_1688
+		clr_country_flag = neutral
+	}
+	
+	option = {  # I appoint Tory ministry
+		name = "parliamentary_elections.2004.a"
+		add_country_modifier = {
+			name = "lgModifiers_ToryMinistry"
+			duration = 2555
+		}
+		country_event = { id = parliamentary_elections.2006 days = 1 } #Prime Minister selection event
+	}
+	
+	option = {  # I appoint Whig ministry
+		name = "parliamentary_elections.2004.b"
+		add_country_modifier = {
+			name = "lgModifiers_WhigMinistry"
+			duration = 2555
+		}
+		country_event = { id = parliamentary_elections.2005 days = 1 } #Prime Minister selection event
+	}
+}
+
+##############################################
+# British prime minister selection 1742-1761 #
+##############################################
+# Whig prime minister selection
+country_event = {
+	id = parliamentary_elections.2005
+	title = "parliamentary_elections.2005t"
+	desc = "parliamentary_elections.2005d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = lgFlags_DemiseCrown
+				}
+				clr_country_flag = lgFlags_DemiseCrown
+			}
+			if = {
+				limit = {
+					has_country_flag = lgFlag_ElectionInProgress
+				}
+				clr_country_flag = lgFlag_ElectionInProgress
+			}
+		}
+	}
+	
+	option = {  # William Cavendish, 4th Duke of Devonshire (ADM)
+		name = "parliamentary_elections.2005.a"
+		ai_chance = { factor = 33 }
+		add_country_modifier = {
+			name = "pm_devonshire"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {  # Henry Pelham (DIP)
+		name = "parliamentary_elections.2005.b"
+		ai_chance = { factor = 33 }
+		trigger = {
+			NOT = { has_country_flag = pelham_died }
+		}
+		add_country_modifier = {
+			name = "pm_pelham"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {  # Thomas Pelham-Holles, 1st Duke of Newcastle (DIP)
+		name = "parliamentary_elections.2005.c"
+		ai_chance = { factor = 33 }
+		trigger = {
+			has_country_flag = pelham_died
+		}
+		add_country_modifier = {
+			name = "pm_newcastle"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {  # The Earl of Wilmington (MIL)
+		name = "parliamentary_elections.1005.d"
+		ai_chance = { factor = 20 }
+		trigger = {
+			NOT = { has_country_flag = wilmington_died }
+		}
+		add_country_modifier = {
+			name = "pm_wilmington"
+			duration = 2700
+		}
+		change_mil = 1
+	}
+	
+	option = {  # William Pitt the Elder (MIL)
+		name = "parliamentary_elections.2005.d"
+		ai_chance = { factor = 33 }
+		trigger = {
+			has_country_flag = wilmington_died
+		}
+		add_country_modifier = {
+			name = "pm_pitt1"
+			duration = 2700
+		}
+		change_mil = 1
+	}
+}
+
+# Tory prime minister selection
+country_event = {
+	id = parliamentary_elections.2006
+	title = "parliamentary_elections.2006t"
+	desc = "parliamentary_elections.2006d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = lgFlags_DemiseCrown
+				}
+				clr_country_flag = lgFlags_DemiseCrown
+			}
+			if = {
+				limit = {
+					has_country_flag = lgFlag_ElectionInProgress
+				}
+				clr_country_flag = lgFlag_ElectionInProgress
+			}
+		}
+	}
+	
+	option = {  # Sir James Dashwood (ADM)
+		name = "parliamentary_elections.2006.a"
+		ai_chance = { factor = 33 }
+		add_country_modifier = {
+			name = "pm_dashwood"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {  # George Lee, 3rd Earl of Lichfield (DIP)
+		name = "parliamentary_elections.2006.b"
+		ai_chance = { factor = 33 }
+		add_country_modifier = {
+			name = "pm_lichfield"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {  # Willoughby Bertie, 3rd Earl of Abingdon (MIL)
+		name = "parliamentary_elections.2006.c"
+		ai_chance = { factor = 33 }
+		add_country_modifier = {
+			name = "pm_abingdon"
+			duration = 2700
+		}
+		change_mil = 1
+	}
+}

@@ -1,0 +1,504 @@
+##############################################################################################
+# Parliamentary Confidence Vote - Walpole Whigs (1721-1742) (possible replacement by Tories) #
+##############################################################################################
+
+namespace = confidence_vote
+
+# Parliamentary Confidence Vote - Walpole Whigs (1721-1742)
+country_event = {
+	id = confidence_vote.1031
+	title = "confidence_vote.1031t"
+	desc = "confidence_vote.1031d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	trigger = {
+		is_year = 1721
+		NOT = { is_year = 1742 }
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_WalpoleMinistry
+		lgTriggers_ParliamentaryGovernment = yes
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 400
+		modifier = {
+			factor = 0.66
+			advisor = statesman
+		}
+		modifier = {
+			factor = 0.95
+			is_year = 1742
+		}
+		modifier = {
+			factor = 0.33
+			has_country_modifier = pm_walpole
+			NOT = {
+				is_year = 1742
+			}
+		}
+	}
+	
+	option = {	# Possible outcomes of this vote
+		name = "confidence_vote.1031.a"
+		random_list = {
+			33 = { country_event = { id = confidence_vote.1032 days = 1 } }
+			33 = { country_event = { id = confidence_vote.1033 days = 1 } }
+			33 = { country_event = { id = confidence_vote.1034 days = 1 } }
+		}
+	}
+}
+
+# Parliamentary Confidence Vote - Walpole Whig lost and is replaced by Tories at the head of government (1721-1742)
+country_event = {
+	id = confidence_vote.1032
+	title = "confidence_vote.1032t"
+	desc = "confidence_vote.1032d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_year = 1721
+		NOT = { is_year = 1742 }
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_WalpoleMinistry
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	option = {	# Who dared to change my ministers!
+		name = "confidence_vote.1032.a"
+		remove_country_modifier = lgModifiers_WalpoleMinistry
+		if = {
+			limit = {
+				has_country_modifier = pm_walpole
+			}
+			remove_country_modifier = pm_walpole
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_pelham
+			}
+			remove_country_modifier = pm_pelham
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_wilmington
+			}
+			remove_country_modifier = pm_wilmington
+			change_mil = -1
+		}
+		add_country_modifier = {
+			name = "lgModifiers_ToryMinistry"
+			duration = 2555
+		}
+		add_stability = -1
+		country_event = { id = confidence_vote.135 days = 1 } #Prime Minister selection event
+	}
+}
+
+# Parliamentary Confidence Vote - Walpole Whigs lost and Parliament is dissolved for early election (1721-1742)
+country_event = {
+	id = confidence_vote.1033
+	title = "confidence_vote.1033t"
+	desc = "confidence_vote.1033d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_year = 1721
+		NOT = { is_year = 1742 }
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_WalpoleMinistry
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	option = { # I hope this election will return my ministers
+		name = "confidence_vote.1033.a"
+		remove_country_modifier = lgModifiers_WalpoleMinistry
+		if = {
+			limit = {
+				has_country_modifier = pm_walpole
+			}
+			remove_country_modifier = pm_walpole
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_pelham
+			}
+			remove_country_modifier = pm_pelham
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_wilmington
+			}
+			remove_country_modifier = pm_wilmington
+			change_mil = -1
+		}
+		remove_country_modifier = lgModifiers_electionTimer
+		add_stability = -1
+	}
+}
+
+# Parliamentary Confidence Vote - Walpole Whigs Won (1721-1742)
+country_event = {
+	id = confidence_vote.1034
+	title = "confidence_vote.1034t"
+	desc = "confidence_vote.1034d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	option = { # The King is pleased
+		name = "confidence_vote.1034.a"
+		add_stability = 1
+	}
+}
+
+#####################################################################################################
+# Parliamentary Confidence Vote - Walpole Whigs (1721-1742) (possible replacement by Patriot Whigs) #
+#####################################################################################################
+
+# Parliamentary Confidence Vote - Walpole Whigs (1721-1742)
+country_event = {
+	id = confidence_vote.1035
+	title = "confidence_vote.1035t"
+	desc = "confidence_vote.1035d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	trigger = {
+		is_year = 1721
+		NOT = { is_year = 1742 }
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_WalpoleMinistry
+		lgTriggers_ParliamentaryGovernment = yes
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 400
+		modifier = {
+			factor = 0.66
+			advisor = statesman
+		}
+		modifier = {
+			factor = 0.2
+			is_year = 1742
+		}
+		modifier = {
+			factor = 0.2
+			# has_country_flag = ENG_had_event_9141
+			SPA = {
+				has_opinion_modifier = {
+					who = THIS
+					modifier = eng_captain_jenkins_incident
+				}
+			}
+			has_country_modifier = pm_walpole
+			offensive_war_with = SPA
+			is_rival = SPA
+			war_exhaustion = 2
+			is_year = 1741
+			NOT = {
+				controls = 828
+			}
+			NOT = {
+				SPA = {
+					owns = 828
+				}
+			}
+		}
+	}
+	
+	option = {	# Possible outcomes of this vote
+		name = "confidence_vote.1035.a"
+#		trigger = {
+#			NOT = {
+#				has_country_flag = ENG_had_event_9141
+#				has_country_modifier = pm_walpole
+#				offensive_war_with = SPA
+#				is_rival = SPA
+#				war_exhaustion = 2
+#				is_year = 1741
+#				NOT = {
+#					controls = 828
+#					SPA = {
+#						owns = 828
+#					}
+#				}
+#			}
+#		}
+		random_list = {
+			33 = { country_event = { id = confidence_vote.1036 days = 1 } }
+			33 = { country_event = { id = confidence_vote.1037 days = 1 } }
+			33 = { country_event = { id = confidence_vote.1038 days = 1 } }
+		}
+	}
+	
+#	option = {	# Possible outcomes of this vote
+#		name = "confidence_vote.1035.b"
+#		trigger = {
+#			has_country_flag = ENG_had_event_9141
+#			offensive_war_with = SPA
+#			is_rival = SPA
+#			war_exhaustion = 2
+#			is_year = 1741
+#			NOT = {
+#				controls = 828
+#				SPA = {
+#					owns = 828
+#				}
+#			}
+#		}
+#		random_list = {
+#			80 = { country_event = { id = confidence_vote.1036 days = 1 } }
+#			10 = { country_event = { id = confidence_vote.1037 days = 1 } }
+#			10 = { country_event = { id = confidence_vote.1038 days = 1 } }
+#		}
+#	}
+}
+
+# Parliamentary Confidence Vote - Walpole Whig lost and is replaced by Patriot Whigs at the head of government (1721-1742)
+country_event = {
+	id = confidence_vote.1036
+	title = "confidence_vote.1036t"
+	desc = "confidence_vote.1036d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_year = 1721
+		NOT = { is_year = 1742 }
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_WalpoleMinistry
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	option = {	# Who dared to change my ministers!
+		name = "confidence_vote.1036.a"
+		remove_country_modifier = lgModifiers_WalpoleMinistry
+		if = {
+			limit = {
+				has_country_modifier = pm_walpole
+			}
+			remove_country_modifier = pm_walpole
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_pelham
+			}
+			remove_country_modifier = pm_pelham
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_wilmington
+			}
+			remove_country_modifier = pm_wilmington
+			change_mil = -1
+		}
+		add_country_modifier = {
+			name = "lgModifiers_WhigMinistry"
+			duration = 2555
+		}
+		add_stability = -1
+		country_event = { id = confidence_vote.134 days = 1 } #Prime Minister selection event
+	}
+}
+
+# Parliamentary Confidence Vote - Walpole Whigs lost and Parliament is dissolved for early election (1721-1742)
+country_event = {
+	id = confidence_vote.1037
+	title = "confidence_vote.1037t"
+	desc = "confidence_vote.1037d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_year = 1721
+		NOT = { is_year = 1742 }
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_WalpoleMinistry
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	option = { # I hope this election will return my ministers
+		name = "confidence_vote.1037.a"
+		remove_country_modifier = lgModifiers_WalpoleMinistry
+		if = {
+			limit = {
+				has_country_modifier = pm_walpole
+			}
+			remove_country_modifier = pm_walpole
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_pelham
+			}
+			remove_country_modifier = pm_pelham
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_wilmington
+			}
+			remove_country_modifier = pm_wilmington
+			change_mil = -1
+		}
+		remove_country_modifier = lgModifiers_electionTimer
+		add_stability = -1
+	}
+}
+
+# Parliamentary Confidence Vote - Walpole Whigs Won (1721-1742)
+country_event = {
+	id = confidence_vote.1038
+	title = "confidence_vote.1038t"
+	desc = "confidence_vote.1038d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	option = { # The King is pleased
+		name = "confidence_vote.1038.a"
+		add_stability = 1
+	}
+}
+
+#######################################################################################################################
+# Selection of prime minister after dismissal of incumbent ministry following the loss of confidence vote (1721-1742) #
+#######################################################################################################################
+
+# Tory prime minister selection
+country_event = {
+	id = confidence_vote.135
+	title = "confidence_vote.135t"
+	desc = "confidence_vote.135d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	# Viscount Bolingbroke (ADM)
+		name = "confidence_vote.135.a"
+		add_country_modifier = {
+			name = "pm_bolingbroke"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {	# Sir William Wyndham (DIP)
+		name = "confidence_vote.135.b"
+		add_country_modifier = {
+			name = "pm_wyndham"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# John Smith (MIL)
+		name = "confidence_vote.135.c"
+		add_country_modifier = {
+			name = "pm_smith"
+			duration = 2700
+		}
+		change_mil = 1
+	}
+}

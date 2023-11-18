@@ -1,0 +1,71 @@
+#############################################
+# British parliamentary elections 1721-1742 #
+#############################################
+
+namespace = lgVoting1721
+
+#########################
+#### Province voting ####
+#########################
+# Province elects a Patriot Whig MP
+province_event = {
+	id = lgVoting1721.1
+	title = lgVoting1721.1.t
+	desc = lgVoting1721.1.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes 
+	hidden = yes
+	
+	immediate = {
+		owner = {
+			change_variable = { which = whigVar value = 1 }		 #Add to running total
+		}
+	}
+	
+	option = {
+		name = lgVoting1721.1.a
+	}
+}
+
+# Province elects a Tory Whig MP
+province_event = {
+	id = lgVoting1721.2
+	title = lgVoting1721.2.t
+	desc = lgVoting1721.2.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes 
+	hidden = yes
+	
+	immediate = {
+		owner = {
+			change_variable = { which = toryVar value = 1 }		 #Add to running total
+		}
+	}
+	
+	option = {
+		name = lgVoting1721.2.a
+	}
+}
+
+# Province elects a Walpole Whig MP
+province_event = {
+	id = lgVoting1721.3
+	title = lgVoting1721.3.t
+	desc = lgVoting1721.3.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes 
+	hidden = yes
+	
+	immediate = {
+		owner = {
+			change_variable = { which = whig2Var value = 1 }		 #Add to running total
+		}
+	}
+	
+	option = {
+		name = lgVoting1721.3.a
+	}
+}

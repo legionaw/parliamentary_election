@@ -1,0 +1,70 @@
+lgParliamentActs_SupplyAct_1688 = {
+	category = 4
+
+	allow = {
+		has_country_flag = lgFlags_GloriousRevolution
+		OR = {
+			has_reform = british_monarchy
+			has_reform = constitutional_monarchy
+		}
+		NOT = {
+			# has_country_flag = lgFlags_1688Supply
+			has_country_modifier = lgModifiers_SupplyTimer
+		}
+	}
+	
+	on_issue_taken = {
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_WhigMinistry
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = lgModifiers_MPsTory
+				}
+				back_current_issue = no
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = lgModifiers_MPsWhig
+				}
+				back_current_issue = yes
+			}
+		}
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_ToryMinistry
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = lgModifiers_MPsTory
+				}
+				back_current_issue = yes
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = lgModifiers_MPsWhig
+				}
+				back_current_issue = no
+			}
+		}
+	}
+
+	effect = {
+		# set_country_flag = lgFlags_1688Supply
+		add_country_modifier = {
+			name = lgModifiers_SupplyTimer
+			duration = 365
+			hidden = yes
+		}
+		custom_tooltip = lgParliamentActs_SupplyAct_1688_tt
+	}
+	
+	chance = {
+		factor = 100
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}

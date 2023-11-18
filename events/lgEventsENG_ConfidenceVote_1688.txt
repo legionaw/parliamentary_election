@@ -1,0 +1,343 @@
+################################################################################
+# Parliamentary Confidence Vote - Tory (1688-1721)
+################################################################################
+
+namespace = confidence_vote
+
+# Parliamentary Confidence Vote - Tory (1688-1721)
+#country_event = {
+#	id = confidence_vote.0001
+#	title = "confidence_vote.0001t"
+#	desc = "confidence_vote.0001d"
+#	picture = {
+#		trigger = {
+#			NOT = { has_dlc = "Common Sense" }
+#		}
+#		picture = DEBATE_REPUBLICAN_eventPicture
+#	}
+#	picture = {
+#		trigger = {
+#			has_dlc = "Common Sense"
+#		}
+#		picture = PARLIAMENT_eventPicture
+#	}
+#	
+#	trigger = {
+#		is_year = 1688
+#		NOT = { is_year = 1721 }
+#		has_country_modifier = lgModifiers_electionTimer
+#		has_country_modifier = lgModifiers_ToryMinistry
+#		lgTriggers_ParliamentaryGovernment = yes
+#		lgTriggers_parliamentBritish = yes
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 200
+#		modifier = {
+#			factor = 0.66
+#			advisor = statesman
+#		}
+#	}
+#	
+#	option = {	# Possible outcomes of this vote
+#		name = "confidence_vote.0001.a"
+#		random_list = {
+#			33 = { country_event = { id = confidence_vote.0002 days = 1 } }
+#			33 = { country_event = { id = confidence_vote.0003 days = 1 } }
+#			33 = { country_event = { id = confidence_vote.0004 days = 1 } }
+#		}
+#	}
+#}
+
+# Parliamentary Confidence Vote - Tory lost and is replaced by Whigs at the head of government (1688-1721)
+country_event = {
+	id = confidence_vote.0002
+	title = "confidence_vote.0002t"
+	desc = "confidence_vote.0002d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		lgTriggers_ConfidenceVote1688 = yes
+		lgTriggers_ParliamentaryGovernment = yes
+		lgTriggers_parliamentBritish = yes
+		has_country_modifier = lgModifiers_WhigMinistry
+	}
+	
+	option = {	# Who dared to change my ministers!
+		name = "confidence_vote.0002.a"
+		add_stability = -1
+		add_legitimacy = -10
+	}
+	option = {
+		name = "confidence_vote.0002.b"
+		remove_country_modifier = lgModifiers_ToryMinistry
+		add_country_modifier = {
+			name = "lgModifiers_WhigMinistry"
+			duration = 2555
+		}
+		add_legitimacy = 10
+	}
+}
+
+# Parliamentary Confidence Vote - Tory lost and Parliament is dissolved for early election (1688-1721)
+country_event = {
+	id = confidence_vote.0003
+	title = "confidence_vote.0003t"
+	desc = "confidence_vote.0003d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		lgTriggers_ConfidenceVote1688 = yes
+		lgTriggers_ParliamentaryGovernment = yes
+		has_country_modifier = lgModifiers_WhigMinistry
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	option = { # I hope this election will return my ministers
+		name = "confidence_vote.0003.a"
+		remove_country_modifier = lgModifiers_electionTimer
+		custom_tooltip = parliament_dissolution_tooltip
+		# add_stability = -1
+	}
+
+	option = { # Refuse their request for dissolution and keep them in the government, even against the will of the Parliament
+		name = "confidence_vote.0003.b"
+		add_stability = -2
+		add_legitimacy = -10
+	}
+
+	option = { # Refuse their request for dissolution, dismiss them, and call in the Whigs
+		name = "confidence_vote.0003.c"
+		remove_country_modifier = lgModifiers_ToryMinistry
+		add_country_modifier = {
+			name = lgModifiers_WhigMinistry
+			duration = 2555
+		}
+		add_stability = -1
+		add_legitimacy = -5
+	}
+}
+
+# Parliamentary Confidence Vote - Tory won (1688-1721)
+country_event = {
+	id = confidence_vote.0004
+	title = "confidence_vote.0004t"
+	desc = "confidence_vote.0004d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	option = { # The King is pleased
+		name = "confidence_vote.0004.a"
+		add_stability = 1
+	}
+}
+
+################################################################################
+# Parliamentary Confidence Vote - Whig (1688-1721)
+################################################################################
+
+# Parliamentary Confidence Vote - Whig (1688-1721)
+#country_event = {
+#	id = confidence_vote.0005
+#	title = "confidence_vote.0005t"
+#	desc = "confidence_vote.0005d"
+#	picture = {
+#		trigger = {
+#			NOT = { has_dlc = "Common Sense" }
+#		}
+#		picture = DEBATE_REPUBLICAN_eventPicture
+#	}
+#	picture = {
+#		trigger = {
+#			has_dlc = "Common Sense"
+#		}
+#		picture = PARLIAMENT_eventPicture
+#	}
+#	
+#	trigger = {
+#		is_year = 1688
+#		NOT = { is_year = 1721 }
+#		lgTriggers_ParliamentaryGovernment = yes
+#		has_country_modifier = lgModifiers_electionTimer
+#		has_country_modifier = lgModifiers_WhigMinistry
+#		lgTriggers_parliamentBritish = yes
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 200
+#		modifier = {
+#			factor = 0.66
+#			advisor = statesman
+#		}
+#	}
+#	
+#	option = {	# Possible outcomes of this vote
+#		name = "confidence_vote.0005.a"
+#		random_list = {
+#			33 = { country_event = { id = confidence_vote.0006 days = 1 } }
+#			33 = { country_event = { id = confidence_vote.0007 days = 1 } }
+#			33 = { country_event = { id = confidence_vote.0008 days = 1 } }
+#		}
+#	}
+#}
+
+# Parliamentary Confidence Vote - Whig lost and is replaced by Tories at the head of government (1688-1721)
+country_event = {
+	id = confidence_vote.0006
+	title = "confidence_vote.0006t"
+	desc = "confidence_vote.0006d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		lgTriggers_ConfidenceVote1688 = yes
+		lgTriggers_ParliamentaryGovernment = yes
+		has_country_modifier = lgModifiers_WhigMinistry
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	option = {	# Who dared to change my ministers!
+		name = "confidence_vote.0006.a"
+		add_stability = -1
+		add_legitimacy = -10
+	}
+
+	option = {
+		name = "confidence_vote.0006.b"
+		remove_country_modifier = lgModifiers_WhigMinistry
+		add_country_modifier = {
+			name = "lgModifiers_ToryMinistry"
+			duration = 2555
+		}
+		add_legitimacy = 10
+	}
+}
+
+# Parliamentary Confidence Vote - Whigs lost and Parliament is dissolved for early election (1688-1721)
+country_event = {
+	id = confidence_vote.0007
+	title = "confidence_vote.0007t"
+	desc = "confidence_vote.0007d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		lgTriggers_ConfidenceVote1688 = yes
+		lgTriggers_ParliamentaryGovernment = yes
+		lgTriggers_parliamentBritish = yes
+		has_country_modifier = lgModifiers_WhigMinistry
+	}
+	
+	option = { # I hope this election will return my ministers
+		name = "confidence_vote.0007.a"
+		remove_country_modifier = lgModifiers_electionTimer
+		# add_stability = -1
+		add_legitimacy = 10
+		custom_tooltip = parliament_dissolution_tooltip
+	}
+
+	option = { # Refuse their request for dissolution and keep them in the government, even against the will of the Parliament
+		name = "confidence_vote.0007.b"
+		add_stability = -2
+		add_legitimacy = -10
+	}
+
+	option = { # Refuse their request for dissolution, dismiss them, and call in the Whigs
+		name = "confidence_vote.0007.c"
+		remove_country_modifier = lgModifiers_WhigMinistry
+		add_country_modifier = {
+			name = lgModifiers_ToryMinistry
+			duration = 2555
+		}
+		add_stability = -1
+		add_legitimacy = -5
+	}
+}
+
+# Parliamentary Confidence Vote - Whig Won (1688-1721)
+country_event = {
+	id = confidence_vote.0008
+	title = "confidence_vote.0008t"
+	desc = "confidence_vote.0008d"
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Common Sense" }
+		}
+		picture = DEBATE_REPUBLICAN_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_dlc = "Common Sense"
+		}
+		picture = PARLIAMENT_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	option = { # The King is pleased
+		name = "confidence_vote.0008.a"
+		add_stability = 1
+	}
+}

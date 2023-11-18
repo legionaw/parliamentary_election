@@ -1,0 +1,77 @@
+################################
+#Prime Ministers - Whigs
+################################
+
+# Lord Grenville
+pm_grenville2 = {
+	adm_tech_cost_modifier = -0.05
+	dip_tech_cost_modifier = 0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# Charles James Fox
+pm_fox = {
+	adm_tech_cost_modifier = 0.05
+	dip_tech_cost_modifier = -0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# Lord Hastings
+pm_hastings = {
+	adm_tech_cost_modifier = 0.05
+	dip_tech_cost_modifier = 0.05
+	mil_tech_cost_modifier = -0.05
+}
+
+################################
+#Prime Ministers - Tories
+################################
+
+# Henry Addington
+pm_addington1 = {
+	adm_tech_cost_modifier = -0.05
+	dip_tech_cost_modifier = 0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# Spencer Perceval
+pm_perceval = {
+	adm_tech_cost_modifier = -0.05
+	dip_tech_cost_modifier = 0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# Lord Liverpool
+pm_liverpool = {
+	adm_tech_cost_modifier = -0.05
+	dip_tech_cost_modifier = 0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# William Pitt the Younger
+pm_pitt2 = {
+	adm_tech_cost_modifier = 0.05
+	dip_tech_cost_modifier = -0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# Lord Castlereagh
+pm_castlereagh = {
+	adm_tech_cost_modifier = 0.05
+	dip_tech_cost_modifier = -0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# George Canning
+pm_canning = {
+	adm_tech_cost_modifier = 0.05
+	dip_tech_cost_modifier = -0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# The Duke of Wellington
+pm_wellington = {
+	adm_tech_cost_modifier = 0.05
+	dip_tech_cost_modifier = 0.05
+	mil_tech_cost_modifier = -0.05
+}

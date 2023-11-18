@@ -1,0 +1,52 @@
+# country 
+on_new_monarch = {
+	events = {
+		lgEvents_Parliamentary_DemiseCrown.0001 # Dissolution of Parliament upon Ruler's Death
+	}
+}
+
+on_parliament_debate_failed = {
+	random_events = {
+		#### 1688-1721 ####
+		# Tories
+		25 = confidence_vote.0002
+		25 = confidence_vote.0003
+		#### 1721-1742 ####
+		# Patriot Whigs
+		25 = confidence_vote.1012
+		25 = confidence_vote.1013
+		25 = confidence_vote.1016
+		25 = confidence_vote.1017
+		# Tories
+		25 = confidence_vote.1022
+		25 = confidence_vote.1023
+		25 = confidence_vote.1026
+		25 = confidence_vote.1027
+		# Walpole Whigs
+		25 = confidence_vote.1032
+		25 = confidence_vote.1033
+		25 = confidence_vote.1036
+		25 = confidence_vote.1037
+		#### 1742-1761 ####
+		## Tories ##
+		25 = confidence_vote.2002
+		25 = confidence_vote.2003
+		## Whigs ##
+		25 = confidence_vote.2006
+		25 = confidence_vote.2007
+		#### 1761-1784 ####
+		## Friends ##
+		25 = confidence_vote.3002
+		25 = confidence_vote.3003
+		## Whigs ##
+		25 = confidence_vote.3006
+		25 = confidence_vote.3007
+		#### 1784-1834 ####
+		## Tories ##
+		25 = confidence_vote.4002
+		25 = confidence_vote.4003
+		## Whigs ##
+		25 = confidence_vote.4006
+		25 = confidence_vote.4007
+	}
+}

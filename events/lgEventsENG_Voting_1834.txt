@@ -1,0 +1,46 @@
+#############################################
+# British parliamentary elections 1834-1859 #
+#############################################
+
+namespace = lgVoting1834
+
+#### Province voting ####
+province_event = {
+	id = lgVoting1834.1
+	title = lgVoting1834.1.t
+	desc = lgVoting1834.1.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes 
+	hidden = yes
+	
+	immediate = {
+		owner = {
+			change_variable = { which = whig3Var value = 1 }		 #Add to running total
+		}
+	}
+	
+	option = {
+		name = lgVoting1834.1.a
+	}
+}
+
+province_event = {
+	id = lgVoting1834.2
+	title = lgVoting1834.2.t
+	desc = lgVoting1834.2.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes 
+	hidden = yes
+	
+	immediate = {
+		owner = {
+			change_variable = { which = tory3Var value = 1 }		 #Add to running total
+		}
+	}
+	
+	option = {
+		name = lgVoting1834.2.a
+	}
+}

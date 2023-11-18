@@ -1,0 +1,82 @@
+lgParliamentaryMonarchy_mechanic = {
+	monarchy = yes
+	heir = yes
+	queen = yes
+	basic_reform = yes # = invisible/does not take up a slot
+	valid_for_nation_designer = no
+	custom_attributes = {
+		enables_aristocratic_idea_group = yes
+	}
+}
+
+#Special for England
+lgParliamentaryMonarchy = {
+	# government mechanics flags go here
+	icon = "constitution"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	monarchy = yes
+	allow_convert = no
+	
+	nation_designer_cost = 15
+	nation_designer_trigger = {
+		has_dlc = "Common Sense"
+	}
+	
+	start_territory_to_estates = 0.3
+	modifiers = {
+		#max_states = 3
+		years_of_nationalism = -5
+		legitimacy = 1.25
+		global_unrest = -1
+		global_autonomy = -0.1
+		max_absolutism = -30
+	}
+	
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+			has_country_flag = lgFlags_GloriousRevolution
+			lgTriggers_parliamentBritish = yes
+		}
+		has_parliament = yes
+	}
+	ai = {
+		factor = 0
+	}
+}
+
+lgParliamentaryMonarchy = {
+	icon = "british_queen"
+	allow_normal_conversion = no
+	potential = {
+		has_reform = lgParliamentaryMonarchy
+	}
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 15
+	nation_designer_trigger = {
+		has_dlc = "Common Sense"
+	}
+	legacy_equivalent = lgParliamentaryMonarchy_legacy
+	start_territory_to_estates = 0.3
+	modifiers = {
+		#max_states = 3
+		years_of_nationalism = -5
+		legitimacy = 1.25
+		global_unrest = -1
+		global_autonomy = -0.1
+		max_absolutism = -30
+	}
+	
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+			has_country_flag = lgFlags_GloriousRevolution
+			lgTriggers_parliamentBritish = yes
+		}
+		has_parliament = yes
+	}
+}

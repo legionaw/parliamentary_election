@@ -1,0 +1,27 @@
+country_decisions = {
+	lgDecisions_SupplyDebate = {
+		color = { 110 0 140 }
+		potential = {
+			has_country_flag = lgFlags_GloriousRevolution
+			OR = {
+				has_reform = british_monarchy
+				has_reform = constitutional_monarchy
+			}
+			NOT = {
+				has_country_modifier = lgModifiers_SupplyTimer
+			}
+			has_active_debate = no
+		}
+		allow = {
+			NOT = {
+				has_country_modifier = lgModifiers_SupplyTimer
+			}
+		}
+		effect = {
+			start_debate = lgParliamentActs_SupplyAct_1688
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

@@ -1,0 +1,49 @@
+################################
+#Prime Ministers - Whigs
+################################
+
+# The Duke of Devonshire
+pm_devonshire = {
+	adm_tech_cost_modifier = -0.05
+	dip_tech_cost_modifier = 0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# The Duke of Newcastle
+pm_newcastle = {
+	adm_tech_cost_modifier = 0.05
+	dip_tech_cost_modifier = -0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# William Pitt the Elder
+pm_pitt1 = {
+	adm_tech_cost_modifier = 0.05
+	dip_tech_cost_modifier = 0.05
+	mil_tech_cost_modifier = -0.05
+}
+
+################################
+#Prime Ministers - Tories
+################################
+
+# Sir James Dashwood
+pm_dashwood = {
+	adm_tech_cost_modifier = -0.05
+	dip_tech_cost_modifier = 0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# Lord Lichfield
+pm_lichfield = {
+	adm_tech_cost_modifier = 0.05
+	dip_tech_cost_modifier = -0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# Lord Abingdon
+pm_abingdon = {
+	adm_tech_cost_modifier = 0.05
+	dip_tech_cost_modifier = 0.05
+	mil_tech_cost_modifier = -0.05
+}

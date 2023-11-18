@@ -1,0 +1,567 @@
+#############################################
+# British parliamentary elections 1761-1784 #
+#############################################
+
+namespace = parliamentary_elections
+
+######################################
+#### General election (1761-1784) ####
+######################################
+country_event = {
+	id = parliamentary_elections.3001
+	title = "parliamentary_elections.3001t"
+	desc = "parliamentary_elections.3001d"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	trigger = {
+		lgTriggers_elections1761 = yes
+		lgTriggers_ParliamentaryGovernment = yes
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	immediate = {
+		set_country_flag = lgFlag_ElectionInProgress
+		LgEffects_electionHeld = yes
+		election1761_startup = yes
+#		hidden_effect = {
+#			remove_country_modifier = lgModifiers_WhigMinistry
+#			remove_country_modifier = lgModifiers_FriendsMinistry
+#			remove_country_modifier = lgModifiers_ToryMinistry
+#		}
+#		add_country_modifier = { name = "lgModifiers_electionTimer" hidden=yes duration = 2555 }
+	}
+	
+	option = {	# Attempt to influence election towards Whigs
+		name = "parliamentary_elections.3001.a"
+		ai_chance = {
+			factor = 40 
+			modifier = {
+				factor = 45
+				is_year = 1761
+				NOT = {
+					is_year = 1762
+				}
+			}
+			modifier = {
+				factor = 0
+				is_year = 1762 #Bute
+				NOT = {
+					is_year = 1763
+				}
+			}
+			modifier = {
+				factor = 45
+				is_year = 1763
+				NOT = {
+					is_year = 1770
+				}
+			}
+			modifier = {
+				factor = 0
+				is_year = 1770 #Bute
+				NOT = {
+					is_year = 1782
+				}
+			}
+		}
+		election1761_contest1 = yes
+#		random_list = {
+#			55 = { country_event = { id = parliamentary_elections.3002 days = 90 } }
+#			45 = { country_event = { id = parliamentary_elections.3003 days = 90 } }
+#		}
+		tooltip = {
+			add_country_modifier = {
+				name = "lgModifiers_WhigMinistry"
+				duration = 2555
+			}
+		}
+		set_country_flag = whig_1688
+		add_treasury = -400
+	}
+	
+	option = {	# Attempt to influence election towards King's Friend
+		name = "parliamentary_elections.3001.b"
+		ai_chance = {
+			factor = 50 
+			modifier = {
+				factor = 0
+				is_year = 1761
+				NOT = {
+					is_year = 1762
+				}
+			}
+			modifier = {
+				factor = 45
+				is_year = 1762 #Bute
+				NOT = {
+					is_year = 1763
+				}
+			}
+			modifier = {
+				factor = 0
+				is_year = 1763
+				NOT = {
+					is_year = 1770
+				}
+			}
+			modifier = {
+				factor = 45
+				is_year = 1770 #Bute
+				NOT = {
+					is_year = 1782
+				}
+			}
+		}
+		election1761_contest2 = yes
+#		random_list = {
+#			45 = { country_event = { id = parliamentary_elections.3002 days = 90 } }
+#			55 = { country_event = { id = parliamentary_elections.3003 days = 90 } }
+#		}
+		tooltip = {
+			add_country_modifier = {
+				name = "lgModifiers_FriendsMinistry"
+				duration = 2555
+			}
+		}
+		set_country_flag = friend_1761
+		add_treasury = -400
+	}
+	
+	option = {	# No attempt to influence the election towards any party
+		name = "parliamentary_elections.3001.c"
+		ai_chance = { factor = 10 }
+		election1761_contest3 = yes
+#		random_list = {
+#			50 = { country_event = { id = parliamentary_elections.3002 days = 90 } }
+#			50 = { country_event = { id = parliamentary_elections.3003 days = 90 } }
+#		}
+		set_country_flag = neutral
+	}
+}
+
+########################################
+#### NATION-WIDE COUNTING CONDUCTED ####
+########################################
+country_event = {
+	id = parliamentary_elections.3007
+	title = "parliamentary_elections.3007.t"
+	desc = "parliamentary_elections.3007.d"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+		name = "parliamentary_elections.3007.a"
+		election1761_count = yes
+	}
+}
+
+#######################################
+#### NATION-WIDE RESULTS ANNOUNCED ####
+#######################################
+# Whigs wins the general election
+country_event = {
+	id = parliamentary_elections.3002
+	title = "parliamentary_elections.3002t"
+	desc = "parliamentary_elections.3002d"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		PrimeMinister1761 = yes
+	}
+	
+	option = {	# Great!
+		name = "parliamentary_elections.3002.a"
+		trigger = {
+			has_country_flag = whig_1688
+		}
+		add_country_modifier = {
+			name = "lgModifiers_WhigMinistry"
+			duration = 2555
+		}
+		clr_country_flag = whig_1688
+		country_event = { id = parliamentary_elections.3005 days = 1 } #Prime Minister selection event
+	}
+	
+	option = {	# Black day!
+		name = "parliamentary_elections.3002.b"
+		trigger = {
+			has_country_flag = friend_1761
+		}
+		add_country_modifier = {
+			name = "lgModifiers_WhigMinistry"
+			duration = 2555
+		}
+		clr_country_flag = friend_1761
+		country_event = { id = parliamentary_elections.3005 days = 1 } #Prime Minister selection event
+	}
+	
+	option = {	# Ok
+		name = "parliamentary_elections.3002.c"
+		trigger = {
+			has_country_flag = neutral
+		}
+		add_country_modifier = {
+			name = "lgModifiers_WhigMinistry"
+			duration = 2555
+		}
+		clr_country_flag = neutral
+		country_event = { id = parliamentary_elections.3005 days = 1 } #Prime Minister selection event
+	}
+}
+
+# Tories wins the general election
+country_event = {
+	id = parliamentary_elections.3003
+	title = "parliamentary_elections.3003t"
+	desc = "parliamentary_elections.3003d"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		PrimeMinister1761 = yes
+	}
+	
+	option = {	# Great!
+		name = "parliamentary_elections.3003.a"
+		trigger = {
+			has_country_flag = friend_1761
+		}
+		add_country_modifier = {
+			name = "lgModifiers_FriendsMinistry"
+			duration = 2555
+		}
+		clr_country_flag = friend_1761
+		country_event = { id = parliamentary_elections.3006 days = 1 } #Prime Minister selection event
+	}
+	
+	option = {	# Black day!
+		name = "parliamentary_elections.3003.b"
+		trigger = {
+			has_country_flag = whig_1688
+		}
+		add_country_modifier = {
+			name = "lgModifiers_FriendsMinistry"
+			duration = 2555
+		}
+		clr_country_flag = whig_1688
+		country_event = { id = parliamentary_elections.3006 days = 1 } #Prime Minister selection event
+	}
+	
+	option = {	# Ok
+		name = "parliamentary_elections.3003.c"
+		trigger = {
+			has_country_flag = neutral
+		}
+		add_country_modifier = {
+			name = "lgModifiers_FriendsMinistry"
+			duration = 2555
+		}
+		clr_country_flag = neutral
+		country_event = { id = parliamentary_elections.3006 days = 1 } #Prime Minister selection event
+	}
+}
+
+# No party won majority
+country_event = {
+	id = parliamentary_elections.3004
+	title = "parliamentary_elections.3004t"
+	desc = "parliamentary_elections.3004d"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		clr_country_flag = friend_1761
+		clr_country_flag = whig_1688
+		clr_country_flag = neutral
+		PrimeMinister1761 = yes
+	}
+	
+	option = {  # I appoint King's Friend ministry
+		name = "parliamentary_elections.3004.a"
+		ai_chance = {
+			factor = 55 
+			modifier = {
+				factor = 0
+				is_year = 1761
+				NOT = {
+					is_year = 1762
+				}
+			}
+			modifier = {
+				factor = 45
+				is_year = 1762 #Bute
+				NOT = {
+					is_year = 1763
+				}
+			}
+			modifier = {
+				factor = 0
+				is_year = 1763
+				NOT = {
+					is_year = 1770
+				}
+			}
+			modifier = {
+				factor = 45
+				is_year = 1770 #Bute
+				NOT = {
+					is_year = 1782
+				}
+			}
+		}
+		add_country_modifier = {
+			name = "lgModifiers_FriendsMinistry"
+			duration = 2555
+		}
+		country_event = { id = parliamentary_elections.3006 days = 1 } #Prime Minister selection event
+	}
+	
+	option = {  # I appoint Whig ministry
+		name = "parliamentary_elections.3004.b"
+		ai_chance = {
+			factor = 45 
+			modifier = {
+				factor = 45
+				is_year = 1761
+				NOT = {
+					is_year = 1762
+				}
+			}
+			modifier = {
+				factor = 0
+				is_year = 1762 #Bute
+				NOT = {
+					is_year = 1763
+				}
+			}
+			modifier = {
+				factor = 45
+				is_year = 1763
+				NOT = {
+					is_year = 1770
+				}
+			}
+			modifier = {
+				factor = 0
+				is_year = 1770 #Bute
+				NOT = {
+					is_year = 1782
+				}
+			}
+		}
+		add_country_modifier = {
+			name = "lgModifiers_WhigMinistry"
+			duration = 2555
+		}
+		country_event = { id = parliamentary_elections.3005 days = 1 } #Prime Minister selection event
+	}
+}
+
+##############################################
+# British prime minister selection 1761-1784 #
+##############################################
+# Whig prime minister selection
+country_event = {
+	id = parliamentary_elections.3005
+	title = "parliamentary_elections.3005t"
+	desc = "parliamentary_elections.3005d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = lgFlags_DemiseCrown
+				}
+				clr_country_flag = lgFlags_DemiseCrown
+			}
+			if = {
+				limit = {
+					has_country_flag = lgFlag_ElectionInProgress
+				}
+				clr_country_flag = lgFlag_ElectionInProgress
+			}
+		}
+	}
+	
+	option = {	# George Grenville (ADM)
+		name = "parliamentary_elections.3005.a"
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 30
+				is_year = 1763
+				NOT = {
+					is_year = 1765
+				}
+			}
+		}
+		add_country_modifier = {
+			name = "pm_grenville"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {	# Charles Watson-Wentworth, 2nd Marquess of Rockingham (DIP)
+		name = "parliamentary_elections.3005.b"
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 30
+				is_year = 1765
+				NOT = {
+					is_year = 1766
+				}
+			}
+			modifier = {
+				factor = 30
+				is_year = 1782
+			}
+		}
+		trigger = {
+			NOT = { has_country_flag = rockingham_died }
+		}
+		add_country_modifier = {
+			name = "pm_rockingham"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# William Petty, 2nd Earl of Shelburne (DIP)
+		name = "parliamentary_elections.3005.c"
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 30
+				is_year = 1782
+				NOT = {
+					is_year = 1783
+				}
+			}
+		}
+		trigger = {
+			has_country_flag = rockingham_died
+		}
+		add_country_modifier = {
+			name = "pm_shelburne"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# Augustus FitzRoy, 3rd Duke of Grafton (MIL)
+		name = "parliamentary_elections.3005.d"
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 30
+				is_year = 1768
+				NOT = {
+					is_year = 1770
+				}
+			}
+		}
+		add_country_modifier = {
+			name = "pm_grafton"
+			duration = 2700
+		}
+		change_mil = 1
+	}
+}
+
+# King's Friend prime minister selection
+country_event = {
+	id = parliamentary_elections.3006
+	title = "parliamentary_elections.3006t"
+	desc = "parliamentary_elections.3006d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = lgFlags_DemiseCrown
+				}
+				clr_country_flag = lgFlags_DemiseCrown
+			}
+			if = {
+				limit = {
+					has_country_flag = lgFlag_ElectionInProgress
+				}
+				clr_country_flag = lgFlag_ElectionInProgress
+			}
+		}
+	}
+	
+	option = {	# Frederick North, Lord North (ADM)
+		name = "parliamentary_elections.3006.a"
+		ai_chance = { factor = 45 
+			modifier = {
+				factor = 0
+				NOT = {
+					is_year = 1770
+				}
+			}
+			modifier = {
+				factor = 45
+				is_year = 1770
+			}
+			modifier = {
+				factor = 0
+				is_year = 1782
+			}
+		}
+		add_country_modifier = {
+			name = "pm_lordnorth"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {	# John Stuart, 3rd Earl of Bute (DIP)
+		name = "parliamentary_elections.3006.b"
+		ai_chance = { factor = 45 
+			modifier = {
+				factor = 0
+				NOT = {
+					is_year = 1762
+				}
+			}
+			modifier = {
+				factor = 45
+				is_year = 1762
+			}
+			modifier = {
+				factor = 0
+				is_year = 1763
+			}
+		}
+		add_country_modifier = {
+			name = "pm_bute"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# John Montagu, 4th Earl of Sandwich (MIL)
+		name = "parliamentary_elections.3006.c"
+		ai_chance = { factor = 10 }
+		add_country_modifier = {
+			name = "pm_sandwich"
+			duration = 2700
+		}
+		change_mil = 1
+	}
+}

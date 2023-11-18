@@ -1,0 +1,111 @@
+#lg_DutchHelp = {
+#### If Netherlands doesn't exist but Holland does
+#	if = {
+#		limit = {
+#			any_known_country = {
+#				tag = HOL
+#				is_subject = no
+#				num_of_cities = 4
+#				marriage_with = ROOT
+#				NOT = {
+#					war_with = ROOT
+#					exists = NED
+#				}
+#			}
+#		}
+#		hidden_effect = {
+#			exile_ruler_as = GloriousRevolution_OverthrownRuler
+#			exile_heir_as = GloriousRevolution_OverthrownHeir
+#			HOL = {
+#				exile_ruler_as = GloriousRevolution_NewRuler
+#				exile_heir_as = GloriousRevolution_NewHeir
+#			}
+#			set_ruler = GloriousRevolution_NewRuler
+#			set_heir = GloriousRevolution_NewHeir
+#			create_union = HOL
+#		}
+#		tooltip = { create_union = HOL }
+#		add_opinion = { who = HOL modifier = lgOpinionModifiers_Revolution }
+#		HOL = {
+#			add_opinion = { who = ROOT modifier = lgOpinionModifiers_Revolution }
+#			country_event = { id = ENG_glorious_revolution.0002 days = 1 }
+#		}
+#	}
+#### If Netherlands or Holland doesn't exist but Burgundy does
+#	if = {
+#		limit = {
+#			any_known_country = {
+#				tag = BUR
+#				is_subject = no
+#				num_of_cities = 4
+#				marriage_with = ROOT
+#				NOT = {
+#					war_with = ROOT
+#					AND = {
+#						exists = NED
+#						exists = HOL
+#					}
+#				}
+#			}
+#		}
+#		hidden_effect = {
+#			exile_ruler_as = GloriousRevolution_OverthrownRuler
+#			exile_heir_as = GloriousRevolution_OverthrownHeir
+#			BUR = {
+#				exile_ruler_as = GloriousRevolution_NewRuler
+#				exile_heir_as = GloriousRevolution_NewHeir
+#			}
+#			set_ruler = GloriousRevolution_NewRuler
+#			set_heir = GloriousRevolution_NewHeir
+#			create_union = BUR
+#		}
+#		tooltip = { create_union = BUR }
+#		add_opinion = { who = BUR modifier = lgOpinionModifiers_Revolution }
+#		BUR = {
+#			add_opinion = { who = ROOT modifier = lgOpinionModifiers_Revolution }
+#			country_event = { id = ENG_glorious_revolution.0002 days = 1 }
+#		}
+#	}
+#### If Netherlands, Holland, or Burgundy doesn't exist, fallback
+#	if = {
+#		limit = {
+#			any_known_country = {
+#				capital_scope = {
+#					OR = {
+#						region = low_countries_region
+#						region = north_german_region
+#						region = scandinavia_region
+#					}
+#				}
+#				is_subject = no
+#				num_of_cities = 4
+#				marriage_with = ROOT
+#				NOT = {
+#					war_with = ROOT
+#					AND = {
+#						exists = NED
+#						exists = HOL
+#						exists = BUR
+#					}
+#				}
+#			}
+#		}
+#		hidden_effect = {
+#			exile_ruler_as = GloriousRevolution_OverthrownRuler
+#			exile_heir_as = GloriousRevolution_OverthrownHeir
+#			PREV = {
+#				exile_ruler_as = GloriousRevolution_NewRuler
+#				exile_heir_as = GloriousRevolution_NewHeir
+#			}
+#			set_ruler = GloriousRevolution_NewRuler
+#			set_heir = GloriousRevolution_NewHeir
+#			create_union = PREV
+#		}
+#		tooltip = { create_union = PREV }
+#		add_opinion = { who = PREV modifier = lgOpinionModifiers_Revolution }
+#		PREV = {
+#			add_opinion = { who = ROOT modifier = lgOpinionModifiers_Revolution }
+#			country_event = { id = ENG_glorious_revolution.0002 days = 1 }
+#		}
+#	}
+#}

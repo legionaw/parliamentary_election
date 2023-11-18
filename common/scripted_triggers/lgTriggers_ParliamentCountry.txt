@@ -1,0 +1,21 @@
+lgTriggers_parliamentBritish = {
+	OR = {
+		AND = {
+			tag = ENG
+			NOT = { 
+				exists = GBR
+			}
+		}
+		tag = GBR
+	}
+}
+
+lgTriggers_parliamentIrish = {
+	AND = {
+		tag = IRE
+		OR = {
+			is_subject_of = ENG
+			is_subject_of = GBR
+		}
+	}
+}

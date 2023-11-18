@@ -1,0 +1,514 @@
+################################################################################
+# Constitutional Crisis between the monarch and ministers (1721-1742)					 #
+################################################################################
+
+namespace = constitutional_crisis
+
+# Constitutional Crisis between the monarch and Tory ministers (1721-1742)
+country_event = {
+	id = constitutional_crisis.30201
+	title = "constitutional_crisis.30201t"
+	desc = "constitutional_crisis.30201d"
+	picture = LIBERUM_VETO_eventPicture
+	
+	trigger = {
+		is_year = 1721
+		NOT = { is_year = 1742 }
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_ToryMinistry
+		lgTriggers_ParliamentaryGovernment = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+		modifier = {
+			factor = 0.66
+			advisor = statesman
+		}
+	}
+	
+	option = {	# The monarch dismisses Tory ministry and appoints Walpole Whig ministry in its stead.
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.30201.a"
+		remove_country_modifier = lgModifiers_ToryMinistry
+		if = {
+			limit = {
+				has_country_modifier = pm_bolingbroke
+			}
+			remove_country_modifier = pm_bolingbroke
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_wyndham
+			}
+			remove_country_modifier = pm_wyndham
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_smith
+			}
+			remove_country_modifier = pm_smith
+			change_mil = -1
+		}
+		add_country_modifier = {
+			name = "lgModifiers_WalpoleMinistry"
+			duration = 2555
+		}
+		add_stability = -1
+		country_event = { id = constitutional_crisis.30205 days = 1 } #Prime Minister selection event
+	}
+	
+	option = {	# The monarch dismisses Tory ministry and appoints Patriot Whig ministry in its stead.
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.30201.b"
+		remove_country_modifier = lgModifiers_ToryMinistry
+		if = {
+			limit = {
+				has_country_modifier = pm_bolingbroke
+			}
+			remove_country_modifier = pm_bolingbroke
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_wyndham
+			}
+			remove_country_modifier = pm_wyndham
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_smith
+			}
+			remove_country_modifier = pm_smith
+			change_mil = -1
+		}
+		add_country_modifier = {
+			name = "lgModifiers_WhigMinistry"
+			duration = 2555
+		}
+		add_stability = -1
+		country_event = { id = constitutional_crisis.30206 days = 1 } #Prime Minister selection event
+	}
+	
+	option = { # The monarch dismisses Tory ministry and dissolved parliament to force an early election, hopefully in favor of another party.
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.30201.c"
+		custom_tooltip = lgEvents_Parliamentary_DemiseCrown.0001.a.tt
+		remove_country_modifier = lgModifiers_ToryMinistry
+		if = {
+			limit = {
+				has_country_modifier = pm_bolingbroke
+			}
+			remove_country_modifier = pm_bolingbroke
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_wyndham
+			}
+			remove_country_modifier = pm_wyndham
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_smith
+			}
+			remove_country_modifier = pm_smith
+			change_mil = -1
+		}
+		remove_country_modifier = lgModifiers_electionTimer
+		add_stability = -1
+		add_prestige = 15
+	}
+	
+	option = { # The monarch decides to retain ministers in office
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.30201.d"
+		add_stability = 1
+		add_prestige = -15
+	}
+}
+
+# Constitutional Crisis between the monarch and Walpole Whig ministers (1721-1742)
+country_event = {
+	id = constitutional_crisis.30202
+	title = "constitutional_crisis.30202t"
+	desc = "constitutional_crisis.30202d"
+	picture = LIBERUM_VETO_eventPicture
+	
+	trigger = {
+		is_year = 1721
+		NOT = { is_year = 1742 }
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_WalpoleMinistry
+		lgTriggers_ParliamentaryGovernment = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+		modifier = {
+			factor = 0.66
+			advisor = statesman
+		}
+		modifier = {
+			factor = 0.33
+			has_country_modifier = pm_walpole
+		}
+	}
+	
+	option = {	# The monarch dismisses Walpole Whig ministry and appoints Tory ministry in its stead.
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.30202.a"
+		remove_country_modifier = lgModifiers_WalpoleMinistry
+		if = {
+			limit = {
+				has_country_modifier = pm_walpole
+			}
+			remove_country_modifier = pm_walpole
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_pelham
+			}
+			remove_country_modifier = pm_pelham
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_wilmington
+			}
+			remove_country_modifier = pm_wilmington
+			change_mil = -1
+		}
+		add_country_modifier = {
+			name = "lgModifiers_ToryMinistry"
+			duration = 2555
+		}
+		add_stability = -1
+		country_event = { id = constitutional_crisis.30204 days = 1 } #Prime Minister selection event
+	}
+	
+	option = {	# The monarch dismisses Walpole Whig ministry and appoints Patriot Whig ministry in its stead.
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.30202.b"
+		remove_country_modifier = lgModifiers_WalpoleMinistry
+		if = {
+			limit = {
+				has_country_modifier = pm_walpole
+			}
+			remove_country_modifier = pm_walpole
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_pelham
+			}
+			remove_country_modifier = pm_pelham
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_wilmington
+			}
+			remove_country_modifier = pm_wilmington
+			change_mil = -1
+		}
+		add_country_modifier = {
+			name = "lgModifiers_WhigMinistry"
+			duration = 2555
+		}
+		add_stability = -1
+		country_event = { id = constitutional_crisis.30206 days = 1 } #Prime Minister selection event
+	}
+	
+	option = { # The monarch dismisses Walpole Whig ministry and dissolved parliament to force an early election, hopefully in favor of another ministry.
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.30202.c"
+		custom_tooltip = lgEvents_Parliamentary_DemiseCrown.0001.a.tt
+		remove_country_modifier = lgModifiers_WalpoleMinistry
+		if = {
+			limit = {
+				has_country_modifier = pm_walpole
+			}
+			remove_country_modifier = pm_walpole
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_pelham
+			}
+			remove_country_modifier = pm_pelham
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_wilmington
+			}
+			remove_country_modifier = pm_wilmington
+			change_mil = -1
+		}
+		remove_country_modifier = lgModifiers_electionTimer
+		add_stability = -1
+		add_prestige = 15
+	}
+	
+	option = { # The monarch decides to retain ministers in office
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.30202.d"
+		add_stability = 1
+		add_prestige = -15
+	}
+}
+
+# Constitutional Crisis between the monarch and Patriot Whig ministers (1721-1742)
+country_event = {
+	id = constitutional_crisis.30203
+	title = "constitutional_crisis.30203t"
+	desc = "constitutional_crisis.30203d"
+	picture = LIBERUM_VETO_eventPicture
+	
+	trigger = {
+		is_year = 1721
+		NOT = { is_year = 1742 }
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_WhigMinistry
+		lgTriggers_ParliamentaryGovernment = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+		modifier = {
+			factor = 0.66
+			advisor = statesman
+		}
+	}
+	
+	option = {	# The monarch dismisses Patriot Whig ministry and appoints Tory ministry in its stead.
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.30203.a"
+		remove_country_modifier = lgModifiers_WhigMinistry
+		if = {
+			limit = {
+				has_country_modifier = pm_bath
+			}
+			remove_country_modifier = pm_bath
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_cobham
+			}
+			remove_country_modifier = pm_cobham
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_fisher
+			}
+			remove_country_modifier = pm_fisher
+			change_mil = -1
+		}
+		add_country_modifier = {
+			name = "lgModifiers_ToryMinistry"
+			duration = 2555
+		}
+		add_stability = -1
+		country_event = { id = constitutional_crisis.30204 days = 1 } #Prime Minister selection event
+	}
+	
+	option = {	# The monarch dismisses Patriot Whig ministry and appoints Walpole Whig ministry in its stead.
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.30203.b"
+		remove_country_modifier = lgModifiers_WhigMinistry
+		if = {
+			limit = {
+				has_country_modifier = pm_bath
+			}
+			remove_country_modifier = pm_bath
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_cobham
+			}
+			remove_country_modifier = pm_cobham
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_fisher
+			}
+			remove_country_modifier = pm_fisher
+			change_mil = -1
+		}
+		add_country_modifier = {
+			name = "lgModifiers_WalpoleMinistry"
+			duration = 2555
+		}
+		add_stability = -1
+		country_event = { id = constitutional_crisis.30205 days = 1 } #Prime Minister selection event
+	}
+	
+	option = { # The monarch dismisses Patriot Whig ministry and dissolved parliament to force an early election, hopefully in favor of another party.
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.30203.c"
+		custom_tooltip = lgEvents_Parliamentary_DemiseCrown.0001.a.tt
+		remove_country_modifier = lgModifiers_WhigMinistry
+		if = {
+			limit = {
+				has_country_modifier = pm_bath
+			}
+			remove_country_modifier = pm_bath
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_cobham
+			}
+			remove_country_modifier = pm_cobham
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_fisher
+			}
+			remove_country_modifier = pm_fisher
+			change_mil = -1
+		}
+		remove_country_modifier = lgModifiers_electionTimer
+		add_stability = -1
+		add_prestige = 15
+	}
+	
+	option = { # The monarch decides to retain ministers in office
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.30203.d"
+		add_stability = 1
+		add_prestige = -15
+	}
+}
+
+######################################################################################################################
+# Selection of prime minister after dismissal of incumbent ministry following the constitutional crisis (1721-1742)	 #
+######################################################################################################################
+
+# Tory prime minister selection
+country_event = {
+	id = constitutional_crisis.30204
+	title = "constitutional_crisis.30204t"
+	desc = "constitutional_crisis.30204d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	# Viscount Bolingbroke (ADM)
+		name = "constitutional_crisis.30204.a"
+		add_country_modifier = {
+			name = "pm_bolingbroke"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {	# Sir William Wyndham (DIP)
+		name = "constitutional_crisis.30204.b"
+		add_country_modifier = {
+			name = "pm_wyndham"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# John Smith (MIL)
+		name = "constitutional_crisis.30204.c"
+		add_country_modifier = {
+			name = "pm_smith"
+			duration = 2700
+		}
+		change_mil = 1
+	}
+}
+
+# Walpole Whig prime minister selection
+country_event = {
+	id = constitutional_crisis.30205
+	title = "constitutional_crisis.30205t"
+	desc = "constitutional_crisis.30205d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	# Sir Robert Walpole (ADM)
+		name = "constitutional_crisis.30205.a"
+		add_country_modifier = {
+			name = "pm_walpole"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {	# Henry Pelham (DIP)
+		name = "constitutional_crisis.30205.b"
+		trigger = {
+			NOT = { has_country_flag = pelham_died }
+		}
+		add_country_modifier = {
+			name = "pm_pelham"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# The Earl of Wilmington (MIL)
+		name = "constitutional_crisis.30205.c"
+		trigger = {
+			NOT = { has_country_flag = wilmington_died }
+		}
+		add_country_modifier = {
+			name = "pm_wilmington"
+			duration = 2700
+		}
+		change_mil = 1
+	}
+}
+
+# Patriot Whig prime minister selection
+country_event = {
+	id = constitutional_crisis.30206
+	title = "constitutional_crisis.30206t"
+	desc = "constitutional_crisis.30206d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	# William Pulteney, 1st Earl of Bath (ADM)
+		name = "constitutional_crisis.30206.a"
+		add_country_modifier = {
+			name = "pm_bath"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {	# Richard Temple, 1st Viscount Cobham (DIP)
+		name = "constitutional_crisis.30206.b"
+		add_country_modifier = {
+			name = "pm_cobham"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# John Fisher (MIL)
+		name = "constitutional_crisis.30206.c"
+		add_country_modifier = {
+			name = "pm_fisher"
+			duration = 2700
+		}
+		change_mil = 1
+	}
+}

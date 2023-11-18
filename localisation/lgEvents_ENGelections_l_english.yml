@@ -1,0 +1,21 @@
+﻿l_english:
+ lgModifiers_electionTimer: "Parliament"
+ desc_lgModifiers_electionTimer: "The Parliament has been summoned by the monarch to serve for a term."
+ 
+ lgModifiers_electionRecentlyHeld: "General Election Recently Held"
+ desc_lgModifiers_electionRecentlyHeld: "General Election was recently held."
+ 
+ parliamentary_elections.00011.t: "Polling Open"
+ parliamentary_elections.00011.d: "Placeholder"
+ parliamentary_elections.00011.a: "Placeholder"
+ 
+ parliamentary_elections.00012.t: "Polling Open"
+ parliamentary_elections.00012.d: "Placeholder"
+ parliamentary_elections.00012.a: "Placeholder"
+ 
+ lgVoting1688.1.t: "Whigs wins election in $PROVINCENAME$"
+ lgVoting1688.1.d: "Whigs wins election in $PROVINCENAME$"
+ lgVoting1688.1.a: "Ok"
+ lgVoting1688.2.t: "Tories wins election in $PROVINCENAME$"
+ lgVoting1688.2.d: "Tories wins election in $PROVINCENAME$"
+ lgVoting1688.2.a: "Ok"

@@ -1,0 +1,57 @@
+LgModifiers_ParliamentaryMonarchy = {
+		#max_states = 3
+		#years_of_nationalism = -5
+		legitimacy = 0.25
+		#global_unrest = -1
+		global_autonomy = -0.075
+		#max_absolutism = -30
+}
+
+#####################################################
+#	PARLIAMENT										#
+#####################################################
+lgModifiers_electionTimer = {
+	picture = "have_parliament_icon"
+}
+
+lgModifiers_electionRecentlyHeld = {
+	picture = "have_parliament_icon"
+}
+
+#####################################################
+#	MEMBERS OF PARLIAMENT							#
+#####################################################
+lgModifiers_MPsWhig = {
+	picture = "diplomats"
+}
+
+lgModifiers_MPsTory = {
+	picture = "diplomats"
+}
+
+lgModifiers_MPsWalpole = {
+	picture = "diplomats"
+}
+
+lgModifiers_MPsFriends = {
+	picture = "diplomats"
+}
+
+lgModifiers_MPsWhig2 = {
+	picture = "diplomats"
+}
+
+lgModifiers_MPsTory2 = {
+	picture = "diplomats"
+}
+
+lgModifiers_MPsTory3 = {
+	picture = "diplomats"
+}
+
+#####################################################
+#	ACTS OF PARLIAMENT								#
+#####################################################
+lgModifiers_SupplyTimer = {
+	picture = "have_parliament_icon"
+}

@@ -1,0 +1,125 @@
+########################################
+# Constitutional Crisis between the monarch and Tory ministers (1688-1721)
+########################################
+
+namespace = constitutional_crisis
+
+# Constitutional Crisis between the monarch and Tory ministers (1688-1721)
+country_event = {
+	id = constitutional_crisis.0001
+	title = "constitutional_crisis.0001t"
+	desc = "constitutional_crisis.0001d"
+	picture = LIBERUM_VETO_eventPicture
+	
+	trigger = {
+		is_year = 1688
+		NOT = { is_year = 1721 }
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_ToryMinistry
+		lgTriggers_ParliamentaryGovernment = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 400
+		modifier = {
+			factor = 0.66
+			advisor = statesman
+		}
+	}
+	
+	option = {	# The monarch dismisses Tory ministry and appoints Whig ministry in its stead.
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.0001.a"
+		remove_country_modifier = lgModifiers_ToryMinistry
+		add_country_modifier = {
+			name = "lgModifiers_WhigMinistry"
+			duration = 2555
+		}
+		add_stability = -1
+	}
+	
+	option = { # The monarch dismisses Tory ministry and dissolved parliament to force an early election, hopefully in favor of that ministry.
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.0001.b"
+		custom_tooltip = lgEvents_Parliamentary_DemiseCrown.0001.a.tt
+		remove_country_modifier = lgModifiers_ToryMinistry
+		remove_country_modifier = lgModifiers_electionTimer
+		add_stability = -1
+		add_prestige = 15
+	}
+	
+	option = { # The monarch decides to retain ministers in office
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.0001.c"
+		add_stability = 1
+		add_prestige = -15
+	}
+}
+
+########################################
+# Constitutional Crisis between the monarch and Whig ministers (1688-1721)
+########################################
+
+# Constitutional Crisis between the monarch and Whig ministers (1688-1721)
+country_event = {
+	id = constitutional_crisis.0002
+	title = "constitutional_crisis.0002t"
+	desc = "constitutional_crisis.0002d"
+	picture = LIBERUM_VETO_eventPicture
+	
+	trigger = {
+		is_year = 1688
+		NOT = { is_year = 1721 }
+		lgTriggers_ParliamentaryGovernment = yes
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_WhigMinistry
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+		modifier = {
+			factor = 0.66
+			advisor = statesman
+		}
+		modifier = {
+			factor = 0.95
+			is_year = 1708
+		}
+		modifier = {
+			factor = 0.95
+			is_year = 1710
+		}
+		modifier = {
+			factor = 5.0
+			is_year = 1714
+		}
+	}
+	
+	option = {	# The monarch dismisses Whig ministry and appoints Tory ministry in its stead.
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.0002.a"
+		remove_country_modifier = lgModifiers_WhigMinistry
+		add_country_modifier = {
+			name = "lgModifiers_ToryMinistry"
+			duration = 2555
+		}
+		add_stability = -1
+	}
+	
+	option = { # The monarch dismisses Whig ministry and dissolved parliament to force an early election, hopefully in favor of Tory ministry.
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.0002.b"
+		custom_tooltip = lgEvents_Parliamentary_DemiseCrown.0001.a.tt
+		remove_country_modifier = lgModifiers_WhigMinistry
+		remove_country_modifier = lgModifiers_electionTimer
+		add_stability = -1
+		add_prestige = 15
+	}
+	
+	option = { # The monarch decides to retain ministers in office
+		ai_chance = { factor = 33 }
+		name = "constitutional_crisis.0002.c"
+		add_stability = 1
+		add_prestige = -15
+	}
+}

@@ -1,0 +1,7 @@
+﻿l_english:
+ lgEvents_Parliamentary_DemiseCrown.0001t: "Dissolution of Parliament on Demise of the Monarch"
+ lgEvents_Parliamentary_DemiseCrown.0001d: "By the law, the Parliament have been automatically dissolved following the death of our late monarch. A general election will now take place."
+ lgEvents_Parliamentary_DemiseCrown.0001d2: "By the law, the Parliament have been automatically dissolved following the death of $OLD$. A general election will now take place."
+ lgEvents_Parliamentary_DemiseCrown.0001.a: "Live long the [Root.Monarch.GetTitle]!"
+ lgEvents_Parliamentary_DemiseCrown.0001.a.tt: "The Parliament is dissolved. A general election will take place."
+ lgEvents_Parliamentary_DemiseCrown.0001.b: "[Root.Monarch.GetTitle] [Root.Monarch.GetName]"

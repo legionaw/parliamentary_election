@@ -1,0 +1,20 @@
+lgGovernment1721_whig = {
+	is_year = 1721
+	NOT = { is_year = 1742 }
+	has_country_modifier = lgModifiers_electionTimer
+	has_country_modifier = lgModifiers_WhigMinistry
+}
+
+lgGovernment1721_whig2 = {
+	is_year = 1721
+	NOT = { is_year = 1742 }
+	has_country_modifier = lgModifiers_electionTimer
+	has_country_modifier = lgModifiers_WalpoleMinistry
+}
+
+lgGovernment1721_tory = {
+	is_year = 1721
+	NOT = { is_year = 1742 }
+	has_country_modifier = lgModifiers_electionTimer
+	has_country_modifier = lgModifiers_ToryMinistry
+}

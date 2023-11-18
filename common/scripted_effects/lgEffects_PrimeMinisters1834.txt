@@ -1,0 +1,46 @@
+PrimeMinister1834 = {
+	hidden_effect = {
+		if = {
+			limit = {
+				has_country_modifier = pm_grey
+				has_country_modifier = pm_peel
+				has_country_modifier = pm_liverpool
+				has_country_modifier = pm_grenville2
+				NOT = { has_country_flag = lgFlags_DemiseCrown }
+			}
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_derby
+				has_country_modifier = pm_melbourne
+				has_country_modifier = pm_fox
+				has_country_modifier = pm_pitt2
+				NOT = { has_country_flag = lgFlags_DemiseCrown }
+			}
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_aberdeen
+				has_country_modifier = pm_palmerston
+				has_country_modifier = pm_hastings
+				has_country_modifier = pm_wellington
+				NOT = { has_country_flag = lgFlags_DemiseCrown }
+			}
+			change_mil = -1
+		}
+		remove_country_modifier = pm_grey
+		remove_country_modifier = pm_peel
+		remove_country_modifier = pm_liverpool
+		remove_country_modifier = pm_grenville2
+		remove_country_modifier = pm_derby
+		remove_country_modifier = pm_melbourne
+		remove_country_modifier = pm_fox
+		remove_country_modifier = pm_pitt2
+		remove_country_modifier = pm_aberdeen
+		remove_country_modifier = pm_palmerston
+		remove_country_modifier = pm_hastings
+		remove_country_modifier = pm_wellington
+	}
+}

@@ -1,0 +1,46 @@
+#############################################
+# British parliamentary elections 1688-1721 #
+#############################################
+
+namespace = lgVoting1688
+
+#### Province voting ####
+province_event = {
+	id = lgVoting1688.1
+	title = lgVoting1688.1.t
+	desc = lgVoting1688.1.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes 
+	hidden = yes
+	
+	immediate = {
+		owner = {
+			change_variable = { which = whigVar value = 1 }		 #Add to running total
+		}
+	}
+	
+	option = {
+		name = lgVoting1688.1.a
+	}
+}
+
+province_event = {
+	id = lgVoting1688.2
+	title = lgVoting1688.2.t
+	desc = lgVoting1688.2.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes 
+	hidden = yes
+	
+	immediate = {
+		owner = {
+			change_variable = { which = toryVar value = 1 }		 #Add to running total
+		}
+	}
+	
+	option = {
+		name = lgVoting1688.2.a
+	}
+}

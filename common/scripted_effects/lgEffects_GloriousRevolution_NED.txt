@@ -1,0 +1,83 @@
+#lgGloriousRevolution_NED = {
+### If Netherlands is Dutch Republic 
+#	if = {
+#		limit = {
+#			any_known_country = {
+#				tag = NED
+#				has_reform = dutch_republic
+#				is_subject = no
+#				num_of_cities = 4
+#				marriage_with = ROOT
+#				NOT = {
+#					war_with = ROOT
+#				}
+#				NOT = {
+#					senior_union_with = ROOT
+#				}
+#			}
+#			NOT = {
+#				senior_union_with = NED
+#			}
+#		}
+#		hidden_effect = {
+#			#exile_ruler_as = GloriousRevolution_OverthrownRuler
+#			#exile_heir_as = GloriousRevolution_OverthrownHeir
+#		}
+#		NED = {
+#			ROOT = {
+#				define_ruler = {
+#					name = "William #0"
+#					age = 38
+#					dynasty = PREV
+#				}
+#			}
+#		}
+#	}
+########################################
+### If Netherlands is NOT Dutch Republic
+#	if = {
+#		limit = {
+#			any_known_country = {
+#				tag = NED
+#				NOT = {
+#					has_reform = dutch_republic
+#				}
+#				government = monarchy
+#				is_subject = no
+#				num_of_cities = 4
+#				marriage_with = ROOT
+#				NOT = {
+#					war_with = ROOT
+#				}
+#			}
+#		}
+#		hidden_effect = {
+#			exile_ruler_as = GloriousRevolution_OverthrownRuler
+#			exile_heir_as = GloriousRevolution_OverthrownHeir
+#			NED = {
+#				exile_ruler_as = GloriousRevolution_NewRuler
+#				exile_heir_as = GloriousRevolution_NewHeir
+#			}
+#			set_ruler = GloriousRevolution_NewRuler
+#			set_heir = GloriousRevolution_NewHeir
+#			create_union = NED
+#		}
+#		tooltip = {
+#			create_union = NED
+#		}
+#		add_opinion = {
+#			who = NED
+#			modifier = lgOpinionModifiers_Revolution
+#		}
+#		NED = {
+#			add_opinion = {
+#				who = ROOT
+#				modifier = lgOpinionModifiers_Revolution
+#			}
+#			country_event = {
+#				id = ENG_glorious_revolution.0002
+#				days = 1
+#			}
+#		}
+#	}
+#}

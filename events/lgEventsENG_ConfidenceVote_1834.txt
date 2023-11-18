@@ -1,0 +1,398 @@
+################################################################################
+# Parliamentary Confidence Vote - Conservative (1834-1859)
+################################################################################
+
+namespace = confidence_vote
+
+# Parliamentary Confidence Vote - Conservative (1834-1859)
+country_event = {
+	id = confidence_vote.0095
+	title = "confidence_vote.0095t"
+	desc = "confidence_vote.0095d"
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	trigger = {
+		is_year = 1834
+		NOT = { is_year = 1859 }
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_ConservativeMinistry
+		lgTriggers_ParliamentaryGovernment = yes
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.66
+			advisor = statesman
+		}
+	}
+	
+	option = {	# Possible outcomes of this vote
+		name = "confidence_vote.0095.a"
+		random_list = {
+			33 = { country_event = { id = confidence_vote.0096 days = 1 } }
+			33 = { country_event = { id = confidence_vote.0097 days = 1 } }
+			33 = { country_event = { id = confidence_vote.0098 days = 1 } }
+		}
+	}
+}
+
+# Parliamentary Confidence Vote - Conservative lost and is replaced by Whigs at the head of government (1834-1859)
+country_event = {
+	id = confidence_vote.0096
+	title = "confidence_vote.0096t"
+	desc = "confidence_vote.0096d"
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		lgTriggers_ConfidenceVote1834 = yes
+		lgTriggers_ParliamentaryGovernment = yes
+		has_country_modifier = lgModifiers_ConservativeMinistry
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	option = {	# Who dared to change my ministers!
+		name = "confidence_vote.0096.a"
+		remove_country_modifier = lgModifiers_ConservativeMinistry
+		if = {
+			limit = {
+				has_country_modifier = pm_peel
+			}
+			remove_country_modifier = pm_peel
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_derby
+			}
+			remove_country_modifier = pm_derby
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_aberdeen
+			}
+			remove_country_modifier = pm_aberdeen
+			change_mil = -1
+		}
+		add_country_modifier = {
+			name = "lgModifiers_WhigMinistry2"
+			duration = 2555
+		}
+		add_stability = -1
+		country_event = { id = confidence_vote.142 days = 1 } #Prime Minister selection event
+	}
+}
+
+# Parliamentary Confidence Vote - Conservative lost and Parliament is dissolved for early election (1834-1859)
+country_event = {
+	id = confidence_vote.0097
+	title = "confidence_vote.0097t"
+	desc = "confidence_vote.0097d"
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		lgTriggers_ConfidenceVote1834 = yes
+		lgTriggers_ParliamentaryGovernment = yes
+		has_country_modifier = lgModifiers_ConservativeMinistry
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	option = { # I hope this election will return my ministers
+		name = "confidence_vote.0097.a"
+		custom_tooltip = lgEvents_Parliamentary_DemiseCrown.0001.a.tt
+		remove_country_modifier = lgModifiers_ConservativeMinistry
+		if = {
+			limit = {
+				has_country_modifier = pm_peel
+			}
+			remove_country_modifier = pm_peel
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_derby
+			}
+			remove_country_modifier = pm_derby
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_aberdeen
+			}
+			remove_country_modifier = pm_aberdeen
+			change_mil = -1
+		}
+		remove_country_modifier = lgModifiers_electionTimer
+		add_stability = -1
+	}
+}
+
+# Parliamentary Confidence Vote - Conservative Won (1834-1859)
+country_event = {
+	id = confidence_vote.0098
+	title = "confidence_vote.0098t"
+	desc = "confidence_vote.0098d"
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # The King is pleased
+		name = "confidence_vote.0098.a"
+		add_stability = 1
+	}
+}
+
+################################################################################
+# Parliamentary Confidence Vote - Whig (1834-1859)
+################################################################################
+
+# Parliamentary Confidence Vote - Whig (1834-1859)
+country_event = {
+	id = confidence_vote.0099
+	title = "confidence_vote.0099t"
+	desc = "confidence_vote.0099d"
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	trigger = {
+		is_year = 1834
+		NOT = { is_year = 1859 }
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_WhigMinistry2
+		lgTriggers_ParliamentaryGovernment = yes
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.66
+			advisor = statesman
+		}
+	}
+	
+	option = {	# Possible outcomes of this vote
+		name = "confidence_vote.0099.a"
+		random_list = {
+			33 = { country_event = { id = confidence_vote.0100 days = 1 } }
+			33 = { country_event = { id = confidence_vote.0101 days = 1 } }
+			33 = { country_event = { id = confidence_vote.0102 days = 1 } }
+		}
+	}
+}
+
+# Parliamentary Confidence Vote - Whig lost and is replaced by Conservative at the head of government (1834-1859)
+country_event = {
+	id = confidence_vote.0100
+	title = "confidence_vote.0100t"
+	desc = "confidence_vote.0100d"
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		lgTriggers_ConfidenceVote1834 = yes
+		lgTriggers_ParliamentaryGovernment = yes
+		has_country_modifier = lgModifiers_WhigMinistry2
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	option = {	# Who dared to change my ministers!
+		name = "confidence_vote.0100.a"
+		remove_country_modifier = lgModifiers_WhigMinistry2
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = pm_grey
+					has_country_modifier = pm_grenville2
+				}
+			}
+			remove_country_modifier = pm_grey
+			remove_country_modifier = pm_grenville2
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = pm_melbourne
+					has_country_modifier = pm_fox
+				}
+			}
+			remove_country_modifier = pm_melbourne
+			remove_country_modifier = pm_fox
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = pm_palmerston
+					has_country_modifier = pm_hastings
+				}
+			}
+			remove_country_modifier = pm_palmerston
+			remove_country_modifier = pm_hastings
+			change_mil = -1
+		}
+		add_country_modifier = {
+			name = "lgModifiers_ConservativeMinistry"
+			duration = 2555
+		}
+		add_stability = -1
+		country_event = { id = confidence_vote.143 days = 1 } #Prime Minister selection event
+	}
+}
+
+# Parliamentary Confidence Vote - Whigs lost and Parliament is dissolved for early election (1834-1859)
+country_event = {
+	id = confidence_vote.0101
+	title = "confidence_vote.0101t"
+	desc = "confidence_vote.0101d"
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		lgTriggers_ConfidenceVote1834 = yes
+		lgTriggers_ParliamentaryGovernment = yes
+		has_country_modifier = lgModifiers_WhigMinistry2
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	option = { # I hope this election will return my ministers
+		name = "confidence_vote.0101.a"
+		custom_tooltip = lgEvents_Parliamentary_DemiseCrown.0001.a.tt
+		remove_country_modifier = lgModifiers_WhigMinistry2
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = pm_grey
+					has_country_modifier = pm_grenville2
+				}
+			}
+			remove_country_modifier = pm_grey
+			remove_country_modifier = pm_grenville2
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = pm_melbourne
+					has_country_modifier = pm_fox
+				}
+			}
+			remove_country_modifier = pm_melbourne
+			remove_country_modifier = pm_fox
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = pm_palmerston
+					has_country_modifier = pm_hastings
+				}
+			}
+			remove_country_modifier = pm_palmerston
+			remove_country_modifier = pm_hastings
+			change_mil = -1
+		}
+		remove_country_modifier = lgModifiers_electionTimer
+		add_stability = -1
+	}
+}
+
+# Parliamentary Confidence Vote - Whig won (1834-1859)
+country_event = {
+	id = confidence_vote.0102
+	title = "confidence_vote.0102t"
+	desc = "confidence_vote.0102d"
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # The King is pleased
+		name = "confidence_vote.0102.a"
+		add_stability = 1
+	}
+}
+
+##############################################
+# British prime minister selection 1834-1859 #
+##############################################	
+# Whig prime minister selection
+country_event = {
+	id = confidence_vote.142
+	title = "confidence_vote.142t"
+	desc = "confidence_vote.142d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	# Charles Grey, 2nd Earl Grey (ADM)
+		name = "confidence_vote.142.a"
+		add_country_modifier = {
+			name = "pm_grey"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {	# William Lamb, 2nd Viscount Melbourne (DIP)
+		name = "confidence_vote.142.b"
+		add_country_modifier = {
+			name = "pm_melbourne"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# Henry John Temple, 3rd Viscount Palmerston (MIL)
+		name = "confidence_vote.142.c"
+		add_country_modifier = {
+			name = "pm_palmerston"
+			duration = 2700
+		}
+		change_mil = 1
+	}
+}
+
+# Conservative prime minister selection
+country_event = {
+	id = confidence_vote.143
+	title = "confidence_vote.143t"
+	desc = "confidence_vote.143d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	# Sir Robert Peel (ADM)
+		name = "confidence_vote.143.a"
+		add_country_modifier = {
+			name = "pm_peel"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {	# Edward Smith-Stanley, 14th Earl of Derby (DIP)
+		name = "confidence_vote.143.b"
+		add_country_modifier = {
+			name = "pm_derby"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# George Hamilton-Gordon, 4th Earl of Aberdeen (MIL)
+		name = "confidence_vote.143.c"
+		add_country_modifier = {
+			name = "pm_aberdeen"
+			duration = 2700
+		}
+		change_mil = 1
+	}
+}

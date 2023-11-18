@@ -1,0 +1,156 @@
+#setup at beginning of each election
+election1742_startup = {
+	hidden_effect = {
+		set_variable = { which = whigVar value = 0 } #whig
+		set_variable = { which = toryVar value = 0 } #Tory
+		every_owned_province = {
+			limit = {
+				has_seat_in_parliament = yes
+				NOT = { has_province_modifier = lgModifiers_MPsWhig }
+				NOT = { has_province_modifier = lgModifiers_MPsTory }
+			}
+			remove_province_modifier = "lgModifiers_MPsWalpole"
+			random_list = {
+				50 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsWhig"
+						duration = -1
+					}
+				}
+				50 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsTory"
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+}
+
+#contest - whig favored
+election1742_contest1 = {
+	hidden_effect = {
+		every_owned_province = {
+			limit = {
+				has_seat_in_parliament = yes
+			}
+			random_list = {
+				#Whigs
+				55 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsWhig"
+						duration = -1
+					}
+					remove_province_modifier = "lgModifiers_MPsTory"
+					province_event = { id = lgVoting1742.1 days = 1 }
+				}
+				#Tories
+				45 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsTory"
+						duration = -1
+					}
+					remove_province_modifier = "lgModifiers_MPsWhig"
+					province_event = { id = lgVoting1742.2 days = 1 }
+				}
+			}
+		}
+		country_event = { id = parliamentary_elections.2007 days = 2 } # start counting
+	}
+}
+
+#contest - Tory favored
+election1742_contest2 = {
+	hidden_effect = {
+		every_owned_province = {
+			limit = {
+				has_seat_in_parliament = yes
+			}
+			random_list = {
+				#Whigs
+				45 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsWhig"
+						duration = -1
+					}
+					remove_province_modifier = "lgModifiers_MPsTory"
+					province_event = { id = lgVoting1742.1 days = 1 }
+				}
+				#Tories
+				55 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsTory"
+						duration = -1
+					}
+					remove_province_modifier = "lgModifiers_MPsWhig"
+					province_event = { id = lgVoting1742.2 days = 1 }
+				}
+			}
+		}
+		country_event = { id = parliamentary_elections.2007 days = 2 } # start counting
+	}
+}
+
+#contest - neutral
+election1742_contest3 = {
+	hidden_effect = {
+		every_owned_province = {
+			limit = {
+				has_seat_in_parliament = yes
+			}
+			random_list = {
+				#Whigs
+				50 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsWhig"
+						duration = -1
+					}
+					remove_province_modifier = "lgModifiers_MPsTory"
+					province_event = { id = lgVoting1742.1 days = 1 }
+				}
+				#Tories
+				50 = {
+					add_province_modifier = {
+						name = "lgModifiers_MPsTory"
+						duration = -1
+					}
+					remove_province_modifier = "lgModifiers_MPsWhig"
+					province_event = { id = lgVoting1742.2 days = 1 }
+				}
+			}
+		}
+		country_event = { id = parliamentary_elections.2007 days = 2 } # start counting
+	}
+}
+
+#counting seats won
+election1742_count = {
+	# WHIG CONTROL
+	if = {
+		limit = {
+			check_variable = { which = whigVar which = toryVar }
+			NOT = { check_variable = { which = toryVar which = whigVar } }
+			NOT = { is_variable_equal = { which = whigVar which = toryVar } }
+		}
+		country_event = { id = parliamentary_elections.2002 days = 88 }
+	}
+	# TORY CONTROL
+	if = {
+		limit = {
+			check_variable = { which = toryVar which = whigVar } # there must be more tory seats than whig seats
+			NOT = { check_variable = { which = whigVar which = toryVar } }
+			NOT = { is_variable_equal = { which = whigVar which = toryVar } }
+		}
+		country_event = { id = parliamentary_elections.2003 days = 88 }
+	}
+	# DEADLOCK
+	if = {
+		limit = {
+			is_variable_equal = { which = whigVar which = toryVar } # must be equal
+			#NOT = { check_variable = { which = whigVar which = toryVar } }
+			#NOT = { check_variable = { which = toryVar which = whigVar } }
+		}
+		country_event = { id = parliamentary_elections.2004 days = 88 }
+	}
+}

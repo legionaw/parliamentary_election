@@ -1,0 +1,168 @@
+CHANGELOG
+==========================================================================================
+v1.01
+==========================================================================================
+- Not released
+
+==========================================================================================
+v1.02 - 6 June 2014
+==========================================================================================
+- Public Release
+
+==========================================================================================
+v1.03 - 3 September 2014
+==========================================================================================
+- Fixed a bug where election events failed to remove party modifier from last election
+- Fixed folder name for /common (was typo’ed /commons, a poor oversight on my part)
+- Added a new form of government, the Parliamentary Monarchy, to be used instead of the Constitutional Monarchy when government form is changed through Glorious Revolution event.
+- Changed requirements for most of the parliamentary mod events to account for the new government form mentioned above, though having the constitutional monarchy can still trigger it (this may change, though).
+
+==========================================================================================
+v1.04 - 10 October 2014 (Major changes so please read all of this before you install this)
+==========================================================================================
+1. General
+------------------------------
+-Overhauled the election event system. No longer can you singlehandedly select a party to lead the HM government. Instead, now you can only attempt to influence the election outcome towards a party at a price starting at 50 ducats in 1688, doubling every period until it reaches 1,000 ducats by 1834, the beginning of last election period. It becomes more expensive over time, to represent waning influence of the Crown on parliamentary elections over time. You can just select “No preference” option which will not cost any ducats. Election now takes up to 90 days before results are announced. The election will not always go your way, so keep that in mind.
+-As part of the election system overhaul, prime minister selection was also introduced where you can select a prime minister from 3 candidates (most of them named after prominent statesman in British history of the period such as Sir Robert Walpole and Lord Liverpool) affiliated with the party that won the election after 1721, each for a particular category (ADM, DIP, or MIL). Each gives tech cost reduction for the category you chose but increases cost for other tech. Almost effectively a mirror of the national focus, except it modifies the tech cost, not monarch point. You’d best think about which prime minister you want, as you cannot go back before next election. However, like the ministry itself, prime minister can be dismissed via loss of confidence vote event or an event concerning conflict between monarch and ministers.
+-Parliamentary vote of confidence and constitutional crisis events have accordingly been updated to account for new prime minister mechanism
+-Parliamentary Monarchy, the new government type unique to England / Great Britain introduced in last version, has its effects adjusted/changed. Heavy ship power bonus was dropped as it did not made sense, having nothing to do directly with government, despite British reputation for sea power. Legitimacy was also cut to 1.25 from 2, keeping slightly higher than ordinary Constitutional Monarchy. Manpower recovery speed was also cut to 0.1 from 0.2. All other bonus such as tolerance and prestige decay remained intact. Years of nationalism modifier was added, same value as Constitutional Monarchy. Those may be tweaked further later on.
+-Event files and localisation files has been consolidated a bit, to reduce number of separate files a bit and event IDs changed a bit, so it is recommended that you remove all files for previous version of this mod before updating.
+-Constitutional crisis events has prestige gain/loss depending on option chosen reduced to both 15 and -15 respectively. Stability penalty/gain remain unchanged.
+-The Glorious Revolution event, the precursor required to trigger the parliamentary election cycles, has legitimacy gain dropped from its effects.
+
+------------------------------
+2. Changes to party modifiers
+2.1 General
+-Because prime ministers now provides tech cost modifiers, tech cost modifiers is now removed from party modifiers.
+
+2.2 Old Whigs (1688-1721, 1742-1784) / Patriot Whigs (1721-1742)
+-Stability cost modifier is now 5%
+-Missionary strength modifier is now -5%
+
+2.2 Old Tories (1688-1761)
+-Stability cost modifier is now -2.5%
+-Tax modifier is now -5%
+-Legitimacy modifier now gives 0.05 instead of 0.50 yearly
+
+2.3 Walpole Whigs (1721-1741)
+-Stability cost modifier is now 2.5%
+-Tax modifier is now -10%
+-Missionary strength modifier is now -5%
+-Land and naval maintenance modifiers is now 10%
+
+2.4 King’s Friends (1761-1784)
+-Stability cost modifier is now 15%
+-Land maintenance modifier is now 15%
+-Mercenary maintenance modifier is now -10%
+
+2.5 New Whigs (1784-1859)
+-Missionary strength modifier is now -15%
+-Stability cost modifier is now 10%
+
+==========================================================================================
+v1.05 - 21 November 2014
+==========================================================================================
+-Parliament is now automatically dissolved on death of the monarch
+-Reduced the frequency of having a confidence vote or a constitutional crisis if advisor is Statesman. The last game with this mod revealed it to be too high.
+-Now includes MOD file missing in last version release.
+
+==========================================================================================
+v1.06 - 23 November 2014
+==========================================================================================
+-Added supported_version missing in MOD file.
+-Now available as Steam Workshop version.
+-Glorious Revolution event will now convert England/Great Britain to Protestantism, if there is at least 15 percent of the provinces being Protestant. Also changed its MTTH, it is now more likely if English Civil War had ended and/or if number of Protestant provinces exceeds 15 percents or greater. Also, if Netherlands exists, it will automatically create alliance between that country and England/Britain, to indicate their support behind the revolution.
+-Fixed the typo for a party modifier in 1761 election file
+-Fixed wrong event number for one of the options in 1834 election file
+
+==========================================================================================
+v1.07 - 26 January 2015
+==========================================================================================
+-Changes to Parliamentary Monarchy form of government: No longer provides tolerance for heretics and heathen, prestige decay modifier is replaced by local autonomy modifier.
+-Updated for Europa Universalis IV patch 1.9
+
+==========================================================================================
+v1.08 - 25 March 2015
+==========================================================================================
+-Updated for 1.10
+
+==========================================================================================
+v1.09 - 3 May 2015
+==========================================================================================
+-Changed MTTH a bit for the Glorious Revolution event
+-Old Tory party should now provide a missionary bonus
+-King’s Friends party should now provide colonist bonus
+-Prime Minister selection now adds ADM, DIP, or MIL to ruler’s traits depending on whom you pick. Still provides tech cost bonus but that may be removed later.
+-Updated 00_on_actions.txt to make it better compatible with the latest version of game.
+
+==========================================================================================
+v1.10 - 12 June 2015
+==========================================================================================
+-Updated for 1.12
+-Updated 00_on_actions.txt to include any changes from 1.12 patch.
+-Parliamentary Monarchy now supports parliament mechanics and government ranks; Common Sense DLC may be required for this (I think; please report issues with it if not using that DLC)
+-Glorious Revolution event updated to add having either Absolute Monarchy or English Monarchy as a trigger.
+
+==========================================================================================
+v1.11 - 18 September 2015
+==========================================================================================
+-Updated for 1.13
+
+==========================================================================================
+v1.12 - 20 March 2018 (originally planned for April 2016)
+==========================================================================================
+-Updated for 1.25
+-WARNING: Internal name for various elements in this mod has been changed. Strongly recommended that you start a new game with this version.
+-General elections now elects MPs individually in each of parliament province and determines which party wins most seats.
+-Option for each event announcing result of the election will now display text based on your choice from the election event, to reduce immersion-breaking.
+-The pretender rebels under James Stuart will now immediately occupy province of their choice upon spawning following the Glorious Revolution event.
+-The Glorious Revolution event will now only change England or Great Britain to Protestantism as state religion if at least 75% of provinces owned are Protestant.
+-Glorious Revolution event now assigns all parliament provinces with random choice of either Whig or Tory Member of Parliament. It also now causes stability to drop instead of gain, in order to better reflect relatively instable political climate following the Glorious Revolution.
+-MTTH (Mean Time to Happen) for Glorious Revolution event changed to 100 month but becomes more unlikely to happen if Protestantism only controlled at least 15% of the provinces owned and state religion is Catholic.
+-Added a few events where some certain prime ministers may suddenly die in office.
+-A few new candidates were added to choose as a prime minister.
+-Parliamentary Monarchy government now also gives recovery bonus for the sailor pool.
+-Confidence vote event for Walpole Whig government is now more likely if the following criterias are met: Had War of Jenkins' War event fired, is at offensive war with Spain who is your rival, war exhaustion is at least 2, province of Cartagena is not occupied and is owned by Spain and the year is 1741 and the prime minister is Sir Robert Walpole. In this case, Sir Robert Walpole have 80% chance of losing the vote of confidence.
+-Confidence vote event for King's / Queen's Friends government is now more likely if the following criterias are met: War exhaustion is high, prime minister is Lord North, year is at least 1780, USA does not exist, is in colonial independence war with nation whose culture group is British, whose capital is in Eastern America colonial region, and whose allies is either France, Spain, or Netherlands. Lord North have 80% chance to lose the confidence vote.
+
+-Changes to the following political parties
+==Whig (1688-1784)==
+Added autonomy increase modifier
+
+==Tory (1688-1761)==
+Added development efficiency modifier
+Added autonomy reduction modifier
+
+==Walpole Whig (1721-1742)==
+-Added land morale penalty due to neglect of miltiary by Walpole Whigs
+-Added autonomy reduction modifier due to their centralizing tendencies
+-Added interest reduction modifier due to their desire to avoid wars as much possible and better sense of finance management
+-Added a yearly corruption modifier due to their notoriety for corruption
+-Removed missionary strength malus modifier
+-Those changes should now balance negative against positive stats of this party
+
+==King's/Queen's Friends==
+-Added possible mercenary modifier
+-Added spy defence penalty
+-Added dip. upkeep penalty
+-Added dip. reputation penalty
+-Added ship maintenance penalty
+-Added naval tradition penalty
+-Added ship construction time penalty
+-Added naval morale penalty
+-Those changes should now balance negative against positive stats of this party
+
+==New Whigs (1784-1859)==
+-Added naval maintenance reduction
+-Added army maintenace penalty
+-Changed army force limit modifier to negative
+-Army morale increase added to compensate for army FL loss
+-Added spy defence penalty
+
+==========================================================================================
+v1.12.1 - 15 August 2018
+==========================================================================================
+-[FIX] Fixed the event for announcing election victory of the Patriot Whigs durng a general election between 1721 and 1742 where an option would not show if you chose a different party.
+-[FIX] In an event for the Whig prime minister selection from 1742 to 1761, William Pitt the Elder will no longer appear as an option unless Lord Wilmington died.
+-[FIX] Election victory announcement events for 1761-1784 should now properly remove Lord Shelburne from the office
+-[FIX] Election victory announcement event where no party secured majority in Parliament should now remove all Prime Minister modifiers immediately.

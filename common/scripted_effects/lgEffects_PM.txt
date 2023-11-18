@@ -1,0 +1,97 @@
+#These effects clears the existing Prime Minister modifiers when called for
+
+#Administrative Prime Ministers
+lgRemovePM_adm = {
+	###1721
+	remove_country_modifier = pm_bolingbroke
+	remove_country_modifier = pm_walpole
+	remove_country_modifier = pm_bath
+	###1741
+	remove_country_modifier = pm_devonshire
+	remove_country_modifier = pm_dashwood
+	###1761
+	remove_country_modifier = pm_grenville
+	remove_country_modifier = pm_lordnorth
+	###1784
+	remove_country_modifier = pm_perceval
+	remove_country_modifier = pm_liverpool
+	remove_country_modifier = pm_grenville2
+	remove_country_modifier = pm_addington1
+	###1834
+	remove_country_modifier = pm_grey
+	remove_country_modifier = pm_peel
+}
+
+#Diplomatic Prime Ministers
+lgRemovePM_dip = {
+	###1721
+	remove_country_modifier = pm_wyndham
+	remove_country_modifier = pm_pelham
+	remove_country_modifier = pm_cobham
+	###1741
+	remove_country_modifier = pm_newcastle
+	remove_country_modifier = pm_lichfield
+	###1761
+	remove_country_modifier = pm_bute
+	remove_country_modifier = pm_rockingham
+	remove_country_modifier = pm_shelburne
+	remove_country_modifier = pm_portland
+	###1784
+	remove_country_modifier = pm_fox
+	remove_country_modifier = pm_pitt1
+	remove_country_modifier = pm_castlereagh
+	remove_country_modifier = pm_canning
+	###1834
+	remove_country_modifier = pm_derby
+	remove_country_modifier = pm_melbourne
+	remove_country_modifier = pm_russell
+}
+
+#Militaristic Prime Ministers
+lgRemovePM_mil = {
+	###1721
+	remove_country_modifier = pm_smith
+	remove_country_modifier = pm_wilmington
+	remove_country_modifier = pm_fisher
+	###1741
+	remove_country_modifier = pm_pitt1
+	remove_country_modifier = pm_abingdon
+	###1761
+	remove_country_modifier = pm_sandwich
+	remove_country_modifier = pm_grafton
+	###1784
+	remove_country_modifier = pm_hastings
+	remove_country_modifier = pm_wellington
+	###1834
+	remove_country_modifier = pm_aberdeen
+	remove_country_modifier = pm_palmerston
+}
+
+#lgRemovePM_all = {
+#	hidden_effect = {
+#		if = {
+#			limit = {
+#				pm_adm = yes
+#				NOT = { has_country_flag = demise_of_the_crown }
+#			}
+#			change_adm = -1
+#		}
+#		if = {
+#			limit = {
+#				pm_dip = yes
+#				NOT = { has_country_flag = demise_of_the_crown }
+#			}
+#			change_dip = -1
+#		}
+#		if = {
+#			limit = {
+#				pm_mil = yes
+#				NOT = { has_country_flag = demise_of_the_crown }
+#			}
+#			change_mil = -1
+#		}
+#		lgRemovePM_adm = yes
+#		lgRemovePM_dip = yes
+#		lgRemovePM_mil = yes
+#	}
+#}

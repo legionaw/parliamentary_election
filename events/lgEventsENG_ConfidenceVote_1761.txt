@@ -1,0 +1,522 @@
+################################################################################
+# Parliamentary Confidence Vote - King's Friends (1761-1784)
+################################################################################
+
+namespace = confidence_vote
+
+# Parliamentary Confidence Vote - King's Friends (1761-1784)
+country_event = {
+	id = confidence_vote.3001
+	title = "confidence_vote.3001t"
+	desc = "confidence_vote.3001d"
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	trigger = {
+		is_year = 1761
+		NOT = { is_year = 1784 }
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_FriendsMinistry
+		lgTriggers_ParliamentaryGovernment = yes
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 400
+		modifier = {
+			factor = 0.66
+			advisor = statesman
+		}
+		modifier = {
+			factor = 0.66
+			is_year = 1782
+		}
+		modifier = {
+			factor = 0.66
+			is_year = 1783
+		}
+		modifier = {
+			factor = 0.2
+			war_exhaustion = 2
+			has_country_modifier = pm_lordnorth
+			is_year = 1780
+			any_country = {
+				NOT = {
+					exists = USA
+				}
+				culture_group = british
+				capital_scope = {
+					colonial_region = colonial_eastern_america
+					is_core = ROOT
+				}
+				OR = {
+					alliance_with = FRA
+					alliance_with = SPA
+					alliance_with = NED
+				}
+				war_with = ROOT
+				has_casus_belli = {
+					type = cb_colonial_independence_war
+					target = ROOT
+				}
+			}
+		}
+	}
+	
+	option = {	# Possible outcomes of this vote
+		name = "confidence_vote.3001.a"
+		trigger = {
+#			NOT = {
+#				war_exhaustion = 2
+#				has_country_modifier = pm_lordnorth
+#				is_year = 1780
+#				any_country = {
+#					NOT = {
+#						exists = USA
+#					}
+#					culture_group = british
+#					capital_scope = {
+#						colonial_region = colonial_eastern_america
+#						is_core = ROOT
+#					}
+#					OR = {
+#						alliance_with = FRA
+#						alliance_with = SPA
+#						alliance_with = NED
+#					}
+#					war_with = ROOT
+#					has_casus_belli = {
+#						type = cb_colonial_independance_war
+#						target = ROOT
+#					}
+#				}
+#			}
+		}
+		random_list = {
+			33 = { country_event = { id = confidence_vote.3002 days = 1 } }
+			33 = { country_event = { id = confidence_vote.3003 days = 1 } }
+			33 = { country_event = { id = confidence_vote.3004 days = 1 } }
+		}
+	}
+	
+#	option = {	# Possible outcomes of this vote
+#		name = "confidence_vote.3001.b"
+#		trigger = {
+#			war_exhaustion = 2
+#			has_country_modifier = pm_lordnorth
+#			is_year = 1780
+#			any_country = {
+#				NOT = {
+#					exists = USA
+#				}
+#				culture_group = british
+#				capital_scope = {
+#					colonial_region = colonial_eastern_america
+#					is_core = ROOT
+#				}
+#				OR = {
+#					alliance_with = FRA
+#					alliance_with = SPA
+#					alliance_with = NED
+#				}
+#				war_with = ROOT
+#				has_casus_belli = {
+#					type = cb_colonial_independance_war
+#					target = ROOT
+#				}
+#			}
+#		}
+#		random_list = {
+#			80 = { country_event = { id = confidence_vote.3002 days = 1 } }
+#			10 = { country_event = { id = confidence_vote.3003 days = 1 } }
+#			10 = { country_event = { id = confidence_vote.3004 days = 1 } }
+#		}
+#	}
+}
+
+# Parliamentary Confidence Vote - King's Friends lost and is replaced by Whigs at the head of government (1761-1784)
+country_event = {
+	id = confidence_vote.3002
+	title = "confidence_vote.3002t"
+	desc = "confidence_vote.3002d"
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		lgTriggers_ConfidenceVote1761 = yes
+		lgTriggers_ParliamentaryGovernment = yes
+		has_country_modifier = lgModifiers_FriendsMinistry
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	option = {	# Who dared to change my ministers!
+		name = "confidence_vote.3002.a"
+		remove_country_modifier = lgModifiers_FriendsMinistry
+		if = {
+			limit = {
+				has_country_modifier = pm_lordnorth
+			}
+			remove_country_modifier = pm_lordnorth
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_bute
+			}
+			remove_country_modifier = pm_bute
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_sandwich
+			}
+			remove_country_modifier = pm_sandwich
+			change_mil = -1
+		}
+		add_country_modifier = {
+			name = "lgModifiers_WhigMinistry"
+			duration = 2555
+		}
+		add_stability = -1
+		country_event = { id = confidence_vote.138 days = 1 } #Prime Minister selection event
+	}
+}
+
+# Parliamentary Confidence Vote - King's Friends lost and Parliament is dissolved for early election (1761-1784)
+country_event = {
+	id = confidence_vote.3003
+	title = "confidence_vote.3003t"
+	desc = "confidence_vote.3003d"
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		lgTriggers_ConfidenceVote1761 = yes
+		lgTriggers_ParliamentaryGovernment = yes
+		has_country_modifier = lgModifiers_FriendsMinistry
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	option = { # I hope this election will return my ministers
+		name = "confidence_vote.3003.a"
+		custom_tooltip = lgEvents_Parliamentary_DemiseCrown.0001.a.tt
+		remove_country_modifier = lgModifiers_FriendsMinistry
+		if = {
+			limit = {
+				has_country_modifier = pm_lordnorth
+			}
+			remove_country_modifier = pm_lordnorth
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_bute
+			}
+			remove_country_modifier = pm_bute
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = pm_sandwich
+			}
+			remove_country_modifier = pm_sandwich
+			change_mil = -1
+		}
+		remove_country_modifier = lgModifiers_electionTimer
+		add_stability = -1
+	}
+}
+
+# Parliamentary Confidence Vote - King's Friends won (1761-1784)
+country_event = {
+	id = confidence_vote.3004
+	title = "confidence_vote.3004t"
+	desc = "confidence_vote.3004d"
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # The King is pleased
+		name = "confidence_vote.3004.a"
+		add_stability = 1
+	}
+}
+
+################################################################################
+# Parliamentary Confidence Vote - Whig (1761-1784)
+################################################################################
+
+# Parliamentary Confidence Vote - Whig (1761-1784)
+country_event = {
+	id = confidence_vote.3005
+	title = "confidence_vote.3005t"
+	desc = "confidence_vote.3005d"
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	trigger = {
+		is_year = 1761
+		NOT = { is_year = 1784 }
+		has_country_modifier = lgModifiers_electionTimer
+		has_country_modifier = lgModifiers_WhigMinistry
+		lgTriggers_ParliamentaryGovernment = yes
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 400
+		modifier = {
+			factor = 0.66
+			advisor = statesman
+		}
+		modifier = {
+			factor = 0.95
+			is_year = 1782
+		}
+		modifier = {
+			factor = 0.95
+			is_year = 1783
+		}
+	}
+
+	option = {	# Possible outcomes of this vote
+		name = "confidence_vote.3005.a"
+		random_list = {
+			33 = { country_event = { id = confidence_vote.3006 days = 1 } }
+			33 = { country_event = { id = confidence_vote.3007 days = 1 } }
+			33 = { country_event = { id = confidence_vote.3008 days = 1 } }
+		}
+	}
+}
+
+# Parliamentary Confidence Vote - Whig lost and is replaced by King's Friend at the head of government (1761-1784)
+country_event = {
+	id = confidence_vote.3006
+	title = "confidence_vote.3006t"
+	desc = "confidence_vote.3006d"
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		lgTriggers_ConfidenceVote1761 = yes
+		lgTriggers_ParliamentaryGovernment = yes
+		has_country_modifier = lgModifiers_WhigMinistry
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	option = {	# Who dared to change my ministers!
+		name = "confidence_vote.3006.a"
+		remove_country_modifier = lgModifiers_WhigMinistry
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = pm_grenville
+					has_country_modifier = pm_devonshire
+				}
+			}
+			remove_country_modifier = pm_grenville
+			remove_country_modifier = pm_devonshire
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = pm_rockingham
+					has_country_modifier = pm_shelburne
+					has_country_modifier = pm_newcastle
+				}
+			}
+			remove_country_modifier = pm_rockingham
+			remove_country_modifier = pm_shelburne
+			remove_country_modifier = pm_newcastle
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = pm_grafton
+					has_country_modifier = pm_pitt1
+				}
+			}
+			remove_country_modifier = pm_grafton
+			remove_country_modifier = pm_pitt1
+			change_mil = -1
+		}
+		add_country_modifier = {
+			name = "lgModifiers_FriendsMinistry"
+			duration = 2555
+		}
+		add_stability = -1
+		country_event = { id = confidence_vote.139 days = 1 } #Prime Minister selection event
+	}
+}
+
+# Parliamentary Confidence Vote - Whigs lost and Parliament is dissolved for early election (1761-1784)
+country_event = {
+	id = confidence_vote.3007
+	title = "confidence_vote.3007t"
+	desc = "confidence_vote.3007d"
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		lgTriggers_ConfidenceVote1761 = yes
+		lgTriggers_ParliamentaryGovernment = yes
+		has_country_modifier = lgModifiers_WhigMinistry
+		lgTriggers_parliamentBritish = yes
+	}
+	
+	option = { # I hope this election will return my ministers
+		name = "confidence_vote.3007.a"
+		custom_tooltip = lgEvents_Parliamentary_DemiseCrown.0001.a.tt
+		remove_country_modifier = lgModifiers_WhigMinistry
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = pm_grenville
+					has_country_modifier = pm_devonshire
+				}
+			}
+			remove_country_modifier = pm_grenville
+			remove_country_modifier = pm_devonshire
+			change_adm = -1
+		}
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = pm_rockingham
+					has_country_modifier = pm_shelburne
+					has_country_modifier = pm_newcastle
+				}
+			}
+			remove_country_modifier = pm_rockingham
+			remove_country_modifier = pm_shelburne
+			remove_country_modifier = pm_newcastle
+			change_dip = -1
+		}
+		if = {
+			limit = {
+				OR = {
+					has_country_modifier = pm_grafton
+					has_country_modifier = pm_pitt1
+				}
+			}
+			remove_country_modifier = pm_grafton
+			remove_country_modifier = pm_pitt1
+			change_mil = -1
+		}
+		remove_country_modifier = lgModifiers_electionTimer
+		add_stability = -1
+	}
+}
+
+# Parliamentary Confidence Vote - Whig won (1761-1784)
+country_event = {
+	id = confidence_vote.3008
+	title = "confidence_vote.3008t"
+	desc = "confidence_vote.3008d"
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # The King is pleased
+		name = "confidence_vote.3008.a"
+		add_stability = 1
+	}
+}
+
+##############################################
+# British prime minister selection 1761-1784 #
+##############################################
+# Whig prime minister selection
+country_event = {
+	id = confidence_vote.138
+	title = "confidence_vote.138t"
+	desc = "confidence_vote.138d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	# George Grenville (ADM)
+		name = "confidence_vote.138.a"
+		add_country_modifier = {
+			name = "pm_grenville"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {	# Charles Watson-Wentworth, 2nd Marquess of Rockingham (DIP)
+		name = "confidence_vote.138.b"
+		trigger = {
+			NOT = {
+				has_country_flag = rockingham_died
+			}
+		}
+		add_country_modifier = {
+			name = "pm_rockingham"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# William Petty, 2nd Earl of Shelburne (DIP)
+		name = "confidence_vote.138.c"
+		trigger = {
+			has_country_flag = rockingham_died
+		}
+		add_country_modifier = {
+			name = "pm_shelburne"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# Augustus FitzRoy, 3rd Duke of Grafton (MIL)
+		name = "confidence_vote.138.d"
+		add_country_modifier = {
+			name = "pm_grafton"
+			duration = 2700
+		}
+		change_mil = 1
+	}
+}
+
+# King's Friend prime minister selection
+country_event = {
+	id = confidence_vote.139
+	title = "confidence_vote.139t"
+	desc = "confidence_vote.139d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	# Frederick North, Lord North (ADM)
+		name = "confidence_vote.139.a"
+		add_country_modifier = {
+			name = "pm_lordnorth"
+			duration = 2700
+		}
+		change_adm = 1
+	}
+	
+	option = {	# John Stuart, 3rd Earl of Bute (DIP)
+		name = "confidence_vote.139.b"
+		add_country_modifier = {
+			name = "pm_bute"
+			duration = 2700
+		}
+		change_dip = 1
+	}
+	
+	option = {	# John Montagu, 4th Earl of Sandwich (MIL)
+		name = "confidence_vote.139.c"
+		add_country_modifier = {
+			name = "pm_sandwich"
+			duration = 2700
+		}
+		change_mil = 1
+	}
+}

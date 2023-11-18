@@ -1,0 +1,86 @@
+################################
+#Prime Ministers - Walpole Whigs
+################################
+
+# Sir Robert Walpole
+pm_walpole = {
+	monarch_admin_power = 1
+	diplomatic_reputation = 1
+	adm_tech_cost_modifier = -0.05
+	dip_tech_cost_modifier = 0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# Henry Pelham
+pm_pelham = {
+	monarch_diplomatic_power = 1
+	land_maintenance_modifier = -0.10
+	adm_tech_cost_modifier = 0.05
+	dip_tech_cost_modifier = -0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# The Earl of Wilmington
+pm_wilmington = {
+	monarch_military_power = 1
+	global_tax_modifier = 0.1
+	adm_tech_cost_modifier = 0.05
+	dip_tech_cost_modifier = 0.05
+	mil_tech_cost_modifier = -0.05
+}
+
+################################
+#Prime Ministers - Tories
+################################
+
+# Lord Bolingbroke
+pm_bolingbroke = {
+	monarch_admin_power = 1
+	adm_tech_cost_modifier = -0.05
+	dip_tech_cost_modifier = 0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# Sir William Wyndham
+pm_wyndham = {
+	monarch_diplomatic_power = 1
+	adm_tech_cost_modifier = 0.05
+	dip_tech_cost_modifier = -0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# John Smith
+pm_smith = {
+	monarch_military_power = 1
+	adm_tech_cost_modifier = 0.05
+	dip_tech_cost_modifier = 0.05
+	mil_tech_cost_modifier = -0.05
+}
+
+################################
+#Prime Ministers - Patriot Whigs
+################################
+
+# William Pulteney, 1st Earl of Bath
+pm_bath = {
+	monarch_admin_power = 1
+	adm_tech_cost_modifier = -0.05
+	dip_tech_cost_modifier = 0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# Richard Temple, 1st Viscount Cobham
+pm_cobham = {
+	monarch_diplomatic_power = 1
+	adm_tech_cost_modifier = 0.05
+	dip_tech_cost_modifier = -0.05
+	mil_tech_cost_modifier = 0.05
+}
+
+# John Fisher
+pm_fisher = {
+	monarch_military_power = 1
+	adm_tech_cost_modifier = 0.05
+	dip_tech_cost_modifier = 0.05
+	mil_tech_cost_modifier = -0.05
+}

@@ -1,0 +1,80 @@
+lgEffects_GRoverthrow = {
+	random_province = {
+		limit = {
+			owner = {
+				OR = {
+					lgTriggers_parliamentBritish = yes
+					lgTriggers_parliamentIrish = yes
+				}	
+			}
+			has_province_flag = ENG_gr_spawn_rebels_here
+			# OR = {
+			# 	area = munster_area
+			# 	area = connacht_area
+			# 	area = leinster_area
+			# 	area = ulster_area
+			# }
+		}
+		spawn_rebels = {
+			type = pretender_rebels
+			use_monarch_as_leader = yes
+			size = 3
+			win = yes
+		}
+#		spawn_rebels = {
+#			type = pretender_rebels
+#			size = 3
+#			leader_dynasty = ROOT
+#			leader = "James Stuart"
+#			win = yes
+#		}
+		clr_province_flag = ENG_gr_spawn_rebels_here
+	}
+	if = {
+		limit = {
+			any_owned_province = {
+				has_province_flag = ENG_gr_spawn_more_rebels_here
+			}
+		}
+		random_owned_province = {
+			limit = {
+				has_province_flag = ENG_gr_spawn_more_rebels_here
+			}
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+			}
+			clr_province_flag = ENG_gr_spawn_more_rebels_here
+		}
+	}
+	hidden_effect = {
+		NED = {
+			exile_ruler_as = { name = GloriousRevolution_NewRuler }
+			#exile_heir_as = GloriousRevolution_NewHeir
+		}
+	}
+	set_ruler = GloriousRevolution_NewRuler
+	#set_heir = GloriousRevolution_NewHeir
+	create_union = NED
+	if = {
+		limit = { has_heir = yes }
+		hidden_effect = {
+			exile_heir_as = glorious_revolution_heir
+			set_country_flag = glorious_revolution_has_exiled_heir
+		}
+	}
+	define_heir = {
+		female = yes
+		name = "Anne"
+		culture = english
+		dynasty = ROOT
+		claim = 100
+	}
+	#tooltip = { create_union = NED }
+	remove_opinion = { who = NED modifier = ned_accepted_glorious_revolution }
+	add_opinion = { who = NED modifier = lgOpinionModifiers_Revolution }
+	NED = {
+		add_opinion = { who = ROOT modifier = lgOpinionModifiers_Revolution }
+		country_event = { id = ENG_glorious_revolution.0002 days = 1 }
+	}
+}
