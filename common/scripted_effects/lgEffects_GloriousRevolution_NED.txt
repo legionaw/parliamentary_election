@@ -35,7 +35,7 @@
 #	}
 ########################################
 ### If Netherlands is NOT Dutch Republic
-#	if = {
+#	else_if = {
 #		limit = {
 #			any_known_country = {
 #				tag = NED
@@ -67,12 +67,12 @@
 #		}
 #		add_opinion = {
 #			who = NED
-#			modifier = lgOpinionModifiers_Revolution
+#			modifier = lgOpinionModifiers_Revolution_NED
 #		}
 #		NED = {
 #			add_opinion = {
 #				who = ROOT
-#				modifier = lgOpinionModifiers_Revolution
+#				modifier = lgOpinionModifiers_Revolution_NED
 #			}
 #			country_event = {
 #				id = ENG_glorious_revolution.0002

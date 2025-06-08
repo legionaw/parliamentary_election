@@ -1,0 +1,59 @@
+royal_marriage = {
+	condition = {
+		tooltip = MARWAR
+		potential = {
+		}
+		allow = {
+			NOT = { war_with = FROM }
+		}
+	}
+	condition = {
+		potential = {
+			
+		}
+		allow = {
+			AND = {
+				NOT = {
+					has_country_flag = lgFlags_NormalDutchMarriageBlocked
+				}
+				NOT = {
+					FROM = {
+						tag = NED
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		change_asha_vahishta = { value = 0.5 }
+	}
+}
+
+break_marriage = {
+	condition = {
+		tooltip = lgTooltips_UnbreakableDutchMarriage
+		potential = { }
+		allow = {
+			NOT = {
+				has_country_flag = lgFlags_AngloDutchMarriage
+			}
+		}
+	}
+	effect = {
+		change_asha_vahishta = { value = -1 }
+		if = {
+			limit = {
+				has_country_flag = received_burgundian_marriage
+				FROM = { tag = BUR }
+			}
+			clr_country_flag = received_burgundian_marriage
+		}
+		if = {
+			limit = {
+				tag = BUR
+				FROM = { has_country_flag = received_burgundian_marriage }
+			}
+			FROM = { clr_country_flag = received_burgundian_marriage }
+		}
+	}
+}

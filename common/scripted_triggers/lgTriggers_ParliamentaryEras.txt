@@ -1,47 +1,41 @@
 #### 1688-1721 ####
-lgTriggers_elections1688 = {
+lgTriggers_Eras1688 = {
 	is_year = 1688
 	NOT = { is_year = 1721 }
-	NOT = { has_country_modifier = lgModifiers_electionTimer }
 	has_country_flag = lgFlags_ConventionParliamentEnded
 }
 
 #### 1721-1742 ####
-lgTriggers_elections1721 = {
+lgTriggers_Eras1721 = {
 	#has_country_flag = lgFlags_GloriousRevolution
 	is_year = 1721
 	NOT = { is_year = 1742 }
-	NOT = { has_country_modifier = lgModifiers_electionTimer }
 }
 
 #### 1742-1761 ####
-lgTriggers_elections1742 = {
+lgTriggers_Eras1742 = {
 	#has_country_flag = lgFlags_GloriousRevolution
 	is_year = 1742
 	NOT = { is_year = 1761 }
-	NOT = { has_country_modifier = lgModifiers_electionTimer }
 }
 
 #### 1761-1782 ####
-lgTriggers_elections1761 = {
+lgTriggers_Eras1761 = {
 	#has_country_flag = lgFlags_GloriousRevolution
 	is_year = 1761
 	NOT = { is_year = 1784 }
-	NOT = { has_country_modifier = lgModifiers_electionTimer }
 }
 
 #### 1782-1834 ####
-lgTriggers_elections1784 = {
+lgTriggers_Eras1784 = {
 	#has_country_flag = lgFlags_GloriousRevolution
 	is_year = 1784
 	NOT = { is_year = 1834 }
-	NOT = { has_country_modifier = lgModifiers_electionTimer }
 }
 
 #### 1834-1859 ####
-lgTriggers_elections1834 = {
+lgTriggers_Eras1834 = {
 	#has_country_flag = lgFlags_GloriousRevolution
 	is_year = 1834
 	NOT = { is_year = 1859 }
-	NOT = { has_country_modifier = lgModifiers_electionTimer }
 }

@@ -1,0 +1,150 @@
+lgEffects_JamesIIb = {
+	if = {
+		limit = {
+			has_heir = no
+		}
+		define_heir = {
+			age = 18
+			religion = catholic
+			dynasty = ROOT
+			culture = ROOT
+		}
+		hidden_effect = {
+			add_heir_personality = infertile_personality
+			add_heir_personality = immortal_personality
+		}
+	}
+	else_if = {
+		limit = {
+			has_heir = yes
+			NOT = {
+				heir_religion = catholic
+			}
+		}
+		set_heir_religion = catholic
+		hidden_effect = {
+			add_heir_personality = immortal_personality
+		}
+	}
+}
+
+lgEffects_Mary_and_Anne = {
+	if = {
+		limit = {
+			OR = {
+				religion = protestant
+				num_of_religion = {
+					religion = protestant
+					value = 0.5
+				}
+			}
+		}
+		define_heir = {
+			age = 0
+			religion = protestant
+		}
+		add_heir_personality = immortal_personality
+	}
+	else_if = {
+		limit = {
+			OR = {
+				religion = anglican
+				num_of_religion = {
+					religion = anglican
+					value = 0.5
+				}
+			}
+		}
+		define_heir = {
+			age = 0
+			religion = anglican
+		}
+		add_heir_personality = immortal_personality
+	}
+}
+
+lgEffects_Mary_of_Modena = {
+	if = {
+		limit = {
+			MOD = {
+				exists = yes
+				religion = catholic
+			}
+		}
+		create_marriage = MOD
+		define_consort = {
+			country_of_origin = MOD
+			religion = catholic
+			culture = MOD
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				MOD = {
+					exists = no
+				}
+				MOD = {
+					exists = yes
+					NOT = {
+						religion = catholic
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				religion = catholic
+			}
+			save_event_target_as = CatholicMarriageCountry
+		}
+		create_marriage = event_target:CatholicMarriageCountry
+		define_consort = {
+			country_of_origin = event_target:CatholicMarriageCountry
+			religion = catholic
+			culture = event_target:CatholicMarriageCountry
+		}
+	}
+}
+
+lgEffects_DutchMarriage = {
+	create_marriage = NED
+	set_country_flag = lgFlags_AngloDutchMarriage
+	NED = {
+		set_country_flag = lgFlags_AngloDutchMarriage
+	}
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = {
+					ruler_has_personality = immortal_personality
+				}
+			}
+			add_ruler_personality = immortal_personality
+		}
+		if = {
+			limit = {
+				NED = {
+					NOT = {
+						ruler_has_personality = immortal_personality
+					}
+				}
+			}
+			add_ruler_personality = immortal_personality
+		}
+	}
+	# set_heir_flag = lgFlags_Heir
+	# NED = {
+	# 	set_consort = event_target:lgFlags_Heir
+	# }
+}
+
+lgEffects_CatholicDynasty = {
+	exile_heir_as = ProtestantHeirDisplaced
+	define_heir = {
+		age = 0
+		religion = catholic
+		dynasty = ROOT
+	}
+	add_heir_personality = immortal_personality
+}

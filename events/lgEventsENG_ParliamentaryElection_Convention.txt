@@ -1,0 +1,253 @@
+################################################
+# British parliamentary elections - Convention #
+################################################
+
+namespace = convention_elections
+
+##########################
+#### GENERAL ELECTION ####
+##########################
+country_event = {
+	id = convention_elections.0001
+	title = "convention_elections.0001t"
+	desc = {
+		trigger = {
+			OR = {
+				AND = {
+					exists = NED
+					NED = {
+						has_country_flag = LgFlags_NED_refused_Glorious_Revolution
+					}
+				}
+				NED = {
+					exists = no
+				}
+			}
+		}
+		desc = convention_elections.0001d.1
+	}
+	desc = {
+		trigger = {
+			NED = {
+				has_country_flag = LgFlags_NED_accepted_Glorious_Revolution
+			}
+		}
+		desc = convention_elections.0001d.6
+	}
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = lgFlag_ElectionInProgress
+		# LgEffects_electionHeld = yes
+		election1688_startup = yes
+	}
+	
+#	option = {  # Attempt to influence election towards Whigs
+#		name = "convention_elections.0001.a"
+#		ai_chance = { factor = 33 }
+#		election1688_contest1 = yes
+#		tooltip = {
+#			add_country_modifier = {
+#				name = "lgModifiers_WhigMinistry"
+#				duration = 2555
+#			}
+#		}
+#		add_treasury = -50
+#		set_country_flag = whig_1688
+#	}
+#	
+#	option = {  # Attempt to influence election towards Tories
+#		name = "convention_elections.0001.b"
+#		ai_chance = { factor = 33 }
+#		election1688_contest2 = yes
+#		tooltip = {
+#			add_country_modifier = {
+#				name = "lgModifiers_ToryMinistry"
+#				duration = 2555
+#			}
+#		}
+#		add_treasury = -50
+#		set_country_flag = tory_1688
+#	}
+#	
+#	option = {  # No attempt to influence the election towards any party
+#		name = "convention_elections.0001.c"
+#		ai_chance = { factor = 33 }
+#		election1688_contest3 = yes
+#		set_country_flag = neutral
+#	}
+	
+	option = {  # No attempt to influence the election towards any party
+		name = "convention_elections.0001.d"
+		ai_chance = { factor = 33 }
+		election1688_contest3 = yes
+		set_country_flag = neutral
+	}
+}
+
+########################################
+#### NATION-WIDE COUNTING CONDUCTED ####
+########################################
+country_event = {
+	id = convention_elections.00011
+	title = "convention_elections.00011.t"
+	desc = "convention_elections.00011.d"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+		name = "convention_elections.00011.a"
+		election1688_count = yes
+	}
+}
+
+#######################################
+#### NATION-WIDE RESULTS ANNOUNCED ####
+#######################################
+# Whigs wins the general election
+country_event = {
+	id = convention_elections.0002
+	title = "convention_elections.0002t"
+	desc = "convention_elections.0002d"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = lgFlag_ElectionInProgress
+			}
+			clr_country_flag = lgFlag_ElectionInProgress
+		}
+	}
+	
+	option = {  # Great!
+		name = "convention_elections.0002.a"
+		trigger = {
+			has_country_flag = whig_1688
+		}
+		add_country_modifier = {
+			name = "lgModifiers_WhigMinistry"
+			duration = 2555
+		}
+		clr_country_flag = whig_1688
+	}
+	option = {  # Black day!
+		name = "convention_elections.0002.b"
+		trigger = {
+			has_country_flag = tory_1688
+		}
+		add_country_modifier = {
+			name = "lgModifiers_WhigMinistry"
+			duration = 2555
+		}
+		clr_country_flag = tory_1688
+	}
+	option = {  # Ok
+		name = "convention_elections.0002.c"
+		trigger = {
+			has_country_flag = neutral
+		}
+		add_country_modifier = {
+			name = "lgModifiers_WhigMinistry"
+			duration = 2555
+		}
+		clr_country_flag = neutral
+	}
+}
+	
+# Tories wins the general election
+country_event = {
+	id = convention_elections.0003
+	title = "convention_elections.0003t"
+	desc = "convention_elections.0003d"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = lgFlag_ElectionInProgress
+			}
+			clr_country_flag = lgFlag_ElectionInProgress
+		}
+	}
+	
+	option = {  # Good to hear
+		name = "convention_elections.0003.a"
+		trigger = {
+			has_country_flag = tory_1688
+		}
+		add_country_modifier = {
+			name = "lgModifiers_ToryMinistry"
+			duration = 2555
+		}
+		clr_country_flag = tory_1688
+	}
+	option = {  # Good to hear
+		name = "convention_elections.0003.b"
+		trigger = {
+			has_country_flag = whig_1688
+		}
+		add_country_modifier = {
+			name = "lgModifiers_ToryMinistry"
+			duration = 2555
+		}
+		clr_country_flag = whig_1688
+	}
+	option = {  # Good to hear
+		name = "convention_elections.0003.c"
+		trigger = {
+			has_country_flag = neutral
+		}
+		add_country_modifier = {
+			name = "lgModifiers_ToryMinistry"
+			duration = 2555
+		}
+		clr_country_flag = neutral
+	}
+}
+	
+# No party won majority
+country_event = {
+	id = convention_elections.0004
+	title = "convention_elections.0004t"
+	desc = "convention_elections.0004d"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		clr_country_flag = tory_1688
+		clr_country_flag = whig_1688
+		clr_country_flag = neutral
+		if = {
+			limit = {
+				has_country_flag = lgFlag_ElectionInProgress
+			}
+			clr_country_flag = lgFlag_ElectionInProgress
+		}
+	}
+	
+	option = {  # I appoint Tory ministry
+		name = "convention_elections.0004.a"
+		add_country_modifier = {
+			name = "lgModifiers_ToryMinistry"
+			duration = 2555
+		}
+	}
+	
+	option = {  # I appoint Whig ministry
+		name = "convention_elections.0004.b"
+		add_country_modifier = {
+			name = "lgModifiers_WhigMinistry"
+			duration = 2555
+		}
+	}
+}

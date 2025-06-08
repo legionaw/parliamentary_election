@@ -1,0 +1,103 @@
+namespace = lgEventsENG_GloriousRevolutionPrequel
+
+# Anglo-Dutch marriage
+country_event = {
+	id = lgEventsENG_GloriousRevolutionPrequel.0001
+	title = lgEventsENG_GloriousRevolutionPrequel.0001.t
+	desc = lgEventsENG_GloriousRevolutionPrequel.0001.d
+	picture = ROYAL_COUPLE_FUTURE_eventPicture
+	
+	trigger = {
+		has_heir_flag = lgFlags_JamesIIheir
+		is_year = 1677
+	}
+	
+	immediate = {
+		
+	}
+	
+	option = {
+		name = "lgEventsENG_GloriousRevolutionPrequel.0001.a"
+		lgEffects_DutchMarriage = yes
+	}
+}
+
+# Death of Charles II
+country_event = {
+	id = lgEventsENG_GloriousRevolutionPrequel.0002
+	title = lgEventsENG_GloriousRevolutionPrequel.0002.t
+	desc = lgEventsENG_GloriousRevolutionPrequel.0002.d
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	trigger = {
+		is_year = 1685
+		has_country_flag = lgFlags_ENG_Restoration
+		has_ruler_flag = lgFlags_CharlesIIRuler
+	}
+	
+	immediate = {
+		hidden_effect = {
+			remove_ruler_personality = immortal_personality
+			remove_heir_personality = immortal_personality
+		}
+		set_country_flag = lgFlags_ENG_Charles2death
+	}
+	
+	option = {
+		name = "lgEventsENG_GloriousRevolutionPrequel.0002.a"
+		kill_ruler = yes
+		add_ruler_personality = infertile_personality
+		if = {
+			limit = {
+				NOT = {
+					ruler_has_personality = immortal_personality
+				}
+			}
+			add_ruler_personality = immortal_personality
+		}
+		set_ruler_flag = lgFlags_JamesIIruler
+		lgEffects_QueenAnne = yes
+	}
+}
+
+# Birth of James Francis Edward Stuart
+country_event = {
+	id = lgEventsENG_GloriousRevolutionPrequel.0003
+	title = lgEventsENG_GloriousRevolutionPrequel.0003.t
+	desc = lgEventsENG_GloriousRevolutionPrequel.0003.d
+	picture = NEW_HEIR_eventPicture
+	
+	trigger = {
+		is_year = 1688
+		has_ruler_flag = lgFlags_JamesIIruler
+	}
+	
+	immediate = {
+		set_country_flag = lgFlags_CatholicDynastyCrisis
+	}
+	
+	option = {
+		name = "lgEventsENG_GloriousRevolutionPrequel.0003.a"
+		hidden_effect = {
+			if = {
+				limit = {
+					has_heir = yes
+				}
+				exile_heir_as = QueenAnne
+				set_country_flag = lgFlags_ProtestantHeirDisplaced
+			}
+		}
+		define_heir = {
+			male = yes
+			name = "James"
+			age = 0
+			religion = catholic
+			dynasty = ROOT
+			claim = 100
+		}
+		hidden_effect = {
+			add_heir_personality = immortal_personality
+		}
+		set_heir_flag = lgFlags_JamesIIIheir
+	}
+}

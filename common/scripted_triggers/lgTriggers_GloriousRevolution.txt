@@ -1,0 +1,9 @@
+lgTriggers_GRDutch = {
+	any_known_country = {
+		OR = {
+			tag = NED
+			tag = HOL
+			tag = BUR
+		}
+	}
+}

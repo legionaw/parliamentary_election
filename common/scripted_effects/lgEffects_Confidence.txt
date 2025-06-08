@@ -1,0 +1,20 @@
+ConfidenceGained = {
+	if = {
+		limit = {
+			check_variable = { which = ConfidenceMeter value = 0 }
+			NOT = {
+				check_variable = { which = ConfidenceMeter value = 100 }
+			}
+		}
+		change_variable = { which = ConfidenceMeter value = 1 }
+	}
+}
+
+ConfidenceLost = {
+	if = {
+		limit = {
+			check_variable = { which = ConfidenceMeter value = 1 }
+		}
+		change_variable = { which = ConfidenceMeter value = -1 }
+	}
+}

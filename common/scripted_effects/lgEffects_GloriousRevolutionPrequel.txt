@@ -1,0 +1,334 @@
+lgEffects_JamesII = {
+	# If the ruler is at least 15 years and NOT at least 16 years old, then James II is 15 years old.
+	if = {
+		limit = {
+			ruler_age = 15
+			NOT = {
+				ruler_age = 16
+			}
+		}
+		define_heir = {
+			male = yes
+			name = "James"
+			age = 15
+			dynasty = ROOT
+			religion = catholic
+			claim = 100
+		}
+	}
+	
+	else_if = {
+		limit = {
+			ruler_age = 16
+			NOT = {
+				ruler_age = 17
+			}
+		}
+		define_heir = {
+			male = yes
+			name = "James"
+			age = 15
+			dynasty = ROOT
+			religion = catholic
+			claim = 100
+		}
+	}
+	
+	else_if = {
+		limit = {
+			ruler_age = 17
+			NOT = {
+				ruler_age = 18
+			}
+		}
+		define_heir = {
+			male = yes
+			name = "James"
+			age = 15
+			dynasty = ROOT
+			religion = catholic
+			claim = 100
+		}
+	}
+	
+	else_if = {
+		limit = {
+			ruler_age = 18
+			NOT = {
+				ruler_age = 19
+			}
+		}
+		define_heir = {
+			male = yes
+			name = "James"
+			age = 15
+			dynasty = ROOT
+			religion = catholic
+			claim = 100
+		}
+	}
+	
+	else_if = {
+		limit = {
+			ruler_age = 19
+			NOT = {
+				ruler_age = 20
+			}
+		}
+		define_heir = {
+			male = yes
+			name = "James"
+			age = 16
+			dynasty = ROOT
+			religion = catholic
+			claim = 100
+		}
+	}
+	
+	else_if = {
+		limit = {
+			ruler_age = 20
+			NOT = {
+				ruler_age = 21
+			}
+		}
+		define_heir = {
+			male = yes
+			name = "James"
+			age = 17
+			dynasty = ROOT
+			religion = catholic
+			claim = 100
+		}
+	}
+	
+	else_if = {
+		limit = {
+			ruler_age = 21
+			NOT = {
+				ruler_age = 22
+			}
+		}
+		define_heir = {
+			male = yes
+			name = "James"
+			age = 18
+			dynasty = ROOT
+			religion = catholic
+			claim = 100
+		}
+	}
+	
+	else_if = {
+		limit = {
+			ruler_age = 22
+			NOT = {
+				ruler_age = 23
+			}
+		}
+		define_heir = {
+			male = yes
+			name = "James"
+			age = 19
+			dynasty = ROOT
+			religion = catholic
+			claim = 100
+		}
+	}
+	
+	else_if = {
+		limit = {
+			ruler_age = 23
+			NOT = {
+				ruler_age = 24
+			}
+		}
+		define_heir = {
+			male = yes
+			name = "James"
+			age = 20
+			dynasty = ROOT
+			religion = catholic
+			claim = 100
+		}
+	}
+	
+	else_if = {
+		limit = {
+			ruler_age = 24
+			NOT = {
+				ruler_age = 25
+			}
+		}
+		define_heir = {
+			male = yes
+			name = "James"
+			age = 21
+			dynasty = ROOT
+			religion = catholic
+			claim = 100
+		}
+	}
+	
+	else_if = {
+		limit = {
+			ruler_age = 25
+			NOT = {
+				ruler_age = 26
+			}
+		}
+		define_heir = {
+			male = yes
+			name = "James"
+			age = 22
+			dynasty = ROOT
+			religion = catholic
+			claim = 100
+		}
+	}
+	
+	else_if = {
+		limit = {
+			ruler_age = 26
+			NOT = {
+				ruler_age = 27
+			}
+		}
+		define_heir = {
+			male = yes
+			name = "James"
+			age = 23
+			dynasty = ROOT
+			religion = catholic
+			claim = 100
+		}
+	}
+	
+	else_if = {
+		limit = {
+			ruler_age = 27
+			NOT = {
+				ruler_age = 28
+			}
+		}
+		define_heir = {
+			male = yes
+			name = "James"
+			age = 24
+			dynasty = ROOT
+			religion = catholic
+			claim = 100
+		}
+	}
+	
+	else_if = {
+		limit = {
+			ruler_age = 28
+			NOT = {
+				ruler_age = 29
+			}
+		}
+		define_heir = {
+			male = yes
+			name = "James"
+			age = 25
+			dynasty = ROOT
+			religion = catholic
+			claim = 100
+		}
+	}
+	
+	else_if = {
+		limit = {
+			ruler_age = 29
+			NOT = {
+				ruler_age = 30
+			}
+		}
+		define_heir = {
+			male = yes
+			name = "James"
+			age = 26
+			dynasty = ROOT
+			religion = catholic
+			claim = 100
+		}
+	}
+	
+	# Historical age of Charles II at his accession and historical age of James II at the same time.
+	else_if = {
+		limit = {
+			ruler_age = 30
+		}
+		define_heir = {
+			male = yes
+			name = "James"
+			age = 27
+			dynasty = ROOT
+			religion = catholic
+			claim = 100
+		}
+	}
+}
+
+lgEffects_QueenAnne = {
+	if = {
+		limit = {
+			OR = {
+				religion = protestant
+				num_of_religion = {
+					religion = protestant
+					value = 0.5
+				}
+			}
+		}
+		define_heir = {
+			female = yes
+			name = "Anne"
+			age = 20
+			culture = ROOT
+			religion = protestant
+			claim = 100
+		}
+	}
+	
+	else_if = {
+		limit = {
+			OR = {
+				religion = reformed
+				num_of_religion = {
+					religion = reformed
+					value = 0.5
+				}
+			}
+		}
+		define_heir = {
+			female = yes
+			name = "Anne"
+			age = 20
+			culture = ROOT
+			religion = reformed
+			claim = 100
+		}
+	}
+	
+	else_if = {
+		limit = {
+			OR = {
+				religion = anglican
+				num_of_religion = {
+					religion = anglican
+					value = 0.5
+				}
+			}
+		}
+		define_heir = {
+			female = yes
+			name = "Anne"
+			age = 20
+			culture = ROOT
+			religion = anglican
+			claim = 100
+		}
+	}
+}

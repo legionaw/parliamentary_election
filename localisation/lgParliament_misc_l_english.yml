@@ -63,3 +63,7 @@
  english_scottish_act_of_union_modifier: "Act of Union"
  desc_english_scottish_act_of_union_modifier: ""
  
+ lgTooltips_CANNOT_ALTER_PARLIAMENT: "§RSince the Glorious Revolution, the Crown can no longer enfranchise or disfranchise a parliamentary constituency.§!"
+ 
+ Majesty: "Majesty"
+ Highness: "Highness"

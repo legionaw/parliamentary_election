@@ -1,0 +1,4 @@
+﻿l_english:
+ confidence_vote.9001.t: "Seeking Confidence in [Root.GetAdjectiveCap] Parliament"
+ confidence_vote.9001.d: "The ministry of [Root.GetPrimeMinisterName] has decided to treat the bill now tabled before the House of Commons as a motion of confidence. This will decide whether the ministry will remain in office. If they lose the vote of confidence, they may be forced to resign, to be replaced by Whigs, or they may advise $MONARCH$ to dissolve Parliament for an early election to be held."
+ confidence_vote.9001.a: "I can only hope my ministers will stay in office."

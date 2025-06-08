@@ -1,0 +1,46 @@
+###############################################
+# British parliamentary election - Convention #
+###############################################
+
+namespace = lgVotingConvention
+
+#### Province voting ####
+province_event = {
+	id = lgVotingConvention.1
+	title = lgVotingConvention.1.t
+	desc = lgVotingConvention.1.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes 
+	hidden = yes
+	
+	immediate = {
+		owner = {
+			change_variable = { which = whigVar value = 1 }		 #Add to running total
+		}
+	}
+	
+	option = {
+		name = lgVotingConvention.1.a
+	}
+}
+
+province_event = {
+	id = lgVotingConvention.2
+	title = lgVotingConvention.2.t
+	desc = lgVotingConvention.2.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes 
+	hidden = yes
+	
+	immediate = {
+		owner = {
+			change_variable = { which = toryVar value = 1 }		 #Add to running total
+		}
+	}
+	
+	option = {
+		name = lgVotingConvention.2.a
+	}
+}

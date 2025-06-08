@@ -304,7 +304,7 @@ country_event = {
 		add_legitimacy = -10
 	}
 
-	option = { # Refuse their request for dissolution, dismiss them, and call in the Whigs
+	option = { # Refuse their request for dissolution, dismiss them, and call in the Tories
 		name = "confidence_vote.0007.c"
 		remove_country_modifier = lgModifiers_WhigMinistry
 		add_country_modifier = {

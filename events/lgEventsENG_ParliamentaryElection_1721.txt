@@ -506,6 +506,7 @@ country_event = {
 				}
 				clr_country_flag = lgFlag_ElectionInProgress
 			}
+			set_variable = { which = ConfidenceMeter value = 100 }
 		}
 	}
 	

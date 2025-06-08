@@ -22,8 +22,18 @@ country_event = {
 					has_country_flag = LgFlags_NED_refused_Glorious_Revolution
 				}
 			}
-			NED = {
-				exists = no
+			NOT = {
+				exists = NED
+			}
+		}
+		NOT = {
+			any_known_country = {
+				OR = {
+					has_saved_event_target = lgGR_Netherlands
+					has_saved_event_target = lgGR_Holland
+					has_saved_event_target = lgGR_Burgundy
+					has_saved_event_target = lgGR_OtherCountry
+				}
 			}
 		}
 #		OR = {
@@ -55,12 +65,9 @@ country_event = {
 	
 	immediate = {
 		set_country_flag = lgFlags_GloriousRevolution
-		# lgEffects_GRprevious_dynasty = yes
-		lg_JacobiteRebellionSetup = yes
-		save_event_target_as = GloriousRevolutionCountry
 	}
 	
-	option = { # Yes
+	option = {			# Yes
 		name = "ENG_glorious_revolution.0001.a"
 		add_stability = -1
 		add_manpower = 0.25
@@ -70,10 +77,8 @@ country_event = {
 		lgGR_setup = yes
 		lgEffects_GRoverthrow = yes
 		lg_ProtestantRevolution = yes
+		#lg_JacobiteRebellion = yes
 		#lg_DutchHelp = yes
-		country_event = {
-			id = lgEventsENG_ConventionParliament0001 days = 15
-		}
 	}
 }
 
@@ -81,20 +86,48 @@ country_event = {
 country_event = {
 	id = ENG_glorious_revolution.0002
 	title = "ENG_glorious_revolution.0002t"
-	desc = "ENG_glorious_revolution.0002d"
+	desc = {
+		trigger = {
+			any_known_country = {
+				has_saved_event_target = lgGR_Netherlands
+			}
+		}
+		desc = "ENG_glorious_revolution.0002d.1"
+	}
+	desc = {
+		trigger = {
+			any_known_country = {
+				has_saved_event_target = lgGR_Holland
+			}
+		}
+		desc = "ENG_glorious_revolution.0002d.2"
+	}
+	desc = {
+		trigger = {
+			any_known_country = {
+				has_saved_event_target = lgGR_Burgundy
+			}
+		}
+		desc = "ENG_glorious_revolution.0002d.3"
+	}
+	desc = {
+		trigger = {
+			any_known_country = {
+				has_saved_event_target = lgGR_OtherCountry
+			}
+		}
+		desc = "ENG_glorious_revolution.0002d.4"
+	}
 	picture = DIPLOMACY_eventPicture
 	
 	is_triggered_only = yes
 	
 	immediate = {
 		set_country_flag = lgFlags_GloriousRevolution
-		# lgGR_Dutch = yes
-		# lgEffects_GRprevious_dynasty = yes
-		lg_JacobiteRebellionSetup = yes
-		save_event_target_as = GloriousRevolutionCountry
+		lgGR_Dutch = yes
 	}
 	
-	option = { # Great!
+	option = {  # Great!
 		name = "ENG_glorious_revolution.0002.a"
 		add_stability = -1
 		add_manpower = 0.25
@@ -104,10 +137,8 @@ country_event = {
 		lgGR_setup = yes
 		lgEffects_GRoverthrow = yes
 		lg_ProtestantRevolution = yes
+		#lg_JacobiteRebellion = yes
 		#lg_DutchHelp = yes
-		country_event = {
-			id = lgEventsENG_ConventionParliament0001 days = 15
-		}
 	}
 }
 
@@ -120,39 +151,35 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	immediate = {
-		
-	}
-	
-	option = { # Great!
+	option = {  # Great!
 		name = "ENG_glorious_revolution.0004.a"
-		# trigger = {
-		# 	ENG = {
-		# 		has_country_flag = lgFlags_GloriousRevolution
-		# 	}
-		# }
+		trigger = {
+			ENG = {
+				has_country_flag = lgFlags_GloriousRevolution
+			}
+		}
 		add_prestige = 25
 		tooltip = {
-			add_opinion = { who = event_target:GloriousRevolutionCountry modifier = lgOpinionModifiers_Revolution_NED }
-			event_target:GloriousRevolutionCountry = {
+			add_opinion = { who = ENG modifier = lgOpinionModifiers_Revolution_NED }
+			ENG = {
 				remove_opinion = { who = NED modifier = ned_accepted_glorious_revolution }
 			}
 		}
 	}
 	
-	# option = { # Great!
-	# 	name = "ENG_glorious_revolution.0004.b"
-	# 	trigger = {
-	# 		GBR = {
-	# 			has_country_flag = lgFlags_GloriousRevolution
-	# 		}
-	# 	}
-	# 	add_prestige = 25
-	# 	tooltip = {
-	# 		add_opinion = { who = ENG modifier = lgOpinionModifiers_Revolution_NED }
-	# 		ENG = {
-	# 			remove_opinion = { who = NED modifier = ned_accepted_glorious_revolution }
-	# 		}
-	# 	}
-	# }
+	option = {  # Great!
+		name = "ENG_glorious_revolution.0004.b"
+		trigger = {
+			GBR = {
+				has_country_flag = lgFlags_GloriousRevolution
+			}
+		}
+		add_prestige = 25
+		tooltip = {
+			add_opinion = { who = ENG modifier = lgOpinionModifiers_Revolution_NED }
+			ENG = {
+				remove_opinion = { who = NED modifier = ned_accepted_glorious_revolution }
+			}
+		}
+	}
 }

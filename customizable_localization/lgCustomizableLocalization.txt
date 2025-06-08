@@ -1,0 +1,75 @@
+# Full name of the prime minister
+defined_text = {
+	name = GetPrimeMinisterName
+	text = { # Sir Robert Walpole # 1721-1742
+		localisation_key = pm_walpole
+		trigger = {
+			has_country_modifier = pm_walpole
+		}
+	}
+	# Henry Pelham
+	text = {
+		localisation_key = pm_pelham
+		trigger = {
+			has_country_modifier = pm_pelham
+		}
+	}
+}
+
+# Name of the ruling party
+defined_text = {
+	name = GetPartyName
+	# 1688-1721
+	# Whigs
+	text = {
+		localisation_key = lgParties_Whig
+		trigger = {
+			has_country_modifier = lgModifiers_WhigMinistry
+		}
+	}
+	# 1721-1742
+	# Walpole Whigs
+	text = {
+		localisation_key = lgModifiers_WalpoleMinistry
+		trigger = {
+			has_country_modifier = pm_walpole
+		}
+	}
+	# Henry Pelham
+	text = {
+		localisation_key = pm_pelham
+		trigger = {
+			has_country_modifier = pm_pelham
+		}
+	}
+}
+
+defined_text = {
+	name = GetPeerageName
+	text = {
+		localisation_key = earl_liverpool
+		trigger = {
+			has_country_modifier = pm_liverpool
+		}
+	}
+}
+
+defined_text = {
+	name = GetPeerageADJ
+	text = {
+		localisation_key = lord_liverpool
+		trigger = {
+			has_country_modifier = pm_liverpool
+		}
+	}
+}
+
+defined_text = {
+	name = GetStyles
+	text = {
+		localisation_key = Majesty
+		trigger = {
+			government_rank = 2
+		}
+	}
+}

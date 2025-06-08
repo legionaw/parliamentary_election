@@ -20,8 +20,10 @@
  earl_derby: "Earl of Derby"
  earl_grey: "Earl Grey"
  earl_guilford: "Earl of Guilford"
- earl_liverpool: "Earl of Liverpool" # Created on 1796 in Great Britain
+ # Created on 1796 in Great Britain
+ earl_liverpool: "Earl of Liverpool"
  desc_earl_liverpool: "Earl of Liverpool"
+ lord_liverpool: "Lord Liverpool"
  earl_lloyd-george: "Earl Lloyd of Dwyfor"
  earl_oxford_and_asquith: "Earl of Oxford and Asquith"
  earl_rosebery: "Earl of Rosebery"
@@ -42,7 +44,8 @@
 # Marquesses
  marquess_camden: "Marquess Camden"
  desc_marquess_camden: "Marquess Camden"
- marquess_exeter: "Marquess of Exeter" # Created on 4 February 1801 in the United Kingdom
+ # Created on 4 February 1801 in the United Kingdom
+ marquess_exeter: "Marquess of Exeter"
  desc_marquess_exeter: "Marquess of Exeter"
 # Earls
  earl_bathurst: "Earl Bathurst"

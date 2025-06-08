@@ -5,12 +5,38 @@ on_new_monarch = {
 	}
 }
 
+#province
+on_parliament_seat_given = {
+	on_parliament_seat_given_effect = yes
+	if = {
+		limit = {
+			lgTriggers_parliamentBritish = yes
+		}
+		set_province_flag = lgFlags_ParliamentSeatGranted
+	}
+}
+
+#province
+on_parliament_seat_lost = {
+	on_parliament_seat_lost_effect = yes
+	if = {
+		limit = {
+			lgTriggers_parliamentBritish = yes
+		}
+		clr_province_flag = lgFlags_ParliamentSeatGranted
+	}
+}
+
+#country
 on_parliament_debate_failed = {
 	random_events = {
 		#### 1688-1721 ####
 		# Tories
 		25 = confidence_vote.0002
 		25 = confidence_vote.0003
+		# Whigs
+		25 = confidence_vote.0006
+		25 = confidence_vote.0007
 		#### 1721-1742 ####
 		# Patriot Whigs
 		25 = confidence_vote.1012

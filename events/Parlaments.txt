@@ -13,8 +13,23 @@ province_event = {
 		development = 25
 		is_state = yes
 		is_core = owner
-		owner = {
-			has_parliament = yes
+		# owner = {
+		# 	has_parliament = yes
+		# }
+		OR = {
+			owner = {
+				has_parliament = yes
+				NOT = {
+					lgTriggers_parliamentBritish = yes
+				}
+			}
+			AND = {
+				owner = {
+					has_parliament = yes
+					lgTriggers_parliamentBritish = yes
+				}
+				region = british_isles_region
+			}
 		}
 	}
 	

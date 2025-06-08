@@ -1,4 +1,16 @@
-lgOpinionModifiers_Revolution = {
+lgOpinionModifiers_Revolution_NED = {
+	opinion = 100
+	years = 40
+	yearly_decay = 1
+}
+
+lgOpinionModifiers_Revolution_FRA = {
+	opinion = -100
+	years = 40
+	yearly_decay = 1
+}
+
+lgOpinionModifiers_CharlesII = {
 	opinion = 100
 	years = 40
 	yearly_decay = 1

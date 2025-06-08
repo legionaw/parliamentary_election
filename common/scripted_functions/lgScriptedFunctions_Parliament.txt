@@ -1,0 +1,23 @@
+can_add_seat_in_parliament = {
+	condition = {
+		tooltip = lgTooltips_CANNOT_ALTER_PARLIAMENT
+		potential = { }
+		allow = {
+			NOT = {
+				has_country_flag = lgFlags_GloriousRevolution
+			}
+		}
+	}
+}
+
+can_remove_seat_in_parliament = {
+	condition = {
+		tooltip = lgTooltips_CANNOT_ALTER_PARLIAMENT
+		potential = { }
+		allow = {
+			NOT = {
+				has_country_flag = lgFlags_GloriousRevolution
+			}
+		}
+	}
+}

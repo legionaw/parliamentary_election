@@ -1,0 +1,83 @@
+lgGR_Dutch = {
+	# If the Netherlands exists
+	if = {
+		limit = {
+			any_known_country = {
+				tag = NED
+				is_subject = no
+				num_of_cities = 4
+				marriage_with = ROOT
+				NOT = {
+					war_with = ROOT
+				}
+			}
+		}
+		save_event_target_as = lgGR_Netherlands
+	}
+	# If the Netherlands doesn't exist but Holland does
+	else_if = {
+		limit = {
+			NOT = { exists = NED }
+			any_known_country = {
+				tag = HOL
+				is_subject = no
+				num_of_cities = 4
+				marriage_with = ROOT
+				NOT = { war_with = ROOT }
+			}
+		}
+		save_event_target_as = lgGR_Holland
+	}
+	# If the Netherlands and Holland doesn't exist but Burgundy does
+	else_if = {
+		limit = {
+			NOT = { exists = NED }
+			NOT = { exists = HOL }
+			any_known_country = {
+				tag = BUR
+				is_subject = no
+				num_of_cities = 4
+				marriage_with = ROOT
+				NOT = { war_with = ROOT }
+			}
+		}
+		save_event_target_as = lgGR_Burgundy
+	}
+	#### If Netherlands, Holland, or Burgundy doesn't exist, fallback
+	else_if = {
+		limit = {
+			NOT = { exists = NED }
+			NOT = { exists = HOL }
+			NOT = { exists = BUR }
+			any_country = {
+				capital_scope = {
+					OR = {
+						region = low_countries_region
+						region = north_german_region
+						region = scandinavia_region
+					}
+				}
+				is_subject = no
+				num_of_cities = 4
+				marriage_with = ROOT
+				NOT = { war_with = ROOT }
+			}
+		}
+		random_country = {
+			limit = {
+				capital_scope = {
+					OR = {
+						region = low_countries_region
+						region = north_german_region
+						region = scandinavia_region
+					}
+				}
+				is_subject = no
+				num_of_cities = 4
+				marriage_with = ROOT
+				NOT = { war_with = ROOT }
+			}
+			save_event_target_as = lgGR_OtherCountry
+		}
+	}
+}

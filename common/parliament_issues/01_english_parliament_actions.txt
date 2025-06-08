@@ -199,7 +199,6 @@ english_scottish_act_of_union = {
 		change_tag = GBR
 		hidden_effect = {
 			on_change_tag_effect = yes
-			restore_country_name = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
@@ -556,15 +555,19 @@ bill_of_rights_act = {
 		set_parliament_action_flag = {
 			parliament_action = bill_of_rights_act
 		}
+		#add_country_modifier = {
+		#	name = abadoned_religious_rebels
+		#	duration = -1
+		#}
 		add_country_modifier = {
-			name = abadoned_religious_rebels
+			name = bill_of_rights_parliament
 			duration = -1
 		}
-		custom_tooltip = bill_of_rights_act_tt
 		add_country_modifier = {
 			name = bill_of_rights_act_modifier
 			duration = 7300
 		}
+		custom_tooltip = bill_of_rights_act_tt
 	}
 	
 	#modifier = {
@@ -607,12 +610,12 @@ the_black_act = {
 		}
 	}
 	
-	#modifier = {
-	#	harsh_treatment_cost = -0.5
-	#	stability_cost_modifier = -0.33
-	#	global_rebel_suppression_efficiency = 0.5
-	#}
-	#effect_duration = 20
+#	modifier = {
+#		harsh_treatment_cost = -0.5
+#		stability_cost_modifier = -0.33
+#		global_rebel_suppression_efficiency = 0.5
+#	}
+#	effect_duration = 20
 	
 	chance = {
 		factor = 0.5
@@ -646,12 +649,12 @@ the_witchcraft_act = {
 		}
 	}
 	
-	# modifier = {
-	# 	tolerance_own = 2
-	# 	global_heretic_missionary_strength = 0.05
-	# 	missionaries = 1
-	# }
-	# effect_duration = 20
+	#modifier = {
+	#	tolerance_own = 2
+	#	global_heretic_missionary_strength = 0.05
+	#	missionaries = 1
+	#}
+	#effect_duration = 20
 	
 	chance = {
 		factor = 0.5
@@ -679,7 +682,6 @@ the_tea_act = {
 	on_issue_taken = {
 		if = {
 			limit = {
-				has_country_flag = glorious_revolution
 				any_owned_province = {
 					has_province_modifier = lgModifiers_MPsFriends
 				}

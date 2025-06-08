@@ -39,14 +39,18 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.95
+			NOT = {
+				is_year = 1742
+			}
+		}
+		modifier = { # The historical year Sir Robert Walpole fell from the power
+			factor = 0.33
+			has_country_modifier = pm_walpole
 			is_year = 1742
 		}
 		modifier = {
 			factor = 0.33
-			has_country_modifier = pm_walpole
-			NOT = {
-				is_year = 1742
-			}
+			lgTriggers_LowConfidence = yes
 		}
 	}
 	

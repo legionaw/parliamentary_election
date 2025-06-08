@@ -39,3 +39,86 @@ lgTriggers_ConfidenceVote1834 = {
 	NOT = { is_year = 1859 }
 	has_country_modifier = lgModifiers_electionTimer
 }
+
+# Confidence Checks
+lgTriggers_LowConfidence = {
+	check_variable = { which = ConfidenceMeter value = 0 }
+	NOT = {
+		check_variable = { which = ConfidenceMeter value = 51 }
+	}
+}
+
+lgTriggers_HighConfidence = {
+	check_variable = { which = ConfidenceMeter value = 51 }
+}
+
+# Confidence Meter
+lgTriggers_Confidence10 = {
+	check_variable = { which = ConfidenceMeter value = 0 }
+	NOT = {
+		check_variable = { which = ConfidenceMeter value = 10 }
+	}
+}
+
+lgTriggers_Confidence20 = {
+	check_variable = { which = ConfidenceMeter value = 10 }
+	NOT = {
+		check_variable = { which = ConfidenceMeter value = 20 }
+	}
+}
+
+lgTriggers_Confidence30 = {
+	check_variable = { which = ConfidenceMeter value = 20 }
+	NOT = {
+		check_variable = { which = ConfidenceMeter value = 30 }
+	}
+}
+
+lgTriggers_Confidence40 = {
+	check_variable = { which = ConfidenceMeter value = 30 }
+	NOT = {
+		check_variable = { which = ConfidenceMeter value = 40 }
+	}
+}
+
+lgTriggers_Confidence50 = {
+	check_variable = { which = ConfidenceMeter value = 40 }
+	NOT = {
+		check_variable = { which = ConfidenceMeter value = 50 }
+	}
+}
+
+lgTriggers_Confidence60 = {
+	check_variable = { which = ConfidenceMeter value = 50 }
+	NOT = {
+		check_variable = { which = ConfidenceMeter value = 60 }
+	}
+}
+
+lgTriggers_Confidence70 = {
+	check_variable = { which = ConfidenceMeter value = 60 }
+	NOT = {
+		check_variable = { which = ConfidenceMeter value = 70 }
+	}
+}
+
+lgTriggers_Confidence80 = {
+	check_variable = { which = ConfidenceMeter value = 70 }
+	NOT = {
+		check_variable = { which = ConfidenceMeter value = 80 }
+	}
+}
+
+lgTriggers_Confidence90 = {
+	check_variable = { which = ConfidenceMeter value = 80 }
+	NOT = {
+		check_variable = { which = ConfidenceMeter value = 90 }
+	}
+}
+
+lgTriggers_Confidence100 = {
+	check_variable = { which = ConfidenceMeter value = 90 }
+	NOT = {
+		check_variable = { which = ConfidenceMeter value = 100 }
+	}
+}

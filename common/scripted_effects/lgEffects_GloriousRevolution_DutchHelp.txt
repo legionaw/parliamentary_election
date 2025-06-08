@@ -25,14 +25,14 @@
 #			create_union = HOL
 #		}
 #		tooltip = { create_union = HOL }
-#		add_opinion = { who = HOL modifier = lgOpinionModifiers_Revolution }
+#		add_opinion = { who = HOL modifier = lgOpinionModifiers_Revolution_NED }
 #		HOL = {
-#			add_opinion = { who = ROOT modifier = lgOpinionModifiers_Revolution }
+#			add_opinion = { who = ROOT modifier = lgOpinionModifiers_Revolution_NED }
 #			country_event = { id = ENG_glorious_revolution.0002 days = 1 }
 #		}
 #	}
 #### If Netherlands or Holland doesn't exist but Burgundy does
-#	if = {
+#	else_if = {
 #		limit = {
 #			any_known_country = {
 #				tag = BUR
@@ -60,14 +60,14 @@
 #			create_union = BUR
 #		}
 #		tooltip = { create_union = BUR }
-#		add_opinion = { who = BUR modifier = lgOpinionModifiers_Revolution }
+#		add_opinion = { who = BUR modifier = lgOpinionModifiers_Revolution_NED }
 #		BUR = {
-#			add_opinion = { who = ROOT modifier = lgOpinionModifiers_Revolution }
+#			add_opinion = { who = ROOT modifier = lgOpinionModifiers_Revolution_NED }
 #			country_event = { id = ENG_glorious_revolution.0002 days = 1 }
 #		}
 #	}
 #### If Netherlands, Holland, or Burgundy doesn't exist, fallback
-#	if = {
+#	else_if = {
 #		limit = {
 #			any_known_country = {
 #				capital_scope = {
@@ -102,9 +102,9 @@
 #			create_union = PREV
 #		}
 #		tooltip = { create_union = PREV }
-#		add_opinion = { who = PREV modifier = lgOpinionModifiers_Revolution }
+#		add_opinion = { who = PREV modifier = lgOpinionModifiers_Revolution_NED }
 #		PREV = {
-#			add_opinion = { who = ROOT modifier = lgOpinionModifiers_Revolution }
+#			add_opinion = { who = ROOT modifier = lgOpinionModifiers_Revolution_NED }
 #			country_event = { id = ENG_glorious_revolution.0002 days = 1 }
 #		}
 #	}
