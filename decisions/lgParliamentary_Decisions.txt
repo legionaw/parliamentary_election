@@ -4,6 +4,7 @@ country_decisions = {
 		potential = {
 			has_country_flag = lgFlags_GloriousRevolution
 			OR = {
+				has_reform = english_monarchy
 				has_reform = british_monarchy
 				has_reform = constitutional_monarchy
 			}
@@ -18,7 +19,41 @@ country_decisions = {
 			}
 		}
 		effect = {
-			start_debate = lgParliamentActs_SupplyAct_1688
+			if = {
+				limit = {
+					lgTriggers_Eras1688 = yes
+				}
+				start_debate = lgParliamentActs_SupplyAct_1688
+				set_country_flag = SupplyAct1688DebateActive
+			}
+			else_if = {
+				limit = {
+					lgTriggers_Eras1721 = yes
+				}
+				start_debate = lgParliamentActs_SupplyAct_1721
+				set_country_flag = SupplyAct1721DebateActive
+			}
+			else_if = {
+				limit = {
+					lgTriggers_Eras1742 = yes
+				}
+				start_debate = lgParliamentActs_SupplyAct_1742
+				set_country_flag = SupplyAct1742DebateActive
+			}
+			else_if = {
+				limit = {
+					lgTriggers_Eras1761 = yes
+				}
+				start_debate = lgParliamentActs_SupplyAct_1761
+				set_country_flag = SupplyAct1761DebateActive
+			}
+			else_if = {
+				limit = {
+					lgTriggers_Eras1784 = yes
+				}
+				start_debate = lgParliamentActs_SupplyAct_1784
+				set_country_flag = SupplyAct1784DebateActive
+			}
 		}
 		ai_will_do = {
 			factor = 0

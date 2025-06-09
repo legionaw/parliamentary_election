@@ -1,8 +1,8 @@
-#These effects clears the existing Prime Minister modifiers when called for
+# These effects clears the existing Prime Minister modifiers when called for
 
-#Administrative Prime Ministers
+# Administrative Prime Ministers
 lgRemovePM_adm = {
-	###1721
+	### 1721
 	remove_country_modifier = pm_bolingbroke
 	remove_country_modifier = pm_walpole
 	remove_country_modifier = pm_bath
@@ -22,47 +22,47 @@ lgRemovePM_adm = {
 	remove_country_modifier = pm_peel
 }
 
-#Diplomatic Prime Ministers
+# Diplomatic Prime Ministers
 lgRemovePM_dip = {
-	###1721
+	### 1721
 	remove_country_modifier = pm_wyndham
 	remove_country_modifier = pm_pelham
 	remove_country_modifier = pm_cobham
-	###1741
+	### 1741
 	remove_country_modifier = pm_newcastle
 	remove_country_modifier = pm_lichfield
-	###1761
+	### 1761
 	remove_country_modifier = pm_bute
 	remove_country_modifier = pm_rockingham
 	remove_country_modifier = pm_shelburne
 	remove_country_modifier = pm_portland
-	###1784
+	### 1784
 	remove_country_modifier = pm_fox
-	remove_country_modifier = pm_pitt1
+	remove_country_modifier = pm_pitt2
 	remove_country_modifier = pm_castlereagh
 	remove_country_modifier = pm_canning
-	###1834
+	### 1834
 	remove_country_modifier = pm_derby
 	remove_country_modifier = pm_melbourne
 	remove_country_modifier = pm_russell
 }
 
-#Militaristic Prime Ministers
+# Militaristic Prime Ministers
 lgRemovePM_mil = {
-	###1721
+	### 1721
 	remove_country_modifier = pm_smith
 	remove_country_modifier = pm_wilmington
 	remove_country_modifier = pm_fisher
-	###1741
+	### 1741
 	remove_country_modifier = pm_pitt1
 	remove_country_modifier = pm_abingdon
-	###1761
+	### 1761
 	remove_country_modifier = pm_sandwich
 	remove_country_modifier = pm_grafton
-	###1784
+	### 1784
 	remove_country_modifier = pm_hastings
 	remove_country_modifier = pm_wellington
-	###1834
+	### 1834
 	remove_country_modifier = pm_aberdeen
 	remove_country_modifier = pm_palmerston
 }

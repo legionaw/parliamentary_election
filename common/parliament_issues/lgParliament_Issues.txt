@@ -1,9 +1,12 @@
+# Supply Act (1688-1721)
 lgParliamentActs_SupplyAct_1688 = {
 	category = 4
-
+	
 	allow = {
 		has_country_flag = lgFlags_GloriousRevolution
+		has_country_flag = lgFlags_ConventionParliamentEnded
 		OR = {
+			has_reform = english_monarchy
 			has_reform = british_monarchy
 			has_reform = constitutional_monarchy
 		}
@@ -11,6 +14,7 @@ lgParliamentActs_SupplyAct_1688 = {
 			# has_country_flag = lgFlags_1688Supply
 			has_country_modifier = lgModifiers_SupplyTimer
 		}
+		has_country_flag = SupplyAct1688DebateActive
 	}
 	
 	on_issue_taken = {
@@ -49,7 +53,7 @@ lgParliamentActs_SupplyAct_1688 = {
 			}
 		}
 	}
-
+	
 	effect = {
 		# set_country_flag = lgFlags_1688Supply
 		add_country_modifier = {
@@ -58,12 +62,363 @@ lgParliamentActs_SupplyAct_1688 = {
 			hidden = yes
 		}
 		custom_tooltip = lgParliamentActs_SupplyAct_1688_tt
+		hidden_effect = {
+			clr_country_flag = SupplyAct1688DebateActive
+		}
 	}
 	
 	chance = {
 		factor = 100
 	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
 
+# Supply Act (1721-1742)
+lgParliamentActs_SupplyAct_1721 = {
+	category = 4
+	
+	allow = {
+		has_country_flag = lgFlags_GloriousRevolution
+		has_country_flag = lgFlags_ConventionParliamentEnded
+		OR = {
+			has_reform = english_monarchy
+			has_reform = british_monarchy
+			has_reform = constitutional_monarchy
+		}
+		NOT = {
+			# has_country_flag = lgFlags_1721Supply
+			has_country_modifier = lgModifiers_SupplyTimer
+		}
+		has_country_flag = SupplyAct1721DebateActive
+	}
+	
+	on_issue_taken = {
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_WalpoleMinistry
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = lgModifiers_MPsTory
+				}
+				back_current_issue = no
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = lgModifiers_MPsWhig
+				}
+				back_current_issue = no
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = lgModifiers_MPsWalpole
+				}
+				back_current_issue = yes
+			}
+		}
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_WhigMinistry
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = lgModifiers_MPsTory
+				}
+				back_current_issue = no
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = lgModifiers_MPsWhig
+				}
+				back_current_issue = yes
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = lgModifiers_MPsWalpole
+				}
+				back_current_issue = no
+			}
+		}
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_ToryMinistry
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = lgModifiers_MPsTory
+				}
+				back_current_issue = yes
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = lgModifiers_MPsWhig
+				}
+				back_current_issue = no
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = lgModifiers_MPsWalpole
+				}
+				back_current_issue = no
+			}
+		}
+	}
+	
+	effect = {
+		# set_country_flag = lgFlags_1721Supply
+		add_country_modifier = {
+			name = lgModifiers_SupplyTimer
+			duration = 365
+			hidden = yes
+		}
+		custom_tooltip = lgParliamentActs_SupplyAct_1721_tt
+		hidden_effect = {
+			clr_country_flag = SupplyAct1721DebateActive
+		}
+	}
+	
+	chance = {
+		factor = 100
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+# Supply Act (1742-1761)
+lgParliamentActs_SupplyAct_1742 = {
+	category = 4
+	
+	allow = {
+		has_country_flag = lgFlags_GloriousRevolution
+		has_country_flag = lgFlags_ConventionParliamentEnded
+		OR = {
+			has_reform = english_monarchy
+			has_reform = british_monarchy
+			has_reform = constitutional_monarchy
+		}
+		NOT = {
+			# has_country_flag = lgFlags_1742Supply
+			has_country_modifier = lgModifiers_SupplyTimer
+		}
+		has_country_flag = SupplyAct1742DebateActive
+	}
+	
+	on_issue_taken = {
+		
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_WhigMinistry
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = lgModifiers_MPsTory
+				}
+				back_current_issue = no
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = lgModifiers_MPsWhig
+				}
+				back_current_issue = yes
+			}
+		}
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_ToryMinistry
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = lgModifiers_MPsTory
+				}
+				back_current_issue = yes
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = lgModifiers_MPsWhig
+				}
+				back_current_issue = no
+			}
+		}
+	}
+	
+	effect = {
+		# set_country_flag = lgFlags_1742Supply
+		add_country_modifier = {
+			name = lgModifiers_SupplyTimer
+			duration = 365
+			hidden = yes
+		}
+		custom_tooltip = lgParliamentActs_SupplyAct_1742_tt
+		hidden_effect = {
+			clr_country_flag = SupplyAct1742DebateActive
+		}
+	}
+	
+	chance = {
+		factor = 100
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+# Supply Act (1761-1784)
+lgParliamentActs_SupplyAct_1761 = {
+	category = 4
+	
+	allow = {
+		has_country_flag = lgFlags_GloriousRevolution
+		has_country_flag = lgFlags_ConventionParliamentEnded
+		OR = {
+			has_reform = english_monarchy
+			has_reform = british_monarchy
+			has_reform = constitutional_monarchy
+		}
+		NOT = {
+			# has_country_flag = lgFlags_1761Supply
+			has_country_modifier = lgModifiers_SupplyTimer
+		}
+		has_country_flag = SupplyAct1761DebateActive
+	}
+	
+	on_issue_taken = {
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_WhigMinistry
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = lgModifiers_MPsFriends
+				}
+				back_current_issue = no
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = lgModifiers_MPsWhig
+				}
+				back_current_issue = yes
+			}
+		}
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_FriendsMinistry
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = lgModifiers_MPsFriends
+				}
+				back_current_issue = yes
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = lgModifiers_MPsWhig
+				}
+				back_current_issue = no
+			}
+		}
+	}
+	
+	effect = {
+		# set_country_flag = lgFlags_1761Supply
+		add_country_modifier = {
+			name = lgModifiers_SupplyTimer
+			duration = 365
+			hidden = yes
+		}
+		custom_tooltip = lgParliamentActs_SupplyAct_1761_tt
+		hidden_effect = {
+			clr_country_flag = SupplyAct1761DebateActive
+		}
+	}
+	
+	chance = {
+		factor = 100
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+# Supply Act (1784-1834)
+lgParliamentActs_SupplyAct_1784 = {
+	category = 4
+	
+	allow = {
+		has_country_flag = lgFlags_GloriousRevolution
+		has_country_flag = lgFlags_ConventionParliamentEnded
+		OR = {
+			has_reform = english_monarchy
+			has_reform = british_monarchy
+			has_reform = constitutional_monarchy
+		}
+		NOT = {
+			# has_country_flag = lgFlags_1784Supply
+			has_country_modifier = lgModifiers_SupplyTimer
+		}
+		has_country_flag = SupplyAct1784DebateActive
+	}
+	
+	on_issue_taken = {
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_WhigMinistry2
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = lgModifiers_MPsTory2
+				}
+				back_current_issue = no
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = lgModifiers_MPsWhig2
+				}
+				back_current_issue = yes
+			}
+		}
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_ToryMinistry2
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = lgModifiers_MPsTory2
+				}
+				back_current_issue = yes
+			}
+			every_owned_province = {
+				limit = {
+					has_province_modifier = lgModifiers_MPsWhig2
+				}
+				back_current_issue = no
+			}
+		}
+	}
+	
+	effect = {
+		# set_country_flag = lgFlags_1784Supply
+		add_country_modifier = {
+			name = lgModifiers_SupplyTimer
+			duration = 365
+			hidden = yes
+		}
+		custom_tooltip = lgParliamentActs_SupplyAct_1784_tt
+		hidden_effect = {
+			clr_country_flag = SupplyAct1784DebateActive
+		}
+	}
+	
+	chance = {
+		factor = 100
+	}
+	
 	ai_will_do = {
 		factor = 1
 	}

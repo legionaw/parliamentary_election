@@ -1,5 +1,5 @@
 ﻿l_english:
- convention_elections.0001t: "[Root.GetAdjectiveCap] General Election of $YEAR$"
+ convention_elections.0001t: "[Root.GetAdjectiveCap] General Election of [GetYear]"
  convention_elections.0001d.1: "On the advice of the assembly of peers, the RULER has called for the election of a Convention Parliament to be summoned to settle the question of the [Root.GetAdjectiveCap] throne now effectively left vacant. The election will be held for 90 days to allow all eligible voters to cast their vote. Well-placed bribes may be dispensed to influence the election."
  convention_elections.0001d.2: "On the advice of the assembly of peers, [lgGR_Netherlands.Monarch.GetName] has called for the election of a Convention Parliament to be summoned to settle the question of the [Root.GetAdjectiveCap] throne now effectively left vacant. The election will be held for 90 days to allow all eligible voters to cast their vote. Well-placed bribes may be dispensed to influence the election."
  convention_elections.0001d.3: "On the advice of the assembly of peers, [lgGR_Holland.Monarch.GetName] has called for the election of a Convention Parliament to be summoned to settle the question of the [Root.GetAdjectiveCap] throne now effectively left vacant. The election will be held for 90 days to allow all eligible voters to cast their vote. Well-placed bribes may be dispensed to influence the election."
@@ -23,8 +23,8 @@
  convention_elections.0003.c: "Congratulations to them on this."
 
  convention_elections.0004t: "Indecisive election"
- convention_elections.0004d: "Neither party has won a majority in the general election. $MONARCH$ thus have a greater discretion in appointing a ministry."
- convention_elections.0004d.1: "Neither party has won a majority in the general election. $MONARCH$ thus have a greater discretion in appointing a ministry."
+ convention_elections.0004d: "Neither party has won a majority in the general election. [Root.Monarch.GetName] thus have a greater discretion in appointing a ministry."
+ convention_elections.0004d.1: "Neither party has won a majority in the general election. [Root.Monarch.GetName] thus have a greater discretion in appointing a ministry."
  convention_elections.0004d.2: "Neither party has won a majority in the general election. [NED.Monarch.GetName] thus have a greater discretion in appointing a ministry."
- convention_elections.0004.a: "I appoint Tory ministry."
- convention_elections.0004.b: "I appoint Whig ministry."
+ convention_elections.0004.a: "Appoint Tory ministry."
+ convention_elections.0004.b: "Appoint Whig ministry."

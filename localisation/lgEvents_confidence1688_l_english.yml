@@ -1,39 +1,39 @@
 ﻿l_english:
  confidence_vote.0001t: "Ministry facing Vote of Confidence in [Root.GetAdjectiveCap] Parliament"
- confidence_vote.0001d: "Tory ministry has a motion of confidence laid against it in the Parliament of $COUNTRY$ and they are now about to hold a vote on it. This will decide whether Tory government will remain in office. If they lose the vote of confidence, they may be forced to resign, to be replaced by Whigs, or they may advise $MONARCH$ to dissolve Parliament for an early election to be held."
+ confidence_vote.0001d: "Tory ministry has a motion of confidence laid against it in the Parliament of [Root.GetName] and they are now about to hold a vote on it. This will decide whether Tory government will remain in office. If they lose the vote of confidence, they may be forced to resign, to be replaced by Whigs, or they may advise [Root.Monarch.GetName] to dissolve Parliament for an early election to be held."
  confidence_vote.0001.a: "I can only hope my ministers will stay in office."
  
  confidence_vote.0002t: "Collapse of Tory Ministry"
- confidence_vote.0002d: "Tory ministry has lost a key vote which they have treated as a motion of confidence in the Parliament of $COUNTRY$. The ministers were forced to submit their resignations, which $MONARCH$ can accept or reject. If accepted, the [Root.Monarch.GetTitle] will summon the Whig leaders and ask them to form a new ministry."
+ confidence_vote.0002d: "Tory ministry has lost a key vote which they have treated as a motion of confidence in the Parliament of [Root.GetName]. The ministers were forced to submit their resignations, which [Root.Monarch.GetName] can accept or reject. If accepted, the [Root.Monarch.GetTitle] will summon the Whig leaders and ask them to form a new ministry."
  confidence_vote.0002.a: "Refuse to accept their resignations."
  confidence_vote.0002.b: "Accept their resignations and send for the Whig leaders."
  
  confidence_vote.0003t: "Fall of Tory Government"
- confidence_vote.0003d: "Tory ministry has lost a key vote which they have treated as a motion of confidence in the Parliament of $COUNTRY$. The ministers have advised $MONARCH$ to dissolve Parliament and call a general election."
+ confidence_vote.0003d: "Tory ministry has lost a key vote which they have treated as a motion of confidence in the Parliament of [Root.GetName]. The ministers have advised [Root.Monarch.GetName] to dissolve Parliament and call a general election."
  confidence_vote.0003.a: "Accept their advice and dissolve the parliament."
  confidence_vote.0003.a.tt: "The Parliament is dissolved with a general election to be held."
  confidence_vote.0003.b: "Reject their advice and retain them in the government against the will of the House of Commons."
  confidence_vote.0003.c: "Reject their advice and dismiss them. Send in for the Whigs."
  
  confidence_vote.0004t: "Ministry won Vote of Confidence in [Root.GetAdjectiveCap] Parliament"
- confidence_vote.0004d: "Tory ministry has won a motion of confidence made against it in the Parliament of $COUNTRY$. No doubt the ministers are pleased."
+ confidence_vote.0004d: "Tory ministry has won a motion of confidence made against it in the Parliament of [Root.GetName]. No doubt the ministers are pleased."
  confidence_vote.0004.a: "I am pleased, too."
  
  confidence_vote.0005t: "Ministry facing Vote of Confidence in [Root.GetAdjectiveCap] Parliament"
- confidence_vote.0005d: "Whig ministry has a motion of confidence laid against it in the Parliament of $COUNTRY$ and they are now about to hold a vote on it. This will decide whether Whig government will remain in office. If they lose the vote of confidence, they may be forced to resign, to be replaced by Tories, or they may advise $MONARCH$ to dissolve Parliament for an early election to be held."
+ confidence_vote.0005d: "Whig ministry has a motion of confidence laid against it in the Parliament of [Root.GetName] and they are now about to hold a vote on it. This will decide whether Whig government will remain in office. If they lose the vote of confidence, they may be forced to resign, to be replaced by Tories, or they may advise [Root.Monarch.GetName] to dissolve Parliament for an early election to be held."
  confidence_vote.0005.a: "Are they about to get out-Whigged?"
  
  confidence_vote.0006t: "Fall of Whig Ministry"
- confidence_vote.0006d: "Whig ministry has lost a key vote which they have treated as a motion of confidence in the Parliament of $COUNTRY$. The ministers were forced to submit their resignations, which $MONARCH$ can accept or reject. If accepted, the [Root.Monarch.GetTitle] will summon the Whig leaders and ask them to form a new ministry."
+ confidence_vote.0006d: "Whig ministry has lost a key vote which they have treated as a motion of confidence in the Parliament of [Root.GetName]. The ministers were forced to submit their resignations, which [Root.Monarch.GetName] can accept or reject. If accepted, the [Root.Monarch.GetTitle] will summon the Whig leaders and ask them to form a new ministry."
  confidence_vote.0006.a: "Refuse to accept their resignations."
  confidence_vote.0006.b: "Accept their resignations and send for the Whig leaders."
  
  confidence_vote.0007t: "Collapse of Whig Government"
- confidence_vote.0007d: "Whig ministry has lost a key vote which they have treated as a motion of confidence in the Parliament of $COUNTRY$. The ministers have advised $MONARCH$ to dissolve Parliament and call a general election."
+ confidence_vote.0007d: "Whig ministry has lost a key vote which they have treated as a motion of confidence in the Parliament of [Root.GetName]. The ministers have advised [Root.Monarch.GetName] to dissolve Parliament and call a general election."
  confidence_vote.0007.a: "Accept their advice and dissolve the parliament."
  confidence_vote.0007.b: "Reject their advice and retain them in the government against the will of the House of Commons."
  confidence_vote.0007.c: "Reject their advice and dismiss them. Send in for the Whigs."
  
  confidence_vote.0008t: "Ministry won Vote of Confidence in [Root.GetAdjectiveCap] Parliament"
- confidence_vote.0008d: "Whig ministry has won a motion of confidence made against it in the Parliament of $COUNTRY$. No doubt the ministers are pleased."
+ confidence_vote.0008d: "Whig ministry has won a motion of confidence made against it in the Parliament of [Root.GetName]. No doubt the ministers are pleased."
  confidence_vote.0008.a: "Great, more Whigs to deal with."

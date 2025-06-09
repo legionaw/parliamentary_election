@@ -1,17 +1,498 @@
 # Full name of the prime minister
 defined_text = {
 	name = GetPrimeMinisterName
-	text = { # Sir Robert Walpole # 1721-1742
+	# 1721-1742
+	text = { # Henry St John, 1st Viscount Bolingbroke
+		localisation_key = lord_bolingbroke
+		trigger = {
+			has_country_modifier = pm_bolingbroke
+		}
+	}
+	text = { # Sir Robert Walpole
 		localisation_key = pm_walpole
 		trigger = {
 			has_country_modifier = pm_walpole
 		}
 	}
-	# Henry Pelham
-	text = {
+	text = { # William Pulteney, 1st Earl of Bath
+		localisation_key = lord_bath
+		trigger = {
+			has_country_modifier = pm_bath
+		}
+	}
+	text = { # Sir William Wyndham
+		localisation_key = pm_wyndham
+		trigger = {
+			has_country_modifier = pm_wyndham
+		}
+	}
+	text = { # Henry Pelham
 		localisation_key = pm_pelham
 		trigger = {
 			has_country_modifier = pm_pelham
+		}
+	}
+	text = { # Richard Temple, 1st Viscount Cobham
+		localisation_key = lord_cobham
+		trigger = {
+			has_country_modifier = pm_cobham
+		}
+	}
+	text = { # John Smith
+		localisation_key = pm_smith
+		trigger = {
+			has_country_modifier = pm_smith
+		}
+	}
+	text = { # Spencer Compton, 1st Earl of Wilmington
+		localisation_key = lord_wilmington
+		trigger = {
+			has_country_modifier = pm_wilmington
+		}
+	}
+	text = { # John Fisher
+		localisation_key = pm_fisher
+		trigger = {
+			has_country_modifier = pm_fisher
+		}
+	}
+	# 1742-1761
+	text = { # William Cavendish, 4th Duke of Devonshire
+		localisation_key = duke_devonshire
+		trigger = {
+			has_country_modifier = pm_devonshire
+		}
+	}
+	text = { # Sir James Dashwood
+		localisation_key = pm_dashwood
+		trigger = {
+			has_country_modifier = pm_dashwood
+		}
+	}
+	text = { # Thomas Pelham-Holles, 1st Duke of Newcastle
+		localisation_key = duke_newcastle
+		trigger = {
+			has_country_modifier = pm_newcastle
+		}
+	}
+	text = { # George Lee, 3rd Earl of Lichfield
+		localisation_key = lord_lichfield
+		trigger = {
+			has_country_modifier = pm_lichfield
+		}
+	}
+	text = { # William Pitt the Elder
+		localisation_key = pm_pitt1
+		trigger = {
+			has_country_modifier = pm_pitt1
+		}
+	}
+	text = { # Willoughby Bertie, 3rd Earl of Abingdon
+		localisation_key = lord_abingdon
+		trigger = {
+			has_country_modifier = pm_abingdon
+		}
+	}
+	# 1761-1784
+	text = { # George Grenville
+		localisation_key = pm_grenville
+		trigger = {
+			has_country_modifier = pm_grenville
+		}
+	}
+	text = { # Frederick North, Lord North
+		localisation_key = lord_north
+		trigger = {
+			has_country_modifier = pm_lordnorth
+		}
+	}
+	text = { # John Stuart, 3rd Earl of Bute
+		localisation_key = lord_bute
+		trigger = {
+			has_country_modifier = pm_bute
+		}
+	}
+	text = { # Charles-Watson-Wentworth, 2nd Marquess of Rockingham
+		localisation_key = lord_rockingham
+		trigger = {
+			has_country_modifier = pm_rockingham
+		}
+	}
+	text = { # William Petty, 2nd Earl of Shelburne
+		localisation_key = lord_shelburne
+		trigger = {
+			has_country_modifier = pm_shelburne
+		}
+	}
+	text = { # William Cavendish-Bentinck, 1st Duke of Portland
+		localisation_key = duke_portland
+		trigger = {
+			has_country_modifier = pm_portland
+		}
+	}
+	text = { # John Montagu, 4th Earl of Sandwich
+		localisation_key = lord_sandwich
+		trigger = {
+			has_country_modifier = pm_sandwich
+		}
+	}
+	text = { # Augustus FitzRoy, 3rd Duke of Grafton
+		localisation_key = duke_grafton
+		trigger = {
+			has_country_modifier = pm_grafton
+		}
+	}
+	# 1784-1834
+	text = { # Spencer Perceval
+		localisation_key = pm_perceval
+		trigger = {
+			has_country_modifier = pm_perceval
+		}
+	}
+	text = { # Robert Banks Jenkinson, 2nd Earl of Liverpool
+		localisation_key = lord_liverpool
+		trigger = {
+			has_country_modifier = pm_liverpool
+		}
+	}
+	text = { # William Grenville, 1st Baron Grenville
+		localisation_key = lord_grenville
+		trigger = {
+			has_country_modifier = pm_grenville2
+		}
+	}
+	text = { # Henry Addington
+		localisation_key = pm_addington1
+		trigger = {
+			has_country_modifier = pm_addington1
+		}
+	}
+	text = { # Charles James Fox
+		localisation_key = pm_fox
+		trigger = {
+			has_country_modifier = pm_fox
+		}
+	}
+	text = { # William Pitt the Younger
+		localisation_key = pm_pitt2
+		trigger = {
+			has_country_modifier = pm_pitt2
+		}
+	}
+	text = { # Robert Stewart, Viscount Castlereagh
+		localisation_key = lord_castlereagh
+		trigger = {
+			has_country_modifier = pm_castlereagh
+		}
+	}
+	text = { # George Canning
+		localisation_key = pm_canning
+		trigger = {
+			has_country_modifier = pm_canning
+		}
+	}
+	text = { # Francis Rawdon-Hastings, 1st Marquess of Hastings
+		localisation_key = lord_hastings
+		trigger = {
+			has_country_modifier = pm_hastings
+		}
+	}
+	text = { # Arthur Wellesley, 1st Duke of Wellington
+		localisation_key = duke_wellington
+		trigger = {
+			has_country_modifier = pm_wellington
+		}
+	}
+	# 1834-1859
+	text = { # Charles Grey, 2nd Earl Grey
+		localisation_key = lord_grey
+		trigger = {
+			has_country_modifier = pm_grey
+		}
+	}
+	text = { # Sir Robert Peel, 2nd Baronet
+		localisation_key = pm_peel
+		trigger = {
+			has_country_modifier = pm_peel
+		}
+	}
+	text = { # Edward-Smith-Stanley, 14th Earl of Derby
+		localisation_key = lord_derby
+		trigger = {
+			has_country_modifier = pm_derby
+		}
+	}
+	text = { # William Lamb, 2nd Viscount Melbourne
+		localisation_key = lord_melbourne
+		trigger = {
+			has_country_modifier = pm_melbourne
+		}
+	}
+	text = { # Lord John Russell
+		localisation_key = pm_russell
+		trigger = {
+			has_country_modifier = pm_russell
+		}
+	}
+	text = { # 
+		localisation_key = lord_aberdeen
+		trigger = {
+			has_country_modifier = pm_aberdeen
+		}
+	}
+	text = { # Henry John Temple, 3rd Viscount Palmerston
+		localisation_key = lord_palmerston
+		trigger = {
+			has_country_modifier = pm_palmerston
+		}
+	}
+}
+
+defined_text = {
+	name = GetPrimeMinisterNameThe1
+	# 1721-1742
+	text = { # Henry St John, 1st Viscount Bolingbroke
+		localisation_key = the_lord_bolingbroke1
+		trigger = {
+			has_country_modifier = pm_bolingbroke
+		}
+	}
+	text = { # Sir Robert Walpole
+		localisation_key = pm_walpole
+		trigger = {
+			has_country_modifier = pm_walpole
+		}
+	}
+	text = { # William Pulteney, 1st Earl of Bath
+		localisation_key = the_lord_bath1
+		trigger = {
+			has_country_modifier = pm_bath
+		}
+	}
+	text = { # Sir William Wyndham
+		localisation_key = pm_wyndham
+		trigger = {
+			has_country_modifier = pm_wyndham
+		}
+	}
+	text = { # Henry Pelham
+		localisation_key = pm_pelham
+		trigger = {
+			has_country_modifier = pm_pelham
+		}
+	}
+	text = { # Richard Temple, 1st Viscount Cobham
+		localisation_key = the_lord_cobham1
+		trigger = {
+			has_country_modifier = pm_cobham
+		}
+	}
+	text = { # John Smith
+		localisation_key = pm_smith
+		trigger = {
+			has_country_modifier = pm_smith
+		}
+	}
+	text = { # Spencer Compton, 1st Earl of Wilmington
+		localisation_key = the_lord_wilmington1
+		trigger = {
+			has_country_modifier = pm_wilmington
+		}
+	}
+	text = { # John Fisher
+		localisation_key = pm_fisher
+		trigger = {
+			has_country_modifier = pm_fisher
+		}
+	}
+	# 1742-1761
+	text = { # William Cavendish, 4th Duke of Devonshire
+		localisation_key = the_duke_devonshire1
+		trigger = {
+			has_country_modifier = pm_devonshire
+		}
+	}
+	text = { # Sir James Dashwood
+		localisation_key = pm_dashwood
+		trigger = {
+			has_country_modifier = pm_dashwood
+		}
+	}
+	text = { # Thomas Pelham-Holles, 1st Duke of Newcastle
+		localisation_key = the_duke_newcastle1
+		trigger = {
+			has_country_modifier = pm_newcastle
+		}
+	}
+	text = { # George Lee, 3rd Earl of Lichfield
+		localisation_key = the_lord_lichfield1
+		trigger = {
+			has_country_modifier = pm_lichfield
+		}
+	}
+	text = { # William Pitt the Elder
+		localisation_key = pm_pitt1
+		trigger = {
+			has_country_modifier = pm_pitt1
+		}
+	}
+	text = { # Willoughby Bertie, 3rd Earl of Abingdon
+		localisation_key = the_lord_abingdon1
+		trigger = {
+			has_country_modifier = pm_abingdon
+		}
+	}
+	# 1761-1784
+	text = { # George Grenville
+		localisation_key = pm_grenville
+		trigger = {
+			has_country_modifier = pm_grenville
+		}
+	}
+	text = { # Frederick North, Lord North
+		localisation_key = the_lord_north1
+		trigger = {
+			has_country_modifier = pm_lordnorth
+		}
+	}
+	text = { # John Stuart, 3rd Earl of Bute
+		localisation_key = the_lord_bute1
+		trigger = {
+			has_country_modifier = pm_bute
+		}
+	}
+	text = { # Charles-Watson-Wentworth, 2nd Marquess of Rockingham
+		localisation_key = the_lord_rockingham1
+		trigger = {
+			has_country_modifier = pm_rockingham
+		}
+	}
+	text = { # William Petty, 2nd Earl of Shelburne
+		localisation_key = the_lord_shelburne1
+		trigger = {
+			has_country_modifier = pm_shelburne
+		}
+	}
+	text = { # William Cavendish-Bentinck, 1st Duke of Portland
+		localisation_key = the_duke_portland1
+		trigger = {
+			has_country_modifier = pm_portland
+		}
+	}
+	text = { # John Montagu, 4th Earl of Sandwich
+		localisation_key = the_lord_sandwich1
+		trigger = {
+			has_country_modifier = pm_sandwich
+		}
+	}
+	text = { # Augustus FitzRoy, 3rd Duke of Grafton
+		localisation_key = the_duke_grafton1
+		trigger = {
+			has_country_modifier = pm_grafton
+		}
+	}
+	# 1784-1834
+	text = { # Spencer Perceval
+		localisation_key = pm_perceval
+		trigger = {
+			has_country_modifier = pm_perceval
+		}
+	}
+	text = { # Robert Banks Jenkinson, 2nd Earl of Liverpool
+		localisation_key = the_lord_liverpool1
+		trigger = {
+			has_country_modifier = pm_liverpool
+		}
+	}
+	text = { # William Grenville, 1st Baron Grenville
+		localisation_key = the_lord_grenville1
+		trigger = {
+			has_country_modifier = pm_grenville2
+		}
+	}
+	text = { # Henry Addington
+		localisation_key = pm_addington1
+		trigger = {
+			has_country_modifier = pm_addington1
+		}
+	}
+	text = { # Charles James Fox
+		localisation_key = pm_fox
+		trigger = {
+			has_country_modifier = pm_fox
+		}
+	}
+	text = { # William Pitt the Younger
+		localisation_key = pm_pitt2
+		trigger = {
+			has_country_modifier = pm_pitt2
+		}
+	}
+	text = { # Robert Stewart, Viscount Castlereagh
+		localisation_key = the_lord_castlereagh1
+		trigger = {
+			has_country_modifier = pm_castlereagh
+		}
+	}
+	text = { # George Canning
+		localisation_key = pm_canning
+		trigger = {
+			has_country_modifier = pm_canning
+		}
+	}
+	text = { # Francis Rawdon-Hastings, 1st Marquess of Hastings
+		localisation_key = the_lord_hastings1
+		trigger = {
+			has_country_modifier = pm_hastings
+		}
+	}
+	text = { # Arthur Wellesley, 1st Duke of Wellington
+		localisation_key = the_duke_wellington1
+		trigger = {
+			has_country_modifier = pm_wellington
+		}
+	}
+	# 1834-1859
+	text = { # Charles Grey, 2nd Earl Grey
+		localisation_key = the_lord_grey1
+		trigger = {
+			has_country_modifier = pm_grey
+		}
+	}
+	text = { # Sir Robert Peel, 2nd Baronet
+		localisation_key = pm_peel
+		trigger = {
+			has_country_modifier = pm_peel
+		}
+	}
+	text = { # Edward-Smith-Stanley, 14th Earl of Derby
+		localisation_key = the_lord_derby1
+		trigger = {
+			has_country_modifier = pm_derby
+		}
+	}
+	text = { # William Lamb, 2nd Viscount Melbourne
+		localisation_key = the_lord_melbourne1
+		trigger = {
+			has_country_modifier = pm_melbourne
+		}
+	}
+	text = { # Lord John Russell
+		localisation_key = pm_russell
+		trigger = {
+			has_country_modifier = pm_russell
+		}
+	}
+	text = { # 
+		localisation_key = the_lord_aberdeen1
+		trigger = {
+			has_country_modifier = pm_aberdeen
+		}
+	}
+	text = { # Henry John Temple, 3rd Viscount Palmerston
+		localisation_key = the_lord_palmerston1
+		trigger = {
+			has_country_modifier = pm_palmerston
 		}
 	}
 }
@@ -20,32 +501,29 @@ defined_text = {
 defined_text = {
 	name = GetPartyName
 	# 1688-1721
-	# Whigs
-	text = {
-		localisation_key = lgParties_Whig
+	text = { # Whigs
+		localisation_key = lgPartiesAndFactions_Whig1a
 		trigger = {
 			has_country_modifier = lgModifiers_WhigMinistry
 		}
 	}
-	# 1721-1742
-	# Walpole Whigs
-	text = {
-		localisation_key = lgModifiers_WalpoleMinistry
+	text = { # Tories
+		localisation_key = lgPartiesAndFactions_Tory1a
 		trigger = {
-			has_country_modifier = pm_walpole
+			has_country_modifier = lgModifiers_ToryMinistry
 		}
 	}
-	# Henry Pelham
-	text = {
-		localisation_key = pm_pelham
+	# 1721-1742
+	text = { # Walpole Whigs
+		localisation_key = lgPartiesAndFactions_WalpoleWhig1a
 		trigger = {
-			has_country_modifier = pm_pelham
+			has_country_modifier = lgModifiers_WalpoleMinistry
 		}
 	}
 }
 
 defined_text = {
-	name = GetPeerageName
+	name = GetPeerageName1
 	text = {
 		localisation_key = earl_liverpool
 		trigger = {
@@ -55,7 +533,7 @@ defined_text = {
 }
 
 defined_text = {
-	name = GetPeerageADJ
+	name = GetPeerageName2
 	text = {
 		localisation_key = lord_liverpool
 		trigger = {

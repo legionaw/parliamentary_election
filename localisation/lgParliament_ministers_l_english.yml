@@ -1,6 +1,10 @@
 ﻿l_english:
  pm_castlereagh: "Robert Stewart, Viscount Castlereagh"
  desc_pm_castlereagh: "Lord Castlereagh is currently the Prime Minister."
+ viscount_castlereagh: "Viscount Castlereagh"
+ lord_castlereagh: "Lord Castlereagh"
+ the_lord_castlereagh1: "The Lord Castlereagh"
+ the_lord_castlereagh2: "the Lord Castlereagh"
  
  pm_canning: "George Canning"
  desc_pm_canning: "George Canning is currently the Prime Minister."

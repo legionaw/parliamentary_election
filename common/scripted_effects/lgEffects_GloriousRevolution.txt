@@ -1,4 +1,4 @@
-lgGR_setup = {
+lgEffects_GR_setup = {
 	# set_country_flag = lgFlags_GloriousRevolution
 	add_country_modifier = { 
 		name = "LgModifiers_ParliamentaryMonarchy" duration = -1 hidden = yes
@@ -16,15 +16,37 @@ lgGR_setup = {
 	}
 	if = {
 		limit = {
-			NOT = { 
-				has_reform = constitutional_monarchy
+			has_dlc = "Domination"
+			OR = {
+				NOT = { 
+					has_reform = constitutional_monarchy
+				}
+				NOT = { 
+					has_reform = british_monarchy
+				}
+				NOT = { 
+					has_reform = english_monarchy
+				}
 			}
 		}
 		add_government_reform = british_monarchy
 	}
+	else_if = {
+		limit = {
+			OR = {
+				NOT = { 
+					has_reform = constitutional_monarchy
+				}
+				NOT = { 
+					has_reform = english_monarchy
+				}
+			}
+		}
+		add_government_reform = english_monarchy
+	}
 }
 
-lg_ProtestantRevolution = {
+lgEffects_ProtestantRevolution = {
 	if = {
 		limit = {
 			religion = catholic
@@ -48,11 +70,8 @@ lg_ProtestantRevolution = {
 	}
 }
 
-lg_JacobiteRebellionSetup = {
+lgEffects_JacobiteRebellionSetup = {
 	hidden_effect = {
-		
-		
-		
 		random_province = {
 			limit = {
 				owner = {
