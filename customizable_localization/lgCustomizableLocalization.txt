@@ -551,3 +551,20 @@ defined_text = {
 		}
 	}
 }
+
+defined_text = {
+	name = GloriousRevolution_GetRegentName
+	text = {
+		localisation_key = GloriousRevolutionENG_GetRegentName1
+		trigger = {
+			lgTriggers_DutchHelpedGloriousRevolution = yes
+		}
+	}
+	
+	text = {
+		localisation_key = GloriousRevolutionENG_GetRegentName2
+		trigger = {
+			lgTriggers_DutchRefusedGloriousRevolution = yes
+		}
+	}
+}

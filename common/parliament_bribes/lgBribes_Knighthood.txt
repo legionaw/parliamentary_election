@@ -1,0 +1,73 @@
+lgBribes_Knighthood1 = {
+	trigger = {
+		AND = {
+			OR = {
+				has_reform = british_monarchy
+				has_reform = constitutional_monarchy
+				has_reform = lgGovernments_ParliamentaryMonarchy
+			}
+			has_country_flag = lgFlags_GloriousRevolution
+		}
+		NOT = {
+			FROM = {
+				has_province_modifier = lgModifiers_Knighthood1
+			}
+		}
+	}
+	
+	effect = {
+		FROM = {
+			# set_province_flag = lgFlags_OfferedKnighthood1
+			add_province_modifier = {
+				name = lgModifiers_Knighthood1
+				duration = 2555
+				hidden = yes
+			}
+			# province_event = {
+			# 	id = lgEvents_ENG_ParliamentaryBribes.0001
+			# }
+		}
+		custom_tooltip = lgBribes_Knighthood1.tt
+	}
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+lgBribes_Knighthood2 = {
+	trigger = {
+		AND = {
+			OR = {
+				has_reform = british_monarchy
+				has_reform = constitutional_monarchy
+				has_reform = lgGovernments_ParliamentaryMonarchy
+			}
+			has_country_flag = lgFlags_GloriousRevolution
+		}
+		NOT = {
+			FROM = {
+				has_province_modifier = lgModifiers_Knighthood2
+			}
+		}
+	}
+	
+	effect = {
+		FROM = {
+			# set_province_flag = lgFlags_OfferedKnighthood2
+			add_province_modifier = {
+				name = lgModifiers_Knighthood2
+				duration = 2555
+				hidden = yes
+			}
+			# province_event = {
+			# 	id = lgEvents_ENG_ParliamentaryBribes.0002
+			# }
+		}
+		custom_tooltip = lgBribes_Knighthood2.tt
+	}
+	
+	ai_will_do = {
+		factor = 0
+	}
+}

@@ -1,0 +1,345 @@
+lgTriggers_CharID0001 = { check_variable = { which = lgVar_CharIDgenerated value = 1 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 2 } } }
+lgTriggers_CharID0002 = { check_variable = { which = lgVar_CharIDgenerated value = 2 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 3 } } }
+lgTriggers_CharID0003 = { check_variable = { which = lgVar_CharIDgenerated value = 3 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 4 } } }
+lgTriggers_CharID0004 = { check_variable = { which = lgVar_CharIDgenerated value = 4 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 5 } } }
+lgTriggers_CharID0005 = { check_variable = { which = lgVar_CharIDgenerated value = 5 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 6 } } }
+lgTriggers_CharID0006 = { check_variable = { which = lgVar_CharIDgenerated value = 6 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 7 } } }
+lgTriggers_CharID0007 = { check_variable = { which = lgVar_CharIDgenerated value = 7 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 8 } } }
+lgTriggers_CharID0008 = { check_variable = { which = lgVar_CharIDgenerated value = 8 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 9 } } }
+lgTriggers_CharID0009 = { check_variable = { which = lgVar_CharIDgenerated value = 9 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 10 } } }
+lgTriggers_CharID0010 = { check_variable = { which = lgVar_CharIDgenerated value = 10 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 11 } } }
+
+lgTriggers_CharID0011 = { check_variable = { which = lgVar_CharIDgenerated value = 11 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 12 } } }
+lgTriggers_CharID0012 = { check_variable = { which = lgVar_CharIDgenerated value = 12 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 13 } } }
+lgTriggers_CharID0013 = { check_variable = { which = lgVar_CharIDgenerated value = 13 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 14 } } }
+lgTriggers_CharID0014 = { check_variable = { which = lgVar_CharIDgenerated value = 14 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 15 } } }
+lgTriggers_CharID0015 = { check_variable = { which = lgVar_CharIDgenerated value = 15 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 16 } } }
+lgTriggers_CharID0016 = { check_variable = { which = lgVar_CharIDgenerated value = 16 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 17 } } }
+lgTriggers_CharID0017 = { check_variable = { which = lgVar_CharIDgenerated value = 17 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 18 } } }
+lgTriggers_CharID0018 = { check_variable = { which = lgVar_CharIDgenerated value = 18 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 19 } } }
+lgTriggers_CharID0019 = { check_variable = { which = lgVar_CharIDgenerated value = 19 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 20 } } }
+lgTriggers_CharID0020 = { check_variable = { which = lgVar_CharIDgenerated value = 20 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 21 } } }
+
+lgTriggers_CharID0021 = { check_variable = { which = lgVar_CharIDgenerated value = 21 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 22 } } }
+lgTriggers_CharID0022 = { check_variable = { which = lgVar_CharIDgenerated value = 22 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 23 } } }
+lgTriggers_CharID0023 = { check_variable = { which = lgVar_CharIDgenerated value = 23 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 24 } } }
+lgTriggers_CharID0024 = { check_variable = { which = lgVar_CharIDgenerated value = 24 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 25 } } }
+lgTriggers_CharID0025 = { check_variable = { which = lgVar_CharIDgenerated value = 25 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 26 } } }
+lgTriggers_CharID0026 = { check_variable = { which = lgVar_CharIDgenerated value = 26 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 27 } } }
+lgTriggers_CharID0027 = { check_variable = { which = lgVar_CharIDgenerated value = 27 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 28 } } }
+lgTriggers_CharID0028 = { check_variable = { which = lgVar_CharIDgenerated value = 28 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 29 } } }
+lgTriggers_CharID0029 = { check_variable = { which = lgVar_CharIDgenerated value = 29 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 30 } } }
+lgTriggers_CharID0030 = { check_variable = { which = lgVar_CharIDgenerated value = 30 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 31 } } }
+
+lgTriggers_CharID0031 = { check_variable = { which = lgVar_CharIDgenerated value = 31 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 32 } } }
+lgTriggers_CharID0032 = { check_variable = { which = lgVar_CharIDgenerated value = 32 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 33 } } }
+lgTriggers_CharID0033 = { check_variable = { which = lgVar_CharIDgenerated value = 33 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 34 } } }
+lgTriggers_CharID0034 = { check_variable = { which = lgVar_CharIDgenerated value = 34 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 35 } } }
+lgTriggers_CharID0035 = { check_variable = { which = lgVar_CharIDgenerated value = 35 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 36 } } }
+lgTriggers_CharID0036 = { check_variable = { which = lgVar_CharIDgenerated value = 36 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 37 } } }
+lgTriggers_CharID0037 = { check_variable = { which = lgVar_CharIDgenerated value = 37 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 38 } } }
+lgTriggers_CharID0038 = { check_variable = { which = lgVar_CharIDgenerated value = 38 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 39 } } }
+lgTriggers_CharID0039 = { check_variable = { which = lgVar_CharIDgenerated value = 39 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 40 } } }
+lgTriggers_CharID0040 = { check_variable = { which = lgVar_CharIDgenerated value = 40 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 41 } } }
+
+lgTriggers_CharID0041 = { check_variable = { which = lgVar_CharIDgenerated value = 41 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 42 } } }
+lgTriggers_CharID0042 = { check_variable = { which = lgVar_CharIDgenerated value = 42 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 43 } } }
+lgTriggers_CharID0043 = { check_variable = { which = lgVar_CharIDgenerated value = 43 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 44 } } }
+lgTriggers_CharID0044 = { check_variable = { which = lgVar_CharIDgenerated value = 44 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 45 } } }
+lgTriggers_CharID0045 = { check_variable = { which = lgVar_CharIDgenerated value = 45 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 46 } } }
+lgTriggers_CharID0046 = { check_variable = { which = lgVar_CharIDgenerated value = 46 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 47 } } }
+lgTriggers_CharID0047 = { check_variable = { which = lgVar_CharIDgenerated value = 47 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 48 } } }
+lgTriggers_CharID0048 = { check_variable = { which = lgVar_CharIDgenerated value = 48 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 49 } } }
+lgTriggers_CharID0049 = { check_variable = { which = lgVar_CharIDgenerated value = 49 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 50 } } }
+lgTriggers_CharID0050 = { check_variable = { which = lgVar_CharIDgenerated value = 50 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 51 } } }
+
+lgTriggers_CharID0051 = { check_variable = { which = lgVar_CharIDgenerated value = 51 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 52 } } }
+lgTriggers_CharID0052 = { check_variable = { which = lgVar_CharIDgenerated value = 52 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 53 } } }
+lgTriggers_CharID0053 = { check_variable = { which = lgVar_CharIDgenerated value = 53 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 54 } } }
+lgTriggers_CharID0054 = { check_variable = { which = lgVar_CharIDgenerated value = 54 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 55 } } }
+lgTriggers_CharID0055 = { check_variable = { which = lgVar_CharIDgenerated value = 55 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 56 } } }
+lgTriggers_CharID0056 = { check_variable = { which = lgVar_CharIDgenerated value = 56 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 57 } } }
+lgTriggers_CharID0057 = { check_variable = { which = lgVar_CharIDgenerated value = 57 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 58 } } }
+lgTriggers_CharID0058 = { check_variable = { which = lgVar_CharIDgenerated value = 58 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 59 } } }
+lgTriggers_CharID0059 = { check_variable = { which = lgVar_CharIDgenerated value = 59 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 60 } } }
+lgTriggers_CharID0060 = { check_variable = { which = lgVar_CharIDgenerated value = 60 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 61 } } }
+
+lgTriggers_CharID0061 = { check_variable = { which = lgVar_CharIDgenerated value = 61 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 62 } } }
+lgTriggers_CharID0062 = { check_variable = { which = lgVar_CharIDgenerated value = 62 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 63 } } }
+lgTriggers_CharID0063 = { check_variable = { which = lgVar_CharIDgenerated value = 63 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 64 } } }
+lgTriggers_CharID0064 = { check_variable = { which = lgVar_CharIDgenerated value = 64 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 65 } } }
+lgTriggers_CharID0065 = { check_variable = { which = lgVar_CharIDgenerated value = 65 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 66 } } }
+lgTriggers_CharID0066 = { check_variable = { which = lgVar_CharIDgenerated value = 66 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 67 } } }
+lgTriggers_CharID0067 = { check_variable = { which = lgVar_CharIDgenerated value = 67 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 68 } } }
+lgTriggers_CharID0068 = { check_variable = { which = lgVar_CharIDgenerated value = 68 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 69 } } }
+lgTriggers_CharID0069 = { check_variable = { which = lgVar_CharIDgenerated value = 69 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 70 } } }
+lgTriggers_CharID0070 = { check_variable = { which = lgVar_CharIDgenerated value = 70 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 71 } } }
+
+lgTriggers_CharID0071 = { check_variable = { which = lgVar_CharIDgenerated value = 71 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 72 } } }
+lgTriggers_CharID0072 = { check_variable = { which = lgVar_CharIDgenerated value = 72 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 73 } } }
+lgTriggers_CharID0073 = { check_variable = { which = lgVar_CharIDgenerated value = 73 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 74 } } }
+lgTriggers_CharID0074 = { check_variable = { which = lgVar_CharIDgenerated value = 74 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 75 } } }
+lgTriggers_CharID0075 = { check_variable = { which = lgVar_CharIDgenerated value = 75 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 76 } } }
+lgTriggers_CharID0076 = { check_variable = { which = lgVar_CharIDgenerated value = 76 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 77 } } }
+lgTriggers_CharID0077 = { check_variable = { which = lgVar_CharIDgenerated value = 77 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 78 } } }
+lgTriggers_CharID0078 = { check_variable = { which = lgVar_CharIDgenerated value = 78 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 79 } } }
+lgTriggers_CharID0079 = { check_variable = { which = lgVar_CharIDgenerated value = 79 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 80 } } }
+lgTriggers_CharID0080 = { check_variable = { which = lgVar_CharIDgenerated value = 80 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 81 } } }
+
+lgTriggers_CharID0081 = { check_variable = { which = lgVar_CharIDgenerated value = 81 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 82 } } }
+lgTriggers_CharID0082 = { check_variable = { which = lgVar_CharIDgenerated value = 82 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 83 } } }
+lgTriggers_CharID0083 = { check_variable = { which = lgVar_CharIDgenerated value = 83 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 84 } } }
+lgTriggers_CharID0084 = { check_variable = { which = lgVar_CharIDgenerated value = 84 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 85 } } }
+lgTriggers_CharID0085 = { check_variable = { which = lgVar_CharIDgenerated value = 85 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 86 } } }
+lgTriggers_CharID0086 = { check_variable = { which = lgVar_CharIDgenerated value = 86 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 87 } } }
+lgTriggers_CharID0087 = { check_variable = { which = lgVar_CharIDgenerated value = 87 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 88 } } }
+lgTriggers_CharID0088 = { check_variable = { which = lgVar_CharIDgenerated value = 88 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 89 } } }
+lgTriggers_CharID0089 = { check_variable = { which = lgVar_CharIDgenerated value = 89 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 90 } } }
+lgTriggers_CharID0090 = { check_variable = { which = lgVar_CharIDgenerated value = 90 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 91 } } }
+
+lgTriggers_CharID0091 = { check_variable = { which = lgVar_CharIDgenerated value = 91 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 92 } } }
+lgTriggers_CharID0092 = { check_variable = { which = lgVar_CharIDgenerated value = 92 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 93 } } }
+lgTriggers_CharID0093 = { check_variable = { which = lgVar_CharIDgenerated value = 93 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 94 } } }
+lgTriggers_CharID0094 = { check_variable = { which = lgVar_CharIDgenerated value = 94 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 95 } } }
+lgTriggers_CharID0095 = { check_variable = { which = lgVar_CharIDgenerated value = 95 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 96 } } }
+lgTriggers_CharID0096 = { check_variable = { which = lgVar_CharIDgenerated value = 96 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 97 } } }
+lgTriggers_CharID0097 = { check_variable = { which = lgVar_CharIDgenerated value = 97 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 98 } } }
+lgTriggers_CharID0098 = { check_variable = { which = lgVar_CharIDgenerated value = 98 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 99 } } }
+lgTriggers_CharID0099 = { check_variable = { which = lgVar_CharIDgenerated value = 99 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 100 } } }
+lgTriggers_CharID0100 = { check_variable = { which = lgVar_CharIDgenerated value = 100 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 101 } } }
+
+# 101-200
+lgTriggers_CharID0101 = { check_variable = { which = lgVar_CharIDgenerated value = 101 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 102 } } }
+lgTriggers_CharID0102 = { check_variable = { which = lgVar_CharIDgenerated value = 102 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 103 } } }
+lgTriggers_CharID0103 = { check_variable = { which = lgVar_CharIDgenerated value = 103 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 104 } } }
+lgTriggers_CharID0104 = { check_variable = { which = lgVar_CharIDgenerated value = 104 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 105 } } }
+lgTriggers_CharID0105 = { check_variable = { which = lgVar_CharIDgenerated value = 105 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 106 } } }
+lgTriggers_CharID0106 = { check_variable = { which = lgVar_CharIDgenerated value = 106 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 107 } } }
+lgTriggers_CharID0107 = { check_variable = { which = lgVar_CharIDgenerated value = 107 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 108 } } }
+lgTriggers_CharID0108 = { check_variable = { which = lgVar_CharIDgenerated value = 108 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 109 } } }
+lgTriggers_CharID0109 = { check_variable = { which = lgVar_CharIDgenerated value = 109 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 110 } } }
+lgTriggers_CharID0110 = { check_variable = { which = lgVar_CharIDgenerated value = 110 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 111 } } }
+
+lgTriggers_CharID0111 = { check_variable = { which = lgVar_CharIDgenerated value = 111 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 112 } } }
+lgTriggers_CharID0112 = { check_variable = { which = lgVar_CharIDgenerated value = 112 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 113 } } }
+lgTriggers_CharID0113 = { check_variable = { which = lgVar_CharIDgenerated value = 113 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 114 } } }
+lgTriggers_CharID0114 = { check_variable = { which = lgVar_CharIDgenerated value = 114 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 115 } } }
+lgTriggers_CharID0115 = { check_variable = { which = lgVar_CharIDgenerated value = 115 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 116 } } }
+lgTriggers_CharID0116 = { check_variable = { which = lgVar_CharIDgenerated value = 116 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 117 } } }
+lgTriggers_CharID0117 = { check_variable = { which = lgVar_CharIDgenerated value = 117 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 118 } } }
+lgTriggers_CharID0118 = { check_variable = { which = lgVar_CharIDgenerated value = 118 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 119 } } }
+lgTriggers_CharID0119 = { check_variable = { which = lgVar_CharIDgenerated value = 119 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 120 } } }
+lgTriggers_CharID0120 = { check_variable = { which = lgVar_CharIDgenerated value = 120 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 121 } } }
+
+lgTriggers_CharID0121 = { check_variable = { which = lgVar_CharIDgenerated value = 121 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 122 } } }
+lgTriggers_CharID0122 = { check_variable = { which = lgVar_CharIDgenerated value = 122 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 123 } } }
+lgTriggers_CharID0123 = { check_variable = { which = lgVar_CharIDgenerated value = 123 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 124 } } }
+lgTriggers_CharID0124 = { check_variable = { which = lgVar_CharIDgenerated value = 124 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 125 } } }
+lgTriggers_CharID0125 = { check_variable = { which = lgVar_CharIDgenerated value = 125 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 126 } } }
+lgTriggers_CharID0126 = { check_variable = { which = lgVar_CharIDgenerated value = 126 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 127 } } }
+lgTriggers_CharID0127 = { check_variable = { which = lgVar_CharIDgenerated value = 127 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 128 } } }
+lgTriggers_CharID0128 = { check_variable = { which = lgVar_CharIDgenerated value = 128 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 129 } } }
+lgTriggers_CharID0129 = { check_variable = { which = lgVar_CharIDgenerated value = 129 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 130 } } }
+lgTriggers_CharID0130 = { check_variable = { which = lgVar_CharIDgenerated value = 130 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 131 } } }
+
+lgTriggers_CharID0131 = { check_variable = { which = lgVar_CharIDgenerated value = 131 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 132 } } }
+lgTriggers_CharID0132 = { check_variable = { which = lgVar_CharIDgenerated value = 132 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 133 } } }
+lgTriggers_CharID0133 = { check_variable = { which = lgVar_CharIDgenerated value = 133 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 134 } } }
+lgTriggers_CharID0134 = { check_variable = { which = lgVar_CharIDgenerated value = 134 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 135 } } }
+lgTriggers_CharID0135 = { check_variable = { which = lgVar_CharIDgenerated value = 135 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 136 } } }
+lgTriggers_CharID0136 = { check_variable = { which = lgVar_CharIDgenerated value = 136 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 137 } } }
+lgTriggers_CharID0137 = { check_variable = { which = lgVar_CharIDgenerated value = 137 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 138 } } }
+lgTriggers_CharID0138 = { check_variable = { which = lgVar_CharIDgenerated value = 138 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 139 } } }
+lgTriggers_CharID0139 = { check_variable = { which = lgVar_CharIDgenerated value = 139 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 140 } } }
+lgTriggers_CharID0140 = { check_variable = { which = lgVar_CharIDgenerated value = 140 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 141 } } }
+
+lgTriggers_CharID0141 = { check_variable = { which = lgVar_CharIDgenerated value = 141 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 142 } } }
+lgTriggers_CharID0142 = { check_variable = { which = lgVar_CharIDgenerated value = 142 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 143 } } }
+lgTriggers_CharID0143 = { check_variable = { which = lgVar_CharIDgenerated value = 143 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 144 } } }
+lgTriggers_CharID0144 = { check_variable = { which = lgVar_CharIDgenerated value = 144 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 145 } } }
+lgTriggers_CharID0145 = { check_variable = { which = lgVar_CharIDgenerated value = 145 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 146 } } }
+lgTriggers_CharID0146 = { check_variable = { which = lgVar_CharIDgenerated value = 146 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 147 } } }
+lgTriggers_CharID0147 = { check_variable = { which = lgVar_CharIDgenerated value = 147 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 148 } } }
+lgTriggers_CharID0148 = { check_variable = { which = lgVar_CharIDgenerated value = 148 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 149 } } }
+lgTriggers_CharID0149 = { check_variable = { which = lgVar_CharIDgenerated value = 149 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 150 } } }
+lgTriggers_CharID0150 = { check_variable = { which = lgVar_CharIDgenerated value = 150 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 151 } } }
+
+lgTriggers_CharID0151 = { check_variable = { which = lgVar_CharIDgenerated value = 151 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 152 } } }
+lgTriggers_CharID0152 = { check_variable = { which = lgVar_CharIDgenerated value = 152 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 153 } } }
+lgTriggers_CharID0153 = { check_variable = { which = lgVar_CharIDgenerated value = 153 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 154 } } }
+lgTriggers_CharID0154 = { check_variable = { which = lgVar_CharIDgenerated value = 154 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 155 } } }
+lgTriggers_CharID0155 = { check_variable = { which = lgVar_CharIDgenerated value = 155 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 156 } } }
+lgTriggers_CharID0156 = { check_variable = { which = lgVar_CharIDgenerated value = 156 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 157 } } }
+lgTriggers_CharID0157 = { check_variable = { which = lgVar_CharIDgenerated value = 157 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 158 } } }
+lgTriggers_CharID0158 = { check_variable = { which = lgVar_CharIDgenerated value = 158 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 159 } } }
+lgTriggers_CharID0159 = { check_variable = { which = lgVar_CharIDgenerated value = 159 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 160 } } }
+lgTriggers_CharID0160 = { check_variable = { which = lgVar_CharIDgenerated value = 160 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 161 } } }
+
+lgTriggers_CharID0161 = { check_variable = { which = lgVar_CharIDgenerated value = 161 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 162 } } }
+lgTriggers_CharID0162 = { check_variable = { which = lgVar_CharIDgenerated value = 162 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 163 } } }
+lgTriggers_CharID0163 = { check_variable = { which = lgVar_CharIDgenerated value = 163 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 164 } } }
+lgTriggers_CharID0164 = { check_variable = { which = lgVar_CharIDgenerated value = 164 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 165 } } }
+lgTriggers_CharID0165 = { check_variable = { which = lgVar_CharIDgenerated value = 165 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 166 } } }
+lgTriggers_CharID0166 = { check_variable = { which = lgVar_CharIDgenerated value = 166 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 167 } } }
+lgTriggers_CharID0167 = { check_variable = { which = lgVar_CharIDgenerated value = 167 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 168 } } }
+lgTriggers_CharID0168 = { check_variable = { which = lgVar_CharIDgenerated value = 168 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 169 } } }
+lgTriggers_CharID0169 = { check_variable = { which = lgVar_CharIDgenerated value = 169 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 170 } } }
+lgTriggers_CharID0170 = { check_variable = { which = lgVar_CharIDgenerated value = 170 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 171 } } }
+
+lgTriggers_CharID0171 = { check_variable = { which = lgVar_CharIDgenerated value = 171 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 172 } } }
+lgTriggers_CharID0172 = { check_variable = { which = lgVar_CharIDgenerated value = 172 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 173 } } }
+lgTriggers_CharID0173 = { check_variable = { which = lgVar_CharIDgenerated value = 173 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 174 } } }
+lgTriggers_CharID0174 = { check_variable = { which = lgVar_CharIDgenerated value = 174 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 175 } } }
+lgTriggers_CharID0175 = { check_variable = { which = lgVar_CharIDgenerated value = 175 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 176 } } }
+lgTriggers_CharID0176 = { check_variable = { which = lgVar_CharIDgenerated value = 176 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 177 } } }
+lgTriggers_CharID0177 = { check_variable = { which = lgVar_CharIDgenerated value = 177 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 178 } } }
+lgTriggers_CharID0178 = { check_variable = { which = lgVar_CharIDgenerated value = 178 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 179 } } }
+lgTriggers_CharID0179 = { check_variable = { which = lgVar_CharIDgenerated value = 179 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 180 } } }
+lgTriggers_CharID0180 = { check_variable = { which = lgVar_CharIDgenerated value = 180 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 181 } } }
+
+lgTriggers_CharID0181 = { check_variable = { which = lgVar_CharIDgenerated value = 181 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 182 } } }
+lgTriggers_CharID0182 = { check_variable = { which = lgVar_CharIDgenerated value = 182 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 183 } } }
+lgTriggers_CharID0183 = { check_variable = { which = lgVar_CharIDgenerated value = 183 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 184 } } }
+lgTriggers_CharID0184 = { check_variable = { which = lgVar_CharIDgenerated value = 184 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 185 } } }
+lgTriggers_CharID0185 = { check_variable = { which = lgVar_CharIDgenerated value = 185 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 186 } } }
+lgTriggers_CharID0186 = { check_variable = { which = lgVar_CharIDgenerated value = 186 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 187 } } }
+lgTriggers_CharID0187 = { check_variable = { which = lgVar_CharIDgenerated value = 187 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 188 } } }
+lgTriggers_CharID0188 = { check_variable = { which = lgVar_CharIDgenerated value = 188 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 189 } } }
+lgTriggers_CharID0189 = { check_variable = { which = lgVar_CharIDgenerated value = 189 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 190 } } }
+lgTriggers_CharID0190 = { check_variable = { which = lgVar_CharIDgenerated value = 190 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 191 } } }
+
+lgTriggers_CharID0191 = { check_variable = { which = lgVar_CharIDgenerated value = 191 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 192 } } }
+lgTriggers_CharID0192 = { check_variable = { which = lgVar_CharIDgenerated value = 192 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 193 } } }
+lgTriggers_CharID0193 = { check_variable = { which = lgVar_CharIDgenerated value = 193 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 194 } } }
+lgTriggers_CharID0194 = { check_variable = { which = lgVar_CharIDgenerated value = 194 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 195 } } }
+lgTriggers_CharID0195 = { check_variable = { which = lgVar_CharIDgenerated value = 195 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 196 } } }
+lgTriggers_CharID0196 = { check_variable = { which = lgVar_CharIDgenerated value = 196 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 197 } } }
+lgTriggers_CharID0197 = { check_variable = { which = lgVar_CharIDgenerated value = 197 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 198 } } }
+lgTriggers_CharID0198 = { check_variable = { which = lgVar_CharIDgenerated value = 198 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 199 } } }
+lgTriggers_CharID0199 = { check_variable = { which = lgVar_CharIDgenerated value = 199 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 200 } } }
+lgTriggers_CharID0200 = { check_variable = { which = lgVar_CharIDgenerated value = 200 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 201 } } }
+
+# 201-300
+lgTriggers_CharID0201 = { check_variable = { which = lgVar_CharIDgenerated value = 201 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 202 } } }
+lgTriggers_CharID0202 = { check_variable = { which = lgVar_CharIDgenerated value = 202 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 203 } } }
+lgTriggers_CharID0203 = { check_variable = { which = lgVar_CharIDgenerated value = 203 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 204 } } }
+lgTriggers_CharID0204 = { check_variable = { which = lgVar_CharIDgenerated value = 204 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 205 } } }
+lgTriggers_CharID0205 = { check_variable = { which = lgVar_CharIDgenerated value = 205 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 206 } } }
+lgTriggers_CharID0206 = { check_variable = { which = lgVar_CharIDgenerated value = 206 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 207 } } }
+lgTriggers_CharID0207 = { check_variable = { which = lgVar_CharIDgenerated value = 207 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 208 } } }
+lgTriggers_CharID0208 = { check_variable = { which = lgVar_CharIDgenerated value = 208 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 209 } } }
+lgTriggers_CharID0209 = { check_variable = { which = lgVar_CharIDgenerated value = 209 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 210 } } }
+lgTriggers_CharID0210 = { check_variable = { which = lgVar_CharIDgenerated value = 210 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 211 } } }
+
+lgTriggers_CharID0211 = { check_variable = { which = lgVar_CharIDgenerated value = 211 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 212 } } }
+lgTriggers_CharID0212 = { check_variable = { which = lgVar_CharIDgenerated value = 212 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 213 } } }
+lgTriggers_CharID0213 = { check_variable = { which = lgVar_CharIDgenerated value = 213 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 214 } } }
+lgTriggers_CharID0214 = { check_variable = { which = lgVar_CharIDgenerated value = 214 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 215 } } }
+lgTriggers_CharID0215 = { check_variable = { which = lgVar_CharIDgenerated value = 215 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 216 } } }
+lgTriggers_CharID0216 = { check_variable = { which = lgVar_CharIDgenerated value = 216 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 217 } } }
+lgTriggers_CharID0217 = { check_variable = { which = lgVar_CharIDgenerated value = 217 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 218 } } }
+lgTriggers_CharID0218 = { check_variable = { which = lgVar_CharIDgenerated value = 218 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 219 } } }
+lgTriggers_CharID0219 = { check_variable = { which = lgVar_CharIDgenerated value = 219 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 220 } } }
+lgTriggers_CharID0220 = { check_variable = { which = lgVar_CharIDgenerated value = 220 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 221 } } }
+
+lgTriggers_CharID0221 = { check_variable = { which = lgVar_CharIDgenerated value = 221 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 222 } } }
+lgTriggers_CharID0222 = { check_variable = { which = lgVar_CharIDgenerated value = 222 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 223 } } }
+lgTriggers_CharID0223 = { check_variable = { which = lgVar_CharIDgenerated value = 223 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 224 } } }
+lgTriggers_CharID0224 = { check_variable = { which = lgVar_CharIDgenerated value = 224 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 225 } } }
+lgTriggers_CharID0225 = { check_variable = { which = lgVar_CharIDgenerated value = 225 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 226 } } }
+lgTriggers_CharID0226 = { check_variable = { which = lgVar_CharIDgenerated value = 226 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 227 } } }
+lgTriggers_CharID0227 = { check_variable = { which = lgVar_CharIDgenerated value = 227 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 228 } } }
+lgTriggers_CharID0228 = { check_variable = { which = lgVar_CharIDgenerated value = 228 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 229 } } }
+lgTriggers_CharID0229 = { check_variable = { which = lgVar_CharIDgenerated value = 229 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 230 } } }
+lgTriggers_CharID0230 = { check_variable = { which = lgVar_CharIDgenerated value = 230 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 231 } } }
+
+lgTriggers_CharID0231 = { check_variable = { which = lgVar_CharIDgenerated value = 231 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 232 } } }
+lgTriggers_CharID0232 = { check_variable = { which = lgVar_CharIDgenerated value = 232 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 233 } } }
+lgTriggers_CharID0233 = { check_variable = { which = lgVar_CharIDgenerated value = 233 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 234 } } }
+lgTriggers_CharID0234 = { check_variable = { which = lgVar_CharIDgenerated value = 234 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 235 } } }
+lgTriggers_CharID0235 = { check_variable = { which = lgVar_CharIDgenerated value = 235 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 236 } } }
+lgTriggers_CharID0236 = { check_variable = { which = lgVar_CharIDgenerated value = 236 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 237 } } }
+lgTriggers_CharID0237 = { check_variable = { which = lgVar_CharIDgenerated value = 237 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 238 } } }
+lgTriggers_CharID0238 = { check_variable = { which = lgVar_CharIDgenerated value = 238 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 239 } } }
+lgTriggers_CharID0239 = { check_variable = { which = lgVar_CharIDgenerated value = 239 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 240 } } }
+lgTriggers_CharID0240 = { check_variable = { which = lgVar_CharIDgenerated value = 240 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 241 } } }
+
+lgTriggers_CharID0241 = { check_variable = { which = lgVar_CharIDgenerated value = 241 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 242 } } }
+lgTriggers_CharID0242 = { check_variable = { which = lgVar_CharIDgenerated value = 242 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 243 } } }
+lgTriggers_CharID0243 = { check_variable = { which = lgVar_CharIDgenerated value = 243 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 244 } } }
+lgTriggers_CharID0244 = { check_variable = { which = lgVar_CharIDgenerated value = 244 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 245 } } }
+lgTriggers_CharID0245 = { check_variable = { which = lgVar_CharIDgenerated value = 245 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 246 } } }
+lgTriggers_CharID0246 = { check_variable = { which = lgVar_CharIDgenerated value = 246 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 247 } } }
+lgTriggers_CharID0247 = { check_variable = { which = lgVar_CharIDgenerated value = 247 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 248 } } }
+lgTriggers_CharID0248 = { check_variable = { which = lgVar_CharIDgenerated value = 248 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 249 } } }
+lgTriggers_CharID0249 = { check_variable = { which = lgVar_CharIDgenerated value = 249 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 250 } } }
+lgTriggers_CharID0250 = { check_variable = { which = lgVar_CharIDgenerated value = 250 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 251 } } }
+
+lgTriggers_CharID0251 = { check_variable = { which = lgVar_CharIDgenerated value = 251 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 252 } } }
+lgTriggers_CharID0252 = { check_variable = { which = lgVar_CharIDgenerated value = 252 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 253 } } }
+lgTriggers_CharID0253 = { check_variable = { which = lgVar_CharIDgenerated value = 253 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 254 } } }
+lgTriggers_CharID0254 = { check_variable = { which = lgVar_CharIDgenerated value = 254 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 255 } } }
+lgTriggers_CharID0255 = { check_variable = { which = lgVar_CharIDgenerated value = 255 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 256 } } }
+lgTriggers_CharID0256 = { check_variable = { which = lgVar_CharIDgenerated value = 256 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 257 } } }
+lgTriggers_CharID0257 = { check_variable = { which = lgVar_CharIDgenerated value = 257 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 258 } } }
+lgTriggers_CharID0258 = { check_variable = { which = lgVar_CharIDgenerated value = 258 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 259 } } }
+lgTriggers_CharID0259 = { check_variable = { which = lgVar_CharIDgenerated value = 259 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 260 } } }
+lgTriggers_CharID0260 = { check_variable = { which = lgVar_CharIDgenerated value = 260 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 261 } } }
+
+lgTriggers_CharID0261 = { check_variable = { which = lgVar_CharIDgenerated value = 261 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 262 } } }
+lgTriggers_CharID0262 = { check_variable = { which = lgVar_CharIDgenerated value = 262 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 263 } } }
+lgTriggers_CharID0263 = { check_variable = { which = lgVar_CharIDgenerated value = 263 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 264 } } }
+lgTriggers_CharID0264 = { check_variable = { which = lgVar_CharIDgenerated value = 264 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 265 } } }
+lgTriggers_CharID0265 = { check_variable = { which = lgVar_CharIDgenerated value = 265 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 266 } } }
+lgTriggers_CharID0266 = { check_variable = { which = lgVar_CharIDgenerated value = 266 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 267 } } }
+lgTriggers_CharID0267 = { check_variable = { which = lgVar_CharIDgenerated value = 267 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 268 } } }
+lgTriggers_CharID0268 = { check_variable = { which = lgVar_CharIDgenerated value = 268 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 269 } } }
+lgTriggers_CharID0269 = { check_variable = { which = lgVar_CharIDgenerated value = 269 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 270 } } }
+lgTriggers_CharID0270 = { check_variable = { which = lgVar_CharIDgenerated value = 270 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 271 } } }
+
+lgTriggers_CharID0271 = { check_variable = { which = lgVar_CharIDgenerated value = 271 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 272 } } }
+lgTriggers_CharID0272 = { check_variable = { which = lgVar_CharIDgenerated value = 272 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 273 } } }
+lgTriggers_CharID0273 = { check_variable = { which = lgVar_CharIDgenerated value = 273 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 274 } } }
+lgTriggers_CharID0274 = { check_variable = { which = lgVar_CharIDgenerated value = 274 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 275 } } }
+lgTriggers_CharID0275 = { check_variable = { which = lgVar_CharIDgenerated value = 275 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 276 } } }
+lgTriggers_CharID0276 = { check_variable = { which = lgVar_CharIDgenerated value = 276 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 277 } } }
+lgTriggers_CharID0277 = { check_variable = { which = lgVar_CharIDgenerated value = 277 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 278 } } }
+lgTriggers_CharID0278 = { check_variable = { which = lgVar_CharIDgenerated value = 278 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 279 } } }
+lgTriggers_CharID0279 = { check_variable = { which = lgVar_CharIDgenerated value = 279 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 280 } } }
+lgTriggers_CharID0280 = { check_variable = { which = lgVar_CharIDgenerated value = 280 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 281 } } }
+
+lgTriggers_CharID0281 = { check_variable = { which = lgVar_CharIDgenerated value = 281 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 282 } } }
+lgTriggers_CharID0282 = { check_variable = { which = lgVar_CharIDgenerated value = 282 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 283 } } }
+lgTriggers_CharID0283 = { check_variable = { which = lgVar_CharIDgenerated value = 283 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 284 } } }
+lgTriggers_CharID0284 = { check_variable = { which = lgVar_CharIDgenerated value = 284 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 285 } } }
+lgTriggers_CharID0285 = { check_variable = { which = lgVar_CharIDgenerated value = 285 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 286 } } }
+lgTriggers_CharID0286 = { check_variable = { which = lgVar_CharIDgenerated value = 286 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 287 } } }
+lgTriggers_CharID0287 = { check_variable = { which = lgVar_CharIDgenerated value = 287 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 288 } } }
+lgTriggers_CharID0288 = { check_variable = { which = lgVar_CharIDgenerated value = 288 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 289 } } }
+lgTriggers_CharID0289 = { check_variable = { which = lgVar_CharIDgenerated value = 289 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 290 } } }
+lgTriggers_CharID0290 = { check_variable = { which = lgVar_CharIDgenerated value = 290 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 291 } } }
+
+lgTriggers_CharID0291 = { check_variable = { which = lgVar_CharIDgenerated value = 291 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 292 } } }
+lgTriggers_CharID0292 = { check_variable = { which = lgVar_CharIDgenerated value = 292 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 293 } } }
+lgTriggers_CharID0293 = { check_variable = { which = lgVar_CharIDgenerated value = 293 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 294 } } }
+lgTriggers_CharID0294 = { check_variable = { which = lgVar_CharIDgenerated value = 294 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 295 } } }
+lgTriggers_CharID0295 = { check_variable = { which = lgVar_CharIDgenerated value = 295 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 296 } } }
+lgTriggers_CharID0296 = { check_variable = { which = lgVar_CharIDgenerated value = 296 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 297 } } }
+lgTriggers_CharID0297 = { check_variable = { which = lgVar_CharIDgenerated value = 297 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 298 } } }
+lgTriggers_CharID0298 = { check_variable = { which = lgVar_CharIDgenerated value = 298 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 299 } } }
+lgTriggers_CharID0299 = { check_variable = { which = lgVar_CharIDgenerated value = 299 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 300 } } }
+lgTriggers_CharID0300 = { check_variable = { which = lgVar_CharIDgenerated value = 300 } NOT = { check_variable = { which = lgVar_CharIDgenerated value = 301 } } }
+
+# OLD
+# lgTriggers_CharID0001 = {
+# 	check_variable = {
+# 		which = lgVar_CharIDgenerated
+# 		value = 1
+# 	}
+# 	NOT = {
+# 		check_variable = {
+# 			which = lgVar_CharIDgenerated
+# 			value = 2
+# 		}
+# 	}
+# }

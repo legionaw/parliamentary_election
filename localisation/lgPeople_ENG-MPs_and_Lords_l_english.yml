@@ -1,0 +1,10 @@
+﻿l_english:
+ # John Doe
+ lgPeople_MPs_and_Lords_JohnDoe1: "John Doe"
+ desc_lgPeople_MPs_and_Lords_JohnDoe1: "John Doe"
+ # John Doe, if knighted.
+ lgPeople_MPs_and_Lords_JohnDoe2: "Sir John Doe"
+ desc_lgPeople_MPs_and_Lords_JohnDoe2: "Sir John Doe"
+ # John Doe, if ennobled.
+ lgPeople_MPs_and_Lords_JohnDoe3: "John Doe"
+ desc_lgPeople_MPs_and_Lords_JohnDoe3: "John Doe"

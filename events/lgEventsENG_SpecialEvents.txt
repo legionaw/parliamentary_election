@@ -1,0 +1,161 @@
+namespace = lgEventsENG_SpecialEvents
+
+country_event = {
+	id = lgEventsENG_SpecialEvents.0001
+	title = lgEventsENG_SpecialEvents.0001t
+	desc = lgEventsENG_SpecialEvents.0001d
+	
+	picture = PARLIAMENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		lgTriggers_ParliamentaryGovernment = yes
+		lgTriggers_parliamentBritish = yes
+		is_year = 1711
+		has_country_flag = lgFlags_BankOfEnglandFounded
+		has_country_flag = lgFlags_BankOfEngland
+		NOT = {
+			has_country_flag = lgFlags_SouthSeaCompanyFounded
+		}
+	}
+	
+	immediate = {
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "lgEventsENG_SpecialEvents.0001.a"
+		set_country_flag = lgFlags_SouthSeaCompanyFounded
+		set_country_flag = lgFlags_SouthSeaCompany
+	}
+}
+
+country_event = {
+	id = lgEventsENG_SpecialEvents.0002
+	title = lgEventsENG_SpecialEvents.0002t
+	desc = lgEventsENG_SpecialEvents.0002d
+	
+	picture = PARLIAMENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_year = 1720
+		lgTriggers_ParliamentaryGovernment = yes
+		lgTriggers_parliamentBritish = yes
+		has_country_flag = lgFlags_SouthSeaCompanyFounded
+		has_country_flag = lgFlags_SouthSeaCompany
+		NOT = {
+			has_country_flag = lgFlags_SouthSeaBubbleHappened
+		}
+	}
+	
+	immediate = {
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "lgEventsENG_SpecialEvents.0002.a"
+		set_country_flag = lgFlags_SouthSeaBubbleHappened
+		country_event = {
+			id = lgEventsENG_SpecialEvents.0003 days = 30
+		}
+	}
+}
+
+country_event = {
+	id = lgEventsENG_SpecialEvents.0003
+	title = lgEventsENG_SpecialEvents.0003t
+	desc = lgEventsENG_SpecialEvents.0003d
+	
+	picture = PARLIAMENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		lgTriggers_ParliamentaryGovernment = yes
+		lgTriggers_parliamentBritish = yes
+		has_country_flag = lgFlags_SouthSeaBubbleHappened
+		has_country_flag = lgFlags_SouthSeaCompany
+		NOT = {
+			has_country_flag = lgFlags_SouthSeaDisasterHappened
+		}
+	}
+	
+	immediate = {
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "lgEventsENG_SpecialEvents.0003.a"
+		set_country_flag = lgFlags_SouthSeaDisasterHappened
+	}
+}
+
+country_event = {
+	id = lgEventsENG_SpecialEvents.0004
+	title = lgEventsENG_SpecialEvents.0004t
+	desc = lgEventsENG_SpecialEvents.0004d
+	
+	picture = PARLIAMENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		is_year = 1721
+		lgTriggers_ParliamentaryGovernment = yes
+		lgTriggers_parliamentBritish = yes
+		has_country_flag = lgFlags_SouthSeaDisasterHappened
+		has_country_flag = lgFlags_SouthSeaCompany
+		NOT = {
+			has_country_flag = lgFlags_SouthSeaDisasterInvestigated
+		}
+	}
+	
+	immediate = {
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "lgEventsENG_SpecialEvents.0004.a"
+		set_country_flag = lgFlags_SouthSeaDisasterInvestigated
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_ToryMinistry
+			}
+			remove_country_modifier = lgModifiers_ToryMinistry
+		}
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_WhigMinistry
+			}
+			remove_country_modifier = lgModifiers_WhigMinistry
+		}
+		add_country_modifier = {
+			name = pm_walpole
+			duration = -1
+		}
+		add_country_modifier = {
+			name = lgModifiers_WalpoleMinistry
+			duration = -1
+		}
+		set_country_flag = lgFlags_WalpoleAppointedFirstTime
+	}
+}

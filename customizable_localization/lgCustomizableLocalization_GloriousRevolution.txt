@@ -1,0 +1,19 @@
+defined_text = {
+	name = GloriousRevolutionActorCountryGetName
+	random = no
+	
+	text = {
+		localisation_key = "[NED.GetName]"
+		trigger = {
+			any_known_country = {
+				tag = NED
+				is_subject = no
+				num_of_cities = 4
+				marriage_with = ROOT
+				NOT = {
+					war_with = ROOT
+				}
+			}
+		}
+	}
+}

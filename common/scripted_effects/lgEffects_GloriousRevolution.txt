@@ -44,6 +44,12 @@ lgEffects_GR_setup = {
 		}
 		add_government_reform = english_monarchy
 	}
+	if = {
+		limit = {
+			is_at_war = no
+		}
+		set_country_flag = lgFlags_AtPeace
+	}
 }
 
 lgEffects_ProtestantRevolution = {

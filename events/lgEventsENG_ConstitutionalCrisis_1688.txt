@@ -15,6 +15,9 @@ country_event = {
 		is_year = 1688
 		NOT = { is_year = 1721 }
 		has_country_modifier = lgModifiers_electionTimer
+		NOT = {
+			has_country_flag = lgFlag_ElectionInProgress
+		}
 		has_country_modifier = lgModifiers_ToryMinistry
 		lgTriggers_ParliamentaryGovernment = yes
 	}
@@ -70,8 +73,11 @@ country_event = {
 	trigger = {
 		is_year = 1688
 		NOT = { is_year = 1721 }
-		lgTriggers_ParliamentaryGovernment = yes
 		has_country_modifier = lgModifiers_electionTimer
+		NOT = {
+			has_country_flag = lgFlag_ElectionInProgress
+		}
+		lgTriggers_ParliamentaryGovernment = yes
 		has_country_modifier = lgModifiers_WhigMinistry
 	}
 	

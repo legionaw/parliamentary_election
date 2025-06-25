@@ -56,13 +56,21 @@ country_event = {
 	desc = "confidence_vote.0002d"
 	picture = {
 		trigger = {
-			NOT = { has_dlc = "Common Sense" }
+			NOT = {
+				OR = {
+					has_dlc = "Common Sense"
+					has_dlc = "Domination"
+				}
+			}
 		}
 		picture = DEBATE_REPUBLICAN_eventPicture
 	}
 	picture = {
 		trigger = {
-			has_dlc = "Common Sense"
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
 		}
 		picture = PARLIAMENT_eventPicture
 	}
@@ -99,13 +107,21 @@ country_event = {
 	desc = "confidence_vote.0003d"
 	picture = {
 		trigger = {
-			NOT = { has_dlc = "Common Sense" }
+			NOT = {
+				OR = {
+					has_dlc = "Common Sense"
+					has_dlc = "Domination"
+				}
+			}
 		}
 		picture = DEBATE_REPUBLICAN_eventPicture
 	}
 	picture = {
 		trigger = {
-			has_dlc = "Common Sense"
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
 		}
 		picture = PARLIAMENT_eventPicture
 	}
@@ -151,13 +167,21 @@ country_event = {
 	desc = "confidence_vote.0004d"
 	picture = {
 		trigger = {
-			NOT = { has_dlc = "Common Sense" }
+			NOT = {
+				OR = {
+					has_dlc = "Common Sense"
+					has_dlc = "Domination"
+				}
+			}
 		}
 		picture = DEBATE_REPUBLICAN_eventPicture
 	}
 	picture = {
 		trigger = {
-			has_dlc = "Common Sense"
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
 		}
 		picture = PARLIAMENT_eventPicture
 	}
@@ -226,13 +250,21 @@ country_event = {
 	desc = "confidence_vote.0006d"
 	picture = {
 		trigger = {
-			NOT = { has_dlc = "Common Sense" }
+			NOT = {
+				OR = {
+					has_dlc = "Common Sense"
+					has_dlc = "Domination"
+				}
+			}
 		}
 		picture = DEBATE_REPUBLICAN_eventPicture
 	}
 	picture = {
 		trigger = {
-			has_dlc = "Common Sense"
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
 		}
 		picture = PARLIAMENT_eventPicture
 	}
@@ -270,13 +302,21 @@ country_event = {
 	desc = "confidence_vote.0007d"
 	picture = {
 		trigger = {
-			NOT = { has_dlc = "Common Sense" }
+			NOT = {
+				OR = {
+					has_dlc = "Common Sense"
+					has_dlc = "Domination"
+				}
+			}
 		}
 		picture = DEBATE_REPUBLICAN_eventPicture
 	}
 	picture = {
 		trigger = {
-			has_dlc = "Common Sense"
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
 		}
 		picture = PARLIAMENT_eventPicture
 	}
@@ -323,13 +363,21 @@ country_event = {
 	desc = "confidence_vote.0008d"
 	picture = {
 		trigger = {
-			NOT = { has_dlc = "Common Sense" }
+			NOT = {
+				OR = {
+					has_dlc = "Common Sense"
+					has_dlc = "Domination"
+				}
+			}
 		}
 		picture = DEBATE_REPUBLICAN_eventPicture
 	}
 	picture = {
 		trigger = {
-			has_dlc = "Common Sense"
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
 		}
 		picture = PARLIAMENT_eventPicture
 	}

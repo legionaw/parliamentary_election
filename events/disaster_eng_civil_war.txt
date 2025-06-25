@@ -993,7 +993,9 @@ country_event = {
 				}
 				set_heir = english_civil_war_heir
 				kill_ruler = yes
+				### My own additions
 				set_ruler_flag = lgFlags_CharlesIIRuler
+				add_ruler_personality = infertile_personality
 				hidden_effect = {
 					add_ruler_personality = immortal_personality
 				}
@@ -1093,7 +1095,9 @@ country_event = {
 				}
 				set_heir = english_civil_war_heir
 				kill_ruler = yes
+				### My own additions
 				set_ruler_flag = lgFlags_CharlesIIRuler
+				add_ruler_personality = infertile_personality
 				hidden_effect = {
 					add_ruler_personality = immortal_personality
 				}

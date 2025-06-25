@@ -1,0 +1,66 @@
+namespace = lgEventsENG_PartiesAndFactions
+
+country_event = {
+	id = lgEventsENG_PartiesAndFactions.0001
+	title = lgEventsENG_PartiesAndFactions.0001.t
+	desc = lgEventsENG_PartiesAndFactions.0001.d
+	
+	picture = PARLIAMENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		lgTriggers_Eras1688 = yes
+		lgTriggers_parliamentBritish = yes
+		lgTriggers_ParliamentaryGovernment = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		
+	}
+	
+	option = {
+		name = "lgEventsENG_PartiesAndFactions.0001.a"
+		custom_tooltip = lgEventsENG_PartiesAndFactions.0001.tt
+	}
+}
+
+country_event = {
+	id = lgEventsENG_PartiesAndFactions.0002
+	title = lgEventsENG_PartiesAndFactions.0002.t
+	desc = lgEventsENG_PartiesAndFactions.0002.d
+	
+	picture = PARLIAMENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		lgTriggers_Eras1721 = yes
+		lgTriggers_parliamentBritish = yes
+		lgTriggers_ParliamentaryGovernment = yes
+		has_country_flag = lgFlags_WalpoleAppointedFirstTime
+		NOT = {
+			has_country_flag = lgFlags_FirstWhigSplitHappened
+		}
+		has_country_modifier = lgModifiers_WalpoleMinistry
+		has_country_modifier = pm_walpole
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		
+	}
+	
+	option = {
+		name = "lgEventsENG_PartiesAndFactions.0002.a"
+		custom_tooltip = lgEventsENG_PartiesAndFactions.0002.tt
+		set_country_flag = lgFlags_FirstWhigSplitHappened
+	}
+}

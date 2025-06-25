@@ -1,0 +1,80 @@
+lgEffects_ENG_ParliamentaryNames = {
+	set_variable = {
+		which = lgVar_FirstName
+		value = 0
+	}
+	set_variable = {
+		which = lgVar_LastName
+		value = 0
+	}
+}
+
+# maybe put these effects under char gen?
+lgEffects_FirstNameRandomizer = {
+	set_country_flag = lgFlags_GeneratingCharFirstName
+	
+	if = {
+		limit = {
+			has_country_flag = lgFlags_GeneratingCharFirstName
+		}
+		set_variable = {
+			which = lgVar_FirstName
+			value = 0
+		}
+	}
+	
+	random_list = {
+		1 = { set_variable = { which = lgVar_FirstName value = 0 } } # Adam
+		1 = { set_variable = { which = lgVar_FirstName value = 1 } } # Alec
+	}
+	
+	set_variable = {
+		which = lgVar_FirstNameCreated
+		value = lgVar_FirstName
+	}
+}
+
+lgEffects_LastNameRandomizer = {
+	set_country_flag = lgFlags_GeneratingCharLastName
+	
+	if = {
+		limit = {
+			has_country_flag = lgFlags_GeneratingCharLastName
+		}
+		set_variable = {
+			which = lgVar_LastName
+			value = 0
+		}
+	}
+	
+	random_list = {
+		1 = { set_variable = { which = lgVar_LastName value = 0 } } # Adam
+		1 = { set_variable = { which = lgVar_LastName value = 1 } } # Alec
+	}
+	
+	set_variable = {
+		which = lgVar_LastNameCreated
+		value = lgVar_LastName
+	}
+}
+
+lgEffects_Earl_of_Shrewsbury_Name = {
+	lgEffects_FirstNameRandomizer = yes
+	set_variable = {
+		which = lgVar_Earl_of_Shrewsbury_FirstName
+		value = lgVar_FirstName
+	}
+	lgEffects_LastNameRandomizer = yes
+	set_variable = {
+		which = lgVar_Earl_of_Shrewsbury_LastName
+		value = lgVar_LastName
+	}
+	set_variable = {
+		which = lgVar_FirstName
+		value = 0
+	}
+	set_variable = {
+		which = lgVar_LastName
+		value = 0
+	}
+}

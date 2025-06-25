@@ -15,6 +15,9 @@ country_event = {
 		is_year = 1834
 		NOT = { is_year = 1859 }
 		has_country_modifier = lgModifiers_electionTimer
+		NOT = {
+			has_country_flag = lgFlag_ElectionInProgress
+		}
 		has_country_modifier = lgModifiers_ConservativeMinistry
 		lgTriggers_ParliamentaryGovernment = yes
 	}

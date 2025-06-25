@@ -1,0 +1,38 @@
+namespace = lgEvents_ENG_ParliamentaryBribes
+
+province_event = {
+	id = lgEvents_ENG_ParliamentaryBribes.0001
+	title = "lgEvents_ENG_ParliamentaryBribes.0001t"
+	desc = "lgEvents_ENG_ParliamentaryBribes.0001d"
+	
+	picture = PARLIAMENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		
+	}
+	
+	option = {
+		name = "lgEvents_ENG_ParliamentaryBribes.0001.a"
+		hidden_effect = {
+			add_province_modifier = {
+				name = lgModifiers_Knighthood1
+				duration = -1
+			}
+		}
+		set_province_flag = lgFlags_Knighthood1granted
+		# clr_province_flag = lgFlags_OfferedKnighthood1
+	}
+	
+	option = {
+		name = "lgEvents_ENG_ParliamentaryBribes.0001.b"
+		if = {
+			limit = {
+				is_backing_current_issue = yes
+			}
+			back_current_issue = no
+		}
+		# clr_province_flag = lgFlags_OfferedKnighthood1
+	}
+}

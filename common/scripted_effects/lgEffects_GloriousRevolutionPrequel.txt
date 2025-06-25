@@ -275,6 +275,25 @@ lgEffects_QueenAnne = {
 	if = {
 		limit = {
 			OR = {
+				religion = anglican
+				num_of_religion = {
+					religion = anglican
+					value = 0.5
+				}
+			}
+		}
+		define_heir = {
+			female = yes
+			name = "Anne"
+			age = 20
+			culture = ROOT
+			religion = anglican
+			claim = 100
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
 				religion = protestant
 				num_of_religion = {
 					religion = protestant
@@ -315,9 +334,9 @@ lgEffects_QueenAnne = {
 	else_if = {
 		limit = {
 			OR = {
-				religion = anglican
+				religion = hussite
 				num_of_religion = {
-					religion = anglican
+					religion = hussite
 					value = 0.5
 				}
 			}
@@ -327,7 +346,7 @@ lgEffects_QueenAnne = {
 			name = "Anne"
 			age = 20
 			culture = ROOT
-			religion = anglican
+			religion = hussite
 			claim = 100
 		}
 	}

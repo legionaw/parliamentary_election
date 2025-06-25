@@ -5,6 +5,26 @@ lose_manpower = {
 		has_not_bribe_blocking_debate_active = {
 			type = manpower
 		}
+		NOT = {
+			OR = {
+				has_reform = lgGovernments_ParliamentaryMonarchy
+				AND = {
+					lgTriggers_parliamentBritish = yes
+					lgTriggers_ParliamentaryGovernment = yes
+					has_reform = constitutional_monarchy
+				}
+				AND = {
+					lgTriggers_parliamentBritish = yes
+					lgTriggers_ParliamentaryGovernment = yes
+					has_reform = british_monarchy
+				}
+				AND = {
+					lgTriggers_parliamentBritish = yes
+					lgTriggers_ParliamentaryGovernment = yes
+					has_reform = english_monarchy
+				}
+			}
+		}
 	}
 	
 	effect = {
@@ -68,6 +88,26 @@ national_lose_manpower = {
 		manpower_percentage = 0.25
 		has_not_bribe_blocking_debate_active = {
 			type = manpower
+		}
+		NOT = {
+			OR = {
+				has_reform = lgGovernments_ParliamentaryMonarchy
+				AND = {
+					lgTriggers_parliamentBritish = yes
+					lgTriggers_ParliamentaryGovernment = yes
+					has_reform = constitutional_monarchy
+				}
+				AND = {
+					lgTriggers_parliamentBritish = yes
+					lgTriggers_ParliamentaryGovernment = yes
+					has_reform = british_monarchy
+				}
+				AND = {
+					lgTriggers_parliamentBritish = yes
+					lgTriggers_ParliamentaryGovernment = yes
+					has_reform = english_monarchy
+				}
+			}
 		}
 	}
 	

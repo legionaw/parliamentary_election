@@ -1,0 +1,15 @@
+﻿l_english:
+# South Sea Company
+ lgEventsENG_SpecialEvents.0001t: "South Sea Company"
+ lgEventsENG_SpecialEvents.0001d: "The government has become dissatisfied with the Bank of England in the way it raised the revenue. After years of mounting concerns about the government debt, it was finally resolved by the House of Commons to appoint a committee to investigate the entire national debt.\nAn investigation by this committee revealed that the government had owed a total of 9 million pounds in debt, with no income specifically allocated to pay for it.\nAccordingly, the [Root.Monarch.GetHerHisCap] Majesty's Treasury decided to form South Sea Company by a Royal Charter granted to incorporate it, by which the company would assume all existing debt from its debt holders, in return for shares in the company. The government would then pay the company a fixed sum of annual payment plus 6% interest. The company was also granted a monopoly on the trade with the colonies in the South America."
+ lgEventsENG_SpecialEvents.0001.a: "Acknowledged."
+ lgEventsENG_SpecialEvents.0002t: "South Sea Bubble"
+ lgEventsENG_SpecialEvents.0002d: ""
+ lgEventsENG_SpecialEvents.0002.a: "Acknowledged."
+ lgEventsENG_SpecialEvents.0003t: "South Sea Bubble Bursts"
+ lgEventsENG_SpecialEvents.0003d: ""
+ lgEventsENG_SpecialEvents.0003.a: "What a disaster!"
+ lgEventsENG_SpecialEvents.0004t: "South Sea Bubble: The Aftermath"
+ lgEventsENG_SpecialEvents.0004d: ""
+ lgEventsENG_SpecialEvents.0004.a: "Acknowledged."
+# Bank of England

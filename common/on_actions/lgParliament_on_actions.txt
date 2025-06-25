@@ -1,7 +1,20 @@
-# country 
+# on_five_year_pulse = {
+# 	random_events = {
+		
+# 	}
+# }
+
+# country
 on_new_monarch = {
 	events = {
 		lgEvents_Parliamentary_DemiseCrown.0001 # Dissolution of Parliament upon Ruler's Death
+	}
+}
+
+# country random events
+on_monthly_pulse = {
+	events = {
+		lgEvents_ArmyInBritainCount.0001
 	}
 }
 
@@ -89,5 +102,33 @@ on_parliament_debate_failed = {
 		## Whigs ##
 		25 = confidence_vote.4006
 		25 = confidence_vote.4007
+	}
+}
+
+# country
+on_peace_actor = {
+	if = {
+		limit = {
+			lgTriggers_parliamentBritish = yes
+		}
+		set_country_flag = lgFlags_AtPeace
+		add_country_modifier = {
+			name = lgModifiers_PeaceTimer
+			duration = 365
+		}
+	}
+}
+
+# country
+on_peace_recipient = {
+	if = {
+		limit = {
+			lgTriggers_parliamentBritish = yes
+		}
+		set_country_flag = lgFlags_AtPeace
+		add_country_modifier = {
+			name = lgModifiers_PeaceTimer
+			duration = 365
+		}
 	}
 }

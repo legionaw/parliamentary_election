@@ -10,6 +10,29 @@ country_event = {
 	trigger = {
 		has_heir_flag = lgFlags_JamesIIheir
 		is_year = 1677
+		NED = {
+			exists = yes
+			is_subject = no
+			OR = {
+				government = monarchy
+				AND = {
+					has_government_attribute = has_dutch_election
+					OR = {
+						AND = {
+							has_dlc = "Res Publica"
+							is_orangists_in_power = yes
+						}
+						has_country_flag = ned_hereditary_stadtholder
+					}
+				}
+			}
+			NOT = {
+				marriage_with = ROOT
+			}
+		}
+		NOT = {
+			has_country_flag = lgFlags_AngloDutchMarriageHappened
+		}
 	}
 	
 	immediate = {
@@ -19,6 +42,7 @@ country_event = {
 	option = {
 		name = "lgEventsENG_GloriousRevolutionPrequel.0001.a"
 		lgEffects_DutchMarriage = yes
+		set_country_flag = lgFlags_AngloDutchMarriageHappened
 	}
 }
 
@@ -33,6 +57,9 @@ country_event = {
 		is_year = 1685
 		has_country_flag = lgFlags_ENG_Restoration
 		has_ruler_flag = lgFlags_CharlesIIRuler
+		NOT = {
+			has_country_flag = lgFlags_ENG_Charles2death
+		}
 	}
 	
 	immediate = {
@@ -47,16 +74,20 @@ country_event = {
 		name = "lgEventsENG_GloriousRevolutionPrequel.0002.a"
 		kill_ruler = yes
 		add_ruler_personality = infertile_personality
-		if = {
-			limit = {
-				NOT = {
-					ruler_has_personality = immortal_personality
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						ruler_has_personality = immortal_personality
+					}
 				}
+				add_ruler_personality = immortal_personality
 			}
-			add_ruler_personality = immortal_personality
 		}
 		set_ruler_flag = lgFlags_JamesIIruler
 		lgEffects_QueenAnne = yes
+		set_heir_flag = lgFlags_PrincessAnne
+		set_country_flag = lgFlags_PrincessAnneHappened
 	}
 }
 
@@ -70,6 +101,9 @@ country_event = {
 	trigger = {
 		is_year = 1688
 		has_ruler_flag = lgFlags_JamesIIruler
+		NOT = {
+			has_country_flag = lgFlags_CatholicDynastyCrisis
+		}
 	}
 	
 	immediate = {
@@ -83,7 +117,7 @@ country_event = {
 				limit = {
 					has_heir = yes
 				}
-				exile_heir_as = QueenAnne
+				exile_heir_as = PrincessAnneExiled
 				set_country_flag = lgFlags_ProtestantHeirDisplaced
 			}
 		}
@@ -99,5 +133,463 @@ country_event = {
 			add_heir_personality = immortal_personality
 		}
 		set_heir_flag = lgFlags_JamesIIIheir
+		add_legitimacy = -60
+		if = {
+			limit = {
+				stability = 1
+			}
+			add_stability = -1
+		}
+	}
+}
+
+# Alternate version of Immortal Seven event chain if the Netherlands does not exist
+#The Immortal Seven (England)
+country_event = {
+	id = lgEventsENG_GloriousRevolutionPrequel.0004
+	title = lgEventsENG_GloriousRevolutionPrequel.0004.t
+	desc = lgEventsENG_GloriousRevolutionPrequel.0004.d
+	picture = SPY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = GBR
+			tag = ENG
+		}
+		is_year = 1688
+		#NOT = { is_year = 1700 }
+		government = monarchy
+		AND = {
+			NED = { # Netherlands does not exists
+				exists = no
+			}
+			OR = {
+				HOL = { # Holland exists
+					exists = yes
+					is_subject = no
+					marriage_with = ROOT
+					OR = {
+						religion = protestant
+						religion = reformed
+						religion = anglican
+						religion = hussite
+					}
+				}
+				AND = { # Holland does not exists but Burgundy does and owns at least one province in Low Countries region
+					HOL = {
+						exists = no
+					}
+					BUR = {
+						exists = yes
+						any_owned_province = {
+							region = low_countries_region
+						}
+						is_subject = no
+						marriage_with = ROOT
+						OR = {
+							religion = protestant
+							religion = reformed
+							religion = anglican
+							religion = hussite
+						}
+					}
+				}
+				AND = { # Fallback if Holland does not exist and either Burgundy does not exist or Burgundy does exist but doesn't own any province in Low Countries region
+					OR = {
+						AND = { # Neither Burgundy nor Holland existed
+							NOT = {
+								exists = BUR
+							}
+							NOT = {
+								exists = HOL
+							}
+						}
+						AND = { # Holland does not exist and Burgundy does exists but doesn't own any Low Countries provinces
+							NOT = {
+								exists = HOL
+							}
+							BUR = {
+								exists = yes
+								NOT = {
+									any_owned_province = {
+										region = low_countries_region
+									}
+								}
+							}
+						}
+					}
+					any_country = {
+						capital_scope = {
+							OR = {
+								region = low_countries_region
+								region = north_german_region
+								region = scandinavia_region
+							}
+						}
+						is_subject = no
+						marriage_with = ROOT
+						OR = {
+							religion = protestant
+							religion = reformed
+							religion = anglican
+							religion = hussite
+						}
+						num_of_cities = 4
+						num_of_ports = 1
+						NOT = { war_with = ROOT }
+					}
+				}
+			}
+		}
+		is_subject = no
+		NOT = { legitimacy = 50 }
+		NOT = { has_country_flag = lgFlags_GloriousRevolution }
+		NOT = { has_country_flag = lgFlags_ImmortalSeven }
+		OR = {
+			religion = protestant
+			religion = reformed
+			religion = anglican
+			religion = hussite
+		}
+		OR = {
+			any_ally = { religion = catholic }
+			marriage_with = HOL
+			marriage_with = BUR
+			any_country = {
+				capital_scope = {
+					OR = {
+						region = low_countries_region
+						region = north_german_region
+						region = scandinavia_region
+					}
+				}
+				is_subject = no
+				marriage_with = ROOT
+			}
+		}
+		has_country_flag = lgFlags_CatholicDynastyCrisis
+	}
+	
+	mean_time_to_happen = {
+		months = 100
+		modifier = {
+			factor = 0.5
+			NOT = { legitimacy = 50 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { legitimacy = 25 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 30
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				estate_loyalty = {
+					estate = estate_church
+					loyalty = 30
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
+			alliance_with = FRA
+		}
+		modifier = {
+			factor = 0.25
+			absolutism = 75
+		}
+		modifier = {
+			factor = 0.25
+			has_country_flag = eng_civil_war_happened
+		}
+		modifier = {
+			factor = 0.25
+			has_idea_group = innovativeness_ideas
+		}
+		modifier = {
+			factor = 0.75
+			religion = catholic
+			OR = {
+				num_of_religion = {
+					religion = protestant
+					value = 0.15
+				}
+				num_of_religion = {
+					religion = anglican
+					value = 0.15
+				}
+				num_of_religion = {
+					religion = reformed
+					value = 0.15
+				}
+				num_of_religion = {
+					religion = hussite
+					value = 0.15
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			religion = catholic
+			OR = {
+				num_of_religion = {
+					religion = protestant
+					value = 0.25
+				}
+				num_of_religion = {
+					religion = anglican
+					value = 0.25
+				}
+				num_of_religion = {
+					religion = reformed
+					value = 0.25
+				}
+				num_of_religion = {
+					religion = hussite
+					value = 0.25
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			religion = catholic
+			OR = {
+				num_of_religion = {
+					religion = protestant
+					value = 0.5
+				}
+				num_of_religion = {
+					religion = anglican
+					value = 0.5
+				}
+				num_of_religion = {
+					religion = reformed
+					value = 0.5
+				}
+				num_of_religion = {
+					religion = hussite
+					value = 0.5
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			ruler_religion = catholic
+			OR = {
+				religion = protestant
+				religion = anglican
+				religion = reformed
+				religion = hussite
+			}
+		}
+	}
+	
+	immediate = {
+		set_country_flag = lgFlags_ImmortalSeven
+		if = {
+			limit = {
+				HOL = {
+					exists = yes
+					is_subject = no
+					OR = {
+						religion = protestant
+						religion = anglican
+						religion = reformed
+						religion = hussite
+					}
+				}
+			}
+			save_event_target_as = ImmortalSevenActorCountry
+		}
+		else_if = {
+			limit = {
+				HOL = {
+					exists = no
+				}
+				BUR = {
+					exists = yes
+					any_owned_province = {
+						region = low_countries_region
+					}
+					is_subject = no
+					OR = {
+						religion = protestant
+						religion = anglican
+						religion = reformed
+						religion = hussite
+					}
+				}
+			}
+			save_event_target_as = ImmortalSevenActorCountry
+		}
+		else_if = {
+			limit = {
+				HOL = {
+					exists = no
+				}
+				OR = {
+					BUR = {
+						exists = no
+					}
+					BUR = {
+						exists = yes
+						is_subject = no
+						OR = {
+							religion = protestant
+							religion = anglican
+							religion = reformed
+							religion = hussite
+						}
+						NOT = {
+							any_owned_province = {
+								region = low_countries_region
+							}
+						}
+					}
+				}
+				any_country = {
+					capital_scope = {
+						OR = {
+							region = low_countries_region
+							region = north_german_region
+							region = scandinavia_region
+						}
+					}
+					is_subject = no
+					num_of_cities = 4
+					num_of_ports = 1
+					marriage_with = ROOT
+					NOT = { war_with = ROOT }
+					OR = {
+						religion = protestant
+						religion = anglican
+						religion = reformed
+						religion = hussite
+					}
+				}
+			}
+			save_event_target_as = ImmortalSevenActorCountry
+		}
+		save_event_target_as = ImmortalSevenTargetCountry
+	}
+	
+	option = {
+		name = lgEventsENG_GloriousRevolutionPrequel.0004.a #Ok.
+		event_target:ImmortalSevenTargetCountry = { country_event = { id = lgEventsENG_GloriousRevolutionPrequel.0005 } }
+	}
+}
+
+#Invitation to William (Dutch)
+country_event = {
+	id = lgEventsENG_GloriousRevolutionPrequel.0005
+	title = lgEventsENG_GloriousRevolutionPrequel.0005.t
+	desc = lgEventsENG_GloriousRevolutionPrequel.0005.d
+	picture = SPY_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lgEventsENG_GloriousRevolutionPrequel.0005.a #Accept
+		ai_chance = {
+			factor = 1
+		}
+#		add_casus_belli = {
+#			target = FROM
+#			type = cb_restore_personal_union
+#			months = 60
+#		}
+		FROM = {
+			country_event = { id = lgEventsENG_GloriousRevolutionPrequel.0006 }
+			country_event = { id = ENG_glorious_revolution.0002 days = 150 }
+		}
+		tooltip = {
+			FROM = {
+				add_opinion = {
+					who = event_target:ImmortalSevenTargetCountry
+					modifier = ned_accepted_glorious_revolution
+				}
+			}
+		}
+		set_country_flag = LgFlags_NED_accepted_Glorious_Revolution
+	}
+	option = {
+		name = lgEventsENG_GloriousRevolutionPrequel.0005.b #Refuse
+		ai_chance = {
+			factor = 0
+		}
+		FROM = {
+			country_event = { id = lgEventsENG_GloriousRevolutionPrequel.0007 }
+		}
+		tooltip = {
+			FROM = {
+				add_opinion = {
+					who = event_target:ImmortalSevenTargetCountry
+					modifier = ned_refused_glorious_revolution
+				}
+			}
+		}
+		set_country_flag = LgFlags_NED_refused_Glorious_Revolution
+	}
+}
+
+# The Meddlesome Dutch (English)
+country_event = {
+	id = lgEventsENG_GloriousRevolutionPrequel.0006
+	title = lgEventsENG_GloriousRevolutionPrequel.0006.t
+	desc = lgEventsENG_GloriousRevolutionPrequel.0006.d
+	picture = SPY_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lgEventsENG_GloriousRevolutionPrequel.0006.a #Ok.
+		custom_tooltip = lgEventsENG_GloriousRevolutionPrequel.0006.a.tt
+		add_opinion = {
+			who = event_target:ImmortalSevenTargetCountry
+			modifier = ned_accepted_glorious_revolution
+		}
+		tooltip = {
+			country_event = { id = ENG_glorious_revolution.0002 days = 150 }
+		}
+	}
+}
+
+# Conspirators in the cold (English)
+country_event = {
+	id = lgEventsENG_GloriousRevolutionPrequel.0007
+	title = lgEventsENG_GloriousRevolutionPrequel.0007.t
+	desc = lgEventsENG_GloriousRevolutionPrequel.0007.d
+	picture = SPY_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = lgEventsENG_GloriousRevolutionPrequel.0007.a #Great!
+		add_opinion = {
+			who = event_target:ImmortalSevenTargetCountry
+			modifier = ned_refused_glorious_revolution
+		}
+		clr_country_flag = lgFlags_AngloDutchMarriage
+		clr_country_flag = lgFlags_NormalDutchMarriageBlocked
+		event_target:ImmortalSevenTargetCountry = {
+			clr_country_flag = lgFlags_AngloDutchMarriage
+			clr_country_flag = lgFlags_NormalDutchMarriageBlocked
+		}
 	}
 }

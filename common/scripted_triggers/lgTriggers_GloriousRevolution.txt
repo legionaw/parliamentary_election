@@ -7,3 +7,26 @@ lgTriggers_GRDutch = {
 		}
 	}
 }
+
+lgTriggers_DutchHelpedGloriousRevolution = {
+	NED = {
+		has_country_flag = LgFlags_NED_accepted_Glorious_Revolution
+	}
+	# any_country = {
+	# 	has_country_flag = LgFlags_NED_accepted_Glorious_Revolution
+	# }
+}
+
+lgTriggers_DutchRefusedGloriousRevolution = {
+	OR = {
+		AND = {
+			exists = NED
+			NED = {
+				has_country_flag = LgFlags_NED_refused_Glorious_Revolution
+			}
+		}
+		NED = {
+			exists = no
+		}
+	}
+}

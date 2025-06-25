@@ -1,0 +1,7 @@
+lgModifiers_Knighthood1 = {
+	
+}
+
+lgModifiers_Knighthood2 = {
+	
+}

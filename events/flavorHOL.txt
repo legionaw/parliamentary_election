@@ -1222,6 +1222,14 @@ country_event = {
 					religion = anglican
 					value = 0.15
 				}
+				num_of_religion = {
+					religion = reformed
+					value = 0.15
+				}
+				num_of_religion = {
+					religion = hussite
+					value = 0.15
+				}
 			}
 		}
 		modifier = {
@@ -1234,6 +1242,14 @@ country_event = {
 				}
 				num_of_religion = {
 					religion = anglican
+					value = 0.25
+				}
+				num_of_religion = {
+					religion = reformed
+					value = 0.25
+				}
+				num_of_religion = {
+					religion = hussite
 					value = 0.25
 				}
 			}
@@ -1250,6 +1266,14 @@ country_event = {
 					religion = anglican
 					value = 0.5
 				}
+				num_of_religion = {
+					religion = reformed
+					value = 0.5
+				}
+				num_of_religion = {
+					religion = hussite
+					value = 0.5
+				}
 			}
 		}
 		modifier = {
@@ -1257,7 +1281,9 @@ country_event = {
 			ruler_religion = catholic
 			OR = {
 				religion = protestant
-				religion = catholic
+				religion = anglican
+				religion = reformed
+				religion = hussite
 			}
 		}
 	}

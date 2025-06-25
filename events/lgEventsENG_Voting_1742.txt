@@ -16,7 +16,7 @@ province_event = {
 	
 	immediate = {
 		owner = {
-			change_variable = { which = whigVar value = 1 }		 #Add to running total
+			change_variable = { which = lgVar_Whig value = 1 }		 #Add to running total
 		}
 	}
 	
@@ -36,7 +36,7 @@ province_event = {
 	
 	immediate = {
 		owner = {
-			change_variable = { which = toryVar value = 1 }		 #Add to running total
+			change_variable = { which = lgVar_Tory value = 1 }		 #Add to running total
 		}
 	}
 	

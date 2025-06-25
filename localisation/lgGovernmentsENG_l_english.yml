@@ -12,3 +12,8 @@
  LgModifiers_ParliamentaryMonarchy: "Parliamentary Monarchy"
  LgModifiers_ParliamentaryMonarchy_legacy: "Parliamentary Monarchy"
  desc_LgModifiers_ParliamentaryMonarchy: "Parliamentary monarchy is a British version of the constitutional monarchy established by the Glorious Revolution, where the monarch can not suspend laws passed by Parliament nor can maintain army without its consent, among other constitutional restrictions."
+ 
+ lgGovernments_ParliamentaryMonarchy: "Parliamentary Monarchy"
+ lgGovernments_ParliamentaryMonarchy_legacy: "Parliamentary Monarchy"
+ lgGovernments_ParliamentaryMonarchy_desc: "Parliamentary monarchy is a British version of the constitutional monarchy established by the Glorious Revolution, where the monarch can not suspend laws passed by Parliament nor can maintain army without its consent, among other constitutional restrictions."
+ lgGovernments_ParliamentaryMonarchy_legacy_desc: "Parliamentary monarchy is a British version of the constitutional monarchy established by the Glorious Revolution, where the monarch can not suspend laws passed by Parliament nor can maintain army without its consent, among other constitutional restrictions."

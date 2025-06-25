@@ -2,9 +2,9 @@ namespace = lgEventsENG_ConventionParliament
 
 # Convention Parliament
 country_event = {
-	id = lgEventsENG_ConventionParliament0001
-	title = lgEventsENG_ConventionParliament0001.t
-	desc = lgEventsENG_ConventionParliament0001.d
+	id = lgEventsENG_ConventionParliament.0001
+	title = lgEventsENG_ConventionParliament.0001t
+	desc = lgEventsENG_ConventionParliament.0001d
 	
 	picture = DEBATE_REPUBLICAN_eventPicture
 	
@@ -15,18 +15,18 @@ country_event = {
 	}
 	
 	option = {
-		name = lgEventsENG_ConventionParliament0001.a
+		name = lgEventsENG_ConventionParliament.0001.a
 		country_event = {
-			id = lgEventsENG_ConventionParliament0002 days = 15
+			id = lgEventsENG_ConventionParliament.0002 days = 15
 		}
 	}
 }
 
 # Bill of Rights
 country_event = {
-	id = lgEventsENG_ConventionParliament0002
-	title = lgEventsENG_ConventionParliament0002.t
-	desc = lgEventsENG_ConventionParliament0002.d
+	id = lgEventsENG_ConventionParliament.0002
+	title = lgEventsENG_ConventionParliament.0002t
+	desc = lgEventsENG_ConventionParliament.0002d
 	
 	picture = DEBATE_REPUBLICAN_eventPicture
 	
@@ -37,19 +37,25 @@ country_event = {
 	}
 	
 	option = {
-		name = lgEventsENG_ConventionParliament0002.a
+		name = lgEventsENG_ConventionParliament.0002.a
 		enact_issue = bill_of_rights_act
+		add_government_reform = lgGovernments_ParliamentaryMonarchy
+		add_country_modifier = {
+			name = lgModifiers_ArmyLimit
+			duration = -1
+		}
+		set_country_flag = lgFlags_BillOfRights
 		country_event = {
-			id = lgEventsENG_ConventionParliament0003 days = 15
+			id = lgEventsENG_ConventionParliament.0003 days = 15
 		}
 	}
 }
 
 # Toleration Act
 country_event = {
-	id = lgEventsENG_ConventionParliament0003
-	title = lgEventsENG_ConventionParliament0003.t
-	desc = lgEventsENG_ConventionParliament0003.d
+	id = lgEventsENG_ConventionParliament.0003
+	title = lgEventsENG_ConventionParliament.0003t
+	desc = lgEventsENG_ConventionParliament.0003d
 	
 	picture = DEBATE_REPUBLICAN_eventPicture
 	
@@ -60,18 +66,18 @@ country_event = {
 	}
 	
 	option = {
-		name = lgEventsENG_ConventionParliament0003.a
+		name = lgEventsENG_ConventionParliament.0003.a
 		country_event = {
-			id = lgEventsENG_ConventionParliament0004 days = 15
+			id = lgEventsENG_ConventionParliament.0004 days = 15
 		}
 	}
 }
 
 # Crown
 country_event = {
-	id = lgEventsENG_ConventionParliament0004
-	title = lgEventsENG_ConventionParliament0004.t
-	desc = lgEventsENG_ConventionParliament0004.d
+	id = lgEventsENG_ConventionParliament.0004
+	title = lgEventsENG_ConventionParliament.0004t
+	desc = lgEventsENG_ConventionParliament.0004d
 	
 	picture = DEBATE_REPUBLICAN_eventPicture
 	
@@ -82,7 +88,7 @@ country_event = {
 	}
 	
 	option = {
-		name = lgEventsENG_ConventionParliament0004.a
+		name = lgEventsENG_ConventionParliament.0004.a
 		set_country_flag = lgFlags_ConventionParliamentEnded
 	}
 }

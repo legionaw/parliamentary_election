@@ -1,8 +1,12 @@
 #setup at beginning of each election
 electionConvention_startup = {
 	hidden_effect = {
-		set_variable = { which = whigVar value = 0 } #whig
-		set_variable = { which = toryVar value = 0 } #Tory
+		set_variable = { which = lgVar_Whig value = 0 } # Whig
+		set_variable = { which = lgVar_Tory value = 0 } # Tory
+		set_variable = {
+			which = lgVar_ParliamentaryMajorityCurrent
+			value = 0
+		}
 		every_owned_province = {
 			limit = {
 				has_seat_in_parliament = yes
@@ -27,8 +31,7 @@ electionConvention_startup = {
 	}
 }
 
-#contest - whig favored
-electionConvention_contest1 = {
+electionConvention_contest = {
 	hidden_effect = {
 		every_owned_province = {
 			limit = {
@@ -36,7 +39,7 @@ electionConvention_contest1 = {
 			}
 			random_list = {
 				# Whigs
-				55 = {
+				50 = {
 					modifier = {
 						factor = 2
 						development = 30
@@ -48,18 +51,6 @@ electionConvention_contest1 = {
 						factor = 1
 						province_has_center_of_trade_of_level = 1
 					}
-					modifier = {
-						factor = 2
-						owner = {
-							has_country_modifier = lgModifiers_ToryMinistry
-							OR = {
-								war_exhaustion = 0.75
-								NOT = {
-									stability = 0
-								}
-							}
-						}
-					}
 					add_province_modifier = {
 						name = "lgModifiers_MPsWhig"
 						duration = -1
@@ -67,8 +58,8 @@ electionConvention_contest1 = {
 					remove_province_modifier = "lgModifiers_MPsTory"
 					province_event = { id = lgVotingConvention.1 days = 1 }
 				}
-				# Tories
-				45 = {
+				#Tories
+				50 = {
 					modifier = {
 						factor = 2
 						development = 1
@@ -93,17 +84,11 @@ electionConvention_contest1 = {
 							NOT = {
 								religion = protestant
 							}
-						}
-					}
-					modifier = {
-						factor = 2
-						owner = {
-							has_country_modifier = lgModifiers_WhigMinistry
-							OR = {
-								war_exhaustion = 0.75
-								NOT = {
-									stability = 0
-								}
+							NOT = {
+								religion = reformed
+							}
+							NOT = {
+								religion = hussite
 							}
 						}
 					}
@@ -116,188 +101,69 @@ electionConvention_contest1 = {
 				}
 			}
 		}
-		country_event = { id = convention_elections.00011 days = 2 } # start counting
+		country_event = { id = lgEvents_ConventionElection.00011 days = 2 } # start counting
 	}
 }
 
-#contest - Tory favored
-electionConvention_contest2 = {
-	hidden_effect = {
-		every_owned_province = {
-			limit = {
-				has_seat_in_parliament = yes
-			}
-			random_list = {
-				#Whigs
-				45 = {
-					modifier = {
-						factor = 2
-						development = 30
-						NOT = {
-							development = 15
-						}
-					}
-					modifier = {
-						factor = 1
-						province_has_center_of_trade_of_level = 1
-					}
-					add_province_modifier = {
-						name = "lgModifiers_MPsWhig"
-						duration = -1
-					}
-					remove_province_modifier = "lgModifiers_MPsTory"
-					province_event = { id = lgVotingConvention.1 days = 1 }
-				}
-				#Tories
-				55 = {
-					modifier = {
-						factor = 2
-						development = 1
-						NOT = {
-							development = 15
-						}
-					}
-					modifier = {
-						factor = 2
-						trade_goods = wool
-					}
-					modifier = {
-						factor = 3
-						trade_goods = grain
-					}
-					add_province_modifier = {
-						name = "lgModifiers_MPsTory"
-						duration = -1
-					}
-					remove_province_modifier = "lgModifiers_MPsWhig"
-					province_event = { id = lgVotingConvention.2 days = 1 }
-				}
-			}
-		}
-		country_event = { id = convention_elections.00011 days = 2 } # start counting
-	}
-}
-
-#contest - neutral
-electionConvention_contest3 = {
-	hidden_effect = {
-		every_owned_province = {
-			limit = {
-				has_seat_in_parliament = yes
-			}
-			random_list = {
-				#Whigs
-				50 = {
-					add_province_modifier = {
-						name = "lgModifiers_MPsWhig"
-						duration = -1
-					}
-					remove_province_modifier = "lgModifiers_MPsTory"
-					province_event = { id = lgVotingConvention.1 days = 1 }
-				}
-				#Tories
-				50 = {
-					add_province_modifier = {
-						name = "lgModifiers_MPsTory"
-						duration = -1
-					}
-					remove_province_modifier = "lgModifiers_MPsWhig"
-					province_event = { id = lgVotingConvention.2 days = 1 }
-				}
-			}
-		}
-		country_event = { id = convention_elections.00011 days = 2 } # start counting
-	}
-}
-
-#counting seats won
+# Counting seats won
 electionConvention_count = {
+	set_variable = { # Setting the value of lgVar_WhigSeatsWon to that of lgVar_Whig
+		which = lgVar_WhigSeatsWon
+		value = lgVar_Whig
+	}
+	set_variable = {  # Setting the value of lgVar_TorySeatsWon to that of lgVar_Tory
+		which = lgVar_TorySeatsWon
+		value = lgVar_Tory
+	}
+	# Add a set_variable for lgVar_ParliamentaryMajorityCURRENT here
+	set_variable = { # Setting the value in preparation for the majority
+		which = lgVar_ParliamentaryMajority
+		value = 0
+	}
 	# WHIG CONTROL
 	if = {
 		limit = {
-			check_variable = { which = whigVar which = toryVar }
-			NOT = { check_variable = { which = toryVar which = whigVar } }
-			NOT = { is_variable_equal = { which = whigVar which = toryVar } }
+			check_variable = { which = lgVar_Whig which = lgVar_Tory }
+			NOT = { check_variable = { which = lgVar_Tory which = lgVar_Whig } }
+			NOT = { is_variable_equal = { which = lgVar_Whig which = lgVar_Tory } }
 		}
-		country_event = { id = convention_elections.0002 days = 28 }
+		subtract_variable = { # lgVar_WhigSeatsWon - lgVar_TorySeatsWon = lgVar_WhigSeatsWon (I think?)
+			which = lgVar_WhigSeatsWon
+			which = lgVar_TorySeatsWon
+		}
+		set_variable = { # Setting lgVar_ParliamentaryMajority value to the result of the subtract_variable immediately above
+			which = lgVar_ParliamentaryMajority
+			value = lgVar_WhigSeatsWon
+		}
+		set_country_flag = lgFlags_WhigsWonElection1688
+		country_event = { id = lgEvents_ConventionElection.0002 days = 28 }
 	}
 	# TORY CONTROL
 	if = {
 		limit = {
-			check_variable = { which = toryVar which = whigVar } # there must be more tory seats than whig seats
-			NOT = { check_variable = { which = whigVar which = toryVar } }
-			NOT = { is_variable_equal = { which = whigVar which = toryVar } }
+			check_variable = { which = lgVar_Tory which = lgVar_Whig } # There must be more tory seats than whig seats
+			NOT = { check_variable = { which = lgVar_Whig which = lgVar_Tory } }
+			NOT = { is_variable_equal = { which = lgVar_Whig which = lgVar_Tory } }
 		}
-		country_event = { id = convention_elections.0003 days = 28 }
+		subtract_variable = {
+			which = lgVar_TorySeatsWon
+			which = lgVar_WhigSeatsWon
+		}
+		set_variable = {
+			which = lgVar_ParliamentaryMajority
+			value = lgVar_TorySeatsWon
+		}
+		set_country_flag = lgFlags_ToriesWonElection1688
+		country_event = { id = lgEvents_ConventionElection.0002 days = 28 }
 	}
 	# DEADLOCK
 	if = {
 		limit = {
-			is_variable_equal = { which = whigVar which = toryVar } # must be equal
-			#NOT = { check_variable = { which = whigVar which = toryVar } }
-			#NOT = { check_variable = { which = toryVar which = whigVar } }
+			is_variable_equal = { which = lgVar_Whig which = lgVar_Tory } # There must be equal number of seats between Tories and Whigs
+			#NOT = { check_variable = { which = lgVar_Whig which = lgVar_Tory } }
+			#NOT = { check_variable = { which = lgVar_Tory which = lgVar_Whig } }
 		}
-		country_event = { id = convention_elections.0004 days = 28 }
-	}
-}
-
-#### OBSOLETE ####
-
-#for announcing final election result
-electionConvention_result = {
-	if = {
-		limit = {
-			check_variable = {
-				which = whigVar
-				which = toryVar
-			} # there must be more whig seats than tory seats
-			NOT = {
-				check_variable = {
-					which = toryVar
-					which = whigVar
-				}
-			}
-			NOT = {
-				is_variable_equal = {
-					which = toryVar
-					which = whigVar
-				} # greater than is only allowed
-				#is_variable_equal = { which = var1 which = var2 } # greater than is only allowed (suspended)
-			}
-		}
-		country_event = { id = convention_elections.0002 days = 29 } # trigger a country event announcing whig victory in general election
-	}
-	if = {
-		limit = {
-			check_variable = {
-				which = toryVar
-				which = whigVar
-			} # there must be more tory seats than whig seats
-			NOT = {
-				check_variable = {
-					which = whigVar
-					which = toryVar
-				}
-			}
-			NOT = {
-				is_variable_equal = {
-					which = whigVar
-					which = toryVar
-				} # greater than is only allowed
-				#is_variable_equal = { which = var2 which = var1 } # greater than is only allowed (suspended)
-			}
-		}
-		country_event = { id = convention_elections.0003 days = 29 } # trigger a country event announcing Tory victory in general election
-	}
-	if = {
-		limit = {
-			#check_variable = { which = toryVar which = whigVar } # check how many seats each party won
-			is_variable_equal = {
-				which = whigVar
-				which = toryVar
-			} # must be equal
-			#is_variable_equal = { which = var2 which = var1 } # must be equal (suspended)
-		}
-		country_event = { id = convention_elections.0004 days = 29 } # trigger a country event announcing a deadlock and the monarch must decide the outcome
+		set_country_flag = lgFlags_IndecisiveElection
+		country_event = { id = lgEvents_ConventionElection.0002 days = 28 }
 	}
 }

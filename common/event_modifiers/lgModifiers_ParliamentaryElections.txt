@@ -55,3 +55,18 @@ lgModifiers_MPsTory3 = {
 lgModifiers_SupplyTimer = {
 	picture = "have_parliament_icon"
 }
+
+lgModifiers_ArmyLimit = {
+	picture = "land_forcelimit_icon"
+	capped_by_forcelimit = yes
+}
+
+lgModifiers_BillOfRights = {
+	
+}
+
+#
+
+lgModifiers_PeaceTimer = {
+	
+}

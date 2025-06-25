@@ -4,18 +4,33 @@
  parliamentary_elections.0001.a: "Whig Party."
  parliamentary_elections.0001.b: "Tory Party."
  parliamentary_elections.0001.c: "No preference."
-
- parliamentary_elections.0002t: "Whigs wins the election"
- parliamentary_elections.0002d: "Whigs has won the election, giving it most seats in the House of Commons."
- parliamentary_elections.0002.a: "I am pleased to hear this."
- parliamentary_elections.0002.b: "Damnation!"
- parliamentary_elections.0002.c: "Congratulations to them on this."
+ 
+ parliamentary_elections.0002t: "[ROOT.GetElectionResultTitle]"
+ parliamentary_elections.0002t2: "Whigs wins the election"
+ parliamentary_elections.0002t3: "Tories wins the election"
+ parliamentary_elections.0002t4: "Indecisive election"
+ parliamentary_elections.0002d: "Whigs has won the election, giving it [ROOT.lgVar_Whig.GetValue] seats in the House of Commons, with a majority of [ROOT.lgVar_ParliamentaryMajority.GetValue] seats, while Tories won [ROOT.lgVar_Tory.GetValue] seats."
+ parliamentary_elections.0002d2: "Whigs has won the election, giving it most seats in the House of Commons."
+ parliamentary_elections.0002.a: "[ROOT.GetElectionReaction]"
+#  parliamentary_elections.0002.a: "I am pleased to hear this."
+ parliamentary_elections.0002.a1: "I am pleased to hear this."
+ parliamentary_elections.0002.a2: "Damnation!"
+ parliamentary_elections.0002.a3: "Black day for our country!"
+ parliamentary_elections.0002.a4: "Congratulations to them on this."
+ parliamentary_elections.0002.b: "Appoint Tory ministry."
+#  parliamentary_elections.0002.b: "Damnation!"
+ parliamentary_elections.0002.c: "Appoint Whig ministry."
+#  parliamentary_elections.0002.c: "Congratulations to them on this."
+ parliamentary_elections.0002.d: "[ROOT.GetElectionReaction]"
+ 
  parliamentary_elections.0003t: "Tories wins the election"
- parliamentary_elections.0003d: "Tories has won the election, giving it most seats in the House of Commons."
+ parliamentary_elections.0003d: "Tories has won the election, giving it [ROOT.lgVar_Tory.GetValue] seats in the House of Commons, with a majority of [ROOT.lgVar_ParliamentaryMajority.GetValue] seats, while Whigs won [ROOT.lgVar_Whig.GetValue] seats."
+ parliamentary_elections.0003d2: "Tories has won the election, giving it most seats in the House of Commons."
  parliamentary_elections.0003.a: "I am pleased to hear this."
  parliamentary_elections.0003.b: "Black day for our country!"
  parliamentary_elections.0003.c: "Congratulations to them on this."
-
+ parliamentary_elections.0003.d: "[ROOT.GetElectionReaction]"
+ 
  parliamentary_elections.0004t: "Indecisive election"
  parliamentary_elections.0004d: "Neither party has won a majority in the general election. [Root.Monarch.GetName] thus have a greater discretion in appointing a ministry."
  parliamentary_elections.0004.a: "Appoint Tory ministry."
@@ -25,7 +40,7 @@
  desc_lgModifiers_WhigMinistry: "The monarch has seen it fit to appoint Whig ministry to lead our country."
  lgModifiers_ToryMinistry: "Tory ministry"
  desc_lgModifiers_ToryMinistry: "The monarch has seen it fit to appoint Tory ministry to lead our country."
-
+ 
  lgModifiers_MPsWhig: "Whig MP"
  desc_lgModifiers_MPsWhig: "This province is represented by Whig MP in the Parliament"
  

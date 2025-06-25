@@ -1,0 +1,55 @@
+namespace = lgEvents_DateTracking
+
+country_event = { # Reserved for the game startup
+	id = lgEvents_DateTracking.0001
+	title = lgEvents_DateTracking.0001t
+	desc = lgEvents_DateTracking.0001d
+	
+	picture = PARLIAMENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	hidden = yes
+	
+	trigger = {
+		NOT = {
+			has_country_flag = lgFlags_DateTrackingEstablished
+		}
+	}
+	
+	immediate = {
+		set_country_flag = lgFlags_DateTrackingEstablished
+	}
+	
+	option = {
+		name = "lgEvents_DateTracking.0001.a"
+		set_variable = {
+			which = lgVar_DateTracked
+			value = 1
+		}
+		country_event = {
+			id = lgEvents_DateTracking.0002 days = 1
+		}
+	}
+}
+
+country_event = {
+	id = lgEvents_DateTracking.0002
+	title = lgEvents_DateTracking.0002t
+	desc = lgEvents_DateTracking.0002D
+	
+	picture = PARLIAMENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	hidden = yes
+	
+	option = {
+		name = "lgEvents_DateTracking.0002.a"
+		lgEffects_DateTracking = yes
+		country_event = {
+			id = lgEvents_DateTracking.0002 days = 1
+		}
+		lgEffects_CharAgeUp = yes
+	}
+}

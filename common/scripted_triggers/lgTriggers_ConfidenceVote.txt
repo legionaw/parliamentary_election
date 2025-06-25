@@ -3,6 +3,9 @@ lgTriggers_ConfidenceVote1688 = {
 	is_year = 1688
 	NOT = { is_year = 1721 }
 	has_country_modifier = lgModifiers_electionTimer
+	NOT = {
+		has_country_flag = lgFlag_ElectionInProgress
+	}
 }
 
 #### 1721-1742 ####
@@ -10,6 +13,9 @@ lgTriggers_ConfidenceVote1721 = {
 	is_year = 1721
 	NOT = { is_year = 1742 }
 	has_country_modifier = lgModifiers_electionTimer
+	NOT = {
+		has_country_flag = lgFlag_ElectionInProgress
+	}
 }
 
 #### 1742-1761 ####
@@ -17,6 +23,9 @@ lgTriggers_ConfidenceVote1742 = {
 	is_year = 1742
 	NOT = { is_year = 1761 }
 	has_country_modifier = lgModifiers_electionTimer
+	NOT = {
+		has_country_flag = lgFlag_ElectionInProgress
+	}
 }
 
 #### 1761-1782 ####
@@ -24,6 +33,9 @@ lgTriggers_ConfidenceVote1761 = {
 	is_year = 1761
 	NOT = { is_year = 1784 }
 	has_country_modifier = lgModifiers_electionTimer
+	NOT = {
+		has_country_flag = lgFlag_ElectionInProgress
+	}
 }
 
 #### 1782-1834 ####
@@ -31,6 +43,9 @@ lgTriggers_ConfidenceVote1784 = {
 	is_year = 1784
 	NOT = { is_year = 1834 }
 	has_country_modifier = lgModifiers_electionTimer
+	NOT = {
+		has_country_flag = lgFlag_ElectionInProgress
+	}
 }
 
 #### 1834-1859 ####
@@ -38,6 +53,9 @@ lgTriggers_ConfidenceVote1834 = {
 	is_year = 1834
 	NOT = { is_year = 1859 }
 	has_country_modifier = lgModifiers_electionTimer
+	NOT = {
+		has_country_flag = lgFlag_ElectionInProgress
+	}
 }
 
 # Confidence Checks

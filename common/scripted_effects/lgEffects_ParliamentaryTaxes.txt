@@ -1,0 +1,37 @@
+lgEffects_ParliamentaryTaxes_Tobacco = {
+	change_price = {
+		trade_goods = tobacco
+		key = tobacco_act_tt
+		value = 0.5
+		duration = -1
+	}
+	add_mercantilism = 5
+	
+	# set_variable = {
+	# 	which = lgVar_TobaccoPrice
+	# 	value = 3 # Base price
+	# }
+	# if = {
+	# 	limit = {
+	# 		has_country_flag = popularization_of_tobacco_happened
+	# 	}
+	# 	change_variable = {
+	# 		which = lgVar_TobaccoPrice
+	# 		value = 0.5
+	# 	}
+	# }
+	
+	# set_variable = {
+	# 	which = lgVar_TobaccoTaxRate
+	# 	value = 0.1
+	# }
+	
+	# multiply_variable = {
+	# 	which = lgVar_TobaccoPrice
+	# 	which = lgVar_TobaccoTaxRate
+	# }
+}
+
+lgEffects_TobaccoPrice = {
+	
+}

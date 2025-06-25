@@ -209,7 +209,6 @@ lgParliamentActs_SupplyAct_1742 = {
 	}
 	
 	on_issue_taken = {
-		
 		if = {
 			limit = {
 				has_country_modifier = lgModifiers_WhigMinistry

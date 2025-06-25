@@ -1,8 +1,8 @@
 #setup at beginning of each election
 election1721_startup = {
 	hidden_effect = {
-		set_variable = { which = whigVar value = 0 } #Patriot Whigs
-		set_variable = { which = toryVar value = 0 } #Tories
+		set_variable = { which = lgVar_Whig value = 0 } #Patriot Whigs
+		set_variable = { which = lgVar_Tory value = 0 } #Tories
 		set_variable = { which = whig2Var value = 0 } #Walpole Whigs
 		every_owned_province = {
 			limit = {
@@ -208,50 +208,50 @@ election1721_contest4 = {
 	}
 }
 
-#counting seats won
+# Counting seats won
 election1721_count = {
 	# PATRIOT WHIG CONTROL
 	if = {
 		limit = {
-			check_variable = { which = whigVar which = toryVar }
-			check_variable = { which = whigVar which = whig2Var }
-			NOT = { check_variable = { which = toryVar which = whigVar } }
-			NOT = { check_variable = { which = whig2Var which = whigVar } }
-			NOT = { is_variable_equal = { which = whigVar which = toryVar } }
-			NOT = { is_variable_equal = { which = whigVar which = whig2Var } }
+			check_variable = { which = lgVar_Whig which = lgVar_Tory }
+			check_variable = { which = lgVar_Whig which = whig2Var }
+			NOT = { check_variable = { which = lgVar_Tory which = lgVar_Whig } }
+			NOT = { check_variable = { which = whig2Var which = lgVar_Whig } }
+			NOT = { is_variable_equal = { which = lgVar_Whig which = lgVar_Tory } }
+			NOT = { is_variable_equal = { which = lgVar_Whig which = whig2Var } }
 		}
 		country_event = { id = parliamentary_elections.1002 days = 28 }
 	}
 	# TORY CONTROL
 	if = {
 		limit = {
-			check_variable = { which = toryVar which = whigVar } # there must be more tory seats than whig seats
-			check_variable = { which = toryVar which = whig2Var } # there must be more tory seats than whig seats
-			NOT = { check_variable = { which = whigVar which = toryVar } }
-			NOT = { check_variable = { which = whig2Var which = toryVar } }
-			NOT = { is_variable_equal = { which = whigVar which = toryVar } }
-			NOT = { is_variable_equal = { which = whigVar which = whig2Var } }
+			check_variable = { which = lgVar_Tory which = lgVar_Whig } # There must be more tory seats than whig seats
+			check_variable = { which = lgVar_Tory which = whig2Var } # There must be more tory seats than whig seats
+			NOT = { check_variable = { which = lgVar_Whig which = lgVar_Tory } }
+			NOT = { check_variable = { which = whig2Var which = lgVar_Tory } }
+			NOT = { is_variable_equal = { which = lgVar_Whig which = lgVar_Tory } }
+			NOT = { is_variable_equal = { which = lgVar_Whig which = whig2Var } }
 		}
 		country_event = { id = parliamentary_elections.1003 days = 28 }
 	}
 	# Walpole WHIG CONTROL
 	if = {
 		limit = {
-			check_variable = { which = whig2Var which = toryVar } #Walpole more than Tory
-			check_variable = { which = whig2Var which = whigVar } #Walpole more than Patriot Whig
-			NOT = { check_variable = { which = toryVar which = whig2Var } }
-			NOT = { check_variable = { which = whigVar which = whig2Var } }
-			NOT = { is_variable_equal = { which = whig2Var which = toryVar } }
-			NOT = { is_variable_equal = { which = whig2Var which = whigVar } }
+			check_variable = { which = whig2Var which = lgVar_Tory } #Walpole more than Tory
+			check_variable = { which = whig2Var which = lgVar_Whig } #Walpole more than Patriot Whig
+			NOT = { check_variable = { which = lgVar_Tory which = whig2Var } }
+			NOT = { check_variable = { which = lgVar_Whig which = whig2Var } }
+			NOT = { is_variable_equal = { which = whig2Var which = lgVar_Tory } }
+			NOT = { is_variable_equal = { which = whig2Var which = lgVar_Whig } }
 		}
 		country_event = { id = parliamentary_elections.1004 days = 28 }
 	}
 	# DEADLOCK
 	if = {
 		limit = {
-			is_variable_equal = { which = whigVar which = toryVar } # must be equal
-			is_variable_equal = { which = whigVar which = whig2Var } # must be equal
-			is_variable_equal = { which = whig2Var which = toryVar } # must be equal
+			is_variable_equal = { which = lgVar_Whig which = lgVar_Tory } # must be equal
+			is_variable_equal = { which = lgVar_Whig which = whig2Var } # must be equal
+			is_variable_equal = { which = whig2Var which = lgVar_Tory } # must be equal
 		}
 		country_event = { id = parliamentary_elections.1008 days = 28 }
 	}

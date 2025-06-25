@@ -10,6 +10,7 @@ lgTriggers_elections1688 = {
 lgTriggers_elections1721 = {
 	#has_country_flag = lgFlags_GloriousRevolution
 	is_year = 1721
+	has_country_flag = lgFlags_FirstWhigSplitHappened
 	NOT = { is_year = 1742 }
 	NOT = { has_country_modifier = lgModifiers_electionTimer }
 }

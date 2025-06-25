@@ -1,19 +1,29 @@
 ﻿l_english:
  lgEventsENG_PartiesAndFactions.0001.t: "Tories and Whigs"
  lgEventsENG_PartiesAndFactions.0001.d: "The so-called Court faction and Country faction that had previously dominated the Parliament has now become labeled Tories and Whigs, respectively."
- lgEventsENG_PartiesAndFactions.0001.a: "Acknowledged"
+ lgEventsENG_PartiesAndFactions.0001.a: "Acknowledged."
+ lgEventsENG_PartiesAndFactions.0001.tt: "§OTory Party§! and §OWhig Party§! are now enabled."
+ 
  lgEventsENG_PartiesAndFactions.0002.t: "Whig Split"
  lgEventsENG_PartiesAndFactions.0002.d: "The rise of Sir Robert Walpole have proven to be so polarizing that it has effectively split the old grand Whig party into Walpole Whigs and the so-called Patriot Whigs."
- lgEventsENG_PartiesAndFactions.0002.a: "Acknowledged"
+ lgEventsENG_PartiesAndFactions.0002.a: "Acknowledged."
+ lgEventsENG_PartiesAndFactions.0002.tt: "§OPatriot Whigs§! is now enabled."
+ 
  lgEventsENG_PartiesAndFactions.0003.t: "Whig Reunification"
  lgEventsENG_PartiesAndFactions.0003.d: "The fall of Sir Robert Walpole have allowed the Whigs to reunite under a single banner and thereby continue to perpetuate the old Whig oligarchy ruling the Parliament."
- lgEventsENG_PartiesAndFactions.0003.a: "Acknowledged"
+ lgEventsENG_PartiesAndFactions.0003.a: "Acknowledged."
+ 
  lgEventsENG_PartiesAndFactions.0004.t: "Tory Collapse and the King's Friends"
  lgEventsENG_PartiesAndFactions.0004.d: "The Tories, as a result of the changing times, have effectively dissolved. However, a new opposition to the old Whigs have formed in the Parliament, at the behest of the [Root.Monarch.GetTitle], labeled the "[Root.Monarch.GetTitle]'s Friends"."
- lgEventsENG_PartiesAndFactions.0004.a: "Acknowledged"
+ lgEventsENG_PartiesAndFactions.0004.a: "Acknowledged."
+ lgEventsENG_PartiesAndFactions.0004.tt: "§O[Root.Monarch.GetTitle]'s Friends§! is now enabled."
+ 
  lgEventsENG_PartiesAndFactions.0005.t: "The Second Whig Split"
  lgEventsENG_PartiesAndFactions.0005.d: "Uncomfortable with the growing radical direction of the Whig party, a significant number of members have split off to form a new party, tenatively called the New Whigs (identifying themselves as "independent Whigs"), with the radical faction labeled Old Whigs. The [Root.Monarch.GetTitle]'s Friends have merged into this new party."
- lgEventsENG_PartiesAndFactions.0005.a: "Acknowledged"
+ lgEventsENG_PartiesAndFactions.0005.a: "Acknowledged."
+ lgEventsENG_PartiesAndFactions.0005.tt: "§OTory Party§! is now enabled."
+ 
  lgEventsENG_PartiesAndFactions.0006.t: "The Tamworth Manifesto"
  lgEventsENG_PartiesAndFactions.0006.d: "Following the passage of Reform Act, it has became clear that the old principles of the Tory party is no longer viable. Therefore, the leader of the Tory Party issued a document called Tamworth Manifesto, which outlined a set of new principles. <to add more here>"
- lgEventsENG_PartiesAndFactions.0006.a: "Acknowledged"
+ lgEventsENG_PartiesAndFactions.0006.a: "Acknowledged."
+ lgEventsENG_PartiesAndFactions.0006.tt: "§OConservative Party§! is now enabled."

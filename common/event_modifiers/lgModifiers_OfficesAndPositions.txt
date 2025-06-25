@@ -1,0 +1,84 @@
+lgOffices_FirstLordTreasury = {
+	global_tax_income = -333
+}
+
+lgOffices_SecondLordTreasury = {
+	global_tax_income = -111
+}
+
+lgOffices_HomeSecretary = {
+	global_tax_income = -222
+}
+
+lgOffices_ForeignSecretary = {
+	global_tax_income = -222
+}
+
+lgOffices_NorthernSecretary = {
+	global_tax_income = -222
+}
+
+lgOffices_NorthernSecretary = {
+	global_tax_income = -222
+}
+
+lgOffices_WarSecretary = {
+	global_tax_income = -100
+}
+
+lgOffices_ChancellorLancaster = {
+	global_tax_income = -100
+}
+
+lgOffices_LordPresident = {
+	global_tax_income = -100
+}
+
+lgOffices_LordPrivySeal = {
+	global_tax_income = -100
+}
+
+lgOffices_MasterGeneralOrdnance = {
+	global_tax_income = -100
+}
+
+lgOffices_PaymasterGeneral = {
+	global_tax_income = -100
+}
+
+lgOffices_LordAdmiralty = {
+	global_tax_income = -100
+}
+
+lgOffices_MasterMint = {
+	global_tax_income = -100
+}
+
+lgOffices_CommanderChief = {
+	global_tax_income = -100
+}
+
+lgOffices_AttorneyGeneral = {
+	global_tax_income = -100
+}
+
+# Sinecures
+lgOffices_LordWardenCinquePorts = {
+	global_tax_income = -365
+}
+
+lgOffices_TreasurerHousehold = {
+	global_tax_income = -100
+}
+
+lgOffices_ComptrollerHousehold = {
+	global_tax_income = -100
+}
+
+lgOffices_ViceChamberlain = {
+	global_tax_income = -100
+}
+
+lgOffices_ParliamentarySecretary = {
+	global_tax_income = -100
+}

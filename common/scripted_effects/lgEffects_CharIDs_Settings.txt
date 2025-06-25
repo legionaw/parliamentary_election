@@ -1,0 +1,357 @@
+# Generating Char IDs
+lgEffects_CharID0001 = { set_variable = { which = lgVar_CharID0001 value = 1 } lgEffects_CharID0001firstname = yes lgEffects_CharID0001lastname = yes }
+lgEffects_CharID0002 = { set_variable = { which = lgVar_CharID0002 value = 1 } lgEffects_CharID0002firstname = yes lgEffects_CharID0002lastname = yes }
+lgEffects_CharID0003 = { set_variable = { which = lgVar_CharID0002 value = 1 } lgEffects_CharID0003firstname = yes lgEffects_CharID0003lastname = yes }
+lgEffects_CharID0004 = { set_variable = { which = lgVar_CharID0004 value = 1 } lgEffects_CharID0004firstname = yes lgEffects_CharID0004lastname = yes }
+lgEffects_CharID0005 = { set_variable = { which = lgVar_CharID0005 value = 1 } lgEffects_CharID0005firstname = yes lgEffects_CharID0005lastname = yes }
+lgEffects_CharID0006 = { set_variable = { which = lgVar_CharID0006 value = 1 } lgEffects_CharID0006firstname = yes lgEffects_CharID0006lastname = yes }
+lgEffects_CharID0007 = { set_variable = { which = lgVar_CharID0007 value = 1 } lgEffects_CharID0007firstname = yes lgEffects_CharID0007lastname = yes }
+lgEffects_CharID0008 = { set_variable = { which = lgVar_CharID0008 value = 1 } lgEffects_CharID0008firstname = yes lgEffects_CharID0008lastname = yes }
+lgEffects_CharID0009 = { set_variable = { which = lgVar_CharID0009 value = 1 } lgEffects_CharID0009firstname = yes lgEffects_CharID0009lastname = yes }
+lgEffects_CharID0010 = { set_variable = { which = lgVar_CharID0010 value = 1 } lgEffects_CharID0010firstname = yes lgEffects_CharID0010lastname = yes }
+
+lgEffects_CharID0011 = { set_variable = { which = lgVar_CharID0011 value = 1 } lgEffects_CharID0011firstname = yes lgEffects_CharID0011lastname = yes }
+lgEffects_CharID0012 = { set_variable = { which = lgVar_CharID0012 value = 1 } lgEffects_CharID0012firstname = yes lgEffects_CharID0012lastname = yes }
+lgEffects_CharID0013 = { set_variable = { which = lgVar_CharID0012 value = 1 } lgEffects_CharID0013firstname = yes lgEffects_CharID0013lastname = yes }
+lgEffects_CharID0014 = { set_variable = { which = lgVar_CharID0014 value = 1 } lgEffects_CharID0014firstname = yes lgEffects_CharID0014lastname = yes }
+lgEffects_CharID0015 = { set_variable = { which = lgVar_CharID0015 value = 1 } lgEffects_CharID0015firstname = yes lgEffects_CharID0015lastname = yes }
+lgEffects_CharID0016 = { set_variable = { which = lgVar_CharID0016 value = 1 } lgEffects_CharID0016firstname = yes lgEffects_CharID0016lastname = yes }
+lgEffects_CharID0017 = { set_variable = { which = lgVar_CharID0017 value = 1 } lgEffects_CharID0017firstname = yes lgEffects_CharID0017lastname = yes }
+lgEffects_CharID0018 = { set_variable = { which = lgVar_CharID0018 value = 1 } lgEffects_CharID0018firstname = yes lgEffects_CharID0018lastname = yes }
+lgEffects_CharID0019 = { set_variable = { which = lgVar_CharID0019 value = 1 } lgEffects_CharID0019firstname = yes lgEffects_CharID0019lastname = yes }
+lgEffects_CharID0020 = { set_variable = { which = lgVar_CharID0020 value = 1 } lgEffects_CharID0020firstname = yes lgEffects_CharID0020lastname = yes }
+
+lgEffects_CharID0021 = { set_variable = { which = lgVar_CharID0021 value = 1 } lgEffects_CharID0021firstname = yes lgEffects_CharID0021lastname = yes }
+lgEffects_CharID0022 = { set_variable = { which = lgVar_CharID0022 value = 1 } lgEffects_CharID0022firstname = yes lgEffects_CharID0022lastname = yes }
+lgEffects_CharID0023 = { set_variable = { which = lgVar_CharID0022 value = 1 } lgEffects_CharID0023firstname = yes lgEffects_CharID0023lastname = yes }
+lgEffects_CharID0024 = { set_variable = { which = lgVar_CharID0024 value = 1 } lgEffects_CharID0024firstname = yes lgEffects_CharID0024lastname = yes }
+lgEffects_CharID0025 = { set_variable = { which = lgVar_CharID0025 value = 1 } lgEffects_CharID0025firstname = yes lgEffects_CharID0025lastname = yes }
+lgEffects_CharID0026 = { set_variable = { which = lgVar_CharID0026 value = 1 } lgEffects_CharID0026firstname = yes lgEffects_CharID0026lastname = yes }
+lgEffects_CharID0027 = { set_variable = { which = lgVar_CharID0027 value = 1 } lgEffects_CharID0027firstname = yes lgEffects_CharID0027lastname = yes }
+lgEffects_CharID0028 = { set_variable = { which = lgVar_CharID0028 value = 1 } lgEffects_CharID0028firstname = yes lgEffects_CharID0028lastname = yes }
+lgEffects_CharID0029 = { set_variable = { which = lgVar_CharID0029 value = 1 } lgEffects_CharID0029firstname = yes lgEffects_CharID0029lastname = yes }
+lgEffects_CharID0030 = { set_variable = { which = lgVar_CharID0030 value = 1 } lgEffects_CharID0030firstname = yes lgEffects_CharID0030lastname = yes }
+
+lgEffects_CharID0031 = { set_variable = { which = lgVar_CharID0031 value = 1 } lgEffects_CharID0031firstname = yes lgEffects_CharID0031lastname = yes }
+lgEffects_CharID0032 = { set_variable = { which = lgVar_CharID0032 value = 1 } lgEffects_CharID0032firstname = yes lgEffects_CharID0032lastname = yes }
+lgEffects_CharID0033 = { set_variable = { which = lgVar_CharID0032 value = 1 } lgEffects_CharID0033firstname = yes lgEffects_CharID0033lastname = yes }
+lgEffects_CharID0034 = { set_variable = { which = lgVar_CharID0034 value = 1 } lgEffects_CharID0034firstname = yes lgEffects_CharID0034lastname = yes }
+lgEffects_CharID0035 = { set_variable = { which = lgVar_CharID0035 value = 1 } lgEffects_CharID0035firstname = yes lgEffects_CharID0035lastname = yes }
+lgEffects_CharID0036 = { set_variable = { which = lgVar_CharID0036 value = 1 } lgEffects_CharID0036firstname = yes lgEffects_CharID0036lastname = yes }
+lgEffects_CharID0037 = { set_variable = { which = lgVar_CharID0037 value = 1 } lgEffects_CharID0037firstname = yes lgEffects_CharID0037lastname = yes }
+lgEffects_CharID0038 = { set_variable = { which = lgVar_CharID0038 value = 1 } lgEffects_CharID0038firstname = yes lgEffects_CharID0038lastname = yes }
+lgEffects_CharID0039 = { set_variable = { which = lgVar_CharID0039 value = 1 } lgEffects_CharID0039firstname = yes lgEffects_CharID0039lastname = yes }
+lgEffects_CharID0040 = { set_variable = { which = lgVar_CharID0040 value = 1 } lgEffects_CharID0040firstname = yes lgEffects_CharID0040lastname = yes }
+
+lgEffects_CharID0041 = { set_variable = { which = lgVar_CharID0041 value = 1 } lgEffects_CharID0041firstname = yes lgEffects_CharID0041lastname = yes }
+lgEffects_CharID0042 = { set_variable = { which = lgVar_CharID0042 value = 1 } lgEffects_CharID0042firstname = yes lgEffects_CharID0042lastname = yes }
+lgEffects_CharID0043 = { set_variable = { which = lgVar_CharID0042 value = 1 } lgEffects_CharID0043firstname = yes lgEffects_CharID0043lastname = yes }
+lgEffects_CharID0044 = { set_variable = { which = lgVar_CharID0044 value = 1 } lgEffects_CharID0044firstname = yes lgEffects_CharID0044lastname = yes }
+lgEffects_CharID0045 = { set_variable = { which = lgVar_CharID0045 value = 1 } lgEffects_CharID0045firstname = yes lgEffects_CharID0045lastname = yes }
+lgEffects_CharID0046 = { set_variable = { which = lgVar_CharID0046 value = 1 } lgEffects_CharID0046firstname = yes lgEffects_CharID0046lastname = yes }
+lgEffects_CharID0047 = { set_variable = { which = lgVar_CharID0047 value = 1 } lgEffects_CharID0047firstname = yes lgEffects_CharID0047lastname = yes }
+lgEffects_CharID0048 = { set_variable = { which = lgVar_CharID0048 value = 1 } lgEffects_CharID0048firstname = yes lgEffects_CharID0048lastname = yes }
+lgEffects_CharID0049 = { set_variable = { which = lgVar_CharID0049 value = 1 } lgEffects_CharID0049firstname = yes lgEffects_CharID0049lastname = yes }
+lgEffects_CharID0050 = { set_variable = { which = lgVar_CharID0050 value = 1 } lgEffects_CharID0050firstname = yes lgEffects_CharID0050lastname = yes }
+
+lgEffects_CharID0051 = { set_variable = { which = lgVar_CharID0051 value = 1 } lgEffects_CharID0051firstname = yes lgEffects_CharID0051lastname = yes }
+lgEffects_CharID0052 = { set_variable = { which = lgVar_CharID0052 value = 1 } lgEffects_CharID0052firstname = yes lgEffects_CharID0052lastname = yes }
+lgEffects_CharID0053 = { set_variable = { which = lgVar_CharID0052 value = 1 } lgEffects_CharID0053firstname = yes lgEffects_CharID0053lastname = yes }
+lgEffects_CharID0054 = { set_variable = { which = lgVar_CharID0054 value = 1 } lgEffects_CharID0054firstname = yes lgEffects_CharID0054lastname = yes }
+lgEffects_CharID0055 = { set_variable = { which = lgVar_CharID0055 value = 1 } lgEffects_CharID0055firstname = yes lgEffects_CharID0055lastname = yes }
+lgEffects_CharID0056 = { set_variable = { which = lgVar_CharID0056 value = 1 } lgEffects_CharID0056firstname = yes lgEffects_CharID0056lastname = yes }
+lgEffects_CharID0057 = { set_variable = { which = lgVar_CharID0057 value = 1 } lgEffects_CharID0057firstname = yes lgEffects_CharID0057lastname = yes }
+lgEffects_CharID0058 = { set_variable = { which = lgVar_CharID0058 value = 1 } lgEffects_CharID0058firstname = yes lgEffects_CharID0058lastname = yes }
+lgEffects_CharID0059 = { set_variable = { which = lgVar_CharID0059 value = 1 } lgEffects_CharID0059firstname = yes lgEffects_CharID0059lastname = yes }
+lgEffects_CharID0060 = { set_variable = { which = lgVar_CharID0060 value = 1 } lgEffects_CharID0060firstname = yes lgEffects_CharID0060lastname = yes }
+
+lgEffects_CharID0061 = { set_variable = { which = lgVar_CharID0061 value = 1 } lgEffects_CharID0061firstname = yes lgEffects_CharID0061lastname = yes }
+lgEffects_CharID0062 = { set_variable = { which = lgVar_CharID0062 value = 1 } lgEffects_CharID0062firstname = yes lgEffects_CharID0062lastname = yes }
+lgEffects_CharID0063 = { set_variable = { which = lgVar_CharID0062 value = 1 } lgEffects_CharID0063firstname = yes lgEffects_CharID0063lastname = yes }
+lgEffects_CharID0064 = { set_variable = { which = lgVar_CharID0064 value = 1 } lgEffects_CharID0064firstname = yes lgEffects_CharID0064lastname = yes }
+lgEffects_CharID0065 = { set_variable = { which = lgVar_CharID0065 value = 1 } lgEffects_CharID0065firstname = yes lgEffects_CharID0065lastname = yes }
+lgEffects_CharID0066 = { set_variable = { which = lgVar_CharID0066 value = 1 } lgEffects_CharID0066firstname = yes lgEffects_CharID0066lastname = yes }
+lgEffects_CharID0067 = { set_variable = { which = lgVar_CharID0067 value = 1 } lgEffects_CharID0067firstname = yes lgEffects_CharID0067lastname = yes }
+lgEffects_CharID0068 = { set_variable = { which = lgVar_CharID0068 value = 1 } lgEffects_CharID0068firstname = yes lgEffects_CharID0068lastname = yes }
+lgEffects_CharID0069 = { set_variable = { which = lgVar_CharID0069 value = 1 } lgEffects_CharID0069firstname = yes lgEffects_CharID0069lastname = yes }
+lgEffects_CharID0070 = { set_variable = { which = lgVar_CharID0070 value = 1 } lgEffects_CharID0070firstname = yes lgEffects_CharID0070lastname = yes }
+
+lgEffects_CharID0071 = { set_variable = { which = lgVar_CharID0071 value = 1 } lgEffects_CharID0071firstname = yes lgEffects_CharID0071lastname = yes }
+lgEffects_CharID0072 = { set_variable = { which = lgVar_CharID0072 value = 1 } lgEffects_CharID0072firstname = yes lgEffects_CharID0072lastname = yes }
+lgEffects_CharID0073 = { set_variable = { which = lgVar_CharID0072 value = 1 } lgEffects_CharID0073firstname = yes lgEffects_CharID0073lastname = yes }
+lgEffects_CharID0074 = { set_variable = { which = lgVar_CharID0074 value = 1 } lgEffects_CharID0074firstname = yes lgEffects_CharID0074lastname = yes }
+lgEffects_CharID0075 = { set_variable = { which = lgVar_CharID0075 value = 1 } lgEffects_CharID0075firstname = yes lgEffects_CharID0075lastname = yes }
+lgEffects_CharID0076 = { set_variable = { which = lgVar_CharID0076 value = 1 } lgEffects_CharID0076firstname = yes lgEffects_CharID0076lastname = yes }
+lgEffects_CharID0077 = { set_variable = { which = lgVar_CharID0077 value = 1 } lgEffects_CharID0077firstname = yes lgEffects_CharID0077lastname = yes }
+lgEffects_CharID0078 = { set_variable = { which = lgVar_CharID0078 value = 1 } lgEffects_CharID0078firstname = yes lgEffects_CharID0078lastname = yes }
+lgEffects_CharID0079 = { set_variable = { which = lgVar_CharID0079 value = 1 } lgEffects_CharID0079firstname = yes lgEffects_CharID0079lastname = yes }
+lgEffects_CharID0080 = { set_variable = { which = lgVar_CharID0080 value = 1 } lgEffects_CharID0080firstname = yes lgEffects_CharID0080lastname = yes }
+
+lgEffects_CharID0081 = { set_variable = { which = lgVar_CharID0081 value = 1 } lgEffects_CharID0081firstname = yes lgEffects_CharID0081lastname = yes }
+lgEffects_CharID0082 = { set_variable = { which = lgVar_CharID0082 value = 1 } lgEffects_CharID0082firstname = yes lgEffects_CharID0082lastname = yes }
+lgEffects_CharID0083 = { set_variable = { which = lgVar_CharID0082 value = 1 } lgEffects_CharID0083firstname = yes lgEffects_CharID0083lastname = yes }
+lgEffects_CharID0084 = { set_variable = { which = lgVar_CharID0084 value = 1 } lgEffects_CharID0084firstname = yes lgEffects_CharID0084lastname = yes }
+lgEffects_CharID0085 = { set_variable = { which = lgVar_CharID0085 value = 1 } lgEffects_CharID0085firstname = yes lgEffects_CharID0085lastname = yes }
+lgEffects_CharID0086 = { set_variable = { which = lgVar_CharID0086 value = 1 } lgEffects_CharID0086firstname = yes lgEffects_CharID0086lastname = yes }
+lgEffects_CharID0087 = { set_variable = { which = lgVar_CharID0087 value = 1 } lgEffects_CharID0087firstname = yes lgEffects_CharID0087lastname = yes }
+lgEffects_CharID0088 = { set_variable = { which = lgVar_CharID0088 value = 1 } lgEffects_CharID0088firstname = yes lgEffects_CharID0088lastname = yes }
+lgEffects_CharID0089 = { set_variable = { which = lgVar_CharID0089 value = 1 } lgEffects_CharID0089firstname = yes lgEffects_CharID0089lastname = yes }
+lgEffects_CharID0090 = { set_variable = { which = lgVar_CharID0090 value = 1 } lgEffects_CharID0090firstname = yes lgEffects_CharID0090lastname = yes }
+
+lgEffects_CharID0091 = { set_variable = { which = lgVar_CharID0091 value = 1 } lgEffects_CharID0091firstname = yes lgEffects_CharID0091lastname = yes }
+lgEffects_CharID0092 = { set_variable = { which = lgVar_CharID0092 value = 1 } lgEffects_CharID0092firstname = yes lgEffects_CharID0092lastname = yes }
+lgEffects_CharID0093 = { set_variable = { which = lgVar_CharID0092 value = 1 } lgEffects_CharID0093firstname = yes lgEffects_CharID0093lastname = yes }
+lgEffects_CharID0094 = { set_variable = { which = lgVar_CharID0094 value = 1 } lgEffects_CharID0094firstname = yes lgEffects_CharID0094lastname = yes }
+lgEffects_CharID0095 = { set_variable = { which = lgVar_CharID0095 value = 1 } lgEffects_CharID0095firstname = yes lgEffects_CharID0095lastname = yes }
+lgEffects_CharID0096 = { set_variable = { which = lgVar_CharID0096 value = 1 } lgEffects_CharID0096firstname = yes lgEffects_CharID0096lastname = yes }
+lgEffects_CharID0097 = { set_variable = { which = lgVar_CharID0097 value = 1 } lgEffects_CharID0097firstname = yes lgEffects_CharID0097lastname = yes }
+lgEffects_CharID0098 = { set_variable = { which = lgVar_CharID0098 value = 1 } lgEffects_CharID0098firstname = yes lgEffects_CharID0098lastname = yes }
+lgEffects_CharID0099 = { set_variable = { which = lgVar_CharID0099 value = 1 } lgEffects_CharID0099firstname = yes lgEffects_CharID0099lastname = yes }
+lgEffects_CharID0100 = { set_variable = { which = lgVar_CharID0100 value = 1 } lgEffects_CharID0100firstname = yes lgEffects_CharID0100lastname = yes }
+
+# 101-200
+lgEffects_CharID0101 = { set_variable = { which = lgVar_CharID0101 value = 1 } lgEffects_CharID0101firstname = yes lgEffects_CharID0101lastname = yes }
+lgEffects_CharID0102 = { set_variable = { which = lgVar_CharID0102 value = 1 } lgEffects_CharID0102firstname = yes lgEffects_CharID0102lastname = yes }
+lgEffects_CharID0103 = { set_variable = { which = lgVar_CharID0102 value = 1 } lgEffects_CharID0103firstname = yes lgEffects_CharID0103lastname = yes }
+lgEffects_CharID0104 = { set_variable = { which = lgVar_CharID0104 value = 1 } lgEffects_CharID0104firstname = yes lgEffects_CharID0104lastname = yes }
+lgEffects_CharID0105 = { set_variable = { which = lgVar_CharID0105 value = 1 } lgEffects_CharID0105firstname = yes lgEffects_CharID0105lastname = yes }
+lgEffects_CharID0106 = { set_variable = { which = lgVar_CharID0106 value = 1 } lgEffects_CharID0106firstname = yes lgEffects_CharID0106lastname = yes }
+lgEffects_CharID0107 = { set_variable = { which = lgVar_CharID0107 value = 1 } lgEffects_CharID0107firstname = yes lgEffects_CharID0107lastname = yes }
+lgEffects_CharID0108 = { set_variable = { which = lgVar_CharID0108 value = 1 } lgEffects_CharID0108firstname = yes lgEffects_CharID0108lastname = yes }
+lgEffects_CharID0109 = { set_variable = { which = lgVar_CharID0109 value = 1 } lgEffects_CharID0109firstname = yes lgEffects_CharID0109lastname = yes }
+lgEffects_CharID0110 = { set_variable = { which = lgVar_CharID0110 value = 1 } lgEffects_CharID0110firstname = yes lgEffects_CharID0110lastname = yes }
+
+lgEffects_CharID0111 = { set_variable = { which = lgVar_CharID0111 value = 1 } lgEffects_CharID0111firstname = yes lgEffects_CharID0111lastname = yes }
+lgEffects_CharID0112 = { set_variable = { which = lgVar_CharID0112 value = 1 } lgEffects_CharID0112firstname = yes lgEffects_CharID0112lastname = yes }
+lgEffects_CharID0113 = { set_variable = { which = lgVar_CharID0112 value = 1 } lgEffects_CharID0113firstname = yes lgEffects_CharID0113lastname = yes }
+lgEffects_CharID0114 = { set_variable = { which = lgVar_CharID0114 value = 1 } lgEffects_CharID0114firstname = yes lgEffects_CharID0114lastname = yes }
+lgEffects_CharID0115 = { set_variable = { which = lgVar_CharID0115 value = 1 } lgEffects_CharID0115firstname = yes lgEffects_CharID0115lastname = yes }
+lgEffects_CharID0116 = { set_variable = { which = lgVar_CharID0116 value = 1 } lgEffects_CharID0116firstname = yes lgEffects_CharID0116lastname = yes }
+lgEffects_CharID0117 = { set_variable = { which = lgVar_CharID0117 value = 1 } lgEffects_CharID0117firstname = yes lgEffects_CharID0117lastname = yes }
+lgEffects_CharID0118 = { set_variable = { which = lgVar_CharID0118 value = 1 } lgEffects_CharID0118firstname = yes lgEffects_CharID0118lastname = yes }
+lgEffects_CharID0119 = { set_variable = { which = lgVar_CharID0119 value = 1 } lgEffects_CharID0119firstname = yes lgEffects_CharID0119lastname = yes }
+lgEffects_CharID0120 = { set_variable = { which = lgVar_CharID0120 value = 1 } lgEffects_CharID0120firstname = yes lgEffects_CharID0120lastname = yes }
+
+lgEffects_CharID0121 = { set_variable = { which = lgVar_CharID0121 value = 1 } lgEffects_CharID0121firstname = yes lgEffects_CharID0121lastname = yes }
+lgEffects_CharID0122 = { set_variable = { which = lgVar_CharID0122 value = 1 } lgEffects_CharID0122firstname = yes lgEffects_CharID0122lastname = yes }
+lgEffects_CharID0123 = { set_variable = { which = lgVar_CharID0122 value = 1 } lgEffects_CharID0123firstname = yes lgEffects_CharID0123lastname = yes }
+lgEffects_CharID0124 = { set_variable = { which = lgVar_CharID0124 value = 1 } lgEffects_CharID0124firstname = yes lgEffects_CharID0124lastname = yes }
+lgEffects_CharID0125 = { set_variable = { which = lgVar_CharID0125 value = 1 } lgEffects_CharID0125firstname = yes lgEffects_CharID0125lastname = yes }
+lgEffects_CharID0126 = { set_variable = { which = lgVar_CharID0126 value = 1 } lgEffects_CharID0126firstname = yes lgEffects_CharID0126lastname = yes }
+lgEffects_CharID0127 = { set_variable = { which = lgVar_CharID0127 value = 1 } lgEffects_CharID0127firstname = yes lgEffects_CharID0127lastname = yes }
+lgEffects_CharID0128 = { set_variable = { which = lgVar_CharID0128 value = 1 } lgEffects_CharID0128firstname = yes lgEffects_CharID0128lastname = yes }
+lgEffects_CharID0129 = { set_variable = { which = lgVar_CharID0129 value = 1 } lgEffects_CharID0129firstname = yes lgEffects_CharID0129lastname = yes }
+lgEffects_CharID0130 = { set_variable = { which = lgVar_CharID0130 value = 1 } lgEffects_CharID0130firstname = yes lgEffects_CharID0130lastname = yes }
+
+lgEffects_CharID0131 = { set_variable = { which = lgVar_CharID0131 value = 1 } lgEffects_CharID0131firstname = yes lgEffects_CharID0131lastname = yes }
+lgEffects_CharID0132 = { set_variable = { which = lgVar_CharID0132 value = 1 } lgEffects_CharID0132firstname = yes lgEffects_CharID0132lastname = yes }
+lgEffects_CharID0133 = { set_variable = { which = lgVar_CharID0132 value = 1 } lgEffects_CharID0133firstname = yes lgEffects_CharID0133lastname = yes }
+lgEffects_CharID0134 = { set_variable = { which = lgVar_CharID0134 value = 1 } lgEffects_CharID0134firstname = yes lgEffects_CharID0134lastname = yes }
+lgEffects_CharID0135 = { set_variable = { which = lgVar_CharID0135 value = 1 } lgEffects_CharID0135firstname = yes lgEffects_CharID0135lastname = yes }
+lgEffects_CharID0136 = { set_variable = { which = lgVar_CharID0136 value = 1 } lgEffects_CharID0136firstname = yes lgEffects_CharID0136lastname = yes }
+lgEffects_CharID0137 = { set_variable = { which = lgVar_CharID0137 value = 1 } lgEffects_CharID0137firstname = yes lgEffects_CharID0137lastname = yes }
+lgEffects_CharID0138 = { set_variable = { which = lgVar_CharID0138 value = 1 } lgEffects_CharID0138firstname = yes lgEffects_CharID0138lastname = yes }
+lgEffects_CharID0139 = { set_variable = { which = lgVar_CharID0139 value = 1 } lgEffects_CharID0139firstname = yes lgEffects_CharID0139lastname = yes }
+lgEffects_CharID0140 = { set_variable = { which = lgVar_CharID0140 value = 1 } lgEffects_CharID0140firstname = yes lgEffects_CharID0140lastname = yes }
+
+lgEffects_CharID0141 = { set_variable = { which = lgVar_CharID0141 value = 1 } lgEffects_CharID0141firstname = yes lgEffects_CharID0141lastname = yes }
+lgEffects_CharID0142 = { set_variable = { which = lgVar_CharID0142 value = 1 } lgEffects_CharID0142firstname = yes lgEffects_CharID0142lastname = yes }
+lgEffects_CharID0143 = { set_variable = { which = lgVar_CharID0142 value = 1 } lgEffects_CharID0143firstname = yes lgEffects_CharID0143lastname = yes }
+lgEffects_CharID0144 = { set_variable = { which = lgVar_CharID0144 value = 1 } lgEffects_CharID0144firstname = yes lgEffects_CharID0144lastname = yes }
+lgEffects_CharID0145 = { set_variable = { which = lgVar_CharID0145 value = 1 } lgEffects_CharID0145firstname = yes lgEffects_CharID0145lastname = yes }
+lgEffects_CharID0146 = { set_variable = { which = lgVar_CharID0146 value = 1 } lgEffects_CharID0146firstname = yes lgEffects_CharID0146lastname = yes }
+lgEffects_CharID0147 = { set_variable = { which = lgVar_CharID0147 value = 1 } lgEffects_CharID0147firstname = yes lgEffects_CharID0147lastname = yes }
+lgEffects_CharID0148 = { set_variable = { which = lgVar_CharID0148 value = 1 } lgEffects_CharID0148firstname = yes lgEffects_CharID0148lastname = yes }
+lgEffects_CharID0149 = { set_variable = { which = lgVar_CharID0149 value = 1 } lgEffects_CharID0149firstname = yes lgEffects_CharID0149lastname = yes }
+lgEffects_CharID0150 = { set_variable = { which = lgVar_CharID0150 value = 1 } lgEffects_CharID0150firstname = yes lgEffects_CharID0150lastname = yes }
+
+lgEffects_CharID0151 = { set_variable = { which = lgVar_CharID0151 value = 1 } lgEffects_CharID0151firstname = yes lgEffects_CharID0151lastname = yes }
+lgEffects_CharID0152 = { set_variable = { which = lgVar_CharID0152 value = 1 } lgEffects_CharID0152firstname = yes lgEffects_CharID0152lastname = yes }
+lgEffects_CharID0153 = { set_variable = { which = lgVar_CharID0152 value = 1 } lgEffects_CharID0153firstname = yes lgEffects_CharID0153lastname = yes }
+lgEffects_CharID0154 = { set_variable = { which = lgVar_CharID0154 value = 1 } lgEffects_CharID0154firstname = yes lgEffects_CharID0154lastname = yes }
+lgEffects_CharID0155 = { set_variable = { which = lgVar_CharID0155 value = 1 } lgEffects_CharID0155firstname = yes lgEffects_CharID0155lastname = yes }
+lgEffects_CharID0156 = { set_variable = { which = lgVar_CharID0156 value = 1 } lgEffects_CharID0156firstname = yes lgEffects_CharID0156lastname = yes }
+lgEffects_CharID0157 = { set_variable = { which = lgVar_CharID0157 value = 1 } lgEffects_CharID0157firstname = yes lgEffects_CharID0157lastname = yes }
+lgEffects_CharID0158 = { set_variable = { which = lgVar_CharID0158 value = 1 } lgEffects_CharID0158firstname = yes lgEffects_CharID0158lastname = yes }
+lgEffects_CharID0159 = { set_variable = { which = lgVar_CharID0159 value = 1 } lgEffects_CharID0159firstname = yes lgEffects_CharID0159lastname = yes }
+lgEffects_CharID0160 = { set_variable = { which = lgVar_CharID0160 value = 1 } lgEffects_CharID0160firstname = yes lgEffects_CharID0160lastname = yes }
+
+lgEffects_CharID0161 = { set_variable = { which = lgVar_CharID0161 value = 1 } lgEffects_CharID0161firstname = yes lgEffects_CharID0161lastname = yes }
+lgEffects_CharID0162 = { set_variable = { which = lgVar_CharID0162 value = 1 } lgEffects_CharID0162firstname = yes lgEffects_CharID0162lastname = yes }
+lgEffects_CharID0163 = { set_variable = { which = lgVar_CharID0162 value = 1 } lgEffects_CharID0163firstname = yes lgEffects_CharID0163lastname = yes }
+lgEffects_CharID0164 = { set_variable = { which = lgVar_CharID0164 value = 1 } lgEffects_CharID0164firstname = yes lgEffects_CharID0164lastname = yes }
+lgEffects_CharID0165 = { set_variable = { which = lgVar_CharID0165 value = 1 } lgEffects_CharID0165firstname = yes lgEffects_CharID0165lastname = yes }
+lgEffects_CharID0166 = { set_variable = { which = lgVar_CharID0166 value = 1 } lgEffects_CharID0166firstname = yes lgEffects_CharID0166lastname = yes }
+lgEffects_CharID0167 = { set_variable = { which = lgVar_CharID0167 value = 1 } lgEffects_CharID0167firstname = yes lgEffects_CharID0167lastname = yes }
+lgEffects_CharID0168 = { set_variable = { which = lgVar_CharID0168 value = 1 } lgEffects_CharID0168firstname = yes lgEffects_CharID0168lastname = yes }
+lgEffects_CharID0169 = { set_variable = { which = lgVar_CharID0169 value = 1 } lgEffects_CharID0169firstname = yes lgEffects_CharID0169lastname = yes }
+lgEffects_CharID0170 = { set_variable = { which = lgVar_CharID0170 value = 1 } lgEffects_CharID0170firstname = yes lgEffects_CharID0170lastname = yes }
+
+lgEffects_CharID0171 = { set_variable = { which = lgVar_CharID0171 value = 1 } lgEffects_CharID0171firstname = yes lgEffects_CharID0171lastname = yes }
+lgEffects_CharID0172 = { set_variable = { which = lgVar_CharID0172 value = 1 } lgEffects_CharID0172firstname = yes lgEffects_CharID0172lastname = yes }
+lgEffects_CharID0173 = { set_variable = { which = lgVar_CharID0172 value = 1 } lgEffects_CharID0173firstname = yes lgEffects_CharID0173lastname = yes }
+lgEffects_CharID0174 = { set_variable = { which = lgVar_CharID0174 value = 1 } lgEffects_CharID0174firstname = yes lgEffects_CharID0174lastname = yes }
+lgEffects_CharID0175 = { set_variable = { which = lgVar_CharID0175 value = 1 } lgEffects_CharID0175firstname = yes lgEffects_CharID0175lastname = yes }
+lgEffects_CharID0176 = { set_variable = { which = lgVar_CharID0176 value = 1 } lgEffects_CharID0176firstname = yes lgEffects_CharID0176lastname = yes }
+lgEffects_CharID0177 = { set_variable = { which = lgVar_CharID0177 value = 1 } lgEffects_CharID0177firstname = yes lgEffects_CharID0177lastname = yes }
+lgEffects_CharID0178 = { set_variable = { which = lgVar_CharID0178 value = 1 } lgEffects_CharID0178firstname = yes lgEffects_CharID0178lastname = yes }
+lgEffects_CharID0179 = { set_variable = { which = lgVar_CharID0179 value = 1 } lgEffects_CharID0179firstname = yes lgEffects_CharID0179lastname = yes }
+lgEffects_CharID0180 = { set_variable = { which = lgVar_CharID0180 value = 1 } lgEffects_CharID0180firstname = yes lgEffects_CharID0180lastname = yes }
+
+lgEffects_CharID0181 = { set_variable = { which = lgVar_CharID0181 value = 1 } lgEffects_CharID0181firstname = yes lgEffects_CharID0181lastname = yes }
+lgEffects_CharID0182 = { set_variable = { which = lgVar_CharID0182 value = 1 } lgEffects_CharID0182firstname = yes lgEffects_CharID0182lastname = yes }
+lgEffects_CharID0183 = { set_variable = { which = lgVar_CharID0182 value = 1 } lgEffects_CharID0183firstname = yes lgEffects_CharID0183lastname = yes }
+lgEffects_CharID0184 = { set_variable = { which = lgVar_CharID0184 value = 1 } lgEffects_CharID0184firstname = yes lgEffects_CharID0184lastname = yes }
+lgEffects_CharID0185 = { set_variable = { which = lgVar_CharID0185 value = 1 } lgEffects_CharID0185firstname = yes lgEffects_CharID0185lastname = yes }
+lgEffects_CharID0186 = { set_variable = { which = lgVar_CharID0186 value = 1 } lgEffects_CharID0186firstname = yes lgEffects_CharID0186lastname = yes }
+lgEffects_CharID0187 = { set_variable = { which = lgVar_CharID0187 value = 1 } lgEffects_CharID0187firstname = yes lgEffects_CharID0187lastname = yes }
+lgEffects_CharID0188 = { set_variable = { which = lgVar_CharID0188 value = 1 } lgEffects_CharID0188firstname = yes lgEffects_CharID0188lastname = yes }
+lgEffects_CharID0189 = { set_variable = { which = lgVar_CharID0189 value = 1 } lgEffects_CharID0189firstname = yes lgEffects_CharID0189lastname = yes }
+lgEffects_CharID0190 = { set_variable = { which = lgVar_CharID0190 value = 1 } lgEffects_CharID0190firstname = yes lgEffects_CharID0190lastname = yes }
+
+lgEffects_CharID0191 = { set_variable = { which = lgVar_CharID0191 value = 1 } lgEffects_CharID0191firstname = yes lgEffects_CharID0191lastname = yes }
+lgEffects_CharID0192 = { set_variable = { which = lgVar_CharID0192 value = 1 } lgEffects_CharID0192firstname = yes lgEffects_CharID0192lastname = yes }
+lgEffects_CharID0193 = { set_variable = { which = lgVar_CharID0192 value = 1 } lgEffects_CharID0193firstname = yes lgEffects_CharID0193lastname = yes }
+lgEffects_CharID0194 = { set_variable = { which = lgVar_CharID0194 value = 1 } lgEffects_CharID0194firstname = yes lgEffects_CharID0194lastname = yes }
+lgEffects_CharID0195 = { set_variable = { which = lgVar_CharID0195 value = 1 } lgEffects_CharID0195firstname = yes lgEffects_CharID0195lastname = yes }
+lgEffects_CharID0196 = { set_variable = { which = lgVar_CharID0196 value = 1 } lgEffects_CharID0196firstname = yes lgEffects_CharID0196lastname = yes }
+lgEffects_CharID0197 = { set_variable = { which = lgVar_CharID0197 value = 1 } lgEffects_CharID0197firstname = yes lgEffects_CharID0197lastname = yes }
+lgEffects_CharID0198 = { set_variable = { which = lgVar_CharID0198 value = 1 } lgEffects_CharID0198firstname = yes lgEffects_CharID0198lastname = yes }
+lgEffects_CharID0199 = { set_variable = { which = lgVar_CharID0199 value = 1 } lgEffects_CharID0199firstname = yes lgEffects_CharID0199lastname = yes }
+lgEffects_CharID0200 = { set_variable = { which = lgVar_CharID0200 value = 1 } lgEffects_CharID0200firstname = yes lgEffects_CharID0200lastname = yes }
+
+# 201-300
+lgEffects_CharID0201 = { set_variable = { which = lgVar_CharID0201 value = 1 } lgEffects_CharID0201firstname = yes lgEffects_CharID0201lastname = yes }
+lgEffects_CharID0202 = { set_variable = { which = lgVar_CharID0202 value = 1 } lgEffects_CharID0202firstname = yes lgEffects_CharID0202lastname = yes }
+lgEffects_CharID0203 = { set_variable = { which = lgVar_CharID0202 value = 1 } lgEffects_CharID0203firstname = yes lgEffects_CharID0203lastname = yes }
+lgEffects_CharID0204 = { set_variable = { which = lgVar_CharID0204 value = 1 } lgEffects_CharID0204firstname = yes lgEffects_CharID0204lastname = yes }
+lgEffects_CharID0205 = { set_variable = { which = lgVar_CharID0205 value = 1 } lgEffects_CharID0205firstname = yes lgEffects_CharID0205lastname = yes }
+lgEffects_CharID0206 = { set_variable = { which = lgVar_CharID0206 value = 1 } lgEffects_CharID0206firstname = yes lgEffects_CharID0206lastname = yes }
+lgEffects_CharID0207 = { set_variable = { which = lgVar_CharID0207 value = 1 } lgEffects_CharID0207firstname = yes lgEffects_CharID0207lastname = yes }
+lgEffects_CharID0208 = { set_variable = { which = lgVar_CharID0208 value = 1 } lgEffects_CharID0208firstname = yes lgEffects_CharID0208lastname = yes }
+lgEffects_CharID0209 = { set_variable = { which = lgVar_CharID0209 value = 1 } lgEffects_CharID0209firstname = yes lgEffects_CharID0209lastname = yes }
+lgEffects_CharID0210 = { set_variable = { which = lgVar_CharID0210 value = 1 } lgEffects_CharID0210firstname = yes lgEffects_CharID0210lastname = yes }
+
+lgEffects_CharID0211 = { set_variable = { which = lgVar_CharID0211 value = 1 } lgEffects_CharID0211firstname = yes lgEffects_CharID0211lastname = yes }
+lgEffects_CharID0212 = { set_variable = { which = lgVar_CharID0212 value = 1 } lgEffects_CharID0212firstname = yes lgEffects_CharID0212lastname = yes }
+lgEffects_CharID0213 = { set_variable = { which = lgVar_CharID0212 value = 1 } lgEffects_CharID0213firstname = yes lgEffects_CharID0213lastname = yes }
+lgEffects_CharID0214 = { set_variable = { which = lgVar_CharID0214 value = 1 } lgEffects_CharID0214firstname = yes lgEffects_CharID0214lastname = yes }
+lgEffects_CharID0215 = { set_variable = { which = lgVar_CharID0215 value = 1 } lgEffects_CharID0215firstname = yes lgEffects_CharID0215lastname = yes }
+lgEffects_CharID0216 = { set_variable = { which = lgVar_CharID0216 value = 1 } lgEffects_CharID0216firstname = yes lgEffects_CharID0216lastname = yes }
+lgEffects_CharID0217 = { set_variable = { which = lgVar_CharID0217 value = 1 } lgEffects_CharID0217firstname = yes lgEffects_CharID0217lastname = yes }
+lgEffects_CharID0218 = { set_variable = { which = lgVar_CharID0218 value = 1 } lgEffects_CharID0218firstname = yes lgEffects_CharID0218lastname = yes }
+lgEffects_CharID0219 = { set_variable = { which = lgVar_CharID0219 value = 1 } lgEffects_CharID0219firstname = yes lgEffects_CharID0219lastname = yes }
+lgEffects_CharID0220 = { set_variable = { which = lgVar_CharID0220 value = 1 } lgEffects_CharID0220firstname = yes lgEffects_CharID0220lastname = yes }
+
+lgEffects_CharID0221 = { set_variable = { which = lgVar_CharID0221 value = 1 } lgEffects_CharID0221firstname = yes lgEffects_CharID0221lastname = yes }
+lgEffects_CharID0222 = { set_variable = { which = lgVar_CharID0222 value = 1 } lgEffects_CharID0222firstname = yes lgEffects_CharID0222lastname = yes }
+lgEffects_CharID0223 = { set_variable = { which = lgVar_CharID0222 value = 1 } lgEffects_CharID0223firstname = yes lgEffects_CharID0223lastname = yes }
+lgEffects_CharID0224 = { set_variable = { which = lgVar_CharID0224 value = 1 } lgEffects_CharID0224firstname = yes lgEffects_CharID0224lastname = yes }
+lgEffects_CharID0225 = { set_variable = { which = lgVar_CharID0225 value = 1 } lgEffects_CharID0225firstname = yes lgEffects_CharID0225lastname = yes }
+lgEffects_CharID0226 = { set_variable = { which = lgVar_CharID0226 value = 1 } lgEffects_CharID0226firstname = yes lgEffects_CharID0226lastname = yes }
+lgEffects_CharID0227 = { set_variable = { which = lgVar_CharID0227 value = 1 } lgEffects_CharID0227firstname = yes lgEffects_CharID0227lastname = yes }
+lgEffects_CharID0228 = { set_variable = { which = lgVar_CharID0228 value = 1 } lgEffects_CharID0228firstname = yes lgEffects_CharID0228lastname = yes }
+lgEffects_CharID0229 = { set_variable = { which = lgVar_CharID0229 value = 1 } lgEffects_CharID0229firstname = yes lgEffects_CharID0229lastname = yes }
+lgEffects_CharID0230 = { set_variable = { which = lgVar_CharID0230 value = 1 } lgEffects_CharID0230firstname = yes lgEffects_CharID0230lastname = yes }
+
+lgEffects_CharID0231 = { set_variable = { which = lgVar_CharID0231 value = 1 } lgEffects_CharID0231firstname = yes lgEffects_CharID0231lastname = yes }
+lgEffects_CharID0232 = { set_variable = { which = lgVar_CharID0232 value = 1 } lgEffects_CharID0232firstname = yes lgEffects_CharID0232lastname = yes }
+lgEffects_CharID0233 = { set_variable = { which = lgVar_CharID0232 value = 1 } lgEffects_CharID0233firstname = yes lgEffects_CharID0233lastname = yes }
+lgEffects_CharID0234 = { set_variable = { which = lgVar_CharID0234 value = 1 } lgEffects_CharID0234firstname = yes lgEffects_CharID0234lastname = yes }
+lgEffects_CharID0235 = { set_variable = { which = lgVar_CharID0235 value = 1 } lgEffects_CharID0235firstname = yes lgEffects_CharID0235lastname = yes }
+lgEffects_CharID0236 = { set_variable = { which = lgVar_CharID0236 value = 1 } lgEffects_CharID0236firstname = yes lgEffects_CharID0236lastname = yes }
+lgEffects_CharID0237 = { set_variable = { which = lgVar_CharID0237 value = 1 } lgEffects_CharID0237firstname = yes lgEffects_CharID0237lastname = yes }
+lgEffects_CharID0238 = { set_variable = { which = lgVar_CharID0238 value = 1 } lgEffects_CharID0238firstname = yes lgEffects_CharID0238lastname = yes }
+lgEffects_CharID0239 = { set_variable = { which = lgVar_CharID0239 value = 1 } lgEffects_CharID0239firstname = yes lgEffects_CharID0239lastname = yes }
+lgEffects_CharID0240 = { set_variable = { which = lgVar_CharID0240 value = 1 } lgEffects_CharID0240firstname = yes lgEffects_CharID0240lastname = yes }
+
+lgEffects_CharID0241 = { set_variable = { which = lgVar_CharID0241 value = 1 } lgEffects_CharID0241firstname = yes lgEffects_CharID0241lastname = yes }
+lgEffects_CharID0242 = { set_variable = { which = lgVar_CharID0242 value = 1 } lgEffects_CharID0242firstname = yes lgEffects_CharID0242lastname = yes }
+lgEffects_CharID0243 = { set_variable = { which = lgVar_CharID0242 value = 1 } lgEffects_CharID0243firstname = yes lgEffects_CharID0243lastname = yes }
+lgEffects_CharID0244 = { set_variable = { which = lgVar_CharID0244 value = 1 } lgEffects_CharID0244firstname = yes lgEffects_CharID0244lastname = yes }
+lgEffects_CharID0245 = { set_variable = { which = lgVar_CharID0245 value = 1 } lgEffects_CharID0245firstname = yes lgEffects_CharID0245lastname = yes }
+lgEffects_CharID0246 = { set_variable = { which = lgVar_CharID0246 value = 1 } lgEffects_CharID0246firstname = yes lgEffects_CharID0246lastname = yes }
+lgEffects_CharID0247 = { set_variable = { which = lgVar_CharID0247 value = 1 } lgEffects_CharID0247firstname = yes lgEffects_CharID0247lastname = yes }
+lgEffects_CharID0248 = { set_variable = { which = lgVar_CharID0248 value = 1 } lgEffects_CharID0248firstname = yes lgEffects_CharID0248lastname = yes }
+lgEffects_CharID0249 = { set_variable = { which = lgVar_CharID0249 value = 1 } lgEffects_CharID0249firstname = yes lgEffects_CharID0249lastname = yes }
+lgEffects_CharID0250 = { set_variable = { which = lgVar_CharID0250 value = 1 } lgEffects_CharID0250firstname = yes lgEffects_CharID0250lastname = yes }
+
+lgEffects_CharID0251 = { set_variable = { which = lgVar_CharID0251 value = 1 } lgEffects_CharID0251firstname = yes lgEffects_CharID0251lastname = yes }
+lgEffects_CharID0252 = { set_variable = { which = lgVar_CharID0252 value = 1 } lgEffects_CharID0252firstname = yes lgEffects_CharID0252lastname = yes }
+lgEffects_CharID0253 = { set_variable = { which = lgVar_CharID0252 value = 1 } lgEffects_CharID0253firstname = yes lgEffects_CharID0253lastname = yes }
+lgEffects_CharID0254 = { set_variable = { which = lgVar_CharID0254 value = 1 } lgEffects_CharID0254firstname = yes lgEffects_CharID0254lastname = yes }
+lgEffects_CharID0255 = { set_variable = { which = lgVar_CharID0255 value = 1 } lgEffects_CharID0255firstname = yes lgEffects_CharID0255lastname = yes }
+lgEffects_CharID0256 = { set_variable = { which = lgVar_CharID0256 value = 1 } lgEffects_CharID0256firstname = yes lgEffects_CharID0256lastname = yes }
+lgEffects_CharID0257 = { set_variable = { which = lgVar_CharID0257 value = 1 } lgEffects_CharID0257firstname = yes lgEffects_CharID0257lastname = yes }
+lgEffects_CharID0258 = { set_variable = { which = lgVar_CharID0258 value = 1 } lgEffects_CharID0258firstname = yes lgEffects_CharID0258lastname = yes }
+lgEffects_CharID0259 = { set_variable = { which = lgVar_CharID0259 value = 1 } lgEffects_CharID0259firstname = yes lgEffects_CharID0259lastname = yes }
+lgEffects_CharID0260 = { set_variable = { which = lgVar_CharID0260 value = 1 } lgEffects_CharID0260firstname = yes lgEffects_CharID0260lastname = yes }
+
+lgEffects_CharID0261 = { set_variable = { which = lgVar_CharID0261 value = 1 } lgEffects_CharID0261firstname = yes lgEffects_CharID0261lastname = yes }
+lgEffects_CharID0262 = { set_variable = { which = lgVar_CharID0262 value = 1 } lgEffects_CharID0262firstname = yes lgEffects_CharID0262lastname = yes }
+lgEffects_CharID0263 = { set_variable = { which = lgVar_CharID0262 value = 1 } lgEffects_CharID0263firstname = yes lgEffects_CharID0263lastname = yes }
+lgEffects_CharID0264 = { set_variable = { which = lgVar_CharID0264 value = 1 } lgEffects_CharID0264firstname = yes lgEffects_CharID0264lastname = yes }
+lgEffects_CharID0265 = { set_variable = { which = lgVar_CharID0265 value = 1 } lgEffects_CharID0265firstname = yes lgEffects_CharID0265lastname = yes }
+lgEffects_CharID0266 = { set_variable = { which = lgVar_CharID0266 value = 1 } lgEffects_CharID0266firstname = yes lgEffects_CharID0266lastname = yes }
+lgEffects_CharID0267 = { set_variable = { which = lgVar_CharID0267 value = 1 } lgEffects_CharID0267firstname = yes lgEffects_CharID0267lastname = yes }
+lgEffects_CharID0268 = { set_variable = { which = lgVar_CharID0268 value = 1 } lgEffects_CharID0268firstname = yes lgEffects_CharID0268lastname = yes }
+lgEffects_CharID0269 = { set_variable = { which = lgVar_CharID0269 value = 1 } lgEffects_CharID0269firstname = yes lgEffects_CharID0269lastname = yes }
+lgEffects_CharID0270 = { set_variable = { which = lgVar_CharID0270 value = 1 } lgEffects_CharID0270firstname = yes lgEffects_CharID0270lastname = yes }
+
+lgEffects_CharID0271 = { set_variable = { which = lgVar_CharID0271 value = 1 } lgEffects_CharID0271firstname = yes lgEffects_CharID0271lastname = yes }
+lgEffects_CharID0272 = { set_variable = { which = lgVar_CharID0272 value = 1 } lgEffects_CharID0272firstname = yes lgEffects_CharID0272lastname = yes }
+lgEffects_CharID0273 = { set_variable = { which = lgVar_CharID0272 value = 1 } lgEffects_CharID0273firstname = yes lgEffects_CharID0273lastname = yes }
+lgEffects_CharID0274 = { set_variable = { which = lgVar_CharID0274 value = 1 } lgEffects_CharID0274firstname = yes lgEffects_CharID0274lastname = yes }
+lgEffects_CharID0275 = { set_variable = { which = lgVar_CharID0275 value = 1 } lgEffects_CharID0275firstname = yes lgEffects_CharID0275lastname = yes }
+lgEffects_CharID0276 = { set_variable = { which = lgVar_CharID0276 value = 1 } lgEffects_CharID0276firstname = yes lgEffects_CharID0276lastname = yes }
+lgEffects_CharID0277 = { set_variable = { which = lgVar_CharID0277 value = 1 } lgEffects_CharID0277firstname = yes lgEffects_CharID0277lastname = yes }
+lgEffects_CharID0278 = { set_variable = { which = lgVar_CharID0278 value = 1 } lgEffects_CharID0278firstname = yes lgEffects_CharID0278lastname = yes }
+lgEffects_CharID0279 = { set_variable = { which = lgVar_CharID0279 value = 1 } lgEffects_CharID0279firstname = yes lgEffects_CharID0279lastname = yes }
+lgEffects_CharID0280 = { set_variable = { which = lgVar_CharID0280 value = 1 } lgEffects_CharID0280firstname = yes lgEffects_CharID0280lastname = yes }
+
+lgEffects_CharID0281 = { set_variable = { which = lgVar_CharID0281 value = 1 } lgEffects_CharID0281firstname = yes lgEffects_CharID0281lastname = yes }
+lgEffects_CharID0282 = { set_variable = { which = lgVar_CharID0282 value = 1 } lgEffects_CharID0282firstname = yes lgEffects_CharID0282lastname = yes }
+lgEffects_CharID0283 = { set_variable = { which = lgVar_CharID0282 value = 1 } lgEffects_CharID0283firstname = yes lgEffects_CharID0283lastname = yes }
+lgEffects_CharID0284 = { set_variable = { which = lgVar_CharID0284 value = 1 } lgEffects_CharID0284firstname = yes lgEffects_CharID0284lastname = yes }
+lgEffects_CharID0285 = { set_variable = { which = lgVar_CharID0285 value = 1 } lgEffects_CharID0285firstname = yes lgEffects_CharID0285lastname = yes }
+lgEffects_CharID0286 = { set_variable = { which = lgVar_CharID0286 value = 1 } lgEffects_CharID0286firstname = yes lgEffects_CharID0286lastname = yes }
+lgEffects_CharID0287 = { set_variable = { which = lgVar_CharID0287 value = 1 } lgEffects_CharID0287firstname = yes lgEffects_CharID0287lastname = yes }
+lgEffects_CharID0288 = { set_variable = { which = lgVar_CharID0288 value = 1 } lgEffects_CharID0288firstname = yes lgEffects_CharID0288lastname = yes }
+lgEffects_CharID0289 = { set_variable = { which = lgVar_CharID0289 value = 1 } lgEffects_CharID0289firstname = yes lgEffects_CharID0289lastname = yes }
+lgEffects_CharID0290 = { set_variable = { which = lgVar_CharID0290 value = 1 } lgEffects_CharID0290firstname = yes lgEffects_CharID0290lastname = yes }
+
+lgEffects_CharID0291 = { set_variable = { which = lgVar_CharID0291 value = 1 } lgEffects_CharID0291firstname = yes lgEffects_CharID0291lastname = yes }
+lgEffects_CharID0292 = { set_variable = { which = lgVar_CharID0292 value = 1 } lgEffects_CharID0292firstname = yes lgEffects_CharID0292lastname = yes }
+lgEffects_CharID0293 = { set_variable = { which = lgVar_CharID0292 value = 1 } lgEffects_CharID0293firstname = yes lgEffects_CharID0293lastname = yes }
+lgEffects_CharID0294 = { set_variable = { which = lgVar_CharID0294 value = 1 } lgEffects_CharID0294firstname = yes lgEffects_CharID0294lastname = yes }
+lgEffects_CharID0295 = { set_variable = { which = lgVar_CharID0295 value = 1 } lgEffects_CharID0295firstname = yes lgEffects_CharID0295lastname = yes }
+lgEffects_CharID0296 = { set_variable = { which = lgVar_CharID0296 value = 1 } lgEffects_CharID0296firstname = yes lgEffects_CharID0296lastname = yes }
+lgEffects_CharID0297 = { set_variable = { which = lgVar_CharID0297 value = 1 } lgEffects_CharID0297firstname = yes lgEffects_CharID0297lastname = yes }
+lgEffects_CharID0298 = { set_variable = { which = lgVar_CharID0298 value = 1 } lgEffects_CharID0298firstname = yes lgEffects_CharID0298lastname = yes }
+lgEffects_CharID0299 = { set_variable = { which = lgVar_CharID0299 value = 1 } lgEffects_CharID0299firstname = yes lgEffects_CharID0299lastname = yes }
+lgEffects_CharID0300 = { set_variable = { which = lgVar_CharID0300 value = 1 } lgEffects_CharID0300firstname = yes lgEffects_CharID0300lastname = yes }
+
+#
+a = {
+
+}
+
+# lgEffects_CharID0001 = { set_variable = { which = lgVar_CharID0001 value = 1 } set_variable = { which = lgVar_CharID0001fn value = lgVar_fnCreated } set_variable = { which = lgVar_CharID0001ln value = lgVar_lnCreated } }
+# lgEffects_CID0001 = { set_variable = { which = lgVar_CID0001 value = 1 } set_variable = { which = lgVar_CID0001fn value = lgVar_fnCreated } set_variable = { which = lgVar_CID0001ln value = lgVar_lnCreated } }
+
+# OLD
+
+# lgEffects_CharID0001 = {
+# 	set_variable = {
+# 		which = lgVar_CharID0001
+# 		value = 0001
+# 	}
+# 	set_variable = {
+# 		which = lgVar_CharID0001firstname
+# 		value = lgVar_FirstNameCreated
+# 	}
+# 	set_variable = {
+# 		which = lgVar_CharID0001lastname
+# 		value = lgVar_LastNameCreated
+# 	}
+# }

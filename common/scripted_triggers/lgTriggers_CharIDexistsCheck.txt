@@ -1,0 +1,26 @@
+lgTriggers_CharIDexistsCheck = {
+	if = { limit = { lgTriggers_CharID0001requested = yes } check_variable = { which = lgVar_CharID0001 value = 1 } }
+}
+
+lgTriggers_CharID0001requested = { has_country_flag = lgFlags_CharID0001infoRequested }
+lgTriggers_CharID0002requested = { has_country_flag = lgFlags_CharID0001infoRequested }
+
+lgTriggers_CharacterGenerated = {
+	has_country_flag = lgFlags_CharacterGenerated
+}
+
+lgTriggers_Char0001generated = { has_country_flag = lgFlags_Char0001Generated }
+lgTriggers_Char0002generated = { has_country_flag = lgFlags_Char0002Generated }
+
+lgTriggers_Char0001generating = { has_country_flag = lgFlags_Char0001Generating }
+lgTriggers_Char0002generating = { has_country_flag = lgFlags_Char0002Generating }
+
+lgTriggers_Char0001ageSet = { had_country_flag = { flag = lgFlags_Char0001ageSet days = 365 } }
+lgTriggers_Char0002ageSet = { had_country_flag = { flag = lgFlags_Char0002ageSet days = 365 } }
+
+lgTriggers_CharBday_Check = {
+
+}
+
+lgTriggers_Char0001bdayCheck = { is_variable_equal = { which = lgVar_DateTracked which = lgVar_Char0001bday } has_country_flag = lgFlags_Char0001ageSet }
+lgTriggers_Char0002bdayCheck = { is_variable_equal = { which = lgVar_DateTracked which = lgVar_Char0002bday } has_country_flag = lgFlags_Char0002ageSet }

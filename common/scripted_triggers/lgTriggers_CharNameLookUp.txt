@@ -1,0 +1,5 @@
+lgTriggers_Char1FirstName_Adam = { check_variable = { which = lgVar_Char1FirstNameLookup value = 0 } NOT = { check_variable = { which = lgVar_Char1FirstNameLookup value = 1 } } }
+lgTriggers_Char1FirstName_Alec = { check_variable = { which = lgVar_Char1FirstNameLookup value = 1 } NOT = { check_variable = { which = lgVar_Char1FirstNameLookup value = 2 } } }
+
+# Last name
+lgTriggers_Char1LastName_Adams = { check_variable = { which = lgVar_Char1LastNameLookup value = 0 } NOT = { check_variable = { which = lgVar_Char1LastNameLookup value = 1 } } }

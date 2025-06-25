@@ -1,0 +1,26 @@
+﻿l_english:
+ lgEvents_ENG_UnreformedParliament.0001.t:1 "City Demands Seat in [Root.Owner.GetParliamentName]"
+ lgEvents_ENG_UnreformedParliament.0001.d:1 "The city of $PROVINCENAME$ has grown rich and prosperous. They now want a seat in our parliament. The argument of their representatives seems to be centered around a statement about 'no taxation without representation'."
+ lgEvents_ENG_UnreformedParliament.0001.a:0 "Grant it!"
+ lgEvents_ENG_UnreformedParliament.0001.b:0 "Refuse it!"
+ lgEvents_ENG_UnreformedParliament.0001.c:0 "Acknowledged."
+ 
+ lgEvents_ENG_UnreformedParliament.0002.t:0 "Rotten Boroughs"
+ lgEvents_ENG_UnreformedParliament.0002.d:2 "Due to its seat in [Root.Owner.GetParliamentWithGrammar], [Root.GetName] can boast that it has quite some influence on the politics of our country. That seat is, however, the only thing that distinguishes the area from much richer parts of our state, such as the province of [envious_province.GetName], which looks on at [Root.GetName] with great envy. This is something that the local landowners have come to realize, and through a combination of bribes and threats, the votes of [Root.GetName] have come to be controlled entirely by a few corrupt yet influential individuals.\nAccordingly, the petition was signed by the residents of [envious_province.GetName] and delivered to the Parliament calling for the parliamentary reforms. However, there is a lack of will in the House of Commons to tackle parliamentary reforms, which has voted to reject the petition."
+ lgEvents_ENG_UnreformedParliament.0002.a:0 "Rotten!"
+ lgEvents_ENG_UnreformedParliament.0002.a.tt:0 "This Parliament Seat will change its voting pattern from now on."
+ lgEvents_ENG_UnreformedParliament.0002.b:0 "We must reassign the seat."
+ lgEvents_ENG_UnreformedParliament.0002.c:0 "Acknowledged."
+ 
+ lgEvents_ENG_UnreformedParliament.0003.t:0 "Corruption of Vote"
+ lgEvents_ENG_UnreformedParliament.0003.d:2 "The MPs of the rotten boroughs in [Root.GetName] have chosen to oppose our proposal in [Root.Owner.GetParliamentWithGrammar]. It seems the landowner who controls the area has been persuaded that the issue is not in his best interest."
+ lgEvents_ENG_UnreformedParliament.0003.a:0 "Rotten!"
+ lgEvents_ENG_UnreformedParliament.0003.b:0 "We must bribe the landowner then."
+ 
+ lgEvents_ENG_UnreformedParliament.0004.t:0 "Rotten Borough"
+ lgEvents_ENG_UnreformedParliament.0004.d:1 "While it looked like the vote of [Root.GetName] would in fact come out in support of the currently proposed reform to eliminate the Rotten Boroughs in our [Root.Owner.GetParliamentName], it seems whoever supported the MP in the area suddenly realized that he was about to lose his seat. He has now managed to convince the MP to vote against our reform."
+ lgEvents_ENG_UnreformedParliament.0004.a:0 "Rotten!"
+ 
+ lgEvents_ENG_UnreformedParliament.1000t:0 ""
+ lgEvents_ENG_UnreformedParliament.1000d:1 ""
+ lgEvents_ENG_UnreformedParliament.1000.a:0 ""

@@ -1,0 +1,143 @@
+namespace = lgEvents_ArmyInBritainCount
+
+country_event = {
+	id = lgEvents_ArmyInBritainCount.0001
+	title = lgEvents_ArmyInBritainCount.0001t
+	desc = lgEvents_ArmyInBritainCount.0001d
+	
+	picture = LAND_MILITARY_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+		ai = no
+	}
+	
+	immediate = {
+		
+	}
+	
+	option = {
+		name = "lgEvents_ArmyInBritainCount.0001.a"
+		lgEffects_ArmyInBritainCount1 = yes
+	}
+}
+
+province_event = {
+	id = lgEvents_ArmyInBritainCount.0002
+	title = lgEvents_ArmyInBritainCount.0002t
+	desc = lgEvents_ArmyInBritainCount.0002d
+	
+	picture = LAND_MILITARY_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+		
+	}
+	
+	immediate = {
+		lgEffects_ArmyInBritainCount2 = yes
+		# export_to_variable = {
+		# 	which = lgVar_LandForceLimit
+		# 	value = land_forcelimit
+		# }
+	}
+	
+	option = {
+		name = "lgEvents_ArmyInBritainCount.0002.a"
+		lgEffects_ArmySizeInBritainRestriction = yes
+	}
+}
+
+country_event = {
+	id = lgEvents_ArmyInBritainCount.0003
+	title = lgEvents_ArmyInBritainCount.0003t
+	desc = {
+		trigger = {
+			has_country_flag = lgFlags_ENG_ArmyInBritainSizeExceeded1
+		}
+		desc = lgEvents_ArmyInBritainCount.0003d
+	}
+	desc = {
+		trigger = {
+			has_country_flag = lgFlags_ENG_ArmyInBritainSizeExceeded2
+		}
+		desc = lgEvents_ArmyInBritainCount.0003d2
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				OR = {
+					has_country_flag = lgFlags_ENG_ArmyInBritainSizeExceeded1
+					has_country_flag = lgFlags_ENG_ArmyInBritainSizeExceeded2
+				}
+			}
+		}
+		desc = lgEvents_ArmyInBritainCount.0003d3
+	}
+	
+	picture = PARLIAMENT_eventPicture
+	
+	is_triggered_only = yes
+	# hidden = yes
+	
+	trigger = {
+		
+	}
+	
+	immediate = {
+		
+	}
+	
+	option = {
+		trigger = {
+			has_country_flag = lgFlags_ENG_ArmyInBritainSizeExceeded1
+		}
+		name = "lgEvents_ArmyInBritainCount.0003.a"
+		add_stability = -1
+		add_country_modifier = {
+			name = lgModifiers_ArmyDelegtimized1
+			duration = -1
+		}
+	}
+	
+	option = {
+		trigger = {
+			has_country_flag = lgFlags_ENG_ArmyInBritainSizeExceeded2
+		}
+		name = "lgEvents_ArmyInBritainCount.0003.b"
+		add_stability = -2
+		remove_country_modifier = lgModifiers_ArmyDelegtimized1
+		add_country_modifier = {
+			name = lgModifiers_ArmyDelegtimized2
+			duration = -1
+		}
+	}
+	
+	option = {
+		trigger = {
+			NOT = {
+				OR = {
+					has_country_flag = lgFlags_ENG_ArmyInBritainSizeExceeded1
+					has_country_flag = lgFlags_ENG_ArmyInBritainSizeExceeded2
+				}
+			}
+		}
+		name = "lgEvents_ArmyInBritainCount.0003.c"
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_ArmyDelegtimized1
+			}
+			remove_country_modifier = lgModifiers_ArmyDelegtimized1
+		}
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_ArmyDelegtimized2
+			}
+			remove_country_modifier = lgModifiers_ArmyDelegtimized2
+		}
+	}
+}

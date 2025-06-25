@@ -1,8 +1,8 @@
 #setup at beginning of each election
 election1688_startup = {
 	hidden_effect = {
-		set_variable = { which = whigVar value = 0 } #whig
-		set_variable = { which = toryVar value = 0 } #Tory
+		set_variable = { which = lgVar_Whig value = 0 } # Whig
+		set_variable = { which = lgVar_Tory value = 0 } # Tory
 		every_owned_province = {
 			limit = {
 				has_seat_in_parliament = yes
@@ -26,6 +26,244 @@ election1688_startup = {
 		}
 	}
 }
+
+election1688_contest = {
+	hidden_effect = {
+		# Contest - Whig favored
+		if = {
+			limit = {
+				has_country_flag = lgFlags_FavoredWhigs_1688
+			}
+			every_owned_province = {
+				limit = {
+					has_seat_in_parliament = yes
+				}
+				random_list = {
+					# Whigs
+					55 = {
+						modifier = {
+							factor = 2
+							development = 30
+							NOT = {
+								development = 15
+							}
+						}
+						modifier = {
+							factor = 1
+							province_has_center_of_trade_of_level = 1
+						}
+						modifier = {
+							factor = 2
+							owner = {
+								has_country_modifier = lgModifiers_ToryMinistry
+								OR = {
+									war_exhaustion = 0.75
+									NOT = {
+										stability = 0
+									}
+								}
+							}
+						}
+						add_province_modifier = {
+							name = "lgModifiers_MPsWhig"
+							duration = -1
+						}
+						remove_province_modifier = "lgModifiers_MPsTory"
+						province_event = { id = lgVoting1688.1 days = 1 }
+					}
+					# Tories
+					45 = {
+						modifier = {
+							factor = 2
+							development = 1
+							NOT = {
+								development = 15
+							}
+						}
+						modifier = {
+							factor = 2
+							trade_goods = wool
+						}
+						modifier = {
+							factor = 3
+							trade_goods = grain
+						}
+						modifier = {
+							factor = 0
+							OR = {
+								NOT = {
+									religion = anglican
+								}
+								NOT = {
+									religion = protestant
+								}
+								NOT = {
+									religion = reformed
+								}
+								NOT = {
+									religion = hussite
+								}
+							}
+						}
+						modifier = {
+							factor = 2
+							owner = {
+								has_country_modifier = lgModifiers_WhigMinistry
+								OR = {
+									war_exhaustion = 0.75
+									NOT = {
+										stability = 0
+									}
+								}
+							}
+						}
+						add_province_modifier = {
+							name = "lgModifiers_MPsTory"
+							duration = -1
+						}
+						remove_province_modifier = "lgModifiers_MPsWhig"
+						province_event = { id = lgVoting1688.2 days = 1 }
+					}
+				}
+			}
+			country_event = { id = parliamentary_elections.00011 days = 2 } # start counting
+		}
+		# Contest - Tory favored
+		else_if = {
+			limit = {
+				has_country_flag = lgFlags_FavoredTories_1688
+			}
+			every_owned_province = {
+				limit = {
+					has_seat_in_parliament = yes
+				}
+				random_list = {
+					# Whigs
+					45 = {
+						modifier = {
+							factor = 2
+							development = 30
+							NOT = {
+								development = 15
+							}
+						}
+						modifier = {
+							factor = 1
+							province_has_center_of_trade_of_level = 1
+						}
+						modifier = {
+							factor = 2
+							owner = {
+								has_country_modifier = lgModifiers_ToryMinistry
+								OR = {
+									war_exhaustion = 0.75
+									NOT = {
+										stability = 0
+									}
+								}
+							}
+						}
+						add_province_modifier = {
+							name = "lgModifiers_MPsWhig"
+							duration = -1
+						}
+						remove_province_modifier = "lgModifiers_MPsTory"
+						province_event = { id = lgVoting1688.1 days = 1 }
+					}
+					#Tories
+					55 = {
+						modifier = {
+							factor = 2
+							development = 1
+							NOT = {
+								development = 15
+							}
+						}
+						modifier = {
+							factor = 2
+							trade_goods = wool
+						}
+						modifier = {
+							factor = 3
+							trade_goods = grain
+						}
+						modifier = {
+							factor = 2
+							owner = {
+								has_country_modifier = lgModifiers_WhigMinistry
+								OR = {
+									war_exhaustion = 0.75
+									NOT = {
+										stability = 0
+									}
+								}
+							}
+						}
+						modifier = {
+							factor = 0
+							OR = {
+								NOT = {
+									religion = anglican
+								}
+								NOT = {
+									religion = protestant
+								}
+								NOT = {
+									religion = reformed
+								}
+								NOT = {
+									religion = hussite
+								}
+							}
+						}
+						add_province_modifier = {
+							name = "lgModifiers_MPsTory"
+							duration = -1
+						}
+						remove_province_modifier = "lgModifiers_MPsWhig"
+						province_event = { id = lgVoting1688.2 days = 1 }
+					}
+				}
+			}
+			country_event = { id = parliamentary_elections.00011 days = 2 } # start counting
+		}
+		else_if = {
+			limit = {
+				has_country_flag = lgFlags_Neutral
+			}
+			every_owned_province = {
+				limit = {
+					has_seat_in_parliament = yes
+				}
+				random_list = {
+					# Whigs
+					50 = {
+						add_province_modifier = {
+							name = "lgModifiers_MPsWhig"
+							duration = -1
+						}
+						remove_province_modifier = "lgModifiers_MPsTory"
+						province_event = { id = lgVoting1688.1 days = 1 }
+					}
+					#Tories
+					50 = {
+						add_province_modifier = {
+							name = "lgModifiers_MPsTory"
+							duration = -1
+						}
+						remove_province_modifier = "lgModifiers_MPsWhig"
+						province_event = { id = lgVoting1688.2 days = 1 }
+					}
+				}
+			}
+			country_event = { id = parliamentary_elections.00011 days = 2 } # start counting
+		}
+	}
+}
+
+#######
+# OLD #
+#######
 
 #contest - whig favored
 election1688_contest1 = {
@@ -93,6 +331,12 @@ election1688_contest1 = {
 							NOT = {
 								religion = protestant
 							}
+							NOT = {
+								religion = reformed
+							}
+							NOT = {
+								religion = hussite
+							}
 						}
 					}
 					modifier = {
@@ -128,7 +372,7 @@ election1688_contest2 = {
 				has_seat_in_parliament = yes
 			}
 			random_list = {
-				#Whigs
+				# Whigs
 				45 = {
 					modifier = {
 						factor = 2
@@ -186,7 +430,7 @@ election1688_contest3 = {
 				has_seat_in_parliament = yes
 			}
 			random_list = {
-				#Whigs
+				# Whigs
 				50 = {
 					add_province_modifier = {
 						name = "lgModifiers_MPsWhig"
@@ -210,34 +454,90 @@ election1688_contest3 = {
 	}
 }
 
-#counting seats won
+# Counting seats won
 election1688_count = {
+	set_variable = { # Setting the value of lgVar_WhigSeatsWon to that of lgVar_Whig
+		which = lgVar_WhigSeatsWon
+		value = lgVar_Whig
+	}
+	set_variable = {  # Setting the value of lgVar_TorySeatsWon to that of lgVar_Tory
+		which = lgVar_TorySeatsWon
+		value = lgVar_Tory
+	}
+	# Add a set_variable for lgVar_ParliamentaryMajorityCURRENT here
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = lgVar_ParliamentaryMajority
+					value = 0
+				}
+			}
+		}
+		set_variable = { # Saving the variable value for lgVar_ParliamentaryMajority from the last general election
+			which = lgVar_ParliamentaryMajorityOld
+			value = lgVar_ParliamentaryMajority
+		}
+	}
+	set_variable = { # Resetting the value in preparation for the new majority
+		which = lgVar_ParliamentaryMajority
+		value = 0
+	}
 	# WHIG CONTROL
 	if = {
 		limit = {
-			check_variable = { which = whigVar which = toryVar }
-			NOT = { check_variable = { which = toryVar which = whigVar } }
-			NOT = { is_variable_equal = { which = whigVar which = toryVar } }
+			check_variable = { which = lgVar_Whig which = lgVar_Tory } # There must be more Whig seats than Tory seats
+			NOT = { check_variable = { which = lgVar_Tory which = lgVar_Whig } }
+			NOT = { is_variable_equal = { which = lgVar_Whig which = lgVar_Tory } }
 		}
+		subtract_variable = { # lgVar_WhigSeatsWon - lgVar_TorySeatsWon = lgVar_WhigSeatsWon (I think?)
+			which = lgVar_WhigSeatsWon
+			which = lgVar_TorySeatsWon
+		}
+		set_variable = { # Setting lgVar_ParliamentaryMajority value to the result of the subtract_variable immediately above
+			which = lgVar_ParliamentaryMajority
+			value = lgVar_WhigSeatsWon
+		}
+		set_country_flag = lgFlags_WhigsWonElection1688
+		# if = {
+		# 	limit = {
+		# 		has_country_flag = lgFlags_ToriesWonElection1688
+		# 	}
+		# 	clr_country_flag = lgFlags_ToriesWonElection1688
+		# }
+		clr_country_flag = lgFlags_ToriesWonElection1688
+		clr_country_flag = lgFlags_IndecisiveElection
 		country_event = { id = parliamentary_elections.0002 days = 28 }
 	}
 	# TORY CONTROL
-	if = {
+	else_if = {
 		limit = {
-			check_variable = { which = toryVar which = whigVar } # there must be more tory seats than whig seats
-			NOT = { check_variable = { which = whigVar which = toryVar } }
-			NOT = { is_variable_equal = { which = whigVar which = toryVar } }
+			check_variable = { which = lgVar_Tory which = lgVar_Whig } # There must be more Tory seats than Whig seats
+			NOT = { check_variable = { which = lgVar_Whig which = lgVar_Tory } }
+			NOT = { is_variable_equal = { which = lgVar_Whig which = lgVar_Tory } }
 		}
-		country_event = { id = parliamentary_elections.0003 days = 28 }
+		subtract_variable = {
+			which = lgVar_TorySeatsWon
+			which = lgVar_WhigSeatsWon
+		}
+		set_variable = {
+			which = lgVar_ParliamentaryMajority
+			value = lgVar_TorySeatsWon
+		}
+		set_country_flag = lgFlags_ToriesWonElection1688
+		clr_country_flag = lgFlags_WhigsWonElection1688
+		clr_country_flag = lgFlags_IndecisiveElection
+		country_event = { id = parliamentary_elections.0002 days = 28 }
 	}
 	# DEADLOCK
-	if = {
+	else_if = {
 		limit = {
-			is_variable_equal = { which = whigVar which = toryVar } # must be equal
-			#NOT = { check_variable = { which = whigVar which = toryVar } }
-			#NOT = { check_variable = { which = toryVar which = whigVar } }
+			is_variable_equal = { which = lgVar_Whig which = lgVar_Tory } # There must be equal number of seats between the Tories and the Whigs
+			#NOT = { check_variable = { which = lgVar_Whig which = lgVar_Tory } }
+			#NOT = { check_variable = { which = lgVar_Tory which = lgVar_Whig } }
 		}
-		country_event = { id = parliamentary_elections.0004 days = 28 }
+		set_country_flag = lgFlags_IndecisiveElection
+		country_event = { id = parliamentary_elections.0002 days = 28 }
 	}
 }
 
@@ -248,19 +548,19 @@ election1688_result = {
 	if = {
 		limit = {
 			check_variable = {
-				which = whigVar
-				which = toryVar
-			} # there must be more whig seats than tory seats
+				which = lgVar_Whig
+				which = lgVar_Tory
+			} # There must be more whig seats than tory seats
 			NOT = {
 				check_variable = {
-					which = toryVar
-					which = whigVar
+					which = lgVar_Tory
+					which = lgVar_Whig
 				}
 			}
 			NOT = {
 				is_variable_equal = {
-					which = toryVar
-					which = whigVar
+					which = lgVar_Tory
+					which = lgVar_Whig
 				} # greater than is only allowed
 				#is_variable_equal = { which = var1 which = var2 } # greater than is only allowed (suspended)
 			}
@@ -270,19 +570,19 @@ election1688_result = {
 	if = {
 		limit = {
 			check_variable = {
-				which = toryVar
-				which = whigVar
-			} # there must be more tory seats than whig seats
+				which = lgVar_Tory
+				which = lgVar_Whig
+			} # There must be more tory seats than whig seats
 			NOT = {
 				check_variable = {
-					which = whigVar
-					which = toryVar
+					which = lgVar_Whig
+					which = lgVar_Tory
 				}
 			}
 			NOT = {
 				is_variable_equal = {
-					which = whigVar
-					which = toryVar
+					which = lgVar_Whig
+					which = lgVar_Tory
 				} # greater than is only allowed
 				#is_variable_equal = { which = var2 which = var1 } # greater than is only allowed (suspended)
 			}
@@ -291,10 +591,10 @@ election1688_result = {
 	}
 	if = {
 		limit = {
-			#check_variable = { which = toryVar which = whigVar } # check how many seats each party won
+			#check_variable = { which = lgVar_Tory which = lgVar_Whig } # check how many seats each party won
 			is_variable_equal = {
-				which = whigVar
-				which = toryVar
+				which = lgVar_Whig
+				which = lgVar_Tory
 			} # must be equal
 			#is_variable_equal = { which = var2 which = var1 } # must be equal (suspended)
 		}

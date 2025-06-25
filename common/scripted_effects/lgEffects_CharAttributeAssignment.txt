@@ -1,0 +1,6 @@
+lgEffects_CharAttributeSetup = {
+	set_variable = {
+		which = CharID0001attribute1
+		value = 1
+	}
+}

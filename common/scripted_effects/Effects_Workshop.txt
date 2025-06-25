@@ -1,0 +1,69 @@
+# Any scripted effects that are discarded or temporarily put out of use should be put here
+
+lgEffects_CharAgeSetting = {
+	if = {
+		limit = {
+			lgTriggers_CharacterGenerated = yes
+		}
+	}
+}
+
+lgEffects_AgeInDays = {
+	if = {
+		limit = {
+			lgTriggers_CharID0001 = yes
+		}
+		set_variable = {
+			which = lgVar_AgeInDays
+			value = 0
+		}
+	}
+}
+
+lgEffects_Char0001AgeInDays = {
+	set_country_flag = lgFlags_NewCharAge
+	if = {
+		limit = {
+			lgTriggers_CharID0001 = yes
+			has_country_flag = lgFlags_Char0001Generating
+		}
+		set_variable = {
+			which = lgVar_365daysPassed
+			value = 0
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				lgTriggers_CharID0001 = yes
+			}
+			has_country_flag = lgFlags_Char0001ageSet
+		}
+		change_variable = {
+			which = lgVar_365daysPassed
+			value = 1
+		}
+	}
+	set_variable = {
+		which = lgVar_AgeInDays
+	}
+	
+	if = {
+		limit = {
+			has_country_flag = lgFlags_Char0001ageSet
+		}
+		set_country_flag = lgFlags_Char0001ageUp
+		clr_country_flag = lgFlags_Char0001ageSet
+		set_variable = {
+			which = lgVar_365daysPassed
+			value = 1
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_country_flag = lgFlags_Char0001ageSet
+			}
+		}
+	}
+}

@@ -1,0 +1,265 @@
+namespace = lgEvents_ENG_Bills
+
+country_event = {
+	id = lgEvents_ENG_Bills.0001
+	title = lgEvents_ENG_Bills.0001t
+	desc = lgEvents_ENG_Bills.0001d
+	
+	picture = PARLIAMENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		lgTriggers_parliamentBritish = yes
+		lgTriggers_ParliamentaryGovernment = yes
+		is_year = 1694
+		NOT = {
+			has_country_flag = lgFlags_BankOfEnglandFounded
+		}
+		ai = no
+	}
+	
+	# mean_time_to_happen = {
+	# 	months = 120
+		
+	# 	modifier = {
+	# 		factor = 0.75
+	# 		economic_ideas = 4		# National Bank
+	# 	}
+	# }
+	
+	immediate = {
+		
+	}
+	
+	option = {
+		name = lgEvents_ENG_Bills.0001.a
+		add_country_modifier = {
+			name = lgModifiers_BankOfEngland
+			duration = -1
+		}
+		set_country_flag = lgFlags_BankOfEngland
+		set_country_flag = lgFlags_BankOfEnglandFounded
+	}
+}
+
+country_event = {
+	id = lgEvents_ENG_Bills.0002
+	title = lgEvents_ENG_Bills.0002t
+	desc = {
+		trigger = {
+			had_country_flag = {
+				flag = lgFlags_AtPeace
+				days = 180
+			}
+			NOT = {
+				had_country_flag = {
+					flag = lgFlags_AtPeace
+					days = 365
+				}
+			}
+		}
+		desc = lgEvents_ENG_Bills.0002d1
+	}
+	desc = {
+		trigger = {
+			had_country_flag = {
+				flag = lgFlags_AtPeace
+				days = 365
+			}
+			has_country_flag = lgFlags_had10000
+		}
+		desc = lgEvents_ENG_Bills.0002d2
+	}
+	desc = {
+		trigger = {
+			has_country_flag = lgFlags_had7000
+			OR = {
+				any_rival_country = {
+					war_with = ROOT
+				}
+				any_known_country = {
+					same_continent = ROOT
+					has_opinion_modifier = {
+						who = FROM
+						modifier = aggressive_expansion
+					}
+					NOT = {
+						has_opinion_modifier = {
+							modifier = aggressive_expansion
+							who = FROM
+							value = -49
+						}
+					}
+				}
+			}
+		}
+		desc = lgEvents_ENG_Bills.0002d3
+	}
+	
+	picture = PARLIAMENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		lgTriggers_parliamentBritish = yes
+		lgTriggers_Eras1688 = yes
+		NOT = {
+			OR = {
+				num_of_rebel_armies = 1
+				num_of_rebel_controlled_provinces = 1
+			}
+		}
+		OR = {
+			AND = {
+				had_country_flag = {
+					flag = lgFlags_AtPeace
+					days = 180
+				}
+				NOT = {
+					has_country_flag = lgFlags_had10000
+				}
+			}
+			AND = {
+				had_country_flag = {
+					flag = lgFlags_AtPeace
+					days = 365
+				}
+				NOT = {
+					has_country_flag = lgFlags_had7000
+				}
+				had_country_flag = {
+					flag = lgFlags_had10000
+					days = 365
+				}
+				has_country_flag = lgFlags_had10000
+				has_country_flag = lgFlags_AtPeace
+			}
+			AND = {
+				has_country_flag = lgFlags_had7000
+				NOT = {
+					has_country_flag = lgFlags_had69000
+				}
+				OR = {
+					any_rival_country = {
+						war_with = ROOT
+					}
+					any_war_enemy_country = {
+						army_size = 70
+					}
+					any_known_country = {
+						same_continent = ROOT
+						has_opinion_modifier = {
+							who = FROM
+							modifier = aggressive_expansion
+						}
+						NOT = {
+							has_opinion_modifier = {
+								modifier = aggressive_expansion
+								who = FROM
+								value = -49
+							}
+						}
+					}
+				}
+			}
+		}
+		# variable_arithmetic_trigger = {
+		# 	export_to_variable = {
+		# 		which = lgVar_LandForceLimit
+		# 		value = land_forcelimit
+		# 	}
+		# }
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				is_at_war = no
+				had_country_flag = {
+					flag = lgFlags_AtPeace
+					days = 180
+				}
+				# NOT = {
+				# 	had_country_flag = {
+				# 		flag = lgFlags_AtPeace
+				# 		days = 365
+				# 	}
+				# }
+				NOT = {
+					has_country_flag = lgFlags_had10000
+				}
+			}
+			set_variable = {
+				which = lgVar_ArmySizeInBritainRestriction2
+				value = 10
+			}
+			set_country_flag = lgFlags_had10000
+		}
+		else_if = {
+			limit = {
+				is_at_war = no
+				had_country_flag = {
+					flag = lgFlags_AtPeace
+					days = 365
+				}
+				has_country_flag = lgFlags_had10000
+				NOT = {
+					has_country_flag = lgFlags_had7000
+				}
+			}
+			set_variable = {
+				which = lgVar_ArmySizeInBritainRestriction2
+				value = 7
+			}
+			set_country_flag = lgFlags_had7000
+		}
+		else_if = {
+			limit = {
+				has_country_flag = lgFlags_had7000
+				NOT = {
+					has_country_flag = lgFlags_had69000
+				}
+				OR = {
+					any_rival_country = {
+						war_with = ROOT
+					}
+					any_war_enemy_country = {
+						army_size = 70
+					}
+					any_known_country = {
+						same_continent = ROOT
+						has_opinion_modifier = {
+							who = FROM
+							modifier = aggressive_expansion
+						}
+						NOT = {
+							has_opinion_modifier = {
+								modifier = aggressive_expansion
+								who = FROM
+								value = -49
+							}
+						}
+					}
+				}
+			}
+			set_variable = {
+				which = lgVar_ArmySizeInBritainRestriction2
+				value = 69
+			}
+			set_country_flag = lgFlags_had69000
+		}
+	}
+	
+	option = {
+		# trigger = {
+		# 	is_at_war = no
+		# }
+		name = lgEvents_ENG_Bills.0002.a
+		# set_variable = {
+		# 	which = lgVar_ArmySizeInBritainRestriction2
+		# 	value = 10
+		# }
+		custom_tooltip = lgEvents_ENG_Bills.0002.tt
+	}
+}

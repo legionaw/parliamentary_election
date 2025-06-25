@@ -18,15 +18,15 @@ LgEffects_electionHeld = {
 #			name = "lgModifiers_electionTimer" hidden=yes duration = 1095
 #		}
 #	}
-	hidden_effect = {
-		remove_country_modifier = lgModifiers_ToryMinistry
-		remove_country_modifier = lgModifiers_ToryMinistry2
-		remove_country_modifier = lgModifiers_ConservativeMinistry
-		remove_country_modifier = lgModifiers_WhigMinistry
-		remove_country_modifier = lgModifiers_WalpoleMinistry
-		remove_country_modifier = lgModifiers_WhigMinistry2
-		remove_country_modifier = lgModifiers_FriendsMinistry
-	}
+	# hidden_effect = {
+	# 	remove_country_modifier = lgModifiers_ToryMinistry
+	# 	remove_country_modifier = lgModifiers_ToryMinistry2
+	# 	remove_country_modifier = lgModifiers_ConservativeMinistry
+	# 	remove_country_modifier = lgModifiers_WhigMinistry
+	# 	remove_country_modifier = lgModifiers_WalpoleMinistry
+	# 	remove_country_modifier = lgModifiers_WhigMinistry2
+	# 	remove_country_modifier = lgModifiers_FriendsMinistry
+	# }
 }
 
 LgEffects_RemovePMold = {

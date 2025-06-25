@@ -72,7 +72,7 @@ country_event = {
 		lgEffects_ProtestantRevolution = yes
 		#lg_DutchHelp = yes
 		country_event = {
-			id = lgEventsENG_ConventionParliament0001 days = 15
+			id = lgEvents_ConventionElection.0001 days = 15
 		}
 	}
 }
@@ -82,13 +82,15 @@ country_event = {
 	id = ENG_glorious_revolution.0002
 	title = "ENG_glorious_revolution.0002t"
 	desc = "ENG_glorious_revolution.0002d"
-	picture = DIPLOMACY_eventPicture
+	picture = REFORM_eventPicture
+	
+	major = yes
 	
 	is_triggered_only = yes
 	
 	immediate = {
 		set_country_flag = lgFlags_GloriousRevolution
-		# lgGR_Dutch = yes
+		lgGR_Dutch = yes
 		# lgEffects_GRprevious_dynasty = yes
 		lgEffects_JacobiteRebellionSetup = yes
 		save_event_target_as = GloriousRevolutionCountry
@@ -106,7 +108,7 @@ country_event = {
 		lgEffects_ProtestantRevolution = yes
 		#lg_DutchHelp = yes
 		country_event = {
-			id = lgEventsENG_ConventionParliament0001 days = 15
+			id = lgEvents_ConventionElection.0001 days = 15
 		}
 	}
 }

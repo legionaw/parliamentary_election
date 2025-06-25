@@ -1,0 +1,53 @@
+# Age and birthdays
+lgEffects_NewCharAgeSetup = {
+	lgEffects_AgeSet = yes
+	if = { limit = { lgTriggers_CharID0001 = yes } lgEffects_Char0001ageSet = yes }
+	if = { limit = { lgTriggers_CharID0002 = yes } lgEffects_Char0002ageSet = yes }
+	lgEffects_SetBirthdays = yes
+}
+
+lgEffects_Char0001ageSet = { set_variable = { which = lgVar_Char0001age value = lgVar_AgeSet } set_country_flag = lgFlags_Char0001ageSet }
+lgEffects_Char0002ageSet = { set_variable = { which = lgVar_Char0002age value = lgVar_AgeSet } set_country_flag = lgFlags_Char0002ageSet }
+
+lgEffects_CharAgeUp = {
+	if = { limit = { lgTriggers_Char0001bdayCheck = yes } change_variable = { which = lgVar_Char0001age value = 1 } }
+	if = { limit = { lgTriggers_Char0002bdayCheck = yes } change_variable = { which = lgVar_Char0002age value = 1 } }
+}
+
+lgEffects_AgeSet = { # Figure out the approach to random age setting
+	set_variable = { which = lgVar_AgeSet value = 20 }
+}
+
+lgEffects_SetBirthdays = {
+	lgEffects_SetBdayChar0001 = yes
+	lgEffects_SetBdayChar0002 = yes
+}
+
+lgEffects_SetBdayChar0001 = { if = { limit = { lgTriggers_CharID0001 = yes } set_variable = { which = lgVar_Char0001bday value = lgVar_DateTracked } } }
+lgEffects_SetBdayChar0002 = { if = { limit = { lgTriggers_CharID0002 = yes } set_variable = { which = lgVar_Char0002bday value = lgVar_DateTracked } } }
+
+#
+lgEffects_NewFamilyEstablished = {
+	set_country_flag = lgFlags_NewFamilyEstablished
+}
+
+lgEffects_CreateNodeID = {
+	
+}
+
+####
+
+
+# how to ensure no duplicate change if two chars share same birthday???
+
+lgEffects_CharAgeUpOld = {
+	lgEffects_Char0001AgeUp = yes
+}
+
+lgEffects_Char0001AgeUp = { if = { limit = { lgTriggers_Char0001ageSet = yes } change_variable = { which = lgVar_Char0001age value = 1 } lgEffects_Char0001AgeTimerReset = yes } }
+
+lgEffects_Char0001AgeTimerReset = { clr_country_flag = lgFlags_Char0001ageSet set_country_flag = lgFlags_Char0001ageSet }
+
+lgEffects_BirthdayCheck = {
+	
+}

@@ -1,0 +1,65 @@
+defined_text = {
+	name = GetElectionReaction
+	text = { # Favored party won the election
+		localisation_key = "parliamentary_elections.0002.a1"
+		trigger = {
+			OR = {
+				AND = {
+					has_country_flag = lgFlags_FavoredWhigs_1688
+					has_country_flag = lgFlags_WhigsWonElection1688
+				}
+				AND = {
+					has_country_flag = lgFlags_FavoredTories_1688
+					has_country_flag = lgFlags_ToriesWonElection1688
+				}
+			}
+		}
+	}
+	
+	text = { # Whigs won but not favored
+		localisation_key = "parliamentary_elections.0002.a2"
+		trigger = {
+			has_country_flag = lgFlags_FavoredTories_1688
+			has_country_flag = lgFlags_WhigsWonElection1688
+		}
+	}
+	
+	text = { # Tories won but not favored
+		localisation_key = "parliamentary_elections.0002.a3"
+		trigger = {
+			has_country_flag = lgFlags_FavoredWhigs_1688
+			has_country_flag = lgFlags_ToriesWonElection1688
+		}
+	}
+	
+	text = { # Neutral
+		localisation_key = "parliamentary_elections.0002.a4"
+		trigger = {
+			has_country_flag = lgFlags_Neutral
+		}
+	}
+}
+
+defined_text = {
+	name = GetElectionResultTitle
+	text = {
+		localisation_key = "parliamentary_elections.0002t2"
+		trigger = {
+			has_country_flag = lgFlags_WhigsWonElection1688
+		}
+	}
+	
+	text = {
+		localisation_key = "parliamentary_elections.0002t3"
+		trigger = {
+			has_country_flag = lgFlags_ToriesWonElection1688
+		}
+	}
+	
+	text = {
+		localisation_key = "parliamentary_elections.0002t4"
+		trigger = {
+			has_country_flag = lgFlags_IndecisiveElection
+		}
+	}
+}

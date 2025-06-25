@@ -32,11 +32,11 @@ country_event = {
 		tooltip = {
 			add_country_modifier = {
 				name = "lgModifiers_WhigMinistry"
-				duration = 2555
+				duration = -1
 			}
 		}
 		add_treasury = -50
-		set_country_flag = whig_1688
+		set_country_flag = lgFlags_FavoredWhigs_1688
 	}
 	
 	option = {  # Attempt to influence election towards Tories
@@ -46,18 +46,18 @@ country_event = {
 		tooltip = {
 			add_country_modifier = {
 				name = "lgModifiers_ToryMinistry"
-				duration = 2555
+				duration = -1
 			}
 		}
 		add_treasury = -50
-		set_country_flag = tory_1688
+		set_country_flag = lgFlags_FavoredTories_1688
 	}
 	
 	option = {  # No attempt to influence the election towards any party
 		name = "parliamentary_elections.0001.c"
 		ai_chance = { factor = 33 }
 		election1688_contest3 = yes
-		set_country_flag = neutral
+		set_country_flag = lgFlags_Neutral
 	}
 }
 
@@ -86,7 +86,19 @@ country_event = {
 country_event = {
 	id = parliamentary_elections.0002
 	title = "parliamentary_elections.0002t"
-	desc = "parliamentary_elections.0002d"
+	# desc = "parliamentary_elections.0002d"
+	desc = {
+		trigger = {
+			has_country_flag = lgFlags_WhigsWonElection1688
+		}
+		desc = "parliamentary_elections.0002d"
+	}
+	desc = {
+		trigger = {
+			has_country_flag = lgFlags_ToriesWonElection1688
+		}
+		desc = parliamentary_elections.0003d
+	}
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	is_triggered_only = yes
@@ -101,37 +113,122 @@ country_event = {
 	}
 	
 	option = {  # Great!
-		name = "parliamentary_elections.0002.a"
+		name = "parliamentary_elections.0002.d"
+		# name = "parliamentary_elections.0002.a"
 		trigger = {
-			has_country_flag = whig_1688
+			OR = {
+				AND = {
+					has_country_flag = lgFlags_FavoredWhigs_1688
+					has_country_flag = lgFlags_WhigsWonElection1688
+				}
+				AND = {
+					has_country_flag = lgFlags_FavoredTories_1688
+					has_country_flag = lgFlags_ToriesWonElection1688
+				}
+			}
 		}
-		add_country_modifier = {
-			name = "lgModifiers_WhigMinistry"
-			duration = 2555
+		if = {
+			limit = {
+				has_country_flag = lgFlags_WhigsWonElection1688
+			}
+			add_country_modifier = {
+				name = "lgModifiers_WhigMinistry"
+				duration = -1
+			}
+			if = {
+				limit = {
+					has_country_modifier = lgModifiers_ToryMinistry
+				}
+				remove_country_modifier = lgModifiers_ToryMinistry
+			}
 		}
-		clr_country_flag = whig_1688
+		if = {
+			limit = {
+				has_country_flag = lgFlags_ToriesWonElection1688
+			}
+			add_country_modifier = {
+				name = "lgModifiers_ToryMinistry"
+				duration = -1
+			}
+			if = {
+				limit = {
+					has_country_modifier = lgModifiers_WhigMinistry
+				}
+				remove_country_modifier = lgModifiers_WhigMinistry
+			}
+		}
+		clr_country_flag = lgFlags_FavoredWhigs_1688
+		clr_country_flag = lgFlags_FavoredTories_1688
+		clr_country_flag = lgFlags_Neutral
 	}
-	option = {  # Black day!
+	
+	# option = {  # Black day!
+	# 	name = "parliamentary_elections.0002.b"
+	# 	trigger = {
+	# 		has_country_flag = lgFlags_FavoredTories_1688
+	# 	}
+	# 	add_country_modifier = {
+	# 		name = "lgModifiers_WhigMinistry"
+	# 		duration = -1
+	# 	}
+	# 	if = {
+	# 		limit = {
+	# 			has_country_modifier = lgModifiers_ToryMinistry
+	# 		}
+	# 		remove_country_modifier = lgModifiers_ToryMinistry
+	# 	}
+	# 	clr_country_flag = lgFlags_FavoredTories_1688
+	# }
+	# option = {  # Ok
+	# 	name = "parliamentary_elections.0002.c"
+	# 	trigger = {
+	# 		has_country_flag = lgFlags_Neutral
+	# 	}
+	# 	add_country_modifier = {
+	# 		name = "lgModifiers_WhigMinistry"
+	# 		duration = -1
+	# 	}
+	# 	if = {
+	# 		limit = {
+	# 			has_country_modifier = lgModifiers_ToryMinistry
+	# 		}
+	# 		remove_country_modifier = lgModifiers_ToryMinistry
+	# 	}
+	# 	clr_country_flag = lgFlags_Neutral
+	# }
+	
+	option = {  # I appoint Tory ministry
 		name = "parliamentary_elections.0002.b"
 		trigger = {
-			has_country_flag = tory_1688
+			has_country_flag = lgFlags_IndecisiveElection
 		}
 		add_country_modifier = {
-			name = "lgModifiers_WhigMinistry"
-			duration = 2555
+			name = "lgModifiers_ToryMinistry"
+			duration = -1
 		}
-		clr_country_flag = tory_1688
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_WhigMinistry
+			}
+			remove_country_modifier = lgModifiers_WhigMinistry
+		}
 	}
-	option = {  # Ok
+	
+	option = {  # I appoint Whig ministry
 		name = "parliamentary_elections.0002.c"
-		trigger = {
-			has_country_flag = neutral
-		}
 		add_country_modifier = {
 			name = "lgModifiers_WhigMinistry"
-			duration = 2555
+			duration = -1
 		}
-		clr_country_flag = neutral
+		trigger = {
+			has_country_flag = lgFlags_IndecisiveElection
+		}
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_ToryMinistry
+			}
+			remove_country_modifier = lgModifiers_ToryMinistry
+		}
 	}
 }
 	
@@ -156,35 +253,53 @@ country_event = {
 	option = {  # Good to hear
 		name = "parliamentary_elections.0003.a"
 		trigger = {
-			has_country_flag = tory_1688
+			has_country_flag = lgFlags_FavoredTories_1688
 		}
 		add_country_modifier = {
 			name = "lgModifiers_ToryMinistry"
-			duration = 2555
+			duration = -1
 		}
-		clr_country_flag = tory_1688
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_WhigMinistry
+			}
+			remove_country_modifier = lgModifiers_WhigMinistry
+		}
+		clr_country_flag = lgFlags_FavoredTories_1688
 	}
 	option = {  # Good to hear
 		name = "parliamentary_elections.0003.b"
 		trigger = {
-			has_country_flag = whig_1688
+			has_country_flag = lgFlags_FavoredWhigs_1688
 		}
 		add_country_modifier = {
 			name = "lgModifiers_ToryMinistry"
-			duration = 2555
+			duration = -1
 		}
-		clr_country_flag = whig_1688
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_WhigMinistry
+			}
+			remove_country_modifier = lgModifiers_WhigMinistry
+		}
+		clr_country_flag = lgFlags_FavoredWhigs_1688
 	}
 	option = {  # Good to hear
 		name = "parliamentary_elections.0003.c"
 		trigger = {
-			has_country_flag = neutral
+			has_country_flag = lgFlags_Neutral
 		}
 		add_country_modifier = {
 			name = "lgModifiers_ToryMinistry"
-			duration = 2555
+			duration = -1
 		}
-		clr_country_flag = neutral
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_WhigMinistry
+			}
+			remove_country_modifier = lgModifiers_WhigMinistry
+		}
+		clr_country_flag = lgFlags_Neutral
 	}
 }
 	
@@ -198,9 +313,9 @@ country_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		clr_country_flag = tory_1688
-		clr_country_flag = whig_1688
-		clr_country_flag = neutral
+		clr_country_flag = lgFlags_FavoredTories_1688
+		clr_country_flag = lgFlags_FavoredWhigs_1688
+		clr_country_flag = lgFlags_Neutral
 		if = {
 			limit = {
 				has_country_flag = lgFlag_ElectionInProgress
@@ -213,7 +328,13 @@ country_event = {
 		name = "parliamentary_elections.0004.a"
 		add_country_modifier = {
 			name = "lgModifiers_ToryMinistry"
-			duration = 2555
+			duration = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_WhigMinistry
+			}
+			remove_country_modifier = lgModifiers_WhigMinistry
 		}
 	}
 	
@@ -221,7 +342,13 @@ country_event = {
 		name = "parliamentary_elections.0004.b"
 		add_country_modifier = {
 			name = "lgModifiers_WhigMinistry"
-			duration = 2555
+			duration = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_ToryMinistry
+			}
+			remove_country_modifier = lgModifiers_ToryMinistry
 		}
 	}
 }

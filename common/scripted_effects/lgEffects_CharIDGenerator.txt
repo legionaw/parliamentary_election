@@ -1,0 +1,371 @@
+lgEffects_CharIDgenerator = {
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = lgFlags_CharGenSetup
+			}
+		}
+		set_variable = {
+			which = lgVar_CharID0001
+			value = 0
+		}
+		set_variable = {
+			which = lgVar_CharIDgenerated
+			value = 1
+		}
+		set_variable = {
+			which = lgVar_CharID
+			value = 1
+		}
+		set_variable = {
+			which = lgVar_NumOfCharsExisting
+			value = 0
+		}
+		
+		set_country_flag = lgFlags_CharGenSetup
+	}
+	
+	set_country_flag = lgFlags_CharacterGenerated
+	
+	# change_variable = {
+	# 	which = lgVar_CharID
+	# 	value = 1
+	# }
+	
+	lgEffects_FirstNameRandomizer = yes
+	lgEffects_LastNameRandomizer = yes
+	
+	lgEffects_CharGenerating = yes
+	
+	if = { limit = { lgTriggers_CharID0001 = yes } lgEffects_CharID0001 = yes }
+	else_if = { limit = { lgTriggers_CharID0002 = yes } lgEffects_CharID0002 = yes }
+	else_if = { limit = { lgTriggers_CharID0003 = yes } lgEffects_CharID0003 = yes }
+	else_if = { limit = { lgTriggers_CharID0004 = yes } lgEffects_CharID0004 = yes }
+	else_if = { limit = { lgTriggers_CharID0005 = yes } lgEffects_CharID0005 = yes }
+	else_if = { limit = { lgTriggers_CharID0006 = yes } lgEffects_CharID0006 = yes }
+	else_if = { limit = { lgTriggers_CharID0007 = yes } lgEffects_CharID0007 = yes }
+	else_if = { limit = { lgTriggers_CharID0008 = yes } lgEffects_CharID0009 = yes }
+	else_if = { limit = { lgTriggers_CharID0010 = yes } lgEffects_CharID0010 = yes }
+	
+	else_if = { limit = { lgTriggers_CharID0011 = yes } lgEffects_CharID0011 = yes }
+	else_if = { limit = { lgTriggers_CharID0012 = yes } lgEffects_CharID0012 = yes }
+	else_if = { limit = { lgTriggers_CharID0013 = yes } lgEffects_CharID0013 = yes }
+	else_if = { limit = { lgTriggers_CharID0014 = yes } lgEffects_CharID0014 = yes }
+	else_if = { limit = { lgTriggers_CharID0015 = yes } lgEffects_CharID0015 = yes }
+	else_if = { limit = { lgTriggers_CharID0016 = yes } lgEffects_CharID0016 = yes }
+	else_if = { limit = { lgTriggers_CharID0017 = yes } lgEffects_CharID0017 = yes }
+	else_if = { limit = { lgTriggers_CharID0018 = yes } lgEffects_CharID0019 = yes }
+	else_if = { limit = { lgTriggers_CharID0020 = yes } lgEffects_CharID0020 = yes }
+	
+	else_if = { limit = { lgTriggers_CharID0021 = yes } lgEffects_CharID0021 = yes }
+	else_if = { limit = { lgTriggers_CharID0022 = yes } lgEffects_CharID0022 = yes }
+	else_if = { limit = { lgTriggers_CharID0023 = yes } lgEffects_CharID0023 = yes }
+	else_if = { limit = { lgTriggers_CharID0024 = yes } lgEffects_CharID0024 = yes }
+	else_if = { limit = { lgTriggers_CharID0025 = yes } lgEffects_CharID0025 = yes }
+	else_if = { limit = { lgTriggers_CharID0026 = yes } lgEffects_CharID0026 = yes }
+	else_if = { limit = { lgTriggers_CharID0027 = yes } lgEffects_CharID0027 = yes }
+	else_if = { limit = { lgTriggers_CharID0028 = yes } lgEffects_CharID0029 = yes }
+	else_if = { limit = { lgTriggers_CharID0030 = yes } lgEffects_CharID0030 = yes }
+	
+	else_if = { limit = { lgTriggers_CharID0031 = yes } lgEffects_CharID0031 = yes }
+	else_if = { limit = { lgTriggers_CharID0032 = yes } lgEffects_CharID0032 = yes }
+	else_if = { limit = { lgTriggers_CharID0033 = yes } lgEffects_CharID0033 = yes }
+	else_if = { limit = { lgTriggers_CharID0034 = yes } lgEffects_CharID0034 = yes }
+	else_if = { limit = { lgTriggers_CharID0035 = yes } lgEffects_CharID0035 = yes }
+	else_if = { limit = { lgTriggers_CharID0036 = yes } lgEffects_CharID0036 = yes }
+	else_if = { limit = { lgTriggers_CharID0037 = yes } lgEffects_CharID0037 = yes }
+	else_if = { limit = { lgTriggers_CharID0038 = yes } lgEffects_CharID0039 = yes }
+	else_if = { limit = { lgTriggers_CharID0040 = yes } lgEffects_CharID0040 = yes }
+	
+	else_if = { limit = { lgTriggers_CharID0041 = yes } lgEffects_CharID0041 = yes }
+	else_if = { limit = { lgTriggers_CharID0042 = yes } lgEffects_CharID0042 = yes }
+	else_if = { limit = { lgTriggers_CharID0043 = yes } lgEffects_CharID0043 = yes }
+	else_if = { limit = { lgTriggers_CharID0044 = yes } lgEffects_CharID0044 = yes }
+	else_if = { limit = { lgTriggers_CharID0045 = yes } lgEffects_CharID0045 = yes }
+	else_if = { limit = { lgTriggers_CharID0046 = yes } lgEffects_CharID0046 = yes }
+	else_if = { limit = { lgTriggers_CharID0047 = yes } lgEffects_CharID0047 = yes }
+	else_if = { limit = { lgTriggers_CharID0048 = yes } lgEffects_CharID0049 = yes }
+	else_if = { limit = { lgTriggers_CharID0050 = yes } lgEffects_CharID0050 = yes }
+	
+	else_if = { limit = { lgTriggers_CharID0051 = yes } lgEffects_CharID0051 = yes }
+	else_if = { limit = { lgTriggers_CharID0052 = yes } lgEffects_CharID0052 = yes }
+	else_if = { limit = { lgTriggers_CharID0053 = yes } lgEffects_CharID0053 = yes }
+	else_if = { limit = { lgTriggers_CharID0054 = yes } lgEffects_CharID0054 = yes }
+	else_if = { limit = { lgTriggers_CharID0055 = yes } lgEffects_CharID0055 = yes }
+	else_if = { limit = { lgTriggers_CharID0056 = yes } lgEffects_CharID0056 = yes }
+	else_if = { limit = { lgTriggers_CharID0057 = yes } lgEffects_CharID0057 = yes }
+	else_if = { limit = { lgTriggers_CharID0058 = yes } lgEffects_CharID0059 = yes }
+	else_if = { limit = { lgTriggers_CharID0060 = yes } lgEffects_CharID0060 = yes }
+	
+	else_if = { limit = { lgTriggers_CharID0061 = yes } lgEffects_CharID0061 = yes }
+	else_if = { limit = { lgTriggers_CharID0062 = yes } lgEffects_CharID0062 = yes }
+	else_if = { limit = { lgTriggers_CharID0063 = yes } lgEffects_CharID0063 = yes }
+	else_if = { limit = { lgTriggers_CharID0064 = yes } lgEffects_CharID0064 = yes }
+	else_if = { limit = { lgTriggers_CharID0065 = yes } lgEffects_CharID0065 = yes }
+	else_if = { limit = { lgTriggers_CharID0066 = yes } lgEffects_CharID0066 = yes }
+	else_if = { limit = { lgTriggers_CharID0067 = yes } lgEffects_CharID0067 = yes }
+	else_if = { limit = { lgTriggers_CharID0068 = yes } lgEffects_CharID0069 = yes }
+	else_if = { limit = { lgTriggers_CharID0070 = yes } lgEffects_CharID0070 = yes }
+	
+	else_if = { limit = { lgTriggers_CharID0071 = yes } lgEffects_CharID0071 = yes }
+	else_if = { limit = { lgTriggers_CharID0072 = yes } lgEffects_CharID0072 = yes }
+	else_if = { limit = { lgTriggers_CharID0073 = yes } lgEffects_CharID0073 = yes }
+	else_if = { limit = { lgTriggers_CharID0074 = yes } lgEffects_CharID0074 = yes }
+	else_if = { limit = { lgTriggers_CharID0075 = yes } lgEffects_CharID0075 = yes }
+	else_if = { limit = { lgTriggers_CharID0076 = yes } lgEffects_CharID0076 = yes }
+	else_if = { limit = { lgTriggers_CharID0077 = yes } lgEffects_CharID0077 = yes }
+	else_if = { limit = { lgTriggers_CharID0078 = yes } lgEffects_CharID0079 = yes }
+	else_if = { limit = { lgTriggers_CharID0080 = yes } lgEffects_CharID0080 = yes }
+	
+	else_if = { limit = { lgTriggers_CharID0081 = yes } lgEffects_CharID0081 = yes }
+	else_if = { limit = { lgTriggers_CharID0082 = yes } lgEffects_CharID0082 = yes }
+	else_if = { limit = { lgTriggers_CharID0083 = yes } lgEffects_CharID0083 = yes }
+	else_if = { limit = { lgTriggers_CharID0084 = yes } lgEffects_CharID0084 = yes }
+	else_if = { limit = { lgTriggers_CharID0085 = yes } lgEffects_CharID0085 = yes }
+	else_if = { limit = { lgTriggers_CharID0086 = yes } lgEffects_CharID0086 = yes }
+	else_if = { limit = { lgTriggers_CharID0087 = yes } lgEffects_CharID0087 = yes }
+	else_if = { limit = { lgTriggers_CharID0088 = yes } lgEffects_CharID0089 = yes }
+	else_if = { limit = { lgTriggers_CharID0090 = yes } lgEffects_CharID0090 = yes }
+	
+	else_if = { limit = { lgTriggers_CharID0091 = yes } lgEffects_CharID0091 = yes }
+	else_if = { limit = { lgTriggers_CharID0092 = yes } lgEffects_CharID0092 = yes }
+	else_if = { limit = { lgTriggers_CharID0093 = yes } lgEffects_CharID0093 = yes }
+	else_if = { limit = { lgTriggers_CharID0094 = yes } lgEffects_CharID0094 = yes }
+	else_if = { limit = { lgTriggers_CharID0095 = yes } lgEffects_CharID0095 = yes }
+	else_if = { limit = { lgTriggers_CharID0096 = yes } lgEffects_CharID0096 = yes }
+	else_if = { limit = { lgTriggers_CharID0097 = yes } lgEffects_CharID0097 = yes }
+	else_if = { limit = { lgTriggers_CharID0098 = yes } lgEffects_CharID0099 = yes }
+	else_if = { limit = { lgTriggers_CharID0100 = yes } lgEffects_CharID0100 = yes }
+	
+	# 101-200
+	else_if = { limit = { lgTriggers_CharID0101 = yes } lgEffects_CharID0101 = yes }
+	else_if = { limit = { lgTriggers_CharID0102 = yes } lgEffects_CharID0102 = yes }
+	else_if = { limit = { lgTriggers_CharID0103 = yes } lgEffects_CharID0103 = yes }
+	else_if = { limit = { lgTriggers_CharID0104 = yes } lgEffects_CharID0104 = yes }
+	else_if = { limit = { lgTriggers_CharID0105 = yes } lgEffects_CharID0105 = yes }
+	else_if = { limit = { lgTriggers_CharID0106 = yes } lgEffects_CharID0106 = yes }
+	else_if = { limit = { lgTriggers_CharID0107 = yes } lgEffects_CharID0107 = yes }
+	else_if = { limit = { lgTriggers_CharID0108 = yes } lgEffects_CharID0109 = yes }
+	else_if = { limit = { lgTriggers_CharID0110 = yes } lgEffects_CharID0110 = yes }
+	
+	else_if = { limit = { lgTriggers_CharID0111 = yes } lgEffects_CharID0111 = yes }
+	else_if = { limit = { lgTriggers_CharID0112 = yes } lgEffects_CharID0112 = yes }
+	else_if = { limit = { lgTriggers_CharID0113 = yes } lgEffects_CharID0113 = yes }
+	else_if = { limit = { lgTriggers_CharID0114 = yes } lgEffects_CharID0114 = yes }
+	else_if = { limit = { lgTriggers_CharID0115 = yes } lgEffects_CharID0115 = yes }
+	else_if = { limit = { lgTriggers_CharID0116 = yes } lgEffects_CharID0116 = yes }
+	else_if = { limit = { lgTriggers_CharID0117 = yes } lgEffects_CharID0117 = yes }
+	else_if = { limit = { lgTriggers_CharID0118 = yes } lgEffects_CharID0119 = yes }
+	else_if = { limit = { lgTriggers_CharID0120 = yes } lgEffects_CharID0120 = yes }
+	
+	else_if = { limit = { lgTriggers_CharID0121 = yes } lgEffects_CharID0121 = yes }
+	else_if = { limit = { lgTriggers_CharID0122 = yes } lgEffects_CharID0122 = yes }
+	else_if = { limit = { lgTriggers_CharID0123 = yes } lgEffects_CharID0123 = yes }
+	else_if = { limit = { lgTriggers_CharID0124 = yes } lgEffects_CharID0124 = yes }
+	else_if = { limit = { lgTriggers_CharID0125 = yes } lgEffects_CharID0125 = yes }
+	else_if = { limit = { lgTriggers_CharID0126 = yes } lgEffects_CharID0126 = yes }
+	else_if = { limit = { lgTriggers_CharID0127 = yes } lgEffects_CharID0127 = yes }
+	else_if = { limit = { lgTriggers_CharID0128 = yes } lgEffects_CharID0129 = yes }
+	else_if = { limit = { lgTriggers_CharID0130 = yes } lgEffects_CharID0130 = yes }
+	
+	else_if = { limit = { lgTriggers_CharID0131 = yes } lgEffects_CharID0131 = yes }
+	else_if = { limit = { lgTriggers_CharID0132 = yes } lgEffects_CharID0132 = yes }
+	else_if = { limit = { lgTriggers_CharID0133 = yes } lgEffects_CharID0133 = yes }
+	else_if = { limit = { lgTriggers_CharID0134 = yes } lgEffects_CharID0134 = yes }
+	else_if = { limit = { lgTriggers_CharID0135 = yes } lgEffects_CharID0135 = yes }
+	else_if = { limit = { lgTriggers_CharID0136 = yes } lgEffects_CharID0136 = yes }
+	else_if = { limit = { lgTriggers_CharID0137 = yes } lgEffects_CharID0137 = yes }
+	else_if = { limit = { lgTriggers_CharID0138 = yes } lgEffects_CharID0139 = yes }
+	else_if = { limit = { lgTriggers_CharID0140 = yes } lgEffects_CharID0140 = yes }
+	
+	else_if = { limit = { lgTriggers_CharID0141 = yes } lgEffects_CharID0141 = yes }
+	else_if = { limit = { lgTriggers_CharID0142 = yes } lgEffects_CharID0142 = yes }
+	else_if = { limit = { lgTriggers_CharID0143 = yes } lgEffects_CharID0143 = yes }
+	else_if = { limit = { lgTriggers_CharID0144 = yes } lgEffects_CharID0144 = yes }
+	else_if = { limit = { lgTriggers_CharID0145 = yes } lgEffects_CharID0145 = yes }
+	else_if = { limit = { lgTriggers_CharID0146 = yes } lgEffects_CharID0146 = yes }
+	else_if = { limit = { lgTriggers_CharID0147 = yes } lgEffects_CharID0147 = yes }
+	else_if = { limit = { lgTriggers_CharID0148 = yes } lgEffects_CharID0149 = yes }
+	else_if = { limit = { lgTriggers_CharID0150 = yes } lgEffects_CharID0150 = yes }
+	
+	else_if = { limit = { lgTriggers_CharID0151 = yes } lgEffects_CharID0151 = yes }
+	else_if = { limit = { lgTriggers_CharID0152 = yes } lgEffects_CharID0152 = yes }
+	else_if = { limit = { lgTriggers_CharID0153 = yes } lgEffects_CharID0153 = yes }
+	else_if = { limit = { lgTriggers_CharID0154 = yes } lgEffects_CharID0154 = yes }
+	else_if = { limit = { lgTriggers_CharID0155 = yes } lgEffects_CharID0155 = yes }
+	else_if = { limit = { lgTriggers_CharID0156 = yes } lgEffects_CharID0156 = yes }
+	else_if = { limit = { lgTriggers_CharID0157 = yes } lgEffects_CharID0157 = yes }
+	else_if = { limit = { lgTriggers_CharID0158 = yes } lgEffects_CharID0159 = yes }
+	else_if = { limit = { lgTriggers_CharID0160 = yes } lgEffects_CharID0160 = yes }
+	
+	else_if = { limit = { lgTriggers_CharID0161 = yes } lgEffects_CharID0161 = yes }
+	else_if = { limit = { lgTriggers_CharID0162 = yes } lgEffects_CharID0162 = yes }
+	else_if = { limit = { lgTriggers_CharID0163 = yes } lgEffects_CharID0163 = yes }
+	else_if = { limit = { lgTriggers_CharID0164 = yes } lgEffects_CharID0164 = yes }
+	else_if = { limit = { lgTriggers_CharID0165 = yes } lgEffects_CharID0165 = yes }
+	else_if = { limit = { lgTriggers_CharID0166 = yes } lgEffects_CharID0166 = yes }
+	else_if = { limit = { lgTriggers_CharID0167 = yes } lgEffects_CharID0167 = yes }
+	else_if = { limit = { lgTriggers_CharID0168 = yes } lgEffects_CharID0169 = yes }
+	else_if = { limit = { lgTriggers_CharID0170 = yes } lgEffects_CharID0170 = yes }
+	
+	else_if = { limit = { lgTriggers_CharID0171 = yes } lgEffects_CharID0171 = yes }
+	else_if = { limit = { lgTriggers_CharID0172 = yes } lgEffects_CharID0172 = yes }
+	else_if = { limit = { lgTriggers_CharID0173 = yes } lgEffects_CharID0173 = yes }
+	else_if = { limit = { lgTriggers_CharID0174 = yes } lgEffects_CharID0174 = yes }
+	else_if = { limit = { lgTriggers_CharID0175 = yes } lgEffects_CharID0175 = yes }
+	else_if = { limit = { lgTriggers_CharID0176 = yes } lgEffects_CharID0176 = yes }
+	else_if = { limit = { lgTriggers_CharID0177 = yes } lgEffects_CharID0177 = yes }
+	else_if = { limit = { lgTriggers_CharID0178 = yes } lgEffects_CharID0179 = yes }
+	else_if = { limit = { lgTriggers_CharID0180 = yes } lgEffects_CharID0180 = yes }
+	
+	else_if = { limit = { lgTriggers_CharID0181 = yes } lgEffects_CharID0181 = yes }
+	else_if = { limit = { lgTriggers_CharID0182 = yes } lgEffects_CharID0182 = yes }
+	else_if = { limit = { lgTriggers_CharID0183 = yes } lgEffects_CharID0183 = yes }
+	else_if = { limit = { lgTriggers_CharID0184 = yes } lgEffects_CharID0184 = yes }
+	else_if = { limit = { lgTriggers_CharID0185 = yes } lgEffects_CharID0185 = yes }
+	else_if = { limit = { lgTriggers_CharID0186 = yes } lgEffects_CharID0186 = yes }
+	else_if = { limit = { lgTriggers_CharID0187 = yes } lgEffects_CharID0187 = yes }
+	else_if = { limit = { lgTriggers_CharID0188 = yes } lgEffects_CharID0189 = yes }
+	else_if = { limit = { lgTriggers_CharID0190 = yes } lgEffects_CharID0190 = yes }
+	
+	else_if = { limit = { lgTriggers_CharID0191 = yes } lgEffects_CharID0191 = yes }
+	else_if = { limit = { lgTriggers_CharID0192 = yes } lgEffects_CharID0192 = yes }
+	else_if = { limit = { lgTriggers_CharID0193 = yes } lgEffects_CharID0193 = yes }
+	else_if = { limit = { lgTriggers_CharID0194 = yes } lgEffects_CharID0194 = yes }
+	else_if = { limit = { lgTriggers_CharID0195 = yes } lgEffects_CharID0195 = yes }
+	else_if = { limit = { lgTriggers_CharID0196 = yes } lgEffects_CharID0196 = yes }
+	else_if = { limit = { lgTriggers_CharID0197 = yes } lgEffects_CharID0197 = yes }
+	else_if = { limit = { lgTriggers_CharID0198 = yes } lgEffects_CharID0199 = yes }
+	else_if = { limit = { lgTriggers_CharID0200 = yes } lgEffects_CharID0200 = yes }
+	
+	# 201-300
+	else_if = { limit = { lgTriggers_CharID0201 = yes } lgEffects_CharID0201 = yes }
+	else_if = { limit = { lgTriggers_CharID0202 = yes } lgEffects_CharID0202 = yes }
+	else_if = { limit = { lgTriggers_CharID0203 = yes } lgEffects_CharID0203 = yes }
+	else_if = { limit = { lgTriggers_CharID0204 = yes } lgEffects_CharID0204 = yes }
+	else_if = { limit = { lgTriggers_CharID0205 = yes } lgEffects_CharID0205 = yes }
+	else_if = { limit = { lgTriggers_CharID0206 = yes } lgEffects_CharID0206 = yes }
+	else_if = { limit = { lgTriggers_CharID0207 = yes } lgEffects_CharID0207 = yes }
+	else_if = { limit = { lgTriggers_CharID0208 = yes } lgEffects_CharID0209 = yes }
+	else_if = { limit = { lgTriggers_CharID0210 = yes } lgEffects_CharID0210 = yes }
+	
+	else_if = { limit = { lgTriggers_CharID0211 = yes } lgEffects_CharID0211 = yes }
+	else_if = { limit = { lgTriggers_CharID0212 = yes } lgEffects_CharID0212 = yes }
+	else_if = { limit = { lgTriggers_CharID0213 = yes } lgEffects_CharID0213 = yes }
+	else_if = { limit = { lgTriggers_CharID0214 = yes } lgEffects_CharID0214 = yes }
+	else_if = { limit = { lgTriggers_CharID0215 = yes } lgEffects_CharID0215 = yes }
+	else_if = { limit = { lgTriggers_CharID0216 = yes } lgEffects_CharID0216 = yes }
+	else_if = { limit = { lgTriggers_CharID0217 = yes } lgEffects_CharID0217 = yes }
+	else_if = { limit = { lgTriggers_CharID0218 = yes } lgEffects_CharID0219 = yes }
+	else_if = { limit = { lgTriggers_CharID0220 = yes } lgEffects_CharID0220 = yes }
+	
+	else_if = { limit = { lgTriggers_CharID0221 = yes } lgEffects_CharID0221 = yes }
+	else_if = { limit = { lgTriggers_CharID0222 = yes } lgEffects_CharID0222 = yes }
+	else_if = { limit = { lgTriggers_CharID0223 = yes } lgEffects_CharID0223 = yes }
+	else_if = { limit = { lgTriggers_CharID0224 = yes } lgEffects_CharID0224 = yes }
+	else_if = { limit = { lgTriggers_CharID0225 = yes } lgEffects_CharID0225 = yes }
+	else_if = { limit = { lgTriggers_CharID0226 = yes } lgEffects_CharID0226 = yes }
+	else_if = { limit = { lgTriggers_CharID0227 = yes } lgEffects_CharID0227 = yes }
+	else_if = { limit = { lgTriggers_CharID0228 = yes } lgEffects_CharID0229 = yes }
+	else_if = { limit = { lgTriggers_CharID0230 = yes } lgEffects_CharID0230 = yes }
+	
+	else_if = { limit = { lgTriggers_CharID0231 = yes } lgEffects_CharID0231 = yes }
+	else_if = { limit = { lgTriggers_CharID0232 = yes } lgEffects_CharID0232 = yes }
+	else_if = { limit = { lgTriggers_CharID0233 = yes } lgEffects_CharID0233 = yes }
+	else_if = { limit = { lgTriggers_CharID0234 = yes } lgEffects_CharID0234 = yes }
+	else_if = { limit = { lgTriggers_CharID0235 = yes } lgEffects_CharID0235 = yes }
+	else_if = { limit = { lgTriggers_CharID0236 = yes } lgEffects_CharID0236 = yes }
+	else_if = { limit = { lgTriggers_CharID0237 = yes } lgEffects_CharID0237 = yes }
+	else_if = { limit = { lgTriggers_CharID0238 = yes } lgEffects_CharID0239 = yes }
+	else_if = { limit = { lgTriggers_CharID0240 = yes } lgEffects_CharID0240 = yes }
+	
+	else_if = { limit = { lgTriggers_CharID0241 = yes } lgEffects_CharID0241 = yes }
+	else_if = { limit = { lgTriggers_CharID0242 = yes } lgEffects_CharID0242 = yes }
+	else_if = { limit = { lgTriggers_CharID0243 = yes } lgEffects_CharID0243 = yes }
+	else_if = { limit = { lgTriggers_CharID0244 = yes } lgEffects_CharID0244 = yes }
+	else_if = { limit = { lgTriggers_CharID0245 = yes } lgEffects_CharID0245 = yes }
+	else_if = { limit = { lgTriggers_CharID0246 = yes } lgEffects_CharID0246 = yes }
+	else_if = { limit = { lgTriggers_CharID0247 = yes } lgEffects_CharID0247 = yes }
+	else_if = { limit = { lgTriggers_CharID0248 = yes } lgEffects_CharID0249 = yes }
+	else_if = { limit = { lgTriggers_CharID0250 = yes } lgEffects_CharID0250 = yes }
+	
+	else_if = { limit = { lgTriggers_CharID0251 = yes } lgEffects_CharID0251 = yes }
+	else_if = { limit = { lgTriggers_CharID0252 = yes } lgEffects_CharID0252 = yes }
+	else_if = { limit = { lgTriggers_CharID0253 = yes } lgEffects_CharID0253 = yes }
+	else_if = { limit = { lgTriggers_CharID0254 = yes } lgEffects_CharID0254 = yes }
+	else_if = { limit = { lgTriggers_CharID0255 = yes } lgEffects_CharID0255 = yes }
+	else_if = { limit = { lgTriggers_CharID0256 = yes } lgEffects_CharID0256 = yes }
+	else_if = { limit = { lgTriggers_CharID0257 = yes } lgEffects_CharID0257 = yes }
+	else_if = { limit = { lgTriggers_CharID0258 = yes } lgEffects_CharID0259 = yes }
+	else_if = { limit = { lgTriggers_CharID0260 = yes } lgEffects_CharID0260 = yes }
+	
+	else_if = { limit = { lgTriggers_CharID0261 = yes } lgEffects_CharID0261 = yes }
+	else_if = { limit = { lgTriggers_CharID0262 = yes } lgEffects_CharID0262 = yes }
+	else_if = { limit = { lgTriggers_CharID0263 = yes } lgEffects_CharID0263 = yes }
+	else_if = { limit = { lgTriggers_CharID0264 = yes } lgEffects_CharID0264 = yes }
+	else_if = { limit = { lgTriggers_CharID0265 = yes } lgEffects_CharID0265 = yes }
+	else_if = { limit = { lgTriggers_CharID0266 = yes } lgEffects_CharID0266 = yes }
+	else_if = { limit = { lgTriggers_CharID0267 = yes } lgEffects_CharID0267 = yes }
+	else_if = { limit = { lgTriggers_CharID0268 = yes } lgEffects_CharID0269 = yes }
+	else_if = { limit = { lgTriggers_CharID0270 = yes } lgEffects_CharID0270 = yes }
+	
+	else_if = { limit = { lgTriggers_CharID0271 = yes } lgEffects_CharID0271 = yes }
+	else_if = { limit = { lgTriggers_CharID0272 = yes } lgEffects_CharID0272 = yes }
+	else_if = { limit = { lgTriggers_CharID0273 = yes } lgEffects_CharID0273 = yes }
+	else_if = { limit = { lgTriggers_CharID0274 = yes } lgEffects_CharID0274 = yes }
+	else_if = { limit = { lgTriggers_CharID0275 = yes } lgEffects_CharID0275 = yes }
+	else_if = { limit = { lgTriggers_CharID0276 = yes } lgEffects_CharID0276 = yes }
+	else_if = { limit = { lgTriggers_CharID0277 = yes } lgEffects_CharID0277 = yes }
+	else_if = { limit = { lgTriggers_CharID0278 = yes } lgEffects_CharID0279 = yes }
+	else_if = { limit = { lgTriggers_CharID0280 = yes } lgEffects_CharID0280 = yes }
+	
+	else_if = { limit = { lgTriggers_CharID0281 = yes } lgEffects_CharID0281 = yes }
+	else_if = { limit = { lgTriggers_CharID0282 = yes } lgEffects_CharID0282 = yes }
+	else_if = { limit = { lgTriggers_CharID0283 = yes } lgEffects_CharID0283 = yes }
+	else_if = { limit = { lgTriggers_CharID0284 = yes } lgEffects_CharID0284 = yes }
+	else_if = { limit = { lgTriggers_CharID0285 = yes } lgEffects_CharID0285 = yes }
+	else_if = { limit = { lgTriggers_CharID0286 = yes } lgEffects_CharID0286 = yes }
+	else_if = { limit = { lgTriggers_CharID0287 = yes } lgEffects_CharID0287 = yes }
+	else_if = { limit = { lgTriggers_CharID0288 = yes } lgEffects_CharID0289 = yes }
+	else_if = { limit = { lgTriggers_CharID0290 = yes } lgEffects_CharID0290 = yes }
+	
+	else_if = { limit = { lgTriggers_CharID0291 = yes } lgEffects_CharID0291 = yes }
+	else_if = { limit = { lgTriggers_CharID0292 = yes } lgEffects_CharID0292 = yes }
+	else_if = { limit = { lgTriggers_CharID0293 = yes } lgEffects_CharID0293 = yes }
+	else_if = { limit = { lgTriggers_CharID0294 = yes } lgEffects_CharID0294 = yes }
+	else_if = { limit = { lgTriggers_CharID0295 = yes } lgEffects_CharID0295 = yes }
+	else_if = { limit = { lgTriggers_CharID0296 = yes } lgEffects_CharID0296 = yes }
+	else_if = { limit = { lgTriggers_CharID0297 = yes } lgEffects_CharID0297 = yes }
+	else_if = { limit = { lgTriggers_CharID0298 = yes } lgEffects_CharID0299 = yes }
+	else_if = { limit = { lgTriggers_CharID0300 = yes } lgEffects_CharID0300 = yes }
+	
+	lgEffects_NewCharAgeSetup = yes
+	
+	lgEffects_CharGenerated = yes
+	
+	change_variable = {
+		which = lgVar_CharIDgenerated
+		value = 1
+	}
+	
+	change_variable = {
+		which = lgVar_NumOfCharsExisting
+		value = 1
+	}
+	
+	clr_country_flag = lgFlags_CharacterGenerated
+}
+
+lgEffects_CharIDgeneratorFirstNameOnly = {
+	
+}
+
+lgEffects_CharGenerated = {
+	if = { limit = { lgTriggers_CharID0001 = yes } set_country_flag = lgFlags_Char0001Generated clr_country_flag = lgFlags_Char0001Generating }
+	if = { limit = { lgTriggers_CharID0002 = yes } set_country_flag = lgFlags_Char0002Generated clr_country_flag = lgFlags_Char0002Generating }
+}
+
+lgEffects_CharGenerating = {
+	if = { limit = { lgTriggers_CharID0001 = yes } set_country_flag = lgFlags_Char0001Generating }
+	if = { limit = { lgTriggers_CharID0002 = yes } set_country_flag = lgFlags_Char0002Generating }
+}

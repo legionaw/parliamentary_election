@@ -1,0 +1,723 @@
+lgEffects_DynastyInfo = {
+	if = {
+		limit = {
+			dynasty = "Stuart"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Stuart
+			value = 1
+		}
+	}
+	
+	if = {
+		limit = {
+			dynasty = "Tudor"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Tudor
+			value = 1
+		}
+	}
+	
+	if = {
+		limit = {
+			dynasty = "Lancaster"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Lancaster
+			value = 1
+		}
+	}
+	
+	if = {
+		limit = {
+			dynasty = "York"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_York
+			value = 1
+		}
+	}
+	
+	if = {
+		limit = {
+			dynasty = "Plantagenet"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Plantagenet
+			value = 1
+		}
+	}
+	
+	if = {
+		limit = {
+			dynasty = "Dudley"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Dudley
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Mowbray"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Mowbray
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Neville"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Neville
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Percy"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Percy
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Howard"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Howard
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Seymour"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Seymour
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Holland"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Holland
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Talbot"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Talbot
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Stanley"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Stanley
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Courtenay"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Courtenay
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "de la Pole"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_de_la_Pole
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "de Vere"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_de_Vere
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Stafford"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Stafford
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Grey"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Grey
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Mortimer"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Mortimer
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "le Despenser"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_le_Despenser
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "de Camoys"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_de_Camoys
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Oglethorpe"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Oglethorpe
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Hyde"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Hyde
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Turberville"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Turberville
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Butler"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Butler
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Montagu"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Montagu
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Beauchamp"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Beauchamp
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Raleigh"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Raleigh
+			value = 1
+		}
+	}
+	
+	if = {
+		limit = {
+			dynasty = "Stratford"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Stratford
+			value = 1
+		}
+	}
+	
+	# Scottish dynasty names
+	
+	if = {
+		limit = {
+			dynasty = "Stewart"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Stewart
+			value = 1
+		}
+	}
+	
+	if = {
+		limit = {
+			dynasty = "Campbell"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Campbell
+			value = 1
+		}
+	}
+	
+	if = {
+		limit = {
+			dynasty = "Lennox"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Lennox
+			value = 1
+		}
+	}
+	
+	if = {
+		limit = {
+			dynasty = "Murray"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Murray
+			value = 1
+		}
+	}
+	
+	if = {
+		limit = {
+			dynasty = "Graham"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Graham
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Gordon"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Gordon
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Erskine"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Erskine
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Leslie"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Leslie
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Scott"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Scott
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Douglas"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Douglas
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Hamilton"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Hamilton
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Lindsay"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Lindsay
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Ker"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Ker
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Hay"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Hay
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Sinclair"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Sinclair
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Dunbar"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Dunbar
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Kennedy"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Kennedy
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Fraser"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Fraser
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Aois-dàna"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Aois_dàna
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Dishington"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Dishington
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Burnett"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Burnett
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Bowes-Lyon"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Bowes_Lyon
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Lockhart"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Lockhart
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Corbet"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Corbet
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Mackintosh"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Mackintosh
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Dingwall"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Dingwall
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Melville"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Melville
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Corrie"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Corrie
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Aberach"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Aberach
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Cunningham"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Cunningham
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Donald"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Donald
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Buchanan"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Buchanan
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Menzies"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Menzies
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Moffat"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Moffat
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Malcolm"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Malcolm
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Cameron"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Cameron
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Forbes"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Forbes
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Arbuthnot"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Arbuthnot
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Cockburn"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Cockburn
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Adam"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Adam
+			value = 1
+		}
+	}
+
+	if = {
+		limit = {
+			dynasty = "Wallace"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Wallace
+			value = 1
+		}
+	}
+	
+	if = {
+		limit = {
+			dynasty = "Abernethy"
+		}
+		set_variable = {
+			which = lgVar_Dynasty_Abernethy
+			value = 1
+		}
+	}
+}

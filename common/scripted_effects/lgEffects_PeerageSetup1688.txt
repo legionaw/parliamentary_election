@@ -1,0 +1,279 @@
+lgEffects_PeerageSetup1688 = {
+	# BEGIN EARL OF SHREWSBURY
+	set_country_flag = lgFlags_12th_earl_of_shrewsbury
+	set_variable = {
+		which = lgVar_Earl_of_Shrewsbury
+		value = 12
+	}
+	set_variable = {
+		which = lgVar_Earl_of_Shrewsbury_Age
+		# value = 7 - historical age of accession for the 12th Earl
+		value = 28 # historical age for the 12th Earl at Glorious Revolution
+	}
+	# set_variable = {
+	# 	which = lgVar_Earl_of_Shrewsbury_DeathChance
+	# 	value = 0
+	# }
+	set_variable = {
+		which = lgVar_Earl_of_Shrewsbury_HeirAge
+		value = 16 # historical age of the historical 13th Earl at Glorious Revolution
+	}
+	set_country_flag = lgFlags_Earl_of_Shrewsbury_heir_is_not_issue # The historical heir was first cousin, not the issue, of the historical 12th Earl
+	set_variable = {
+		which = lgVar_Earl_of_Shrewsbury_has_heir
+		value = 1 # Yes
+	}
+	set_country_flag = lgFlags_Earl_of_Shrewsbury_has_heir
+	# END EARL OF SHREWSBURY
+	# BEGIN EARL OF SHAFTESBURY
+	set_country_flag = lgFlags_2nd_earl_of_Shaftesbury
+	set_variable = {
+		which = lgVar_Earl_of_Shaftesbury
+		value = 2
+	}
+	set_variable = {
+		which = lgVar_Earl_of_Shaftesbury_Age
+		value = 36 # historical age for the 2nd Earl at Glorious Revolution
+	}
+	# set_variable = {
+	# 	which = lgVar_Earl_of_Shaftesbury_DeathChance
+	# 	value = 0
+	# }
+	set_variable = {
+		which = lgVar_Earl_of_Shaftesbury_HeirAge
+		value = 17 # historical age of the historical 3rd Earl at Glorious Revolution
+	}
+	set_variable = {
+		which = lgVar_Earl_of_Shaftesbury_has_heir
+		value = 1 # Yes
+	}
+	set_country_flag = lgFlags_Earl_of_Shaftesbury_has_heir
+	# END EARL OF SHAFTESBURY #
+}
+
+lgEffects_Demise_of_Peerage = {
+	if = {
+		limit = {
+			has_country_flag = lgFlags_12th_earl_of_shrewsbury
+			check_variable = {
+				which = lgVar_Earl_of_Shrewsbury
+				value = 12
+			}
+			has_country_flag = lgFlags_Earl_of_Shrewsbury_has_heir
+		}
+		change_variable = {
+			which = lgVar_Earl_of_Shrewsbury
+			value = 1
+		}
+		set_variable = {
+			which = lgVar_Earl_of_Shrewsbury_Age
+			value = lgVar_Earl_of_Shrewsbury_HeirAge
+		}
+		random_list = {
+			50 = {
+				if = {
+					limit = {
+						check_variable = {
+							which = lgVar_Earl_of_Shrewsbury_Age
+							value = 16
+						}
+					}
+					set_variable = {
+						which = lgVar_Earl_of_Shrewsbury_Age
+						value = 0
+					}
+				}
+			}
+			50 = { # No Heir at the accession
+				set_variable = {
+					which = lgVar_Earl_of_Shrewsbury_has_heir
+					value = 0
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_country_flag = lgFlags_Earl_of_Shrewsbury_has_heir
+			}
+		}
+		set_country_flag = lgFlags_Earl_of_Shrewsbury_extinct
+	}
+}
+
+lgEffects_Peerage_AgeCheck = {
+	change_variable = {
+		which = lgVar_Earl_of_Shrewsbury_Age
+		value = 1
+	}
+	# change_variable = {
+	# 	which = lgVar_Earl_of_Shrewsbury_DeathChance
+	# 	value = 0.1
+	# }
+}
+
+lgEffects_Peerage_NewHeir = {
+	if = {
+		limit = {
+			OR = {
+				has_country_flag = lgFlags_Earl_of_Shrewsbury_heir_is_not_issue
+				NOT = {
+					has_country_flag = lgFlags_Earl_of_Shrewsbury_has_heir
+				}
+			}
+			has_country_flag = lgFlags_Earl_of_Shrewsbury_heir_is_not_issue
+			check_variable = {
+				which = lgVar_Earl_of_Shrewsbury_Age
+				value = 16
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_Earl_of_Shrewsbury_Age
+					value = 20
+				}
+			}
+		}
+		random_list = {
+			50 = {}
+			50 = { # An issue has been born
+				if = {
+					limit = {
+						has_country_flag = lgFlags_Earl_of_Shrewsbury_heir_is_not_issue
+					}
+					set_variable = {
+						which = lgVar_Earl_of_Shrewsbury_Heir2Age
+						value = lgVar_Earl_of_Shrewsbury_HeirAge
+					}
+					set_country_flag = lgFlags_Earl_of_Shrewsbury_heir2_is_not_issue
+				}
+				set_variable = {
+					which = lgVar_Earl_of_Shrewsbury_HeirAge
+					value = 0
+				}
+				if = {
+					limit = {
+						has_country_flag = lgFlags_Earl_of_Shrewsbury_heir_is_not_issue
+					}
+					clr_country_flag = lgFlags_Earl_of_Shrewsbury_heir_is_not_issue
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = lgFlags_Earl_of_Shrewsbury_has_heir
+						}
+					}
+					set_country_flag = lgFlags_Earl_of_Shrewsbury_has_heir
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_country_flag = lgFlags_Earl_of_Shrewsbury_heir_is_not_issue
+				NOT = {
+					has_country_flag = lgFlags_Earl_of_Shrewsbury_has_heir
+				}
+			}
+			has_country_flag = lgFlags_Earl_of_Shrewsbury_heir_is_not_issue
+			check_variable = {
+				which = lgVar_Earl_of_Shrewsbury_Age
+				value = 20
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_Earl_of_Shrewsbury_Age
+					value = 30
+				}
+			}
+		}
+		random_list = {
+			60 = {}
+			40 = { # An issue has been born
+				if = {
+					limit = {
+						has_country_flag = lgFlags_Earl_of_Shrewsbury_heir_is_not_issue
+					}
+					set_variable = {
+						which = lgVar_Earl_of_Shrewsbury_Heir2Age
+						value = lgVar_Earl_of_Shrewsbury_HeirAge
+					}
+					set_country_flag = lgFlags_Earl_of_Shrewsbury_heir2_is_not_issue
+				}
+				set_variable = {
+					which = lgVar_Earl_of_Shrewsbury_HeirAge
+					value = 0
+				}
+				if = {
+					limit = {
+						has_country_flag = lgFlags_Earl_of_Shrewsbury_heir_is_not_issue
+					}
+					clr_country_flag = lgFlags_Earl_of_Shrewsbury_heir_is_not_issue
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = lgFlags_Earl_of_Shrewsbury_has_heir
+						}
+					}
+					set_country_flag = lgFlags_Earl_of_Shrewsbury_has_heir
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_country_flag = lgFlags_Earl_of_Shrewsbury_heir_is_not_issue
+				NOT = {
+					has_country_flag = lgFlags_Earl_of_Shrewsbury_has_heir
+				}
+			}
+			has_country_flag = lgFlags_Earl_of_Shrewsbury_heir_is_not_issue
+			check_variable = {
+				which = lgVar_Earl_of_Shrewsbury_Age
+				value = 30
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_Earl_of_Shrewsbury_Age
+					value = 40
+				}
+			}
+		}
+		random_list = {
+			70 = {}
+			30 = { # An issue has been born
+				if = {
+					limit = {
+						has_country_flag = lgFlags_Earl_of_Shrewsbury_heir_is_not_issue
+					}
+					set_variable = {
+						which = lgVar_Earl_of_Shrewsbury_Heir2Age
+						value = lgVar_Earl_of_Shrewsbury_HeirAge
+					}
+					set_country_flag = lgFlags_Earl_of_Shrewsbury_heir2_is_not_issue
+				}
+				set_variable = {
+					which = lgVar_Earl_of_Shrewsbury_HeirAge
+					value = 0
+				}
+				if = {
+					limit = {
+						has_country_flag = lgFlags_Earl_of_Shrewsbury_heir_is_not_issue
+					}
+					clr_country_flag = lgFlags_Earl_of_Shrewsbury_heir_is_not_issue
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = lgFlags_Earl_of_Shrewsbury_has_heir
+						}
+					}
+					set_country_flag = lgFlags_Earl_of_Shrewsbury_has_heir
+				}
+			}
+		}
+	}
+}

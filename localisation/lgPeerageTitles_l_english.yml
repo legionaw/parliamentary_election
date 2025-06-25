@@ -1,4 +1,15 @@
 ﻿l_english:
+# Peerage ranks
+ lgTitles_Duke: "Duke"
+ desc_lgTitles_Duke: "Duke"
+ lgTitles_Marquess: "Marquess"
+ desc_lgTitles_Marquess: "Marquess"
+ lgTitles_Earl: "Earl"
+ desc_lgTitles_Earl: "Earl"
+ lgTitles_Viscount: "Viscount"
+ desc_lgTitles_Viscount: "Viscount"
+ lgTitles_Baron: "Baron"
+ desc_lgTitles_Baron: "Baron"
 # DIGNITIES HISTORICALLY HELD BY PRIME MINISTERS DURING THEIR LIFETIME (NOT NECESSARILY DURING THEIR PREMIERSHIP)
 # Dukes
  duke_devonshire: "Duke of Devonshire"
@@ -134,6 +145,10 @@
  lord_sandwich: "Lord Sandwich"
  the_lord_sandwich1: "The Lord Sandwich"
  the_lord_sandwich2: "the Lord Sandwich"
+ earl_shrewsbury: "Earl of Shrewsbury"
+ lord_shrewsbury: "Lord Shrewsbury"
+ the_lord_shrewsbury1: "The Lord Shrewsbury"
+ the_lord_shrewsbury2: "the Lord Shrewsbury"
  earl_westmorland: "Earl of Westmorland"
 # Viscounts
  viscount_bolingbroke: "Viscount Bolingbroke"

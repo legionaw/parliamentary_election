@@ -1,0 +1,19 @@
+lgTitles_Duke = {
+	
+}
+
+lgTitles_Marquess = {
+	
+}
+
+lgTitles_Earl = {
+	
+}
+
+lgTitles_Viscount = {
+	
+}
+
+lgTitles_Baron = {
+	
+}

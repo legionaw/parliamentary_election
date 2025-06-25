@@ -1,0 +1,135 @@
+defined_text = {
+	name = GetPeerageRank
+	text = {
+		localisation_key = lgTitles_Duke
+		trigger = {
+			has_province_modifier = lgTitles_Duke
+		}
+	}
+	text = {
+		localisation_key = lgTitles_Marquess
+		trigger = {
+			has_province_modifier = lgTitles_Marquess
+		}
+	}
+	text = {
+		localisation_key = lgTitles_Earl
+		trigger = {
+			has_province_modifier = lgTitles_Earl
+		}
+	}
+}
+
+defined_text = {
+	name = GetOrdinal_Earl_of_Shrewsbury
+	# text = {
+		# localisation_key = lgOrdinals_1st
+		# trigger = {
+		# 	check_variable = {
+		# 		which = lgVar_Earl_of_Shrewsbury
+		# 		value = 1
+		# 	}
+		# 	NOT = {
+		# 		check_variable = {
+		# 			which = lgVar_Earl_of_Shrewsbury
+		# 			value = 2
+		# 		}
+		# 	}
+		# 	if = {
+		# 		limit = {
+					
+		# 		}
+		# 	}
+		# }
+	# }
+		
+	text = {
+		localisation_key = "[ROOT.lgVar_Earl_of_Shrewsbury.GetValue]st Earl of Shrewsbury"
+		trigger = {
+			check_variable = {
+				which = lgVar_Earl_of_Shrewsbury
+				value = 1
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_Earl_of_Shrewsbury
+					value = 2
+				}
+			}
+		}
+	}
+	
+	text = {
+		localisation_key = "[ROOT.lgVar_Earl_of_Shrewsbury.GetValue]nd Earl of Shrewsbury"
+		trigger = {
+			check_variable = {
+				which = lgVar_Earl_of_Shrewsbury
+				value = 2
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_Earl_of_Shrewsbury
+					value = 3
+				}
+			}
+		}
+	}
+	
+	text = {
+		localisation_key = "[ROOT.lgVar_Earl_of_Shrewsbury.GetValue]rd Earl of Shrewsbury"
+		trigger = {
+			check_variable = {
+				which = lgVar_Earl_of_Shrewsbury
+				value = 3
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_Earl_of_Shrewsbury
+					value = 4
+				}
+			}
+		}
+	}
+	
+	text = {
+		localisation_key = "[ROOT.lgVar_Earl_of_Shrewsbury.GetValue]th Earl of Shrewsbury"
+		trigger = {
+			OR = {
+				AND = {
+					check_variable = {
+						which = lgVar_Earl_of_Shrewsbury
+						value = 4
+					}
+					NOT = {
+						check_variable = {
+							which = lgVar_Earl_of_Shrewsbury
+							value = 21
+						}
+					}
+				}
+				AND = {
+					check_variable = {
+						which = lgVar_Earl_of_Shrewsbury
+						value = 24
+					}
+					NOT = {
+						check_variable = {
+							which = lgVar_Earl_of_Shrewsbury
+							value = 31
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# defined_text = {
+# 	name = Earl_of_Shrewsbury
+# 	text = {
+# 		localisation_key = 
+# 		trigger = {
+			
+# 		}
+# 	}
+# }

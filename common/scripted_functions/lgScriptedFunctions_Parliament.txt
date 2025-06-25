@@ -3,8 +3,29 @@ can_add_seat_in_parliament = {
 		tooltip = lgTooltips_CANNOT_ALTER_PARLIAMENT
 		potential = { }
 		allow = {
+			# NOT = {
+			# 	has_country_flag = lgFlags_GloriousRevolution
+			# }
 			NOT = {
-				has_country_flag = lgFlags_GloriousRevolution
+				OR = {
+					has_reform = british_monarchy
+					has_reform = constitutional_monarchy
+					has_reform = lgGovernments_ParliamentaryMonarchy
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = lgTooltips_CANNOT_ASSIGN_PARLIAMENT
+		potential = { }
+		allow = {
+			OR = {
+				any_core_province = {
+					OR = {
+						region = british_isles_region
+						province_id = 87
+					}
+				}
 			}
 		}
 	}

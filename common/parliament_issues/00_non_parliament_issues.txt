@@ -21,6 +21,24 @@ rotten_borough_reform = {
 			}
 			back_current_issue = no
 		}
+		every_owned_province = {
+			limit = {
+				has_seat_in_parliament = yes
+				has_province_modifier = rotten_borough
+			}
+			back_current_issue = no
+		}
+		every_owned_province = {
+			limit = {
+				owner = {
+					corruption = 10
+				}
+			}
+			random_list = {
+				25 = { }
+				75 = { back_current_issue = no }
+			}
+		}
 	}
 	
 	effect = {

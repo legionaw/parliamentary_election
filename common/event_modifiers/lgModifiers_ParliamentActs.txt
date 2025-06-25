@@ -123,3 +123,14 @@ english_scottish_act_of_union_modifier = {
 	global_autonomy = -0.05
 	prestige_decay = -0.01
 }
+
+lgModifiers_BankOfEngland = {
+	global_tax_modifier = 0.5
+	inflation_reduction = 0.3
+	interest = -2
+}
+
+# Dynamic Army Cap
+ lgModifiers_ArmyLimit_Subtract1 = {
+	land_forcelimit = -1
+ }

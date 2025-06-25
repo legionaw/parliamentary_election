@@ -1,0 +1,62 @@
+defined_text = {
+	name = GetFirstName1
+	text = { localisation_key = lgNames_FirstName_Adam trigger = { lgTriggers_Char1FirstName_Adam = yes } }
+	text = { localisation_key = lgNames_FirstName_Alec trigger = { lgTriggers_Char1FirstName_Alec = yes } }
+}
+
+defined_text = {
+	name = GetFirstName_Earl_of_Shrewsbury
+	text = {
+		localisation_key = lgNames_FirstName_Adam
+		trigger = {
+			check_variable = {
+				which = lgVar_Earl_of_Shrewsbury_FirstName
+				value = 0
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_Earl_of_Shrewsbury_FirstName
+					value = 1
+				}
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = GetLastName1
+	text = {
+		localisation_key = lgNames_LastName_Smith
+		trigger = {
+			check_variable = {
+				which = lgVar_LastName
+				value = 0
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_LastName
+					value = 1
+				}
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = GetLastName_Earl_of_Shrewsbury
+	text = {
+		localisation_key = lgNames_LastName_Smith
+		trigger = {
+			check_variable = {
+				which = lgVar_Earl_of_Shrewsbury_LastName
+				value = 0
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_Earl_of_Shrewsbury_LastName
+					value = 1
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+﻿l_english:
+ lgBribes_Knighthood1: "Offer Bath Appointment"
+ lgBribes_Knighthood1.tt: "Offer to appoint the MP to the Order of Bath"
+ lgBribes_Knighthood2: "Offer Garter Appointment"
+ lgBribes_Knighthood2.tt: "Offer to appoint the MP to the prestigious Order of the Garter"
+ 
+ lgModifiers_Knighthood1: "Order of the Bath"
+ desc_lgModifiers_Knighthood1: "Order of the Bath"
+ lgModifiers_Knighthood2: "Order of the Garter"
+ desc_lgModifiers_Knighthood2: "Order of the Garter"
+ 
+ lgKnighthoods_GarterOrder: "Order of the Garter"
+ lgKnighthoods_BathOrder: "Order of the Bath"
+ 
+ lgBribes_LordWarden: "Offer Lord Warden Appointment"
+ lgBribes_LordWarden.tt: "Offer to appoint the MP to the lucrative office of Lord Warden of the Cinque Ports"

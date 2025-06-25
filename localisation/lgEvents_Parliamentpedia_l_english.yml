@@ -1,0 +1,8 @@
+﻿l_english:
+ lgEvents_Parliamentpedia.0001t: "Parliamentpedia Index"
+ lgEvents_Parliamentpedia.0001d: "Parliamentpedia Index"
+ lgEvents_Parliamentpedia.0001.a: "List of Peers"
+ lgEvents_Parliamentpedia.0002t: "List of Peers"
+ lgEvents_Parliamentpedia.0002d: "Peer Name - Age\n[Root.GetFirstName_Earl_of_Shrewsbury] [Root.GetLastName_Earl_of_Shrewsbury], [Root.GetOrdinal_Earl_of_Shrewsbury] - [Root.lgVar_Earl_of_Shrewsbury_Age.GetValue]"
+ lgEvents_Parliamentpedia.0002.a: "Back to Index"
+ lgEvents_Parliamentpedia.0002.b: "Next Page"

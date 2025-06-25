@@ -11,13 +11,21 @@ country_event = {
 	desc = "confidence_vote.4001d"
 	picture = {
 		trigger = {
-			NOT = { has_dlc = "Common Sense" }
+			NOT = {
+				OR = {
+					has_dlc = "Common Sense"
+					has_dlc = "Domination"
+				}
+			}
 		}
 		picture = DEBATE_REPUBLICAN_eventPicture
 	}
 	picture = {
 		trigger = {
-			has_dlc = "Common Sense"
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
 		}
 		picture = PARLIAMENT_eventPicture
 	}
@@ -26,6 +34,9 @@ country_event = {
 		is_year = 1784
 		NOT = { is_year = 1834 }
 		has_country_modifier = lgModifiers_electionTimer
+		NOT = {
+			has_country_flag = lgFlag_ElectionInProgress
+		}
 		has_country_modifier = lgModifiers_ToryMinistry2
 		lgTriggers_ParliamentaryGovernment = yes
 		lgTriggers_parliamentBritish = yes
@@ -56,13 +67,21 @@ country_event = {
 	desc = "confidence_vote.4002d"
 	picture = {
 		trigger = {
-			NOT = { has_dlc = "Common Sense" }
+			NOT = {
+				OR = {
+					has_dlc = "Common Sense"
+					has_dlc = "Domination"
+				}
+			}
 		}
 		picture = DEBATE_REPUBLICAN_eventPicture
 	}
 	picture = {
 		trigger = {
-			has_dlc = "Common Sense"
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
 		}
 		picture = PARLIAMENT_eventPicture
 	}
@@ -136,13 +155,21 @@ country_event = {
 	desc = "confidence_vote.4003d"
 	picture = {
 		trigger = {
-			NOT = { has_dlc = "Common Sense" }
+			NOT = {
+				OR = {
+					has_dlc = "Common Sense"
+					has_dlc = "Domination"
+				}
+			}
 		}
 		picture = DEBATE_REPUBLICAN_eventPicture
 	}
 	picture = {
 		trigger = {
-			has_dlc = "Common Sense"
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
 		}
 		picture = PARLIAMENT_eventPicture
 	}
@@ -213,13 +240,21 @@ country_event = {
 	desc = "confidence_vote.4004d"
 	picture = {
 		trigger = {
-			NOT = { has_dlc = "Common Sense" }
+			NOT = {
+				OR = {
+					has_dlc = "Common Sense"
+					has_dlc = "Domination"
+				}
+			}
 		}
 		picture = DEBATE_REPUBLICAN_eventPicture
 	}
 	picture = {
 		trigger = {
-			has_dlc = "Common Sense"
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
 		}
 		picture = PARLIAMENT_eventPicture
 	}
@@ -243,13 +278,21 @@ country_event = {
 	desc = "confidence_vote.4005d"
 	picture = {
 		trigger = {
-			NOT = { has_dlc = "Common Sense" }
+			NOT = {
+				OR = {
+					has_dlc = "Common Sense"
+					has_dlc = "Domination"
+				}
+			}
 		}
 		picture = DEBATE_REPUBLICAN_eventPicture
 	}
 	picture = {
 		trigger = {
-			has_dlc = "Common Sense"
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
 		}
 		picture = PARLIAMENT_eventPicture
 	}
@@ -258,6 +301,9 @@ country_event = {
 		is_year = 1784
 		NOT = { is_year = 1834 }
 		has_country_modifier = lgModifiers_electionTimer
+		NOT = {
+			has_country_flag = lgFlag_ElectionInProgress
+		}
 		has_country_modifier = lgModifiers_WhigMinistry2
 		lgTriggers_ParliamentaryGovernment = yes
 		lgTriggers_parliamentBritish = yes
@@ -288,13 +334,21 @@ country_event = {
 	desc = "confidence_vote.4006d"
 	picture = {
 		trigger = {
-			NOT = { has_dlc = "Common Sense" }
+			NOT = {
+				OR = {
+					has_dlc = "Common Sense"
+					has_dlc = "Domination"
+				}
+			}
 		}
 		picture = DEBATE_REPUBLICAN_eventPicture
 	}
 	picture = {
 		trigger = {
-			has_dlc = "Common Sense"
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
 		}
 		picture = PARLIAMENT_eventPicture
 	}
@@ -348,13 +402,21 @@ country_event = {
 	desc = "confidence_vote.4007d"
 	picture = {
 		trigger = {
-			NOT = { has_dlc = "Common Sense" }
+			NOT = {
+				OR = {
+					has_dlc = "Common Sense"
+					has_dlc = "Domination"
+				}
+			}
 		}
 		picture = DEBATE_REPUBLICAN_eventPicture
 	}
 	picture = {
 		trigger = {
-			has_dlc = "Common Sense"
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
 		}
 		picture = PARLIAMENT_eventPicture
 	}
@@ -404,13 +466,21 @@ country_event = {
 	desc = "confidence_vote.4008d"
 	picture = {
 		trigger = {
-			NOT = { has_dlc = "Common Sense" }
+			NOT = {
+				OR = {
+					has_dlc = "Common Sense"
+					has_dlc = "Domination"
+				}
+			}
 		}
 		picture = DEBATE_REPUBLICAN_eventPicture
 	}
 	picture = {
 		trigger = {
-			has_dlc = "Common Sense"
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
 		}
 		picture = PARLIAMENT_eventPicture
 	}

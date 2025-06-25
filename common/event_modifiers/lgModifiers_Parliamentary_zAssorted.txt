@@ -1,0 +1,121 @@
+lgModifiers_ArmyDelegtimized1 = {
+	legitimacy = -0.1
+	stability_cost_modifier = 0.1
+}
+
+lgModifiers_ArmyDelegtimized2 = {
+	legitimacy = -0.5
+	stability_cost_modifier = 0.5
+	global_tax_modifier = -2
+}
+
+lgModifiers_ArmyLimit_Subtract1 = { land_forcelimit = -1 }
+lgModifiers_ArmyLimit_Subtract2 = { land_forcelimit = -2 }
+lgModifiers_ArmyLimit_Subtract3 = { land_forcelimit = -3 }
+lgModifiers_ArmyLimit_Subtract4 = { land_forcelimit = -4 }
+lgModifiers_ArmyLimit_Subtract5 = { land_forcelimit = -5 }
+lgModifiers_ArmyLimit_Subtract6 = { land_forcelimit = -6 }
+lgModifiers_ArmyLimit_Subtract7 = { land_forcelimit = -7 }
+lgModifiers_ArmyLimit_Subtract8 = { land_forcelimit = -8 }
+lgModifiers_ArmyLimit_Subtract9 = { land_forcelimit = -9 }
+lgModifiers_ArmyLimit_Subtract10 = { land_forcelimit = -10 }
+
+lgModifiers_ArmyLimit_Subtract11 = { land_forcelimit = -11 }
+lgModifiers_ArmyLimit_Subtract12 = { land_forcelimit = -12 }
+lgModifiers_ArmyLimit_Subtract13 = { land_forcelimit = -13 }
+lgModifiers_ArmyLimit_Subtract14 = { land_forcelimit = -14 }
+lgModifiers_ArmyLimit_Subtract15 = { land_forcelimit = -15 }
+lgModifiers_ArmyLimit_Subtract16 = { land_forcelimit = -16 }
+lgModifiers_ArmyLimit_Subtract17 = { land_forcelimit = -17 }
+lgModifiers_ArmyLimit_Subtract18 = { land_forcelimit = -18 }
+lgModifiers_ArmyLimit_Subtract19 = { land_forcelimit = -19 }
+lgModifiers_ArmyLimit_Subtract20 = { land_forcelimit = -20 }
+
+lgModifiers_ArmyLimit_Subtract21 = { land_forcelimit = -21 }
+lgModifiers_ArmyLimit_Subtract22 = { land_forcelimit = -22 }
+lgModifiers_ArmyLimit_Subtract23 = { land_forcelimit = -23 }
+lgModifiers_ArmyLimit_Subtract24 = { land_forcelimit = -24 }
+lgModifiers_ArmyLimit_Subtract25 = { land_forcelimit = -25 }
+lgModifiers_ArmyLimit_Subtract26 = { land_forcelimit = -26 }
+lgModifiers_ArmyLimit_Subtract27 = { land_forcelimit = -27 }
+lgModifiers_ArmyLimit_Subtract28 = { land_forcelimit = -28 }
+lgModifiers_ArmyLimit_Subtract29 = { land_forcelimit = -29 }
+lgModifiers_ArmyLimit_Subtract30 = { land_forcelimit = -30 }
+
+lgModifiers_ArmyLimit_Subtract31 = { land_forcelimit = -31 }
+lgModifiers_ArmyLimit_Subtract32 = { land_forcelimit = -32 }
+lgModifiers_ArmyLimit_Subtract33 = { land_forcelimit = -33 }
+lgModifiers_ArmyLimit_Subtract34 = { land_forcelimit = -34 }
+lgModifiers_ArmyLimit_Subtract35 = { land_forcelimit = -35 }
+lgModifiers_ArmyLimit_Subtract36 = { land_forcelimit = -36 }
+lgModifiers_ArmyLimit_Subtract37 = { land_forcelimit = -37 }
+lgModifiers_ArmyLimit_Subtract38 = { land_forcelimit = -38 }
+lgModifiers_ArmyLimit_Subtract39 = { land_forcelimit = -39 }
+lgModifiers_ArmyLimit_Subtract40 = { land_forcelimit = -40 }
+
+lgModifiers_ArmyLimit_Subtract41 = { land_forcelimit = -41 }
+lgModifiers_ArmyLimit_Subtract42 = { land_forcelimit = -42 }
+lgModifiers_ArmyLimit_Subtract43 = { land_forcelimit = -43 }
+lgModifiers_ArmyLimit_Subtract44 = { land_forcelimit = -44 }
+lgModifiers_ArmyLimit_Subtract45 = { land_forcelimit = -45 }
+lgModifiers_ArmyLimit_Subtract46 = { land_forcelimit = -46 }
+lgModifiers_ArmyLimit_Subtract47 = { land_forcelimit = -47 }
+lgModifiers_ArmyLimit_Subtract48 = { land_forcelimit = -48 }
+lgModifiers_ArmyLimit_Subtract49 = { land_forcelimit = -49 }
+lgModifiers_ArmyLimit_Subtract50 = { land_forcelimit = -50 }
+
+# Additional force limit modifier
+lgModifiers_ArmyLimit_Add1 = { land_forcelimit = 1 }
+lgModifiers_ArmyLimit_Add2 = { land_forcelimit = 2 }
+lgModifiers_ArmyLimit_Add3 = { land_forcelimit = 3 }
+lgModifiers_ArmyLimit_Add4 = { land_forcelimit = 4 }
+lgModifiers_ArmyLimit_Add5 = { land_forcelimit = 5 }
+lgModifiers_ArmyLimit_Add6 = { land_forcelimit = 6 }
+lgModifiers_ArmyLimit_Add7 = { land_forcelimit = 7 }
+lgModifiers_ArmyLimit_Add8 = { land_forcelimit = 8 }
+lgModifiers_ArmyLimit_Add9 = { land_forcelimit = 9 }
+lgModifiers_ArmyLimit_Add10 = { land_forcelimit = 10 }
+
+lgModifiers_ArmyLimit_Add11 = { land_forcelimit = 11 }
+lgModifiers_ArmyLimit_Add12 = { land_forcelimit = 12 }
+lgModifiers_ArmyLimit_Add13 = { land_forcelimit = 13 }
+lgModifiers_ArmyLimit_Add14 = { land_forcelimit = 14 }
+lgModifiers_ArmyLimit_Add15 = { land_forcelimit = 15 }
+lgModifiers_ArmyLimit_Add16 = { land_forcelimit = 16 }
+lgModifiers_ArmyLimit_Add17 = { land_forcelimit = 17 }
+lgModifiers_ArmyLimit_Add18 = { land_forcelimit = 18 }
+lgModifiers_ArmyLimit_Add19 = { land_forcelimit = 19 }
+lgModifiers_ArmyLimit_Add20 = { land_forcelimit = 20 }
+
+lgModifiers_ArmyLimit_Add21 = { land_forcelimit = 21 }
+lgModifiers_ArmyLimit_Add22 = { land_forcelimit = 22 }
+lgModifiers_ArmyLimit_Add23 = { land_forcelimit = 23 }
+lgModifiers_ArmyLimit_Add24 = { land_forcelimit = 24 }
+lgModifiers_ArmyLimit_Add25 = { land_forcelimit = 25 }
+lgModifiers_ArmyLimit_Add26 = { land_forcelimit = 26 }
+lgModifiers_ArmyLimit_Add27 = { land_forcelimit = 27 }
+lgModifiers_ArmyLimit_Add28 = { land_forcelimit = 28 }
+lgModifiers_ArmyLimit_Add29 = { land_forcelimit = 29 }
+lgModifiers_ArmyLimit_Add30 = { land_forcelimit = 30 }
+
+lgModifiers_ArmyLimit_Add31 = { land_forcelimit = 31 }
+lgModifiers_ArmyLimit_Add32 = { land_forcelimit = 32 }
+lgModifiers_ArmyLimit_Add33 = { land_forcelimit = 33 }
+lgModifiers_ArmyLimit_Add34 = { land_forcelimit = 34 }
+lgModifiers_ArmyLimit_Add35 = { land_forcelimit = 35 }
+lgModifiers_ArmyLimit_Add36 = { land_forcelimit = 36 }
+lgModifiers_ArmyLimit_Add37 = { land_forcelimit = 37 }
+lgModifiers_ArmyLimit_Add38 = { land_forcelimit = 38 }
+lgModifiers_ArmyLimit_Add39 = { land_forcelimit = 39 }
+lgModifiers_ArmyLimit_Add40 = { land_forcelimit = 40 }
+
+lgModifiers_ArmyLimit_Add41 = { land_forcelimit = 41 }
+lgModifiers_ArmyLimit_Add42 = { land_forcelimit = 42 }
+lgModifiers_ArmyLimit_Add43 = { land_forcelimit = 43 }
+lgModifiers_ArmyLimit_Add44 = { land_forcelimit = 44 }
+lgModifiers_ArmyLimit_Add45 = { land_forcelimit = 45 }
+lgModifiers_ArmyLimit_Add46 = { land_forcelimit = 46 }
+lgModifiers_ArmyLimit_Add47 = { land_forcelimit = 47 }
+lgModifiers_ArmyLimit_Add48 = { land_forcelimit = 48 }
+lgModifiers_ArmyLimit_Add49 = { land_forcelimit = 49 }
+lgModifiers_ArmyLimit_Add50 = { land_forcelimit = 50 }

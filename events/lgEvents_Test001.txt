@@ -1,0 +1,67 @@
+namespace = lgEvents_Test001
+
+country_event = { # appoint chancellor exchequer
+	id = lgEvents_Test001.0001
+	title = lgEvents_Test001.0001t
+	desc = lgEvents_Test001.0001d
+	
+	picture = PARLIAMENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		
+	}
+	
+	option = {
+		name = "lgEvents_Test001.0001.a"
+	}
+}
+
+country_event = { # char creation
+	id = lgEvents_Test001.0002
+	title = lgEvents_Test001.0002t
+	desc = lgEvents_Test001.0002d
+	
+	picture = PARLIAMENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	hidden = yes
+	
+	immediate = {
+		
+	}
+	
+	option = {
+		name = "lgEvents_Test001.0002.a"
+		lgEffects_CharIDgenerator = yes
+		# country_event = {
+		# 	id = lgEvents_Test001.0003 days = 365
+		# }
+	}
+}
+
+country_event = { # char age up
+	id = lgEvents_Test001.0003
+	title = lgEvents_Test001.0003t
+	desc = lgEvents_Test001.0003d
+	
+	picture = PARLIAMENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	hidden = yes
+	
+	immediate = {
+		
+	}
+	
+	option = {
+		name = "lgEvents_Test001.0003.a"
+		country_event = {
+			id = lgEvents_Test001.0003 days = 365
+		}
+		lgEffects_CharAgeUp = yes
+	}
+}

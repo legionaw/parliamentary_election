@@ -1,10 +1,10 @@
 #setup at beginning of each election
 election1761_startup = {
 	hidden_effect = {
-		set_variable = { which = whig2Var value = 0 } #whig
-		set_variable = { which = whigVar value = 0 } #whig
-		set_variable = { which = FriendsVar value = 0 } #Friends
-		set_variable = { which = toryVar value = 0 } #Tory
+		set_variable = { which = whig2Var value = 0 } # Whig
+		set_variable = { which = lgVar_Whig value = 0 } # Whig
+		set_variable = { which = FriendsVar value = 0 } # Friends
+		set_variable = { which = lgVar_Tory value = 0 } # Tory
 		every_owned_province = {
 			limit = {
 				has_seat_in_parliament = yes
@@ -38,7 +38,7 @@ election1761_contest1 = {
 				has_seat_in_parliament = yes
 			}
 			random_list = {
-				#Whigs
+				# Whigs
 				55 = {
 					add_province_modifier = {
 						name = "lgModifiers_MPsWhig"
@@ -47,7 +47,7 @@ election1761_contest1 = {
 					remove_province_modifier = "lgModifiers_MPsFriends"
 					province_event = { id = lgVoting1761.1 days = 1 }
 				}
-				#Friends
+				# Friends
 				45 = {
 					add_province_modifier = {
 						name = "lgModifiers_MPsFriends"
@@ -70,7 +70,7 @@ election1761_contest2 = {
 				has_seat_in_parliament = yes
 			}
 			random_list = {
-				#Whigs
+				# Whigs
 				45 = {
 					add_province_modifier = {
 						name = "lgModifiers_MPsWhig"
@@ -79,7 +79,7 @@ election1761_contest2 = {
 					remove_province_modifier = "lgModifiers_MPsFriends"
 					province_event = { id = lgVoting1761.1 days = 1 }
 				}
-				#Friends
+				# Friends
 				55 = {
 					add_province_modifier = {
 						name = "lgModifiers_MPsFriends"
@@ -102,7 +102,7 @@ election1761_contest3 = {
 				has_seat_in_parliament = yes
 			}
 			random_list = {
-				#Whigs
+				# Whigs
 				50 = {
 					add_province_modifier = {
 						name = "lgModifiers_MPsWhig"
@@ -111,7 +111,7 @@ election1761_contest3 = {
 					remove_province_modifier = "lgModifiers_MPsFriends"
 					province_event = { id = lgVoting1761.1 days = 1 }
 				}
-				#Friends
+				# Friends
 				50 = {
 					add_province_modifier = {
 						name = "lgModifiers_MPsFriends"
@@ -126,32 +126,32 @@ election1761_contest3 = {
 	}
 }
 
-#counting seats won
+# Counting seats won
 election1761_count = {
 	# WHIG CONTROL
 	if = {
 		limit = {
-			check_variable = { which = whigVar which = FriendsVar }
-			NOT = { check_variable = { which = FriendsVar which = whigVar } }
-			NOT = { is_variable_equal = { which = whigVar which = FriendsVar } }
+			check_variable = { which = lgVar_Whig which = FriendsVar }
+			NOT = { check_variable = { which = FriendsVar which = lgVar_Whig } }
+			NOT = { is_variable_equal = { which = lgVar_Whig which = FriendsVar } }
 		}
 		country_event = { id = parliamentary_elections.3002 days = 88 }
 	}
 	# FRIEND CONTROL
 	if = {
 		limit = {
-			check_variable = { which = FriendsVar which = whigVar } # there must be more Friend seats than whig seats
-			NOT = { check_variable = { which = whigVar which = FriendsVar } }
-			NOT = { is_variable_equal = { which = whigVar which = FriendsVar } }
+			check_variable = { which = FriendsVar which = lgVar_Whig } # There must be more Friend seats than whig seats
+			NOT = { check_variable = { which = lgVar_Whig which = FriendsVar } }
+			NOT = { is_variable_equal = { which = lgVar_Whig which = FriendsVar } }
 		}
 		country_event = { id = parliamentary_elections.3003 days = 88 }
 	}
 	# DEADLOCK
 	if = {
 		limit = {
-			is_variable_equal = { which = whigVar which = FriendsVar } # must be equal
-			#NOT = { check_variable = { which = whigVar which = FriendsVar } }
-			#NOT = { check_variable = { which = FriendsVar which = whigVar } }
+			is_variable_equal = { which = lgVar_Whig which = FriendsVar } # must be equal
+			#NOT = { check_variable = { which = lgVar_Whig which = FriendsVar } }
+			#NOT = { check_variable = { which = FriendsVar which = lgVar_Whig } }
 		}
 		country_event = { id = parliamentary_elections.3004 days = 88 }
 	}

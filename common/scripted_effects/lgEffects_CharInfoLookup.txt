@@ -1,0 +1,24 @@
+lgEffects_Character1FirstNameLookup = {
+	set_variable = {
+		which = lgVar_Char1FirstNameLookup
+		value = lgVar_CharID0001firstname
+	}
+}
+
+lgEffects_Character1LastNameLookup = {
+	set_variable = {
+		which = lgVar_Char1LastNameLookup
+		value = lgVar_CharID0001lastname
+	}
+}
+
+###
+
+lgEffects_Temp = {
+	if = { limit = { lgTriggers_CharID0001 = yes } lgEffects_CharID0001InfoRequested = yes }
+	else_if = { limit = { lgTriggers_CharID0002 = yes } lgEffects_CharID0002 = yes }
+}
+
+# for the use with events
+lgEffects_CharID0001InfoRequested = { set_country_flag = lgFlags_CharID0001infoRequested }
+lgEffects_CharID0002InfoRequested = { set_country_flag = lgFlags_CharID0002infoRequested }

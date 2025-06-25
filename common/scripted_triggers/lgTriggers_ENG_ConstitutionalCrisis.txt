@@ -1,0 +1,47 @@
+lgTriggers_ENG_ConstitutionalCrisis1688 = {
+	lgTriggers_Eras1688 = yes
+	has_country_modifier = lgModifiers_electionTimer
+	NOT = {
+		has_country_flag = lgFlag_ElectionInProgress
+	}
+}
+
+lgTriggers_ENG_ConstitutionalCrisis1721 = {
+	lgTriggers_Eras1721 = yes
+	has_country_modifier = lgModifiers_electionTimer
+	NOT = {
+		has_country_flag = lgFlag_ElectionInProgress
+	}
+}
+
+lgTriggers_ENG_ConstitutionalCrisis1742 = {
+	lgTriggers_Eras1742 = yes
+	has_country_modifier = lgModifiers_electionTimer
+	NOT = {
+		has_country_flag = lgFlag_ElectionInProgress
+	}
+}
+
+lgTriggers_ENG_ConstitutionalCrisis1761 = {
+	lgTriggers_Eras1761 = yes
+	has_country_modifier = lgModifiers_electionTimer
+	NOT = {
+		has_country_flag = lgFlag_ElectionInProgress
+	}
+}
+
+lgTriggers_ENG_ConstitutionalCrisis1784 = {
+	lgTriggers_Eras1784 = yes
+	has_country_modifier = lgModifiers_electionTimer
+	NOT = {
+		has_country_flag = lgFlag_ElectionInProgress
+	}
+}
+
+lgTriggers_ENG_ConstitutionalCrisis1834 = {
+	lgTriggers_Eras1834 = yes
+	has_country_modifier = lgModifiers_electionTimer
+	NOT = {
+		has_country_flag = lgFlag_ElectionInProgress
+	}
+}

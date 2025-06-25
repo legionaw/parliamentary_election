@@ -1,0 +1,243 @@
+namespace = lgEventsENG_PrimeMinisters
+
+##############################################
+# British prime minister selection 1721-1742 #
+##############################################
+
+# Walpole Whig prime minister selection
+country_event = {
+	id = lgEventsENG_PrimeMinisters.0001
+	title = "lgEventsENG_PrimeMinisters.0001t"
+	desc = "lgEventsENG_PrimeMinisters.0001d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = lgFlags_DemiseCrown
+				}
+				clr_country_flag = lgFlags_DemiseCrown
+			}
+			if = {
+				limit = {
+					has_country_flag = lgFlag_ElectionInProgress
+				}
+				clr_country_flag = lgFlag_ElectionInProgress
+			}
+			set_variable = { which = ConfidenceMeter value = 100 }
+		}
+	}
+	
+	option = {  # Sir Robert Walpole (ADM)
+		name = "lgEventsENG_PrimeMinisters.0001.a"
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 30
+				NOT = {
+					is_year = 1742
+				}
+			}
+			modifier = {
+				factor = 0
+				is_year = 1742
+			}
+		}
+		add_country_modifier = {
+			name = "pm_walpole"
+			duration = 2700
+		}
+		add_country_modifier = {
+			name = lgOffices_FirstLordTreasury
+			duration = -1
+		}
+		change_adm = 1
+	}
+	
+	option = {  # Henry Pelham (DIP)
+		name = "lgEventsENG_PrimeMinisters.0001.b"
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 30
+				is_year = 1743
+			}
+		}
+		trigger = {
+			NOT = { has_country_flag = pelham_died }
+		}
+		add_country_modifier = {
+			name = "pm_pelham"
+			duration = 2700
+		}
+		add_country_modifier = {
+			name = lgOffices_FirstLordTreasury
+			duration = -1
+		}
+		change_dip = 1
+	}
+	
+	option = {  # The Earl of Wilmington (MIL)
+		name = "lgEventsENG_PrimeMinisters.0001.d"
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 30
+				is_year = 1742
+			}
+		}
+		trigger = {
+			NOT = { has_country_flag = wilmington_died }
+		}
+		add_country_modifier = {
+			name = "pm_wilmington"
+			duration = 2700
+		}
+		add_country_modifier = {
+			name = lgOffices_FirstLordTreasury
+			duration = -1
+		}
+		change_mil = 1
+	}
+}
+
+# Tory prime minister selection
+country_event = {
+	id = lgEventsENG_PrimeMinisters.0002
+	title = "lgEventsENG_PrimeMinisters.0002t"
+	desc = "lgEventsENG_PrimeMinisters.0002d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = lgFlags_DemiseCrown
+				}
+				clr_country_flag = lgFlags_DemiseCrown
+			}
+			if = {
+				limit = {
+					has_country_flag = lgFlag_ElectionInProgress
+				}
+				clr_country_flag = lgFlag_ElectionInProgress
+			}
+		}
+	}
+	
+	option = {  # Viscount Bolingbroke (ADM)
+		name = "lgEventsENG_PrimeMinisters.0002.a"
+		ai_chance = { factor = 33 }
+		add_country_modifier = {
+			name = "pm_bolingbroke"
+			duration = 2700
+		}
+		add_country_modifier = {
+			name = lgOffices_FirstLordTreasury
+			duration = -1
+		}
+		change_adm = 1
+	}
+	
+	option = {  # Sir William Wyndham (DIP)
+		name = "lgEventsENG_PrimeMinisters.0002.b"
+		ai_chance = { factor = 33 }
+		add_country_modifier = {
+			name = "pm_wyndham"
+			duration = 2700
+		}
+		add_country_modifier = {
+			name = lgOffices_FirstLordTreasury
+			duration = -1
+		}
+		change_dip = 1
+	}
+	
+	option = {  # John Smith (MIL)
+		name = "lgEventsENG_PrimeMinisters.0002.c"
+		ai_chance = { factor = 33 }
+		add_country_modifier = {
+			name = "pm_smith"
+			duration = 2700
+		}
+		add_country_modifier = {
+			name = lgOffices_FirstLordTreasury
+			duration = -1
+		}
+		change_mil = 1
+	}
+}
+
+# Patriot Whig prime minister selection
+country_event = {
+	id = lgEventsENG_PrimeMinisters.0003
+	title = "lgEventsENG_PrimeMinisters.0003t"
+	desc = "lgEventsENG_PrimeMinisters.0003d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = lgFlags_DemiseCrown
+				}
+				clr_country_flag = lgFlags_DemiseCrown
+			}
+			if = {
+				limit = {
+					has_country_flag = lgFlag_ElectionInProgress
+				}
+				clr_country_flag = lgFlag_ElectionInProgress
+			}
+		}
+	}
+	
+	option = {  # William Pulteney, 1st Earl of Bath (ADM)
+		name = "lgEventsENG_PrimeMinisters.0003.a"
+		ai_chance = { factor = 33 }
+		add_country_modifier = {
+			name = "pm_bath"
+			duration = 2700
+		}
+		add_country_modifier = {
+			name = lgOffices_FirstLordTreasury
+			duration = -1
+		}
+		change_adm = 1
+	}
+	
+	option = {  # Richard Temple, 1st Viscount Cobham (DIP)
+		name = "lgEventsENG_PrimeMinisters.0003.b"
+		ai_chance = { factor = 33 }
+		add_country_modifier = {
+			name = "pm_cobham"
+			duration = 2700
+		}
+		add_country_modifier = {
+			name = lgOffices_FirstLordTreasury
+			duration = -1
+		}
+		change_dip = 1
+	}
+	
+	option = {  # John Fisher (MIL)
+		name = "lgEventsENG_PrimeMinisters.0003.c"
+		ai_chance = { factor = 33 }
+		add_country_modifier = {
+			name = "pm_fisher"
+			duration = 2700
+		}
+		add_country_modifier = {
+			name = lgOffices_FirstLordTreasury
+			duration = -1
+		}
+		change_mil = 1
+	}
+}

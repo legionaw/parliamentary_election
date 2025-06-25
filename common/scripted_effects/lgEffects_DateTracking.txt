@@ -1,0 +1,43 @@
+lgEffects_DateTrackingSetup = {
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = lgFlags_DateTrackingEstablished
+			}
+		}
+		set_variable = {
+			which = lgVar_DateTracked
+			value = 1
+		}
+		set_country_flag = lgFlags_DateTrackingEstablished
+	}
+}
+
+lgEffects_DateTracking = {
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = lgVar_DateTracked
+					value = 365
+				}
+			}
+		}
+		change_variable = {
+			which = lgVar_DateTracked
+			value = 1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = lgVar_DateTracked
+				value = 365
+			}
+		}
+		set_variable = {
+			which = lgVar_DateTracked
+			value = 1
+		}
+	}
+}

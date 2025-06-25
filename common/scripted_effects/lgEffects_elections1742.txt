@@ -1,8 +1,8 @@
 #setup at beginning of each election
 election1742_startup = {
 	hidden_effect = {
-		set_variable = { which = whigVar value = 0 } #whig
-		set_variable = { which = toryVar value = 0 } #Tory
+		set_variable = { which = lgVar_Whig value = 0 } # Whig
+		set_variable = { which = lgVar_Tory value = 0 } # Tory
 		every_owned_province = {
 			limit = {
 				has_seat_in_parliament = yes
@@ -36,7 +36,7 @@ election1742_contest1 = {
 				has_seat_in_parliament = yes
 			}
 			random_list = {
-				#Whigs
+				# Whigs
 				55 = {
 					add_province_modifier = {
 						name = "lgModifiers_MPsWhig"
@@ -68,7 +68,7 @@ election1742_contest2 = {
 				has_seat_in_parliament = yes
 			}
 			random_list = {
-				#Whigs
+				# Whigs
 				45 = {
 					add_province_modifier = {
 						name = "lgModifiers_MPsWhig"
@@ -100,7 +100,7 @@ election1742_contest3 = {
 				has_seat_in_parliament = yes
 			}
 			random_list = {
-				#Whigs
+				# Whigs
 				50 = {
 					add_province_modifier = {
 						name = "lgModifiers_MPsWhig"
@@ -124,32 +124,32 @@ election1742_contest3 = {
 	}
 }
 
-#counting seats won
+# Counting seats won
 election1742_count = {
 	# WHIG CONTROL
 	if = {
 		limit = {
-			check_variable = { which = whigVar which = toryVar }
-			NOT = { check_variable = { which = toryVar which = whigVar } }
-			NOT = { is_variable_equal = { which = whigVar which = toryVar } }
+			check_variable = { which = lgVar_Whig which = lgVar_Tory }
+			NOT = { check_variable = { which = lgVar_Tory which = lgVar_Whig } }
+			NOT = { is_variable_equal = { which = lgVar_Whig which = lgVar_Tory } }
 		}
 		country_event = { id = parliamentary_elections.2002 days = 88 }
 	}
 	# TORY CONTROL
 	if = {
 		limit = {
-			check_variable = { which = toryVar which = whigVar } # there must be more tory seats than whig seats
-			NOT = { check_variable = { which = whigVar which = toryVar } }
-			NOT = { is_variable_equal = { which = whigVar which = toryVar } }
+			check_variable = { which = lgVar_Tory which = lgVar_Whig } # There must be more tory seats than whig seats
+			NOT = { check_variable = { which = lgVar_Whig which = lgVar_Tory } }
+			NOT = { is_variable_equal = { which = lgVar_Whig which = lgVar_Tory } }
 		}
 		country_event = { id = parliamentary_elections.2003 days = 88 }
 	}
 	# DEADLOCK
 	if = {
 		limit = {
-			is_variable_equal = { which = whigVar which = toryVar } # must be equal
-			#NOT = { check_variable = { which = whigVar which = toryVar } }
-			#NOT = { check_variable = { which = toryVar which = whigVar } }
+			is_variable_equal = { which = lgVar_Whig which = lgVar_Tory } # must be equal
+			#NOT = { check_variable = { which = lgVar_Whig which = lgVar_Tory } }
+			#NOT = { check_variable = { which = lgVar_Tory which = lgVar_Whig } }
 		}
 		country_event = { id = parliamentary_elections.2004 days = 88 }
 	}

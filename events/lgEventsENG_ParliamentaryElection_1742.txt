@@ -29,7 +29,7 @@ country_event = {
 #			remove_country_modifier = lgModifiers_ToryMinistry
 #			remove_country_modifier = lgModifiers_WalpoleMinistry
 #		}
-#		add_country_modifier = { name = "lgModifiers_electionTimer" hidden=yes duration = 2555 }
+#		add_country_modifier = { name = "lgModifiers_electionTimer" hidden=yes duration = -1 }
 	}
 	
 	option = {  # Attempt to influence election towards Whigs
@@ -43,11 +43,11 @@ country_event = {
 		tooltip = {
 			add_country_modifier = {
 				name = "lgModifiers_WhigMinistry"
-				duration = 2555
+				duration = -1
 			}
 		}
 		add_treasury = -200
-		set_country_flag = whig_1688
+		set_country_flag = lgFlags_FavoredWhigs_1688
 	}
 	
 	option = {  # Attempt to influence election towards Tories
@@ -61,11 +61,11 @@ country_event = {
 		tooltip = {
 			add_country_modifier = {
 				name = "lgModifiers_ToryMinistry"
-				duration = 2555
+				duration = -1
 			}
 		}
 		add_treasury = -200
-		set_country_flag = tory_1688
+		set_country_flag = lgFlags_FavoredTories_1688
 	}
 	
 	option = {  # No attempt to influence the election towards any party
@@ -76,7 +76,7 @@ country_event = {
 #			50 = { country_event = { id = parliamentary_elections.2002 days = 90 } }
 #			50 = { country_event = { id = parliamentary_elections.2003 days = 90 } }
 #		}
-		set_country_flag = neutral
+		set_country_flag = lgFlags_Neutral
 	}
 }
 
@@ -172,39 +172,57 @@ country_event = {
 	option = {  # Great!
 		name = "parliamentary_elections.2002.a"
 		trigger = {
-			has_country_flag = whig_1688
+			has_country_flag = lgFlags_FavoredWhigs_1688
 		}
 		add_country_modifier = {
 			name = "lgModifiers_WhigMinistry"
-			duration = 2555
+			duration = -1
 		}
-		clr_country_flag = whig_1688
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_ToryMinistry
+			}
+			remove_country_modifier = lgModifiers_ToryMinistry
+		}
+		clr_country_flag = lgFlags_FavoredWhigs_1688
 		country_event = { id = parliamentary_elections.2005 days = 1 } #Prime Minister selection event
 	}
 	
 	option = {  # Black day!
 		name = "parliamentary_elections.2002.b"
 		trigger = {
-			has_country_flag = tory_1688
+			has_country_flag = lgFlags_FavoredTories_1688
 		}
 		add_country_modifier = {
 			name = "lgModifiers_WhigMinistry"
-			duration = 2555
+			duration = -1
 		}
-		clr_country_flag = tory_1688
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_ToryMinistry
+			}
+			remove_country_modifier = lgModifiers_ToryMinistry
+		}
+		clr_country_flag = lgFlags_FavoredTories_1688
 		country_event = { id = parliamentary_elections.2005 days = 1 } #Prime Minister selection event
 	}
 	
 	option = {  # Ok
 		name = "parliamentary_elections.2002.c"
 		trigger = {
-			has_country_flag = neutral
+			has_country_flag = lgFlags_Neutral
 		}
 		add_country_modifier = {
 			name = "lgModifiers_WhigMinistry"
-			duration = 2555
+			duration = -1
 		}
-		clr_country_flag = neutral
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_ToryMinistry
+			}
+			remove_country_modifier = lgModifiers_ToryMinistry
+		}
+		clr_country_flag = lgFlags_Neutral
 		country_event = { id = parliamentary_elections.2005 days = 1 } #Prime Minister selection event
 	}
 }
@@ -280,39 +298,57 @@ country_event = {
 	option = {  # Great!
 		name = "parliamentary_elections.2003.a"
 		trigger = {
-			has_country_flag = tory_1688
+			has_country_flag = lgFlags_FavoredTories_1688
 		}
 		add_country_modifier = {
 			name = "lgModifiers_ToryMinistry"
-			duration = 2555
+			duration = -1
 		}
-		clr_country_flag = tory_1688
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_WhigMinistry
+			}
+			remove_country_modifier = lgModifiers_WhigMinistry
+		}
+		clr_country_flag = lgFlags_FavoredTories_1688
 		country_event = { id = parliamentary_elections.2006 days = 1 } #Prime Minister selection event
 	}
 	
 	option = {  # Black day!
 		name = "parliamentary_elections.2003.b"
 		trigger = {
-			has_country_flag = whig_1688
+			has_country_flag = lgFlags_FavoredWhigs_1688
 		}
 		add_country_modifier = {
 			name = "lgModifiers_ToryMinistry"
-			duration = 2555
+			duration = -1
 		}
-		clr_country_flag = whig_1688
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_WhigMinistry
+			}
+			remove_country_modifier = lgModifiers_WhigMinistry
+		}
+		clr_country_flag = lgFlags_FavoredWhigs_1688
 		country_event = { id = parliamentary_elections.2006 days = 1 } #Prime Minister selection event
 	}
 	
 	option = {  # Ok
 		name = "parliamentary_elections.2003.c"
 		trigger = {
-			has_country_flag = neutral
+			has_country_flag = lgFlags_Neutral
 		}
 		add_country_modifier = {
 			name = "lgModifiers_ToryMinistry"
-			duration = 2555
+			duration = -1
 		}
-		clr_country_flag = neutral
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_WhigMinistry
+			}
+			remove_country_modifier = lgModifiers_WhigMinistry
+		}
+		clr_country_flag = lgFlags_Neutral
 		country_event = { id = parliamentary_elections.2006 days = 1 } #Prime Minister selection event
 	}
 }
@@ -327,16 +363,22 @@ country_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		clr_country_flag = tory_1688
-		clr_country_flag = whig_1688
-		clr_country_flag = neutral
+		clr_country_flag = lgFlags_FavoredTories_1688
+		clr_country_flag = lgFlags_FavoredWhigs_1688
+		clr_country_flag = lgFlags_Neutral
 	}
 	
 	option = {  # I appoint Tory ministry
 		name = "parliamentary_elections.2004.a"
 		add_country_modifier = {
 			name = "lgModifiers_ToryMinistry"
-			duration = 2555
+			duration = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_WhigMinistry
+			}
+			remove_country_modifier = lgModifiers_WhigMinistry
 		}
 		country_event = { id = parliamentary_elections.2006 days = 1 } #Prime Minister selection event
 	}
@@ -345,7 +387,13 @@ country_event = {
 		name = "parliamentary_elections.2004.b"
 		add_country_modifier = {
 			name = "lgModifiers_WhigMinistry"
-			duration = 2555
+			duration = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = lgModifiers_ToryMinistry
+			}
+			remove_country_modifier = lgModifiers_ToryMinistry
 		}
 		country_event = { id = parliamentary_elections.2005 days = 1 } #Prime Minister selection event
 	}

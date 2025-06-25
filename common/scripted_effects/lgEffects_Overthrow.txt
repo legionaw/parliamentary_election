@@ -112,6 +112,7 @@ lgEffects_GRoverthrow = {
 					heir_religion = protestant
 					heir_religion = reformed
 					heir_religion = anglican
+					heir_religion = hussite
 				}
 			}
 		}
@@ -159,6 +160,7 @@ lgEffects_GRoverthrow = {
 					heir_religion = protestant
 					heir_religion = reformed
 					heir_religion = anglican
+					heir_religion = hussite
 				}
 			}
 		}
@@ -264,6 +266,7 @@ lgEffects_AngloDutch_Union = {
 			}
 		}
 		set_ruler = GloriousRevolution_NewRuler
+		set_ruler_flag = lgFlags_GloriousRevolution_NewRuler
 		if = {
 			limit = {
 				NED = {
@@ -271,6 +274,7 @@ lgEffects_AngloDutch_Union = {
 				}
 			}
 			set_heir = GloriousRevolution_NewHeir
+			set_heir_flag = lgFlags_GloriousRevolution_NewHeir
 		}
 		else_if = {
 			limit = {
@@ -278,9 +282,30 @@ lgEffects_AngloDutch_Union = {
 					has_heir = no
 				}
 				has_heir = no
+				has_country_flag = lgFlags_ProtestantHeirDisplaced
 			}
-			set_heir = QueenAnne
+			set_heir = PrincessAnneExiled
+			if = {
+				limit = {
+					NOT = {
+						has_heir_flag = lgFlags_PrincessAnne
+					}
+				}
+				set_heir_flag = lgFlags_PrincessAnne
+			}
 			# lgEffects_QueenAnne = yes
+		}
+		else_if = {
+			limit = {
+				NED = {
+					has_heir = no
+				}
+				has_heir = no
+				NOT = {
+					has_country_flag = lgFlags_ProtestantHeirDisplaced
+				}
+			}
+			lgEffects_QueenAnne = yes
 		}
 	}
 	create_union = NED

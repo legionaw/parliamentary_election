@@ -2,6 +2,7 @@ lgGR_Dutch = {
 	# If the Netherlands exists
 	if = {
 		limit = {
+			exists = NED
 			any_known_country = {
 				tag = NED
 				is_subject = no
@@ -12,7 +13,7 @@ lgGR_Dutch = {
 				}
 			}
 		}
-		save_event_target_as = lgGR_Netherlands
+		save_event_target_as = GloriousRevolutionActorCountry
 	}
 	# If the Netherlands doesn't exist but Holland does
 	else_if = {
@@ -26,7 +27,7 @@ lgGR_Dutch = {
 				NOT = { war_with = ROOT }
 			}
 		}
-		save_event_target_as = lgGR_Holland
+		save_event_target_as = GloriousRevolutionActorCountry
 	}
 	# If the Netherlands and Holland doesn't exist but Burgundy does
 	else_if = {
@@ -39,16 +40,33 @@ lgGR_Dutch = {
 				num_of_cities = 4
 				marriage_with = ROOT
 				NOT = { war_with = ROOT }
+				any_owned_province = {
+					region = low_countries_region
+				}
 			}
 		}
-		save_event_target_as = lgGR_Burgundy
+		save_event_target_as = GloriousRevolutionActorCountry
 	}
 	#### If Netherlands, Holland, or Burgundy doesn't exist, fallback
 	else_if = {
 		limit = {
 			NOT = { exists = NED }
 			NOT = { exists = HOL }
-			NOT = { exists = BUR }
+			OR = {
+				NOT = {
+					exists = BUR
+				}
+				AND = {
+					exists = BUR
+					BUR = {
+						NOT = {
+							any_owned_province = {
+								region = low_countries_region
+							}
+						}
+					}
+				}
+			}
 			any_country = {
 				capital_scope = {
 					OR = {
@@ -59,6 +77,7 @@ lgGR_Dutch = {
 				}
 				is_subject = no
 				num_of_cities = 4
+				num_of_ports = 1
 				marriage_with = ROOT
 				NOT = { war_with = ROOT }
 			}
@@ -74,10 +93,11 @@ lgGR_Dutch = {
 				}
 				is_subject = no
 				num_of_cities = 4
+				num_of_ports = 1
 				marriage_with = ROOT
 				NOT = { war_with = ROOT }
 			}
-			save_event_target_as = lgGR_OtherCountry
+			save_event_target_as = GloriousRevolutionActorCountry
 		}
 	}
 }
