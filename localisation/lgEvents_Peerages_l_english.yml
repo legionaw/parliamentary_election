@@ -1,0 +1,13 @@
+﻿l_english:
+ # Reserved for peerage setup
+ lgEvents_Peerage.0001t: ""
+ lgEvents_Peerage.0001d: ""
+ lgEvents_Peerage.0001.a: ""
+ 
+ # Peerage creation
+ lgEvents_Peerage.0002t: "Peerage"
+ lgEvents_Peerage.0002d: "PRIME MINISTER advised the MONARCH to create PERSON a peerage."
+ lgEvents_Peerage.0002.a: "PEERAGE TITLE HERE"
+ lgEvents_Peerage.0002.b: "PEERAGE TITLE HERE"
+ lgEvents_Peerage.0002.c: "PEERAGE TITLE HERE"
+ lgEvents_Peerage.0002.d: "Reject their advice."

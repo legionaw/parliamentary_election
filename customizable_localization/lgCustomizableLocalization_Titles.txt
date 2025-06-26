@@ -21,6 +21,16 @@ defined_text = {
 }
 
 defined_text = {
+	name = GetBothPeerageNameAndRank
+	text = {
+		localisation_key = x
+		trigger = {
+			
+		}
+	}
+}
+
+defined_text = {
 	name = GetOrdinal_Earl_of_Shrewsbury
 	# text = {
 		# localisation_key = lgOrdinals_1st

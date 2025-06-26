@@ -1,0 +1,7 @@
+lgTriggers_EventChar3Target = {
+	lgTriggers_Char0001generated = yes NOT = { has_country_flag = lgFlags_EventChar1is0001 } NOT = { has_country_flag = lgFlags_EventChar2is0001 }
+	lgTriggers_Char0002generated = yes NOT = { has_country_flag = lgFlags_EventChar1is0002 } NOT = { has_country_flag = lgFlags_EventChar2is0002 }
+}
+
+lgTriggers_EventChar3Target0001 = { lgTriggers_Char0001generated = yes NOT = { has_country_flag = lgFlags_EventChar1is0001 } NOT = { has_country_flag = lgFlags_EventChar2is0001 } }
+lgTriggers_EventChar3Target0002 = { lgTriggers_Char0002generated = yes NOT = { has_country_flag = lgFlags_EventChar1is0002 } NOT = { has_country_flag = lgFlags_EventChar2is0002 } }

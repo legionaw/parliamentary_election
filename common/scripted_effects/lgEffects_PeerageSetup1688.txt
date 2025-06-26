@@ -277,3 +277,257 @@ lgEffects_Peerage_NewHeir = {
 		}
 	}
 }
+
+lgEffects_PeerageSetup1688new = {
+	set_variable = {
+		which = lgVar_PeeragesEngland0001
+		value = 1
+	}
+	set_variable = {
+		which = lgVar_PeerageName0001
+		value = lgVar_PeerageName
+	}
+}
+
+# need to update value
+lgEffects_PeerageNameSetting = {
+	set_variable = {
+		which = lgVar_PeerageName
+		value = lgVar_Earl_of_Shaftesbury
+	}
+}
+
+lgEffects_PeerageNameData = {
+	
+}
+
+lgEffects_PeerageName_ChoseAshford = {
+	set_country_flag = lgFlags_ChosePeerageName_Ashford
+	set_variable = {
+		which = lgVar_PeerageName
+		value = 1
+	}
+}
+
+# Probably put this in immediate scope?
+lgEffects_PeerageTitleChoicesSet = {
+	
+}
+
+# Probably put this in immediate scope?
+lgEffects_PeerageTitleOption1 = {
+	random_list = {
+		1 = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = lgFlags_ChosePeerageName_Ashford
+					}
+					NOT = {
+						has_country_flag = lgFlags_PeerageNameLocked_Ashford
+					}
+				}
+				set_variable = {
+					which = lgVar_PeerageOption1
+					value = 1
+				}
+				set_country_flag = lgFlags_PeerageNameLocked_Ashford
+			}
+		}
+		1 = {
+			set_variable = {
+				which = lgVar_PeerageOption1
+				value = 2
+			}
+		}
+	}
+}
+
+lgEffects_IsPeer = {
+	
+}
+
+lgEffects_AssociatePeerage = {
+	if = {
+		limit = {
+			has_country_flag = lgFlags_ChosePeerageName_Ashford
+			has_country_flag = lgFlags_EventChar1is0001
+		}
+		set_variable = {
+			which = lgVar_Char0001PeerageName
+			value = 1
+		}
+		set_country_flag = lgFlags_Char0001isPeer
+	}
+}
+
+lgEffects_Char0001peerageCreation = {
+	set_country_flag = lgFlags_Char0001peerageCreation
+	set_country_flag = lgFlags_EventTarget_Char0001
+	set_variable = {
+		which = x
+	}
+}
+
+lgEffects_PeerageRankSet1 = {
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = lgVar_Peerage0001rank
+					value = 1
+				}
+			}
+		}
+		set_variable = {
+			which = lgVar_Peerage0001rank
+			value = 1 # Baron
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = lgVar_Peerage0001rank
+				value = 1
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_Peerage0001rank
+					value = 2
+				}
+			}
+		}
+		change_variable = {
+			which = lgVar_Peerage0001rank
+			value = 1 # Viscount
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = lgVar_Peerage0001rank
+				value = 2
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_Peerage0001rank
+					value = 3
+				}
+			}
+		}
+		change_variable = {
+			which = lgVar_Peerage0001rank
+			value = 1 # Earl
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = lgVar_Peerage0001rank
+				value = 3
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_Peerage0001rank
+					value = 4
+				}
+			}
+		}
+		change_variable = {
+			which = lgVar_Peerage0001rank
+			value = 1 # Marquess
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = lgVar_Peerage0001rank
+				value = 4
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_Peerage0001rank
+					value = 5
+				}
+			}
+		}
+		change_variable = {
+			which = lgVar_Peerage0001rank
+			value = 1 # Duke
+		}
+	}
+}
+
+### move this elsewhere
+
+lgEffects_IsKnighted = {
+	
+}
+
+lgEffects_Char0001knighted = {
+	if = {
+		limit = {
+			lgTriggers_Char0001generated = yes
+			NOT = {
+				check_variable = {
+					which = lgVar_Char0001knighted
+					value = 1
+				}
+			}
+			NOT = {
+				has_country_flag = lgFlags_Char0001knighted1
+			}
+		}
+		set_variable = {
+			which = lgVar_Char0001knighted
+			value = 1
+		}
+		set_country_flag = lgFlags_Char0001knighted1
+	}
+	else_if = {
+		limit = {
+			lgTriggers_Char0001generated = yes
+			check_variable = {
+				which = lgVar_Char0001knighted
+				value = 1
+			}
+			has_country_flag = lgFlags_Char0001knighted1
+		}
+		change_variable = {
+			which = lgVar_Char0001knighted
+			value = 1
+		}
+		set_country_flag = lgFlags_Char0001knighted2
+	}
+}
+
+lgEffects_Char0001politicalInfluenceUp = {
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = lgVar_Char0001polINF
+					value = 100
+				}
+			}
+		}
+		change_variable = {
+			which = lgVar_Char0001polINF
+			value = 1
+		}
+	}
+}
+
+lgEffects_Char0001politicalInfluenceDown = {
+	if = {
+		limit = {
+			check_variable = {
+				lgVar_Char0001polINF = 1
+			}
+		}
+		change_variable = {
+			which = lgVar_Char0001polINF
+			value = -1
+		}
+	}
+}

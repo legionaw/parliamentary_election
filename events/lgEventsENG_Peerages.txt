@@ -1,0 +1,53 @@
+namespace = lgEvents_Peerages
+
+country_event = {
+	id = lgEvents_Peerages.0001
+	title = lgEvents_Peerage.0001t
+	desc = lgEvents_Peerage.0001d
+	
+	picture = PARLIAMENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	hidden = yes
+	
+	immediate = {
+		
+	}
+	
+	option = {
+		name = "lgEvents_Peerages.0001.a"
+	}
+}
+
+country_event = {
+	id = lgEvents_Peerages.0002
+	title = lgEvents_Peerage.0002t
+	desc = lgEvents_Peerage.0002d
+	
+	picture = PARLIAMENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	hidden = yes
+	
+	immediate = {
+		
+	}
+	
+	option = {
+		name = "lgEvents_Peerages.0002.a"
+	}
+	
+	option = {
+		name = "lgEvents_Peerages.0002.b"
+	}
+	
+	option = {
+		name = "lgEvents_Peerages.0002.c"
+	}
+	
+	option = {
+		name = "lgEvents_Peerages.0002.d"
+	}
+}

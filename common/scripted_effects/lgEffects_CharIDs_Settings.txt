@@ -336,12 +336,12 @@ a = {
 
 }
 
-# lgEffects_CharID0001 = { set_variable = { which = lgVar_CharID0001 value = 1 } set_variable = { which = lgVar_CharID0001fn value = lgVar_fnCreated } set_variable = { which = lgVar_CharID0001ln value = lgVar_lnCreated } }
+# lgEffects_CharID000Old = { set_variable = { which = lgVar_CharID0001 value = 1 } set_variable = { which = lgVar_CharID0001fn value = lgVar_fnCreated } set_variable = { which = lgVar_CharID0001ln value = lgVar_lnCreated } }
 # lgEffects_CID0001 = { set_variable = { which = lgVar_CID0001 value = 1 } set_variable = { which = lgVar_CID0001fn value = lgVar_fnCreated } set_variable = { which = lgVar_CID0001ln value = lgVar_lnCreated } }
 
 # OLD
 
-# lgEffects_CharID0001 = {
+# lgEffects_CharID0001Old2 = {
 # 	set_variable = {
 # 		which = lgVar_CharID0001
 # 		value = 0001

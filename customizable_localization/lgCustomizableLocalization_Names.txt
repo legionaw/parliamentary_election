@@ -1,8 +1,148 @@
 defined_text = {
-	name = GetFirstName1
+	name = GetEventChar1FirstName
 	text = { localisation_key = lgNames_FirstName_Adam trigger = { lgTriggers_Char1FirstName_Adam = yes } }
 	text = { localisation_key = lgNames_FirstName_Alec trigger = { lgTriggers_Char1FirstName_Alec = yes } }
+	text = { localisation_key = lgNames_FirstName_Alfred trigger = { lgTriggers_Char1FirstName_Alfred = yes } }
+	text = { localisation_key = lgNames_FirstName_Andrew trigger = { lgTriggers_Char1FirstName_Andrew = yes } }
+	text = { localisation_key = lgNames_FirstName_Anthony trigger = { lgTriggers_Char1FirstName_Anthony = yes } }
+	text = { localisation_key = lgNames_FirstName_Archibald trigger = { lgTriggers_Char1FirstName_Archibald = yes } }
+	text = { localisation_key = lgNames_FirstName_Arthur trigger = { lgTriggers_Char1FirstName_Arthur = yes } }
+	text = { localisation_key = lgNames_FirstName_Augustus trigger = { lgTriggers_Char1FirstName_Augustus = yes } }
+	text = { localisation_key = lgNames_FirstName_Benjamin trigger = { lgTriggers_Char1FirstName_Benjamin = yes } }
+	text = { localisation_key = lgNames_FirstName_Charles trigger = { lgTriggers_Char1FirstName_Charles = yes } }
+	text = { localisation_key = lgNames_FirstName_Clement trigger = { lgTriggers_Char1FirstName_Clement = yes } }
+	text = { localisation_key = lgNames_FirstName_Daniel trigger = { lgTriggers_Char1FirstName_Daniel = yes } }
+	text = { localisation_key = lgNames_FirstName_David trigger = { lgTriggers_Char1FirstName_David = yes } }
+	text = { localisation_key = lgNames_FirstName_Edmund trigger = { lgTriggers_Char1FirstName_Edmund = yes } }
+	text = { localisation_key = lgNames_FirstName_Edward trigger = { lgTriggers_Char1FirstName_Edward = yes } }
+	text = { localisation_key = lgNames_FirstName_Francis trigger = { lgTriggers_Char1FirstName_Francis = yes } }
+	text = { localisation_key = lgNames_FirstName_Frederick trigger = { lgTriggers_Char1FirstName_Frederick = yes } }
+	text = { localisation_key = lgNames_FirstName_George trigger = { lgTriggers_Char1FirstName_George = yes } }
+	text = { localisation_key = lgNames_FirstName_Gordon trigger = { lgTriggers_Char1FirstName_Gordon = yes } }
+	text = { localisation_key = lgNames_FirstName_Granville trigger = { lgTriggers_Char1FirstName_Granville = yes } }
+	text = { localisation_key = lgNames_FirstName_Harold trigger = { lgTriggers_Char1FirstName_Harold = yes } }
+	text = { localisation_key = lgNames_FirstName_Henry trigger = { lgTriggers_Char1FirstName_Henry = yes } }
+	text = { localisation_key = lgNames_FirstName_Herbert trigger = { lgTriggers_Char1FirstName_Herbert = yes } }
+	text = { localisation_key = lgNames_FirstName_Horace trigger = { lgTriggers_Char1FirstName_Horace = yes } }
+	text = { localisation_key = lgNames_FirstName_Horatio trigger = { lgTriggers_Char1FirstName_Horatio = yes } }
+	text = { localisation_key = lgNames_FirstName_Isaac trigger = { lgTriggers_Char1FirstName_Isaac = yes } }
+	text = { localisation_key = lgNames_FirstName_James trigger = { lgTriggers_Char1FirstName_James = yes } }
+	text = { localisation_key = lgNames_FirstName_John trigger = { lgTriggers_Char1FirstName_John = yes } }
+	text = { localisation_key = lgNames_FirstName_Kendrick trigger = { lgTriggers_Char1FirstName_Kendrick = yes } }
+	text = { localisation_key = lgNames_FirstName_Leonard trigger = { lgTriggers_Char1FirstName_Leonard = yes } }
+	text = { localisation_key = lgNames_FirstName_Lionel trigger = { lgTriggers_Char1FirstName_Lionel = yes } }
+	text = { localisation_key = lgNames_FirstName_Martin trigger = { lgTriggers_Char1FirstName_Martin = yes } }
+	text = { localisation_key = lgNames_FirstName_Nehemiah trigger = { lgTriggers_Char1FirstName_Nehemiah = yes } }
+	text = { localisation_key = lgNames_FirstName_Neville trigger = { lgTriggers_Char1FirstName_Neville = yes } }
+	text = { localisation_key = lgNames_FirstName_Oswald trigger = { lgTriggers_Char1FirstName_Oswald = yes } }
+	text = { localisation_key = lgNames_FirstName_Peter trigger = { lgTriggers_Char1FirstName_Peter = yes } }
+	text = { localisation_key = lgNames_FirstName_Philip trigger = { lgTriggers_Char1FirstName_Philip = yes } }
+	text = { localisation_key = lgNames_FirstName_Quincy trigger = { lgTriggers_Char1FirstName_Quincy = yes } }
+	text = { localisation_key = lgNames_FirstName_Ramsay trigger = { lgTriggers_Char1FirstName_Ramsay = yes } }
+	text = { localisation_key = lgNames_FirstName_Richard trigger = { lgTriggers_Char1FirstName_Richard = yes } }
+	text = { localisation_key = lgNames_FirstName_Robert trigger = { lgTriggers_Char1FirstName_Robert = yes } }
+	text = { localisation_key = lgNames_FirstName_Spencer trigger = { lgTriggers_Char1FirstName_Spencer = yes } }
+	text = { localisation_key = lgNames_FirstName_Stanley trigger = { lgTriggers_Char1FirstName_Stanley = yes } }
+	text = { localisation_key = lgNames_FirstName_Stephen trigger = { lgTriggers_Char1FirstName_Stephen = yes } }
+	text = { localisation_key = lgNames_FirstName_Thomas trigger = { lgTriggers_Char1FirstName_Thomas = yes } }
+	text = { localisation_key = lgNames_FirstName_Ulysses trigger = { lgTriggers_Char1FirstName_Ulysses = yes } }
+	text = { localisation_key = lgNames_FirstName_Vernon trigger = { lgTriggers_Char1FirstName_Vernon = yes } }
+	text = { localisation_key = lgNames_FirstName_William trigger = { lgTriggers_Char1FirstName_William = yes } }
+	text = { localisation_key = lgNames_FirstName_Winston trigger = { lgTriggers_Char1FirstName_Winston = yes } }
+	text = { localisation_key = lgNames_FirstName_Xavier trigger = { lgTriggers_Char1FirstName_Xavier = yes } }
+	text = { localisation_key = lgNames_FirstName_Yancy trigger = { lgTriggers_Char1FirstName_Yancy = yes } }
+	text = { localisation_key = lgNames_FirstName_Zachary trigger = { lgTriggers_Char1FirstName_Zachary = yes } }
 }
+
+defined_text = {
+	name = GetEventChar1LastName
+	text = { localisation_key = lgNames_LastName_Adams trigger = { lgTriggers_Char1LastName_Adams = yes } }
+	text = { localisation_key = lgNames_LastName_Addington trigger = { lgTriggers_Char1LastName_Addington = yes } }
+	text = { localisation_key = lgNames_LastName_Asquith trigger = { lgTriggers_Char1LastName_Asquith = yes } }
+	text = { localisation_key = lgNames_LastName_Balfour trigger = { lgTriggers_Char1LastName_Balfour = yes } }
+	text = { localisation_key = lgNames_LastName_Barrington trigger = { lgTriggers_Char1LastName_Barrington = yes } }
+	text = { localisation_key = lgNames_LastName_Bentinck trigger = { lgTriggers_Char1LastName_Bentinck = yes } }
+	text = { localisation_key = lgNames_LastName_Berkeley trigger = { lgTriggers_Char1LastName_Berkeley = yes } }
+	text = { localisation_key = lgNames_LastName_Burke trigger = { lgTriggers_Char1LastName_Burke = yes } }
+	text = { localisation_key = lgNames_LastName_Campbell trigger = { lgTriggers_Char1LastName_Campbell = yes } }
+	text = { localisation_key = lgNames_LastName_CampbellBannerman trigger = { lgTriggers_Char1LastName_CampbellBannerman = yes } }
+	text = { localisation_key = lgNames_LastName_Canning trigger = { lgTriggers_Char1LastName_Canning = yes } }
+	text = { localisation_key = lgNames_LastName_Carteret trigger = { lgTriggers_Char1LastName_Carteret = yes } }
+	text = { localisation_key = lgNames_LastName_Cavendish trigger = { lgTriggers_Char1LastName_Cavendish = yes } }
+	text = { localisation_key = lgNames_LastName_CavendishBentinck trigger = { lgTriggers_Char1LastName_CavendishBentinck = yes } }
+	text = { localisation_key = lgNames_LastName_Cecil trigger = { lgTriggers_Char1LastName_Cecil = yes } }
+	text = { localisation_key = lgNames_LastName_Churchill trigger = { lgTriggers_Char1LastName_Churchill = yes } }
+	text = { localisation_key = lgNames_LastName_Compton trigger = { lgTriggers_Char1LastName_Compton = yes } }
+	text = { localisation_key = lgNames_LastName_Conway trigger = { lgTriggers_Char1LastName_Conway = yes } }
+	text = { localisation_key = lgNames_LastName_Cornwallis trigger = { lgTriggers_Char1LastName_Cornwallis = yes } }
+	text = { localisation_key = lgNames_LastName_Disraeli trigger = { lgTriggers_Char1LastName_Disraeli = yes } }
+	text = { localisation_key = lgNames_LastName_Douglas trigger = { lgTriggers_Char1LastName_Douglas = yes } }
+	text = { localisation_key = lgNames_LastName_DouglasHome trigger = { lgTriggers_Char1LastName_DouglasHome = yes } }
+	text = { localisation_key = lgNames_LastName_Dundas trigger = { lgTriggers_Char1LastName_Dundas = yes } }
+	text = { localisation_key = lgNames_LastName_Eden trigger = { lgTriggers_Char1LastName_Eden = yes } }
+	text = { localisation_key = lgNames_LastName_Edgcumbe trigger = { lgTriggers_Char1LastName_Edgcumbe = yes } }
+	text = { localisation_key = lgNames_LastName_FitzRoy trigger = { lgTriggers_Char1LastName_FitzRoy = yes } }
+	text = { localisation_key = lgNames_LastName_Gascoyne trigger = { lgTriggers_Char1LastName_Gascoyne = yes } }
+	text = { localisation_key = lgNames_LastName_GascoyneCecil trigger = { lgTriggers_Char1LastName_GascoyneCecil = yes } }
+	text = { localisation_key = lgNames_LastName_George trigger = { lgTriggers_Char1LastName_George = yes } }
+	text = { localisation_key = lgNames_LastName_Gladstone trigger = { lgTriggers_Char1LastName_Gladstone = yes } }
+	text = { localisation_key = lgNames_LastName_Grenville trigger = { lgTriggers_Char1LastName_Grenville = yes } }
+	text = { localisation_key = lgNames_LastName_Grey trigger = { lgTriggers_Char1LastName_Grey = yes } }
+	text = { localisation_key = lgNames_LastName_Hamilton trigger = { lgTriggers_Char1LastName_Hamilton = yes } }
+	text = { localisation_key = lgNames_LastName_HamiltonGordon trigger = { lgTriggers_Char1LastName_HamiltonGordon = yes } }
+	text = { localisation_key = lgNames_LastName_Harley trigger = { lgTriggers_Char1LastName_Harley = yes } }
+	text = { localisation_key = lgNames_LastName_Hawke trigger = { lgTriggers_Char1LastName_Hawke = yes } }
+	text = { localisation_key = lgNames_LastName_Holles trigger = { lgTriggers_Char1LastName_Holles = yes } }
+	text = { localisation_key = lgNames_LastName_Howard trigger = { lgTriggers_Char1LastName_Howard = yes } }
+	text = { localisation_key = lgNames_LastName_Howe trigger = { lgTriggers_Char1LastName_Howe = yes } }
+	text = { localisation_key = lgNames_LastName_Hyde trigger = { lgTriggers_Char1LastName_Hyde = yes } }
+	text = { localisation_key = lgNames_LastName_Irwin trigger = { lgTriggers_Char1LastName_Irwin = yes } }
+	text = { localisation_key = lgNames_LastName_Jenkinson trigger = { lgTriggers_Char1LastName_Jenkinson = yes } }
+	text = { localisation_key = lgNames_LastName_Keppel trigger = { lgTriggers_Char1LastName_Keppel = yes } }
+	text = { localisation_key = lgNames_LastName_Knowles trigger = { lgTriggers_Char1LastName_Knowles = yes } }
+	text = { localisation_key = lgNames_LastName_Lamb trigger = { lgTriggers_Char1LastName_Lamb = yes } }
+	text = { localisation_key = lgNames_LastName_Lennox trigger = { lgTriggers_Char1LastName_Lennox = yes } }
+	text = { localisation_key = lgNames_LastName_Leveson trigger = { lgTriggers_Char1LastName_Leveson = yes } }
+	text = { localisation_key = lgNames_LastName_LevesonGower trigger = { lgTriggers_Char1LastName_LevesonGower = yes } }
+	text = { localisation_key = lgNames_LastName_Montagu trigger = { lgTriggers_Char1LastName_Montagu = yes } }
+	text = { localisation_key = lgNames_LastName_Murray trigger = { lgTriggers_Char1LastName_Murray = yes } }
+	text = { localisation_key = lgNames_LastName_Nelson trigger = { lgTriggers_Char1LastName_Nelson = yes } }
+	text = { localisation_key = lgNames_LastName_North trigger = { lgTriggers_Char1LastName_North = yes } }
+	text = { localisation_key = lgNames_LastName_Ogden trigger = { lgTriggers_Char1LastName_Ogden = yes } }
+	text = { localisation_key = lgNames_LastName_Peel trigger = { lgTriggers_Char1LastName_Peel = yes } }
+	text = { localisation_key = lgNames_LastName_Pelham trigger = { lgTriggers_Char1LastName_Pelham = yes } }
+	text = { localisation_key = lgNames_LastName_PelhamHolles trigger = { lgTriggers_Char1LastName_PelhamHolles = yes } }
+	text = { localisation_key = lgNames_LastName_Perceval trigger = { lgTriggers_Char1LastName_Perceval = yes } }
+	text = { localisation_key = lgNames_LastName_Petty trigger = { lgTriggers_Char1LastName_Petty = yes } }
+	text = { localisation_key = lgNames_LastName_Pitt trigger = { lgTriggers_Char1LastName_Pitt = yes } }
+	text = { localisation_key = lgNames_LastName_Primrose trigger = { lgTriggers_Char1LastName_Primrose = yes } }
+	text = { localisation_key = lgNames_LastName_Pulteney trigger = { lgTriggers_Char1LastName_Pulteney = yes } }
+	text = { localisation_key = lgNames_LastName_Quincy trigger = { lgTriggers_Char1LastName_Quincy = yes } }
+	text = { localisation_key = lgNames_LastName_Robinson trigger = { lgTriggers_Char1LastName_Robinson = yes } }
+	text = { localisation_key = lgNames_LastName_Russell trigger = { lgTriggers_Char1LastName_Russell = yes } }
+	text = { localisation_key = lgNames_LastName_Smith trigger = { lgTriggers_Char1LastName_Smith = yes } }
+	text = { localisation_key = lgNames_LastName_SmithStanley trigger = { lgTriggers_Char1LastName_SmithStanley = yes } }
+	text = { localisation_key = lgNames_LastName_St_John trigger = { lgTriggers_Char1LastName_St_John = yes } }
+	text = { localisation_key = lgNames_LastName_Stanley trigger = { lgTriggers_Char1LastName_Stanley = yes } }
+	text = { localisation_key = lgNames_LastName_Stewart trigger = { lgTriggers_Char1LastName_Stewart = yes } }
+	text = { localisation_key = lgNames_LastName_Stuart trigger = { lgTriggers_Char1LastName_Stuart = yes } }
+	text = { localisation_key = lgNames_LastName_Talbot trigger = { lgTriggers_Char1LastName_Talbot = yes } }
+	text = { localisation_key = lgNames_LastName_Temple trigger = { lgTriggers_Char1LastName_Temple = yes } }
+	text = { localisation_key = lgNames_LastName_Townshend trigger = { lgTriggers_Char1LastName_Townshend = yes } }
+	text = { localisation_key = lgNames_LastName_Upton trigger = { lgTriggers_Char1LastName_Upton = yes } }
+	text = { localisation_key = lgNames_LastName_Villiers trigger = { lgTriggers_Char1LastName_Villiers = yes } }
+	text = { localisation_key = lgNames_LastName_Walpole trigger = { lgTriggers_Char1LastName_Walpole = yes } }
+	text = { localisation_key = lgNames_LastName_WatsonWentworth trigger = { lgTriggers_Char1LastName_WatsonWentworth = yes } }
+	text = { localisation_key = lgNames_LastName_Wellesey trigger = { lgTriggers_Char1LastName_Wellesey = yes } }
+	text = { localisation_key = lgNames_LastName_Wentworth trigger = { lgTriggers_Char1LastName_Wentworth = yes } }
+	text = { localisation_key = lgNames_LastName_Wilson trigger = { lgTriggers_Char1LastName_Wilson = yes } }
+	text = { localisation_key = lgNames_LastName_Xavier trigger = { lgTriggers_Char1LastName_Xavier = yes } }
+	text = { localisation_key = lgNames_LastName_York trigger = { lgTriggers_Char1LastName_York = yes } }
+	text = { localisation_key = lgNames_LastName_Yorke trigger = { lgTriggers_Char1LastName_Yorke = yes } }
+	text = { localisation_key = lgNames_LastName_Zion trigger = { lgTriggers_Char1LastName_Zion = yes } }
+}
+
+# Earls of Shrewsbury
 
 defined_text = {
 	name = GetFirstName_Earl_of_Shrewsbury
@@ -16,25 +156,6 @@ defined_text = {
 			NOT = {
 				check_variable = {
 					which = lgVar_Earl_of_Shrewsbury_FirstName
-					value = 1
-				}
-			}
-		}
-	}
-}
-
-defined_text = {
-	name = GetLastName1
-	text = {
-		localisation_key = lgNames_LastName_Smith
-		trigger = {
-			check_variable = {
-				which = lgVar_LastName
-				value = 0
-			}
-			NOT = {
-				check_variable = {
-					which = lgVar_LastName
 					value = 1
 				}
 			}

@@ -48,8 +48,8 @@ lgEffects_LastNameRandomizer = {
 	}
 	
 	random_list = {
-		1 = { set_variable = { which = lgVar_LastName value = 0 } } # Adam
-		1 = { set_variable = { which = lgVar_LastName value = 1 } } # Alec
+		1 = { set_variable = { which = lgVar_LastName value = 0 } } # Adams
+		1 = { set_variable = { which = lgVar_LastName value = 1 } } # 
 	}
 	
 	set_variable = {

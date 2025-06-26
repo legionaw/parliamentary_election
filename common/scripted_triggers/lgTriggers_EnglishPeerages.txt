@@ -1,0 +1,11 @@
+lgPeerages_AshfordCreated = {
+	
+}
+
+lgPeerages_AshfordLocked = {
+	
+}
+
+lgPeerages_AshfordChosen = {
+	
+}

@@ -1,0 +1,17 @@
+# should be in immediate?
+lgEffects_EventChar1_PeerageLookup = {
+	if = {
+		limit = {
+			has_country_flag = lgFlags_EventChar1is0001
+			has_country_flag = lgFlags_Char0001isPeer
+		}
+		set_variable = {
+			which = lgVar_EventChar1_Peerage
+			value = lgVar_Char0001PeerageName
+		}
+		set_variable = {
+			which = lgVar_EventChar1_PRank
+			value = lgVar_Peerage0001rank
+		}
+	}
+}

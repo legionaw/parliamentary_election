@@ -1,15 +1,52 @@
-lgEffects_Character1FirstNameLookup = {
-	set_variable = {
-		which = lgVar_Char1FirstNameLookup
-		value = lgVar_CharID0001firstname
+lgEffects_Char1FirstLookup = {
+
+}
+
+lgEffects_Char1LastLookup = {
+
+}
+
+lgEffects_EventChar1InfoLookup = {
+	if = { limit = { has_country_flag = lgFlags_EventChar1is0001 } lgEffects_Char0001first = yes lgEffects_Char0001last = yes }
+	if = { limit = { has_country_flag = lgFlags_EventChar1is0002 } lgEffects_Char0002first = yes lgEffects_Char0002last = yes }
+}
+
+lgEffects_Char0001first = { set_variable = { which = lgVar_Char1FirstName value = lgVar_CharID0001firstname } }
+lgEffects_Char0002first = { set_variable = { which = lgVar_Char1FirstName value = lgVar_CharID0002firstname } }
+
+lgEffects_Char0001last = { set_variable = { which = lgVar_Char1LastName value = lgVar_CharID0001lastname } }
+lgEffects_Char0002last = { set_variable = { which = lgVar_Char1LastName value = lgVar_CharID0002lastname } }
+
+# put this in immediate?
+lgEffects_EventChar1Target = {
+	random_list = {
+		1 = { if = { limit = { lgTriggers_Char0001generated = yes } set_country_flag = lgFlags_EventChar1is0001 } }
+		1 = { if = { limit = { lgTriggers_Char0002generated = yes } set_country_flag = lgFlags_EventChar1is0002 } }
 	}
 }
 
-lgEffects_Character1LastNameLookup = {
-	set_variable = {
-		which = lgVar_Char1LastNameLookup
-		value = lgVar_CharID0001lastname
+lgEffects_EventChar2Target = {
+	random_list = {
+		1 = { if = { limit = { lgTriggers_Char0001generated = yes NOT = { has_country_flag = lgFlags_EventChar1is0001 } } set_country_flag = lgFlags_EventChar2is0001 } }
+		1 = { if = { limit = { lgTriggers_Char0002generated = yes NOT = { has_country_flag = lgFlags_EventChar1is0002 } } set_country_flag = lgFlags_EventChar2is0002 } }
 	}
+}
+
+lgEffects_EventChar3Target = {
+	random_list = {
+		1 = { if = { limit = { lgTriggers_EventChar3Target0001 = yes } set_country_flag = lgFlags_EventChar3is0001 } }
+		1 = { if = { limit = { lgTriggers_EventChar3Target0002 = yes } set_country_flag = lgFlags_EventChar3is0002 } }
+	}
+}
+
+#
+lgEffects_EventCharTargetsClear = {
+	clr_country_flag = lgFlags_EventChar1is0001
+	clr_country_flag = lgFlags_EventChar1is0002
+	clr_country_flag = lgFlags_EventChar2is0001
+	clr_country_flag = lgFlags_EventChar2is0002
+	clr_country_flag = lgFlags_EventChar3is0001
+	clr_country_flag = lgFlags_EventChar3is0002
 }
 
 ###
@@ -22,3 +59,76 @@ lgEffects_Temp = {
 # for the use with events
 lgEffects_CharID0001InfoRequested = { set_country_flag = lgFlags_CharID0001infoRequested }
 lgEffects_CharID0002InfoRequested = { set_country_flag = lgFlags_CharID0002infoRequested }
+
+# OLD
+lgEffects_Char0001InfoLookupOLD = {
+	if = {
+		limit = {
+			has_country_flag = lgFlags_EventChar1is0001
+			check_variable = {
+				which = lgVar_EventChar1Target
+				value = 1
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_EventChar1Target
+					value = 2
+				}
+			}
+		}
+		set_variable = {
+			which = lgVar_Char1FirstName
+			value = lgVar_CharID0001firstname
+		}
+		set_variable = {
+			which = lgVar_Char1LastName
+			value = lgVar_CharID0001lastname
+		}
+	}
+}
+
+lgEffects_Char0001InfoLookupOLD2 = { if = { limit = { has_country_flag = lgFlags_EventChar1is0001 } lgEffects_Char0001Name = yes } }
+
+lgEffects_Char0001Name = { lgEffects_Char0001first = yes lgEffects_Char0001last = yes }
+
+lgEffects_EventChar1TargetOLD = {
+	random_list = {
+		1 = {
+			if = {
+				limit = {
+					lgTriggers_Char0001generated = yes
+				}
+				set_country_flag = lgFlags_EventChar1is0001
+				set_variable = {
+					which = lgVar_EventChar1Target
+					value = 1
+				}
+				set_variable = {
+					which = lgVar_EventChar1FirstName
+					value = 1
+				}
+				set_variable = {
+					which = lgVar_EventChar1LastName
+				}
+			}
+		}
+		1 = {
+			if = {
+				limit = {
+					lgTriggers_Char0002generated = yes
+				}
+				set_variable = {
+					which = lgVar_EventChar1Target
+					value = 2
+				}
+				set_variable = {
+					which = lgVar_EventChar1FirstName
+					value = 2
+				}
+				set_variable = {
+					which = lgVar_EventChar1LastName
+				}
+			}
+		}
+	}
+}
