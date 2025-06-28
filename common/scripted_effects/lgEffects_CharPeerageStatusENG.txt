@@ -1,0 +1,333 @@
+# Need to make an overarching effect to include all of these effects below
+# Setting peerage rank to 0 by default
+lgEffects_CharID0001PeerageRank = { set_variable = { which = lgVar_CharID0001PeerageRank value = 0 } }
+lgEffects_CharID0002PeerageRank = { set_variable = { which = lgVar_CharID0002PeerageRank value = 0 } }
+lgEffects_CharID0003PeerageRank = { set_variable = { which = lgVar_CharID0003PeerageRank value = 0 } }
+lgEffects_CharID0004PeerageRank = { set_variable = { which = lgVar_CharID0004PeerageRank value = 0 } }
+lgEffects_CharID0005PeerageRank = { set_variable = { which = lgVar_CharID0005PeerageRank value = 0 } }
+lgEffects_CharID0006PeerageRank = { set_variable = { which = lgVar_CharID0006PeerageRank value = 0 } }
+lgEffects_CharID0007PeerageRank = { set_variable = { which = lgVar_CharID0007PeerageRank value = 0 } }
+lgEffects_CharID0008PeerageRank = { set_variable = { which = lgVar_CharID0008PeerageRank value = 0 } }
+lgEffects_CharID0009PeerageRank = { set_variable = { which = lgVar_CharID0009PeerageRank value = 0 } }
+lgEffects_CharID0010PeerageRank = { set_variable = { which = lgVar_CharID0010PeerageRank value = 0 } }
+
+lgEffects_CharID0011PeerageRank = { set_variable = { which = lgVar_CharID0011PeerageRank value = 0 } }
+lgEffects_CharID0012PeerageRank = { set_variable = { which = lgVar_CharID0012PeerageRank value = 0 } }
+lgEffects_CharID0013PeerageRank = { set_variable = { which = lgVar_CharID0013PeerageRank value = 0 } }
+lgEffects_CharID0014PeerageRank = { set_variable = { which = lgVar_CharID0014PeerageRank value = 0 } }
+lgEffects_CharID0015PeerageRank = { set_variable = { which = lgVar_CharID0015PeerageRank value = 0 } }
+lgEffects_CharID0016PeerageRank = { set_variable = { which = lgVar_CharID0016PeerageRank value = 0 } }
+lgEffects_CharID0017PeerageRank = { set_variable = { which = lgVar_CharID0017PeerageRank value = 0 } }
+lgEffects_CharID0018PeerageRank = { set_variable = { which = lgVar_CharID0018PeerageRank value = 0 } }
+lgEffects_CharID0019PeerageRank = { set_variable = { which = lgVar_CharID0019PeerageRank value = 0 } }
+lgEffects_CharID0020PeerageRank = { set_variable = { which = lgVar_CharID0020PeerageRank value = 0 } }
+
+lgEffects_CharID0021PeerageRank = { set_variable = { which = lgVar_CharID0021PeerageRank value = 0 } }
+lgEffects_CharID0022PeerageRank = { set_variable = { which = lgVar_CharID0022PeerageRank value = 0 } }
+lgEffects_CharID0023PeerageRank = { set_variable = { which = lgVar_CharID0023PeerageRank value = 0 } }
+lgEffects_CharID0024PeerageRank = { set_variable = { which = lgVar_CharID0024PeerageRank value = 0 } }
+lgEffects_CharID0025PeerageRank = { set_variable = { which = lgVar_CharID0025PeerageRank value = 0 } }
+lgEffects_CharID0026PeerageRank = { set_variable = { which = lgVar_CharID0026PeerageRank value = 0 } }
+lgEffects_CharID0027PeerageRank = { set_variable = { which = lgVar_CharID0027PeerageRank value = 0 } }
+lgEffects_CharID0028PeerageRank = { set_variable = { which = lgVar_CharID0028PeerageRank value = 0 } }
+lgEffects_CharID0029PeerageRank = { set_variable = { which = lgVar_CharID0029PeerageRank value = 0 } }
+lgEffects_CharID0030PeerageRank = { set_variable = { which = lgVar_CharID0030PeerageRank value = 0 } }
+
+lgEffects_CharID0031PeerageRank = { set_variable = { which = lgVar_CharID0031PeerageRank value = 0 } }
+lgEffects_CharID0032PeerageRank = { set_variable = { which = lgVar_CharID0032PeerageRank value = 0 } }
+lgEffects_CharID0033PeerageRank = { set_variable = { which = lgVar_CharID0033PeerageRank value = 0 } }
+lgEffects_CharID0034PeerageRank = { set_variable = { which = lgVar_CharID0034PeerageRank value = 0 } }
+lgEffects_CharID0035PeerageRank = { set_variable = { which = lgVar_CharID0035PeerageRank value = 0 } }
+lgEffects_CharID0036PeerageRank = { set_variable = { which = lgVar_CharID0036PeerageRank value = 0 } }
+lgEffects_CharID0037PeerageRank = { set_variable = { which = lgVar_CharID0037PeerageRank value = 0 } }
+lgEffects_CharID0038PeerageRank = { set_variable = { which = lgVar_CharID0038PeerageRank value = 0 } }
+lgEffects_CharID0039PeerageRank = { set_variable = { which = lgVar_CharID0039PeerageRank value = 0 } }
+lgEffects_CharID0040PeerageRank = { set_variable = { which = lgVar_CharID0040PeerageRank value = 0 } }
+
+lgEffects_CharID0041PeerageRank = { set_variable = { which = lgVar_CharID0041PeerageRank value = 0 } }
+lgEffects_CharID0042PeerageRank = { set_variable = { which = lgVar_CharID0042PeerageRank value = 0 } }
+lgEffects_CharID0043PeerageRank = { set_variable = { which = lgVar_CharID0043PeerageRank value = 0 } }
+lgEffects_CharID0044PeerageRank = { set_variable = { which = lgVar_CharID0044PeerageRank value = 0 } }
+lgEffects_CharID0045PeerageRank = { set_variable = { which = lgVar_CharID0045PeerageRank value = 0 } }
+lgEffects_CharID0046PeerageRank = { set_variable = { which = lgVar_CharID0046PeerageRank value = 0 } }
+lgEffects_CharID0047PeerageRank = { set_variable = { which = lgVar_CharID0047PeerageRank value = 0 } }
+lgEffects_CharID0048PeerageRank = { set_variable = { which = lgVar_CharID0048PeerageRank value = 0 } }
+lgEffects_CharID0049PeerageRank = { set_variable = { which = lgVar_CharID0049PeerageRank value = 0 } }
+lgEffects_CharID0050PeerageRank = { set_variable = { which = lgVar_CharID0050PeerageRank value = 0 } }
+
+lgEffects_CharID0051PeerageRank = { set_variable = { which = lgVar_CharID0051PeerageRank value = 0 } }
+lgEffects_CharID0052PeerageRank = { set_variable = { which = lgVar_CharID0052PeerageRank value = 0 } }
+lgEffects_CharID0053PeerageRank = { set_variable = { which = lgVar_CharID0053PeerageRank value = 0 } }
+lgEffects_CharID0054PeerageRank = { set_variable = { which = lgVar_CharID0054PeerageRank value = 0 } }
+lgEffects_CharID0055PeerageRank = { set_variable = { which = lgVar_CharID0055PeerageRank value = 0 } }
+lgEffects_CharID0056PeerageRank = { set_variable = { which = lgVar_CharID0056PeerageRank value = 0 } }
+lgEffects_CharID0057PeerageRank = { set_variable = { which = lgVar_CharID0057PeerageRank value = 0 } }
+lgEffects_CharID0058PeerageRank = { set_variable = { which = lgVar_CharID0058PeerageRank value = 0 } }
+lgEffects_CharID0059PeerageRank = { set_variable = { which = lgVar_CharID0059PeerageRank value = 0 } }
+lgEffects_CharID0060PeerageRank = { set_variable = { which = lgVar_CharID0060PeerageRank value = 0 } }
+
+lgEffects_CharID0061PeerageRank = { set_variable = { which = lgVar_CharID0061PeerageRank value = 0 } }
+lgEffects_CharID0062PeerageRank = { set_variable = { which = lgVar_CharID0062PeerageRank value = 0 } }
+lgEffects_CharID0063PeerageRank = { set_variable = { which = lgVar_CharID0063PeerageRank value = 0 } }
+lgEffects_CharID0064PeerageRank = { set_variable = { which = lgVar_CharID0064PeerageRank value = 0 } }
+lgEffects_CharID0065PeerageRank = { set_variable = { which = lgVar_CharID0065PeerageRank value = 0 } }
+lgEffects_CharID0066PeerageRank = { set_variable = { which = lgVar_CharID0066PeerageRank value = 0 } }
+lgEffects_CharID0067PeerageRank = { set_variable = { which = lgVar_CharID0067PeerageRank value = 0 } }
+lgEffects_CharID0068PeerageRank = { set_variable = { which = lgVar_CharID0068PeerageRank value = 0 } }
+lgEffects_CharID0069PeerageRank = { set_variable = { which = lgVar_CharID0069PeerageRank value = 0 } }
+lgEffects_CharID0070PeerageRank = { set_variable = { which = lgVar_CharID0070PeerageRank value = 0 } }
+
+lgEffects_CharID0071PeerageRank = { set_variable = { which = lgVar_CharID0071PeerageRank value = 0 } }
+lgEffects_CharID0072PeerageRank = { set_variable = { which = lgVar_CharID0072PeerageRank value = 0 } }
+lgEffects_CharID0073PeerageRank = { set_variable = { which = lgVar_CharID0073PeerageRank value = 0 } }
+lgEffects_CharID0074PeerageRank = { set_variable = { which = lgVar_CharID0074PeerageRank value = 0 } }
+lgEffects_CharID0075PeerageRank = { set_variable = { which = lgVar_CharID0075PeerageRank value = 0 } }
+lgEffects_CharID0076PeerageRank = { set_variable = { which = lgVar_CharID0076PeerageRank value = 0 } }
+lgEffects_CharID0077PeerageRank = { set_variable = { which = lgVar_CharID0077PeerageRank value = 0 } }
+lgEffects_CharID0078PeerageRank = { set_variable = { which = lgVar_CharID0078PeerageRank value = 0 } }
+lgEffects_CharID0079PeerageRank = { set_variable = { which = lgVar_CharID0079PeerageRank value = 0 } }
+lgEffects_CharID0080PeerageRank = { set_variable = { which = lgVar_CharID0080PeerageRank value = 0 } }
+
+lgEffects_CharID0081PeerageRank = { set_variable = { which = lgVar_CharID0081PeerageRank value = 0 } }
+lgEffects_CharID0082PeerageRank = { set_variable = { which = lgVar_CharID0082PeerageRank value = 0 } }
+lgEffects_CharID0083PeerageRank = { set_variable = { which = lgVar_CharID0083PeerageRank value = 0 } }
+lgEffects_CharID0084PeerageRank = { set_variable = { which = lgVar_CharID0084PeerageRank value = 0 } }
+lgEffects_CharID0085PeerageRank = { set_variable = { which = lgVar_CharID0085PeerageRank value = 0 } }
+lgEffects_CharID0086PeerageRank = { set_variable = { which = lgVar_CharID0086PeerageRank value = 0 } }
+lgEffects_CharID0087PeerageRank = { set_variable = { which = lgVar_CharID0087PeerageRank value = 0 } }
+lgEffects_CharID0088PeerageRank = { set_variable = { which = lgVar_CharID0088PeerageRank value = 0 } }
+lgEffects_CharID0089PeerageRank = { set_variable = { which = lgVar_CharID0089PeerageRank value = 0 } }
+lgEffects_CharID0090PeerageRank = { set_variable = { which = lgVar_CharID0090PeerageRank value = 0 } }
+
+lgEffects_CharID0091PeerageRank = { set_variable = { which = lgVar_CharID0091PeerageRank value = 0 } }
+lgEffects_CharID0092PeerageRank = { set_variable = { which = lgVar_CharID0092PeerageRank value = 0 } }
+lgEffects_CharID0093PeerageRank = { set_variable = { which = lgVar_CharID0093PeerageRank value = 0 } }
+lgEffects_CharID0094PeerageRank = { set_variable = { which = lgVar_CharID0094PeerageRank value = 0 } }
+lgEffects_CharID0095PeerageRank = { set_variable = { which = lgVar_CharID0095PeerageRank value = 0 } }
+lgEffects_CharID0096PeerageRank = { set_variable = { which = lgVar_CharID0096PeerageRank value = 0 } }
+lgEffects_CharID0097PeerageRank = { set_variable = { which = lgVar_CharID0097PeerageRank value = 0 } }
+lgEffects_CharID0098PeerageRank = { set_variable = { which = lgVar_CharID0098PeerageRank value = 0 } }
+lgEffects_CharID0099PeerageRank = { set_variable = { which = lgVar_CharID0099PeerageRank value = 0 } }
+lgEffects_CharID0100PeerageRank = { set_variable = { which = lgVar_CharID0100PeerageRank value = 0 } }
+
+# 101-200
+lgEffects_CharID0101PeerageRank = { set_variable = { which = lgVar_CharID0101PeerageRank value = 0 } }
+lgEffects_CharID0102PeerageRank = { set_variable = { which = lgVar_CharID0102PeerageRank value = 0 } }
+lgEffects_CharID0103PeerageRank = { set_variable = { which = lgVar_CharID0103PeerageRank value = 0 } }
+lgEffects_CharID0104PeerageRank = { set_variable = { which = lgVar_CharID0104PeerageRank value = 0 } }
+lgEffects_CharID0105PeerageRank = { set_variable = { which = lgVar_CharID0105PeerageRank value = 0 } }
+lgEffects_CharID0106PeerageRank = { set_variable = { which = lgVar_CharID0106PeerageRank value = 0 } }
+lgEffects_CharID0107PeerageRank = { set_variable = { which = lgVar_CharID0107PeerageRank value = 0 } }
+lgEffects_CharID0108PeerageRank = { set_variable = { which = lgVar_CharID0108PeerageRank value = 0 } }
+lgEffects_CharID0109PeerageRank = { set_variable = { which = lgVar_CharID0109PeerageRank value = 0 } }
+lgEffects_CharID0110PeerageRank = { set_variable = { which = lgVar_CharID0110PeerageRank value = 0 } }
+
+lgEffects_CharID0111PeerageRank = { set_variable = { which = lgVar_CharID0111PeerageRank value = 0 } }
+lgEffects_CharID0112PeerageRank = { set_variable = { which = lgVar_CharID0112PeerageRank value = 0 } }
+lgEffects_CharID0113PeerageRank = { set_variable = { which = lgVar_CharID0113PeerageRank value = 0 } }
+lgEffects_CharID0114PeerageRank = { set_variable = { which = lgVar_CharID0114PeerageRank value = 0 } }
+lgEffects_CharID0115PeerageRank = { set_variable = { which = lgVar_CharID0115PeerageRank value = 0 } }
+lgEffects_CharID0116PeerageRank = { set_variable = { which = lgVar_CharID0116PeerageRank value = 0 } }
+lgEffects_CharID0117PeerageRank = { set_variable = { which = lgVar_CharID0117PeerageRank value = 0 } }
+lgEffects_CharID0118PeerageRank = { set_variable = { which = lgVar_CharID0118PeerageRank value = 0 } }
+lgEffects_CharID0119PeerageRank = { set_variable = { which = lgVar_CharID0119PeerageRank value = 0 } }
+lgEffects_CharID0120PeerageRank = { set_variable = { which = lgVar_CharID0120PeerageRank value = 0 } }
+
+lgEffects_CharID0121PeerageRank = { set_variable = { which = lgVar_CharID0121PeerageRank value = 0 } }
+lgEffects_CharID0122PeerageRank = { set_variable = { which = lgVar_CharID0122PeerageRank value = 0 } }
+lgEffects_CharID0123PeerageRank = { set_variable = { which = lgVar_CharID0123PeerageRank value = 0 } }
+lgEffects_CharID0124PeerageRank = { set_variable = { which = lgVar_CharID0124PeerageRank value = 0 } }
+lgEffects_CharID0125PeerageRank = { set_variable = { which = lgVar_CharID0125PeerageRank value = 0 } }
+lgEffects_CharID0126PeerageRank = { set_variable = { which = lgVar_CharID0126PeerageRank value = 0 } }
+lgEffects_CharID0127PeerageRank = { set_variable = { which = lgVar_CharID0127PeerageRank value = 0 } }
+lgEffects_CharID0128PeerageRank = { set_variable = { which = lgVar_CharID0128PeerageRank value = 0 } }
+lgEffects_CharID0129PeerageRank = { set_variable = { which = lgVar_CharID0129PeerageRank value = 0 } }
+lgEffects_CharID0130PeerageRank = { set_variable = { which = lgVar_CharID0130PeerageRank value = 0 } }
+
+lgEffects_CharID0131PeerageRank = { set_variable = { which = lgVar_CharID0131PeerageRank value = 0 } }
+lgEffects_CharID0132PeerageRank = { set_variable = { which = lgVar_CharID0132PeerageRank value = 0 } }
+lgEffects_CharID0133PeerageRank = { set_variable = { which = lgVar_CharID0133PeerageRank value = 0 } }
+lgEffects_CharID0134PeerageRank = { set_variable = { which = lgVar_CharID0134PeerageRank value = 0 } }
+lgEffects_CharID0135PeerageRank = { set_variable = { which = lgVar_CharID0135PeerageRank value = 0 } }
+lgEffects_CharID0136PeerageRank = { set_variable = { which = lgVar_CharID0136PeerageRank value = 0 } }
+lgEffects_CharID0137PeerageRank = { set_variable = { which = lgVar_CharID0137PeerageRank value = 0 } }
+lgEffects_CharID0138PeerageRank = { set_variable = { which = lgVar_CharID0138PeerageRank value = 0 } }
+lgEffects_CharID0139PeerageRank = { set_variable = { which = lgVar_CharID0139PeerageRank value = 0 } }
+lgEffects_CharID0140PeerageRank = { set_variable = { which = lgVar_CharID0140PeerageRank value = 0 } }
+
+lgEffects_CharID0141PeerageRank = { set_variable = { which = lgVar_CharID0141PeerageRank value = 0 } }
+lgEffects_CharID0142PeerageRank = { set_variable = { which = lgVar_CharID0142PeerageRank value = 0 } }
+lgEffects_CharID0143PeerageRank = { set_variable = { which = lgVar_CharID0143PeerageRank value = 0 } }
+lgEffects_CharID0144PeerageRank = { set_variable = { which = lgVar_CharID0144PeerageRank value = 0 } }
+lgEffects_CharID0145PeerageRank = { set_variable = { which = lgVar_CharID0145PeerageRank value = 0 } }
+lgEffects_CharID0146PeerageRank = { set_variable = { which = lgVar_CharID0146PeerageRank value = 0 } }
+lgEffects_CharID0147PeerageRank = { set_variable = { which = lgVar_CharID0147PeerageRank value = 0 } }
+lgEffects_CharID0148PeerageRank = { set_variable = { which = lgVar_CharID0148PeerageRank value = 0 } }
+lgEffects_CharID0149PeerageRank = { set_variable = { which = lgVar_CharID0149PeerageRank value = 0 } }
+lgEffects_CharID0150PeerageRank = { set_variable = { which = lgVar_CharID0150PeerageRank value = 0 } }
+
+lgEffects_CharID0151PeerageRank = { set_variable = { which = lgVar_CharID0151PeerageRank value = 0 } }
+lgEffects_CharID0152PeerageRank = { set_variable = { which = lgVar_CharID0152PeerageRank value = 0 } }
+lgEffects_CharID0153PeerageRank = { set_variable = { which = lgVar_CharID0153PeerageRank value = 0 } }
+lgEffects_CharID0154PeerageRank = { set_variable = { which = lgVar_CharID0154PeerageRank value = 0 } }
+lgEffects_CharID0155PeerageRank = { set_variable = { which = lgVar_CharID0155PeerageRank value = 0 } }
+lgEffects_CharID0156PeerageRank = { set_variable = { which = lgVar_CharID0156PeerageRank value = 0 } }
+lgEffects_CharID0157PeerageRank = { set_variable = { which = lgVar_CharID0157PeerageRank value = 0 } }
+lgEffects_CharID0158PeerageRank = { set_variable = { which = lgVar_CharID0158PeerageRank value = 0 } }
+lgEffects_CharID0159PeerageRank = { set_variable = { which = lgVar_CharID0159PeerageRank value = 0 } }
+lgEffects_CharID0160PeerageRank = { set_variable = { which = lgVar_CharID0160PeerageRank value = 0 } }
+
+lgEffects_CharID0161PeerageRank = { set_variable = { which = lgVar_CharID0161PeerageRank value = 0 } }
+lgEffects_CharID0162PeerageRank = { set_variable = { which = lgVar_CharID0162PeerageRank value = 0 } }
+lgEffects_CharID0163PeerageRank = { set_variable = { which = lgVar_CharID0163PeerageRank value = 0 } }
+lgEffects_CharID0164PeerageRank = { set_variable = { which = lgVar_CharID0164PeerageRank value = 0 } }
+lgEffects_CharID0165PeerageRank = { set_variable = { which = lgVar_CharID0165PeerageRank value = 0 } }
+lgEffects_CharID0166PeerageRank = { set_variable = { which = lgVar_CharID0166PeerageRank value = 0 } }
+lgEffects_CharID0167PeerageRank = { set_variable = { which = lgVar_CharID0167PeerageRank value = 0 } }
+lgEffects_CharID0168PeerageRank = { set_variable = { which = lgVar_CharID0168PeerageRank value = 0 } }
+lgEffects_CharID0169PeerageRank = { set_variable = { which = lgVar_CharID0169PeerageRank value = 0 } }
+lgEffects_CharID0170PeerageRank = { set_variable = { which = lgVar_CharID0170PeerageRank value = 0 } }
+
+lgEffects_CharID0171PeerageRank = { set_variable = { which = lgVar_CharID0171PeerageRank value = 0 } }
+lgEffects_CharID0172PeerageRank = { set_variable = { which = lgVar_CharID0172PeerageRank value = 0 } }
+lgEffects_CharID0173PeerageRank = { set_variable = { which = lgVar_CharID0173PeerageRank value = 0 } }
+lgEffects_CharID0174PeerageRank = { set_variable = { which = lgVar_CharID0174PeerageRank value = 0 } }
+lgEffects_CharID0175PeerageRank = { set_variable = { which = lgVar_CharID0175PeerageRank value = 0 } }
+lgEffects_CharID0176PeerageRank = { set_variable = { which = lgVar_CharID0176PeerageRank value = 0 } }
+lgEffects_CharID0177PeerageRank = { set_variable = { which = lgVar_CharID0177PeerageRank value = 0 } }
+lgEffects_CharID0178PeerageRank = { set_variable = { which = lgVar_CharID0178PeerageRank value = 0 } }
+lgEffects_CharID0179PeerageRank = { set_variable = { which = lgVar_CharID0179PeerageRank value = 0 } }
+lgEffects_CharID0180PeerageRank = { set_variable = { which = lgVar_CharID0180PeerageRank value = 0 } }
+
+lgEffects_CharID0181PeerageRank = { set_variable = { which = lgVar_CharID0181PeerageRank value = 0 } }
+lgEffects_CharID0182PeerageRank = { set_variable = { which = lgVar_CharID0182PeerageRank value = 0 } }
+lgEffects_CharID0183PeerageRank = { set_variable = { which = lgVar_CharID0183PeerageRank value = 0 } }
+lgEffects_CharID0184PeerageRank = { set_variable = { which = lgVar_CharID0184PeerageRank value = 0 } }
+lgEffects_CharID0185PeerageRank = { set_variable = { which = lgVar_CharID0185PeerageRank value = 0 } }
+lgEffects_CharID0186PeerageRank = { set_variable = { which = lgVar_CharID0186PeerageRank value = 0 } }
+lgEffects_CharID0187PeerageRank = { set_variable = { which = lgVar_CharID0187PeerageRank value = 0 } }
+lgEffects_CharID0188PeerageRank = { set_variable = { which = lgVar_CharID0188PeerageRank value = 0 } }
+lgEffects_CharID0189PeerageRank = { set_variable = { which = lgVar_CharID0189PeerageRank value = 0 } }
+lgEffects_CharID0190PeerageRank = { set_variable = { which = lgVar_CharID0190PeerageRank value = 0 } }
+
+lgEffects_CharID0191PeerageRank = { set_variable = { which = lgVar_CharID0191PeerageRank value = 0 } }
+lgEffects_CharID0192PeerageRank = { set_variable = { which = lgVar_CharID0192PeerageRank value = 0 } }
+lgEffects_CharID0193PeerageRank = { set_variable = { which = lgVar_CharID0193PeerageRank value = 0 } }
+lgEffects_CharID0194PeerageRank = { set_variable = { which = lgVar_CharID0194PeerageRank value = 0 } }
+lgEffects_CharID0195PeerageRank = { set_variable = { which = lgVar_CharID0195PeerageRank value = 0 } }
+lgEffects_CharID0196PeerageRank = { set_variable = { which = lgVar_CharID0196PeerageRank value = 0 } }
+lgEffects_CharID0197PeerageRank = { set_variable = { which = lgVar_CharID0197PeerageRank value = 0 } }
+lgEffects_CharID0198PeerageRank = { set_variable = { which = lgVar_CharID0198PeerageRank value = 0 } }
+lgEffects_CharID0199PeerageRank = { set_variable = { which = lgVar_CharID0199PeerageRank value = 0 } }
+lgEffects_CharID0200PeerageRank = { set_variable = { which = lgVar_CharID0200PeerageRank value = 0 } }
+
+# 201-300
+lgEffects_CharID0201PeerageRank = { set_variable = { which = lgVar_CharID0201PeerageRank value = 0 } }
+lgEffects_CharID0202PeerageRank = { set_variable = { which = lgVar_CharID0202PeerageRank value = 0 } }
+lgEffects_CharID0203PeerageRank = { set_variable = { which = lgVar_CharID0203PeerageRank value = 0 } }
+lgEffects_CharID0204PeerageRank = { set_variable = { which = lgVar_CharID0204PeerageRank value = 0 } }
+lgEffects_CharID0205PeerageRank = { set_variable = { which = lgVar_CharID0205PeerageRank value = 0 } }
+lgEffects_CharID0206PeerageRank = { set_variable = { which = lgVar_CharID0206PeerageRank value = 0 } }
+lgEffects_CharID0207PeerageRank = { set_variable = { which = lgVar_CharID0207PeerageRank value = 0 } }
+lgEffects_CharID0208PeerageRank = { set_variable = { which = lgVar_CharID0208PeerageRank value = 0 } }
+lgEffects_CharID0209PeerageRank = { set_variable = { which = lgVar_CharID0209PeerageRank value = 0 } }
+lgEffects_CharID0210PeerageRank = { set_variable = { which = lgVar_CharID0210PeerageRank value = 0 } }
+
+lgEffects_CharID0211PeerageRank = { set_variable = { which = lgVar_CharID0211PeerageRank value = 0 } }
+lgEffects_CharID0212PeerageRank = { set_variable = { which = lgVar_CharID0212PeerageRank value = 0 } }
+lgEffects_CharID0213PeerageRank = { set_variable = { which = lgVar_CharID0213PeerageRank value = 0 } }
+lgEffects_CharID0214PeerageRank = { set_variable = { which = lgVar_CharID0214PeerageRank value = 0 } }
+lgEffects_CharID0215PeerageRank = { set_variable = { which = lgVar_CharID0215PeerageRank value = 0 } }
+lgEffects_CharID0216PeerageRank = { set_variable = { which = lgVar_CharID0216PeerageRank value = 0 } }
+lgEffects_CharID0217PeerageRank = { set_variable = { which = lgVar_CharID0217PeerageRank value = 0 } }
+lgEffects_CharID0218PeerageRank = { set_variable = { which = lgVar_CharID0218PeerageRank value = 0 } }
+lgEffects_CharID0219PeerageRank = { set_variable = { which = lgVar_CharID0219PeerageRank value = 0 } }
+lgEffects_CharID0220PeerageRank = { set_variable = { which = lgVar_CharID0220PeerageRank value = 0 } }
+
+lgEffects_CharID0221PeerageRank = { set_variable = { which = lgVar_CharID0221PeerageRank value = 0 } }
+lgEffects_CharID0222PeerageRank = { set_variable = { which = lgVar_CharID0222PeerageRank value = 0 } }
+lgEffects_CharID0223PeerageRank = { set_variable = { which = lgVar_CharID0223PeerageRank value = 0 } }
+lgEffects_CharID0224PeerageRank = { set_variable = { which = lgVar_CharID0224PeerageRank value = 0 } }
+lgEffects_CharID0225PeerageRank = { set_variable = { which = lgVar_CharID0225PeerageRank value = 0 } }
+lgEffects_CharID0226PeerageRank = { set_variable = { which = lgVar_CharID0226PeerageRank value = 0 } }
+lgEffects_CharID0227PeerageRank = { set_variable = { which = lgVar_CharID0227PeerageRank value = 0 } }
+lgEffects_CharID0228PeerageRank = { set_variable = { which = lgVar_CharID0228PeerageRank value = 0 } }
+lgEffects_CharID0229PeerageRank = { set_variable = { which = lgVar_CharID0229PeerageRank value = 0 } }
+lgEffects_CharID0230PeerageRank = { set_variable = { which = lgVar_CharID0230PeerageRank value = 0 } }
+
+lgEffects_CharID0231PeerageRank = { set_variable = { which = lgVar_CharID0231PeerageRank value = 0 } }
+lgEffects_CharID0232PeerageRank = { set_variable = { which = lgVar_CharID0232PeerageRank value = 0 } }
+lgEffects_CharID0233PeerageRank = { set_variable = { which = lgVar_CharID0233PeerageRank value = 0 } }
+lgEffects_CharID0234PeerageRank = { set_variable = { which = lgVar_CharID0234PeerageRank value = 0 } }
+lgEffects_CharID0235PeerageRank = { set_variable = { which = lgVar_CharID0235PeerageRank value = 0 } }
+lgEffects_CharID0236PeerageRank = { set_variable = { which = lgVar_CharID0236PeerageRank value = 0 } }
+lgEffects_CharID0237PeerageRank = { set_variable = { which = lgVar_CharID0237PeerageRank value = 0 } }
+lgEffects_CharID0238PeerageRank = { set_variable = { which = lgVar_CharID0238PeerageRank value = 0 } }
+lgEffects_CharID0239PeerageRank = { set_variable = { which = lgVar_CharID0239PeerageRank value = 0 } }
+lgEffects_CharID0240PeerageRank = { set_variable = { which = lgVar_CharID0240PeerageRank value = 0 } }
+
+lgEffects_CharID0241PeerageRank = { set_variable = { which = lgVar_CharID0241PeerageRank value = 0 } }
+lgEffects_CharID0242PeerageRank = { set_variable = { which = lgVar_CharID0242PeerageRank value = 0 } }
+lgEffects_CharID0243PeerageRank = { set_variable = { which = lgVar_CharID0243PeerageRank value = 0 } }
+lgEffects_CharID0244PeerageRank = { set_variable = { which = lgVar_CharID0244PeerageRank value = 0 } }
+lgEffects_CharID0245PeerageRank = { set_variable = { which = lgVar_CharID0245PeerageRank value = 0 } }
+lgEffects_CharID0246PeerageRank = { set_variable = { which = lgVar_CharID0246PeerageRank value = 0 } }
+lgEffects_CharID0247PeerageRank = { set_variable = { which = lgVar_CharID0247PeerageRank value = 0 } }
+lgEffects_CharID0248PeerageRank = { set_variable = { which = lgVar_CharID0248PeerageRank value = 0 } }
+lgEffects_CharID0249PeerageRank = { set_variable = { which = lgVar_CharID0249PeerageRank value = 0 } }
+lgEffects_CharID0250PeerageRank = { set_variable = { which = lgVar_CharID0250PeerageRank value = 0 } }
+
+lgEffects_CharID0251PeerageRank = { set_variable = { which = lgVar_CharID0251PeerageRank value = 0 } }
+lgEffects_CharID0252PeerageRank = { set_variable = { which = lgVar_CharID0252PeerageRank value = 0 } }
+lgEffects_CharID0253PeerageRank = { set_variable = { which = lgVar_CharID0253PeerageRank value = 0 } }
+lgEffects_CharID0254PeerageRank = { set_variable = { which = lgVar_CharID0254PeerageRank value = 0 } }
+lgEffects_CharID0255PeerageRank = { set_variable = { which = lgVar_CharID0255PeerageRank value = 0 } }
+lgEffects_CharID0256PeerageRank = { set_variable = { which = lgVar_CharID0256PeerageRank value = 0 } }
+lgEffects_CharID0257PeerageRank = { set_variable = { which = lgVar_CharID0257PeerageRank value = 0 } }
+lgEffects_CharID0258PeerageRank = { set_variable = { which = lgVar_CharID0258PeerageRank value = 0 } }
+lgEffects_CharID0259PeerageRank = { set_variable = { which = lgVar_CharID0259PeerageRank value = 0 } }
+lgEffects_CharID0260PeerageRank = { set_variable = { which = lgVar_CharID0260PeerageRank value = 0 } }
+
+lgEffects_CharID0261PeerageRank = { set_variable = { which = lgVar_CharID0261PeerageRank value = 0 } }
+lgEffects_CharID0262PeerageRank = { set_variable = { which = lgVar_CharID0262PeerageRank value = 0 } }
+lgEffects_CharID0263PeerageRank = { set_variable = { which = lgVar_CharID0263PeerageRank value = 0 } }
+lgEffects_CharID0264PeerageRank = { set_variable = { which = lgVar_CharID0264PeerageRank value = 0 } }
+lgEffects_CharID0265PeerageRank = { set_variable = { which = lgVar_CharID0265PeerageRank value = 0 } }
+lgEffects_CharID0266PeerageRank = { set_variable = { which = lgVar_CharID0266PeerageRank value = 0 } }
+lgEffects_CharID0267PeerageRank = { set_variable = { which = lgVar_CharID0267PeerageRank value = 0 } }
+lgEffects_CharID0268PeerageRank = { set_variable = { which = lgVar_CharID0268PeerageRank value = 0 } }
+lgEffects_CharID0269PeerageRank = { set_variable = { which = lgVar_CharID0269PeerageRank value = 0 } }
+lgEffects_CharID0270PeerageRank = { set_variable = { which = lgVar_CharID0270PeerageRank value = 0 } }
+
+lgEffects_CharID0271PeerageRank = { set_variable = { which = lgVar_CharID0271PeerageRank value = 0 } }
+lgEffects_CharID0272PeerageRank = { set_variable = { which = lgVar_CharID0272PeerageRank value = 0 } }
+lgEffects_CharID0273PeerageRank = { set_variable = { which = lgVar_CharID0273PeerageRank value = 0 } }
+lgEffects_CharID0274PeerageRank = { set_variable = { which = lgVar_CharID0274PeerageRank value = 0 } }
+lgEffects_CharID0275PeerageRank = { set_variable = { which = lgVar_CharID0275PeerageRank value = 0 } }
+lgEffects_CharID0276PeerageRank = { set_variable = { which = lgVar_CharID0276PeerageRank value = 0 } }
+lgEffects_CharID0277PeerageRank = { set_variable = { which = lgVar_CharID0277PeerageRank value = 0 } }
+lgEffects_CharID0278PeerageRank = { set_variable = { which = lgVar_CharID0278PeerageRank value = 0 } }
+lgEffects_CharID0279PeerageRank = { set_variable = { which = lgVar_CharID0279PeerageRank value = 0 } }
+lgEffects_CharID0280PeerageRank = { set_variable = { which = lgVar_CharID0280PeerageRank value = 0 } }
+
+lgEffects_CharID0281PeerageRank = { set_variable = { which = lgVar_CharID0281PeerageRank value = 0 } }
+lgEffects_CharID0282PeerageRank = { set_variable = { which = lgVar_CharID0282PeerageRank value = 0 } }
+lgEffects_CharID0283PeerageRank = { set_variable = { which = lgVar_CharID0283PeerageRank value = 0 } }
+lgEffects_CharID0284PeerageRank = { set_variable = { which = lgVar_CharID0284PeerageRank value = 0 } }
+lgEffects_CharID0285PeerageRank = { set_variable = { which = lgVar_CharID0285PeerageRank value = 0 } }
+lgEffects_CharID0286PeerageRank = { set_variable = { which = lgVar_CharID0286PeerageRank value = 0 } }
+lgEffects_CharID0287PeerageRank = { set_variable = { which = lgVar_CharID0287PeerageRank value = 0 } }
+lgEffects_CharID0288PeerageRank = { set_variable = { which = lgVar_CharID0288PeerageRank value = 0 } }
+lgEffects_CharID0289PeerageRank = { set_variable = { which = lgVar_CharID0289PeerageRank value = 0 } }
+lgEffects_CharID0290PeerageRank = { set_variable = { which = lgVar_CharID0290PeerageRank value = 0 } }
+
+lgEffects_CharID0291PeerageRank = { set_variable = { which = lgVar_CharID0291PeerageRank value = 0 } }
+lgEffects_CharID0292PeerageRank = { set_variable = { which = lgVar_CharID0292PeerageRank value = 0 } }
+lgEffects_CharID0293PeerageRank = { set_variable = { which = lgVar_CharID0293PeerageRank value = 0 } }
+lgEffects_CharID0294PeerageRank = { set_variable = { which = lgVar_CharID0294PeerageRank value = 0 } }
+lgEffects_CharID0295PeerageRank = { set_variable = { which = lgVar_CharID0295PeerageRank value = 0 } }
+lgEffects_CharID0296PeerageRank = { set_variable = { which = lgVar_CharID0296PeerageRank value = 0 } }
+lgEffects_CharID0297PeerageRank = { set_variable = { which = lgVar_CharID0297PeerageRank value = 0 } }
+lgEffects_CharID0298PeerageRank = { set_variable = { which = lgVar_CharID0298PeerageRank value = 0 } }
+lgEffects_CharID0299PeerageRank = { set_variable = { which = lgVar_CharID0299PeerageRank value = 0 } }
+lgEffects_CharID0300PeerageRank = { set_variable = { which = lgVar_CharID0300PeerageRank value = 0 } }

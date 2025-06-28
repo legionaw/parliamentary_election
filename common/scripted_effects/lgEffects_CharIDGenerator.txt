@@ -1,4 +1,5 @@
 lgEffects_CharIDgenerator = {
+	# should update these values if creating pre-existing chars
 	if = {
 		limit = {
 			NOT = {
@@ -381,6 +382,18 @@ lgEffects_CharIDgenerator = {
 	change_variable = {
 		which = lgVar_NumOfCharsExisting
 		value = 1
+	}
+	
+	# Need to define conditions to determine if the char is peer or not at their generation
+	# Need to move this to its own effects
+	set_variable = {
+		which = lgVar_Char0001PeerageRank
+		value = 0 # Commoner
+	}
+	
+	set_variable = {
+		which = lgVar_CharPeerOrCommoner
+		value = 1 # Commoner by default
 	}
 	
 	clr_country_flag = lgFlags_CharacterGenerated

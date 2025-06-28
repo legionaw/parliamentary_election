@@ -4,12 +4,12 @@ defined_text = {
 		localisation_key = lgPeerageNames_Ashford
 		trigger = {
 			check_variable = {
-				which = lgVar_EventChar1_Peerage
+				which = lgVar_EventChar1_PeerageName
 				value = 1
 			}
 			NOT = {
 				check_variable = {
-					which = lgVar_EventChar1_Peerage
+					which = lgVar_EventChar1_PeerageName
 					value = 2
 				}
 			}

@@ -1,11 +1,21 @@
-lgPeerages_AshfordCreated = {
+lgTriggers_Peerages_AshfordCreated = {
 	
 }
 
-lgPeerages_AshfordLocked = {
-	
+lgTriggers_Peerages_AshfordLocked = {
+	has_country_flag = lgFlags_PeerageNameLocked_Ashford
 }
 
-lgPeerages_AshfordChosen = {
-	
+lgTriggers_Peerages_AshfordChosen = {
+	has_country_flag = lgFlags_ChosePeerageName_Ashford
+}
+
+# Triggers to check for the peerage ranks
+lgTriggers_IsNotPeer = {
+	NOT = {
+		check_variable = {
+			which = lgVar_Char0001PeerageRank
+			value = 1
+		}
+	}
 }

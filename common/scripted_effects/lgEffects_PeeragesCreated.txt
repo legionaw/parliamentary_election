@@ -1,0 +1,1331 @@
+# Generating Peerage IDs
+lgEffects_PeerageID0001 = { set_variable = { which = lgVar_PeerageID0001 value = 1 } lgEffects_PeerageID0001RankName = yes lgEffects_PeerageID0001OrdChar = yes }
+lgEffects_PeerageID0002 = { set_variable = { which = lgVar_PeerageID0002 value = 1 } lgEffects_PeerageID0002RankName = yes lgEffects_PeerageID0002OrdChar = yes }
+lgEffects_PeerageID0003 = { set_variable = { which = lgVar_PeerageID0002 value = 1 } lgEffects_PeerageID0003RankName = yes lgEffects_PeerageID0003OrdChar = yes }
+lgEffects_PeerageID0004 = { set_variable = { which = lgVar_PeerageID0004 value = 1 } lgEffects_PeerageID0004RankName = yes lgEffects_PeerageID0004OrdChar = yes }
+lgEffects_PeerageID0005 = { set_variable = { which = lgVar_PeerageID0005 value = 1 } lgEffects_PeerageID0005RankName = yes lgEffects_PeerageID0005OrdChar = yes }
+lgEffects_PeerageID0006 = { set_variable = { which = lgVar_PeerageID0006 value = 1 } lgEffects_PeerageID0006RankName = yes lgEffects_PeerageID0006OrdChar = yes }
+lgEffects_PeerageID0007 = { set_variable = { which = lgVar_PeerageID0007 value = 1 } lgEffects_PeerageID0007RankName = yes lgEffects_PeerageID0007OrdChar = yes }
+lgEffects_PeerageID0008 = { set_variable = { which = lgVar_PeerageID0008 value = 1 } lgEffects_PeerageID0008RankName = yes lgEffects_PeerageID0008OrdChar = yes }
+lgEffects_PeerageID0009 = { set_variable = { which = lgVar_PeerageID0009 value = 1 } lgEffects_PeerageID0009RankName = yes lgEffects_PeerageID0009OrdChar = yes }
+lgEffects_PeerageID0010 = { set_variable = { which = lgVar_PeerageID0010 value = 1 } lgEffects_PeerageID0010RankName = yes lgEffects_PeerageID0010OrdChar = yes }
+
+lgEffects_PeerageID0011 = { set_variable = { which = lgVar_PeerageID0011 value = 1 } lgEffects_PeerageID0011RankName = yes lgEffects_PeerageID0011OrdChar = yes }
+lgEffects_PeerageID0012 = { set_variable = { which = lgVar_PeerageID0012 value = 1 } lgEffects_PeerageID0012RankName = yes lgEffects_PeerageID0012OrdChar = yes }
+lgEffects_PeerageID0013 = { set_variable = { which = lgVar_PeerageID0012 value = 1 } lgEffects_PeerageID0013RankName = yes lgEffects_PeerageID0013OrdChar = yes }
+lgEffects_PeerageID0014 = { set_variable = { which = lgVar_PeerageID0014 value = 1 } lgEffects_PeerageID0014RankName = yes lgEffects_PeerageID0014OrdChar = yes }
+lgEffects_PeerageID0015 = { set_variable = { which = lgVar_PeerageID0015 value = 1 } lgEffects_PeerageID0015RankName = yes lgEffects_PeerageID0015OrdChar = yes }
+lgEffects_PeerageID0016 = { set_variable = { which = lgVar_PeerageID0016 value = 1 } lgEffects_PeerageID0016RankName = yes lgEffects_PeerageID0016OrdChar = yes }
+lgEffects_PeerageID0017 = { set_variable = { which = lgVar_PeerageID0017 value = 1 } lgEffects_PeerageID0017RankName = yes lgEffects_PeerageID0017OrdChar = yes }
+lgEffects_PeerageID0018 = { set_variable = { which = lgVar_PeerageID0018 value = 1 } lgEffects_PeerageID0018RankName = yes lgEffects_PeerageID0018OrdChar = yes }
+lgEffects_PeerageID0019 = { set_variable = { which = lgVar_PeerageID0019 value = 1 } lgEffects_PeerageID0019RankName = yes lgEffects_PeerageID0019OrdChar = yes }
+lgEffects_PeerageID0020 = { set_variable = { which = lgVar_PeerageID0020 value = 1 } lgEffects_PeerageID0020RankName = yes lgEffects_PeerageID0020OrdChar = yes }
+
+lgEffects_PeerageID0021 = { set_variable = { which = lgVar_PeerageID0021 value = 1 } lgEffects_PeerageID0021RankName = yes lgEffects_PeerageID0021OrdChar = yes }
+lgEffects_PeerageID0022 = { set_variable = { which = lgVar_PeerageID0022 value = 1 } lgEffects_PeerageID0022RankName = yes lgEffects_PeerageID0022OrdChar = yes }
+lgEffects_PeerageID0023 = { set_variable = { which = lgVar_PeerageID0022 value = 1 } lgEffects_PeerageID0023RankName = yes lgEffects_PeerageID0023OrdChar = yes }
+lgEffects_PeerageID0024 = { set_variable = { which = lgVar_PeerageID0024 value = 1 } lgEffects_PeerageID0024RankName = yes lgEffects_PeerageID0024OrdChar = yes }
+lgEffects_PeerageID0025 = { set_variable = { which = lgVar_PeerageID0025 value = 1 } lgEffects_PeerageID0025RankName = yes lgEffects_PeerageID0025OrdChar = yes }
+lgEffects_PeerageID0026 = { set_variable = { which = lgVar_PeerageID0026 value = 1 } lgEffects_PeerageID0026RankName = yes lgEffects_PeerageID0026OrdChar = yes }
+lgEffects_PeerageID0027 = { set_variable = { which = lgVar_PeerageID0027 value = 1 } lgEffects_PeerageID0027RankName = yes lgEffects_PeerageID0027OrdChar = yes }
+lgEffects_PeerageID0028 = { set_variable = { which = lgVar_PeerageID0028 value = 1 } lgEffects_PeerageID0028RankName = yes lgEffects_PeerageID0028OrdChar = yes }
+lgEffects_PeerageID0029 = { set_variable = { which = lgVar_PeerageID0029 value = 1 } lgEffects_PeerageID0029RankName = yes lgEffects_PeerageID0029OrdChar = yes }
+lgEffects_PeerageID0030 = { set_variable = { which = lgVar_PeerageID0030 value = 1 } lgEffects_PeerageID0030RankName = yes lgEffects_PeerageID0030OrdChar = yes }
+
+lgEffects_PeerageID0031 = { set_variable = { which = lgVar_PeerageID0031 value = 1 } lgEffects_PeerageID0031RankName = yes lgEffects_PeerageID0031OrdChar = yes }
+lgEffects_PeerageID0032 = { set_variable = { which = lgVar_PeerageID0032 value = 1 } lgEffects_PeerageID0032RankName = yes lgEffects_PeerageID0032OrdChar = yes }
+lgEffects_PeerageID0033 = { set_variable = { which = lgVar_PeerageID0032 value = 1 } lgEffects_PeerageID0033RankName = yes lgEffects_PeerageID0033OrdChar = yes }
+lgEffects_PeerageID0034 = { set_variable = { which = lgVar_PeerageID0034 value = 1 } lgEffects_PeerageID0034RankName = yes lgEffects_PeerageID0034OrdChar = yes }
+lgEffects_PeerageID0035 = { set_variable = { which = lgVar_PeerageID0035 value = 1 } lgEffects_PeerageID0035RankName = yes lgEffects_PeerageID0035OrdChar = yes }
+lgEffects_PeerageID0036 = { set_variable = { which = lgVar_PeerageID0036 value = 1 } lgEffects_PeerageID0036RankName = yes lgEffects_PeerageID0036OrdChar = yes }
+lgEffects_PeerageID0037 = { set_variable = { which = lgVar_PeerageID0037 value = 1 } lgEffects_PeerageID0037RankName = yes lgEffects_PeerageID0037OrdChar = yes }
+lgEffects_PeerageID0038 = { set_variable = { which = lgVar_PeerageID0038 value = 1 } lgEffects_PeerageID0038RankName = yes lgEffects_PeerageID0038OrdChar = yes }
+lgEffects_PeerageID0039 = { set_variable = { which = lgVar_PeerageID0039 value = 1 } lgEffects_PeerageID0039RankName = yes lgEffects_PeerageID0039OrdChar = yes }
+lgEffects_PeerageID0040 = { set_variable = { which = lgVar_PeerageID0040 value = 1 } lgEffects_PeerageID0040RankName = yes lgEffects_PeerageID0040OrdChar = yes }
+
+lgEffects_PeerageID0041 = { set_variable = { which = lgVar_PeerageID0041 value = 1 } lgEffects_PeerageID0041RankName = yes lgEffects_PeerageID0041OrdChar = yes }
+lgEffects_PeerageID0042 = { set_variable = { which = lgVar_PeerageID0042 value = 1 } lgEffects_PeerageID0042RankName = yes lgEffects_PeerageID0042OrdChar = yes }
+lgEffects_PeerageID0043 = { set_variable = { which = lgVar_PeerageID0042 value = 1 } lgEffects_PeerageID0043RankName = yes lgEffects_PeerageID0043OrdChar = yes }
+lgEffects_PeerageID0044 = { set_variable = { which = lgVar_PeerageID0044 value = 1 } lgEffects_PeerageID0044RankName = yes lgEffects_PeerageID0044OrdChar = yes }
+lgEffects_PeerageID0045 = { set_variable = { which = lgVar_PeerageID0045 value = 1 } lgEffects_PeerageID0045RankName = yes lgEffects_PeerageID0045OrdChar = yes }
+lgEffects_PeerageID0046 = { set_variable = { which = lgVar_PeerageID0046 value = 1 } lgEffects_PeerageID0046RankName = yes lgEffects_PeerageID0046OrdChar = yes }
+lgEffects_PeerageID0047 = { set_variable = { which = lgVar_PeerageID0047 value = 1 } lgEffects_PeerageID0047RankName = yes lgEffects_PeerageID0047OrdChar = yes }
+lgEffects_PeerageID0048 = { set_variable = { which = lgVar_PeerageID0048 value = 1 } lgEffects_PeerageID0048RankName = yes lgEffects_PeerageID0048OrdChar = yes }
+lgEffects_PeerageID0049 = { set_variable = { which = lgVar_PeerageID0049 value = 1 } lgEffects_PeerageID0049RankName = yes lgEffects_PeerageID0049OrdChar = yes }
+lgEffects_PeerageID0050 = { set_variable = { which = lgVar_PeerageID0050 value = 1 } lgEffects_PeerageID0050RankName = yes lgEffects_PeerageID0050OrdChar = yes }
+
+lgEffects_PeerageID0051 = { set_variable = { which = lgVar_PeerageID0051 value = 1 } lgEffects_PeerageID0051RankName = yes lgEffects_PeerageID0051OrdChar = yes }
+lgEffects_PeerageID0052 = { set_variable = { which = lgVar_PeerageID0052 value = 1 } lgEffects_PeerageID0052RankName = yes lgEffects_PeerageID0052OrdChar = yes }
+lgEffects_PeerageID0053 = { set_variable = { which = lgVar_PeerageID0052 value = 1 } lgEffects_PeerageID0053RankName = yes lgEffects_PeerageID0053OrdChar = yes }
+lgEffects_PeerageID0054 = { set_variable = { which = lgVar_PeerageID0054 value = 1 } lgEffects_PeerageID0054RankName = yes lgEffects_PeerageID0054OrdChar = yes }
+lgEffects_PeerageID0055 = { set_variable = { which = lgVar_PeerageID0055 value = 1 } lgEffects_PeerageID0055RankName = yes lgEffects_PeerageID0055OrdChar = yes }
+lgEffects_PeerageID0056 = { set_variable = { which = lgVar_PeerageID0056 value = 1 } lgEffects_PeerageID0056RankName = yes lgEffects_PeerageID0056OrdChar = yes }
+lgEffects_PeerageID0057 = { set_variable = { which = lgVar_PeerageID0057 value = 1 } lgEffects_PeerageID0057RankName = yes lgEffects_PeerageID0057OrdChar = yes }
+lgEffects_PeerageID0058 = { set_variable = { which = lgVar_PeerageID0058 value = 1 } lgEffects_PeerageID0058RankName = yes lgEffects_PeerageID0058OrdChar = yes }
+lgEffects_PeerageID0059 = { set_variable = { which = lgVar_PeerageID0059 value = 1 } lgEffects_PeerageID0059RankName = yes lgEffects_PeerageID0059OrdChar = yes }
+lgEffects_PeerageID0060 = { set_variable = { which = lgVar_PeerageID0060 value = 1 } lgEffects_PeerageID0060RankName = yes lgEffects_PeerageID0060OrdChar = yes }
+
+lgEffects_PeerageID0061 = { set_variable = { which = lgVar_PeerageID0061 value = 1 } lgEffects_PeerageID0061RankName = yes lgEffects_PeerageID0061OrdChar = yes }
+lgEffects_PeerageID0062 = { set_variable = { which = lgVar_PeerageID0062 value = 1 } lgEffects_PeerageID0062RankName = yes lgEffects_PeerageID0062OrdChar = yes }
+lgEffects_PeerageID0063 = { set_variable = { which = lgVar_PeerageID0062 value = 1 } lgEffects_PeerageID0063RankName = yes lgEffects_PeerageID0063OrdChar = yes }
+lgEffects_PeerageID0064 = { set_variable = { which = lgVar_PeerageID0064 value = 1 } lgEffects_PeerageID0064RankName = yes lgEffects_PeerageID0064OrdChar = yes }
+lgEffects_PeerageID0065 = { set_variable = { which = lgVar_PeerageID0065 value = 1 } lgEffects_PeerageID0065RankName = yes lgEffects_PeerageID0065OrdChar = yes }
+lgEffects_PeerageID0066 = { set_variable = { which = lgVar_PeerageID0066 value = 1 } lgEffects_PeerageID0066RankName = yes lgEffects_PeerageID0066OrdChar = yes }
+lgEffects_PeerageID0067 = { set_variable = { which = lgVar_PeerageID0067 value = 1 } lgEffects_PeerageID0067RankName = yes lgEffects_PeerageID0067OrdChar = yes }
+lgEffects_PeerageID0068 = { set_variable = { which = lgVar_PeerageID0068 value = 1 } lgEffects_PeerageID0068RankName = yes lgEffects_PeerageID0068OrdChar = yes }
+lgEffects_PeerageID0069 = { set_variable = { which = lgVar_PeerageID0069 value = 1 } lgEffects_PeerageID0069RankName = yes lgEffects_PeerageID0069OrdChar = yes }
+lgEffects_PeerageID0070 = { set_variable = { which = lgVar_PeerageID0070 value = 1 } lgEffects_PeerageID0070RankName = yes lgEffects_PeerageID0070OrdChar = yes }
+
+lgEffects_PeerageID0071 = { set_variable = { which = lgVar_PeerageID0071 value = 1 } lgEffects_PeerageID0071RankName = yes lgEffects_PeerageID0071OrdChar = yes }
+lgEffects_PeerageID0072 = { set_variable = { which = lgVar_PeerageID0072 value = 1 } lgEffects_PeerageID0072RankName = yes lgEffects_PeerageID0072OrdChar = yes }
+lgEffects_PeerageID0073 = { set_variable = { which = lgVar_PeerageID0072 value = 1 } lgEffects_PeerageID0073RankName = yes lgEffects_PeerageID0073OrdChar = yes }
+lgEffects_PeerageID0074 = { set_variable = { which = lgVar_PeerageID0074 value = 1 } lgEffects_PeerageID0074RankName = yes lgEffects_PeerageID0074OrdChar = yes }
+lgEffects_PeerageID0075 = { set_variable = { which = lgVar_PeerageID0075 value = 1 } lgEffects_PeerageID0075RankName = yes lgEffects_PeerageID0075OrdChar = yes }
+lgEffects_PeerageID0076 = { set_variable = { which = lgVar_PeerageID0076 value = 1 } lgEffects_PeerageID0076RankName = yes lgEffects_PeerageID0076OrdChar = yes }
+lgEffects_PeerageID0077 = { set_variable = { which = lgVar_PeerageID0077 value = 1 } lgEffects_PeerageID0077RankName = yes lgEffects_PeerageID0077OrdChar = yes }
+lgEffects_PeerageID0078 = { set_variable = { which = lgVar_PeerageID0078 value = 1 } lgEffects_PeerageID0078RankName = yes lgEffects_PeerageID0078OrdChar = yes }
+lgEffects_PeerageID0079 = { set_variable = { which = lgVar_PeerageID0079 value = 1 } lgEffects_PeerageID0079RankName = yes lgEffects_PeerageID0079OrdChar = yes }
+lgEffects_PeerageID0080 = { set_variable = { which = lgVar_PeerageID0080 value = 1 } lgEffects_PeerageID0080RankName = yes lgEffects_PeerageID0080OrdChar = yes }
+
+lgEffects_PeerageID0081 = { set_variable = { which = lgVar_PeerageID0081 value = 1 } lgEffects_PeerageID0081RankName = yes lgEffects_PeerageID0081OrdChar = yes }
+lgEffects_PeerageID0082 = { set_variable = { which = lgVar_PeerageID0082 value = 1 } lgEffects_PeerageID0082RankName = yes lgEffects_PeerageID0082OrdChar = yes }
+lgEffects_PeerageID0083 = { set_variable = { which = lgVar_PeerageID0082 value = 1 } lgEffects_PeerageID0083RankName = yes lgEffects_PeerageID0083OrdChar = yes }
+lgEffects_PeerageID0084 = { set_variable = { which = lgVar_PeerageID0084 value = 1 } lgEffects_PeerageID0084RankName = yes lgEffects_PeerageID0084OrdChar = yes }
+lgEffects_PeerageID0085 = { set_variable = { which = lgVar_PeerageID0085 value = 1 } lgEffects_PeerageID0085RankName = yes lgEffects_PeerageID0085OrdChar = yes }
+lgEffects_PeerageID0086 = { set_variable = { which = lgVar_PeerageID0086 value = 1 } lgEffects_PeerageID0086RankName = yes lgEffects_PeerageID0086OrdChar = yes }
+lgEffects_PeerageID0087 = { set_variable = { which = lgVar_PeerageID0087 value = 1 } lgEffects_PeerageID0087RankName = yes lgEffects_PeerageID0087OrdChar = yes }
+lgEffects_PeerageID0088 = { set_variable = { which = lgVar_PeerageID0088 value = 1 } lgEffects_PeerageID0088RankName = yes lgEffects_PeerageID0088OrdChar = yes }
+lgEffects_PeerageID0089 = { set_variable = { which = lgVar_PeerageID0089 value = 1 } lgEffects_PeerageID0089RankName = yes lgEffects_PeerageID0089OrdChar = yes }
+lgEffects_PeerageID0090 = { set_variable = { which = lgVar_PeerageID0090 value = 1 } lgEffects_PeerageID0090RankName = yes lgEffects_PeerageID0090OrdChar = yes }
+
+lgEffects_PeerageID0091 = { set_variable = { which = lgVar_PeerageID0091 value = 1 } lgEffects_PeerageID0091RankName = yes lgEffects_PeerageID0091OrdChar = yes }
+lgEffects_PeerageID0092 = { set_variable = { which = lgVar_PeerageID0092 value = 1 } lgEffects_PeerageID0092RankName = yes lgEffects_PeerageID0092OrdChar = yes }
+lgEffects_PeerageID0093 = { set_variable = { which = lgVar_PeerageID0092 value = 1 } lgEffects_PeerageID0093RankName = yes lgEffects_PeerageID0093OrdChar = yes }
+lgEffects_PeerageID0094 = { set_variable = { which = lgVar_PeerageID0094 value = 1 } lgEffects_PeerageID0094RankName = yes lgEffects_PeerageID0094OrdChar = yes }
+lgEffects_PeerageID0095 = { set_variable = { which = lgVar_PeerageID0095 value = 1 } lgEffects_PeerageID0095RankName = yes lgEffects_PeerageID0095OrdChar = yes }
+lgEffects_PeerageID0096 = { set_variable = { which = lgVar_PeerageID0096 value = 1 } lgEffects_PeerageID0096RankName = yes lgEffects_PeerageID0096OrdChar = yes }
+lgEffects_PeerageID0097 = { set_variable = { which = lgVar_PeerageID0097 value = 1 } lgEffects_PeerageID0097RankName = yes lgEffects_PeerageID0097OrdChar = yes }
+lgEffects_PeerageID0098 = { set_variable = { which = lgVar_PeerageID0098 value = 1 } lgEffects_PeerageID0098RankName = yes lgEffects_PeerageID0098OrdChar = yes }
+lgEffects_PeerageID0099 = { set_variable = { which = lgVar_PeerageID0099 value = 1 } lgEffects_PeerageID0099RankName = yes lgEffects_PeerageID0099OrdChar = yes }
+lgEffects_PeerageID0100 = { set_variable = { which = lgVar_PeerageID0100 value = 1 } lgEffects_PeerageID0100RankName = yes lgEffects_PeerageID0100OrdChar = yes }
+
+# 101-200
+lgEffects_PeerageID0101 = { set_variable = { which = lgVar_PeerageID0101 value = 1 } lgEffects_PeerageID0101RankName = yes lgEffects_PeerageID0101OrdChar = yes }
+lgEffects_PeerageID0102 = { set_variable = { which = lgVar_PeerageID0102 value = 1 } lgEffects_PeerageID0102RankName = yes lgEffects_PeerageID0102OrdChar = yes }
+lgEffects_PeerageID0103 = { set_variable = { which = lgVar_PeerageID0102 value = 1 } lgEffects_PeerageID0103RankName = yes lgEffects_PeerageID0103OrdChar = yes }
+lgEffects_PeerageID0104 = { set_variable = { which = lgVar_PeerageID0104 value = 1 } lgEffects_PeerageID0104RankName = yes lgEffects_PeerageID0104OrdChar = yes }
+lgEffects_PeerageID0105 = { set_variable = { which = lgVar_PeerageID0105 value = 1 } lgEffects_PeerageID0105RankName = yes lgEffects_PeerageID0105OrdChar = yes }
+lgEffects_PeerageID0106 = { set_variable = { which = lgVar_PeerageID0106 value = 1 } lgEffects_PeerageID0106RankName = yes lgEffects_PeerageID0106OrdChar = yes }
+lgEffects_PeerageID0107 = { set_variable = { which = lgVar_PeerageID0107 value = 1 } lgEffects_PeerageID0107RankName = yes lgEffects_PeerageID0107OrdChar = yes }
+lgEffects_PeerageID0108 = { set_variable = { which = lgVar_PeerageID0108 value = 1 } lgEffects_PeerageID0108RankName = yes lgEffects_PeerageID0108OrdChar = yes }
+lgEffects_PeerageID0109 = { set_variable = { which = lgVar_PeerageID0109 value = 1 } lgEffects_PeerageID0109RankName = yes lgEffects_PeerageID0109OrdChar = yes }
+lgEffects_PeerageID0110 = { set_variable = { which = lgVar_PeerageID0110 value = 1 } lgEffects_PeerageID0110RankName = yes lgEffects_PeerageID0110OrdChar = yes }
+
+lgEffects_PeerageID0111 = { set_variable = { which = lgVar_PeerageID0111 value = 1 } lgEffects_PeerageID0111RankName = yes lgEffects_PeerageID0111OrdChar = yes }
+lgEffects_PeerageID0112 = { set_variable = { which = lgVar_PeerageID0112 value = 1 } lgEffects_PeerageID0112RankName = yes lgEffects_PeerageID0112OrdChar = yes }
+lgEffects_PeerageID0113 = { set_variable = { which = lgVar_PeerageID0112 value = 1 } lgEffects_PeerageID0113RankName = yes lgEffects_PeerageID0113OrdChar = yes }
+lgEffects_PeerageID0114 = { set_variable = { which = lgVar_PeerageID0114 value = 1 } lgEffects_PeerageID0114RankName = yes lgEffects_PeerageID0114OrdChar = yes }
+lgEffects_PeerageID0115 = { set_variable = { which = lgVar_PeerageID0115 value = 1 } lgEffects_PeerageID0115RankName = yes lgEffects_PeerageID0115OrdChar = yes }
+lgEffects_PeerageID0116 = { set_variable = { which = lgVar_PeerageID0116 value = 1 } lgEffects_PeerageID0116RankName = yes lgEffects_PeerageID0116OrdChar = yes }
+lgEffects_PeerageID0117 = { set_variable = { which = lgVar_PeerageID0117 value = 1 } lgEffects_PeerageID0117RankName = yes lgEffects_PeerageID0117OrdChar = yes }
+lgEffects_PeerageID0118 = { set_variable = { which = lgVar_PeerageID0118 value = 1 } lgEffects_PeerageID0118RankName = yes lgEffects_PeerageID0118OrdChar = yes }
+lgEffects_PeerageID0119 = { set_variable = { which = lgVar_PeerageID0119 value = 1 } lgEffects_PeerageID0119RankName = yes lgEffects_PeerageID0119OrdChar = yes }
+lgEffects_PeerageID0120 = { set_variable = { which = lgVar_PeerageID0120 value = 1 } lgEffects_PeerageID0120RankName = yes lgEffects_PeerageID0120OrdChar = yes }
+
+lgEffects_PeerageID0121 = { set_variable = { which = lgVar_PeerageID0121 value = 1 } lgEffects_PeerageID0121RankName = yes lgEffects_PeerageID0121OrdChar = yes }
+lgEffects_PeerageID0122 = { set_variable = { which = lgVar_PeerageID0122 value = 1 } lgEffects_PeerageID0122RankName = yes lgEffects_PeerageID0122OrdChar = yes }
+lgEffects_PeerageID0123 = { set_variable = { which = lgVar_PeerageID0122 value = 1 } lgEffects_PeerageID0123RankName = yes lgEffects_PeerageID0123OrdChar = yes }
+lgEffects_PeerageID0124 = { set_variable = { which = lgVar_PeerageID0124 value = 1 } lgEffects_PeerageID0124RankName = yes lgEffects_PeerageID0124OrdChar = yes }
+lgEffects_PeerageID0125 = { set_variable = { which = lgVar_PeerageID0125 value = 1 } lgEffects_PeerageID0125RankName = yes lgEffects_PeerageID0125OrdChar = yes }
+lgEffects_PeerageID0126 = { set_variable = { which = lgVar_PeerageID0126 value = 1 } lgEffects_PeerageID0126RankName = yes lgEffects_PeerageID0126OrdChar = yes }
+lgEffects_PeerageID0127 = { set_variable = { which = lgVar_PeerageID0127 value = 1 } lgEffects_PeerageID0127RankName = yes lgEffects_PeerageID0127OrdChar = yes }
+lgEffects_PeerageID0128 = { set_variable = { which = lgVar_PeerageID0128 value = 1 } lgEffects_PeerageID0128RankName = yes lgEffects_PeerageID0128OrdChar = yes }
+lgEffects_PeerageID0129 = { set_variable = { which = lgVar_PeerageID0129 value = 1 } lgEffects_PeerageID0129RankName = yes lgEffects_PeerageID0129OrdChar = yes }
+lgEffects_PeerageID0130 = { set_variable = { which = lgVar_PeerageID0130 value = 1 } lgEffects_PeerageID0130RankName = yes lgEffects_PeerageID0130OrdChar = yes }
+
+lgEffects_PeerageID0131 = { set_variable = { which = lgVar_PeerageID0131 value = 1 } lgEffects_PeerageID0131RankName = yes lgEffects_PeerageID0131OrdChar = yes }
+lgEffects_PeerageID0132 = { set_variable = { which = lgVar_PeerageID0132 value = 1 } lgEffects_PeerageID0132RankName = yes lgEffects_PeerageID0132OrdChar = yes }
+lgEffects_PeerageID0133 = { set_variable = { which = lgVar_PeerageID0132 value = 1 } lgEffects_PeerageID0133RankName = yes lgEffects_PeerageID0133OrdChar = yes }
+lgEffects_PeerageID0134 = { set_variable = { which = lgVar_PeerageID0134 value = 1 } lgEffects_PeerageID0134RankName = yes lgEffects_PeerageID0134OrdChar = yes }
+lgEffects_PeerageID0135 = { set_variable = { which = lgVar_PeerageID0135 value = 1 } lgEffects_PeerageID0135RankName = yes lgEffects_PeerageID0135OrdChar = yes }
+lgEffects_PeerageID0136 = { set_variable = { which = lgVar_PeerageID0136 value = 1 } lgEffects_PeerageID0136RankName = yes lgEffects_PeerageID0136OrdChar = yes }
+lgEffects_PeerageID0137 = { set_variable = { which = lgVar_PeerageID0137 value = 1 } lgEffects_PeerageID0137RankName = yes lgEffects_PeerageID0137OrdChar = yes }
+lgEffects_PeerageID0138 = { set_variable = { which = lgVar_PeerageID0138 value = 1 } lgEffects_PeerageID0138RankName = yes lgEffects_PeerageID0138OrdChar = yes }
+lgEffects_PeerageID0139 = { set_variable = { which = lgVar_PeerageID0139 value = 1 } lgEffects_PeerageID0139RankName = yes lgEffects_PeerageID0139OrdChar = yes }
+lgEffects_PeerageID0140 = { set_variable = { which = lgVar_PeerageID0140 value = 1 } lgEffects_PeerageID0140RankName = yes lgEffects_PeerageID0140OrdChar = yes }
+
+lgEffects_PeerageID0141 = { set_variable = { which = lgVar_PeerageID0141 value = 1 } lgEffects_PeerageID0141RankName = yes lgEffects_PeerageID0141OrdChar = yes }
+lgEffects_PeerageID0142 = { set_variable = { which = lgVar_PeerageID0142 value = 1 } lgEffects_PeerageID0142RankName = yes lgEffects_PeerageID0142OrdChar = yes }
+lgEffects_PeerageID0143 = { set_variable = { which = lgVar_PeerageID0142 value = 1 } lgEffects_PeerageID0143RankName = yes lgEffects_PeerageID0143OrdChar = yes }
+lgEffects_PeerageID0144 = { set_variable = { which = lgVar_PeerageID0144 value = 1 } lgEffects_PeerageID0144RankName = yes lgEffects_PeerageID0144OrdChar = yes }
+lgEffects_PeerageID0145 = { set_variable = { which = lgVar_PeerageID0145 value = 1 } lgEffects_PeerageID0145RankName = yes lgEffects_PeerageID0145OrdChar = yes }
+lgEffects_PeerageID0146 = { set_variable = { which = lgVar_PeerageID0146 value = 1 } lgEffects_PeerageID0146RankName = yes lgEffects_PeerageID0146OrdChar = yes }
+lgEffects_PeerageID0147 = { set_variable = { which = lgVar_PeerageID0147 value = 1 } lgEffects_PeerageID0147RankName = yes lgEffects_PeerageID0147OrdChar = yes }
+lgEffects_PeerageID0148 = { set_variable = { which = lgVar_PeerageID0148 value = 1 } lgEffects_PeerageID0148RankName = yes lgEffects_PeerageID0148OrdChar = yes }
+lgEffects_PeerageID0149 = { set_variable = { which = lgVar_PeerageID0149 value = 1 } lgEffects_PeerageID0149RankName = yes lgEffects_PeerageID0149OrdChar = yes }
+lgEffects_PeerageID0150 = { set_variable = { which = lgVar_PeerageID0150 value = 1 } lgEffects_PeerageID0150RankName = yes lgEffects_PeerageID0150OrdChar = yes }
+
+lgEffects_PeerageID0151 = { set_variable = { which = lgVar_PeerageID0151 value = 1 } lgEffects_PeerageID0151RankName = yes lgEffects_PeerageID0151OrdChar = yes }
+lgEffects_PeerageID0152 = { set_variable = { which = lgVar_PeerageID0152 value = 1 } lgEffects_PeerageID0152RankName = yes lgEffects_PeerageID0152OrdChar = yes }
+lgEffects_PeerageID0153 = { set_variable = { which = lgVar_PeerageID0152 value = 1 } lgEffects_PeerageID0153RankName = yes lgEffects_PeerageID0153OrdChar = yes }
+lgEffects_PeerageID0154 = { set_variable = { which = lgVar_PeerageID0154 value = 1 } lgEffects_PeerageID0154RankName = yes lgEffects_PeerageID0154OrdChar = yes }
+lgEffects_PeerageID0155 = { set_variable = { which = lgVar_PeerageID0155 value = 1 } lgEffects_PeerageID0155RankName = yes lgEffects_PeerageID0155OrdChar = yes }
+lgEffects_PeerageID0156 = { set_variable = { which = lgVar_PeerageID0156 value = 1 } lgEffects_PeerageID0156RankName = yes lgEffects_PeerageID0156OrdChar = yes }
+lgEffects_PeerageID0157 = { set_variable = { which = lgVar_PeerageID0157 value = 1 } lgEffects_PeerageID0157RankName = yes lgEffects_PeerageID0157OrdChar = yes }
+lgEffects_PeerageID0158 = { set_variable = { which = lgVar_PeerageID0158 value = 1 } lgEffects_PeerageID0158RankName = yes lgEffects_PeerageID0158OrdChar = yes }
+lgEffects_PeerageID0159 = { set_variable = { which = lgVar_PeerageID0159 value = 1 } lgEffects_PeerageID0159RankName = yes lgEffects_PeerageID0159OrdChar = yes }
+lgEffects_PeerageID0160 = { set_variable = { which = lgVar_PeerageID0160 value = 1 } lgEffects_PeerageID0160RankName = yes lgEffects_PeerageID0160OrdChar = yes }
+
+lgEffects_PeerageID0161 = { set_variable = { which = lgVar_PeerageID0161 value = 1 } lgEffects_PeerageID0161RankName = yes lgEffects_PeerageID0161OrdChar = yes }
+lgEffects_PeerageID0162 = { set_variable = { which = lgVar_PeerageID0162 value = 1 } lgEffects_PeerageID0162RankName = yes lgEffects_PeerageID0162OrdChar = yes }
+lgEffects_PeerageID0163 = { set_variable = { which = lgVar_PeerageID0162 value = 1 } lgEffects_PeerageID0163RankName = yes lgEffects_PeerageID0163OrdChar = yes }
+lgEffects_PeerageID0164 = { set_variable = { which = lgVar_PeerageID0164 value = 1 } lgEffects_PeerageID0164RankName = yes lgEffects_PeerageID0164OrdChar = yes }
+lgEffects_PeerageID0165 = { set_variable = { which = lgVar_PeerageID0165 value = 1 } lgEffects_PeerageID0165RankName = yes lgEffects_PeerageID0165OrdChar = yes }
+lgEffects_PeerageID0166 = { set_variable = { which = lgVar_PeerageID0166 value = 1 } lgEffects_PeerageID0166RankName = yes lgEffects_PeerageID0166OrdChar = yes }
+lgEffects_PeerageID0167 = { set_variable = { which = lgVar_PeerageID0167 value = 1 } lgEffects_PeerageID0167RankName = yes lgEffects_PeerageID0167OrdChar = yes }
+lgEffects_PeerageID0168 = { set_variable = { which = lgVar_PeerageID0168 value = 1 } lgEffects_PeerageID0168RankName = yes lgEffects_PeerageID0168OrdChar = yes }
+lgEffects_PeerageID0169 = { set_variable = { which = lgVar_PeerageID0169 value = 1 } lgEffects_PeerageID0169RankName = yes lgEffects_PeerageID0169OrdChar = yes }
+lgEffects_PeerageID0170 = { set_variable = { which = lgVar_PeerageID0170 value = 1 } lgEffects_PeerageID0170RankName = yes lgEffects_PeerageID0170OrdChar = yes }
+
+lgEffects_PeerageID0171 = { set_variable = { which = lgVar_PeerageID0171 value = 1 } lgEffects_PeerageID0171RankName = yes lgEffects_PeerageID0171OrdChar = yes }
+lgEffects_PeerageID0172 = { set_variable = { which = lgVar_PeerageID0172 value = 1 } lgEffects_PeerageID0172RankName = yes lgEffects_PeerageID0172OrdChar = yes }
+lgEffects_PeerageID0173 = { set_variable = { which = lgVar_PeerageID0172 value = 1 } lgEffects_PeerageID0173RankName = yes lgEffects_PeerageID0173OrdChar = yes }
+lgEffects_PeerageID0174 = { set_variable = { which = lgVar_PeerageID0174 value = 1 } lgEffects_PeerageID0174RankName = yes lgEffects_PeerageID0174OrdChar = yes }
+lgEffects_PeerageID0175 = { set_variable = { which = lgVar_PeerageID0175 value = 1 } lgEffects_PeerageID0175RankName = yes lgEffects_PeerageID0175OrdChar = yes }
+lgEffects_PeerageID0176 = { set_variable = { which = lgVar_PeerageID0176 value = 1 } lgEffects_PeerageID0176RankName = yes lgEffects_PeerageID0176OrdChar = yes }
+lgEffects_PeerageID0177 = { set_variable = { which = lgVar_PeerageID0177 value = 1 } lgEffects_PeerageID0177RankName = yes lgEffects_PeerageID0177OrdChar = yes }
+lgEffects_PeerageID0178 = { set_variable = { which = lgVar_PeerageID0178 value = 1 } lgEffects_PeerageID0178RankName = yes lgEffects_PeerageID0178OrdChar = yes }
+lgEffects_PeerageID0179 = { set_variable = { which = lgVar_PeerageID0179 value = 1 } lgEffects_PeerageID0179RankName = yes lgEffects_PeerageID0179OrdChar = yes }
+lgEffects_PeerageID0180 = { set_variable = { which = lgVar_PeerageID0180 value = 1 } lgEffects_PeerageID0180RankName = yes lgEffects_PeerageID0180OrdChar = yes }
+
+lgEffects_PeerageID0181 = { set_variable = { which = lgVar_PeerageID0181 value = 1 } lgEffects_PeerageID0181RankName = yes lgEffects_PeerageID0181OrdChar = yes }
+lgEffects_PeerageID0182 = { set_variable = { which = lgVar_PeerageID0182 value = 1 } lgEffects_PeerageID0182RankName = yes lgEffects_PeerageID0182OrdChar = yes }
+lgEffects_PeerageID0183 = { set_variable = { which = lgVar_PeerageID0182 value = 1 } lgEffects_PeerageID0183RankName = yes lgEffects_PeerageID0183OrdChar = yes }
+lgEffects_PeerageID0184 = { set_variable = { which = lgVar_PeerageID0184 value = 1 } lgEffects_PeerageID0184RankName = yes lgEffects_PeerageID0184OrdChar = yes }
+lgEffects_PeerageID0185 = { set_variable = { which = lgVar_PeerageID0185 value = 1 } lgEffects_PeerageID0185RankName = yes lgEffects_PeerageID0185OrdChar = yes }
+lgEffects_PeerageID0186 = { set_variable = { which = lgVar_PeerageID0186 value = 1 } lgEffects_PeerageID0186RankName = yes lgEffects_PeerageID0186OrdChar = yes }
+lgEffects_PeerageID0187 = { set_variable = { which = lgVar_PeerageID0187 value = 1 } lgEffects_PeerageID0187RankName = yes lgEffects_PeerageID0187OrdChar = yes }
+lgEffects_PeerageID0188 = { set_variable = { which = lgVar_PeerageID0188 value = 1 } lgEffects_PeerageID0188RankName = yes lgEffects_PeerageID0188OrdChar = yes }
+lgEffects_PeerageID0189 = { set_variable = { which = lgVar_PeerageID0189 value = 1 } lgEffects_PeerageID0189RankName = yes lgEffects_PeerageID0189OrdChar = yes }
+lgEffects_PeerageID0190 = { set_variable = { which = lgVar_PeerageID0190 value = 1 } lgEffects_PeerageID0190RankName = yes lgEffects_PeerageID0190OrdChar = yes }
+
+lgEffects_PeerageID0191 = { set_variable = { which = lgVar_PeerageID0191 value = 1 } lgEffects_PeerageID0191RankName = yes lgEffects_PeerageID0191OrdChar = yes }
+lgEffects_PeerageID0192 = { set_variable = { which = lgVar_PeerageID0192 value = 1 } lgEffects_PeerageID0192RankName = yes lgEffects_PeerageID0192OrdChar = yes }
+lgEffects_PeerageID0193 = { set_variable = { which = lgVar_PeerageID0192 value = 1 } lgEffects_PeerageID0193RankName = yes lgEffects_PeerageID0193OrdChar = yes }
+lgEffects_PeerageID0194 = { set_variable = { which = lgVar_PeerageID0194 value = 1 } lgEffects_PeerageID0194RankName = yes lgEffects_PeerageID0194OrdChar = yes }
+lgEffects_PeerageID0195 = { set_variable = { which = lgVar_PeerageID0195 value = 1 } lgEffects_PeerageID0195RankName = yes lgEffects_PeerageID0195OrdChar = yes }
+lgEffects_PeerageID0196 = { set_variable = { which = lgVar_PeerageID0196 value = 1 } lgEffects_PeerageID0196RankName = yes lgEffects_PeerageID0196OrdChar = yes }
+lgEffects_PeerageID0197 = { set_variable = { which = lgVar_PeerageID0197 value = 1 } lgEffects_PeerageID0197RankName = yes lgEffects_PeerageID0197OrdChar = yes }
+lgEffects_PeerageID0198 = { set_variable = { which = lgVar_PeerageID0198 value = 1 } lgEffects_PeerageID0198RankName = yes lgEffects_PeerageID0198OrdChar = yes }
+lgEffects_PeerageID0199 = { set_variable = { which = lgVar_PeerageID0199 value = 1 } lgEffects_PeerageID0199RankName = yes lgEffects_PeerageID0199OrdChar = yes }
+lgEffects_PeerageID0200 = { set_variable = { which = lgVar_PeerageID0200 value = 1 } lgEffects_PeerageID0200RankName = yes lgEffects_PeerageID0200OrdChar = yes }
+
+# 201-300
+lgEffects_PeerageID0201 = { set_variable = { which = lgVar_PeerageID0201 value = 1 } lgEffects_PeerageID0201RankName = yes lgEffects_PeerageID0201OrdChar = yes }
+lgEffects_PeerageID0202 = { set_variable = { which = lgVar_PeerageID0202 value = 1 } lgEffects_PeerageID0202RankName = yes lgEffects_PeerageID0202OrdChar = yes }
+lgEffects_PeerageID0203 = { set_variable = { which = lgVar_PeerageID0202 value = 1 } lgEffects_PeerageID0203RankName = yes lgEffects_PeerageID0203OrdChar = yes }
+lgEffects_PeerageID0204 = { set_variable = { which = lgVar_PeerageID0204 value = 1 } lgEffects_PeerageID0204RankName = yes lgEffects_PeerageID0204OrdChar = yes }
+lgEffects_PeerageID0205 = { set_variable = { which = lgVar_PeerageID0205 value = 1 } lgEffects_PeerageID0205RankName = yes lgEffects_PeerageID0205OrdChar = yes }
+lgEffects_PeerageID0206 = { set_variable = { which = lgVar_PeerageID0206 value = 1 } lgEffects_PeerageID0206RankName = yes lgEffects_PeerageID0206OrdChar = yes }
+lgEffects_PeerageID0207 = { set_variable = { which = lgVar_PeerageID0207 value = 1 } lgEffects_PeerageID0207RankName = yes lgEffects_PeerageID0207OrdChar = yes }
+lgEffects_PeerageID0208 = { set_variable = { which = lgVar_PeerageID0208 value = 1 } lgEffects_PeerageID0208RankName = yes lgEffects_PeerageID0208OrdChar = yes }
+lgEffects_PeerageID0209 = { set_variable = { which = lgVar_PeerageID0209 value = 1 } lgEffects_PeerageID0209RankName = yes lgEffects_PeerageID0209OrdChar = yes }
+lgEffects_PeerageID0210 = { set_variable = { which = lgVar_PeerageID0210 value = 1 } lgEffects_PeerageID0210RankName = yes lgEffects_PeerageID0210OrdChar = yes }
+
+lgEffects_PeerageID0211 = { set_variable = { which = lgVar_PeerageID0211 value = 1 } lgEffects_PeerageID0211RankName = yes lgEffects_PeerageID0211OrdChar = yes }
+lgEffects_PeerageID0212 = { set_variable = { which = lgVar_PeerageID0212 value = 1 } lgEffects_PeerageID0212RankName = yes lgEffects_PeerageID0212OrdChar = yes }
+lgEffects_PeerageID0213 = { set_variable = { which = lgVar_PeerageID0212 value = 1 } lgEffects_PeerageID0213RankName = yes lgEffects_PeerageID0213OrdChar = yes }
+lgEffects_PeerageID0214 = { set_variable = { which = lgVar_PeerageID0214 value = 1 } lgEffects_PeerageID0214RankName = yes lgEffects_PeerageID0214OrdChar = yes }
+lgEffects_PeerageID0215 = { set_variable = { which = lgVar_PeerageID0215 value = 1 } lgEffects_PeerageID0215RankName = yes lgEffects_PeerageID0215OrdChar = yes }
+lgEffects_PeerageID0216 = { set_variable = { which = lgVar_PeerageID0216 value = 1 } lgEffects_PeerageID0216RankName = yes lgEffects_PeerageID0216OrdChar = yes }
+lgEffects_PeerageID0217 = { set_variable = { which = lgVar_PeerageID0217 value = 1 } lgEffects_PeerageID0217RankName = yes lgEffects_PeerageID0217OrdChar = yes }
+lgEffects_PeerageID0218 = { set_variable = { which = lgVar_PeerageID0218 value = 1 } lgEffects_PeerageID0218RankName = yes lgEffects_PeerageID0218OrdChar = yes }
+lgEffects_PeerageID0219 = { set_variable = { which = lgVar_PeerageID0219 value = 1 } lgEffects_PeerageID0219RankName = yes lgEffects_PeerageID0219OrdChar = yes }
+lgEffects_PeerageID0220 = { set_variable = { which = lgVar_PeerageID0220 value = 1 } lgEffects_PeerageID0220RankName = yes lgEffects_PeerageID0220OrdChar = yes }
+
+lgEffects_PeerageID0221 = { set_variable = { which = lgVar_PeerageID0221 value = 1 } lgEffects_PeerageID0221RankName = yes lgEffects_PeerageID0221OrdChar = yes }
+lgEffects_PeerageID0222 = { set_variable = { which = lgVar_PeerageID0222 value = 1 } lgEffects_PeerageID0222RankName = yes lgEffects_PeerageID0222OrdChar = yes }
+lgEffects_PeerageID0223 = { set_variable = { which = lgVar_PeerageID0222 value = 1 } lgEffects_PeerageID0223RankName = yes lgEffects_PeerageID0223OrdChar = yes }
+lgEffects_PeerageID0224 = { set_variable = { which = lgVar_PeerageID0224 value = 1 } lgEffects_PeerageID0224RankName = yes lgEffects_PeerageID0224OrdChar = yes }
+lgEffects_PeerageID0225 = { set_variable = { which = lgVar_PeerageID0225 value = 1 } lgEffects_PeerageID0225RankName = yes lgEffects_PeerageID0225OrdChar = yes }
+lgEffects_PeerageID0226 = { set_variable = { which = lgVar_PeerageID0226 value = 1 } lgEffects_PeerageID0226RankName = yes lgEffects_PeerageID0226OrdChar = yes }
+lgEffects_PeerageID0227 = { set_variable = { which = lgVar_PeerageID0227 value = 1 } lgEffects_PeerageID0227RankName = yes lgEffects_PeerageID0227OrdChar = yes }
+lgEffects_PeerageID0228 = { set_variable = { which = lgVar_PeerageID0228 value = 1 } lgEffects_PeerageID0228RankName = yes lgEffects_PeerageID0228OrdChar = yes }
+lgEffects_PeerageID0229 = { set_variable = { which = lgVar_PeerageID0229 value = 1 } lgEffects_PeerageID0229RankName = yes lgEffects_PeerageID0229OrdChar = yes }
+lgEffects_PeerageID0230 = { set_variable = { which = lgVar_PeerageID0230 value = 1 } lgEffects_PeerageID0230RankName = yes lgEffects_PeerageID0230OrdChar = yes }
+
+lgEffects_PeerageID0231 = { set_variable = { which = lgVar_PeerageID0231 value = 1 } lgEffects_PeerageID0231RankName = yes lgEffects_PeerageID0231OrdChar = yes }
+lgEffects_PeerageID0232 = { set_variable = { which = lgVar_PeerageID0232 value = 1 } lgEffects_PeerageID0232RankName = yes lgEffects_PeerageID0232OrdChar = yes }
+lgEffects_PeerageID0233 = { set_variable = { which = lgVar_PeerageID0232 value = 1 } lgEffects_PeerageID0233RankName = yes lgEffects_PeerageID0233OrdChar = yes }
+lgEffects_PeerageID0234 = { set_variable = { which = lgVar_PeerageID0234 value = 1 } lgEffects_PeerageID0234RankName = yes lgEffects_PeerageID0234OrdChar = yes }
+lgEffects_PeerageID0235 = { set_variable = { which = lgVar_PeerageID0235 value = 1 } lgEffects_PeerageID0235RankName = yes lgEffects_PeerageID0235OrdChar = yes }
+lgEffects_PeerageID0236 = { set_variable = { which = lgVar_PeerageID0236 value = 1 } lgEffects_PeerageID0236RankName = yes lgEffects_PeerageID0236OrdChar = yes }
+lgEffects_PeerageID0237 = { set_variable = { which = lgVar_PeerageID0237 value = 1 } lgEffects_PeerageID0237RankName = yes lgEffects_PeerageID0237OrdChar = yes }
+lgEffects_PeerageID0238 = { set_variable = { which = lgVar_PeerageID0238 value = 1 } lgEffects_PeerageID0238RankName = yes lgEffects_PeerageID0238OrdChar = yes }
+lgEffects_PeerageID0239 = { set_variable = { which = lgVar_PeerageID0239 value = 1 } lgEffects_PeerageID0239RankName = yes lgEffects_PeerageID0239OrdChar = yes }
+lgEffects_PeerageID0240 = { set_variable = { which = lgVar_PeerageID0240 value = 1 } lgEffects_PeerageID0240RankName = yes lgEffects_PeerageID0240OrdChar = yes }
+
+lgEffects_PeerageID0241 = { set_variable = { which = lgVar_PeerageID0241 value = 1 } lgEffects_PeerageID0241RankName = yes lgEffects_PeerageID0241OrdChar = yes }
+lgEffects_PeerageID0242 = { set_variable = { which = lgVar_PeerageID0242 value = 1 } lgEffects_PeerageID0242RankName = yes lgEffects_PeerageID0242OrdChar = yes }
+lgEffects_PeerageID0243 = { set_variable = { which = lgVar_PeerageID0242 value = 1 } lgEffects_PeerageID0243RankName = yes lgEffects_PeerageID0243OrdChar = yes }
+lgEffects_PeerageID0244 = { set_variable = { which = lgVar_PeerageID0244 value = 1 } lgEffects_PeerageID0244RankName = yes lgEffects_PeerageID0244OrdChar = yes }
+lgEffects_PeerageID0245 = { set_variable = { which = lgVar_PeerageID0245 value = 1 } lgEffects_PeerageID0245RankName = yes lgEffects_PeerageID0245OrdChar = yes }
+lgEffects_PeerageID0246 = { set_variable = { which = lgVar_PeerageID0246 value = 1 } lgEffects_PeerageID0246RankName = yes lgEffects_PeerageID0246OrdChar = yes }
+lgEffects_PeerageID0247 = { set_variable = { which = lgVar_PeerageID0247 value = 1 } lgEffects_PeerageID0247RankName = yes lgEffects_PeerageID0247OrdChar = yes }
+lgEffects_PeerageID0248 = { set_variable = { which = lgVar_PeerageID0248 value = 1 } lgEffects_PeerageID0248RankName = yes lgEffects_PeerageID0248OrdChar = yes }
+lgEffects_PeerageID0249 = { set_variable = { which = lgVar_PeerageID0249 value = 1 } lgEffects_PeerageID0249RankName = yes lgEffects_PeerageID0249OrdChar = yes }
+lgEffects_PeerageID0250 = { set_variable = { which = lgVar_PeerageID0250 value = 1 } lgEffects_PeerageID0250RankName = yes lgEffects_PeerageID0250OrdChar = yes }
+
+lgEffects_PeerageID0251 = { set_variable = { which = lgVar_PeerageID0251 value = 1 } lgEffects_PeerageID0251RankName = yes lgEffects_PeerageID0251OrdChar = yes }
+lgEffects_PeerageID0252 = { set_variable = { which = lgVar_PeerageID0252 value = 1 } lgEffects_PeerageID0252RankName = yes lgEffects_PeerageID0252OrdChar = yes }
+lgEffects_PeerageID0253 = { set_variable = { which = lgVar_PeerageID0252 value = 1 } lgEffects_PeerageID0253RankName = yes lgEffects_PeerageID0253OrdChar = yes }
+lgEffects_PeerageID0254 = { set_variable = { which = lgVar_PeerageID0254 value = 1 } lgEffects_PeerageID0254RankName = yes lgEffects_PeerageID0254OrdChar = yes }
+lgEffects_PeerageID0255 = { set_variable = { which = lgVar_PeerageID0255 value = 1 } lgEffects_PeerageID0255RankName = yes lgEffects_PeerageID0255OrdChar = yes }
+lgEffects_PeerageID0256 = { set_variable = { which = lgVar_PeerageID0256 value = 1 } lgEffects_PeerageID0256RankName = yes lgEffects_PeerageID0256OrdChar = yes }
+lgEffects_PeerageID0257 = { set_variable = { which = lgVar_PeerageID0257 value = 1 } lgEffects_PeerageID0257RankName = yes lgEffects_PeerageID0257OrdChar = yes }
+lgEffects_PeerageID0258 = { set_variable = { which = lgVar_PeerageID0258 value = 1 } lgEffects_PeerageID0258RankName = yes lgEffects_PeerageID0258OrdChar = yes }
+lgEffects_PeerageID0259 = { set_variable = { which = lgVar_PeerageID0259 value = 1 } lgEffects_PeerageID0259RankName = yes lgEffects_PeerageID0259OrdChar = yes }
+lgEffects_PeerageID0260 = { set_variable = { which = lgVar_PeerageID0260 value = 1 } lgEffects_PeerageID0260RankName = yes lgEffects_PeerageID0260OrdChar = yes }
+
+lgEffects_PeerageID0261 = { set_variable = { which = lgVar_PeerageID0261 value = 1 } lgEffects_PeerageID0261RankName = yes lgEffects_PeerageID0261OrdChar = yes }
+lgEffects_PeerageID0262 = { set_variable = { which = lgVar_PeerageID0262 value = 1 } lgEffects_PeerageID0262RankName = yes lgEffects_PeerageID0262OrdChar = yes }
+lgEffects_PeerageID0263 = { set_variable = { which = lgVar_PeerageID0262 value = 1 } lgEffects_PeerageID0263RankName = yes lgEffects_PeerageID0263OrdChar = yes }
+lgEffects_PeerageID0264 = { set_variable = { which = lgVar_PeerageID0264 value = 1 } lgEffects_PeerageID0264RankName = yes lgEffects_PeerageID0264OrdChar = yes }
+lgEffects_PeerageID0265 = { set_variable = { which = lgVar_PeerageID0265 value = 1 } lgEffects_PeerageID0265RankName = yes lgEffects_PeerageID0265OrdChar = yes }
+lgEffects_PeerageID0266 = { set_variable = { which = lgVar_PeerageID0266 value = 1 } lgEffects_PeerageID0266RankName = yes lgEffects_PeerageID0266OrdChar = yes }
+lgEffects_PeerageID0267 = { set_variable = { which = lgVar_PeerageID0267 value = 1 } lgEffects_PeerageID0267RankName = yes lgEffects_PeerageID0267OrdChar = yes }
+lgEffects_PeerageID0268 = { set_variable = { which = lgVar_PeerageID0268 value = 1 } lgEffects_PeerageID0268RankName = yes lgEffects_PeerageID0268OrdChar = yes }
+lgEffects_PeerageID0269 = { set_variable = { which = lgVar_PeerageID0269 value = 1 } lgEffects_PeerageID0269RankName = yes lgEffects_PeerageID0269OrdChar = yes }
+lgEffects_PeerageID0270 = { set_variable = { which = lgVar_PeerageID0270 value = 1 } lgEffects_PeerageID0270RankName = yes lgEffects_PeerageID0270OrdChar = yes }
+
+lgEffects_PeerageID0271 = { set_variable = { which = lgVar_PeerageID0271 value = 1 } lgEffects_PeerageID0271RankName = yes lgEffects_PeerageID0271OrdChar = yes }
+lgEffects_PeerageID0272 = { set_variable = { which = lgVar_PeerageID0272 value = 1 } lgEffects_PeerageID0272RankName = yes lgEffects_PeerageID0272OrdChar = yes }
+lgEffects_PeerageID0273 = { set_variable = { which = lgVar_PeerageID0272 value = 1 } lgEffects_PeerageID0273RankName = yes lgEffects_PeerageID0273OrdChar = yes }
+lgEffects_PeerageID0274 = { set_variable = { which = lgVar_PeerageID0274 value = 1 } lgEffects_PeerageID0274RankName = yes lgEffects_PeerageID0274OrdChar = yes }
+lgEffects_PeerageID0275 = { set_variable = { which = lgVar_PeerageID0275 value = 1 } lgEffects_PeerageID0275RankName = yes lgEffects_PeerageID0275OrdChar = yes }
+lgEffects_PeerageID0276 = { set_variable = { which = lgVar_PeerageID0276 value = 1 } lgEffects_PeerageID0276RankName = yes lgEffects_PeerageID0276OrdChar = yes }
+lgEffects_PeerageID0277 = { set_variable = { which = lgVar_PeerageID0277 value = 1 } lgEffects_PeerageID0277RankName = yes lgEffects_PeerageID0277OrdChar = yes }
+lgEffects_PeerageID0278 = { set_variable = { which = lgVar_PeerageID0278 value = 1 } lgEffects_PeerageID0278RankName = yes lgEffects_PeerageID0278OrdChar = yes }
+lgEffects_PeerageID0279 = { set_variable = { which = lgVar_PeerageID0279 value = 1 } lgEffects_PeerageID0279RankName = yes lgEffects_PeerageID0279OrdChar = yes }
+lgEffects_PeerageID0280 = { set_variable = { which = lgVar_PeerageID0280 value = 1 } lgEffects_PeerageID0280RankName = yes lgEffects_PeerageID0280OrdChar = yes }
+
+lgEffects_PeerageID0281 = { set_variable = { which = lgVar_PeerageID0281 value = 1 } lgEffects_PeerageID0281RankName = yes lgEffects_PeerageID0281OrdChar = yes }
+lgEffects_PeerageID0282 = { set_variable = { which = lgVar_PeerageID0282 value = 1 } lgEffects_PeerageID0282RankName = yes lgEffects_PeerageID0282OrdChar = yes }
+lgEffects_PeerageID0283 = { set_variable = { which = lgVar_PeerageID0282 value = 1 } lgEffects_PeerageID0283RankName = yes lgEffects_PeerageID0283OrdChar = yes }
+lgEffects_PeerageID0284 = { set_variable = { which = lgVar_PeerageID0284 value = 1 } lgEffects_PeerageID0284RankName = yes lgEffects_PeerageID0284OrdChar = yes }
+lgEffects_PeerageID0285 = { set_variable = { which = lgVar_PeerageID0285 value = 1 } lgEffects_PeerageID0285RankName = yes lgEffects_PeerageID0285OrdChar = yes }
+lgEffects_PeerageID0286 = { set_variable = { which = lgVar_PeerageID0286 value = 1 } lgEffects_PeerageID0286RankName = yes lgEffects_PeerageID0286OrdChar = yes }
+lgEffects_PeerageID0287 = { set_variable = { which = lgVar_PeerageID0287 value = 1 } lgEffects_PeerageID0287RankName = yes lgEffects_PeerageID0287OrdChar = yes }
+lgEffects_PeerageID0288 = { set_variable = { which = lgVar_PeerageID0288 value = 1 } lgEffects_PeerageID0288RankName = yes lgEffects_PeerageID0288OrdChar = yes }
+lgEffects_PeerageID0289 = { set_variable = { which = lgVar_PeerageID0289 value = 1 } lgEffects_PeerageID0289RankName = yes lgEffects_PeerageID0289OrdChar = yes }
+lgEffects_PeerageID0290 = { set_variable = { which = lgVar_PeerageID0290 value = 1 } lgEffects_PeerageID0290RankName = yes lgEffects_PeerageID0290OrdChar = yes }
+
+lgEffects_PeerageID0291 = { set_variable = { which = lgVar_PeerageID0291 value = 1 } lgEffects_PeerageID0291RankName = yes lgEffects_PeerageID0291OrdChar = yes }
+lgEffects_PeerageID0292 = { set_variable = { which = lgVar_PeerageID0292 value = 1 } lgEffects_PeerageID0292RankName = yes lgEffects_PeerageID0292OrdChar = yes }
+lgEffects_PeerageID0293 = { set_variable = { which = lgVar_PeerageID0292 value = 1 } lgEffects_PeerageID0293RankName = yes lgEffects_PeerageID0293OrdChar = yes }
+lgEffects_PeerageID0294 = { set_variable = { which = lgVar_PeerageID0294 value = 1 } lgEffects_PeerageID0294RankName = yes lgEffects_PeerageID0294OrdChar = yes }
+lgEffects_PeerageID0295 = { set_variable = { which = lgVar_PeerageID0295 value = 1 } lgEffects_PeerageID0295RankName = yes lgEffects_PeerageID0295OrdChar = yes }
+lgEffects_PeerageID0296 = { set_variable = { which = lgVar_PeerageID0296 value = 1 } lgEffects_PeerageID0296RankName = yes lgEffects_PeerageID0296OrdChar = yes }
+lgEffects_PeerageID0297 = { set_variable = { which = lgVar_PeerageID0297 value = 1 } lgEffects_PeerageID0297RankName = yes lgEffects_PeerageID0297OrdChar = yes }
+lgEffects_PeerageID0298 = { set_variable = { which = lgVar_PeerageID0298 value = 1 } lgEffects_PeerageID0298RankName = yes lgEffects_PeerageID0298OrdChar = yes }
+lgEffects_PeerageID0299 = { set_variable = { which = lgVar_PeerageID0299 value = 1 } lgEffects_PeerageID0299RankName = yes lgEffects_PeerageID0299OrdChar = yes }
+lgEffects_PeerageID0300 = { set_variable = { which = lgVar_PeerageID0300 value = 1 } lgEffects_PeerageID0300RankName = yes lgEffects_PeerageID0300OrdChar = yes }
+
+# Rank, peerage Name, ordinal numbers, and association with a specific character for whom the peerage was created
+lgEffects_PeerageID0001RankNameChar = { lgEffects_PeerageID0001RankName = yes lgEffects_PeerageID0001OrdChar = yes }
+lgEffects_PeerageID0002RankNameChar = { lgEffects_PeerageID0002RankName = yes lgEffects_PeerageID0002OrdChar = yes }
+lgEffects_PeerageID0003RankNameChar = { lgEffects_PeerageID0003RankName = yes lgEffects_PeerageID0003OrdChar = yes }
+lgEffects_PeerageID0004RankNameChar = { lgEffects_PeerageID0004RankName = yes lgEffects_PeerageID0004OrdChar = yes }
+lgEffects_PeerageID0005RankNameChar = { lgEffects_PeerageID0005RankName = yes lgEffects_PeerageID0005OrdChar = yes }
+lgEffects_PeerageID0006RankNameChar = { lgEffects_PeerageID0006RankName = yes lgEffects_PeerageID0006OrdChar = yes }
+lgEffects_PeerageID0007RankNameChar = { lgEffects_PeerageID0007RankName = yes lgEffects_PeerageID0007OrdChar = yes }
+lgEffects_PeerageID0008RankNameChar = { lgEffects_PeerageID0008RankName = yes lgEffects_PeerageID0008OrdChar = yes }
+lgEffects_PeerageID0009RankNameChar = { lgEffects_PeerageID0009RankName = yes lgEffects_PeerageID0009OrdChar = yes }
+lgEffects_PeerageID0010RankNameChar = { lgEffects_PeerageID0010RankName = yes lgEffects_PeerageID0010OrdChar = yes }
+
+lgEffects_PeerageID0011RankNameChar = { lgEffects_PeerageID0011RankName = yes lgEffects_PeerageID0011OrdChar = yes }
+lgEffects_PeerageID0012RankNameChar = { lgEffects_PeerageID0012RankName = yes lgEffects_PeerageID0012OrdChar = yes }
+lgEffects_PeerageID0013RankNameChar = { lgEffects_PeerageID0013RankName = yes lgEffects_PeerageID0013OrdChar = yes }
+lgEffects_PeerageID0014RankNameChar = { lgEffects_PeerageID0014RankName = yes lgEffects_PeerageID0014OrdChar = yes }
+lgEffects_PeerageID0015RankNameChar = { lgEffects_PeerageID0015RankName = yes lgEffects_PeerageID0015OrdChar = yes }
+lgEffects_PeerageID0016RankNameChar = { lgEffects_PeerageID0016RankName = yes lgEffects_PeerageID0016OrdChar = yes }
+lgEffects_PeerageID0017RankNameChar = { lgEffects_PeerageID0017RankName = yes lgEffects_PeerageID0017OrdChar = yes }
+lgEffects_PeerageID0018RankNameChar = { lgEffects_PeerageID0018RankName = yes lgEffects_PeerageID0018OrdChar = yes }
+lgEffects_PeerageID0019RankNameChar = { lgEffects_PeerageID0019RankName = yes lgEffects_PeerageID0019OrdChar = yes }
+lgEffects_PeerageID0020RankNameChar = { lgEffects_PeerageID0020RankName = yes lgEffects_PeerageID0020OrdChar = yes }
+
+lgEffects_PeerageID0021RankNameChar = { lgEffects_PeerageID0021RankName = yes lgEffects_PeerageID0021OrdChar = yes }
+lgEffects_PeerageID0022RankNameChar = { lgEffects_PeerageID0022RankName = yes lgEffects_PeerageID0022OrdChar = yes }
+lgEffects_PeerageID0023RankNameChar = { lgEffects_PeerageID0023RankName = yes lgEffects_PeerageID0023OrdChar = yes }
+lgEffects_PeerageID0024RankNameChar = { lgEffects_PeerageID0024RankName = yes lgEffects_PeerageID0024OrdChar = yes }
+lgEffects_PeerageID0025RankNameChar = { lgEffects_PeerageID0025RankName = yes lgEffects_PeerageID0025OrdChar = yes }
+lgEffects_PeerageID0026RankNameChar = { lgEffects_PeerageID0026RankName = yes lgEffects_PeerageID0026OrdChar = yes }
+lgEffects_PeerageID0027RankNameChar = { lgEffects_PeerageID0027RankName = yes lgEffects_PeerageID0027OrdChar = yes }
+lgEffects_PeerageID0028RankNameChar = { lgEffects_PeerageID0028RankName = yes lgEffects_PeerageID0028OrdChar = yes }
+lgEffects_PeerageID0029RankNameChar = { lgEffects_PeerageID0029RankName = yes lgEffects_PeerageID0029OrdChar = yes }
+lgEffects_PeerageID0030RankNameChar = { lgEffects_PeerageID0030RankName = yes lgEffects_PeerageID0030OrdChar = yes }
+
+lgEffects_PeerageID0031RankNameChar = { lgEffects_PeerageID0031RankName = yes lgEffects_PeerageID0031OrdChar = yes }
+lgEffects_PeerageID0032RankNameChar = { lgEffects_PeerageID0032RankName = yes lgEffects_PeerageID0032OrdChar = yes }
+lgEffects_PeerageID0033RankNameChar = { lgEffects_PeerageID0033RankName = yes lgEffects_PeerageID0033OrdChar = yes }
+lgEffects_PeerageID0034RankNameChar = { lgEffects_PeerageID0034RankName = yes lgEffects_PeerageID0034OrdChar = yes }
+lgEffects_PeerageID0035RankNameChar = { lgEffects_PeerageID0035RankName = yes lgEffects_PeerageID0035OrdChar = yes }
+lgEffects_PeerageID0036RankNameChar = { lgEffects_PeerageID0036RankName = yes lgEffects_PeerageID0036OrdChar = yes }
+lgEffects_PeerageID0037RankNameChar = { lgEffects_PeerageID0037RankName = yes lgEffects_PeerageID0037OrdChar = yes }
+lgEffects_PeerageID0038RankNameChar = { lgEffects_PeerageID0038RankName = yes lgEffects_PeerageID0038OrdChar = yes }
+lgEffects_PeerageID0039RankNameChar = { lgEffects_PeerageID0039RankName = yes lgEffects_PeerageID0039OrdChar = yes }
+lgEffects_PeerageID0040RankNameChar = { lgEffects_PeerageID0040RankName = yes lgEffects_PeerageID0040OrdChar = yes }
+
+lgEffects_PeerageID0041RankNameChar = { lgEffects_PeerageID0041RankName = yes lgEffects_PeerageID0041OrdChar = yes }
+lgEffects_PeerageID0042RankNameChar = { lgEffects_PeerageID0042RankName = yes lgEffects_PeerageID0042OrdChar = yes }
+lgEffects_PeerageID0043RankNameChar = { lgEffects_PeerageID0043RankName = yes lgEffects_PeerageID0043OrdChar = yes }
+lgEffects_PeerageID0044RankNameChar = { lgEffects_PeerageID0044RankName = yes lgEffects_PeerageID0044OrdChar = yes }
+lgEffects_PeerageID0045RankNameChar = { lgEffects_PeerageID0045RankName = yes lgEffects_PeerageID0045OrdChar = yes }
+lgEffects_PeerageID0046RankNameChar = { lgEffects_PeerageID0046RankName = yes lgEffects_PeerageID0046OrdChar = yes }
+lgEffects_PeerageID0047RankNameChar = { lgEffects_PeerageID0047RankName = yes lgEffects_PeerageID0047OrdChar = yes }
+lgEffects_PeerageID0048RankNameChar = { lgEffects_PeerageID0048RankName = yes lgEffects_PeerageID0048OrdChar = yes }
+lgEffects_PeerageID0049RankNameChar = { lgEffects_PeerageID0049RankName = yes lgEffects_PeerageID0049OrdChar = yes }
+lgEffects_PeerageID0050RankNameChar = { lgEffects_PeerageID0050RankName = yes lgEffects_PeerageID0050OrdChar = yes }
+
+lgEffects_PeerageID0051RankNameChar = { lgEffects_PeerageID0051RankName = yes lgEffects_PeerageID0051OrdChar = yes }
+lgEffects_PeerageID0052RankNameChar = { lgEffects_PeerageID0052RankName = yes lgEffects_PeerageID0052OrdChar = yes }
+lgEffects_PeerageID0053RankNameChar = { lgEffects_PeerageID0053RankName = yes lgEffects_PeerageID0053OrdChar = yes }
+lgEffects_PeerageID0054RankNameChar = { lgEffects_PeerageID0054RankName = yes lgEffects_PeerageID0054OrdChar = yes }
+lgEffects_PeerageID0055RankNameChar = { lgEffects_PeerageID0055RankName = yes lgEffects_PeerageID0055OrdChar = yes }
+lgEffects_PeerageID0056RankNameChar = { lgEffects_PeerageID0056RankName = yes lgEffects_PeerageID0056OrdChar = yes }
+lgEffects_PeerageID0057RankNameChar = { lgEffects_PeerageID0057RankName = yes lgEffects_PeerageID0057OrdChar = yes }
+lgEffects_PeerageID0058RankNameChar = { lgEffects_PeerageID0058RankName = yes lgEffects_PeerageID0058OrdChar = yes }
+lgEffects_PeerageID0059RankNameChar = { lgEffects_PeerageID0059RankName = yes lgEffects_PeerageID0059OrdChar = yes }
+lgEffects_PeerageID0060RankNameChar = { lgEffects_PeerageID0060RankName = yes lgEffects_PeerageID0060OrdChar = yes }
+
+lgEffects_PeerageID0061RankNameChar = { lgEffects_PeerageID0061RankName = yes lgEffects_PeerageID0061OrdChar = yes }
+lgEffects_PeerageID0062RankNameChar = { lgEffects_PeerageID0062RankName = yes lgEffects_PeerageID0062OrdChar = yes }
+lgEffects_PeerageID0063RankNameChar = { lgEffects_PeerageID0063RankName = yes lgEffects_PeerageID0063OrdChar = yes }
+lgEffects_PeerageID0064RankNameChar = { lgEffects_PeerageID0064RankName = yes lgEffects_PeerageID0064OrdChar = yes }
+lgEffects_PeerageID0065RankNameChar = { lgEffects_PeerageID0065RankName = yes lgEffects_PeerageID0065OrdChar = yes }
+lgEffects_PeerageID0066RankNameChar = { lgEffects_PeerageID0066RankName = yes lgEffects_PeerageID0066OrdChar = yes }
+lgEffects_PeerageID0067RankNameChar = { lgEffects_PeerageID0067RankName = yes lgEffects_PeerageID0067OrdChar = yes }
+lgEffects_PeerageID0068RankNameChar = { lgEffects_PeerageID0068RankName = yes lgEffects_PeerageID0068OrdChar = yes }
+lgEffects_PeerageID0069RankNameChar = { lgEffects_PeerageID0069RankName = yes lgEffects_PeerageID0069OrdChar = yes }
+lgEffects_PeerageID0070RankNameChar = { lgEffects_PeerageID0070RankName = yes lgEffects_PeerageID0070OrdChar = yes }
+
+lgEffects_PeerageID0071RankNameChar = { lgEffects_PeerageID0071RankName = yes lgEffects_PeerageID0071OrdChar = yes }
+lgEffects_PeerageID0072RankNameChar = { lgEffects_PeerageID0072RankName = yes lgEffects_PeerageID0072OrdChar = yes }
+lgEffects_PeerageID0073RankNameChar = { lgEffects_PeerageID0073RankName = yes lgEffects_PeerageID0073OrdChar = yes }
+lgEffects_PeerageID0074RankNameChar = { lgEffects_PeerageID0074RankName = yes lgEffects_PeerageID0074OrdChar = yes }
+lgEffects_PeerageID0075RankNameChar = { lgEffects_PeerageID0075RankName = yes lgEffects_PeerageID0075OrdChar = yes }
+lgEffects_PeerageID0076RankNameChar = { lgEffects_PeerageID0076RankName = yes lgEffects_PeerageID0076OrdChar = yes }
+lgEffects_PeerageID0077RankNameChar = { lgEffects_PeerageID0077RankName = yes lgEffects_PeerageID0077OrdChar = yes }
+lgEffects_PeerageID0078RankNameChar = { lgEffects_PeerageID0078RankName = yes lgEffects_PeerageID0078OrdChar = yes }
+lgEffects_PeerageID0079RankNameChar = { lgEffects_PeerageID0079RankName = yes lgEffects_PeerageID0079OrdChar = yes }
+lgEffects_PeerageID0080RankNameChar = { lgEffects_PeerageID0080RankName = yes lgEffects_PeerageID0080OrdChar = yes }
+
+lgEffects_PeerageID0081RankNameChar = { lgEffects_PeerageID0081RankName = yes lgEffects_PeerageID0081OrdChar = yes }
+lgEffects_PeerageID0082RankNameChar = { lgEffects_PeerageID0082RankName = yes lgEffects_PeerageID0082OrdChar = yes }
+lgEffects_PeerageID0083RankNameChar = { lgEffects_PeerageID0083RankName = yes lgEffects_PeerageID0083OrdChar = yes }
+lgEffects_PeerageID0084RankNameChar = { lgEffects_PeerageID0084RankName = yes lgEffects_PeerageID0084OrdChar = yes }
+lgEffects_PeerageID0085RankNameChar = { lgEffects_PeerageID0085RankName = yes lgEffects_PeerageID0085OrdChar = yes }
+lgEffects_PeerageID0086RankNameChar = { lgEffects_PeerageID0086RankName = yes lgEffects_PeerageID0086OrdChar = yes }
+lgEffects_PeerageID0087RankNameChar = { lgEffects_PeerageID0087RankName = yes lgEffects_PeerageID0087OrdChar = yes }
+lgEffects_PeerageID0088RankNameChar = { lgEffects_PeerageID0088RankName = yes lgEffects_PeerageID0088OrdChar = yes }
+lgEffects_PeerageID0089RankNameChar = { lgEffects_PeerageID0089RankName = yes lgEffects_PeerageID0089OrdChar = yes }
+lgEffects_PeerageID0090RankNameChar = { lgEffects_PeerageID0090RankName = yes lgEffects_PeerageID0090OrdChar = yes }
+
+lgEffects_PeerageID0091RankNameChar = { lgEffects_PeerageID0091RankName = yes lgEffects_PeerageID0091OrdChar = yes }
+lgEffects_PeerageID0092RankNameChar = { lgEffects_PeerageID0092RankName = yes lgEffects_PeerageID0092OrdChar = yes }
+lgEffects_PeerageID0093RankNameChar = { lgEffects_PeerageID0093RankName = yes lgEffects_PeerageID0093OrdChar = yes }
+lgEffects_PeerageID0094RankNameChar = { lgEffects_PeerageID0094RankName = yes lgEffects_PeerageID0094OrdChar = yes }
+lgEffects_PeerageID0095RankNameChar = { lgEffects_PeerageID0095RankName = yes lgEffects_PeerageID0095OrdChar = yes }
+lgEffects_PeerageID0096RankNameChar = { lgEffects_PeerageID0096RankName = yes lgEffects_PeerageID0096OrdChar = yes }
+lgEffects_PeerageID0097RankNameChar = { lgEffects_PeerageID0097RankName = yes lgEffects_PeerageID0097OrdChar = yes }
+lgEffects_PeerageID0098RankNameChar = { lgEffects_PeerageID0098RankName = yes lgEffects_PeerageID0098OrdChar = yes }
+lgEffects_PeerageID0099RankNameChar = { lgEffects_PeerageID0099RankName = yes lgEffects_PeerageID0099OrdChar = yes }
+lgEffects_PeerageID0100RankNameChar = { lgEffects_PeerageID0100RankName = yes lgEffects_PeerageID0100OrdChar = yes }
+
+# 101-200
+lgEffects_PeerageID0101RankNameChar = { lgEffects_PeerageID0101RankName = yes lgEffects_PeerageID0101OrdChar = yes }
+lgEffects_PeerageID0102RankNameChar = { lgEffects_PeerageID0102RankName = yes lgEffects_PeerageID0102OrdChar = yes }
+lgEffects_PeerageID0103RankNameChar = { lgEffects_PeerageID0103RankName = yes lgEffects_PeerageID0103OrdChar = yes }
+lgEffects_PeerageID0104RankNameChar = { lgEffects_PeerageID0104RankName = yes lgEffects_PeerageID0104OrdChar = yes }
+lgEffects_PeerageID0105RankNameChar = { lgEffects_PeerageID0105RankName = yes lgEffects_PeerageID0105OrdChar = yes }
+lgEffects_PeerageID0106RankNameChar = { lgEffects_PeerageID0106RankName = yes lgEffects_PeerageID0106OrdChar = yes }
+lgEffects_PeerageID0107RankNameChar = { lgEffects_PeerageID0107RankName = yes lgEffects_PeerageID0107OrdChar = yes }
+lgEffects_PeerageID0108RankNameChar = { lgEffects_PeerageID0108RankName = yes lgEffects_PeerageID0108OrdChar = yes }
+lgEffects_PeerageID0109RankNameChar = { lgEffects_PeerageID0109RankName = yes lgEffects_PeerageID0109OrdChar = yes }
+lgEffects_PeerageID0110RankNameChar = { lgEffects_PeerageID0110RankName = yes lgEffects_PeerageID0110OrdChar = yes }
+
+lgEffects_PeerageID0111RankNameChar = { lgEffects_PeerageID0111RankName = yes lgEffects_PeerageID0111OrdChar = yes }
+lgEffects_PeerageID0112RankNameChar = { lgEffects_PeerageID0112RankName = yes lgEffects_PeerageID0112OrdChar = yes }
+lgEffects_PeerageID0113RankNameChar = { lgEffects_PeerageID0113RankName = yes lgEffects_PeerageID0113OrdChar = yes }
+lgEffects_PeerageID0114RankNameChar = { lgEffects_PeerageID0114RankName = yes lgEffects_PeerageID0114OrdChar = yes }
+lgEffects_PeerageID0115RankNameChar = { lgEffects_PeerageID0115RankName = yes lgEffects_PeerageID0115OrdChar = yes }
+lgEffects_PeerageID0116RankNameChar = { lgEffects_PeerageID0116RankName = yes lgEffects_PeerageID0116OrdChar = yes }
+lgEffects_PeerageID0117RankNameChar = { lgEffects_PeerageID0117RankName = yes lgEffects_PeerageID0117OrdChar = yes }
+lgEffects_PeerageID0118RankNameChar = { lgEffects_PeerageID0118RankName = yes lgEffects_PeerageID0118OrdChar = yes }
+lgEffects_PeerageID0119RankNameChar = { lgEffects_PeerageID0119RankName = yes lgEffects_PeerageID0119OrdChar = yes }
+lgEffects_PeerageID0120RankNameChar = { lgEffects_PeerageID0120RankName = yes lgEffects_PeerageID0120OrdChar = yes }
+
+lgEffects_PeerageID0121RankNameChar = { lgEffects_PeerageID0121RankName = yes lgEffects_PeerageID0121OrdChar = yes }
+lgEffects_PeerageID0122RankNameChar = { lgEffects_PeerageID0122RankName = yes lgEffects_PeerageID0122OrdChar = yes }
+lgEffects_PeerageID0123RankNameChar = { lgEffects_PeerageID0123RankName = yes lgEffects_PeerageID0123OrdChar = yes }
+lgEffects_PeerageID0124RankNameChar = { lgEffects_PeerageID0124RankName = yes lgEffects_PeerageID0124OrdChar = yes }
+lgEffects_PeerageID0125RankNameChar = { lgEffects_PeerageID0125RankName = yes lgEffects_PeerageID0125OrdChar = yes }
+lgEffects_PeerageID0126RankNameChar = { lgEffects_PeerageID0126RankName = yes lgEffects_PeerageID0126OrdChar = yes }
+lgEffects_PeerageID0127RankNameChar = { lgEffects_PeerageID0127RankName = yes lgEffects_PeerageID0127OrdChar = yes }
+lgEffects_PeerageID0128RankNameChar = { lgEffects_PeerageID0128RankName = yes lgEffects_PeerageID0128OrdChar = yes }
+lgEffects_PeerageID0129RankNameChar = { lgEffects_PeerageID0129RankName = yes lgEffects_PeerageID0129OrdChar = yes }
+lgEffects_PeerageID0130RankNameChar = { lgEffects_PeerageID0130RankName = yes lgEffects_PeerageID0130OrdChar = yes }
+
+lgEffects_PeerageID0131RankNameChar = { lgEffects_PeerageID0131RankName = yes lgEffects_PeerageID0131OrdChar = yes }
+lgEffects_PeerageID0132RankNameChar = { lgEffects_PeerageID0132RankName = yes lgEffects_PeerageID0132OrdChar = yes }
+lgEffects_PeerageID0133RankNameChar = { lgEffects_PeerageID0133RankName = yes lgEffects_PeerageID0133OrdChar = yes }
+lgEffects_PeerageID0134RankNameChar = { lgEffects_PeerageID0134RankName = yes lgEffects_PeerageID0134OrdChar = yes }
+lgEffects_PeerageID0135RankNameChar = { lgEffects_PeerageID0135RankName = yes lgEffects_PeerageID0135OrdChar = yes }
+lgEffects_PeerageID0136RankNameChar = { lgEffects_PeerageID0136RankName = yes lgEffects_PeerageID0136OrdChar = yes }
+lgEffects_PeerageID0137RankNameChar = { lgEffects_PeerageID0137RankName = yes lgEffects_PeerageID0137OrdChar = yes }
+lgEffects_PeerageID0138RankNameChar = { lgEffects_PeerageID0138RankName = yes lgEffects_PeerageID0138OrdChar = yes }
+lgEffects_PeerageID0139RankNameChar = { lgEffects_PeerageID0139RankName = yes lgEffects_PeerageID0139OrdChar = yes }
+lgEffects_PeerageID0140RankNameChar = { lgEffects_PeerageID0140RankName = yes lgEffects_PeerageID0140OrdChar = yes }
+
+lgEffects_PeerageID0141RankNameChar = { lgEffects_PeerageID0141RankName = yes lgEffects_PeerageID0141OrdChar = yes }
+lgEffects_PeerageID0142RankNameChar = { lgEffects_PeerageID0142RankName = yes lgEffects_PeerageID0142OrdChar = yes }
+lgEffects_PeerageID0143RankNameChar = { lgEffects_PeerageID0143RankName = yes lgEffects_PeerageID0143OrdChar = yes }
+lgEffects_PeerageID0144RankNameChar = { lgEffects_PeerageID0144RankName = yes lgEffects_PeerageID0144OrdChar = yes }
+lgEffects_PeerageID0145RankNameChar = { lgEffects_PeerageID0145RankName = yes lgEffects_PeerageID0145OrdChar = yes }
+lgEffects_PeerageID0146RankNameChar = { lgEffects_PeerageID0146RankName = yes lgEffects_PeerageID0146OrdChar = yes }
+lgEffects_PeerageID0147RankNameChar = { lgEffects_PeerageID0147RankName = yes lgEffects_PeerageID0147OrdChar = yes }
+lgEffects_PeerageID0148RankNameChar = { lgEffects_PeerageID0148RankName = yes lgEffects_PeerageID0148OrdChar = yes }
+lgEffects_PeerageID0149RankNameChar = { lgEffects_PeerageID0149RankName = yes lgEffects_PeerageID0149OrdChar = yes }
+lgEffects_PeerageID0150RankNameChar = { lgEffects_PeerageID0150RankName = yes lgEffects_PeerageID0150OrdChar = yes }
+
+lgEffects_PeerageID0151RankNameChar = { lgEffects_PeerageID0151RankName = yes lgEffects_PeerageID0151OrdChar = yes }
+lgEffects_PeerageID0152RankNameChar = { lgEffects_PeerageID0152RankName = yes lgEffects_PeerageID0152OrdChar = yes }
+lgEffects_PeerageID0153RankNameChar = { lgEffects_PeerageID0153RankName = yes lgEffects_PeerageID0153OrdChar = yes }
+lgEffects_PeerageID0154RankNameChar = { lgEffects_PeerageID0154RankName = yes lgEffects_PeerageID0154OrdChar = yes }
+lgEffects_PeerageID0155RankNameChar = { lgEffects_PeerageID0155RankName = yes lgEffects_PeerageID0155OrdChar = yes }
+lgEffects_PeerageID0156RankNameChar = { lgEffects_PeerageID0156RankName = yes lgEffects_PeerageID0156OrdChar = yes }
+lgEffects_PeerageID0157RankNameChar = { lgEffects_PeerageID0157RankName = yes lgEffects_PeerageID0157OrdChar = yes }
+lgEffects_PeerageID0158RankNameChar = { lgEffects_PeerageID0158RankName = yes lgEffects_PeerageID0158OrdChar = yes }
+lgEffects_PeerageID0159RankNameChar = { lgEffects_PeerageID0159RankName = yes lgEffects_PeerageID0159OrdChar = yes }
+lgEffects_PeerageID0160RankNameChar = { lgEffects_PeerageID0160RankName = yes lgEffects_PeerageID0160OrdChar = yes }
+
+lgEffects_PeerageID0161RankNameChar = { lgEffects_PeerageID0161RankName = yes lgEffects_PeerageID0161OrdChar = yes }
+lgEffects_PeerageID0162RankNameChar = { lgEffects_PeerageID0162RankName = yes lgEffects_PeerageID0162OrdChar = yes }
+lgEffects_PeerageID0163RankNameChar = { lgEffects_PeerageID0163RankName = yes lgEffects_PeerageID0163OrdChar = yes }
+lgEffects_PeerageID0164RankNameChar = { lgEffects_PeerageID0164RankName = yes lgEffects_PeerageID0164OrdChar = yes }
+lgEffects_PeerageID0165RankNameChar = { lgEffects_PeerageID0165RankName = yes lgEffects_PeerageID0165OrdChar = yes }
+lgEffects_PeerageID0166RankNameChar = { lgEffects_PeerageID0166RankName = yes lgEffects_PeerageID0166OrdChar = yes }
+lgEffects_PeerageID0167RankNameChar = { lgEffects_PeerageID0167RankName = yes lgEffects_PeerageID0167OrdChar = yes }
+lgEffects_PeerageID0168RankNameChar = { lgEffects_PeerageID0168RankName = yes lgEffects_PeerageID0168OrdChar = yes }
+lgEffects_PeerageID0169RankNameChar = { lgEffects_PeerageID0169RankName = yes lgEffects_PeerageID0169OrdChar = yes }
+lgEffects_PeerageID0170RankNameChar = { lgEffects_PeerageID0170RankName = yes lgEffects_PeerageID0170OrdChar = yes }
+
+lgEffects_PeerageID0171RankNameChar = { lgEffects_PeerageID0171RankName = yes lgEffects_PeerageID0171OrdChar = yes }
+lgEffects_PeerageID0172RankNameChar = { lgEffects_PeerageID0172RankName = yes lgEffects_PeerageID0172OrdChar = yes }
+lgEffects_PeerageID0173RankNameChar = { lgEffects_PeerageID0173RankName = yes lgEffects_PeerageID0173OrdChar = yes }
+lgEffects_PeerageID0174RankNameChar = { lgEffects_PeerageID0174RankName = yes lgEffects_PeerageID0174OrdChar = yes }
+lgEffects_PeerageID0175RankNameChar = { lgEffects_PeerageID0175RankName = yes lgEffects_PeerageID0175OrdChar = yes }
+lgEffects_PeerageID0176RankNameChar = { lgEffects_PeerageID0176RankName = yes lgEffects_PeerageID0176OrdChar = yes }
+lgEffects_PeerageID0177RankNameChar = { lgEffects_PeerageID0177RankName = yes lgEffects_PeerageID0177OrdChar = yes }
+lgEffects_PeerageID0178RankNameChar = { lgEffects_PeerageID0178RankName = yes lgEffects_PeerageID0178OrdChar = yes }
+lgEffects_PeerageID0179RankNameChar = { lgEffects_PeerageID0179RankName = yes lgEffects_PeerageID0179OrdChar = yes }
+lgEffects_PeerageID0180RankNameChar = { lgEffects_PeerageID0180RankName = yes lgEffects_PeerageID0180OrdChar = yes }
+
+lgEffects_PeerageID0181RankNameChar = { lgEffects_PeerageID0181RankName = yes lgEffects_PeerageID0181OrdChar = yes }
+lgEffects_PeerageID0182RankNameChar = { lgEffects_PeerageID0182RankName = yes lgEffects_PeerageID0182OrdChar = yes }
+lgEffects_PeerageID0183RankNameChar = { lgEffects_PeerageID0183RankName = yes lgEffects_PeerageID0183OrdChar = yes }
+lgEffects_PeerageID0184RankNameChar = { lgEffects_PeerageID0184RankName = yes lgEffects_PeerageID0184OrdChar = yes }
+lgEffects_PeerageID0185RankNameChar = { lgEffects_PeerageID0185RankName = yes lgEffects_PeerageID0185OrdChar = yes }
+lgEffects_PeerageID0186RankNameChar = { lgEffects_PeerageID0186RankName = yes lgEffects_PeerageID0186OrdChar = yes }
+lgEffects_PeerageID0187RankNameChar = { lgEffects_PeerageID0187RankName = yes lgEffects_PeerageID0187OrdChar = yes }
+lgEffects_PeerageID0188RankNameChar = { lgEffects_PeerageID0188RankName = yes lgEffects_PeerageID0188OrdChar = yes }
+lgEffects_PeerageID0189RankNameChar = { lgEffects_PeerageID0189RankName = yes lgEffects_PeerageID0189OrdChar = yes }
+lgEffects_PeerageID0190RankNameChar = { lgEffects_PeerageID0190RankName = yes lgEffects_PeerageID0190OrdChar = yes }
+
+lgEffects_PeerageID0191RankNameChar = { lgEffects_PeerageID0191RankName = yes lgEffects_PeerageID0191OrdChar = yes }
+lgEffects_PeerageID0192RankNameChar = { lgEffects_PeerageID0192RankName = yes lgEffects_PeerageID0192OrdChar = yes }
+lgEffects_PeerageID0193RankNameChar = { lgEffects_PeerageID0193RankName = yes lgEffects_PeerageID0193OrdChar = yes }
+lgEffects_PeerageID0194RankNameChar = { lgEffects_PeerageID0194RankName = yes lgEffects_PeerageID0194OrdChar = yes }
+lgEffects_PeerageID0195RankNameChar = { lgEffects_PeerageID0195RankName = yes lgEffects_PeerageID0195OrdChar = yes }
+lgEffects_PeerageID0196RankNameChar = { lgEffects_PeerageID0196RankName = yes lgEffects_PeerageID0196OrdChar = yes }
+lgEffects_PeerageID0197RankNameChar = { lgEffects_PeerageID0197RankName = yes lgEffects_PeerageID0197OrdChar = yes }
+lgEffects_PeerageID0198RankNameChar = { lgEffects_PeerageID0198RankName = yes lgEffects_PeerageID0198OrdChar = yes }
+lgEffects_PeerageID0199RankNameChar = { lgEffects_PeerageID0199RankName = yes lgEffects_PeerageID0199OrdChar = yes }
+lgEffects_PeerageID0200RankNameChar = { lgEffects_PeerageID0200RankName = yes lgEffects_PeerageID0200OrdChar = yes }
+
+# 201-300
+lgEffects_PeerageID0201RankNameChar = { lgEffects_PeerageID0201RankName = yes lgEffects_PeerageID0201OrdChar = yes }
+lgEffects_PeerageID0202RankNameChar = { lgEffects_PeerageID0202RankName = yes lgEffects_PeerageID0202OrdChar = yes }
+lgEffects_PeerageID0203RankNameChar = { lgEffects_PeerageID0203RankName = yes lgEffects_PeerageID0203OrdChar = yes }
+lgEffects_PeerageID0204RankNameChar = { lgEffects_PeerageID0204RankName = yes lgEffects_PeerageID0204OrdChar = yes }
+lgEffects_PeerageID0205RankNameChar = { lgEffects_PeerageID0205RankName = yes lgEffects_PeerageID0205OrdChar = yes }
+lgEffects_PeerageID0206RankNameChar = { lgEffects_PeerageID0206RankName = yes lgEffects_PeerageID0206OrdChar = yes }
+lgEffects_PeerageID0207RankNameChar = { lgEffects_PeerageID0207RankName = yes lgEffects_PeerageID0207OrdChar = yes }
+lgEffects_PeerageID0208RankNameChar = { lgEffects_PeerageID0208RankName = yes lgEffects_PeerageID0208OrdChar = yes }
+lgEffects_PeerageID0209RankNameChar = { lgEffects_PeerageID0209RankName = yes lgEffects_PeerageID0209OrdChar = yes }
+lgEffects_PeerageID0210RankNameChar = { lgEffects_PeerageID0210RankName = yes lgEffects_PeerageID0210OrdChar = yes }
+
+lgEffects_PeerageID0211RankNameChar = { lgEffects_PeerageID0211RankName = yes lgEffects_PeerageID0211OrdChar = yes }
+lgEffects_PeerageID0212RankNameChar = { lgEffects_PeerageID0212RankName = yes lgEffects_PeerageID0212OrdChar = yes }
+lgEffects_PeerageID0213RankNameChar = { lgEffects_PeerageID0213RankName = yes lgEffects_PeerageID0213OrdChar = yes }
+lgEffects_PeerageID0214RankNameChar = { lgEffects_PeerageID0214RankName = yes lgEffects_PeerageID0214OrdChar = yes }
+lgEffects_PeerageID0215RankNameChar = { lgEffects_PeerageID0215RankName = yes lgEffects_PeerageID0215OrdChar = yes }
+lgEffects_PeerageID0216RankNameChar = { lgEffects_PeerageID0216RankName = yes lgEffects_PeerageID0216OrdChar = yes }
+lgEffects_PeerageID0217RankNameChar = { lgEffects_PeerageID0217RankName = yes lgEffects_PeerageID0217OrdChar = yes }
+lgEffects_PeerageID0218RankNameChar = { lgEffects_PeerageID0218RankName = yes lgEffects_PeerageID0218OrdChar = yes }
+lgEffects_PeerageID0219RankNameChar = { lgEffects_PeerageID0219RankName = yes lgEffects_PeerageID0219OrdChar = yes }
+lgEffects_PeerageID0220RankNameChar = { lgEffects_PeerageID0220RankName = yes lgEffects_PeerageID0220OrdChar = yes }
+
+lgEffects_PeerageID0221RankNameChar = { lgEffects_PeerageID0221RankName = yes lgEffects_PeerageID0221OrdChar = yes }
+lgEffects_PeerageID0222RankNameChar = { lgEffects_PeerageID0222RankName = yes lgEffects_PeerageID0222OrdChar = yes }
+lgEffects_PeerageID0223RankNameChar = { lgEffects_PeerageID0223RankName = yes lgEffects_PeerageID0223OrdChar = yes }
+lgEffects_PeerageID0224RankNameChar = { lgEffects_PeerageID0224RankName = yes lgEffects_PeerageID0224OrdChar = yes }
+lgEffects_PeerageID0225RankNameChar = { lgEffects_PeerageID0225RankName = yes lgEffects_PeerageID0225OrdChar = yes }
+lgEffects_PeerageID0226RankNameChar = { lgEffects_PeerageID0226RankName = yes lgEffects_PeerageID0226OrdChar = yes }
+lgEffects_PeerageID0227RankNameChar = { lgEffects_PeerageID0227RankName = yes lgEffects_PeerageID0227OrdChar = yes }
+lgEffects_PeerageID0228RankNameChar = { lgEffects_PeerageID0228RankName = yes lgEffects_PeerageID0228OrdChar = yes }
+lgEffects_PeerageID0229RankNameChar = { lgEffects_PeerageID0229RankName = yes lgEffects_PeerageID0229OrdChar = yes }
+lgEffects_PeerageID0230RankNameChar = { lgEffects_PeerageID0230RankName = yes lgEffects_PeerageID0230OrdChar = yes }
+
+lgEffects_PeerageID0231RankNameChar = { lgEffects_PeerageID0231RankName = yes lgEffects_PeerageID0231OrdChar = yes }
+lgEffects_PeerageID0232RankNameChar = { lgEffects_PeerageID0232RankName = yes lgEffects_PeerageID0232OrdChar = yes }
+lgEffects_PeerageID0233RankNameChar = { lgEffects_PeerageID0233RankName = yes lgEffects_PeerageID0233OrdChar = yes }
+lgEffects_PeerageID0234RankNameChar = { lgEffects_PeerageID0234RankName = yes lgEffects_PeerageID0234OrdChar = yes }
+lgEffects_PeerageID0235RankNameChar = { lgEffects_PeerageID0235RankName = yes lgEffects_PeerageID0235OrdChar = yes }
+lgEffects_PeerageID0236RankNameChar = { lgEffects_PeerageID0236RankName = yes lgEffects_PeerageID0236OrdChar = yes }
+lgEffects_PeerageID0237RankNameChar = { lgEffects_PeerageID0237RankName = yes lgEffects_PeerageID0237OrdChar = yes }
+lgEffects_PeerageID0238RankNameChar = { lgEffects_PeerageID0238RankName = yes lgEffects_PeerageID0238OrdChar = yes }
+lgEffects_PeerageID0239RankNameChar = { lgEffects_PeerageID0239RankName = yes lgEffects_PeerageID0239OrdChar = yes }
+lgEffects_PeerageID0240RankNameChar = { lgEffects_PeerageID0240RankName = yes lgEffects_PeerageID0240OrdChar = yes }
+
+lgEffects_PeerageID0241RankNameChar = { lgEffects_PeerageID0241RankName = yes lgEffects_PeerageID0241OrdChar = yes }
+lgEffects_PeerageID0242RankNameChar = { lgEffects_PeerageID0242RankName = yes lgEffects_PeerageID0242OrdChar = yes }
+lgEffects_PeerageID0243RankNameChar = { lgEffects_PeerageID0243RankName = yes lgEffects_PeerageID0243OrdChar = yes }
+lgEffects_PeerageID0244RankNameChar = { lgEffects_PeerageID0244RankName = yes lgEffects_PeerageID0244OrdChar = yes }
+lgEffects_PeerageID0245RankNameChar = { lgEffects_PeerageID0245RankName = yes lgEffects_PeerageID0245OrdChar = yes }
+lgEffects_PeerageID0246RankNameChar = { lgEffects_PeerageID0246RankName = yes lgEffects_PeerageID0246OrdChar = yes }
+lgEffects_PeerageID0247RankNameChar = { lgEffects_PeerageID0247RankName = yes lgEffects_PeerageID0247OrdChar = yes }
+lgEffects_PeerageID0248RankNameChar = { lgEffects_PeerageID0248RankName = yes lgEffects_PeerageID0248OrdChar = yes }
+lgEffects_PeerageID0249RankNameChar = { lgEffects_PeerageID0249RankName = yes lgEffects_PeerageID0249OrdChar = yes }
+lgEffects_PeerageID0250RankNameChar = { lgEffects_PeerageID0250RankName = yes lgEffects_PeerageID0250OrdChar = yes }
+
+lgEffects_PeerageID0251RankNameChar = { lgEffects_PeerageID0251RankName = yes lgEffects_PeerageID0251OrdChar = yes }
+lgEffects_PeerageID0252RankNameChar = { lgEffects_PeerageID0252RankName = yes lgEffects_PeerageID0252OrdChar = yes }
+lgEffects_PeerageID0253RankNameChar = { lgEffects_PeerageID0253RankName = yes lgEffects_PeerageID0253OrdChar = yes }
+lgEffects_PeerageID0254RankNameChar = { lgEffects_PeerageID0254RankName = yes lgEffects_PeerageID0254OrdChar = yes }
+lgEffects_PeerageID0255RankNameChar = { lgEffects_PeerageID0255RankName = yes lgEffects_PeerageID0255OrdChar = yes }
+lgEffects_PeerageID0256RankNameChar = { lgEffects_PeerageID0256RankName = yes lgEffects_PeerageID0256OrdChar = yes }
+lgEffects_PeerageID0257RankNameChar = { lgEffects_PeerageID0257RankName = yes lgEffects_PeerageID0257OrdChar = yes }
+lgEffects_PeerageID0258RankNameChar = { lgEffects_PeerageID0258RankName = yes lgEffects_PeerageID0258OrdChar = yes }
+lgEffects_PeerageID0259RankNameChar = { lgEffects_PeerageID0259RankName = yes lgEffects_PeerageID0259OrdChar = yes }
+lgEffects_PeerageID0260RankNameChar = { lgEffects_PeerageID0260RankName = yes lgEffects_PeerageID0260OrdChar = yes }
+
+lgEffects_PeerageID0261RankNameChar = { lgEffects_PeerageID0261RankName = yes lgEffects_PeerageID0261OrdChar = yes }
+lgEffects_PeerageID0262RankNameChar = { lgEffects_PeerageID0262RankName = yes lgEffects_PeerageID0262OrdChar = yes }
+lgEffects_PeerageID0263RankNameChar = { lgEffects_PeerageID0263RankName = yes lgEffects_PeerageID0263OrdChar = yes }
+lgEffects_PeerageID0264RankNameChar = { lgEffects_PeerageID0264RankName = yes lgEffects_PeerageID0264OrdChar = yes }
+lgEffects_PeerageID0265RankNameChar = { lgEffects_PeerageID0265RankName = yes lgEffects_PeerageID0265OrdChar = yes }
+lgEffects_PeerageID0266RankNameChar = { lgEffects_PeerageID0266RankName = yes lgEffects_PeerageID0266OrdChar = yes }
+lgEffects_PeerageID0267RankNameChar = { lgEffects_PeerageID0267RankName = yes lgEffects_PeerageID0267OrdChar = yes }
+lgEffects_PeerageID0268RankNameChar = { lgEffects_PeerageID0268RankName = yes lgEffects_PeerageID0268OrdChar = yes }
+lgEffects_PeerageID0269RankNameChar = { lgEffects_PeerageID0269RankName = yes lgEffects_PeerageID0269OrdChar = yes }
+lgEffects_PeerageID0270RankNameChar = { lgEffects_PeerageID0270RankName = yes lgEffects_PeerageID0270OrdChar = yes }
+
+lgEffects_PeerageID0271RankNameChar = { lgEffects_PeerageID0271RankName = yes lgEffects_PeerageID0271OrdChar = yes }
+lgEffects_PeerageID0272RankNameChar = { lgEffects_PeerageID0272RankName = yes lgEffects_PeerageID0272OrdChar = yes }
+lgEffects_PeerageID0273RankNameChar = { lgEffects_PeerageID0273RankName = yes lgEffects_PeerageID0273OrdChar = yes }
+lgEffects_PeerageID0274RankNameChar = { lgEffects_PeerageID0274RankName = yes lgEffects_PeerageID0274OrdChar = yes }
+lgEffects_PeerageID0275RankNameChar = { lgEffects_PeerageID0275RankName = yes lgEffects_PeerageID0275OrdChar = yes }
+lgEffects_PeerageID0276RankNameChar = { lgEffects_PeerageID0276RankName = yes lgEffects_PeerageID0276OrdChar = yes }
+lgEffects_PeerageID0277RankNameChar = { lgEffects_PeerageID0277RankName = yes lgEffects_PeerageID0277OrdChar = yes }
+lgEffects_PeerageID0278RankNameChar = { lgEffects_PeerageID0278RankName = yes lgEffects_PeerageID0278OrdChar = yes }
+lgEffects_PeerageID0279RankNameChar = { lgEffects_PeerageID0279RankName = yes lgEffects_PeerageID0279OrdChar = yes }
+lgEffects_PeerageID0280RankNameChar = { lgEffects_PeerageID0280RankName = yes lgEffects_PeerageID0280OrdChar = yes }
+
+lgEffects_PeerageID0281RankNameChar = { lgEffects_PeerageID0281RankName = yes lgEffects_PeerageID0281OrdChar = yes }
+lgEffects_PeerageID0282RankNameChar = { lgEffects_PeerageID0282RankName = yes lgEffects_PeerageID0282OrdChar = yes }
+lgEffects_PeerageID0283RankNameChar = { lgEffects_PeerageID0283RankName = yes lgEffects_PeerageID0283OrdChar = yes }
+lgEffects_PeerageID0284RankNameChar = { lgEffects_PeerageID0284RankName = yes lgEffects_PeerageID0284OrdChar = yes }
+lgEffects_PeerageID0285RankNameChar = { lgEffects_PeerageID0285RankName = yes lgEffects_PeerageID0285OrdChar = yes }
+lgEffects_PeerageID0286RankNameChar = { lgEffects_PeerageID0286RankName = yes lgEffects_PeerageID0286OrdChar = yes }
+lgEffects_PeerageID0287RankNameChar = { lgEffects_PeerageID0287RankName = yes lgEffects_PeerageID0287OrdChar = yes }
+lgEffects_PeerageID0288RankNameChar = { lgEffects_PeerageID0288RankName = yes lgEffects_PeerageID0288OrdChar = yes }
+lgEffects_PeerageID0289RankNameChar = { lgEffects_PeerageID0289RankName = yes lgEffects_PeerageID0289OrdChar = yes }
+lgEffects_PeerageID0290RankNameChar = { lgEffects_PeerageID0290RankName = yes lgEffects_PeerageID0290OrdChar = yes }
+
+lgEffects_PeerageID0291RankNameChar = { lgEffects_PeerageID0291RankName = yes lgEffects_PeerageID0291OrdChar = yes }
+lgEffects_PeerageID0292RankNameChar = { lgEffects_PeerageID0292RankName = yes lgEffects_PeerageID0292OrdChar = yes }
+lgEffects_PeerageID0293RankNameChar = { lgEffects_PeerageID0293RankName = yes lgEffects_PeerageID0293OrdChar = yes }
+lgEffects_PeerageID0294RankNameChar = { lgEffects_PeerageID0294RankName = yes lgEffects_PeerageID0294OrdChar = yes }
+lgEffects_PeerageID0295RankNameChar = { lgEffects_PeerageID0295RankName = yes lgEffects_PeerageID0295OrdChar = yes }
+lgEffects_PeerageID0296RankNameChar = { lgEffects_PeerageID0296RankName = yes lgEffects_PeerageID0296OrdChar = yes }
+lgEffects_PeerageID0297RankNameChar = { lgEffects_PeerageID0297RankName = yes lgEffects_PeerageID0297OrdChar = yes }
+lgEffects_PeerageID0298RankNameChar = { lgEffects_PeerageID0298RankName = yes lgEffects_PeerageID0298OrdChar = yes }
+lgEffects_PeerageID0299RankNameChar = { lgEffects_PeerageID0299RankName = yes lgEffects_PeerageID0299OrdChar = yes }
+lgEffects_PeerageID0300RankNameChar = { lgEffects_PeerageID0300RankName = yes lgEffects_PeerageID0300OrdChar = yes }
+
+# Peerage ranks and names
+lgEffects_PeerageID0001RankName = { lgEffects_PeerageID0001rank = yes lgEffects_PeerageID0001name = yes }
+lgEffects_PeerageID0002RankName = { lgEffects_PeerageID0002rank = yes lgEffects_PeerageID0002name = yes }
+lgEffects_PeerageID0003RankName = { lgEffects_PeerageID0003rank = yes lgEffects_PeerageID0003name = yes }
+lgEffects_PeerageID0004RankName = { lgEffects_PeerageID0004rank = yes lgEffects_PeerageID0004name = yes }
+lgEffects_PeerageID0005RankName = { lgEffects_PeerageID0005rank = yes lgEffects_PeerageID0005name = yes }
+lgEffects_PeerageID0006RankName = { lgEffects_PeerageID0006rank = yes lgEffects_PeerageID0006name = yes }
+lgEffects_PeerageID0007RankName = { lgEffects_PeerageID0007rank = yes lgEffects_PeerageID0007name = yes }
+lgEffects_PeerageID0008RankName = { lgEffects_PeerageID0008rank = yes lgEffects_PeerageID0008name = yes }
+lgEffects_PeerageID0009RankName = { lgEffects_PeerageID0009rank = yes lgEffects_PeerageID0009name = yes }
+lgEffects_PeerageID0010RankName = { lgEffects_PeerageID0010rank = yes lgEffects_PeerageID0010name = yes }
+
+lgEffects_PeerageID0011RankName = { lgEffects_PeerageID0011rank = yes lgEffects_PeerageID0011name = yes }
+lgEffects_PeerageID0012RankName = { lgEffects_PeerageID0012rank = yes lgEffects_PeerageID0012name = yes }
+lgEffects_PeerageID0013RankName = { lgEffects_PeerageID0013rank = yes lgEffects_PeerageID0013name = yes }
+lgEffects_PeerageID0014RankName = { lgEffects_PeerageID0014rank = yes lgEffects_PeerageID0014name = yes }
+lgEffects_PeerageID0015RankName = { lgEffects_PeerageID0015rank = yes lgEffects_PeerageID0015name = yes }
+lgEffects_PeerageID0016RankName = { lgEffects_PeerageID0016rank = yes lgEffects_PeerageID0016name = yes }
+lgEffects_PeerageID0017RankName = { lgEffects_PeerageID0017rank = yes lgEffects_PeerageID0017name = yes }
+lgEffects_PeerageID0018RankName = { lgEffects_PeerageID0018rank = yes lgEffects_PeerageID0018name = yes }
+lgEffects_PeerageID0019RankName = { lgEffects_PeerageID0019rank = yes lgEffects_PeerageID0019name = yes }
+lgEffects_PeerageID0020RankName = { lgEffects_PeerageID0020rank = yes lgEffects_PeerageID0020name = yes }
+
+lgEffects_PeerageID0021RankName = { lgEffects_PeerageID0021rank = yes lgEffects_PeerageID0021name = yes }
+lgEffects_PeerageID0022RankName = { lgEffects_PeerageID0022rank = yes lgEffects_PeerageID0022name = yes }
+lgEffects_PeerageID0023RankName = { lgEffects_PeerageID0023rank = yes lgEffects_PeerageID0023name = yes }
+lgEffects_PeerageID0024RankName = { lgEffects_PeerageID0024rank = yes lgEffects_PeerageID0024name = yes }
+lgEffects_PeerageID0025RankName = { lgEffects_PeerageID0025rank = yes lgEffects_PeerageID0025name = yes }
+lgEffects_PeerageID0026RankName = { lgEffects_PeerageID0026rank = yes lgEffects_PeerageID0026name = yes }
+lgEffects_PeerageID0027RankName = { lgEffects_PeerageID0027rank = yes lgEffects_PeerageID0027name = yes }
+lgEffects_PeerageID0028RankName = { lgEffects_PeerageID0028rank = yes lgEffects_PeerageID0028name = yes }
+lgEffects_PeerageID0029RankName = { lgEffects_PeerageID0029rank = yes lgEffects_PeerageID0029name = yes }
+lgEffects_PeerageID0030RankName = { lgEffects_PeerageID0030rank = yes lgEffects_PeerageID0030name = yes }
+
+lgEffects_PeerageID0031RankName = { lgEffects_PeerageID0031rank = yes lgEffects_PeerageID0031name = yes }
+lgEffects_PeerageID0032RankName = { lgEffects_PeerageID0032rank = yes lgEffects_PeerageID0032name = yes }
+lgEffects_PeerageID0033RankName = { lgEffects_PeerageID0033rank = yes lgEffects_PeerageID0033name = yes }
+lgEffects_PeerageID0034RankName = { lgEffects_PeerageID0034rank = yes lgEffects_PeerageID0034name = yes }
+lgEffects_PeerageID0035RankName = { lgEffects_PeerageID0035rank = yes lgEffects_PeerageID0035name = yes }
+lgEffects_PeerageID0036RankName = { lgEffects_PeerageID0036rank = yes lgEffects_PeerageID0036name = yes }
+lgEffects_PeerageID0037RankName = { lgEffects_PeerageID0037rank = yes lgEffects_PeerageID0037name = yes }
+lgEffects_PeerageID0038RankName = { lgEffects_PeerageID0038rank = yes lgEffects_PeerageID0038name = yes }
+lgEffects_PeerageID0039RankName = { lgEffects_PeerageID0039rank = yes lgEffects_PeerageID0039name = yes }
+lgEffects_PeerageID0040RankName = { lgEffects_PeerageID0040rank = yes lgEffects_PeerageID0040name = yes }
+
+lgEffects_PeerageID0041RankName = { lgEffects_PeerageID0041rank = yes lgEffects_PeerageID0041name = yes }
+lgEffects_PeerageID0042RankName = { lgEffects_PeerageID0042rank = yes lgEffects_PeerageID0042name = yes }
+lgEffects_PeerageID0043RankName = { lgEffects_PeerageID0043rank = yes lgEffects_PeerageID0043name = yes }
+lgEffects_PeerageID0044RankName = { lgEffects_PeerageID0044rank = yes lgEffects_PeerageID0044name = yes }
+lgEffects_PeerageID0045RankName = { lgEffects_PeerageID0045rank = yes lgEffects_PeerageID0045name = yes }
+lgEffects_PeerageID0046RankName = { lgEffects_PeerageID0046rank = yes lgEffects_PeerageID0046name = yes }
+lgEffects_PeerageID0047RankName = { lgEffects_PeerageID0047rank = yes lgEffects_PeerageID0047name = yes }
+lgEffects_PeerageID0048RankName = { lgEffects_PeerageID0048rank = yes lgEffects_PeerageID0048name = yes }
+lgEffects_PeerageID0049RankName = { lgEffects_PeerageID0049rank = yes lgEffects_PeerageID0049name = yes }
+lgEffects_PeerageID0050RankName = { lgEffects_PeerageID0050rank = yes lgEffects_PeerageID0050name = yes }
+
+lgEffects_PeerageID0051RankName = { lgEffects_PeerageID0051rank = yes lgEffects_PeerageID0051name = yes }
+lgEffects_PeerageID0052RankName = { lgEffects_PeerageID0052rank = yes lgEffects_PeerageID0052name = yes }
+lgEffects_PeerageID0053RankName = { lgEffects_PeerageID0053rank = yes lgEffects_PeerageID0053name = yes }
+lgEffects_PeerageID0054RankName = { lgEffects_PeerageID0054rank = yes lgEffects_PeerageID0054name = yes }
+lgEffects_PeerageID0055RankName = { lgEffects_PeerageID0055rank = yes lgEffects_PeerageID0055name = yes }
+lgEffects_PeerageID0056RankName = { lgEffects_PeerageID0056rank = yes lgEffects_PeerageID0056name = yes }
+lgEffects_PeerageID0057RankName = { lgEffects_PeerageID0057rank = yes lgEffects_PeerageID0057name = yes }
+lgEffects_PeerageID0058RankName = { lgEffects_PeerageID0058rank = yes lgEffects_PeerageID0058name = yes }
+lgEffects_PeerageID0059RankName = { lgEffects_PeerageID0059rank = yes lgEffects_PeerageID0059name = yes }
+lgEffects_PeerageID0060RankName = { lgEffects_PeerageID0060rank = yes lgEffects_PeerageID0060name = yes }
+
+lgEffects_PeerageID0061RankName = { lgEffects_PeerageID0061rank = yes lgEffects_PeerageID0061name = yes }
+lgEffects_PeerageID0062RankName = { lgEffects_PeerageID0062rank = yes lgEffects_PeerageID0062name = yes }
+lgEffects_PeerageID0063RankName = { lgEffects_PeerageID0063rank = yes lgEffects_PeerageID0063name = yes }
+lgEffects_PeerageID0064RankName = { lgEffects_PeerageID0064rank = yes lgEffects_PeerageID0064name = yes }
+lgEffects_PeerageID0065RankName = { lgEffects_PeerageID0065rank = yes lgEffects_PeerageID0065name = yes }
+lgEffects_PeerageID0066RankName = { lgEffects_PeerageID0066rank = yes lgEffects_PeerageID0066name = yes }
+lgEffects_PeerageID0067RankName = { lgEffects_PeerageID0067rank = yes lgEffects_PeerageID0067name = yes }
+lgEffects_PeerageID0068RankName = { lgEffects_PeerageID0068rank = yes lgEffects_PeerageID0068name = yes }
+lgEffects_PeerageID0069RankName = { lgEffects_PeerageID0069rank = yes lgEffects_PeerageID0069name = yes }
+lgEffects_PeerageID0070RankName = { lgEffects_PeerageID0070rank = yes lgEffects_PeerageID0070name = yes }
+
+lgEffects_PeerageID0071RankName = { lgEffects_PeerageID0071rank = yes lgEffects_PeerageID0071name = yes }
+lgEffects_PeerageID0072RankName = { lgEffects_PeerageID0072rank = yes lgEffects_PeerageID0072name = yes }
+lgEffects_PeerageID0073RankName = { lgEffects_PeerageID0073rank = yes lgEffects_PeerageID0073name = yes }
+lgEffects_PeerageID0074RankName = { lgEffects_PeerageID0074rank = yes lgEffects_PeerageID0074name = yes }
+lgEffects_PeerageID0075RankName = { lgEffects_PeerageID0075rank = yes lgEffects_PeerageID0075name = yes }
+lgEffects_PeerageID0076RankName = { lgEffects_PeerageID0076rank = yes lgEffects_PeerageID0076name = yes }
+lgEffects_PeerageID0077RankName = { lgEffects_PeerageID0077rank = yes lgEffects_PeerageID0077name = yes }
+lgEffects_PeerageID0078RankName = { lgEffects_PeerageID0078rank = yes lgEffects_PeerageID0078name = yes }
+lgEffects_PeerageID0079RankName = { lgEffects_PeerageID0079rank = yes lgEffects_PeerageID0079name = yes }
+lgEffects_PeerageID0080RankName = { lgEffects_PeerageID0080rank = yes lgEffects_PeerageID0080name = yes }
+
+lgEffects_PeerageID0081RankName = { lgEffects_PeerageID0081rank = yes lgEffects_PeerageID0081name = yes }
+lgEffects_PeerageID0082RankName = { lgEffects_PeerageID0082rank = yes lgEffects_PeerageID0082name = yes }
+lgEffects_PeerageID0083RankName = { lgEffects_PeerageID0083rank = yes lgEffects_PeerageID0083name = yes }
+lgEffects_PeerageID0084RankName = { lgEffects_PeerageID0084rank = yes lgEffects_PeerageID0084name = yes }
+lgEffects_PeerageID0085RankName = { lgEffects_PeerageID0085rank = yes lgEffects_PeerageID0085name = yes }
+lgEffects_PeerageID0086RankName = { lgEffects_PeerageID0086rank = yes lgEffects_PeerageID0086name = yes }
+lgEffects_PeerageID0087RankName = { lgEffects_PeerageID0087rank = yes lgEffects_PeerageID0087name = yes }
+lgEffects_PeerageID0088RankName = { lgEffects_PeerageID0088rank = yes lgEffects_PeerageID0088name = yes }
+lgEffects_PeerageID0089RankName = { lgEffects_PeerageID0089rank = yes lgEffects_PeerageID0089name = yes }
+lgEffects_PeerageID0090RankName = { lgEffects_PeerageID0090rank = yes lgEffects_PeerageID0090name = yes }
+
+lgEffects_PeerageID0091RankName = { lgEffects_PeerageID0091rank = yes lgEffects_PeerageID0091name = yes }
+lgEffects_PeerageID0092RankName = { lgEffects_PeerageID0092rank = yes lgEffects_PeerageID0092name = yes }
+lgEffects_PeerageID0093RankName = { lgEffects_PeerageID0093rank = yes lgEffects_PeerageID0093name = yes }
+lgEffects_PeerageID0094RankName = { lgEffects_PeerageID0094rank = yes lgEffects_PeerageID0094name = yes }
+lgEffects_PeerageID0095RankName = { lgEffects_PeerageID0095rank = yes lgEffects_PeerageID0095name = yes }
+lgEffects_PeerageID0096RankName = { lgEffects_PeerageID0096rank = yes lgEffects_PeerageID0096name = yes }
+lgEffects_PeerageID0097RankName = { lgEffects_PeerageID0097rank = yes lgEffects_PeerageID0097name = yes }
+lgEffects_PeerageID0098RankName = { lgEffects_PeerageID0098rank = yes lgEffects_PeerageID0098name = yes }
+lgEffects_PeerageID0099RankName = { lgEffects_PeerageID0099rank = yes lgEffects_PeerageID0099name = yes }
+lgEffects_PeerageID0100RankName = { lgEffects_PeerageID0100rank = yes lgEffects_PeerageID0100name = yes }
+
+# 101-200
+lgEffects_PeerageID0101RankName = { lgEffects_PeerageID0101rank = yes lgEffects_PeerageID0101name = yes }
+lgEffects_PeerageID0102RankName = { lgEffects_PeerageID0102rank = yes lgEffects_PeerageID0102name = yes }
+lgEffects_PeerageID0103RankName = { lgEffects_PeerageID0103rank = yes lgEffects_PeerageID0103name = yes }
+lgEffects_PeerageID0104RankName = { lgEffects_PeerageID0104rank = yes lgEffects_PeerageID0104name = yes }
+lgEffects_PeerageID0105RankName = { lgEffects_PeerageID0105rank = yes lgEffects_PeerageID0105name = yes }
+lgEffects_PeerageID0106RankName = { lgEffects_PeerageID0106rank = yes lgEffects_PeerageID0106name = yes }
+lgEffects_PeerageID0107RankName = { lgEffects_PeerageID0107rank = yes lgEffects_PeerageID0107name = yes }
+lgEffects_PeerageID0108RankName = { lgEffects_PeerageID0108rank = yes lgEffects_PeerageID0108name = yes }
+lgEffects_PeerageID0109RankName = { lgEffects_PeerageID0109rank = yes lgEffects_PeerageID0109name = yes }
+lgEffects_PeerageID0110RankName = { lgEffects_PeerageID0110rank = yes lgEffects_PeerageID0110name = yes }
+
+lgEffects_PeerageID0111RankName = { lgEffects_PeerageID0111rank = yes lgEffects_PeerageID0111name = yes }
+lgEffects_PeerageID0112RankName = { lgEffects_PeerageID0112rank = yes lgEffects_PeerageID0112name = yes }
+lgEffects_PeerageID0113RankName = { lgEffects_PeerageID0113rank = yes lgEffects_PeerageID0113name = yes }
+lgEffects_PeerageID0114RankName = { lgEffects_PeerageID0114rank = yes lgEffects_PeerageID0114name = yes }
+lgEffects_PeerageID0115RankName = { lgEffects_PeerageID0115rank = yes lgEffects_PeerageID0115name = yes }
+lgEffects_PeerageID0116RankName = { lgEffects_PeerageID0116rank = yes lgEffects_PeerageID0116name = yes }
+lgEffects_PeerageID0117RankName = { lgEffects_PeerageID0117rank = yes lgEffects_PeerageID0117name = yes }
+lgEffects_PeerageID0118RankName = { lgEffects_PeerageID0118rank = yes lgEffects_PeerageID0118name = yes }
+lgEffects_PeerageID0119RankName = { lgEffects_PeerageID0119rank = yes lgEffects_PeerageID0119name = yes }
+lgEffects_PeerageID0120RankName = { lgEffects_PeerageID0120rank = yes lgEffects_PeerageID0120name = yes }
+
+lgEffects_PeerageID0121RankName = { lgEffects_PeerageID0121rank = yes lgEffects_PeerageID0121name = yes }
+lgEffects_PeerageID0122RankName = { lgEffects_PeerageID0122rank = yes lgEffects_PeerageID0122name = yes }
+lgEffects_PeerageID0123RankName = { lgEffects_PeerageID0123rank = yes lgEffects_PeerageID0123name = yes }
+lgEffects_PeerageID0124RankName = { lgEffects_PeerageID0124rank = yes lgEffects_PeerageID0124name = yes }
+lgEffects_PeerageID0125RankName = { lgEffects_PeerageID0125rank = yes lgEffects_PeerageID0125name = yes }
+lgEffects_PeerageID0126RankName = { lgEffects_PeerageID0126rank = yes lgEffects_PeerageID0126name = yes }
+lgEffects_PeerageID0127RankName = { lgEffects_PeerageID0127rank = yes lgEffects_PeerageID0127name = yes }
+lgEffects_PeerageID0128RankName = { lgEffects_PeerageID0128rank = yes lgEffects_PeerageID0128name = yes }
+lgEffects_PeerageID0129RankName = { lgEffects_PeerageID0129rank = yes lgEffects_PeerageID0129name = yes }
+lgEffects_PeerageID0130RankName = { lgEffects_PeerageID0130rank = yes lgEffects_PeerageID0130name = yes }
+
+lgEffects_PeerageID0131RankName = { lgEffects_PeerageID0131rank = yes lgEffects_PeerageID0131name = yes }
+lgEffects_PeerageID0132RankName = { lgEffects_PeerageID0132rank = yes lgEffects_PeerageID0132name = yes }
+lgEffects_PeerageID0133RankName = { lgEffects_PeerageID0133rank = yes lgEffects_PeerageID0133name = yes }
+lgEffects_PeerageID0134RankName = { lgEffects_PeerageID0134rank = yes lgEffects_PeerageID0134name = yes }
+lgEffects_PeerageID0135RankName = { lgEffects_PeerageID0135rank = yes lgEffects_PeerageID0135name = yes }
+lgEffects_PeerageID0136RankName = { lgEffects_PeerageID0136rank = yes lgEffects_PeerageID0136name = yes }
+lgEffects_PeerageID0137RankName = { lgEffects_PeerageID0137rank = yes lgEffects_PeerageID0137name = yes }
+lgEffects_PeerageID0138RankName = { lgEffects_PeerageID0138rank = yes lgEffects_PeerageID0138name = yes }
+lgEffects_PeerageID0139RankName = { lgEffects_PeerageID0139rank = yes lgEffects_PeerageID0139name = yes }
+lgEffects_PeerageID0140RankName = { lgEffects_PeerageID0140rank = yes lgEffects_PeerageID0140name = yes }
+
+lgEffects_PeerageID0141RankName = { lgEffects_PeerageID0141rank = yes lgEffects_PeerageID0141name = yes }
+lgEffects_PeerageID0142RankName = { lgEffects_PeerageID0142rank = yes lgEffects_PeerageID0142name = yes }
+lgEffects_PeerageID0143RankName = { lgEffects_PeerageID0143rank = yes lgEffects_PeerageID0143name = yes }
+lgEffects_PeerageID0144RankName = { lgEffects_PeerageID0144rank = yes lgEffects_PeerageID0144name = yes }
+lgEffects_PeerageID0145RankName = { lgEffects_PeerageID0145rank = yes lgEffects_PeerageID0145name = yes }
+lgEffects_PeerageID0146RankName = { lgEffects_PeerageID0146rank = yes lgEffects_PeerageID0146name = yes }
+lgEffects_PeerageID0147RankName = { lgEffects_PeerageID0147rank = yes lgEffects_PeerageID0147name = yes }
+lgEffects_PeerageID0148RankName = { lgEffects_PeerageID0148rank = yes lgEffects_PeerageID0148name = yes }
+lgEffects_PeerageID0149RankName = { lgEffects_PeerageID0149rank = yes lgEffects_PeerageID0149name = yes }
+lgEffects_PeerageID0150RankName = { lgEffects_PeerageID0150rank = yes lgEffects_PeerageID0150name = yes }
+
+lgEffects_PeerageID0151RankName = { lgEffects_PeerageID0151rank = yes lgEffects_PeerageID0151name = yes }
+lgEffects_PeerageID0152RankName = { lgEffects_PeerageID0152rank = yes lgEffects_PeerageID0152name = yes }
+lgEffects_PeerageID0153RankName = { lgEffects_PeerageID0153rank = yes lgEffects_PeerageID0153name = yes }
+lgEffects_PeerageID0154RankName = { lgEffects_PeerageID0154rank = yes lgEffects_PeerageID0154name = yes }
+lgEffects_PeerageID0155RankName = { lgEffects_PeerageID0155rank = yes lgEffects_PeerageID0155name = yes }
+lgEffects_PeerageID0156RankName = { lgEffects_PeerageID0156rank = yes lgEffects_PeerageID0156name = yes }
+lgEffects_PeerageID0157RankName = { lgEffects_PeerageID0157rank = yes lgEffects_PeerageID0157name = yes }
+lgEffects_PeerageID0158RankName = { lgEffects_PeerageID0158rank = yes lgEffects_PeerageID0158name = yes }
+lgEffects_PeerageID0159RankName = { lgEffects_PeerageID0159rank = yes lgEffects_PeerageID0159name = yes }
+lgEffects_PeerageID0160RankName = { lgEffects_PeerageID0160rank = yes lgEffects_PeerageID0160name = yes }
+
+lgEffects_PeerageID0161RankName = { lgEffects_PeerageID0161rank = yes lgEffects_PeerageID0161name = yes }
+lgEffects_PeerageID0162RankName = { lgEffects_PeerageID0162rank = yes lgEffects_PeerageID0162name = yes }
+lgEffects_PeerageID0163RankName = { lgEffects_PeerageID0163rank = yes lgEffects_PeerageID0163name = yes }
+lgEffects_PeerageID0164RankName = { lgEffects_PeerageID0164rank = yes lgEffects_PeerageID0164name = yes }
+lgEffects_PeerageID0165RankName = { lgEffects_PeerageID0165rank = yes lgEffects_PeerageID0165name = yes }
+lgEffects_PeerageID0166RankName = { lgEffects_PeerageID0166rank = yes lgEffects_PeerageID0166name = yes }
+lgEffects_PeerageID0167RankName = { lgEffects_PeerageID0167rank = yes lgEffects_PeerageID0167name = yes }
+lgEffects_PeerageID0168RankName = { lgEffects_PeerageID0168rank = yes lgEffects_PeerageID0168name = yes }
+lgEffects_PeerageID0169RankName = { lgEffects_PeerageID0169rank = yes lgEffects_PeerageID0169name = yes }
+lgEffects_PeerageID0170RankName = { lgEffects_PeerageID0170rank = yes lgEffects_PeerageID0170name = yes }
+
+lgEffects_PeerageID0171RankName = { lgEffects_PeerageID0171rank = yes lgEffects_PeerageID0171name = yes }
+lgEffects_PeerageID0172RankName = { lgEffects_PeerageID0172rank = yes lgEffects_PeerageID0172name = yes }
+lgEffects_PeerageID0173RankName = { lgEffects_PeerageID0173rank = yes lgEffects_PeerageID0173name = yes }
+lgEffects_PeerageID0174RankName = { lgEffects_PeerageID0174rank = yes lgEffects_PeerageID0174name = yes }
+lgEffects_PeerageID0175RankName = { lgEffects_PeerageID0175rank = yes lgEffects_PeerageID0175name = yes }
+lgEffects_PeerageID0176RankName = { lgEffects_PeerageID0176rank = yes lgEffects_PeerageID0176name = yes }
+lgEffects_PeerageID0177RankName = { lgEffects_PeerageID0177rank = yes lgEffects_PeerageID0177name = yes }
+lgEffects_PeerageID0178RankName = { lgEffects_PeerageID0178rank = yes lgEffects_PeerageID0178name = yes }
+lgEffects_PeerageID0179RankName = { lgEffects_PeerageID0179rank = yes lgEffects_PeerageID0179name = yes }
+lgEffects_PeerageID0180RankName = { lgEffects_PeerageID0180rank = yes lgEffects_PeerageID0180name = yes }
+
+lgEffects_PeerageID0181RankName = { lgEffects_PeerageID0181rank = yes lgEffects_PeerageID0181name = yes }
+lgEffects_PeerageID0182RankName = { lgEffects_PeerageID0182rank = yes lgEffects_PeerageID0182name = yes }
+lgEffects_PeerageID0183RankName = { lgEffects_PeerageID0183rank = yes lgEffects_PeerageID0183name = yes }
+lgEffects_PeerageID0184RankName = { lgEffects_PeerageID0184rank = yes lgEffects_PeerageID0184name = yes }
+lgEffects_PeerageID0185RankName = { lgEffects_PeerageID0185rank = yes lgEffects_PeerageID0185name = yes }
+lgEffects_PeerageID0186RankName = { lgEffects_PeerageID0186rank = yes lgEffects_PeerageID0186name = yes }
+lgEffects_PeerageID0187RankName = { lgEffects_PeerageID0187rank = yes lgEffects_PeerageID0187name = yes }
+lgEffects_PeerageID0188RankName = { lgEffects_PeerageID0188rank = yes lgEffects_PeerageID0188name = yes }
+lgEffects_PeerageID0189RankName = { lgEffects_PeerageID0189rank = yes lgEffects_PeerageID0189name = yes }
+lgEffects_PeerageID0190RankName = { lgEffects_PeerageID0190rank = yes lgEffects_PeerageID0190name = yes }
+
+lgEffects_PeerageID0191RankName = { lgEffects_PeerageID0191rank = yes lgEffects_PeerageID0191name = yes }
+lgEffects_PeerageID0192RankName = { lgEffects_PeerageID0192rank = yes lgEffects_PeerageID0192name = yes }
+lgEffects_PeerageID0193RankName = { lgEffects_PeerageID0193rank = yes lgEffects_PeerageID0193name = yes }
+lgEffects_PeerageID0194RankName = { lgEffects_PeerageID0194rank = yes lgEffects_PeerageID0194name = yes }
+lgEffects_PeerageID0195RankName = { lgEffects_PeerageID0195rank = yes lgEffects_PeerageID0195name = yes }
+lgEffects_PeerageID0196RankName = { lgEffects_PeerageID0196rank = yes lgEffects_PeerageID0196name = yes }
+lgEffects_PeerageID0197RankName = { lgEffects_PeerageID0197rank = yes lgEffects_PeerageID0197name = yes }
+lgEffects_PeerageID0198RankName = { lgEffects_PeerageID0198rank = yes lgEffects_PeerageID0198name = yes }
+lgEffects_PeerageID0199RankName = { lgEffects_PeerageID0199rank = yes lgEffects_PeerageID0199name = yes }
+lgEffects_PeerageID0200RankName = { lgEffects_PeerageID0200rank = yes lgEffects_PeerageID0200name = yes }
+
+# 201-300
+lgEffects_PeerageID0201RankName = { lgEffects_PeerageID0201rank = yes lgEffects_PeerageID0201name = yes }
+lgEffects_PeerageID0202RankName = { lgEffects_PeerageID0202rank = yes lgEffects_PeerageID0202name = yes }
+lgEffects_PeerageID0203RankName = { lgEffects_PeerageID0203rank = yes lgEffects_PeerageID0203name = yes }
+lgEffects_PeerageID0204RankName = { lgEffects_PeerageID0204rank = yes lgEffects_PeerageID0204name = yes }
+lgEffects_PeerageID0205RankName = { lgEffects_PeerageID0205rank = yes lgEffects_PeerageID0205name = yes }
+lgEffects_PeerageID0206RankName = { lgEffects_PeerageID0206rank = yes lgEffects_PeerageID0206name = yes }
+lgEffects_PeerageID0207RankName = { lgEffects_PeerageID0207rank = yes lgEffects_PeerageID0207name = yes }
+lgEffects_PeerageID0208RankName = { lgEffects_PeerageID0208rank = yes lgEffects_PeerageID0208name = yes }
+lgEffects_PeerageID0209RankName = { lgEffects_PeerageID0209rank = yes lgEffects_PeerageID0209name = yes }
+lgEffects_PeerageID0210RankName = { lgEffects_PeerageID0210rank = yes lgEffects_PeerageID0210name = yes }
+
+lgEffects_PeerageID0211RankName = { lgEffects_PeerageID0211rank = yes lgEffects_PeerageID0211name = yes }
+lgEffects_PeerageID0212RankName = { lgEffects_PeerageID0212rank = yes lgEffects_PeerageID0212name = yes }
+lgEffects_PeerageID0213RankName = { lgEffects_PeerageID0213rank = yes lgEffects_PeerageID0213name = yes }
+lgEffects_PeerageID0214RankName = { lgEffects_PeerageID0214rank = yes lgEffects_PeerageID0214name = yes }
+lgEffects_PeerageID0215RankName = { lgEffects_PeerageID0215rank = yes lgEffects_PeerageID0215name = yes }
+lgEffects_PeerageID0216RankName = { lgEffects_PeerageID0216rank = yes lgEffects_PeerageID0216name = yes }
+lgEffects_PeerageID0217RankName = { lgEffects_PeerageID0217rank = yes lgEffects_PeerageID0217name = yes }
+lgEffects_PeerageID0218RankName = { lgEffects_PeerageID0218rank = yes lgEffects_PeerageID0218name = yes }
+lgEffects_PeerageID0219RankName = { lgEffects_PeerageID0219rank = yes lgEffects_PeerageID0219name = yes }
+lgEffects_PeerageID0220RankName = { lgEffects_PeerageID0220rank = yes lgEffects_PeerageID0220name = yes }
+
+lgEffects_PeerageID0221RankName = { lgEffects_PeerageID0221rank = yes lgEffects_PeerageID0221name = yes }
+lgEffects_PeerageID0222RankName = { lgEffects_PeerageID0222rank = yes lgEffects_PeerageID0222name = yes }
+lgEffects_PeerageID0223RankName = { lgEffects_PeerageID0223rank = yes lgEffects_PeerageID0223name = yes }
+lgEffects_PeerageID0224RankName = { lgEffects_PeerageID0224rank = yes lgEffects_PeerageID0224name = yes }
+lgEffects_PeerageID0225RankName = { lgEffects_PeerageID0225rank = yes lgEffects_PeerageID0225name = yes }
+lgEffects_PeerageID0226RankName = { lgEffects_PeerageID0226rank = yes lgEffects_PeerageID0226name = yes }
+lgEffects_PeerageID0227RankName = { lgEffects_PeerageID0227rank = yes lgEffects_PeerageID0227name = yes }
+lgEffects_PeerageID0228RankName = { lgEffects_PeerageID0228rank = yes lgEffects_PeerageID0228name = yes }
+lgEffects_PeerageID0229RankName = { lgEffects_PeerageID0229rank = yes lgEffects_PeerageID0229name = yes }
+lgEffects_PeerageID0230RankName = { lgEffects_PeerageID0230rank = yes lgEffects_PeerageID0230name = yes }
+
+lgEffects_PeerageID0231RankName = { lgEffects_PeerageID0231rank = yes lgEffects_PeerageID0231name = yes }
+lgEffects_PeerageID0232RankName = { lgEffects_PeerageID0232rank = yes lgEffects_PeerageID0232name = yes }
+lgEffects_PeerageID0233RankName = { lgEffects_PeerageID0233rank = yes lgEffects_PeerageID0233name = yes }
+lgEffects_PeerageID0234RankName = { lgEffects_PeerageID0234rank = yes lgEffects_PeerageID0234name = yes }
+lgEffects_PeerageID0235RankName = { lgEffects_PeerageID0235rank = yes lgEffects_PeerageID0235name = yes }
+lgEffects_PeerageID0236RankName = { lgEffects_PeerageID0236rank = yes lgEffects_PeerageID0236name = yes }
+lgEffects_PeerageID0237RankName = { lgEffects_PeerageID0237rank = yes lgEffects_PeerageID0237name = yes }
+lgEffects_PeerageID0238RankName = { lgEffects_PeerageID0238rank = yes lgEffects_PeerageID0238name = yes }
+lgEffects_PeerageID0239RankName = { lgEffects_PeerageID0239rank = yes lgEffects_PeerageID0239name = yes }
+lgEffects_PeerageID0240RankName = { lgEffects_PeerageID0240rank = yes lgEffects_PeerageID0240name = yes }
+
+lgEffects_PeerageID0241RankName = { lgEffects_PeerageID0241rank = yes lgEffects_PeerageID0241name = yes }
+lgEffects_PeerageID0242RankName = { lgEffects_PeerageID0242rank = yes lgEffects_PeerageID0242name = yes }
+lgEffects_PeerageID0243RankName = { lgEffects_PeerageID0243rank = yes lgEffects_PeerageID0243name = yes }
+lgEffects_PeerageID0244RankName = { lgEffects_PeerageID0244rank = yes lgEffects_PeerageID0244name = yes }
+lgEffects_PeerageID0245RankName = { lgEffects_PeerageID0245rank = yes lgEffects_PeerageID0245name = yes }
+lgEffects_PeerageID0246RankName = { lgEffects_PeerageID0246rank = yes lgEffects_PeerageID0246name = yes }
+lgEffects_PeerageID0247RankName = { lgEffects_PeerageID0247rank = yes lgEffects_PeerageID0247name = yes }
+lgEffects_PeerageID0248RankName = { lgEffects_PeerageID0248rank = yes lgEffects_PeerageID0248name = yes }
+lgEffects_PeerageID0249RankName = { lgEffects_PeerageID0249rank = yes lgEffects_PeerageID0249name = yes }
+lgEffects_PeerageID0250RankName = { lgEffects_PeerageID0250rank = yes lgEffects_PeerageID0250name = yes }
+
+lgEffects_PeerageID0251RankName = { lgEffects_PeerageID0251rank = yes lgEffects_PeerageID0251name = yes }
+lgEffects_PeerageID0252RankName = { lgEffects_PeerageID0252rank = yes lgEffects_PeerageID0252name = yes }
+lgEffects_PeerageID0253RankName = { lgEffects_PeerageID0253rank = yes lgEffects_PeerageID0253name = yes }
+lgEffects_PeerageID0254RankName = { lgEffects_PeerageID0254rank = yes lgEffects_PeerageID0254name = yes }
+lgEffects_PeerageID0255RankName = { lgEffects_PeerageID0255rank = yes lgEffects_PeerageID0255name = yes }
+lgEffects_PeerageID0256RankName = { lgEffects_PeerageID0256rank = yes lgEffects_PeerageID0256name = yes }
+lgEffects_PeerageID0257RankName = { lgEffects_PeerageID0257rank = yes lgEffects_PeerageID0257name = yes }
+lgEffects_PeerageID0258RankName = { lgEffects_PeerageID0258rank = yes lgEffects_PeerageID0258name = yes }
+lgEffects_PeerageID0259RankName = { lgEffects_PeerageID0259rank = yes lgEffects_PeerageID0259name = yes }
+lgEffects_PeerageID0260RankName = { lgEffects_PeerageID0260rank = yes lgEffects_PeerageID0260name = yes }
+
+lgEffects_PeerageID0261RankName = { lgEffects_PeerageID0261rank = yes lgEffects_PeerageID0261name = yes }
+lgEffects_PeerageID0262RankName = { lgEffects_PeerageID0262rank = yes lgEffects_PeerageID0262name = yes }
+lgEffects_PeerageID0263RankName = { lgEffects_PeerageID0263rank = yes lgEffects_PeerageID0263name = yes }
+lgEffects_PeerageID0264RankName = { lgEffects_PeerageID0264rank = yes lgEffects_PeerageID0264name = yes }
+lgEffects_PeerageID0265RankName = { lgEffects_PeerageID0265rank = yes lgEffects_PeerageID0265name = yes }
+lgEffects_PeerageID0266RankName = { lgEffects_PeerageID0266rank = yes lgEffects_PeerageID0266name = yes }
+lgEffects_PeerageID0267RankName = { lgEffects_PeerageID0267rank = yes lgEffects_PeerageID0267name = yes }
+lgEffects_PeerageID0268RankName = { lgEffects_PeerageID0268rank = yes lgEffects_PeerageID0268name = yes }
+lgEffects_PeerageID0269RankName = { lgEffects_PeerageID0269rank = yes lgEffects_PeerageID0269name = yes }
+lgEffects_PeerageID0270RankName = { lgEffects_PeerageID0270rank = yes lgEffects_PeerageID0270name = yes }
+
+lgEffects_PeerageID0271RankName = { lgEffects_PeerageID0271rank = yes lgEffects_PeerageID0271name = yes }
+lgEffects_PeerageID0272RankName = { lgEffects_PeerageID0272rank = yes lgEffects_PeerageID0272name = yes }
+lgEffects_PeerageID0273RankName = { lgEffects_PeerageID0273rank = yes lgEffects_PeerageID0273name = yes }
+lgEffects_PeerageID0274RankName = { lgEffects_PeerageID0274rank = yes lgEffects_PeerageID0274name = yes }
+lgEffects_PeerageID0275RankName = { lgEffects_PeerageID0275rank = yes lgEffects_PeerageID0275name = yes }
+lgEffects_PeerageID0276RankName = { lgEffects_PeerageID0276rank = yes lgEffects_PeerageID0276name = yes }
+lgEffects_PeerageID0277RankName = { lgEffects_PeerageID0277rank = yes lgEffects_PeerageID0277name = yes }
+lgEffects_PeerageID0278RankName = { lgEffects_PeerageID0278rank = yes lgEffects_PeerageID0278name = yes }
+lgEffects_PeerageID0279RankName = { lgEffects_PeerageID0279rank = yes lgEffects_PeerageID0279name = yes }
+lgEffects_PeerageID0280RankName = { lgEffects_PeerageID0280rank = yes lgEffects_PeerageID0280name = yes }
+
+lgEffects_PeerageID0281RankName = { lgEffects_PeerageID0281rank = yes lgEffects_PeerageID0281name = yes }
+lgEffects_PeerageID0282RankName = { lgEffects_PeerageID0282rank = yes lgEffects_PeerageID0282name = yes }
+lgEffects_PeerageID0283RankName = { lgEffects_PeerageID0283rank = yes lgEffects_PeerageID0283name = yes }
+lgEffects_PeerageID0284RankName = { lgEffects_PeerageID0284rank = yes lgEffects_PeerageID0284name = yes }
+lgEffects_PeerageID0285RankName = { lgEffects_PeerageID0285rank = yes lgEffects_PeerageID0285name = yes }
+lgEffects_PeerageID0286RankName = { lgEffects_PeerageID0286rank = yes lgEffects_PeerageID0286name = yes }
+lgEffects_PeerageID0287RankName = { lgEffects_PeerageID0287rank = yes lgEffects_PeerageID0287name = yes }
+lgEffects_PeerageID0288RankName = { lgEffects_PeerageID0288rank = yes lgEffects_PeerageID0288name = yes }
+lgEffects_PeerageID0289RankName = { lgEffects_PeerageID0289rank = yes lgEffects_PeerageID0289name = yes }
+lgEffects_PeerageID0290RankName = { lgEffects_PeerageID0290rank = yes lgEffects_PeerageID0290name = yes }
+
+lgEffects_PeerageID0291RankName = { lgEffects_PeerageID0291rank = yes lgEffects_PeerageID0291name = yes }
+lgEffects_PeerageID0292RankName = { lgEffects_PeerageID0292rank = yes lgEffects_PeerageID0292name = yes }
+lgEffects_PeerageID0293RankName = { lgEffects_PeerageID0293rank = yes lgEffects_PeerageID0293name = yes }
+lgEffects_PeerageID0294RankName = { lgEffects_PeerageID0294rank = yes lgEffects_PeerageID0294name = yes }
+lgEffects_PeerageID0295RankName = { lgEffects_PeerageID0295rank = yes lgEffects_PeerageID0295name = yes }
+lgEffects_PeerageID0296RankName = { lgEffects_PeerageID0296rank = yes lgEffects_PeerageID0296name = yes }
+lgEffects_PeerageID0297RankName = { lgEffects_PeerageID0297rank = yes lgEffects_PeerageID0297name = yes }
+lgEffects_PeerageID0298RankName = { lgEffects_PeerageID0298rank = yes lgEffects_PeerageID0298name = yes }
+lgEffects_PeerageID0299RankName = { lgEffects_PeerageID0299rank = yes lgEffects_PeerageID0299name = yes }
+lgEffects_PeerageID0300RankName = { lgEffects_PeerageID0300rank = yes lgEffects_PeerageID0300name = yes }
+
+# Ordinal numbers and association with a specific character for whom the peerage was created
+lgEffects_PeerageID0001OrdChar = { lgEffects_PeerageID0001ord = yes lgEffects_PeerageID0001char = yes }
+lgEffects_PeerageID0002OrdChar = { lgEffects_PeerageID0002ord = yes lgEffects_PeerageID0002char = yes }
+lgEffects_PeerageID0003OrdChar = { lgEffects_PeerageID0003ord = yes lgEffects_PeerageID0003char = yes }
+lgEffects_PeerageID0004OrdChar = { lgEffects_PeerageID0004ord = yes lgEffects_PeerageID0004char = yes }
+lgEffects_PeerageID0005OrdChar = { lgEffects_PeerageID0005ord = yes lgEffects_PeerageID0005char = yes }
+lgEffects_PeerageID0006OrdChar = { lgEffects_PeerageID0006ord = yes lgEffects_PeerageID0006char = yes }
+lgEffects_PeerageID0007OrdChar = { lgEffects_PeerageID0007ord = yes lgEffects_PeerageID0007char = yes }
+lgEffects_PeerageID0008OrdChar = { lgEffects_PeerageID0008ord = yes lgEffects_PeerageID0008char = yes }
+lgEffects_PeerageID0009OrdChar = { lgEffects_PeerageID0009ord = yes lgEffects_PeerageID0009char = yes }
+lgEffects_PeerageID0010OrdChar = { lgEffects_PeerageID0010ord = yes lgEffects_PeerageID0010char = yes }
+
+lgEffects_PeerageID0011OrdChar = { lgEffects_PeerageID0011ord = yes lgEffects_PeerageID0011char = yes }
+lgEffects_PeerageID0012OrdChar = { lgEffects_PeerageID0012ord = yes lgEffects_PeerageID0012char = yes }
+lgEffects_PeerageID0013OrdChar = { lgEffects_PeerageID0013ord = yes lgEffects_PeerageID0013char = yes }
+lgEffects_PeerageID0014OrdChar = { lgEffects_PeerageID0014ord = yes lgEffects_PeerageID0014char = yes }
+lgEffects_PeerageID0015OrdChar = { lgEffects_PeerageID0015ord = yes lgEffects_PeerageID0015char = yes }
+lgEffects_PeerageID0016OrdChar = { lgEffects_PeerageID0016ord = yes lgEffects_PeerageID0016char = yes }
+lgEffects_PeerageID0017OrdChar = { lgEffects_PeerageID0017ord = yes lgEffects_PeerageID0017char = yes }
+lgEffects_PeerageID0018OrdChar = { lgEffects_PeerageID0018ord = yes lgEffects_PeerageID0018char = yes }
+lgEffects_PeerageID0019OrdChar = { lgEffects_PeerageID0019ord = yes lgEffects_PeerageID0019char = yes }
+lgEffects_PeerageID0020OrdChar = { lgEffects_PeerageID0020ord = yes lgEffects_PeerageID0020char = yes }
+
+lgEffects_PeerageID0021OrdChar = { lgEffects_PeerageID0021ord = yes lgEffects_PeerageID0021char = yes }
+lgEffects_PeerageID0022OrdChar = { lgEffects_PeerageID0022ord = yes lgEffects_PeerageID0022char = yes }
+lgEffects_PeerageID0023OrdChar = { lgEffects_PeerageID0023ord = yes lgEffects_PeerageID0023char = yes }
+lgEffects_PeerageID0024OrdChar = { lgEffects_PeerageID0024ord = yes lgEffects_PeerageID0024char = yes }
+lgEffects_PeerageID0025OrdChar = { lgEffects_PeerageID0025ord = yes lgEffects_PeerageID0025char = yes }
+lgEffects_PeerageID0026OrdChar = { lgEffects_PeerageID0026ord = yes lgEffects_PeerageID0026char = yes }
+lgEffects_PeerageID0027OrdChar = { lgEffects_PeerageID0027ord = yes lgEffects_PeerageID0027char = yes }
+lgEffects_PeerageID0028OrdChar = { lgEffects_PeerageID0028ord = yes lgEffects_PeerageID0028char = yes }
+lgEffects_PeerageID0029OrdChar = { lgEffects_PeerageID0029ord = yes lgEffects_PeerageID0029char = yes }
+lgEffects_PeerageID0030OrdChar = { lgEffects_PeerageID0030ord = yes lgEffects_PeerageID0030char = yes }
+
+lgEffects_PeerageID0031OrdChar = { lgEffects_PeerageID0031ord = yes lgEffects_PeerageID0031char = yes }
+lgEffects_PeerageID0032OrdChar = { lgEffects_PeerageID0032ord = yes lgEffects_PeerageID0032char = yes }
+lgEffects_PeerageID0033OrdChar = { lgEffects_PeerageID0033ord = yes lgEffects_PeerageID0033char = yes }
+lgEffects_PeerageID0034OrdChar = { lgEffects_PeerageID0034ord = yes lgEffects_PeerageID0034char = yes }
+lgEffects_PeerageID0035OrdChar = { lgEffects_PeerageID0035ord = yes lgEffects_PeerageID0035char = yes }
+lgEffects_PeerageID0036OrdChar = { lgEffects_PeerageID0036ord = yes lgEffects_PeerageID0036char = yes }
+lgEffects_PeerageID0037OrdChar = { lgEffects_PeerageID0037ord = yes lgEffects_PeerageID0037char = yes }
+lgEffects_PeerageID0038OrdChar = { lgEffects_PeerageID0038ord = yes lgEffects_PeerageID0038char = yes }
+lgEffects_PeerageID0039OrdChar = { lgEffects_PeerageID0039ord = yes lgEffects_PeerageID0039char = yes }
+lgEffects_PeerageID0040OrdChar = { lgEffects_PeerageID0040ord = yes lgEffects_PeerageID0040char = yes }
+
+lgEffects_PeerageID0041OrdChar = { lgEffects_PeerageID0041ord = yes lgEffects_PeerageID0041char = yes }
+lgEffects_PeerageID0042OrdChar = { lgEffects_PeerageID0042ord = yes lgEffects_PeerageID0042char = yes }
+lgEffects_PeerageID0043OrdChar = { lgEffects_PeerageID0043ord = yes lgEffects_PeerageID0043char = yes }
+lgEffects_PeerageID0044OrdChar = { lgEffects_PeerageID0044ord = yes lgEffects_PeerageID0044char = yes }
+lgEffects_PeerageID0045OrdChar = { lgEffects_PeerageID0045ord = yes lgEffects_PeerageID0045char = yes }
+lgEffects_PeerageID0046OrdChar = { lgEffects_PeerageID0046ord = yes lgEffects_PeerageID0046char = yes }
+lgEffects_PeerageID0047OrdChar = { lgEffects_PeerageID0047ord = yes lgEffects_PeerageID0047char = yes }
+lgEffects_PeerageID0048OrdChar = { lgEffects_PeerageID0048ord = yes lgEffects_PeerageID0048char = yes }
+lgEffects_PeerageID0049OrdChar = { lgEffects_PeerageID0049ord = yes lgEffects_PeerageID0049char = yes }
+lgEffects_PeerageID0050OrdChar = { lgEffects_PeerageID0050ord = yes lgEffects_PeerageID0050char = yes }
+
+lgEffects_PeerageID0051OrdChar = { lgEffects_PeerageID0051ord = yes lgEffects_PeerageID0051char = yes }
+lgEffects_PeerageID0052OrdChar = { lgEffects_PeerageID0052ord = yes lgEffects_PeerageID0052char = yes }
+lgEffects_PeerageID0053OrdChar = { lgEffects_PeerageID0053ord = yes lgEffects_PeerageID0053char = yes }
+lgEffects_PeerageID0054OrdChar = { lgEffects_PeerageID0054ord = yes lgEffects_PeerageID0054char = yes }
+lgEffects_PeerageID0055OrdChar = { lgEffects_PeerageID0055ord = yes lgEffects_PeerageID0055char = yes }
+lgEffects_PeerageID0056OrdChar = { lgEffects_PeerageID0056ord = yes lgEffects_PeerageID0056char = yes }
+lgEffects_PeerageID0057OrdChar = { lgEffects_PeerageID0057ord = yes lgEffects_PeerageID0057char = yes }
+lgEffects_PeerageID0058OrdChar = { lgEffects_PeerageID0058ord = yes lgEffects_PeerageID0058char = yes }
+lgEffects_PeerageID0059OrdChar = { lgEffects_PeerageID0059ord = yes lgEffects_PeerageID0059char = yes }
+lgEffects_PeerageID0060OrdChar = { lgEffects_PeerageID0060ord = yes lgEffects_PeerageID0060char = yes }
+
+lgEffects_PeerageID0061OrdChar = { lgEffects_PeerageID0061ord = yes lgEffects_PeerageID0061char = yes }
+lgEffects_PeerageID0062OrdChar = { lgEffects_PeerageID0062ord = yes lgEffects_PeerageID0062char = yes }
+lgEffects_PeerageID0063OrdChar = { lgEffects_PeerageID0063ord = yes lgEffects_PeerageID0063char = yes }
+lgEffects_PeerageID0064OrdChar = { lgEffects_PeerageID0064ord = yes lgEffects_PeerageID0064char = yes }
+lgEffects_PeerageID0065OrdChar = { lgEffects_PeerageID0065ord = yes lgEffects_PeerageID0065char = yes }
+lgEffects_PeerageID0066OrdChar = { lgEffects_PeerageID0066ord = yes lgEffects_PeerageID0066char = yes }
+lgEffects_PeerageID0067OrdChar = { lgEffects_PeerageID0067ord = yes lgEffects_PeerageID0067char = yes }
+lgEffects_PeerageID0068OrdChar = { lgEffects_PeerageID0068ord = yes lgEffects_PeerageID0068char = yes }
+lgEffects_PeerageID0069OrdChar = { lgEffects_PeerageID0069ord = yes lgEffects_PeerageID0069char = yes }
+lgEffects_PeerageID0070OrdChar = { lgEffects_PeerageID0070ord = yes lgEffects_PeerageID0070char = yes }
+
+lgEffects_PeerageID0071OrdChar = { lgEffects_PeerageID0071ord = yes lgEffects_PeerageID0071char = yes }
+lgEffects_PeerageID0072OrdChar = { lgEffects_PeerageID0072ord = yes lgEffects_PeerageID0072char = yes }
+lgEffects_PeerageID0073OrdChar = { lgEffects_PeerageID0073ord = yes lgEffects_PeerageID0073char = yes }
+lgEffects_PeerageID0074OrdChar = { lgEffects_PeerageID0074ord = yes lgEffects_PeerageID0074char = yes }
+lgEffects_PeerageID0075OrdChar = { lgEffects_PeerageID0075ord = yes lgEffects_PeerageID0075char = yes }
+lgEffects_PeerageID0076OrdChar = { lgEffects_PeerageID0076ord = yes lgEffects_PeerageID0076char = yes }
+lgEffects_PeerageID0077OrdChar = { lgEffects_PeerageID0077ord = yes lgEffects_PeerageID0077char = yes }
+lgEffects_PeerageID0078OrdChar = { lgEffects_PeerageID0078ord = yes lgEffects_PeerageID0078char = yes }
+lgEffects_PeerageID0079OrdChar = { lgEffects_PeerageID0079ord = yes lgEffects_PeerageID0079char = yes }
+lgEffects_PeerageID0080OrdChar = { lgEffects_PeerageID0080ord = yes lgEffects_PeerageID0080char = yes }
+
+lgEffects_PeerageID0081OrdChar = { lgEffects_PeerageID0081ord = yes lgEffects_PeerageID0081char = yes }
+lgEffects_PeerageID0082OrdChar = { lgEffects_PeerageID0082ord = yes lgEffects_PeerageID0082char = yes }
+lgEffects_PeerageID0083OrdChar = { lgEffects_PeerageID0083ord = yes lgEffects_PeerageID0083char = yes }
+lgEffects_PeerageID0084OrdChar = { lgEffects_PeerageID0084ord = yes lgEffects_PeerageID0084char = yes }
+lgEffects_PeerageID0085OrdChar = { lgEffects_PeerageID0085ord = yes lgEffects_PeerageID0085char = yes }
+lgEffects_PeerageID0086OrdChar = { lgEffects_PeerageID0086ord = yes lgEffects_PeerageID0086char = yes }
+lgEffects_PeerageID0087OrdChar = { lgEffects_PeerageID0087ord = yes lgEffects_PeerageID0087char = yes }
+lgEffects_PeerageID0088OrdChar = { lgEffects_PeerageID0088ord = yes lgEffects_PeerageID0088char = yes }
+lgEffects_PeerageID0089OrdChar = { lgEffects_PeerageID0089ord = yes lgEffects_PeerageID0089char = yes }
+lgEffects_PeerageID0090OrdChar = { lgEffects_PeerageID0090ord = yes lgEffects_PeerageID0090char = yes }
+
+lgEffects_PeerageID0091OrdChar = { lgEffects_PeerageID0091ord = yes lgEffects_PeerageID0091char = yes }
+lgEffects_PeerageID0092OrdChar = { lgEffects_PeerageID0092ord = yes lgEffects_PeerageID0092char = yes }
+lgEffects_PeerageID0093OrdChar = { lgEffects_PeerageID0093ord = yes lgEffects_PeerageID0093char = yes }
+lgEffects_PeerageID0094OrdChar = { lgEffects_PeerageID0094ord = yes lgEffects_PeerageID0094char = yes }
+lgEffects_PeerageID0095OrdChar = { lgEffects_PeerageID0095ord = yes lgEffects_PeerageID0095char = yes }
+lgEffects_PeerageID0096OrdChar = { lgEffects_PeerageID0096ord = yes lgEffects_PeerageID0096char = yes }
+lgEffects_PeerageID0097OrdChar = { lgEffects_PeerageID0097ord = yes lgEffects_PeerageID0097char = yes }
+lgEffects_PeerageID0098OrdChar = { lgEffects_PeerageID0098ord = yes lgEffects_PeerageID0098char = yes }
+lgEffects_PeerageID0099OrdChar = { lgEffects_PeerageID0099ord = yes lgEffects_PeerageID0099char = yes }
+lgEffects_PeerageID0100OrdChar = { lgEffects_PeerageID0100ord = yes lgEffects_PeerageID0100char = yes }
+
+# 101-200
+lgEffects_PeerageID0101OrdChar = { lgEffects_PeerageID0101ord = yes lgEffects_PeerageID0101char = yes }
+lgEffects_PeerageID0102OrdChar = { lgEffects_PeerageID0102ord = yes lgEffects_PeerageID0102char = yes }
+lgEffects_PeerageID0103OrdChar = { lgEffects_PeerageID0103ord = yes lgEffects_PeerageID0103char = yes }
+lgEffects_PeerageID0104OrdChar = { lgEffects_PeerageID0104ord = yes lgEffects_PeerageID0104char = yes }
+lgEffects_PeerageID0105OrdChar = { lgEffects_PeerageID0105ord = yes lgEffects_PeerageID0105char = yes }
+lgEffects_PeerageID0106OrdChar = { lgEffects_PeerageID0106ord = yes lgEffects_PeerageID0106char = yes }
+lgEffects_PeerageID0107OrdChar = { lgEffects_PeerageID0107ord = yes lgEffects_PeerageID0107char = yes }
+lgEffects_PeerageID0108OrdChar = { lgEffects_PeerageID0108ord = yes lgEffects_PeerageID0108char = yes }
+lgEffects_PeerageID0109OrdChar = { lgEffects_PeerageID0109ord = yes lgEffects_PeerageID0109char = yes }
+lgEffects_PeerageID0110OrdChar = { lgEffects_PeerageID0110ord = yes lgEffects_PeerageID0110char = yes }
+
+lgEffects_PeerageID0111OrdChar = { lgEffects_PeerageID0111ord = yes lgEffects_PeerageID0111char = yes }
+lgEffects_PeerageID0112OrdChar = { lgEffects_PeerageID0112ord = yes lgEffects_PeerageID0112char = yes }
+lgEffects_PeerageID0113OrdChar = { lgEffects_PeerageID0113ord = yes lgEffects_PeerageID0113char = yes }
+lgEffects_PeerageID0114OrdChar = { lgEffects_PeerageID0114ord = yes lgEffects_PeerageID0114char = yes }
+lgEffects_PeerageID0115OrdChar = { lgEffects_PeerageID0115ord = yes lgEffects_PeerageID0115char = yes }
+lgEffects_PeerageID0116OrdChar = { lgEffects_PeerageID0116ord = yes lgEffects_PeerageID0116char = yes }
+lgEffects_PeerageID0117OrdChar = { lgEffects_PeerageID0117ord = yes lgEffects_PeerageID0117char = yes }
+lgEffects_PeerageID0118OrdChar = { lgEffects_PeerageID0118ord = yes lgEffects_PeerageID0118char = yes }
+lgEffects_PeerageID0119OrdChar = { lgEffects_PeerageID0119ord = yes lgEffects_PeerageID0119char = yes }
+lgEffects_PeerageID0120OrdChar = { lgEffects_PeerageID0120ord = yes lgEffects_PeerageID0120char = yes }
+
+lgEffects_PeerageID0121OrdChar = { lgEffects_PeerageID0121ord = yes lgEffects_PeerageID0121char = yes }
+lgEffects_PeerageID0122OrdChar = { lgEffects_PeerageID0122ord = yes lgEffects_PeerageID0122char = yes }
+lgEffects_PeerageID0123OrdChar = { lgEffects_PeerageID0123ord = yes lgEffects_PeerageID0123char = yes }
+lgEffects_PeerageID0124OrdChar = { lgEffects_PeerageID0124ord = yes lgEffects_PeerageID0124char = yes }
+lgEffects_PeerageID0125OrdChar = { lgEffects_PeerageID0125ord = yes lgEffects_PeerageID0125char = yes }
+lgEffects_PeerageID0126OrdChar = { lgEffects_PeerageID0126ord = yes lgEffects_PeerageID0126char = yes }
+lgEffects_PeerageID0127OrdChar = { lgEffects_PeerageID0127ord = yes lgEffects_PeerageID0127char = yes }
+lgEffects_PeerageID0128OrdChar = { lgEffects_PeerageID0128ord = yes lgEffects_PeerageID0128char = yes }
+lgEffects_PeerageID0129OrdChar = { lgEffects_PeerageID0129ord = yes lgEffects_PeerageID0129char = yes }
+lgEffects_PeerageID0130OrdChar = { lgEffects_PeerageID0130ord = yes lgEffects_PeerageID0130char = yes }
+
+lgEffects_PeerageID0131OrdChar = { lgEffects_PeerageID0131ord = yes lgEffects_PeerageID0131char = yes }
+lgEffects_PeerageID0132OrdChar = { lgEffects_PeerageID0132ord = yes lgEffects_PeerageID0132char = yes }
+lgEffects_PeerageID0133OrdChar = { lgEffects_PeerageID0133ord = yes lgEffects_PeerageID0133char = yes }
+lgEffects_PeerageID0134OrdChar = { lgEffects_PeerageID0134ord = yes lgEffects_PeerageID0134char = yes }
+lgEffects_PeerageID0135OrdChar = { lgEffects_PeerageID0135ord = yes lgEffects_PeerageID0135char = yes }
+lgEffects_PeerageID0136OrdChar = { lgEffects_PeerageID0136ord = yes lgEffects_PeerageID0136char = yes }
+lgEffects_PeerageID0137OrdChar = { lgEffects_PeerageID0137ord = yes lgEffects_PeerageID0137char = yes }
+lgEffects_PeerageID0138OrdChar = { lgEffects_PeerageID0138ord = yes lgEffects_PeerageID0138char = yes }
+lgEffects_PeerageID0139OrdChar = { lgEffects_PeerageID0139ord = yes lgEffects_PeerageID0139char = yes }
+lgEffects_PeerageID0140OrdChar = { lgEffects_PeerageID0140ord = yes lgEffects_PeerageID0140char = yes }
+
+lgEffects_PeerageID0141OrdChar = { lgEffects_PeerageID0141ord = yes lgEffects_PeerageID0141char = yes }
+lgEffects_PeerageID0142OrdChar = { lgEffects_PeerageID0142ord = yes lgEffects_PeerageID0142char = yes }
+lgEffects_PeerageID0143OrdChar = { lgEffects_PeerageID0143ord = yes lgEffects_PeerageID0143char = yes }
+lgEffects_PeerageID0144OrdChar = { lgEffects_PeerageID0144ord = yes lgEffects_PeerageID0144char = yes }
+lgEffects_PeerageID0145OrdChar = { lgEffects_PeerageID0145ord = yes lgEffects_PeerageID0145char = yes }
+lgEffects_PeerageID0146OrdChar = { lgEffects_PeerageID0146ord = yes lgEffects_PeerageID0146char = yes }
+lgEffects_PeerageID0147OrdChar = { lgEffects_PeerageID0147ord = yes lgEffects_PeerageID0147char = yes }
+lgEffects_PeerageID0148OrdChar = { lgEffects_PeerageID0148ord = yes lgEffects_PeerageID0148char = yes }
+lgEffects_PeerageID0149OrdChar = { lgEffects_PeerageID0149ord = yes lgEffects_PeerageID0149char = yes }
+lgEffects_PeerageID0150OrdChar = { lgEffects_PeerageID0150ord = yes lgEffects_PeerageID0150char = yes }
+
+lgEffects_PeerageID0151OrdChar = { lgEffects_PeerageID0151ord = yes lgEffects_PeerageID0151char = yes }
+lgEffects_PeerageID0152OrdChar = { lgEffects_PeerageID0152ord = yes lgEffects_PeerageID0152char = yes }
+lgEffects_PeerageID0153OrdChar = { lgEffects_PeerageID0153ord = yes lgEffects_PeerageID0153char = yes }
+lgEffects_PeerageID0154OrdChar = { lgEffects_PeerageID0154ord = yes lgEffects_PeerageID0154char = yes }
+lgEffects_PeerageID0155OrdChar = { lgEffects_PeerageID0155ord = yes lgEffects_PeerageID0155char = yes }
+lgEffects_PeerageID0156OrdChar = { lgEffects_PeerageID0156ord = yes lgEffects_PeerageID0156char = yes }
+lgEffects_PeerageID0157OrdChar = { lgEffects_PeerageID0157ord = yes lgEffects_PeerageID0157char = yes }
+lgEffects_PeerageID0158OrdChar = { lgEffects_PeerageID0158ord = yes lgEffects_PeerageID0158char = yes }
+lgEffects_PeerageID0159OrdChar = { lgEffects_PeerageID0159ord = yes lgEffects_PeerageID0159char = yes }
+lgEffects_PeerageID0160OrdChar = { lgEffects_PeerageID0160ord = yes lgEffects_PeerageID0160char = yes }
+
+lgEffects_PeerageID0161OrdChar = { lgEffects_PeerageID0161ord = yes lgEffects_PeerageID0161char = yes }
+lgEffects_PeerageID0162OrdChar = { lgEffects_PeerageID0162ord = yes lgEffects_PeerageID0162char = yes }
+lgEffects_PeerageID0163OrdChar = { lgEffects_PeerageID0163ord = yes lgEffects_PeerageID0163char = yes }
+lgEffects_PeerageID0164OrdChar = { lgEffects_PeerageID0164ord = yes lgEffects_PeerageID0164char = yes }
+lgEffects_PeerageID0165OrdChar = { lgEffects_PeerageID0165ord = yes lgEffects_PeerageID0165char = yes }
+lgEffects_PeerageID0166OrdChar = { lgEffects_PeerageID0166ord = yes lgEffects_PeerageID0166char = yes }
+lgEffects_PeerageID0167OrdChar = { lgEffects_PeerageID0167ord = yes lgEffects_PeerageID0167char = yes }
+lgEffects_PeerageID0168OrdChar = { lgEffects_PeerageID0168ord = yes lgEffects_PeerageID0168char = yes }
+lgEffects_PeerageID0169OrdChar = { lgEffects_PeerageID0169ord = yes lgEffects_PeerageID0169char = yes }
+lgEffects_PeerageID0170OrdChar = { lgEffects_PeerageID0170ord = yes lgEffects_PeerageID0170char = yes }
+
+lgEffects_PeerageID0171OrdChar = { lgEffects_PeerageID0171ord = yes lgEffects_PeerageID0171char = yes }
+lgEffects_PeerageID0172OrdChar = { lgEffects_PeerageID0172ord = yes lgEffects_PeerageID0172char = yes }
+lgEffects_PeerageID0173OrdChar = { lgEffects_PeerageID0173ord = yes lgEffects_PeerageID0173char = yes }
+lgEffects_PeerageID0174OrdChar = { lgEffects_PeerageID0174ord = yes lgEffects_PeerageID0174char = yes }
+lgEffects_PeerageID0175OrdChar = { lgEffects_PeerageID0175ord = yes lgEffects_PeerageID0175char = yes }
+lgEffects_PeerageID0176OrdChar = { lgEffects_PeerageID0176ord = yes lgEffects_PeerageID0176char = yes }
+lgEffects_PeerageID0177OrdChar = { lgEffects_PeerageID0177ord = yes lgEffects_PeerageID0177char = yes }
+lgEffects_PeerageID0178OrdChar = { lgEffects_PeerageID0178ord = yes lgEffects_PeerageID0178char = yes }
+lgEffects_PeerageID0179OrdChar = { lgEffects_PeerageID0179ord = yes lgEffects_PeerageID0179char = yes }
+lgEffects_PeerageID0180OrdChar = { lgEffects_PeerageID0180ord = yes lgEffects_PeerageID0180char = yes }
+
+lgEffects_PeerageID0181OrdChar = { lgEffects_PeerageID0181ord = yes lgEffects_PeerageID0181char = yes }
+lgEffects_PeerageID0182OrdChar = { lgEffects_PeerageID0182ord = yes lgEffects_PeerageID0182char = yes }
+lgEffects_PeerageID0183OrdChar = { lgEffects_PeerageID0183ord = yes lgEffects_PeerageID0183char = yes }
+lgEffects_PeerageID0184OrdChar = { lgEffects_PeerageID0184ord = yes lgEffects_PeerageID0184char = yes }
+lgEffects_PeerageID0185OrdChar = { lgEffects_PeerageID0185ord = yes lgEffects_PeerageID0185char = yes }
+lgEffects_PeerageID0186OrdChar = { lgEffects_PeerageID0186ord = yes lgEffects_PeerageID0186char = yes }
+lgEffects_PeerageID0187OrdChar = { lgEffects_PeerageID0187ord = yes lgEffects_PeerageID0187char = yes }
+lgEffects_PeerageID0188OrdChar = { lgEffects_PeerageID0188ord = yes lgEffects_PeerageID0188char = yes }
+lgEffects_PeerageID0189OrdChar = { lgEffects_PeerageID0189ord = yes lgEffects_PeerageID0189char = yes }
+lgEffects_PeerageID0190OrdChar = { lgEffects_PeerageID0190ord = yes lgEffects_PeerageID0190char = yes }
+
+lgEffects_PeerageID0191OrdChar = { lgEffects_PeerageID0191ord = yes lgEffects_PeerageID0191char = yes }
+lgEffects_PeerageID0192OrdChar = { lgEffects_PeerageID0192ord = yes lgEffects_PeerageID0192char = yes }
+lgEffects_PeerageID0193OrdChar = { lgEffects_PeerageID0193ord = yes lgEffects_PeerageID0193char = yes }
+lgEffects_PeerageID0194OrdChar = { lgEffects_PeerageID0194ord = yes lgEffects_PeerageID0194char = yes }
+lgEffects_PeerageID0195OrdChar = { lgEffects_PeerageID0195ord = yes lgEffects_PeerageID0195char = yes }
+lgEffects_PeerageID0196OrdChar = { lgEffects_PeerageID0196ord = yes lgEffects_PeerageID0196char = yes }
+lgEffects_PeerageID0197OrdChar = { lgEffects_PeerageID0197ord = yes lgEffects_PeerageID0197char = yes }
+lgEffects_PeerageID0198OrdChar = { lgEffects_PeerageID0198ord = yes lgEffects_PeerageID0198char = yes }
+lgEffects_PeerageID0199OrdChar = { lgEffects_PeerageID0199ord = yes lgEffects_PeerageID0199char = yes }
+lgEffects_PeerageID0200OrdChar = { lgEffects_PeerageID0200ord = yes lgEffects_PeerageID0200char = yes }
+
+# 201-300
+lgEffects_PeerageID0201OrdChar = { lgEffects_PeerageID0201ord = yes lgEffects_PeerageID0201char = yes }
+lgEffects_PeerageID0202OrdChar = { lgEffects_PeerageID0202ord = yes lgEffects_PeerageID0202char = yes }
+lgEffects_PeerageID0203OrdChar = { lgEffects_PeerageID0203ord = yes lgEffects_PeerageID0203char = yes }
+lgEffects_PeerageID0204OrdChar = { lgEffects_PeerageID0204ord = yes lgEffects_PeerageID0204char = yes }
+lgEffects_PeerageID0205OrdChar = { lgEffects_PeerageID0205ord = yes lgEffects_PeerageID0205char = yes }
+lgEffects_PeerageID0206OrdChar = { lgEffects_PeerageID0206ord = yes lgEffects_PeerageID0206char = yes }
+lgEffects_PeerageID0207OrdChar = { lgEffects_PeerageID0207ord = yes lgEffects_PeerageID0207char = yes }
+lgEffects_PeerageID0208OrdChar = { lgEffects_PeerageID0208ord = yes lgEffects_PeerageID0208char = yes }
+lgEffects_PeerageID0209OrdChar = { lgEffects_PeerageID0209ord = yes lgEffects_PeerageID0209char = yes }
+lgEffects_PeerageID0210OrdChar = { lgEffects_PeerageID0210ord = yes lgEffects_PeerageID0210char = yes }
+
+lgEffects_PeerageID0211OrdChar = { lgEffects_PeerageID0211ord = yes lgEffects_PeerageID0211char = yes }
+lgEffects_PeerageID0212OrdChar = { lgEffects_PeerageID0212ord = yes lgEffects_PeerageID0212char = yes }
+lgEffects_PeerageID0213OrdChar = { lgEffects_PeerageID0213ord = yes lgEffects_PeerageID0213char = yes }
+lgEffects_PeerageID0214OrdChar = { lgEffects_PeerageID0214ord = yes lgEffects_PeerageID0214char = yes }
+lgEffects_PeerageID0215OrdChar = { lgEffects_PeerageID0215ord = yes lgEffects_PeerageID0215char = yes }
+lgEffects_PeerageID0216OrdChar = { lgEffects_PeerageID0216ord = yes lgEffects_PeerageID0216char = yes }
+lgEffects_PeerageID0217OrdChar = { lgEffects_PeerageID0217ord = yes lgEffects_PeerageID0217char = yes }
+lgEffects_PeerageID0218OrdChar = { lgEffects_PeerageID0218ord = yes lgEffects_PeerageID0218char = yes }
+lgEffects_PeerageID0219OrdChar = { lgEffects_PeerageID0219ord = yes lgEffects_PeerageID0219char = yes }
+lgEffects_PeerageID0220OrdChar = { lgEffects_PeerageID0220ord = yes lgEffects_PeerageID0220char = yes }
+
+lgEffects_PeerageID0221OrdChar = { lgEffects_PeerageID0221ord = yes lgEffects_PeerageID0221char = yes }
+lgEffects_PeerageID0222OrdChar = { lgEffects_PeerageID0222ord = yes lgEffects_PeerageID0222char = yes }
+lgEffects_PeerageID0223OrdChar = { lgEffects_PeerageID0223ord = yes lgEffects_PeerageID0223char = yes }
+lgEffects_PeerageID0224OrdChar = { lgEffects_PeerageID0224ord = yes lgEffects_PeerageID0224char = yes }
+lgEffects_PeerageID0225OrdChar = { lgEffects_PeerageID0225ord = yes lgEffects_PeerageID0225char = yes }
+lgEffects_PeerageID0226OrdChar = { lgEffects_PeerageID0226ord = yes lgEffects_PeerageID0226char = yes }
+lgEffects_PeerageID0227OrdChar = { lgEffects_PeerageID0227ord = yes lgEffects_PeerageID0227char = yes }
+lgEffects_PeerageID0228OrdChar = { lgEffects_PeerageID0228ord = yes lgEffects_PeerageID0228char = yes }
+lgEffects_PeerageID0229OrdChar = { lgEffects_PeerageID0229ord = yes lgEffects_PeerageID0229char = yes }
+lgEffects_PeerageID0230OrdChar = { lgEffects_PeerageID0230ord = yes lgEffects_PeerageID0230char = yes }
+
+lgEffects_PeerageID0231OrdChar = { lgEffects_PeerageID0231ord = yes lgEffects_PeerageID0231char = yes }
+lgEffects_PeerageID0232OrdChar = { lgEffects_PeerageID0232ord = yes lgEffects_PeerageID0232char = yes }
+lgEffects_PeerageID0233OrdChar = { lgEffects_PeerageID0233ord = yes lgEffects_PeerageID0233char = yes }
+lgEffects_PeerageID0234OrdChar = { lgEffects_PeerageID0234ord = yes lgEffects_PeerageID0234char = yes }
+lgEffects_PeerageID0235OrdChar = { lgEffects_PeerageID0235ord = yes lgEffects_PeerageID0235char = yes }
+lgEffects_PeerageID0236OrdChar = { lgEffects_PeerageID0236ord = yes lgEffects_PeerageID0236char = yes }
+lgEffects_PeerageID0237OrdChar = { lgEffects_PeerageID0237ord = yes lgEffects_PeerageID0237char = yes }
+lgEffects_PeerageID0238OrdChar = { lgEffects_PeerageID0238ord = yes lgEffects_PeerageID0238char = yes }
+lgEffects_PeerageID0239OrdChar = { lgEffects_PeerageID0239ord = yes lgEffects_PeerageID0239char = yes }
+lgEffects_PeerageID0240OrdChar = { lgEffects_PeerageID0240ord = yes lgEffects_PeerageID0240char = yes }
+
+lgEffects_PeerageID0241OrdChar = { lgEffects_PeerageID0241ord = yes lgEffects_PeerageID0241char = yes }
+lgEffects_PeerageID0242OrdChar = { lgEffects_PeerageID0242ord = yes lgEffects_PeerageID0242char = yes }
+lgEffects_PeerageID0243OrdChar = { lgEffects_PeerageID0243ord = yes lgEffects_PeerageID0243char = yes }
+lgEffects_PeerageID0244OrdChar = { lgEffects_PeerageID0244ord = yes lgEffects_PeerageID0244char = yes }
+lgEffects_PeerageID0245OrdChar = { lgEffects_PeerageID0245ord = yes lgEffects_PeerageID0245char = yes }
+lgEffects_PeerageID0246OrdChar = { lgEffects_PeerageID0246ord = yes lgEffects_PeerageID0246char = yes }
+lgEffects_PeerageID0247OrdChar = { lgEffects_PeerageID0247ord = yes lgEffects_PeerageID0247char = yes }
+lgEffects_PeerageID0248OrdChar = { lgEffects_PeerageID0248ord = yes lgEffects_PeerageID0248char = yes }
+lgEffects_PeerageID0249OrdChar = { lgEffects_PeerageID0249ord = yes lgEffects_PeerageID0249char = yes }
+lgEffects_PeerageID0250OrdChar = { lgEffects_PeerageID0250ord = yes lgEffects_PeerageID0250char = yes }
+
+lgEffects_PeerageID0251OrdChar = { lgEffects_PeerageID0251ord = yes lgEffects_PeerageID0251char = yes }
+lgEffects_PeerageID0252OrdChar = { lgEffects_PeerageID0252ord = yes lgEffects_PeerageID0252char = yes }
+lgEffects_PeerageID0253OrdChar = { lgEffects_PeerageID0253ord = yes lgEffects_PeerageID0253char = yes }
+lgEffects_PeerageID0254OrdChar = { lgEffects_PeerageID0254ord = yes lgEffects_PeerageID0254char = yes }
+lgEffects_PeerageID0255OrdChar = { lgEffects_PeerageID0255ord = yes lgEffects_PeerageID0255char = yes }
+lgEffects_PeerageID0256OrdChar = { lgEffects_PeerageID0256ord = yes lgEffects_PeerageID0256char = yes }
+lgEffects_PeerageID0257OrdChar = { lgEffects_PeerageID0257ord = yes lgEffects_PeerageID0257char = yes }
+lgEffects_PeerageID0258OrdChar = { lgEffects_PeerageID0258ord = yes lgEffects_PeerageID0258char = yes }
+lgEffects_PeerageID0259OrdChar = { lgEffects_PeerageID0259ord = yes lgEffects_PeerageID0259char = yes }
+lgEffects_PeerageID0260OrdChar = { lgEffects_PeerageID0260ord = yes lgEffects_PeerageID0260char = yes }
+
+lgEffects_PeerageID0261OrdChar = { lgEffects_PeerageID0261ord = yes lgEffects_PeerageID0261char = yes }
+lgEffects_PeerageID0262OrdChar = { lgEffects_PeerageID0262ord = yes lgEffects_PeerageID0262char = yes }
+lgEffects_PeerageID0263OrdChar = { lgEffects_PeerageID0263ord = yes lgEffects_PeerageID0263char = yes }
+lgEffects_PeerageID0264OrdChar = { lgEffects_PeerageID0264ord = yes lgEffects_PeerageID0264char = yes }
+lgEffects_PeerageID0265OrdChar = { lgEffects_PeerageID0265ord = yes lgEffects_PeerageID0265char = yes }
+lgEffects_PeerageID0266OrdChar = { lgEffects_PeerageID0266ord = yes lgEffects_PeerageID0266char = yes }
+lgEffects_PeerageID0267OrdChar = { lgEffects_PeerageID0267ord = yes lgEffects_PeerageID0267char = yes }
+lgEffects_PeerageID0268OrdChar = { lgEffects_PeerageID0268ord = yes lgEffects_PeerageID0268char = yes }
+lgEffects_PeerageID0269OrdChar = { lgEffects_PeerageID0269ord = yes lgEffects_PeerageID0269char = yes }
+lgEffects_PeerageID0270OrdChar = { lgEffects_PeerageID0270ord = yes lgEffects_PeerageID0270char = yes }
+
+lgEffects_PeerageID0271OrdChar = { lgEffects_PeerageID0271ord = yes lgEffects_PeerageID0271char = yes }
+lgEffects_PeerageID0272OrdChar = { lgEffects_PeerageID0272ord = yes lgEffects_PeerageID0272char = yes }
+lgEffects_PeerageID0273OrdChar = { lgEffects_PeerageID0273ord = yes lgEffects_PeerageID0273char = yes }
+lgEffects_PeerageID0274OrdChar = { lgEffects_PeerageID0274ord = yes lgEffects_PeerageID0274char = yes }
+lgEffects_PeerageID0275OrdChar = { lgEffects_PeerageID0275ord = yes lgEffects_PeerageID0275char = yes }
+lgEffects_PeerageID0276OrdChar = { lgEffects_PeerageID0276ord = yes lgEffects_PeerageID0276char = yes }
+lgEffects_PeerageID0277OrdChar = { lgEffects_PeerageID0277ord = yes lgEffects_PeerageID0277char = yes }
+lgEffects_PeerageID0278OrdChar = { lgEffects_PeerageID0278ord = yes lgEffects_PeerageID0278char = yes }
+lgEffects_PeerageID0279OrdChar = { lgEffects_PeerageID0279ord = yes lgEffects_PeerageID0279char = yes }
+lgEffects_PeerageID0280OrdChar = { lgEffects_PeerageID0280ord = yes lgEffects_PeerageID0280char = yes }
+
+lgEffects_PeerageID0281OrdChar = { lgEffects_PeerageID0281ord = yes lgEffects_PeerageID0281char = yes }
+lgEffects_PeerageID0282OrdChar = { lgEffects_PeerageID0282ord = yes lgEffects_PeerageID0282char = yes }
+lgEffects_PeerageID0283OrdChar = { lgEffects_PeerageID0283ord = yes lgEffects_PeerageID0283char = yes }
+lgEffects_PeerageID0284OrdChar = { lgEffects_PeerageID0284ord = yes lgEffects_PeerageID0284char = yes }
+lgEffects_PeerageID0285OrdChar = { lgEffects_PeerageID0285ord = yes lgEffects_PeerageID0285char = yes }
+lgEffects_PeerageID0286OrdChar = { lgEffects_PeerageID0286ord = yes lgEffects_PeerageID0286char = yes }
+lgEffects_PeerageID0287OrdChar = { lgEffects_PeerageID0287ord = yes lgEffects_PeerageID0287char = yes }
+lgEffects_PeerageID0288OrdChar = { lgEffects_PeerageID0288ord = yes lgEffects_PeerageID0288char = yes }
+lgEffects_PeerageID0289OrdChar = { lgEffects_PeerageID0289ord = yes lgEffects_PeerageID0289char = yes }
+lgEffects_PeerageID0290OrdChar = { lgEffects_PeerageID0290ord = yes lgEffects_PeerageID0290char = yes }
+
+lgEffects_PeerageID0291OrdChar = { lgEffects_PeerageID0291ord = yes lgEffects_PeerageID0291char = yes }
+lgEffects_PeerageID0292OrdChar = { lgEffects_PeerageID0292ord = yes lgEffects_PeerageID0292char = yes }
+lgEffects_PeerageID0293OrdChar = { lgEffects_PeerageID0293ord = yes lgEffects_PeerageID0293char = yes }
+lgEffects_PeerageID0294OrdChar = { lgEffects_PeerageID0294ord = yes lgEffects_PeerageID0294char = yes }
+lgEffects_PeerageID0295OrdChar = { lgEffects_PeerageID0295ord = yes lgEffects_PeerageID0295char = yes }
+lgEffects_PeerageID0296OrdChar = { lgEffects_PeerageID0296ord = yes lgEffects_PeerageID0296char = yes }
+lgEffects_PeerageID0297OrdChar = { lgEffects_PeerageID0297ord = yes lgEffects_PeerageID0297char = yes }
+lgEffects_PeerageID0298OrdChar = { lgEffects_PeerageID0298ord = yes lgEffects_PeerageID0298char = yes }
+lgEffects_PeerageID0299OrdChar = { lgEffects_PeerageID0299ord = yes lgEffects_PeerageID0299char = yes }
+lgEffects_PeerageID0300OrdChar = { lgEffects_PeerageID0300ord = yes lgEffects_PeerageID0300char = yes }

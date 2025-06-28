@@ -284,7 +284,7 @@ lgEffects_PeerageSetup1688new = {
 		value = 1
 	}
 	set_variable = {
-		which = lgVar_PeerageName0001
+		which = lgVar_Peerage0001name
 		value = lgVar_PeerageName
 	}
 }
@@ -315,30 +315,33 @@ lgEffects_PeerageTitleChoicesSet = {
 }
 
 # Probably put this in immediate scope?
-lgEffects_PeerageTitleOption1 = {
+lgEffects_PeerageTitleOption1Setup = {
 	random_list = {
-		1 = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = lgFlags_ChosePeerageName_Ashford
-					}
-					NOT = {
-						has_country_flag = lgFlags_PeerageNameLocked_Ashford
-					}
-				}
-				set_variable = {
-					which = lgVar_PeerageOption1
-					value = 1
-				}
-				set_country_flag = lgFlags_PeerageNameLocked_Ashford
-			}
-		}
+		1 = { if = { limit = { NOT = { lgTriggers_Peerages_AshfordChosen = yes } NOT = { lgTriggers_Peerages_AshfordLocked = yes } } lgEffects_PeerageNamesAshfordLocked = yes } }
 		1 = {
 			set_variable = {
 				which = lgVar_PeerageOption1
 				value = 2
 			}
+		}
+	}
+}
+
+lgEffects_PeerageNamesAshfordLocked = { set_variable = { which = lgVar_PeerageOption1 value = 1 } set_country_flag = lgFlags_PeerageNameLocked_Ashford }
+
+# for use with event options
+lgEffects_PeerageNameOption1Chosen = {
+	if = {
+		limit = {
+			has_country_flag = lgFlags_EventChar1is0001
+		}
+		set_variable = {
+			which = lgVar_PeerageNameChosen
+			value = lgVar_PeerageOption1
+		}
+		set_variable = {
+			which = lgVar_Char0001PeerageName
+			value = lgVar_PeerageOption1
 		}
 	}
 }
@@ -359,17 +362,86 @@ lgEffects_AssociatePeerage = {
 		}
 		set_country_flag = lgFlags_Char0001isPeer
 	}
+	
+	# setting name for Peerage ID 0001
+	set_variable = {
+		which = lgVar_Peerage0001name
+		value = lgVar_PeerageOption1
+	}
+	
+	if = {
+		limit = {
+			has_country_flag = lgFlags_EventChar1is0001
+			NOT = {
+				
+			}
+		}
+		set_variable = {
+			which = lgVar_Char0001PeerageName
+			value = lgVar_Peerage0001name
+		}
+		set_variable = {
+			which = lgVar_Peerage0001name
+			value = lgVar_PeerageOption1
+		}
+	}
 }
 
-lgEffects_Char0001peerageCreation = {
-	set_country_flag = lgFlags_Char0001peerageCreation
+# Used to denote that the char's 1st peerage is created
+lgEffects_Char0001_Peerage1created = {
+	if = {
+		limit = {
+			check_variable = {
+				which = lgVar_Char0001peerage1
+				value = 0
+			}
+		}
+		set_variable = {
+			which = lgVar_Char0001peerage1
+			value = 1
+		}
+		set_country_flag = lgFlags_Char0001peerage1created
+	}
+}
+
+lgEffects_Char0001PeerageCreated = {
+	set_country_flag = lgFlags_Char0001peerageCreated
 	set_country_flag = lgFlags_EventTarget_Char0001
 	set_variable = {
 		which = x
 	}
 }
 
+lgEffects_PeerageRankOffered = {
+	set_variable = {
+		which = lgVar_PeerageRankOffered
+		value = 1
+	}
+}
+
 lgEffects_PeerageRankSet1 = {
+	if = {
+		limit = {
+			check_variable = {
+				which = lgVar_CharID0001PeerageRank
+				value = 0
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_Char0001PeerageRank
+					value = 1
+				}
+			}
+		}
+		set_variable = {
+			which = lgVar_PeerageRankSet
+			value = 1
+		}
+	}
+}
+
+# Should use this instead, because the character might already hold a peerage of the same rank or higher rank.
+lgEffects_Peerage0001RankSet = {
 	if = {
 		limit = {
 			NOT = {
@@ -528,6 +600,99 @@ lgEffects_Char0001politicalInfluenceDown = {
 		change_variable = {
 			which = lgVar_Char0001polINF
 			value = -1
+		}
+	}
+}
+
+lgEffects_Char0001PeerageRankSet = {
+	if = {
+		limit = {
+			check_variable = {
+				which = lgVar_Char0001PeerageRank
+				value = 0
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_Char0001PeerageRank
+					value = 1
+				}
+			}
+		}
+		set_variable = {
+			which = lgVar_Char0001PeerageRank
+			value = 1 # Baron
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = lgVar_Char0001PeerageRank
+				value = 1
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_Char0001PeerageRank
+					value = 2
+				}
+			}
+		}
+		change_variable = {
+			which = lgVar_Char0001PeerageRank
+			value = 1 # Viscount
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = lgVar_Char0001PeerageRank
+				value = 2
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_Char0001PeerageRank
+					value = 3
+				}
+			}
+		}
+		change_variable = {
+			which = lgVar_Char0001PeerageRank
+			value = 1 # Earl
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = lgVar_Char0001PeerageRank
+				value = 3
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_Char0001PeerageRank
+					value = 4
+				}
+			}
+		}
+		change_variable = {
+			which = lgVar_Char0001PeerageRank
+			value = 1 # Marquess
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = lgVar_Char0001PeerageRank
+				value = 4
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_Char0001PeerageRank
+					value = 5
+				}
+			}
+		}
+		change_variable = {
+			which = lgVar_Char0001PeerageRank
+			value = 1 # Duke
 		}
 	}
 }

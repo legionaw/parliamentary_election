@@ -1,17 +1,355 @@
-# should be in immediate?
+## Should be in immediate?
 lgEffects_EventChar1_PeerageLookup = {
-	if = {
-		limit = {
-			has_country_flag = lgFlags_EventChar1is0001
-			has_country_flag = lgFlags_Char0001isPeer
-		}
-		set_variable = {
-			which = lgVar_EventChar1_Peerage
-			value = lgVar_Char0001PeerageName
-		}
-		set_variable = {
-			which = lgVar_EventChar1_PRank
-			value = lgVar_Peerage0001rank
-		}
-	}
+	if = { limit = { has_country_flag = lgFlags_EventChar1is0001 has_country_flag = lgFlags_Char0001isPeer } lgEffects_EventChar1is0001_PeerageLookup = yes }
 }
+
+# Lookup to check for the name and rank of the peerage held by Event Character 1
+lgEffects_EventChar1_PeerageLookupNEW = {
+	if = { limit = { lgTriggers_PeerageID0001isChar0001a = yes lgTriggers_PeerageID0001isChar0001b = yes } lgEffects_PeerageID0001isChar0001 = yes }
+}
+
+lgEffects_PeerageID0001isChar0001 = { lgEffects_PeerageID0001isChar0001name = yes lgEffects_PeerageID0001isChar0001rank = yes }
+
+lgEffects_PeerageID0001isChar0001name = { set_variable = { which = lgVar_EventChar1_PeerageName value = lgVar_PeerageID0001name } }
+
+lgEffects_PeerageID0001isChar0001rank = { set_variable = { which = lgVar_EventChar1_PeerageRank value = lgVar_PeerageID0001rank } }
+
+## Look up for the peerage rank and name of the targeted event Character 1
+lgEffects_EventChar1is0001_PeerageLookup = { lgEffects_EventChar1is0001_PeerageName = yes lgEffects_EventChar1is0001_PeerageRank = yes }
+lgEffects_EventChar1is0002_PeerageLookup = { lgEffects_EventChar1is0002_PeerageName = yes lgEffects_EventChar1is0002_PeerageRank = yes }
+lgEffects_EventChar1is0003_PeerageLookup = { lgEffects_EventChar1is0003_PeerageName = yes lgEffects_EventChar1is0003_PeerageRank = yes }
+lgEffects_EventChar1is0004_PeerageLookup = { lgEffects_EventChar1is0004_PeerageName = yes lgEffects_EventChar1is0004_PeerageRank = yes }
+lgEffects_EventChar1is0005_PeerageLookup = { lgEffects_EventChar1is0005_PeerageName = yes lgEffects_EventChar1is0005_PeerageRank = yes }
+lgEffects_EventChar1is0006_PeerageLookup = { lgEffects_EventChar1is0006_PeerageName = yes lgEffects_EventChar1is0006_PeerageRank = yes }
+lgEffects_EventChar1is0007_PeerageLookup = { lgEffects_EventChar1is0007_PeerageName = yes lgEffects_EventChar1is0007_PeerageRank = yes }
+lgEffects_EventChar1is0008_PeerageLookup = { lgEffects_EventChar1is0008_PeerageName = yes lgEffects_EventChar1is0008_PeerageRank = yes }
+lgEffects_EventChar1is0009_PeerageLookup = { lgEffects_EventChar1is0009_PeerageName = yes lgEffects_EventChar1is0009_PeerageRank = yes }
+lgEffects_EventChar1is0010_PeerageLookup = { lgEffects_EventChar1is0010_PeerageName = yes lgEffects_EventChar1is0010_PeerageRank = yes }
+
+lgEffects_EventChar1is0011_PeerageLookup = { lgEffects_EventChar1is0011_PeerageName = yes lgEffects_EventChar1is0011_PeerageRank = yes }
+lgEffects_EventChar1is0012_PeerageLookup = { lgEffects_EventChar1is0012_PeerageName = yes lgEffects_EventChar1is0012_PeerageRank = yes }
+lgEffects_EventChar1is0013_PeerageLookup = { lgEffects_EventChar1is0013_PeerageName = yes lgEffects_EventChar1is0013_PeerageRank = yes }
+lgEffects_EventChar1is0014_PeerageLookup = { lgEffects_EventChar1is0014_PeerageName = yes lgEffects_EventChar1is0014_PeerageRank = yes }
+lgEffects_EventChar1is0015_PeerageLookup = { lgEffects_EventChar1is0015_PeerageName = yes lgEffects_EventChar1is0015_PeerageRank = yes }
+lgEffects_EventChar1is0016_PeerageLookup = { lgEffects_EventChar1is0016_PeerageName = yes lgEffects_EventChar1is0016_PeerageRank = yes }
+lgEffects_EventChar1is0017_PeerageLookup = { lgEffects_EventChar1is0017_PeerageName = yes lgEffects_EventChar1is0017_PeerageRank = yes }
+lgEffects_EventChar1is0018_PeerageLookup = { lgEffects_EventChar1is0018_PeerageName = yes lgEffects_EventChar1is0018_PeerageRank = yes }
+lgEffects_EventChar1is0019_PeerageLookup = { lgEffects_EventChar1is0019_PeerageName = yes lgEffects_EventChar1is0019_PeerageRank = yes }
+lgEffects_EventChar1is0020_PeerageLookup = { lgEffects_EventChar1is0020_PeerageName = yes lgEffects_EventChar1is0020_PeerageRank = yes }
+
+lgEffects_EventChar1is0021_PeerageLookup = { lgEffects_EventChar1is0021_PeerageName = yes lgEffects_EventChar1is0021_PeerageRank = yes }
+lgEffects_EventChar1is0022_PeerageLookup = { lgEffects_EventChar1is0022_PeerageName = yes lgEffects_EventChar1is0022_PeerageRank = yes }
+lgEffects_EventChar1is0023_PeerageLookup = { lgEffects_EventChar1is0023_PeerageName = yes lgEffects_EventChar1is0023_PeerageRank = yes }
+lgEffects_EventChar1is0024_PeerageLookup = { lgEffects_EventChar1is0024_PeerageName = yes lgEffects_EventChar1is0024_PeerageRank = yes }
+lgEffects_EventChar1is0025_PeerageLookup = { lgEffects_EventChar1is0025_PeerageName = yes lgEffects_EventChar1is0025_PeerageRank = yes }
+lgEffects_EventChar1is0026_PeerageLookup = { lgEffects_EventChar1is0026_PeerageName = yes lgEffects_EventChar1is0026_PeerageRank = yes }
+lgEffects_EventChar1is0027_PeerageLookup = { lgEffects_EventChar1is0027_PeerageName = yes lgEffects_EventChar1is0027_PeerageRank = yes }
+lgEffects_EventChar1is0028_PeerageLookup = { lgEffects_EventChar1is0028_PeerageName = yes lgEffects_EventChar1is0028_PeerageRank = yes }
+lgEffects_EventChar1is0029_PeerageLookup = { lgEffects_EventChar1is0029_PeerageName = yes lgEffects_EventChar1is0029_PeerageRank = yes }
+lgEffects_EventChar1is0030_PeerageLookup = { lgEffects_EventChar1is0030_PeerageName = yes lgEffects_EventChar1is0030_PeerageRank = yes }
+
+lgEffects_EventChar1is0031_PeerageLookup = { lgEffects_EventChar1is0031_PeerageName = yes lgEffects_EventChar1is0031_PeerageRank = yes }
+lgEffects_EventChar1is0032_PeerageLookup = { lgEffects_EventChar1is0032_PeerageName = yes lgEffects_EventChar1is0032_PeerageRank = yes }
+lgEffects_EventChar1is0033_PeerageLookup = { lgEffects_EventChar1is0033_PeerageName = yes lgEffects_EventChar1is0033_PeerageRank = yes }
+lgEffects_EventChar1is0034_PeerageLookup = { lgEffects_EventChar1is0034_PeerageName = yes lgEffects_EventChar1is0034_PeerageRank = yes }
+lgEffects_EventChar1is0035_PeerageLookup = { lgEffects_EventChar1is0035_PeerageName = yes lgEffects_EventChar1is0035_PeerageRank = yes }
+lgEffects_EventChar1is0036_PeerageLookup = { lgEffects_EventChar1is0036_PeerageName = yes lgEffects_EventChar1is0036_PeerageRank = yes }
+lgEffects_EventChar1is0037_PeerageLookup = { lgEffects_EventChar1is0037_PeerageName = yes lgEffects_EventChar1is0037_PeerageRank = yes }
+lgEffects_EventChar1is0038_PeerageLookup = { lgEffects_EventChar1is0038_PeerageName = yes lgEffects_EventChar1is0038_PeerageRank = yes }
+lgEffects_EventChar1is0039_PeerageLookup = { lgEffects_EventChar1is0039_PeerageName = yes lgEffects_EventChar1is0039_PeerageRank = yes }
+lgEffects_EventChar1is0040_PeerageLookup = { lgEffects_EventChar1is0040_PeerageName = yes lgEffects_EventChar1is0040_PeerageRank = yes }
+
+lgEffects_EventChar1is0041_PeerageLookup = { lgEffects_EventChar1is0041_PeerageName = yes lgEffects_EventChar1is0041_PeerageRank = yes }
+lgEffects_EventChar1is0042_PeerageLookup = { lgEffects_EventChar1is0042_PeerageName = yes lgEffects_EventChar1is0042_PeerageRank = yes }
+lgEffects_EventChar1is0043_PeerageLookup = { lgEffects_EventChar1is0043_PeerageName = yes lgEffects_EventChar1is0043_PeerageRank = yes }
+lgEffects_EventChar1is0044_PeerageLookup = { lgEffects_EventChar1is0044_PeerageName = yes lgEffects_EventChar1is0044_PeerageRank = yes }
+lgEffects_EventChar1is0045_PeerageLookup = { lgEffects_EventChar1is0045_PeerageName = yes lgEffects_EventChar1is0045_PeerageRank = yes }
+lgEffects_EventChar1is0046_PeerageLookup = { lgEffects_EventChar1is0046_PeerageName = yes lgEffects_EventChar1is0046_PeerageRank = yes }
+lgEffects_EventChar1is0047_PeerageLookup = { lgEffects_EventChar1is0047_PeerageName = yes lgEffects_EventChar1is0047_PeerageRank = yes }
+lgEffects_EventChar1is0048_PeerageLookup = { lgEffects_EventChar1is0048_PeerageName = yes lgEffects_EventChar1is0048_PeerageRank = yes }
+lgEffects_EventChar1is0049_PeerageLookup = { lgEffects_EventChar1is0049_PeerageName = yes lgEffects_EventChar1is0049_PeerageRank = yes }
+lgEffects_EventChar1is0050_PeerageLookup = { lgEffects_EventChar1is0050_PeerageName = yes lgEffects_EventChar1is0050_PeerageRank = yes }
+
+lgEffects_EventChar1is0051_PeerageLookup = { lgEffects_EventChar1is0051_PeerageName = yes lgEffects_EventChar1is0051_PeerageRank = yes }
+lgEffects_EventChar1is0052_PeerageLookup = { lgEffects_EventChar1is0052_PeerageName = yes lgEffects_EventChar1is0052_PeerageRank = yes }
+lgEffects_EventChar1is0053_PeerageLookup = { lgEffects_EventChar1is0053_PeerageName = yes lgEffects_EventChar1is0053_PeerageRank = yes }
+lgEffects_EventChar1is0054_PeerageLookup = { lgEffects_EventChar1is0054_PeerageName = yes lgEffects_EventChar1is0054_PeerageRank = yes }
+lgEffects_EventChar1is0055_PeerageLookup = { lgEffects_EventChar1is0055_PeerageName = yes lgEffects_EventChar1is0055_PeerageRank = yes }
+lgEffects_EventChar1is0056_PeerageLookup = { lgEffects_EventChar1is0056_PeerageName = yes lgEffects_EventChar1is0056_PeerageRank = yes }
+lgEffects_EventChar1is0057_PeerageLookup = { lgEffects_EventChar1is0057_PeerageName = yes lgEffects_EventChar1is0057_PeerageRank = yes }
+lgEffects_EventChar1is0058_PeerageLookup = { lgEffects_EventChar1is0058_PeerageName = yes lgEffects_EventChar1is0058_PeerageRank = yes }
+lgEffects_EventChar1is0059_PeerageLookup = { lgEffects_EventChar1is0059_PeerageName = yes lgEffects_EventChar1is0059_PeerageRank = yes }
+lgEffects_EventChar1is0060_PeerageLookup = { lgEffects_EventChar1is0060_PeerageName = yes lgEffects_EventChar1is0060_PeerageRank = yes }
+
+lgEffects_EventChar1is0061_PeerageLookup = { lgEffects_EventChar1is0061_PeerageName = yes lgEffects_EventChar1is0061_PeerageRank = yes }
+lgEffects_EventChar1is0062_PeerageLookup = { lgEffects_EventChar1is0062_PeerageName = yes lgEffects_EventChar1is0062_PeerageRank = yes }
+lgEffects_EventChar1is0063_PeerageLookup = { lgEffects_EventChar1is0063_PeerageName = yes lgEffects_EventChar1is0063_PeerageRank = yes }
+lgEffects_EventChar1is0064_PeerageLookup = { lgEffects_EventChar1is0064_PeerageName = yes lgEffects_EventChar1is0064_PeerageRank = yes }
+lgEffects_EventChar1is0065_PeerageLookup = { lgEffects_EventChar1is0065_PeerageName = yes lgEffects_EventChar1is0065_PeerageRank = yes }
+lgEffects_EventChar1is0066_PeerageLookup = { lgEffects_EventChar1is0066_PeerageName = yes lgEffects_EventChar1is0066_PeerageRank = yes }
+lgEffects_EventChar1is0067_PeerageLookup = { lgEffects_EventChar1is0067_PeerageName = yes lgEffects_EventChar1is0067_PeerageRank = yes }
+lgEffects_EventChar1is0068_PeerageLookup = { lgEffects_EventChar1is0068_PeerageName = yes lgEffects_EventChar1is0068_PeerageRank = yes }
+lgEffects_EventChar1is0069_PeerageLookup = { lgEffects_EventChar1is0069_PeerageName = yes lgEffects_EventChar1is0069_PeerageRank = yes }
+lgEffects_EventChar1is0070_PeerageLookup = { lgEffects_EventChar1is0070_PeerageName = yes lgEffects_EventChar1is0070_PeerageRank = yes }
+
+lgEffects_EventChar1is0071_PeerageLookup = { lgEffects_EventChar1is0071_PeerageName = yes lgEffects_EventChar1is0071_PeerageRank = yes }
+lgEffects_EventChar1is0072_PeerageLookup = { lgEffects_EventChar1is0072_PeerageName = yes lgEffects_EventChar1is0072_PeerageRank = yes }
+lgEffects_EventChar1is0073_PeerageLookup = { lgEffects_EventChar1is0073_PeerageName = yes lgEffects_EventChar1is0073_PeerageRank = yes }
+lgEffects_EventChar1is0074_PeerageLookup = { lgEffects_EventChar1is0074_PeerageName = yes lgEffects_EventChar1is0074_PeerageRank = yes }
+lgEffects_EventChar1is0075_PeerageLookup = { lgEffects_EventChar1is0075_PeerageName = yes lgEffects_EventChar1is0075_PeerageRank = yes }
+lgEffects_EventChar1is0076_PeerageLookup = { lgEffects_EventChar1is0076_PeerageName = yes lgEffects_EventChar1is0076_PeerageRank = yes }
+lgEffects_EventChar1is0077_PeerageLookup = { lgEffects_EventChar1is0077_PeerageName = yes lgEffects_EventChar1is0077_PeerageRank = yes }
+lgEffects_EventChar1is0078_PeerageLookup = { lgEffects_EventChar1is0078_PeerageName = yes lgEffects_EventChar1is0078_PeerageRank = yes }
+lgEffects_EventChar1is0079_PeerageLookup = { lgEffects_EventChar1is0079_PeerageName = yes lgEffects_EventChar1is0079_PeerageRank = yes }
+lgEffects_EventChar1is0080_PeerageLookup = { lgEffects_EventChar1is0080_PeerageName = yes lgEffects_EventChar1is0080_PeerageRank = yes }
+
+lgEffects_EventChar1is0081_PeerageLookup = { lgEffects_EventChar1is0081_PeerageName = yes lgEffects_EventChar1is0081_PeerageRank = yes }
+lgEffects_EventChar1is0082_PeerageLookup = { lgEffects_EventChar1is0082_PeerageName = yes lgEffects_EventChar1is0082_PeerageRank = yes }
+lgEffects_EventChar1is0083_PeerageLookup = { lgEffects_EventChar1is0083_PeerageName = yes lgEffects_EventChar1is0083_PeerageRank = yes }
+lgEffects_EventChar1is0084_PeerageLookup = { lgEffects_EventChar1is0084_PeerageName = yes lgEffects_EventChar1is0084_PeerageRank = yes }
+lgEffects_EventChar1is0085_PeerageLookup = { lgEffects_EventChar1is0085_PeerageName = yes lgEffects_EventChar1is0085_PeerageRank = yes }
+lgEffects_EventChar1is0086_PeerageLookup = { lgEffects_EventChar1is0086_PeerageName = yes lgEffects_EventChar1is0086_PeerageRank = yes }
+lgEffects_EventChar1is0087_PeerageLookup = { lgEffects_EventChar1is0087_PeerageName = yes lgEffects_EventChar1is0087_PeerageRank = yes }
+lgEffects_EventChar1is0088_PeerageLookup = { lgEffects_EventChar1is0088_PeerageName = yes lgEffects_EventChar1is0088_PeerageRank = yes }
+lgEffects_EventChar1is0089_PeerageLookup = { lgEffects_EventChar1is0089_PeerageName = yes lgEffects_EventChar1is0089_PeerageRank = yes }
+lgEffects_EventChar1is0090_PeerageLookup = { lgEffects_EventChar1is0090_PeerageName = yes lgEffects_EventChar1is0090_PeerageRank = yes }
+
+lgEffects_EventChar1is0091_PeerageLookup = { lgEffects_EventChar1is0091_PeerageName = yes lgEffects_EventChar1is0091_PeerageRank = yes }
+lgEffects_EventChar1is0092_PeerageLookup = { lgEffects_EventChar1is0092_PeerageName = yes lgEffects_EventChar1is0092_PeerageRank = yes }
+lgEffects_EventChar1is0093_PeerageLookup = { lgEffects_EventChar1is0093_PeerageName = yes lgEffects_EventChar1is0093_PeerageRank = yes }
+lgEffects_EventChar1is0094_PeerageLookup = { lgEffects_EventChar1is0094_PeerageName = yes lgEffects_EventChar1is0094_PeerageRank = yes }
+lgEffects_EventChar1is0095_PeerageLookup = { lgEffects_EventChar1is0095_PeerageName = yes lgEffects_EventChar1is0095_PeerageRank = yes }
+lgEffects_EventChar1is0096_PeerageLookup = { lgEffects_EventChar1is0096_PeerageName = yes lgEffects_EventChar1is0096_PeerageRank = yes }
+lgEffects_EventChar1is0097_PeerageLookup = { lgEffects_EventChar1is0097_PeerageName = yes lgEffects_EventChar1is0097_PeerageRank = yes }
+lgEffects_EventChar1is0098_PeerageLookup = { lgEffects_EventChar1is0098_PeerageName = yes lgEffects_EventChar1is0098_PeerageRank = yes }
+lgEffects_EventChar1is0099_PeerageLookup = { lgEffects_EventChar1is0099_PeerageName = yes lgEffects_EventChar1is0099_PeerageRank = yes }
+lgEffects_EventChar1is0100_PeerageLookup = { lgEffects_EventChar1is0100_PeerageName = yes lgEffects_EventChar1is0100_PeerageRank = yes }
+
+# 101-200
+lgEffects_EventChar1is0101_PeerageLookup = { lgEffects_EventChar1is0101_PeerageName = yes lgEffects_EventChar1is0101_PeerageRank = yes }
+lgEffects_EventChar1is0102_PeerageLookup = { lgEffects_EventChar1is0102_PeerageName = yes lgEffects_EventChar1is0102_PeerageRank = yes }
+lgEffects_EventChar1is0103_PeerageLookup = { lgEffects_EventChar1is0103_PeerageName = yes lgEffects_EventChar1is0103_PeerageRank = yes }
+lgEffects_EventChar1is0104_PeerageLookup = { lgEffects_EventChar1is0104_PeerageName = yes lgEffects_EventChar1is0104_PeerageRank = yes }
+lgEffects_EventChar1is0105_PeerageLookup = { lgEffects_EventChar1is0105_PeerageName = yes lgEffects_EventChar1is0105_PeerageRank = yes }
+lgEffects_EventChar1is0106_PeerageLookup = { lgEffects_EventChar1is0106_PeerageName = yes lgEffects_EventChar1is0106_PeerageRank = yes }
+lgEffects_EventChar1is0107_PeerageLookup = { lgEffects_EventChar1is0107_PeerageName = yes lgEffects_EventChar1is0107_PeerageRank = yes }
+lgEffects_EventChar1is0108_PeerageLookup = { lgEffects_EventChar1is0108_PeerageName = yes lgEffects_EventChar1is0108_PeerageRank = yes }
+lgEffects_EventChar1is0109_PeerageLookup = { lgEffects_EventChar1is0109_PeerageName = yes lgEffects_EventChar1is0109_PeerageRank = yes }
+lgEffects_EventChar1is0110_PeerageLookup = { lgEffects_EventChar1is0110_PeerageName = yes lgEffects_EventChar1is0110_PeerageRank = yes }
+
+lgEffects_EventChar1is0111_PeerageLookup = { lgEffects_EventChar1is0111_PeerageName = yes lgEffects_EventChar1is0111_PeerageRank = yes }
+lgEffects_EventChar1is0112_PeerageLookup = { lgEffects_EventChar1is0112_PeerageName = yes lgEffects_EventChar1is0112_PeerageRank = yes }
+lgEffects_EventChar1is0113_PeerageLookup = { lgEffects_EventChar1is0113_PeerageName = yes lgEffects_EventChar1is0113_PeerageRank = yes }
+lgEffects_EventChar1is0114_PeerageLookup = { lgEffects_EventChar1is0114_PeerageName = yes lgEffects_EventChar1is0114_PeerageRank = yes }
+lgEffects_EventChar1is0115_PeerageLookup = { lgEffects_EventChar1is0115_PeerageName = yes lgEffects_EventChar1is0115_PeerageRank = yes }
+lgEffects_EventChar1is0116_PeerageLookup = { lgEffects_EventChar1is0116_PeerageName = yes lgEffects_EventChar1is0116_PeerageRank = yes }
+lgEffects_EventChar1is0117_PeerageLookup = { lgEffects_EventChar1is0117_PeerageName = yes lgEffects_EventChar1is0117_PeerageRank = yes }
+lgEffects_EventChar1is0118_PeerageLookup = { lgEffects_EventChar1is0118_PeerageName = yes lgEffects_EventChar1is0118_PeerageRank = yes }
+lgEffects_EventChar1is0119_PeerageLookup = { lgEffects_EventChar1is0119_PeerageName = yes lgEffects_EventChar1is0119_PeerageRank = yes }
+lgEffects_EventChar1is0120_PeerageLookup = { lgEffects_EventChar1is0120_PeerageName = yes lgEffects_EventChar1is0120_PeerageRank = yes }
+
+lgEffects_EventChar1is0121_PeerageLookup = { lgEffects_EventChar1is0121_PeerageName = yes lgEffects_EventChar1is0121_PeerageRank = yes }
+lgEffects_EventChar1is0122_PeerageLookup = { lgEffects_EventChar1is0122_PeerageName = yes lgEffects_EventChar1is0122_PeerageRank = yes }
+lgEffects_EventChar1is0123_PeerageLookup = { lgEffects_EventChar1is0123_PeerageName = yes lgEffects_EventChar1is0123_PeerageRank = yes }
+lgEffects_EventChar1is0124_PeerageLookup = { lgEffects_EventChar1is0124_PeerageName = yes lgEffects_EventChar1is0124_PeerageRank = yes }
+lgEffects_EventChar1is0125_PeerageLookup = { lgEffects_EventChar1is0125_PeerageName = yes lgEffects_EventChar1is0125_PeerageRank = yes }
+lgEffects_EventChar1is0126_PeerageLookup = { lgEffects_EventChar1is0126_PeerageName = yes lgEffects_EventChar1is0126_PeerageRank = yes }
+lgEffects_EventChar1is0127_PeerageLookup = { lgEffects_EventChar1is0127_PeerageName = yes lgEffects_EventChar1is0127_PeerageRank = yes }
+lgEffects_EventChar1is0128_PeerageLookup = { lgEffects_EventChar1is0128_PeerageName = yes lgEffects_EventChar1is0128_PeerageRank = yes }
+lgEffects_EventChar1is0129_PeerageLookup = { lgEffects_EventChar1is0129_PeerageName = yes lgEffects_EventChar1is0129_PeerageRank = yes }
+lgEffects_EventChar1is0130_PeerageLookup = { lgEffects_EventChar1is0130_PeerageName = yes lgEffects_EventChar1is0130_PeerageRank = yes }
+
+lgEffects_EventChar1is0131_PeerageLookup = { lgEffects_EventChar1is0131_PeerageName = yes lgEffects_EventChar1is0131_PeerageRank = yes }
+lgEffects_EventChar1is0132_PeerageLookup = { lgEffects_EventChar1is0132_PeerageName = yes lgEffects_EventChar1is0132_PeerageRank = yes }
+lgEffects_EventChar1is0133_PeerageLookup = { lgEffects_EventChar1is0133_PeerageName = yes lgEffects_EventChar1is0133_PeerageRank = yes }
+lgEffects_EventChar1is0134_PeerageLookup = { lgEffects_EventChar1is0134_PeerageName = yes lgEffects_EventChar1is0134_PeerageRank = yes }
+lgEffects_EventChar1is0135_PeerageLookup = { lgEffects_EventChar1is0135_PeerageName = yes lgEffects_EventChar1is0135_PeerageRank = yes }
+lgEffects_EventChar1is0136_PeerageLookup = { lgEffects_EventChar1is0136_PeerageName = yes lgEffects_EventChar1is0136_PeerageRank = yes }
+lgEffects_EventChar1is0137_PeerageLookup = { lgEffects_EventChar1is0137_PeerageName = yes lgEffects_EventChar1is0137_PeerageRank = yes }
+lgEffects_EventChar1is0138_PeerageLookup = { lgEffects_EventChar1is0138_PeerageName = yes lgEffects_EventChar1is0138_PeerageRank = yes }
+lgEffects_EventChar1is0139_PeerageLookup = { lgEffects_EventChar1is0139_PeerageName = yes lgEffects_EventChar1is0139_PeerageRank = yes }
+lgEffects_EventChar1is0140_PeerageLookup = { lgEffects_EventChar1is0140_PeerageName = yes lgEffects_EventChar1is0140_PeerageRank = yes }
+
+lgEffects_EventChar1is0141_PeerageLookup = { lgEffects_EventChar1is0141_PeerageName = yes lgEffects_EventChar1is0141_PeerageRank = yes }
+lgEffects_EventChar1is0142_PeerageLookup = { lgEffects_EventChar1is0142_PeerageName = yes lgEffects_EventChar1is0142_PeerageRank = yes }
+lgEffects_EventChar1is0143_PeerageLookup = { lgEffects_EventChar1is0143_PeerageName = yes lgEffects_EventChar1is0143_PeerageRank = yes }
+lgEffects_EventChar1is0144_PeerageLookup = { lgEffects_EventChar1is0144_PeerageName = yes lgEffects_EventChar1is0144_PeerageRank = yes }
+lgEffects_EventChar1is0145_PeerageLookup = { lgEffects_EventChar1is0145_PeerageName = yes lgEffects_EventChar1is0145_PeerageRank = yes }
+lgEffects_EventChar1is0146_PeerageLookup = { lgEffects_EventChar1is0146_PeerageName = yes lgEffects_EventChar1is0146_PeerageRank = yes }
+lgEffects_EventChar1is0147_PeerageLookup = { lgEffects_EventChar1is0147_PeerageName = yes lgEffects_EventChar1is0147_PeerageRank = yes }
+lgEffects_EventChar1is0148_PeerageLookup = { lgEffects_EventChar1is0148_PeerageName = yes lgEffects_EventChar1is0148_PeerageRank = yes }
+lgEffects_EventChar1is0149_PeerageLookup = { lgEffects_EventChar1is0149_PeerageName = yes lgEffects_EventChar1is0149_PeerageRank = yes }
+lgEffects_EventChar1is0150_PeerageLookup = { lgEffects_EventChar1is0150_PeerageName = yes lgEffects_EventChar1is0150_PeerageRank = yes }
+
+lgEffects_EventChar1is0151_PeerageLookup = { lgEffects_EventChar1is0151_PeerageName = yes lgEffects_EventChar1is0151_PeerageRank = yes }
+lgEffects_EventChar1is0152_PeerageLookup = { lgEffects_EventChar1is0152_PeerageName = yes lgEffects_EventChar1is0152_PeerageRank = yes }
+lgEffects_EventChar1is0153_PeerageLookup = { lgEffects_EventChar1is0153_PeerageName = yes lgEffects_EventChar1is0153_PeerageRank = yes }
+lgEffects_EventChar1is0154_PeerageLookup = { lgEffects_EventChar1is0154_PeerageName = yes lgEffects_EventChar1is0154_PeerageRank = yes }
+lgEffects_EventChar1is0155_PeerageLookup = { lgEffects_EventChar1is0155_PeerageName = yes lgEffects_EventChar1is0155_PeerageRank = yes }
+lgEffects_EventChar1is0156_PeerageLookup = { lgEffects_EventChar1is0156_PeerageName = yes lgEffects_EventChar1is0156_PeerageRank = yes }
+lgEffects_EventChar1is0157_PeerageLookup = { lgEffects_EventChar1is0157_PeerageName = yes lgEffects_EventChar1is0157_PeerageRank = yes }
+lgEffects_EventChar1is0158_PeerageLookup = { lgEffects_EventChar1is0158_PeerageName = yes lgEffects_EventChar1is0158_PeerageRank = yes }
+lgEffects_EventChar1is0159_PeerageLookup = { lgEffects_EventChar1is0159_PeerageName = yes lgEffects_EventChar1is0159_PeerageRank = yes }
+lgEffects_EventChar1is0160_PeerageLookup = { lgEffects_EventChar1is0160_PeerageName = yes lgEffects_EventChar1is0160_PeerageRank = yes }
+
+lgEffects_EventChar1is0161_PeerageLookup = { lgEffects_EventChar1is0161_PeerageName = yes lgEffects_EventChar1is0161_PeerageRank = yes }
+lgEffects_EventChar1is0162_PeerageLookup = { lgEffects_EventChar1is0162_PeerageName = yes lgEffects_EventChar1is0162_PeerageRank = yes }
+lgEffects_EventChar1is0163_PeerageLookup = { lgEffects_EventChar1is0163_PeerageName = yes lgEffects_EventChar1is0163_PeerageRank = yes }
+lgEffects_EventChar1is0164_PeerageLookup = { lgEffects_EventChar1is0164_PeerageName = yes lgEffects_EventChar1is0164_PeerageRank = yes }
+lgEffects_EventChar1is0165_PeerageLookup = { lgEffects_EventChar1is0165_PeerageName = yes lgEffects_EventChar1is0165_PeerageRank = yes }
+lgEffects_EventChar1is0166_PeerageLookup = { lgEffects_EventChar1is0166_PeerageName = yes lgEffects_EventChar1is0166_PeerageRank = yes }
+lgEffects_EventChar1is0167_PeerageLookup = { lgEffects_EventChar1is0167_PeerageName = yes lgEffects_EventChar1is0167_PeerageRank = yes }
+lgEffects_EventChar1is0168_PeerageLookup = { lgEffects_EventChar1is0168_PeerageName = yes lgEffects_EventChar1is0168_PeerageRank = yes }
+lgEffects_EventChar1is0169_PeerageLookup = { lgEffects_EventChar1is0169_PeerageName = yes lgEffects_EventChar1is0169_PeerageRank = yes }
+lgEffects_EventChar1is0170_PeerageLookup = { lgEffects_EventChar1is0170_PeerageName = yes lgEffects_EventChar1is0170_PeerageRank = yes }
+
+lgEffects_EventChar1is0171_PeerageLookup = { lgEffects_EventChar1is0171_PeerageName = yes lgEffects_EventChar1is0171_PeerageRank = yes }
+lgEffects_EventChar1is0172_PeerageLookup = { lgEffects_EventChar1is0172_PeerageName = yes lgEffects_EventChar1is0172_PeerageRank = yes }
+lgEffects_EventChar1is0173_PeerageLookup = { lgEffects_EventChar1is0173_PeerageName = yes lgEffects_EventChar1is0173_PeerageRank = yes }
+lgEffects_EventChar1is0174_PeerageLookup = { lgEffects_EventChar1is0174_PeerageName = yes lgEffects_EventChar1is0174_PeerageRank = yes }
+lgEffects_EventChar1is0175_PeerageLookup = { lgEffects_EventChar1is0175_PeerageName = yes lgEffects_EventChar1is0175_PeerageRank = yes }
+lgEffects_EventChar1is0176_PeerageLookup = { lgEffects_EventChar1is0176_PeerageName = yes lgEffects_EventChar1is0176_PeerageRank = yes }
+lgEffects_EventChar1is0177_PeerageLookup = { lgEffects_EventChar1is0177_PeerageName = yes lgEffects_EventChar1is0177_PeerageRank = yes }
+lgEffects_EventChar1is0178_PeerageLookup = { lgEffects_EventChar1is0178_PeerageName = yes lgEffects_EventChar1is0178_PeerageRank = yes }
+lgEffects_EventChar1is0179_PeerageLookup = { lgEffects_EventChar1is0179_PeerageName = yes lgEffects_EventChar1is0179_PeerageRank = yes }
+lgEffects_EventChar1is0180_PeerageLookup = { lgEffects_EventChar1is0180_PeerageName = yes lgEffects_EventChar1is0180_PeerageRank = yes }
+
+lgEffects_EventChar1is0181_PeerageLookup = { lgEffects_EventChar1is0181_PeerageName = yes lgEffects_EventChar1is0181_PeerageRank = yes }
+lgEffects_EventChar1is0182_PeerageLookup = { lgEffects_EventChar1is0182_PeerageName = yes lgEffects_EventChar1is0182_PeerageRank = yes }
+lgEffects_EventChar1is0183_PeerageLookup = { lgEffects_EventChar1is0183_PeerageName = yes lgEffects_EventChar1is0183_PeerageRank = yes }
+lgEffects_EventChar1is0184_PeerageLookup = { lgEffects_EventChar1is0184_PeerageName = yes lgEffects_EventChar1is0184_PeerageRank = yes }
+lgEffects_EventChar1is0185_PeerageLookup = { lgEffects_EventChar1is0185_PeerageName = yes lgEffects_EventChar1is0185_PeerageRank = yes }
+lgEffects_EventChar1is0186_PeerageLookup = { lgEffects_EventChar1is0186_PeerageName = yes lgEffects_EventChar1is0186_PeerageRank = yes }
+lgEffects_EventChar1is0187_PeerageLookup = { lgEffects_EventChar1is0187_PeerageName = yes lgEffects_EventChar1is0187_PeerageRank = yes }
+lgEffects_EventChar1is0188_PeerageLookup = { lgEffects_EventChar1is0188_PeerageName = yes lgEffects_EventChar1is0188_PeerageRank = yes }
+lgEffects_EventChar1is0189_PeerageLookup = { lgEffects_EventChar1is0189_PeerageName = yes lgEffects_EventChar1is0189_PeerageRank = yes }
+lgEffects_EventChar1is0190_PeerageLookup = { lgEffects_EventChar1is0190_PeerageName = yes lgEffects_EventChar1is0190_PeerageRank = yes }
+
+lgEffects_EventChar1is0191_PeerageLookup = { lgEffects_EventChar1is0191_PeerageName = yes lgEffects_EventChar1is0191_PeerageRank = yes }
+lgEffects_EventChar1is0192_PeerageLookup = { lgEffects_EventChar1is0192_PeerageName = yes lgEffects_EventChar1is0192_PeerageRank = yes }
+lgEffects_EventChar1is0193_PeerageLookup = { lgEffects_EventChar1is0193_PeerageName = yes lgEffects_EventChar1is0193_PeerageRank = yes }
+lgEffects_EventChar1is0194_PeerageLookup = { lgEffects_EventChar1is0194_PeerageName = yes lgEffects_EventChar1is0194_PeerageRank = yes }
+lgEffects_EventChar1is0195_PeerageLookup = { lgEffects_EventChar1is0195_PeerageName = yes lgEffects_EventChar1is0195_PeerageRank = yes }
+lgEffects_EventChar1is0196_PeerageLookup = { lgEffects_EventChar1is0196_PeerageName = yes lgEffects_EventChar1is0196_PeerageRank = yes }
+lgEffects_EventChar1is0197_PeerageLookup = { lgEffects_EventChar1is0197_PeerageName = yes lgEffects_EventChar1is0197_PeerageRank = yes }
+lgEffects_EventChar1is0198_PeerageLookup = { lgEffects_EventChar1is0198_PeerageName = yes lgEffects_EventChar1is0198_PeerageRank = yes }
+lgEffects_EventChar1is0199_PeerageLookup = { lgEffects_EventChar1is0199_PeerageName = yes lgEffects_EventChar1is0199_PeerageRank = yes }
+lgEffects_EventChar1is0200_PeerageLookup = { lgEffects_EventChar1is0200_PeerageName = yes lgEffects_EventChar1is0200_PeerageRank = yes }
+
+# 201-300
+lgEffects_EventChar1is0201_PeerageLookup = { lgEffects_EventChar1is0201_PeerageName = yes lgEffects_EventChar1is0201_PeerageRank = yes }
+lgEffects_EventChar1is0202_PeerageLookup = { lgEffects_EventChar1is0202_PeerageName = yes lgEffects_EventChar1is0202_PeerageRank = yes }
+lgEffects_EventChar1is0203_PeerageLookup = { lgEffects_EventChar1is0203_PeerageName = yes lgEffects_EventChar1is0203_PeerageRank = yes }
+lgEffects_EventChar1is0204_PeerageLookup = { lgEffects_EventChar1is0204_PeerageName = yes lgEffects_EventChar1is0204_PeerageRank = yes }
+lgEffects_EventChar1is0205_PeerageLookup = { lgEffects_EventChar1is0205_PeerageName = yes lgEffects_EventChar1is0205_PeerageRank = yes }
+lgEffects_EventChar1is0206_PeerageLookup = { lgEffects_EventChar1is0206_PeerageName = yes lgEffects_EventChar1is0206_PeerageRank = yes }
+lgEffects_EventChar1is0207_PeerageLookup = { lgEffects_EventChar1is0207_PeerageName = yes lgEffects_EventChar1is0207_PeerageRank = yes }
+lgEffects_EventChar1is0208_PeerageLookup = { lgEffects_EventChar1is0208_PeerageName = yes lgEffects_EventChar1is0208_PeerageRank = yes }
+lgEffects_EventChar1is0209_PeerageLookup = { lgEffects_EventChar1is0209_PeerageName = yes lgEffects_EventChar1is0209_PeerageRank = yes }
+lgEffects_EventChar1is0210_PeerageLookup = { lgEffects_EventChar1is0210_PeerageName = yes lgEffects_EventChar1is0210_PeerageRank = yes }
+
+lgEffects_EventChar1is0211_PeerageLookup = { lgEffects_EventChar1is0211_PeerageName = yes lgEffects_EventChar1is0211_PeerageRank = yes }
+lgEffects_EventChar1is0212_PeerageLookup = { lgEffects_EventChar1is0212_PeerageName = yes lgEffects_EventChar1is0212_PeerageRank = yes }
+lgEffects_EventChar1is0213_PeerageLookup = { lgEffects_EventChar1is0213_PeerageName = yes lgEffects_EventChar1is0213_PeerageRank = yes }
+lgEffects_EventChar1is0214_PeerageLookup = { lgEffects_EventChar1is0214_PeerageName = yes lgEffects_EventChar1is0214_PeerageRank = yes }
+lgEffects_EventChar1is0215_PeerageLookup = { lgEffects_EventChar1is0215_PeerageName = yes lgEffects_EventChar1is0215_PeerageRank = yes }
+lgEffects_EventChar1is0216_PeerageLookup = { lgEffects_EventChar1is0216_PeerageName = yes lgEffects_EventChar1is0216_PeerageRank = yes }
+lgEffects_EventChar1is0217_PeerageLookup = { lgEffects_EventChar1is0217_PeerageName = yes lgEffects_EventChar1is0217_PeerageRank = yes }
+lgEffects_EventChar1is0218_PeerageLookup = { lgEffects_EventChar1is0218_PeerageName = yes lgEffects_EventChar1is0218_PeerageRank = yes }
+lgEffects_EventChar1is0219_PeerageLookup = { lgEffects_EventChar1is0219_PeerageName = yes lgEffects_EventChar1is0219_PeerageRank = yes }
+lgEffects_EventChar1is0220_PeerageLookup = { lgEffects_EventChar1is0220_PeerageName = yes lgEffects_EventChar1is0220_PeerageRank = yes }
+
+lgEffects_EventChar1is0221_PeerageLookup = { lgEffects_EventChar1is0221_PeerageName = yes lgEffects_EventChar1is0221_PeerageRank = yes }
+lgEffects_EventChar1is0222_PeerageLookup = { lgEffects_EventChar1is0222_PeerageName = yes lgEffects_EventChar1is0222_PeerageRank = yes }
+lgEffects_EventChar1is0223_PeerageLookup = { lgEffects_EventChar1is0223_PeerageName = yes lgEffects_EventChar1is0223_PeerageRank = yes }
+lgEffects_EventChar1is0224_PeerageLookup = { lgEffects_EventChar1is0224_PeerageName = yes lgEffects_EventChar1is0224_PeerageRank = yes }
+lgEffects_EventChar1is0225_PeerageLookup = { lgEffects_EventChar1is0225_PeerageName = yes lgEffects_EventChar1is0225_PeerageRank = yes }
+lgEffects_EventChar1is0226_PeerageLookup = { lgEffects_EventChar1is0226_PeerageName = yes lgEffects_EventChar1is0226_PeerageRank = yes }
+lgEffects_EventChar1is0227_PeerageLookup = { lgEffects_EventChar1is0227_PeerageName = yes lgEffects_EventChar1is0227_PeerageRank = yes }
+lgEffects_EventChar1is0228_PeerageLookup = { lgEffects_EventChar1is0228_PeerageName = yes lgEffects_EventChar1is0228_PeerageRank = yes }
+lgEffects_EventChar1is0229_PeerageLookup = { lgEffects_EventChar1is0229_PeerageName = yes lgEffects_EventChar1is0229_PeerageRank = yes }
+lgEffects_EventChar1is0230_PeerageLookup = { lgEffects_EventChar1is0230_PeerageName = yes lgEffects_EventChar1is0230_PeerageRank = yes }
+
+lgEffects_EventChar1is0231_PeerageLookup = { lgEffects_EventChar1is0231_PeerageName = yes lgEffects_EventChar1is0231_PeerageRank = yes }
+lgEffects_EventChar1is0232_PeerageLookup = { lgEffects_EventChar1is0232_PeerageName = yes lgEffects_EventChar1is0232_PeerageRank = yes }
+lgEffects_EventChar1is0233_PeerageLookup = { lgEffects_EventChar1is0233_PeerageName = yes lgEffects_EventChar1is0233_PeerageRank = yes }
+lgEffects_EventChar1is0234_PeerageLookup = { lgEffects_EventChar1is0234_PeerageName = yes lgEffects_EventChar1is0234_PeerageRank = yes }
+lgEffects_EventChar1is0235_PeerageLookup = { lgEffects_EventChar1is0235_PeerageName = yes lgEffects_EventChar1is0235_PeerageRank = yes }
+lgEffects_EventChar1is0236_PeerageLookup = { lgEffects_EventChar1is0236_PeerageName = yes lgEffects_EventChar1is0236_PeerageRank = yes }
+lgEffects_EventChar1is0237_PeerageLookup = { lgEffects_EventChar1is0237_PeerageName = yes lgEffects_EventChar1is0237_PeerageRank = yes }
+lgEffects_EventChar1is0238_PeerageLookup = { lgEffects_EventChar1is0238_PeerageName = yes lgEffects_EventChar1is0238_PeerageRank = yes }
+lgEffects_EventChar1is0239_PeerageLookup = { lgEffects_EventChar1is0239_PeerageName = yes lgEffects_EventChar1is0239_PeerageRank = yes }
+lgEffects_EventChar1is0240_PeerageLookup = { lgEffects_EventChar1is0240_PeerageName = yes lgEffects_EventChar1is0240_PeerageRank = yes }
+
+lgEffects_EventChar1is0241_PeerageLookup = { lgEffects_EventChar1is0241_PeerageName = yes lgEffects_EventChar1is0241_PeerageRank = yes }
+lgEffects_EventChar1is0242_PeerageLookup = { lgEffects_EventChar1is0242_PeerageName = yes lgEffects_EventChar1is0242_PeerageRank = yes }
+lgEffects_EventChar1is0243_PeerageLookup = { lgEffects_EventChar1is0243_PeerageName = yes lgEffects_EventChar1is0243_PeerageRank = yes }
+lgEffects_EventChar1is0244_PeerageLookup = { lgEffects_EventChar1is0244_PeerageName = yes lgEffects_EventChar1is0244_PeerageRank = yes }
+lgEffects_EventChar1is0245_PeerageLookup = { lgEffects_EventChar1is0245_PeerageName = yes lgEffects_EventChar1is0245_PeerageRank = yes }
+lgEffects_EventChar1is0246_PeerageLookup = { lgEffects_EventChar1is0246_PeerageName = yes lgEffects_EventChar1is0246_PeerageRank = yes }
+lgEffects_EventChar1is0247_PeerageLookup = { lgEffects_EventChar1is0247_PeerageName = yes lgEffects_EventChar1is0247_PeerageRank = yes }
+lgEffects_EventChar1is0248_PeerageLookup = { lgEffects_EventChar1is0248_PeerageName = yes lgEffects_EventChar1is0248_PeerageRank = yes }
+lgEffects_EventChar1is0249_PeerageLookup = { lgEffects_EventChar1is0249_PeerageName = yes lgEffects_EventChar1is0249_PeerageRank = yes }
+lgEffects_EventChar1is0250_PeerageLookup = { lgEffects_EventChar1is0250_PeerageName = yes lgEffects_EventChar1is0250_PeerageRank = yes }
+
+lgEffects_EventChar1is0251_PeerageLookup = { lgEffects_EventChar1is0251_PeerageName = yes lgEffects_EventChar1is0251_PeerageRank = yes }
+lgEffects_EventChar1is0252_PeerageLookup = { lgEffects_EventChar1is0252_PeerageName = yes lgEffects_EventChar1is0252_PeerageRank = yes }
+lgEffects_EventChar1is0253_PeerageLookup = { lgEffects_EventChar1is0253_PeerageName = yes lgEffects_EventChar1is0253_PeerageRank = yes }
+lgEffects_EventChar1is0254_PeerageLookup = { lgEffects_EventChar1is0254_PeerageName = yes lgEffects_EventChar1is0254_PeerageRank = yes }
+lgEffects_EventChar1is0255_PeerageLookup = { lgEffects_EventChar1is0255_PeerageName = yes lgEffects_EventChar1is0255_PeerageRank = yes }
+lgEffects_EventChar1is0256_PeerageLookup = { lgEffects_EventChar1is0256_PeerageName = yes lgEffects_EventChar1is0256_PeerageRank = yes }
+lgEffects_EventChar1is0257_PeerageLookup = { lgEffects_EventChar1is0257_PeerageName = yes lgEffects_EventChar1is0257_PeerageRank = yes }
+lgEffects_EventChar1is0258_PeerageLookup = { lgEffects_EventChar1is0258_PeerageName = yes lgEffects_EventChar1is0258_PeerageRank = yes }
+lgEffects_EventChar1is0259_PeerageLookup = { lgEffects_EventChar1is0259_PeerageName = yes lgEffects_EventChar1is0259_PeerageRank = yes }
+lgEffects_EventChar1is0260_PeerageLookup = { lgEffects_EventChar1is0260_PeerageName = yes lgEffects_EventChar1is0260_PeerageRank = yes }
+
+lgEffects_EventChar1is0261_PeerageLookup = { lgEffects_EventChar1is0261_PeerageName = yes lgEffects_EventChar1is0261_PeerageRank = yes }
+lgEffects_EventChar1is0262_PeerageLookup = { lgEffects_EventChar1is0262_PeerageName = yes lgEffects_EventChar1is0262_PeerageRank = yes }
+lgEffects_EventChar1is0263_PeerageLookup = { lgEffects_EventChar1is0263_PeerageName = yes lgEffects_EventChar1is0263_PeerageRank = yes }
+lgEffects_EventChar1is0264_PeerageLookup = { lgEffects_EventChar1is0264_PeerageName = yes lgEffects_EventChar1is0264_PeerageRank = yes }
+lgEffects_EventChar1is0265_PeerageLookup = { lgEffects_EventChar1is0265_PeerageName = yes lgEffects_EventChar1is0265_PeerageRank = yes }
+lgEffects_EventChar1is0266_PeerageLookup = { lgEffects_EventChar1is0266_PeerageName = yes lgEffects_EventChar1is0266_PeerageRank = yes }
+lgEffects_EventChar1is0267_PeerageLookup = { lgEffects_EventChar1is0267_PeerageName = yes lgEffects_EventChar1is0267_PeerageRank = yes }
+lgEffects_EventChar1is0268_PeerageLookup = { lgEffects_EventChar1is0268_PeerageName = yes lgEffects_EventChar1is0268_PeerageRank = yes }
+lgEffects_EventChar1is0269_PeerageLookup = { lgEffects_EventChar1is0269_PeerageName = yes lgEffects_EventChar1is0269_PeerageRank = yes }
+lgEffects_EventChar1is0270_PeerageLookup = { lgEffects_EventChar1is0270_PeerageName = yes lgEffects_EventChar1is0270_PeerageRank = yes }
+
+lgEffects_EventChar1is0271_PeerageLookup = { lgEffects_EventChar1is0271_PeerageName = yes lgEffects_EventChar1is0271_PeerageRank = yes }
+lgEffects_EventChar1is0272_PeerageLookup = { lgEffects_EventChar1is0272_PeerageName = yes lgEffects_EventChar1is0272_PeerageRank = yes }
+lgEffects_EventChar1is0273_PeerageLookup = { lgEffects_EventChar1is0273_PeerageName = yes lgEffects_EventChar1is0273_PeerageRank = yes }
+lgEffects_EventChar1is0274_PeerageLookup = { lgEffects_EventChar1is0274_PeerageName = yes lgEffects_EventChar1is0274_PeerageRank = yes }
+lgEffects_EventChar1is0275_PeerageLookup = { lgEffects_EventChar1is0275_PeerageName = yes lgEffects_EventChar1is0275_PeerageRank = yes }
+lgEffects_EventChar1is0276_PeerageLookup = { lgEffects_EventChar1is0276_PeerageName = yes lgEffects_EventChar1is0276_PeerageRank = yes }
+lgEffects_EventChar1is0277_PeerageLookup = { lgEffects_EventChar1is0277_PeerageName = yes lgEffects_EventChar1is0277_PeerageRank = yes }
+lgEffects_EventChar1is0278_PeerageLookup = { lgEffects_EventChar1is0278_PeerageName = yes lgEffects_EventChar1is0278_PeerageRank = yes }
+lgEffects_EventChar1is0279_PeerageLookup = { lgEffects_EventChar1is0279_PeerageName = yes lgEffects_EventChar1is0279_PeerageRank = yes }
+lgEffects_EventChar1is0280_PeerageLookup = { lgEffects_EventChar1is0280_PeerageName = yes lgEffects_EventChar1is0280_PeerageRank = yes }
+
+lgEffects_EventChar1is0281_PeerageLookup = { lgEffects_EventChar1is0281_PeerageName = yes lgEffects_EventChar1is0281_PeerageRank = yes }
+lgEffects_EventChar1is0282_PeerageLookup = { lgEffects_EventChar1is0282_PeerageName = yes lgEffects_EventChar1is0282_PeerageRank = yes }
+lgEffects_EventChar1is0283_PeerageLookup = { lgEffects_EventChar1is0283_PeerageName = yes lgEffects_EventChar1is0283_PeerageRank = yes }
+lgEffects_EventChar1is0284_PeerageLookup = { lgEffects_EventChar1is0284_PeerageName = yes lgEffects_EventChar1is0284_PeerageRank = yes }
+lgEffects_EventChar1is0285_PeerageLookup = { lgEffects_EventChar1is0285_PeerageName = yes lgEffects_EventChar1is0285_PeerageRank = yes }
+lgEffects_EventChar1is0286_PeerageLookup = { lgEffects_EventChar1is0286_PeerageName = yes lgEffects_EventChar1is0286_PeerageRank = yes }
+lgEffects_EventChar1is0287_PeerageLookup = { lgEffects_EventChar1is0287_PeerageName = yes lgEffects_EventChar1is0287_PeerageRank = yes }
+lgEffects_EventChar1is0288_PeerageLookup = { lgEffects_EventChar1is0288_PeerageName = yes lgEffects_EventChar1is0288_PeerageRank = yes }
+lgEffects_EventChar1is0289_PeerageLookup = { lgEffects_EventChar1is0289_PeerageName = yes lgEffects_EventChar1is0289_PeerageRank = yes }
+lgEffects_EventChar1is0290_PeerageLookup = { lgEffects_EventChar1is0290_PeerageName = yes lgEffects_EventChar1is0290_PeerageRank = yes }
+
+lgEffects_EventChar1is0291_PeerageLookup = { lgEffects_EventChar1is0291_PeerageName = yes lgEffects_EventChar1is0291_PeerageRank = yes }
+lgEffects_EventChar1is0292_PeerageLookup = { lgEffects_EventChar1is0292_PeerageName = yes lgEffects_EventChar1is0292_PeerageRank = yes }
+lgEffects_EventChar1is0293_PeerageLookup = { lgEffects_EventChar1is0293_PeerageName = yes lgEffects_EventChar1is0293_PeerageRank = yes }
+lgEffects_EventChar1is0294_PeerageLookup = { lgEffects_EventChar1is0294_PeerageName = yes lgEffects_EventChar1is0294_PeerageRank = yes }
+lgEffects_EventChar1is0295_PeerageLookup = { lgEffects_EventChar1is0295_PeerageName = yes lgEffects_EventChar1is0295_PeerageRank = yes }
+lgEffects_EventChar1is0296_PeerageLookup = { lgEffects_EventChar1is0296_PeerageName = yes lgEffects_EventChar1is0296_PeerageRank = yes }
+lgEffects_EventChar1is0297_PeerageLookup = { lgEffects_EventChar1is0297_PeerageName = yes lgEffects_EventChar1is0297_PeerageRank = yes }
+lgEffects_EventChar1is0298_PeerageLookup = { lgEffects_EventChar1is0298_PeerageName = yes lgEffects_EventChar1is0298_PeerageRank = yes }
+lgEffects_EventChar1is0299_PeerageLookup = { lgEffects_EventChar1is0299_PeerageName = yes lgEffects_EventChar1is0299_PeerageRank = yes }
+lgEffects_EventChar1is0300_PeerageLookup = { lgEffects_EventChar1is0300_PeerageName = yes lgEffects_EventChar1is0300_PeerageRank = yes }
+
+##
+lgEffects_EventChar1is0001_PeerageOrd = { set_variable = { which = lgVar_EventChar1_PeerageRank value = lgVar_PeerageID0001ord } }
+
+# OLD
+lgEffects_EventChar1is0001_PeerageNameOLD = { set_variable = { which = lgVar_EventChar1_PeerageName value = lgVar_Char0001PeerageName } }
+lgEffects_EventChar1is0001_PeerageRankOLD = { set_variable = { which = lgVar_EventChar1_PeerageRank value = lgVar_Peerage0001rank } }

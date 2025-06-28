@@ -1,21 +1,151 @@
 defined_text = {
-	name = GetPeerageRank
+	name = GetChar1PeerageRank
 	text = {
 		localisation_key = lgTitles_Duke
 		trigger = {
-			has_province_modifier = lgTitles_Duke
+			check_variable = {
+				which = lgVar_EventChar1_PeerageRank
+				value = 5
+			}
 		}
 	}
 	text = {
 		localisation_key = lgTitles_Marquess
 		trigger = {
-			has_province_modifier = lgTitles_Marquess
+			check_variable = {
+				which = lgVar_EventChar1_PeerageRank
+				value = 4
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_EventChar1_PeerageRank
+					value = 5
+				}
+			}
 		}
 	}
 	text = {
 		localisation_key = lgTitles_Earl
 		trigger = {
-			has_province_modifier = lgTitles_Earl
+			check_variable = {
+				which = lgVar_EventChar1_PeerageRank
+				value = 3
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_EventChar1_PeerageRank
+					value = 4
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = lgTitles_Viscount
+		trigger = {
+			check_variable = {
+				which = lgVar_EventChar1_PeerageRank
+				value = 2
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_EventChar1_PeerageRank
+					value = 3
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = lgTitles_Baron
+		trigger = {
+			check_variable = {
+				which = lgVar_EventChar1_PeerageRank
+				value = 1
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_EventChar1_PeerageRank
+					value = 2
+				}
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = GetPeerageRankOffered
+	text = {
+		localisation_key = lgTitles_Duke
+		trigger = {
+			check_variable = {
+				which = lgVar_EventChar1_PeerageRank
+				value = 4
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_EventChar1_PeerageRank
+					value = 5
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = lgTitles_Marquess
+		trigger = {
+			check_variable = {
+				which = lgVar_EventChar1_PeerageRank
+				value = 3
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_EventChar1_PeerageRank
+					value = 4
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = lgTitles_Earl
+		trigger = {
+			check_variable = {
+				which = lgVar_EventChar1_PeerageRank
+				value = 2
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_EventChar1_PeerageRank
+					value = 3
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = lgTitles_Viscount
+		trigger = {
+			check_variable = {
+				which = lgVar_EventChar1_PeerageRank
+				value = 1
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_EventChar1_PeerageRank
+					value = 2
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = lgTitles_Baron
+		trigger = {
+			check_variable = {
+				which = lgVar_EventChar1_PeerageRank
+				value = 0
+			}
+			NOT = {
+				check_variable = {
+					which = lgVar_EventChar1_PeerageRank
+					value = 1
+				}
+			}
 		}
 	}
 }

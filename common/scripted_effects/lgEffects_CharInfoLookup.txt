@@ -7,8 +7,8 @@ lgEffects_Char1LastLookup = {
 }
 
 lgEffects_EventChar1InfoLookup = {
-	if = { limit = { has_country_flag = lgFlags_EventChar1is0001 } lgEffects_Char0001first = yes lgEffects_Char0001last = yes }
-	if = { limit = { has_country_flag = lgFlags_EventChar1is0002 } lgEffects_Char0002first = yes lgEffects_Char0002last = yes }
+	if = { limit = { has_country_flag = lgFlags_EventChar1is0001 } lgEffects_Char0001first = yes lgEffects_Char0001last = yes lgEffects_EventChar1is0001 = yes }
+	if = { limit = { has_country_flag = lgFlags_EventChar1is0002 } lgEffects_Char0002first = yes lgEffects_Char0002last = yes lgEffects_EventChar1is0002 = yes }
 }
 
 lgEffects_Char0001first = { set_variable = { which = lgVar_Char1FirstName value = lgVar_CharID0001firstname } }
@@ -16,6 +16,9 @@ lgEffects_Char0002first = { set_variable = { which = lgVar_Char1FirstName value 
 
 lgEffects_Char0001last = { set_variable = { which = lgVar_Char1LastName value = lgVar_CharID0001lastname } }
 lgEffects_Char0002last = { set_variable = { which = lgVar_Char1LastName value = lgVar_CharID0002lastname } }
+
+lgEffects_EventChar1is0001 = { set_variable = { which = lgVar_EventChar1TargetID value = 1 } }
+lgEffects_EventChar1is0002 = { set_variable = { which = lgVar_EventChar1TargetID value = 2 } }
 
 # put this in immediate?
 lgEffects_EventChar1Target = {

@@ -1,0 +1,332 @@
+# Setting ordinal numbers for all newly created peerages to 1 by default
+lgEffects_PeerageID0001ord = { set_variable = { which = lgVar_PeerageID0001ord value = 1 } }
+lgEffects_PeerageID0002ord = { set_variable = { which = lgVar_PeerageID0002ord value = 1 } }
+lgEffects_PeerageID0003ord = { set_variable = { which = lgVar_PeerageID0003ord value = 1 } }
+lgEffects_PeerageID0004ord = { set_variable = { which = lgVar_PeerageID0004ord value = 1 } }
+lgEffects_PeerageID0005ord = { set_variable = { which = lgVar_PeerageID0005ord value = 1 } }
+lgEffects_PeerageID0006ord = { set_variable = { which = lgVar_PeerageID0006ord value = 1 } }
+lgEffects_PeerageID0007ord = { set_variable = { which = lgVar_PeerageID0007ord value = 1 } }
+lgEffects_PeerageID0008ord = { set_variable = { which = lgVar_PeerageID0008ord value = 1 } }
+lgEffects_PeerageID0009ord = { set_variable = { which = lgVar_PeerageID0009ord value = 1 } }
+lgEffects_PeerageID0010ord = { set_variable = { which = lgVar_PeerageID0010ord value = 1 } }
+
+lgEffects_PeerageID0011ord = { set_variable = { which = lgVar_PeerageID0011ord value = 1 } }
+lgEffects_PeerageID0012ord = { set_variable = { which = lgVar_PeerageID0012ord value = 1 } }
+lgEffects_PeerageID0013ord = { set_variable = { which = lgVar_PeerageID0013ord value = 1 } }
+lgEffects_PeerageID0014ord = { set_variable = { which = lgVar_PeerageID0014ord value = 1 } }
+lgEffects_PeerageID0015ord = { set_variable = { which = lgVar_PeerageID0015ord value = 1 } }
+lgEffects_PeerageID0016ord = { set_variable = { which = lgVar_PeerageID0016ord value = 1 } }
+lgEffects_PeerageID0017ord = { set_variable = { which = lgVar_PeerageID0017ord value = 1 } }
+lgEffects_PeerageID0018ord = { set_variable = { which = lgVar_PeerageID0018ord value = 1 } }
+lgEffects_PeerageID0019ord = { set_variable = { which = lgVar_PeerageID0019ord value = 1 } }
+lgEffects_PeerageID0020ord = { set_variable = { which = lgVar_PeerageID0020ord value = 1 } }
+
+lgEffects_PeerageID0021ord = { set_variable = { which = lgVar_PeerageID0021ord value = 1 } }
+lgEffects_PeerageID0022ord = { set_variable = { which = lgVar_PeerageID0022ord value = 1 } }
+lgEffects_PeerageID0023ord = { set_variable = { which = lgVar_PeerageID0023ord value = 1 } }
+lgEffects_PeerageID0024ord = { set_variable = { which = lgVar_PeerageID0024ord value = 1 } }
+lgEffects_PeerageID0025ord = { set_variable = { which = lgVar_PeerageID0025ord value = 1 } }
+lgEffects_PeerageID0026ord = { set_variable = { which = lgVar_PeerageID0026ord value = 1 } }
+lgEffects_PeerageID0027ord = { set_variable = { which = lgVar_PeerageID0027ord value = 1 } }
+lgEffects_PeerageID0028ord = { set_variable = { which = lgVar_PeerageID0028ord value = 1 } }
+lgEffects_PeerageID0029ord = { set_variable = { which = lgVar_PeerageID0029ord value = 1 } }
+lgEffects_PeerageID0030ord = { set_variable = { which = lgVar_PeerageID0030ord value = 1 } }
+
+lgEffects_PeerageID0031ord = { set_variable = { which = lgVar_PeerageID0031ord value = 1 } }
+lgEffects_PeerageID0032ord = { set_variable = { which = lgVar_PeerageID0032ord value = 1 } }
+lgEffects_PeerageID0033ord = { set_variable = { which = lgVar_PeerageID0033ord value = 1 } }
+lgEffects_PeerageID0034ord = { set_variable = { which = lgVar_PeerageID0034ord value = 1 } }
+lgEffects_PeerageID0035ord = { set_variable = { which = lgVar_PeerageID0035ord value = 1 } }
+lgEffects_PeerageID0036ord = { set_variable = { which = lgVar_PeerageID0036ord value = 1 } }
+lgEffects_PeerageID0037ord = { set_variable = { which = lgVar_PeerageID0037ord value = 1 } }
+lgEffects_PeerageID0038ord = { set_variable = { which = lgVar_PeerageID0038ord value = 1 } }
+lgEffects_PeerageID0039ord = { set_variable = { which = lgVar_PeerageID0039ord value = 1 } }
+lgEffects_PeerageID0040ord = { set_variable = { which = lgVar_PeerageID0040ord value = 1 } }
+
+lgEffects_PeerageID0041ord = { set_variable = { which = lgVar_PeerageID0041ord value = 1 } }
+lgEffects_PeerageID0042ord = { set_variable = { which = lgVar_PeerageID0042ord value = 1 } }
+lgEffects_PeerageID0043ord = { set_variable = { which = lgVar_PeerageID0043ord value = 1 } }
+lgEffects_PeerageID0044ord = { set_variable = { which = lgVar_PeerageID0044ord value = 1 } }
+lgEffects_PeerageID0045ord = { set_variable = { which = lgVar_PeerageID0045ord value = 1 } }
+lgEffects_PeerageID0046ord = { set_variable = { which = lgVar_PeerageID0046ord value = 1 } }
+lgEffects_PeerageID0047ord = { set_variable = { which = lgVar_PeerageID0047ord value = 1 } }
+lgEffects_PeerageID0048ord = { set_variable = { which = lgVar_PeerageID0048ord value = 1 } }
+lgEffects_PeerageID0049ord = { set_variable = { which = lgVar_PeerageID0049ord value = 1 } }
+lgEffects_PeerageID0050ord = { set_variable = { which = lgVar_PeerageID0050ord value = 1 } }
+
+lgEffects_PeerageID0051ord = { set_variable = { which = lgVar_PeerageID0051ord value = 1 } }
+lgEffects_PeerageID0052ord = { set_variable = { which = lgVar_PeerageID0052ord value = 1 } }
+lgEffects_PeerageID0053ord = { set_variable = { which = lgVar_PeerageID0053ord value = 1 } }
+lgEffects_PeerageID0054ord = { set_variable = { which = lgVar_PeerageID0054ord value = 1 } }
+lgEffects_PeerageID0055ord = { set_variable = { which = lgVar_PeerageID0055ord value = 1 } }
+lgEffects_PeerageID0056ord = { set_variable = { which = lgVar_PeerageID0056ord value = 1 } }
+lgEffects_PeerageID0057ord = { set_variable = { which = lgVar_PeerageID0057ord value = 1 } }
+lgEffects_PeerageID0058ord = { set_variable = { which = lgVar_PeerageID0058ord value = 1 } }
+lgEffects_PeerageID0059ord = { set_variable = { which = lgVar_PeerageID0059ord value = 1 } }
+lgEffects_PeerageID0060ord = { set_variable = { which = lgVar_PeerageID0060ord value = 1 } }
+
+lgEffects_PeerageID0061ord = { set_variable = { which = lgVar_PeerageID0061ord value = 1 } }
+lgEffects_PeerageID0062ord = { set_variable = { which = lgVar_PeerageID0062ord value = 1 } }
+lgEffects_PeerageID0063ord = { set_variable = { which = lgVar_PeerageID0063ord value = 1 } }
+lgEffects_PeerageID0064ord = { set_variable = { which = lgVar_PeerageID0064ord value = 1 } }
+lgEffects_PeerageID0065ord = { set_variable = { which = lgVar_PeerageID0065ord value = 1 } }
+lgEffects_PeerageID0066ord = { set_variable = { which = lgVar_PeerageID0066ord value = 1 } }
+lgEffects_PeerageID0067ord = { set_variable = { which = lgVar_PeerageID0067ord value = 1 } }
+lgEffects_PeerageID0068ord = { set_variable = { which = lgVar_PeerageID0068ord value = 1 } }
+lgEffects_PeerageID0069ord = { set_variable = { which = lgVar_PeerageID0069ord value = 1 } }
+lgEffects_PeerageID0070ord = { set_variable = { which = lgVar_PeerageID0070ord value = 1 } }
+
+lgEffects_PeerageID0071ord = { set_variable = { which = lgVar_PeerageID0071ord value = 1 } }
+lgEffects_PeerageID0072ord = { set_variable = { which = lgVar_PeerageID0072ord value = 1 } }
+lgEffects_PeerageID0073ord = { set_variable = { which = lgVar_PeerageID0073ord value = 1 } }
+lgEffects_PeerageID0074ord = { set_variable = { which = lgVar_PeerageID0074ord value = 1 } }
+lgEffects_PeerageID0075ord = { set_variable = { which = lgVar_PeerageID0075ord value = 1 } }
+lgEffects_PeerageID0076ord = { set_variable = { which = lgVar_PeerageID0076ord value = 1 } }
+lgEffects_PeerageID0077ord = { set_variable = { which = lgVar_PeerageID0077ord value = 1 } }
+lgEffects_PeerageID0078ord = { set_variable = { which = lgVar_PeerageID0078ord value = 1 } }
+lgEffects_PeerageID0079ord = { set_variable = { which = lgVar_PeerageID0079ord value = 1 } }
+lgEffects_PeerageID0080ord = { set_variable = { which = lgVar_PeerageID0080ord value = 1 } }
+
+lgEffects_PeerageID0081ord = { set_variable = { which = lgVar_PeerageID0081ord value = 1 } }
+lgEffects_PeerageID0082ord = { set_variable = { which = lgVar_PeerageID0082ord value = 1 } }
+lgEffects_PeerageID0083ord = { set_variable = { which = lgVar_PeerageID0083ord value = 1 } }
+lgEffects_PeerageID0084ord = { set_variable = { which = lgVar_PeerageID0084ord value = 1 } }
+lgEffects_PeerageID0085ord = { set_variable = { which = lgVar_PeerageID0085ord value = 1 } }
+lgEffects_PeerageID0086ord = { set_variable = { which = lgVar_PeerageID0086ord value = 1 } }
+lgEffects_PeerageID0087ord = { set_variable = { which = lgVar_PeerageID0087ord value = 1 } }
+lgEffects_PeerageID0088ord = { set_variable = { which = lgVar_PeerageID0088ord value = 1 } }
+lgEffects_PeerageID0089ord = { set_variable = { which = lgVar_PeerageID0089ord value = 1 } }
+lgEffects_PeerageID0090ord = { set_variable = { which = lgVar_PeerageID0090ord value = 1 } }
+
+lgEffects_PeerageID0091ord = { set_variable = { which = lgVar_PeerageID0091ord value = 1 } }
+lgEffects_PeerageID0092ord = { set_variable = { which = lgVar_PeerageID0092ord value = 1 } }
+lgEffects_PeerageID0093ord = { set_variable = { which = lgVar_PeerageID0093ord value = 1 } }
+lgEffects_PeerageID0094ord = { set_variable = { which = lgVar_PeerageID0094ord value = 1 } }
+lgEffects_PeerageID0095ord = { set_variable = { which = lgVar_PeerageID0095ord value = 1 } }
+lgEffects_PeerageID0096ord = { set_variable = { which = lgVar_PeerageID0096ord value = 1 } }
+lgEffects_PeerageID0097ord = { set_variable = { which = lgVar_PeerageID0097ord value = 1 } }
+lgEffects_PeerageID0098ord = { set_variable = { which = lgVar_PeerageID0098ord value = 1 } }
+lgEffects_PeerageID0099ord = { set_variable = { which = lgVar_PeerageID0099ord value = 1 } }
+lgEffects_PeerageID0100ord = { set_variable = { which = lgVar_PeerageID0100ord value = 1 } }
+
+# 101-200
+lgEffects_PeerageID0101ord = { set_variable = { which = lgVar_PeerageID0101ord value = 1 } }
+lgEffects_PeerageID0102ord = { set_variable = { which = lgVar_PeerageID0102ord value = 1 } }
+lgEffects_PeerageID0103ord = { set_variable = { which = lgVar_PeerageID0103ord value = 1 } }
+lgEffects_PeerageID0104ord = { set_variable = { which = lgVar_PeerageID0104ord value = 1 } }
+lgEffects_PeerageID0105ord = { set_variable = { which = lgVar_PeerageID0105ord value = 1 } }
+lgEffects_PeerageID0106ord = { set_variable = { which = lgVar_PeerageID0106ord value = 1 } }
+lgEffects_PeerageID0107ord = { set_variable = { which = lgVar_PeerageID0107ord value = 1 } }
+lgEffects_PeerageID0108ord = { set_variable = { which = lgVar_PeerageID0108ord value = 1 } }
+lgEffects_PeerageID0109ord = { set_variable = { which = lgVar_PeerageID0109ord value = 1 } }
+lgEffects_PeerageID0110ord = { set_variable = { which = lgVar_PeerageID0110ord value = 1 } }
+
+lgEffects_PeerageID0111ord = { set_variable = { which = lgVar_PeerageID0111ord value = 1 } }
+lgEffects_PeerageID0112ord = { set_variable = { which = lgVar_PeerageID0112ord value = 1 } }
+lgEffects_PeerageID0113ord = { set_variable = { which = lgVar_PeerageID0113ord value = 1 } }
+lgEffects_PeerageID0114ord = { set_variable = { which = lgVar_PeerageID0114ord value = 1 } }
+lgEffects_PeerageID0115ord = { set_variable = { which = lgVar_PeerageID0115ord value = 1 } }
+lgEffects_PeerageID0116ord = { set_variable = { which = lgVar_PeerageID0116ord value = 1 } }
+lgEffects_PeerageID0117ord = { set_variable = { which = lgVar_PeerageID0117ord value = 1 } }
+lgEffects_PeerageID0118ord = { set_variable = { which = lgVar_PeerageID0118ord value = 1 } }
+lgEffects_PeerageID0119ord = { set_variable = { which = lgVar_PeerageID0119ord value = 1 } }
+lgEffects_PeerageID0120ord = { set_variable = { which = lgVar_PeerageID0120ord value = 1 } }
+
+lgEffects_PeerageID0121ord = { set_variable = { which = lgVar_PeerageID0121ord value = 1 } }
+lgEffects_PeerageID0122ord = { set_variable = { which = lgVar_PeerageID0122ord value = 1 } }
+lgEffects_PeerageID0123ord = { set_variable = { which = lgVar_PeerageID0123ord value = 1 } }
+lgEffects_PeerageID0124ord = { set_variable = { which = lgVar_PeerageID0124ord value = 1 } }
+lgEffects_PeerageID0125ord = { set_variable = { which = lgVar_PeerageID0125ord value = 1 } }
+lgEffects_PeerageID0126ord = { set_variable = { which = lgVar_PeerageID0126ord value = 1 } }
+lgEffects_PeerageID0127ord = { set_variable = { which = lgVar_PeerageID0127ord value = 1 } }
+lgEffects_PeerageID0128ord = { set_variable = { which = lgVar_PeerageID0128ord value = 1 } }
+lgEffects_PeerageID0129ord = { set_variable = { which = lgVar_PeerageID0129ord value = 1 } }
+lgEffects_PeerageID0130ord = { set_variable = { which = lgVar_PeerageID0130ord value = 1 } }
+
+lgEffects_PeerageID0131ord = { set_variable = { which = lgVar_PeerageID0131ord value = 1 } }
+lgEffects_PeerageID0132ord = { set_variable = { which = lgVar_PeerageID0132ord value = 1 } }
+lgEffects_PeerageID0133ord = { set_variable = { which = lgVar_PeerageID0133ord value = 1 } }
+lgEffects_PeerageID0134ord = { set_variable = { which = lgVar_PeerageID0134ord value = 1 } }
+lgEffects_PeerageID0135ord = { set_variable = { which = lgVar_PeerageID0135ord value = 1 } }
+lgEffects_PeerageID0136ord = { set_variable = { which = lgVar_PeerageID0136ord value = 1 } }
+lgEffects_PeerageID0137ord = { set_variable = { which = lgVar_PeerageID0137ord value = 1 } }
+lgEffects_PeerageID0138ord = { set_variable = { which = lgVar_PeerageID0138ord value = 1 } }
+lgEffects_PeerageID0139ord = { set_variable = { which = lgVar_PeerageID0139ord value = 1 } }
+lgEffects_PeerageID0140ord = { set_variable = { which = lgVar_PeerageID0140ord value = 1 } }
+
+lgEffects_PeerageID0141ord = { set_variable = { which = lgVar_PeerageID0141ord value = 1 } }
+lgEffects_PeerageID0142ord = { set_variable = { which = lgVar_PeerageID0142ord value = 1 } }
+lgEffects_PeerageID0143ord = { set_variable = { which = lgVar_PeerageID0143ord value = 1 } }
+lgEffects_PeerageID0144ord = { set_variable = { which = lgVar_PeerageID0144ord value = 1 } }
+lgEffects_PeerageID0145ord = { set_variable = { which = lgVar_PeerageID0145ord value = 1 } }
+lgEffects_PeerageID0146ord = { set_variable = { which = lgVar_PeerageID0146ord value = 1 } }
+lgEffects_PeerageID0147ord = { set_variable = { which = lgVar_PeerageID0147ord value = 1 } }
+lgEffects_PeerageID0148ord = { set_variable = { which = lgVar_PeerageID0148ord value = 1 } }
+lgEffects_PeerageID0149ord = { set_variable = { which = lgVar_PeerageID0149ord value = 1 } }
+lgEffects_PeerageID0150ord = { set_variable = { which = lgVar_PeerageID0150ord value = 1 } }
+
+lgEffects_PeerageID0151ord = { set_variable = { which = lgVar_PeerageID0151ord value = 1 } }
+lgEffects_PeerageID0152ord = { set_variable = { which = lgVar_PeerageID0152ord value = 1 } }
+lgEffects_PeerageID0153ord = { set_variable = { which = lgVar_PeerageID0153ord value = 1 } }
+lgEffects_PeerageID0154ord = { set_variable = { which = lgVar_PeerageID0154ord value = 1 } }
+lgEffects_PeerageID0155ord = { set_variable = { which = lgVar_PeerageID0155ord value = 1 } }
+lgEffects_PeerageID0156ord = { set_variable = { which = lgVar_PeerageID0156ord value = 1 } }
+lgEffects_PeerageID0157ord = { set_variable = { which = lgVar_PeerageID0157ord value = 1 } }
+lgEffects_PeerageID0158ord = { set_variable = { which = lgVar_PeerageID0158ord value = 1 } }
+lgEffects_PeerageID0159ord = { set_variable = { which = lgVar_PeerageID0159ord value = 1 } }
+lgEffects_PeerageID0160ord = { set_variable = { which = lgVar_PeerageID0160ord value = 1 } }
+
+lgEffects_PeerageID0161ord = { set_variable = { which = lgVar_PeerageID0161ord value = 1 } }
+lgEffects_PeerageID0162ord = { set_variable = { which = lgVar_PeerageID0162ord value = 1 } }
+lgEffects_PeerageID0163ord = { set_variable = { which = lgVar_PeerageID0163ord value = 1 } }
+lgEffects_PeerageID0164ord = { set_variable = { which = lgVar_PeerageID0164ord value = 1 } }
+lgEffects_PeerageID0165ord = { set_variable = { which = lgVar_PeerageID0165ord value = 1 } }
+lgEffects_PeerageID0166ord = { set_variable = { which = lgVar_PeerageID0166ord value = 1 } }
+lgEffects_PeerageID0167ord = { set_variable = { which = lgVar_PeerageID0167ord value = 1 } }
+lgEffects_PeerageID0168ord = { set_variable = { which = lgVar_PeerageID0168ord value = 1 } }
+lgEffects_PeerageID0169ord = { set_variable = { which = lgVar_PeerageID0169ord value = 1 } }
+lgEffects_PeerageID0170ord = { set_variable = { which = lgVar_PeerageID0170ord value = 1 } }
+
+lgEffects_PeerageID0171ord = { set_variable = { which = lgVar_PeerageID0171ord value = 1 } }
+lgEffects_PeerageID0172ord = { set_variable = { which = lgVar_PeerageID0172ord value = 1 } }
+lgEffects_PeerageID0173ord = { set_variable = { which = lgVar_PeerageID0173ord value = 1 } }
+lgEffects_PeerageID0174ord = { set_variable = { which = lgVar_PeerageID0174ord value = 1 } }
+lgEffects_PeerageID0175ord = { set_variable = { which = lgVar_PeerageID0175ord value = 1 } }
+lgEffects_PeerageID0176ord = { set_variable = { which = lgVar_PeerageID0176ord value = 1 } }
+lgEffects_PeerageID0177ord = { set_variable = { which = lgVar_PeerageID0177ord value = 1 } }
+lgEffects_PeerageID0178ord = { set_variable = { which = lgVar_PeerageID0178ord value = 1 } }
+lgEffects_PeerageID0179ord = { set_variable = { which = lgVar_PeerageID0179ord value = 1 } }
+lgEffects_PeerageID0180ord = { set_variable = { which = lgVar_PeerageID0180ord value = 1 } }
+
+lgEffects_PeerageID0181ord = { set_variable = { which = lgVar_PeerageID0181ord value = 1 } }
+lgEffects_PeerageID0182ord = { set_variable = { which = lgVar_PeerageID0182ord value = 1 } }
+lgEffects_PeerageID0183ord = { set_variable = { which = lgVar_PeerageID0183ord value = 1 } }
+lgEffects_PeerageID0184ord = { set_variable = { which = lgVar_PeerageID0184ord value = 1 } }
+lgEffects_PeerageID0185ord = { set_variable = { which = lgVar_PeerageID0185ord value = 1 } }
+lgEffects_PeerageID0186ord = { set_variable = { which = lgVar_PeerageID0186ord value = 1 } }
+lgEffects_PeerageID0187ord = { set_variable = { which = lgVar_PeerageID0187ord value = 1 } }
+lgEffects_PeerageID0188ord = { set_variable = { which = lgVar_PeerageID0188ord value = 1 } }
+lgEffects_PeerageID0189ord = { set_variable = { which = lgVar_PeerageID0189ord value = 1 } }
+lgEffects_PeerageID0190ord = { set_variable = { which = lgVar_PeerageID0190ord value = 1 } }
+
+lgEffects_PeerageID0191ord = { set_variable = { which = lgVar_PeerageID0191ord value = 1 } }
+lgEffects_PeerageID0192ord = { set_variable = { which = lgVar_PeerageID0192ord value = 1 } }
+lgEffects_PeerageID0193ord = { set_variable = { which = lgVar_PeerageID0193ord value = 1 } }
+lgEffects_PeerageID0194ord = { set_variable = { which = lgVar_PeerageID0194ord value = 1 } }
+lgEffects_PeerageID0195ord = { set_variable = { which = lgVar_PeerageID0195ord value = 1 } }
+lgEffects_PeerageID0196ord = { set_variable = { which = lgVar_PeerageID0196ord value = 1 } }
+lgEffects_PeerageID0197ord = { set_variable = { which = lgVar_PeerageID0197ord value = 1 } }
+lgEffects_PeerageID0198ord = { set_variable = { which = lgVar_PeerageID0198ord value = 1 } }
+lgEffects_PeerageID0199ord = { set_variable = { which = lgVar_PeerageID0199ord value = 1 } }
+lgEffects_PeerageID0200ord = { set_variable = { which = lgVar_PeerageID0200ord value = 1 } }
+
+# 201-300
+lgEffects_PeerageID0201ord = { set_variable = { which = lgVar_PeerageID0201ord value = 1 } }
+lgEffects_PeerageID0202ord = { set_variable = { which = lgVar_PeerageID0202ord value = 1 } }
+lgEffects_PeerageID0203ord = { set_variable = { which = lgVar_PeerageID0203ord value = 1 } }
+lgEffects_PeerageID0204ord = { set_variable = { which = lgVar_PeerageID0204ord value = 1 } }
+lgEffects_PeerageID0205ord = { set_variable = { which = lgVar_PeerageID0205ord value = 1 } }
+lgEffects_PeerageID0206ord = { set_variable = { which = lgVar_PeerageID0206ord value = 1 } }
+lgEffects_PeerageID0207ord = { set_variable = { which = lgVar_PeerageID0207ord value = 1 } }
+lgEffects_PeerageID0208ord = { set_variable = { which = lgVar_PeerageID0208ord value = 1 } }
+lgEffects_PeerageID0209ord = { set_variable = { which = lgVar_PeerageID0209ord value = 1 } }
+lgEffects_PeerageID0210ord = { set_variable = { which = lgVar_PeerageID0210ord value = 1 } }
+
+lgEffects_PeerageID0211ord = { set_variable = { which = lgVar_PeerageID0211ord value = 1 } }
+lgEffects_PeerageID0212ord = { set_variable = { which = lgVar_PeerageID0212ord value = 1 } }
+lgEffects_PeerageID0213ord = { set_variable = { which = lgVar_PeerageID0213ord value = 1 } }
+lgEffects_PeerageID0214ord = { set_variable = { which = lgVar_PeerageID0214ord value = 1 } }
+lgEffects_PeerageID0215ord = { set_variable = { which = lgVar_PeerageID0215ord value = 1 } }
+lgEffects_PeerageID0216ord = { set_variable = { which = lgVar_PeerageID0216ord value = 1 } }
+lgEffects_PeerageID0217ord = { set_variable = { which = lgVar_PeerageID0217ord value = 1 } }
+lgEffects_PeerageID0218ord = { set_variable = { which = lgVar_PeerageID0218ord value = 1 } }
+lgEffects_PeerageID0219ord = { set_variable = { which = lgVar_PeerageID0219ord value = 1 } }
+lgEffects_PeerageID0220ord = { set_variable = { which = lgVar_PeerageID0220ord value = 1 } }
+
+lgEffects_PeerageID0221ord = { set_variable = { which = lgVar_PeerageID0221ord value = 1 } }
+lgEffects_PeerageID0222ord = { set_variable = { which = lgVar_PeerageID0222ord value = 1 } }
+lgEffects_PeerageID0223ord = { set_variable = { which = lgVar_PeerageID0223ord value = 1 } }
+lgEffects_PeerageID0224ord = { set_variable = { which = lgVar_PeerageID0224ord value = 1 } }
+lgEffects_PeerageID0225ord = { set_variable = { which = lgVar_PeerageID0225ord value = 1 } }
+lgEffects_PeerageID0226ord = { set_variable = { which = lgVar_PeerageID0226ord value = 1 } }
+lgEffects_PeerageID0227ord = { set_variable = { which = lgVar_PeerageID0227ord value = 1 } }
+lgEffects_PeerageID0228ord = { set_variable = { which = lgVar_PeerageID0228ord value = 1 } }
+lgEffects_PeerageID0229ord = { set_variable = { which = lgVar_PeerageID0229ord value = 1 } }
+lgEffects_PeerageID0230ord = { set_variable = { which = lgVar_PeerageID0230ord value = 1 } }
+
+lgEffects_PeerageID0231ord = { set_variable = { which = lgVar_PeerageID0231ord value = 1 } }
+lgEffects_PeerageID0232ord = { set_variable = { which = lgVar_PeerageID0232ord value = 1 } }
+lgEffects_PeerageID0233ord = { set_variable = { which = lgVar_PeerageID0233ord value = 1 } }
+lgEffects_PeerageID0234ord = { set_variable = { which = lgVar_PeerageID0234ord value = 1 } }
+lgEffects_PeerageID0235ord = { set_variable = { which = lgVar_PeerageID0235ord value = 1 } }
+lgEffects_PeerageID0236ord = { set_variable = { which = lgVar_PeerageID0236ord value = 1 } }
+lgEffects_PeerageID0237ord = { set_variable = { which = lgVar_PeerageID0237ord value = 1 } }
+lgEffects_PeerageID0238ord = { set_variable = { which = lgVar_PeerageID0238ord value = 1 } }
+lgEffects_PeerageID0239ord = { set_variable = { which = lgVar_PeerageID0239ord value = 1 } }
+lgEffects_PeerageID0240ord = { set_variable = { which = lgVar_PeerageID0240ord value = 1 } }
+
+lgEffects_PeerageID0241ord = { set_variable = { which = lgVar_PeerageID0241ord value = 1 } }
+lgEffects_PeerageID0242ord = { set_variable = { which = lgVar_PeerageID0242ord value = 1 } }
+lgEffects_PeerageID0243ord = { set_variable = { which = lgVar_PeerageID0243ord value = 1 } }
+lgEffects_PeerageID0244ord = { set_variable = { which = lgVar_PeerageID0244ord value = 1 } }
+lgEffects_PeerageID0245ord = { set_variable = { which = lgVar_PeerageID0245ord value = 1 } }
+lgEffects_PeerageID0246ord = { set_variable = { which = lgVar_PeerageID0246ord value = 1 } }
+lgEffects_PeerageID0247ord = { set_variable = { which = lgVar_PeerageID0247ord value = 1 } }
+lgEffects_PeerageID0248ord = { set_variable = { which = lgVar_PeerageID0248ord value = 1 } }
+lgEffects_PeerageID0249ord = { set_variable = { which = lgVar_PeerageID0249ord value = 1 } }
+lgEffects_PeerageID0250ord = { set_variable = { which = lgVar_PeerageID0250ord value = 1 } }
+
+lgEffects_PeerageID0251ord = { set_variable = { which = lgVar_PeerageID0251ord value = 1 } }
+lgEffects_PeerageID0252ord = { set_variable = { which = lgVar_PeerageID0252ord value = 1 } }
+lgEffects_PeerageID0253ord = { set_variable = { which = lgVar_PeerageID0253ord value = 1 } }
+lgEffects_PeerageID0254ord = { set_variable = { which = lgVar_PeerageID0254ord value = 1 } }
+lgEffects_PeerageID0255ord = { set_variable = { which = lgVar_PeerageID0255ord value = 1 } }
+lgEffects_PeerageID0256ord = { set_variable = { which = lgVar_PeerageID0256ord value = 1 } }
+lgEffects_PeerageID0257ord = { set_variable = { which = lgVar_PeerageID0257ord value = 1 } }
+lgEffects_PeerageID0258ord = { set_variable = { which = lgVar_PeerageID0258ord value = 1 } }
+lgEffects_PeerageID0259ord = { set_variable = { which = lgVar_PeerageID0259ord value = 1 } }
+lgEffects_PeerageID0260ord = { set_variable = { which = lgVar_PeerageID0260ord value = 1 } }
+
+lgEffects_PeerageID0261ord = { set_variable = { which = lgVar_PeerageID0261ord value = 1 } }
+lgEffects_PeerageID0262ord = { set_variable = { which = lgVar_PeerageID0262ord value = 1 } }
+lgEffects_PeerageID0263ord = { set_variable = { which = lgVar_PeerageID0263ord value = 1 } }
+lgEffects_PeerageID0264ord = { set_variable = { which = lgVar_PeerageID0264ord value = 1 } }
+lgEffects_PeerageID0265ord = { set_variable = { which = lgVar_PeerageID0265ord value = 1 } }
+lgEffects_PeerageID0266ord = { set_variable = { which = lgVar_PeerageID0266ord value = 1 } }
+lgEffects_PeerageID0267ord = { set_variable = { which = lgVar_PeerageID0267ord value = 1 } }
+lgEffects_PeerageID0268ord = { set_variable = { which = lgVar_PeerageID0268ord value = 1 } }
+lgEffects_PeerageID0269ord = { set_variable = { which = lgVar_PeerageID0269ord value = 1 } }
+lgEffects_PeerageID0270ord = { set_variable = { which = lgVar_PeerageID0270ord value = 1 } }
+
+lgEffects_PeerageID0271ord = { set_variable = { which = lgVar_PeerageID0271ord value = 1 } }
+lgEffects_PeerageID0272ord = { set_variable = { which = lgVar_PeerageID0272ord value = 1 } }
+lgEffects_PeerageID0273ord = { set_variable = { which = lgVar_PeerageID0273ord value = 1 } }
+lgEffects_PeerageID0274ord = { set_variable = { which = lgVar_PeerageID0274ord value = 1 } }
+lgEffects_PeerageID0275ord = { set_variable = { which = lgVar_PeerageID0275ord value = 1 } }
+lgEffects_PeerageID0276ord = { set_variable = { which = lgVar_PeerageID0276ord value = 1 } }
+lgEffects_PeerageID0277ord = { set_variable = { which = lgVar_PeerageID0277ord value = 1 } }
+lgEffects_PeerageID0278ord = { set_variable = { which = lgVar_PeerageID0278ord value = 1 } }
+lgEffects_PeerageID0279ord = { set_variable = { which = lgVar_PeerageID0279ord value = 1 } }
+lgEffects_PeerageID0280ord = { set_variable = { which = lgVar_PeerageID0280ord value = 1 } }
+
+lgEffects_PeerageID0281ord = { set_variable = { which = lgVar_PeerageID0281ord value = 1 } }
+lgEffects_PeerageID0282ord = { set_variable = { which = lgVar_PeerageID0282ord value = 1 } }
+lgEffects_PeerageID0283ord = { set_variable = { which = lgVar_PeerageID0283ord value = 1 } }
+lgEffects_PeerageID0284ord = { set_variable = { which = lgVar_PeerageID0284ord value = 1 } }
+lgEffects_PeerageID0285ord = { set_variable = { which = lgVar_PeerageID0285ord value = 1 } }
+lgEffects_PeerageID0286ord = { set_variable = { which = lgVar_PeerageID0286ord value = 1 } }
+lgEffects_PeerageID0287ord = { set_variable = { which = lgVar_PeerageID0287ord value = 1 } }
+lgEffects_PeerageID0288ord = { set_variable = { which = lgVar_PeerageID0288ord value = 1 } }
+lgEffects_PeerageID0289ord = { set_variable = { which = lgVar_PeerageID0289ord value = 1 } }
+lgEffects_PeerageID0290ord = { set_variable = { which = lgVar_PeerageID0290ord value = 1 } }
+
+lgEffects_PeerageID0291ord = { set_variable = { which = lgVar_PeerageID0291ord value = 1 } }
+lgEffects_PeerageID0292ord = { set_variable = { which = lgVar_PeerageID0292ord value = 1 } }
+lgEffects_PeerageID0293ord = { set_variable = { which = lgVar_PeerageID0293ord value = 1 } }
+lgEffects_PeerageID0294ord = { set_variable = { which = lgVar_PeerageID0294ord value = 1 } }
+lgEffects_PeerageID0295ord = { set_variable = { which = lgVar_PeerageID0295ord value = 1 } }
+lgEffects_PeerageID0296ord = { set_variable = { which = lgVar_PeerageID0296ord value = 1 } }
+lgEffects_PeerageID0297ord = { set_variable = { which = lgVar_PeerageID0297ord value = 1 } }
+lgEffects_PeerageID0298ord = { set_variable = { which = lgVar_PeerageID0298ord value = 1 } }
+lgEffects_PeerageID0299ord = { set_variable = { which = lgVar_PeerageID0299ord value = 1 } }
+lgEffects_PeerageID0300ord = { set_variable = { which = lgVar_PeerageID0300ord value = 1 } }

@@ -1,6 +1,55 @@
 ﻿l_english:
+ ### Locality-based peerages
+ # English peerages
+ # Chester, Lancaster, and York are reserved for the royal peerages
  lgPeerageNames_Ashford: "Ashford"
+ lgPeerageNames_Beaufort: "Beaufort"
+ lgPeerageNames_Bedford: "Bedford"
+ lgPeerageNames_Blandford: "Blandford"
+ lgPeerageNames_Bristol: "Bristol"
+ lgPeerageNames_Chester: "Chester"
+ lgPeerageNames_Chatham: "Chathamr"
+ lgPeerageNames_Derby: "Derby"
+ lgPeerageNames_Dorchester: "Dorchester"
+ lgPeerageNames_Grafton: "Grafton"
+ lgPeerageNames_Granby: "Granby"
+ lgPeerageNames_Hartington: "Hartington"
+ lgPeerageNames_Hawkesbury: "Hawkesbury"
+ lgPeerageNames_Huntingdon: "Huntingdon"
+ lgPeerageNames_Lancaster: "Lancaster"
  lgPeerageNames_Liverpool: "Liverpool"
+ lgPeerageNames_Marlborough: "Marlborough"
+ lgPeerageNames_Manchester: "Manchester"
+ lgPeerageNames_Norfolk: "Norfolk"
+ lgPeerageNames_Plymouth: "Plymouth"
  lgPeerageNames_Portland: "Portland"
+ lgPeerageNames_Portsmouth: "Portsmouth"
+ lgPeerageNames_Richmond: "Richmond"
+ lgPeerageNames_Rockingham: "Rockingham"
+ lgPeerageNames_Rutland: "Rutland"
+ lgPeerageNames_Sandwich: "Sandwich"
+ lgPeerageNames_Salisbury: "Salisbury"
  lgPeerageNames_Shaftesbury: "Shaftesbury"
  lgPeerageNames_Shrewsbury: "Shrewsbury"
+ lgPeerageNames_Sidmouth: "Sidmouth"
+ lgPeerageNames_Somerset: "Somerset"
+ lgPeerageNames_StAlbans: "St Albans"
+ lgPeerageNames_Tamworth: "Tamworth"
+ lgPeerageNames_Tavistock: "Tavistock"
+ lgPeerageNames_Wellington: "Wellington"
+ lgPeerageNames_Westminster: "Westminster"
+ lgPeerageNames_Worcester: "Worcester"
+ lgPeerageNames_Winchester: "Winchester"
+ lgPeerageNames_York: "York"
+ # Scottish peerages
+ # Edinburgh are reserved for the royal peerages
+ lgPeerageNames_Aberdeen: "Aberdeen"
+ lgPeerageNames_Edinburgh: "Edinburgh"
+ # Irish peerages
+ lgPeerageNames_Castlereagh: "Castlereagh"
+ lgPeerageNames_Londonderry: "Londonderry"
+ ### Area- or County-based peerages
+ # English peerages
+# Cornwall reserved for royal peerages
+ lgPeerageNames_Cornwall: "Cornwall"
+ lgPeerageNames_Devonshire: "Devonshire"
